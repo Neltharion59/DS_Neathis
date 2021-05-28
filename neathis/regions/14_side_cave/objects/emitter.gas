@@ -1,0 +1,53 @@
+[t:emt_glow,n:0x01800032]
+{
+	[gizmo]
+	{
+	  f scale = 1;
+	}
+	[glow_emitter]
+	{
+	  f blue = 0;
+	  f green = 0.5;
+	  f red = 1;
+	  f scale = 3;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 0.73366,2.88412,0.189438,0x89bd0803;
+	}
+}
+[t:emt_glow,n:0x01800033]
+{
+	[gizmo]
+	{
+	  f scale = 1;
+	}
+	[glow_emitter]
+	{
+	  f blue = 0;
+	  f green = 0.5;
+	  f red = 1;
+	  f scale = 3;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -1.15879,2.88412,0.127136,0x89bd0803;
+	}
+}
+[t:emt_sound,n:0x0180005b]
+{
+	[placement]
+	{
+	  q orientation = 0,-1.49012e-007,0,1;
+	  p position = -0.238306,0,1.22739,0x89bd0803;
+	}
+	[sound_emitter]
+	{
+	  b continual_loop = true;
+		event_sound = "env_shrine_mana";
+	  f max_dist = 24;
+	  f min_dist = 12;
+	}
+}

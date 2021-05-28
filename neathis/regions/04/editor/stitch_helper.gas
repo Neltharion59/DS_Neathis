@@ -1,0 +1,36 @@
+[stitch_helper_data]
+{
+	source_region_guid = 0x00000007;
+	source_region_name = 04;
+	[t:stitch_editor,n:03]
+	{
+		dest_region = 03;
+		[node_ids]
+		{
+			0x00000050 = 0x9A88F301,5;
+			0x00000051 = 0x9A88F301,6;
+			0x00000052 = 0xC89DCA37,6;
+			0x00000053 = 0x5AAA697A,6;
+			0x00000054 = 0x71DF8236,3;
+			0x00000055 = 0x71DF8236,4;
+			0x00000056 = 0x010ACE01,6;
+			0x00000057 = 0x010ACE01,7;
+		}
+	}
+	[t:stitch_editor,n:04_cave]
+	{
+		dest_region = 04_cave;
+		[node_ids]
+		{
+			0x00000060 = 0xD9D5EF48,6;
+		}
+	}
+	[t:stitch_editor,n:05]
+	{
+		dest_region = 05;
+		[node_ids]
+		{
+			0x00000070 = 0x10580F0E,7;
+		}
+	}
+}

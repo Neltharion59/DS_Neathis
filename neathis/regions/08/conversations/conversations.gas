@@ -1,0 +1,209 @@
+[captain]
+{
+	[text*]
+	{
+		choice = more;
+	  i order = 0;
+		screen_text = "It took days, but we pushed through the mountains. However, the krug and other monsters gathered into giant masses behind us. Eventually, we had to seal the path behind us. Tight mountain passes and dwarven explosives did that quite nicely. Ironically, a group of krugs with a giant were ahead of us and had the same idea. Luckily, are were well-supplied with dwarven explosives, so here we are.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = more;
+	  i order = 1;
+		screen_text = "We do have enough explosives to blast away the blockade we created, but we would soon be massacred. It's going to take the king's army to clear the way here. If you want to travel to safety of town however, you may take the path trough the mountains. It's possible to pass for a well-armed party, but a caravan would succumb fast. It won't be easy, but not impossible. If you choose that path, good luck.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		screen_text = "We'll probably build more houses in the village, since we are going to be stuck here for a long time. If we manage to gather enough stone, I dare to dream of a guard tower, too.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[guard_1]
+{
+	[text*]
+	{
+		screen_text = "I took some hard blows when were keeping the krug off while others were setting up the explosives. I really hope the local healer is good.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[guard_2]
+{
+	[text*]
+	{
+		screen_text = "Nealini is making me worried. Does this village have some healers?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[guard_3_ranged]
+{
+	[text*]
+	{
+		screen_text = "I'm pretty nervous about the cave up this hill. I could swear I heard some disturbing grunts from there. I cannot afford to investigate however - what if I wake up something we can't cope with?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[guard_pass_1]
+{
+	[text*]
+	{
+		screen_text = "We're in for tough times. I trust the captain thought.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[guard_pass_2]
+{
+	[text*]
+	{
+		screen_text = "We can't be entirely sure that the monsters won't tear through the blockade.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[guard_pass_3]
+{
+	[text*]
+	{
+		screen_text = "I've lost count of how many krug had their skull split by my sword. I wonder how they manage to reproduce so much.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[guard_pass_4]
+{
+	[text*]
+	{
+		screen_text = "If we're going to stay here for some time, I really hope we manage to find decent place to sleep.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[join_kroduk]
+{
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "I am torn between taking the mountain pass back home and staying here for the ladies, some of whom already know I am a pleasant company. Tell you what, if you take me with you, I'm travelling back, otherwise I'm about to get busy here.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[join_lorun]
+{
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "I was hired to protect the caravan and now we're here. I was hoping to leave as soon as we get here and I collect the money, but now we're stuck. I used to live in these mountains with my clan, but I left with some bitter sentiments, and would prefer to avoid them. If you are going to try the mountain pass to sneak into the kingdom, I would like to join you, even for free.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[merchant_tired_1]
+{
+	[text*]
+	{
+		screen_text = "If you want goods, see me tommorow. I'm too tired to think of correct prices right now.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[merchant_tired_2]
+{
+	[text*]
+	{
+		screen_text = "Sorry, I won't sell you my goods. We will probably need to utilize everything we have in the upcoming months. You seem like you are going to try the mountain pass, so you will have access to all kingdom's supplies. I'm really sorry, I could make good money by price gouging, but these people are going to need my wares more.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[merchant_tired_3]
+{
+	[text*]
+	{
+		screen_text = "Oh, I'm not really a merchant. I am overseeing supplies sent to this village by the kingdom. That means I cannot sell to you, sorry.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[merchant_tired_4]
+{
+	[text*]
+	{
+		screen_text = "As others must've told you, we need to keep our supplies. Besides, I'm busy. I'm so sure I am just a moment from successfully casting my first Fireshot.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[mule_tender_1_f]
+{
+	[text*]
+	{
+		choice = more;
+	  i order = 0;
+		screen_text = "There, my hungry sweetie. We pushed you hard for the last days, right? Don't worry, you'll have a lot time to rest now.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+	  i order = 1;
+		screen_text = "Oh, hello. Don't worry, I'm not crazy. Mules can notice my voice is soothing and realize they are going to get to rest.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		screen_text = "I have the mules covered, but you may check if others from the caravan need help.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Bah, if I'm going to be stuck here, I might as well make some money. Here, see what's in my cart.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_2]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Captain isn't going to stop me from trading. I have enough to help the villagers and make some money along the way. See what I have.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_magic]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "I know we must conserve our supplies as much possible, but we are not going to equip the entire village and caravan with Zap spells, are we now? Feel free to buy anything you like.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_smith]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "We need supplies, but if you are going to try to pass the mountains, you will need them, too. Please, check my wares.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[son_after_blockade]
+{
+	[text*]
+	{
+		screen_text = "Now that was a blast, you should have seen it. It's massive relief to see a caravan after such a long time.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[son_b4_blockade]
+{
+	[text*]
+	{
+		screen_text = "They're already setting up explosives. It will take some thought, so I recommend you to go something else meanwhile.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[traveler]
+{
+	[text*]
+	{
+		screen_text = "Oh, don't worry, the mules are taken care of.";
+	  f scroll_rate = 10.000000;
+	}
+}

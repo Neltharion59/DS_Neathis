@@ -1,0 +1,96 @@
+[farmer]
+{
+	[text*]
+	{
+		choice = more;
+	  i order = 0;
+		screen_text = "A traveler? How did you get here? Since the wolves started attacking travellers, roads have been abandoned and unsafe. Does it mean we can expect travelling merchants soon?";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		screen_text = "Secretive, aren't you? Anyway, if you were strong enough to come here, you should be strong enough to leave, too. You wouldn't mind killing a few wolves along the way, would you?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[farmer_2]
+{
+	[text*]
+	{
+		screen_text = "You better hide inside. If the wolves come, they will come fast.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[farmer_3]
+{
+	[text*]
+	{
+		screen_text = "I really hope the wolves are gone soon. It is not safe to take care of my garden while they lurk around. The flowers are growing too wildly.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[farmer_w]
+{
+	[text*]
+	{
+		screen_text = "We expect the wolves to attack us in force anyday. We have reports of at least two packs forming on the outskirts of village.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[farmer_w_2]
+{
+	[text*]
+	{
+		screen_text = "You may hide inside with us if you want, sweetie, but you might find it sort of uncomfortable. You might accomodate in our celllar however, but you would need to deal with pests there first. They regularly show up and breed until we find someone to take care of them.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[farmer_w_4]
+{
+	[text*]
+	{
+		screen_text = "The first wolf to approach my pigs will have its head split in two.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[join_ulora]
+{
+	[text*]
+	{
+		choice = potential_member;
+	  i order = 0;
+		screen_text = "Hello. Are you a traveler by a chance? I arrived here to look for the rumoured Serpent clan hideout here, but had no luck so far. Then the wolf problem started and with no people traveling the roads it is not safe for me to travel elsewhere alone. Perhaps we could try travelling together?";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "Changed your mind? Let's go!";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop]
+{
+	[text*]
+	{
+		choice = shop;
+	  i order = 0;
+		screen_text = "I wish I could offer that girl better accomodation, but it's the best we have right now. I really must urge others to build a proper tavern. There seems to be a lot of poor souls looking for non-existent order of lunatics lately. Those rumours are meant to scare children not to wander the woods, not to attract foolish pilgrims. At least the buy supplies from me. Which reminds me, would you like to buy some, too?";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Any other purchase to make?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_magic]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "How could we fight wolves better than with magic? Come, buy some scrolls and burn their nosy noses.";
+	  f scroll_rate = 10.000000;
+	}
+}

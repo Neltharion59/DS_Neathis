@@ -1,0 +1,72 @@
+[t:generator_grs_spawner_01,n:0x00d000d1]
+{
+	[aspect]
+	{
+	  f life = 212;
+	  f max_life = 212;
+	  f scale_multiplier = 0.75;
+	}
+	[generator_breakable]
+	{
+	  b accelerate = false;
+		child_template_name = "moth";
+	  x initial_command = 0x00D000CF;
+	  i max_alive_children = 4;
+	  i num_children_incubating = 7;
+	  f spawn_period = 4;
+	  x spawnpoint = 0x00D000D5;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -2.88099,-6,-1.41141,0xd2257cfa;
+	}
+}
+[t:generator_grs_spawner_01,n:0x00d000d2]
+{
+	[aspect]
+	{
+	  f life = 212;
+	  f max_life = 212;
+	  f scale_multiplier = 0.75;
+	}
+	[generator_breakable]
+	{
+	  b accelerate = false;
+		child_template_name = "moth";
+	  x initial_command = 0x00D000D4;
+	  i max_alive_children = 4;
+	  i num_children_incubating = 7;
+	  f spawn_period = 4;
+	  x spawnpoint = 0x00D000D6;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -3.3606,-6,-0.902084,0x49fbe2b4;
+	}
+}
+[t:generator_grs_spawner_01,n:0x00d000d3]
+{
+	[aspect]
+	{
+	  f life = 212;
+	  f max_life = 212;
+	  f scale_multiplier = 0.75;
+	}
+	[generator_breakable]
+	{
+	  b accelerate = false;
+		child_template_name = "moth";
+	  x initial_command = 0x00D000D4;
+	  i max_alive_children = 4;
+	  i num_children_incubating = 7;
+	  f spawn_period = 4;
+	  x spawnpoint = 0x00D000D7;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 1.72498,0,-1.24058,0x928e50eb;
+	}
+}

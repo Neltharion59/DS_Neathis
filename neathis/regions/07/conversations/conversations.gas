@@ -1,0 +1,160 @@
+[dwarf_villager]
+{
+	[text*]
+	{
+		screen_text = "I really don't miss living in the moutains. Beheading the krug is surely fun, but you rarely see a living plant or animal. This way of life is a lot more peaceful.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[farmer_couple_f]
+{
+	[text*]
+	{
+		screen_text = "Farm work is important, we must not neglect current affairs. If there's need to fight, we will fight! Every monster considers hurled pitchfork a force to be reckoned with.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[farmer_couple_m]
+{
+	[text*]
+	{
+		screen_text = "I leave worrying about the fights to other. I intent to keep us fed.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[girl_alone]
+{
+	[text*]
+	{
+		choice = more;
+		screen_text = "Ah, I really wish that the guard show up soon. With krug out there, I am separated from my love in the village. I know he's doing miracles protecting them, but I fear that the krug may overwhelm them.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[house_renter]
+{
+	[text*]
+	{
+		screen_text = "The house is currently rented to the dwarven brothers. No free rooms now, sorry.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[join_gloern]
+{
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "Me and my brother left the mines when the krug took over the mountains. Our brothers hid themselves and hunt krug for sport, but there is no large offensive coming from our side anytime soon. We believe we should ally with people here and rally together. If you are into smashing some krug, me and my brother might join you.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[major]
+{
+	[text*]
+	{
+		screen_text = "It's going to get a lot better. My son is at the landslide right now, there's a caravan about to blast its way here.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[pig_keeper]
+{
+	[text*]
+	{
+		screen_text = "They're getting nice and fat. We will need that if supply caravans are not restored soon.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_john]
+{
+	[text*]
+	{
+		choice = shop;
+	  i order = 0;
+		screen_text = "Welcome, customer, here, take a look at what I have!";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = shop;
+		screen_text = "With krug ascending down from the mountains, you will need your blade sharp.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_magic]
+{
+	[text*]
+	{
+		choice = shop;
+	  i order = 0;
+		screen_text = "There's not much money to be made by selling spells in these parts, but perhaps I might interest you in a potion?";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Need more? You're lucky I spend so much time brewing the potions.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_magic_onoc]
+{
+	[text*]
+	{
+		choice = shop;
+	  i order = 0;
+		screen_text = "Greeting! You wouldn't be interested in arcane resources, would you? Don't forget to speak with my apprentice, if you are only starting to learn magic.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Hey, how about Flame spell to keep you warm at night?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_smith]
+{
+	[text*]
+	{
+		choice = shop;
+	  i order = 0;
+		screen_text = "Blades, chestplates, gauntlets, anything you need. With caravan blocked, I had time to craft a lot of goods, and they're all for sale.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Need something else? I need to make the money flow.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[welcomer]
+{
+	[text*]
+	{
+		choice = more;
+	  i order = 0;
+		screen_text = "Ah, hello! Has your village finally fought through the wolf and krug blockades? We were getting worried about you.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		screen_text = "Enjoy your stay and make sure you visit our shopkeep.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+	  i order = 1;
+		screen_text = "Don't worry, we're safe here. There are dwarves living in the mountains, in holes and pits that no krug or human could ever find. They take a lot of joy in popping out of their holes, smashing a few skulls and disappearing again. If we were in immediate danger, they would give us a warning. Besides, we currently have two dwarves visiting, they may tell you themselves.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[join_torg]
+{
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "My brother said it all. Let's smash the krug!";
+	  f scroll_rate = 10.000000;
+	}
+}

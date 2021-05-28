@@ -1,0 +1,46 @@
+[t:wolf_gray,n:0x00500001]
+{
+	[placement]
+	{
+	  p position = 2.85245,0,-1.64956,0x90794bf4;
+	}
+}
+[t:wolf_gray,n:0x00500002]
+{
+	[placement]
+	{
+	  p position = 0.162404,0,-0.898478,0x7ba7e026;
+	}
+}
+[t:wolf_gray,n:0x00500063]
+{
+	[placement]
+	{
+	  p position = 2.20646,0,1.51356,0x1a1dc362;
+	}
+}
+[t:krug_shaman_boss_01,n:0x0050006d]
+{
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 3;
+	  f damage_bonus_min_cmagic = 3;
+	}
+	[common]
+	{
+		screen_name = "Wolf leader";
+	}
+	[defend]
+	{
+	  f defense = 30;
+	}
+	[mind]
+	{
+	  b actor_auto_uses_stored_items = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.78201,0,-1.87012,0x817f6db0;
+	}
+}

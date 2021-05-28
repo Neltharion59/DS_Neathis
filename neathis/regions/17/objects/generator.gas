@@ -1,0 +1,208 @@
+[t:generator_generic,n:0x01b00057]
+{
+	[generator_basic]
+	{
+		child_template_name = "blaster";
+	  x initial_command = 0x01B00056;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 10;
+	  f spawn_period = 40;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.214766,0,-0.342163,0x5f4600e3;
+	}
+}
+[t:generator_generic,n:0x01b0004a]
+{
+	[generator_basic]
+	{
+		child_template_name = "gobbot_lightning";
+	  x initial_command = 0x01B00048;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 20;
+	  f spawn_period = 20;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.4325,0,-2.11325,0xa8172536;
+	}
+}
+[t:generator_generic,n:0x01b0004d]
+{
+	[generator_basic]
+	{
+		child_template_name = "copter";
+	  x initial_command = 0x01B0004C;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 12;
+	  f spawn_period = 30;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.78086,0,-0.852234,0x1c34c7c7;
+	}
+}
+[t:generator_generic,n:0x01b0005c]
+{
+	[generator_basic]
+	{
+		child_template_name = "heater";
+	  x initial_command = 0x01B0005D;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 10;
+	  f spawn_period = 40;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.594212,0,-1.58389,0x1c34c7c7;
+	}
+}
+[t:generator_generic,n:0x01b00049]
+{
+	[generator_basic]
+	{
+		child_template_name = "gobbot_flamethrower";
+	  x initial_command = 0x01B00047;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 20;
+	  f spawn_period = 20;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.8911,0,3.14584,0x13106709;
+	}
+}
+[t:generator_generic,n:0x01b00040]
+{
+	[generator_basic]
+	{
+		child_template_name = "gobbot_grenade";
+	  x initial_command = 0x01B00044;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 20;
+	  f spawn_period = 20;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.37027,0,1.60218,0xf6f1f681;
+	}
+}
+[t:generator_generic,n:0x01b00052]
+{
+	[generator_basic]
+	{
+		child_template_name = "copter";
+	  x initial_command = 0x01B00053;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 12;
+	  f spawn_period = 30;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.341995,1,3.755,0xe2fc07ac;
+	}
+}
+[t:generator_generic,n:0x01b00045]
+{
+	[generator_basic]
+	{
+		child_template_name = "gobbot_minigun";
+	  x initial_command = 0x01B00046;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 20;
+	  f spawn_period = 20;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.298954,0,-0.846008,0xcecd7af1;
+	}
+}
+[t:generator_generic,n:0x01b0005b]
+{
+	[generator_basic]
+	{
+		child_template_name = "heater";
+	  x initial_command = 0x01B0005A;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 10;
+	  f spawn_period = 40;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 3.62394,0,0.223694,0xcecd7af1;
+	}
+}
+[t:generator_generic,n:0x01b00051]
+{
+	[generator_basic]
+	{
+		child_template_name = "gobbot_flamethrower";
+	  x initial_command = 0x01B0004E;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 20;
+	  f spawn_period = 20;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.02457,0,3.70159,0x85f03a5e;
+	}
+}
+[t:generator_generic,n:0x01b0004b]
+{
+	[generator_basic]
+	{
+		child_template_name = "copter";
+	  x initial_command = 0x01B00042;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 12;
+	  f spawn_period = 30;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.26144,0,0.866486,0xecf96dba;
+	}
+}
+[t:generator_generic,n:0x01b00050]
+{
+	[generator_basic]
+	{
+		child_template_name = "gobbot_grenade";
+	  x initial_command = 0x01B0004F;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 20;
+	  f spawn_period = 20;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 1.21796,0,0.538628,0x0420465b;
+	}
+}
+[t:generator_generic,n:0x01b00058]
+{
+	[generator_basic]
+	{
+		child_template_name = "blaster";
+	  x initial_command = 0x01B00055;
+	  i max_alive_children = 2;
+	  i num_children_incubating = 10;
+	  f spawn_period = 40;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.71214,0,-0.026886,0x46901482;
+	}
+}

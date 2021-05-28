@@ -1,0 +1,64 @@
+[join_gyorn]
+{
+	[text*]
+	{
+		choice = potential_member;
+	  i order = 0;
+		screen_text = "Ah, my failed quest! I invested my gold to hire a band of mercenaries to help these poor villagers, but ended up needing help myself. I wasn't surprised to find krug having descended from the mountains, but these bandits caught us by surprise. My quest is not over yet, but I have lost the loyalty of my mercenaries. Could you perhaps help me?";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "Changed your mind?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[join_naidi]
+{
+	[text*]
+	{
+		choice = potential_member;
+	  i order = 0;
+		screen_text = "Thank you for freeing us! Gyorn paid us to try to cleave the way to some god-forgotten village. We broke through the krug ranks well enough, but nobody expected this little army of bandits hiding in the bushes. I wouldn't mind to have a chance to get my revenge and you seem very able. How about you take me with you?";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "Still ready to join you.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[join_rusk]
+{
+	[text*]
+	{
+		choice = potential_member;
+	  i order = 0;
+		screen_text = "At last! I was bored to death here! Is there a chance you would like a company to cut throats of more of these bandits?";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "Take me with you and all your foes will fall before they touch you.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[join_zed]
+{
+	[text*]
+	{
+		choice = potential_member;
+	  i order = 0;
+		screen_text = "Locked  up in a hole! That's what I get when I join band of mercenaries with no backup from other mage. Tell you what, take me with you, as long as you share portion of loot with me, you shall have my spells.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "Realized you need a magician? Finally!";
+	  f scroll_rate = 10.000000;
+	}
+}

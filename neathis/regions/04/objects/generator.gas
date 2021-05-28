@@ -1,0 +1,377 @@
+[t:generator_generic,n:0x00700017]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog_killer";
+	  x initial_command = 0x00700015;
+	  i max_alive_children = 5;
+	  i num_children_incubating = 5;
+	  f spawn_period = 6;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.49012e-007;
+	  p position = -0.5201,0,-0.644257,0x4ba0f9cd;
+	}
+}
+[t:generator_generic,n:0x00700019]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog";
+	  x initial_command = 0x00700013;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 10;
+	  f spawn_period = 3;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-2.68221e-007;
+	  p position = -1.40652,0,-1.86594,0x4ba0f9cd;
+	}
+}
+[t:generator_generic,n:0x0070001a]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog";
+	  x initial_command = 0x0070000F;
+	  i max_alive_children = 15;
+	  i num_children_incubating = 15;
+	  f spawn_period = 2;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-2.68221e-007;
+	  p position = 0.475929,0,-1.58356,0x4ba0f9cd;
+	}
+}
+[t:generator_generic,n:0x00700b50]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_grunt";
+	  x initial_command = 0x00700B58;
+	  i max_alive_children = 8;
+	  i num_children_incubating = 8;
+	  f spawn_period = 10;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 1.1199,0,0.062151,0xdc5bef6f;
+	}
+}
+[t:generator_generic,n:0x00700b51]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_scout";
+	  x initial_command = 0x00700B5B;
+	  i max_alive_children = 16;
+	  i num_children_incubating = 16;
+	  f spawn_period = 5;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 2.25852,0,-1.03204,0xf692edc4;
+	}
+}
+[t:generator_generic,n:0x00700b52]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_shaman";
+	  x initial_command = 0x00700B60;
+	  i max_alive_children = 9;
+	  i num_children_incubating = 9;
+	  f spawn_period = 8;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 0.425182,0,-1.56116,0xf266819b;
+	}
+}
+[t:generator_generic,n:0x00700da3]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_apprentice";
+	  x initial_command = 0x00700DA4;
+	  i max_alive_children = 9;
+	  i num_children_incubating = 9;
+	  f spawn_period = 8;
+	}
+	[placement]
+	{
+	  p position = 1.27432,0,0.421405,0xf5376049;
+	}
+}
+[t:generator_generic,n:0x00700b53]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_scavenger";
+	  x initial_command = 0x00700B64;
+	  i max_alive_children = 16;
+	  i num_children_incubating = 16;
+	  f spawn_period = 5;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 1.45827,0,1.05292,0xd804d373;
+	}
+}
+[t:generator_generic,n:0x00700da7]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_grunt";
+	  x initial_command = 0x00700DA8;
+	  i max_alive_children = 16;
+	  i num_children_incubating = 16;
+	  f spawn_period = 5;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -2.05565,0,-1.44922,0xd804d373;
+	}
+}
+[t:generator_generic,n:0x00700b54]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog";
+	  x initial_command = 0x00700B66;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 10;
+	  f spawn_period = 8;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 0.0717468,0,1.90582,0x7b5b09e0;
+	}
+}
+[t:generator_generic,n:0x00700dbe]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_raider";
+	  x initial_command = 0x00700DB0;
+	  i max_alive_children = 8;
+	  i num_children_incubating = 8;
+	  f spawn_period = 7;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -2.49921,0,3.59772,0x7d961e02;
+	}
+}
+[t:generator_generic,n:0x00700dbf]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_shaman";
+	  x initial_command = 0x00700DB3;
+	  i max_alive_children = 12;
+	  i num_children_incubating = 12;
+	  f spawn_period = 5;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 1.09183,0,3.8,0x7d961e02;
+	}
+}
+[t:generator_generic,n:0x00700dc0]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_throw";
+	  x initial_command = 0x00700DB7;
+	  i max_alive_children = 12;
+	  i num_children_incubating = 12;
+	  f spawn_period = 5;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 3.82301,0,-2.25571,0x0d690c26;
+	}
+}
+[t:generator_generic,n:0x00700dc1]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_grunt";
+	  x initial_command = 0x00700DBA;
+	  i max_alive_children = 12;
+	  i num_children_incubating = 12;
+	  f spawn_period = 5;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 3.50168,0,1.52368,0x0d690c26;
+	}
+}
+[t:generator_generic,n:0x00700dbd]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_grunt";
+	  x initial_command = 0x00700DAD;
+	  i max_alive_children = 12;
+	  i num_children_incubating = 12;
+	  f spawn_period = 5;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -2.85863,0,2.83661,0x0b4efe0c;
+	}
+}
+[t:generator_generic,n:0x00700dea]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_shaman";
+	  x initial_command = 0x00700DEE;
+	  i max_alive_children = 20;
+	  i num_children_incubating = 20;
+	  f spawn_period = 3;
+	}
+	[placement]
+	{
+	  p position = -3.39876,0,3.41776,0x554c4c53;
+	}
+}
+[t:generator_generic,n:0x00700deb]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_grunt";
+	  x initial_command = 0x00700DF2;
+	  i max_alive_children = 30;
+	  i num_children_incubating = 30;
+	  f spawn_period = 2;
+	}
+	[placement]
+	{
+	  p position = -1.74288,0,3.61136,0x554c4c53;
+	}
+}
+[t:generator_generic,n:0x00700dec]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog_killer";
+	  x initial_command = 0x00700DF6;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 10;
+	  f spawn_period = 6;
+	}
+	[placement]
+	{
+	  q orientation = 0,-5.96046e-008,0,1;
+	  p position = -2.83762,-9.53674e-007,2.46417,0x554c4c53;
+	}
+}
+[t:generator_generic,n:0x00700acc]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_grunt";
+	  x initial_command = 0x00700AD9;
+	  i max_alive_children = 5;
+	  i num_children_incubating = 5;
+	  f spawn_period = 12;
+	}
+	[placement]
+	{
+	  p position = -0.687229,0,1.82759,0x24aa33df;
+	}
+}
+[t:generator_generic,n:0x00700acd]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_shaman";
+	  x initial_command = 0x00700AD3;
+	  i max_alive_children = 8;
+	  i num_children_incubating = 8;
+	  f spawn_period = 7;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.79338,0,1.92267,0x5a656ce0;
+	}
+}
+[t:generator_generic,n:0x00700ace]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_scout";
+	  x initial_command = 0x00700AD6;
+	  i max_alive_children = 12;
+	  i num_children_incubating = 12;
+	  f spawn_period = 5;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 0.103287,0,1.49989,0x5a656ce0;
+	}
+}
+[t:generator_generic,n:0x00700acb]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_grunt";
+	  x initial_command = 0x00700ADE;
+	  i max_alive_children = 5;
+	  i num_children_incubating = 5;
+	  f spawn_period = 12;
+	}
+	[placement]
+	{
+	  p position = 0.460098,-2,-3.81548,0xd52889fc;
+	}
+}
+[t:generator_generic,n:0x00700ac9]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_scout";
+	  x initial_command = 0x00700AE0;
+	  i max_alive_children = 12;
+	  i num_children_incubating = 12;
+	  f spawn_period = 5;
+	}
+	[placement]
+	{
+	  p position = -1.83173,-1.07938,-1.14006,0xd2084e79;
+	}
+}
+[t:generator_generic,n:0x00700aca]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_shaman";
+	  x initial_command = 0x00700AE2;
+	  i max_alive_children = 7;
+	  i num_children_incubating = 7;
+	  f spawn_period = 8;
+	}
+	[placement]
+	{
+	  p position = -0.689133,-1.98922,-3.50457,0xd2084e79;
+	}
+}

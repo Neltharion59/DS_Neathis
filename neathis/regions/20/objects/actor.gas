@@ -1,0 +1,804 @@
+[t:skeleton_large,n:0x01e00015]
+{
+	[placement]
+	{
+	  p position = 1.36752,9.53674e-007,1.22252,0xc9ecae12;
+	}
+}
+[t:skeleton_large,n:0x01e00016]
+{
+	[placement]
+	{
+	  p position = 1.67264,0,-0.234955,0xc9ecae12;
+	}
+}
+[t:skeleton_mercenary_archer,n:0x01e00018]
+{
+	[placement]
+	{
+	  p position = 1.4815,0,-0.664084,0xc9ecae12;
+	}
+}
+[t:skeleton_mercenary,n:0x01e00019]
+{
+	[placement]
+	{
+	  p position = 2.27747,0,0.352297,0xc9ecae12;
+	}
+}
+[t:skeleton_mercenary_archer,n:0x01e00017]
+{
+	[placement]
+	{
+	  p position = -3.93714,-1.2,-1.53166,0xde77a386;
+	}
+}
+[t:skeleton_large,n:0x01e00014]
+{
+	[placement]
+	{
+	  p position = 1.10215,-6,-1.93371,0xce63c2a1;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01e0000d]
+{
+	[placement]
+	{
+	  p position = 0.935052,0,1.81746,0xbfd95c5d;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01e0000e]
+{
+	[placement]
+	{
+	  p position = -1.63459,9.53674e-007,0.549214,0xbfd95c5d;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e0000f]
+{
+	[placement]
+	{
+	  p position = -0.217254,0,1.27386,0xbfd95c5d;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e00010]
+{
+	[placement]
+	{
+	  p position = 1.58231,0,1.3497,0xbfd95c5d;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e00012]
+{
+	[placement]
+	{
+	  p position = -0.528878,0,0.445218,0xbfd95c5d;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e00013]
+{
+	[placement]
+	{
+	  p position = 0.909516,0,0.171056,0xbfd95c5d;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e00011]
+{
+	[placement]
+	{
+	  p position = 1.7266,-4,-1.75447,0x200541e6;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e00008]
+{
+	[placement]
+	{
+	  p position = -0.0550127,0,2.89089,0x1e0f8c32;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e00009]
+{
+	[placement]
+	{
+	  p position = -1.38269,0,1.57337,0x1e0f8c32;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e0000a]
+{
+	[placement]
+	{
+	  p position = -0.870524,0,0.24931,0x1e0f8c32;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01e0000b]
+{
+	[placement]
+	{
+	  p position = -2.17345,0,3.00956,0x1e0f8c32;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01e0000c]
+{
+	[placement]
+	{
+	  p position = -3.97916,0,-2.42633,0x1e0f8c32;
+	}
+}
+[t:2w_bandit_melee,n:0x01e00020]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_max = 50;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.50987e-007;
+	  p position = 2.08132,0,-3.15383,0xc7f038a2;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e00022]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 30;
+	  f damage_bonus_min_ranged = 30;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.66939e-007;
+	  p position = -2.79115,0,1.61027,0x753019a2;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e00025]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 30;
+	  f damage_bonus_min_ranged = 30;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.66939e-007;
+	  p position = -0.283409,0,-0.772224,0x753019a2;
+	}
+}
+[t:2w_bandit_melee,n:0x01e00024]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_max = 50;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.54304,-3.5,-3.78253,0xa08a3fba;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e0002a]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.00933e-007;
+	  p position = 3.50314,0,-3.8733,0x295dab19;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e00021]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 30;
+	  f damage_bonus_min_ranged = 30;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.00933e-007;
+	  p position = -0.939514,0,1.40549,0xc40be9d2;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e0001a]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 30;
+	  f damage_bonus_min_ranged = 30;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.76431e-007;
+	  p position = 1.56609,2,-7.17959,0x45801171;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e0001b]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 30;
+	  f damage_bonus_min_ranged = 30;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.66939e-007;
+	  p position = -3.70963,2,-7.57307,0x45801171;
+	}
+}
+[t:2w_bandit_melee,n:0x01e0001c]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_max = 50;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = -7.92467,0.199999,-6.66962,0x45801171;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e00023]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 30;
+	  f damage_bonus_min_ranged = 30;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.76431e-007;
+	  p position = 6.97385,2,1.96388,0x45801171;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e0002f]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 30;
+	  f damage_bonus_min_ranged = 30;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.00933e-007;
+	  p position = -9.7747,-2,3.30164,0x45801171;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e00030]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 30;
+	  f damage_bonus_min_ranged = 30;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.76431e-007;
+	  p position = 7.15025,2,-5.02514,0x45801171;
+	}
+}
+[t:2w_bandit_melee,n:0x01e0001d]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_max = 50;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 1.6711,0,-3.05624,0x54788e03;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e00026]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 30;
+	  f damage_bonus_min_ranged = 30;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.00933e-007;
+	  p position = 0.181465,0,1.50948,0x54788e03;
+	}
+}
+[t:skeleton_large,n:0x01e00070]
+{
+	[placement]
+	{
+	  p position = 1.38802,0.74677,2.23385,0x71154ced;
+	}
+}
+[t:skeleton_large,n:0x01e00071]
+{
+	[placement]
+	{
+	  p position = -1.03558,-1.09644,-2.83546,0x71154ced;
+	}
+}
+[t:skeleton_large,n:0x01e00072]
+{
+	[placement]
+	{
+	  p position = 2.28171,-1,-3.60994,0x71154ced;
+	}
+}
+[t:skeleton_large,n:0x01e00073]
+{
+	[placement]
+	{
+	  p position = 1.97743,0.342298,0.690238,0x71154ced;
+	}
+}
+[t:skeleton_large,n:0x01e00075]
+{
+	[placement]
+	{
+	  p position = -0.599468,0,1.12523,0xa8ce4b5c;
+	}
+}
+[t:skeleton_mercenary_archer,n:0x01e00083]
+{
+	[placement]
+	{
+	  p position = 0.0176506,0,0.54274,0xa8ce4b5c;
+	}
+}
+[t:skeleton_large,n:0x01e00074]
+{
+	[placement]
+	{
+	  p position = -3.94545,0.679508,1.89754,0x09e2a0ac;
+	}
+}
+[t:skeleton_mercenary_archer,n:0x01e00084]
+{
+	[placement]
+	{
+	  p position = -3.71104,1,3.55889,0x09e2a0ac;
+	}
+}
+[t:skeleton_mercenary_archer,n:0x01e00082]
+{
+	[placement]
+	{
+	  p position = 1.76065,1,1.54533,0xf0e79503;
+	}
+}
+[t:skeleton_mercenary_archer,n:0x01e00081]
+{
+	[placement]
+	{
+	  p position = 3.92467,-0.65,-1.55923,0xc7e17e73;
+	}
+}
+[t:skeleton_large,n:0x01e00076]
+{
+	[placement]
+	{
+	  p position = 2.42851,-1,-3.00903,0xe201e3ca;
+	}
+}
+[t:skeleton_large,n:0x01e00077]
+{
+	[placement]
+	{
+	  p position = 0.736168,-0.816455,-1.60497,0xe201e3ca;
+	}
+}
+[t:skeleton_large,n:0x01e00078]
+{
+	[placement]
+	{
+	  p position = 2.84055,-1,-0.294945,0xe201e3ca;
+	}
+}
+[t:2w_bandit_melee,n:0x01e0001e]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_max = 50;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.44118,0,-3.86168,0x44978a4f;
+	}
+}
+[t:2w_bandit_melee,n:0x01e0001f]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_max = 50;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.89386,0,1.91428,0x44978a4f;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e0002b]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 2.03623,-2.8,-3.95621,0xc077e981;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e0002c]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.90046,-2.45,-4.71989,0xc077e981;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e00027]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.00933e-007;
+	  p position = -2.25747,0,-0.812794,0x31921528;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e00028]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.00933e-007;
+	  p position = 1.5121,0,-0.597092,0x31921528;
+	}
+}
+[t:2w_bandit_melee,n:0x01e0002d]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 1.09867,0,-2.97142,0x31921528;
+	}
+}
+[t:2w_bandit_melee,n:0x01e0002e]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = -1.35019,0,-2.91244,0x31921528;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e00029]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.191811,-3.5,-0.992325,0x170582a2;
+	}
+}
