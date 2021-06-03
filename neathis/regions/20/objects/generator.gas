@@ -2,10 +2,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "skeleton_large";
+		child_template_name = "krug_dog_skeleton";
 	  x initial_command = 0x01E00092;
-	  i max_alive_children = 20;
-	  i num_children_incubating = 20;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
 	  f spawn_period = 10;
 	}
 	[gizmo]
@@ -22,10 +22,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "skeleton_large";
+		child_template_name = "krug_dog_skeleton";
 	  x initial_command = 0x01E00094;
-	  i max_alive_children = 20;
-	  i num_children_incubating = 20;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
 	  f spawn_period = 10;
 	}
 	[gizmo]
@@ -42,10 +42,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "skeleton_large";
+		child_template_name = "krug_dog_skeleton";
 	  x initial_command = 0x01E00095;
-	  i max_alive_children = 20;
-	  i num_children_incubating = 20;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
 	  f spawn_period = 10;
 	}
 	[gizmo]
@@ -81,10 +81,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "skeleton_large";
+		child_template_name = "krug_dog_skeleton";
 	  x initial_command = 0x01E00099;
-	  i max_alive_children = 20;
-	  i num_children_incubating = 20;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
 	  f spawn_period = 10;
 	}
 	[gizmo]
@@ -101,10 +101,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "skeleton_large";
+		child_template_name = "krug_dog_skeleton";
 	  x initial_command = 0x01E0009D;
-	  i max_alive_children = 20;
-	  i num_children_incubating = 20;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
 	  f spawn_period = 10;
 	}
 	[gizmo]
@@ -121,10 +121,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "skeleton_large";
+		child_template_name = "krug_dog_skeleton";
 	  x initial_command = 0x01E000A3;
-	  i max_alive_children = 20;
-	  i num_children_incubating = 20;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
 	  f spawn_period = 10;
 	}
 	[gizmo]
@@ -141,10 +141,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "skeleton_large";
+		child_template_name = "krug_dog_skeleton";
 	  x initial_command = 0x01E000A0;
-	  i max_alive_children = 20;
-	  i num_children_incubating = 20;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
 	  f spawn_period = 10;
 	}
 	[gizmo]
@@ -295,6 +295,20 @@
 	  p position = 1.13896,0,0.0695,0xc83c051f;
 	}
 }
+[t:generator_generic,n:0x01e00044]
+{
+	[generator_basic]
+	{
+		child_template_name = "wraith_lesser";
+	  i num_children_incubating = 30;
+	  f spawn_period = 10;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.4632,0,-1.40486,0xc40be9d2;
+	}
+}
 [t:generator_generic,n:0x01e00045]
 {
 	[generator_basic]
@@ -307,20 +321,6 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 0.161825,0,0.314133,0x071400ff;
-	}
-}
-[t:generator_generic,n:0x01e00044]
-{
-	[generator_basic]
-	{
-		child_template_name = "wraith_lesser";
-	  i num_children_incubating = 30;
-	  f spawn_period = 10;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 11.348,-2,1.93278,0x45801171;
 	}
 }
 [t:generator_generic,n:0x01e0006b]
@@ -381,26 +381,6 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -1.55896,0,-1.48761,0x1e2a669c;
-	}
-}
-[t:generator_generic,n:0x01e0008d]
-{
-	[generator_basic]
-	{
-		child_template_name = "skeleton_large";
-	  x initial_command = 0x01E00097;
-	  i max_alive_children = 20;
-	  i num_children_incubating = 20;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 0.6,0.5,0.3;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.79362,-1,-2.83624,0x610f9772;
 	}
 }
 [t:generator_generic,n:0x01e00059]
@@ -485,10 +465,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "skeleton_large";
+		child_template_name = "krug_dog_skeleton";
 	  x initial_command = 0x01E00091;
-	  i max_alive_children = 20;
-	  i num_children_incubating = 20;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
 	  f spawn_period = 10;
 	}
 	[gizmo]
@@ -636,5 +616,73 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 0.107119,0,1.16843,0x52380e74;
+	}
+}
+[t:generator_generic,n:0x01e00422]
+{
+	[generator_basic]
+	{
+		child_template_name = "2w_skeleton";
+	  x initial_command = 0x01E00428;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
+	  f spawn_period = 2;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 3.83955,0,-2.53195,0x5ef9d791;
+	}
+}
+[t:generator_generic,n:0x01e00423]
+{
+	[generator_basic]
+	{
+		child_template_name = "2w_skeleton";
+	  x initial_command = 0x01E00425;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
+	  f spawn_period = 2;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.98023e-008;
+	  p position = -2.33487,0,1.22241,0xe6002ce6;
+	}
+}
+[t:generator_generic,n:0x01e00424]
+{
+	[generator_basic]
+	{
+		child_template_name = "2w_skeleton";
+	  x initial_command = 0x01E0041F;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
+	  f spawn_period = 2;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.59147,0,0.3134,0xe6002ce6;
+	}
+}
+[t:generator_generic,n:0x01e0008d]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog_skeleton";
+	  x initial_command = 0x01E00097;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 0.6,0.5,0.3;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.79362,-1,-2.83624,0x610f9772;
 	}
 }

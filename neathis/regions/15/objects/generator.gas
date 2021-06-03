@@ -2,7 +2,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "swamp_witch_reveal";
+		child_template_name = "swamp_witch";
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
@@ -18,15 +21,18 @@
 	}
 	[placement]
 	{
-	  q orientation = 2.21271e-006,1,5.47905e-007,-7.45058e-007;
-	  p position = 1.07072,0,2.89503,0xf2c696e7;
+	  q orientation = -1.95205e-006,-0.707106,1.17719e-006,0.707107;
+	  p position = -3.53082,0,0.630013,0x16cfaa6c;
 	}
 }
 [t:generator_generic,n:0x01900035]
 {
 	[generator_basic]
 	{
-		child_template_name = "swamp_witch_reveal";
+		child_template_name = "swamp_witch";
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
@@ -38,7 +44,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "swamp_witch_reveal";
+		child_template_name = "swamp_witch";
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
@@ -50,11 +59,11 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "zombie_03";
+		child_template_name = "swamp_witch";
 	  x initial_command = 0x01900023;
-	  i max_alive_children = 4;
-	  i num_children_incubating = 16;
-	  f spawn_period = 12;
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
@@ -81,11 +90,11 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "zombie_02";
+		child_template_name = "swamp_witch";
 	  x initial_command = 0x01900020;
-	  i max_alive_children = 4;
-	  i num_children_incubating = 16;
-	  f spawn_period = 12;
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
@@ -97,11 +106,11 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "grave_crawler";
+		child_template_name = "swamp_witch";
 	  x initial_command = 0x01900039;
-	  i max_alive_children = 5;
-	  i num_children_incubating = 5;
-	  f spawn_period = 20;
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
@@ -113,11 +122,11 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "zombie_01";
+		child_template_name = "swamp_witch";
 	  x initial_command = 0x0190001C;
-	  i max_alive_children = 4;
-	  i num_children_incubating = 16;
-	  f spawn_period = 12;
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
@@ -129,7 +138,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "swamp_witch_reveal";
+		child_template_name = "swamp_witch";
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
@@ -141,7 +153,10 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "swamp_witch_reveal";
+		child_template_name = "swamp_witch";
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
@@ -153,11 +168,11 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "grave_crawler";
+		child_template_name = "swamp_witch";
 	  x initial_command = 0x0190003D;
-	  i max_alive_children = 5;
-	  i num_children_incubating = 5;
-	  f spawn_period = 20;
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
@@ -169,11 +184,11 @@
 {
 	[generator_basic]
 	{
-		child_template_name = "zombie_headless";
+		child_template_name = "swamp_witch";
 	  x initial_command = 0x01900028;
-	  i max_alive_children = 4;
-	  i num_children_incubating = 16;
-	  f spawn_period = 12;
+	  i max_alive_children = 1;
+	  i num_children_incubating = 4;
+	  f spawn_period = 10;
 	}
 	[placement]
 	{
