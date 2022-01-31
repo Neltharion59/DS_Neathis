@@ -1,0 +1,23 @@
+[shop]
+{
+	[text*]
+	{
+		choice = more;
+	  i order = 0;
+		screen_text = "Hello there! This is the cyclops version of animal farm. They keep the water creeps in here, and come and pick one when they are hungry. Quite fascinating, if you ask me. Perhaps we could be inspired by this approach, should humans ever have to resort to living underground.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = shop;
+	  i order = 1;
+		screen_text = "On your quest to slaughter the cyclopses? I knew that had to happen. Since they became hostile toward the dwarves, they grew too aggressive towards travelers and traders. It was only a matter of time until a regiment of soldiers or adventurers comes and teaches them a lesson. For me it means end of business. My goods were too interesting to the cyclopses and having butchered their relations to the kingdom, I was the only source of new items to them. Ah, I guess I will have to find somewhere else to trade. How about I start with you? Surely you have collected some valuables on you way here.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Need anything else?";
+	  f scroll_rate = 10.000000;
+	}
+}
