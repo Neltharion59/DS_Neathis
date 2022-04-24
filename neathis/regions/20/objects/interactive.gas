@@ -15,6 +15,18 @@
 		use_point_scids = 0x01e000a9;
 	}
 }
+[t:door_grs_peasant_left,n:0x01e006f5]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[placement]
+	{
+	  q orientation = -0.696364,-0.122788,-0.122788,0.696364;
+	  p position = 4.75755,2,-1.50646,0x45801171;
+	}
+}
 [t:door_glb_keep_01,n:0x01e001de]
 {
 	[aspect]
@@ -42,41 +54,99 @@
 }
 [t:door_grs_peasant_left,n:0x01e001fd]
 {
-	[aspect]
+	[common]
 	{
-	  b is_selectable = false;
+		dev_instance_text = "RENTED HOME OF LORD BOLINGAR AND DWARVES";
 	}
 	[placement]
 	{
 	  q orientation = 0,0.173648,0,0.984808;
 	  p position = -0.0659637,-3.65,-3.19095,0xbf97a799;
+		use_point_scids = 0x01e00587,0x01e00588;
 	}
 }
 [t:door_grs_peasant_left,n:0x01e001fc]
 {
-	[aspect]
+	[common]
 	{
-	  b is_selectable = false;
+		dev_instance_text = "RENTED HOME OF SIKRA AND TRAVELER MERCHANT. BORYEV SLEEPS IN BARRACKS";
 	}
 	[placement]
 	{
 	  q orientation = 0,0.173648,0,0.984808;
 	  p position = -0.0475311,-3.65,-3.2469,0x6daf9b6f;
+		use_point_scids = 0x01e00585,0x01e00586;
+	}
+}
+[t:door_grs_peasant_left,n:0x01e00579]
+{
+	[common]
+	{
+		dev_instance_text = "HOME OF COUNCIL MAIN AND WARRIOR IN TAVERN";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.139173,0,-0.990268;
+	  p position = -0.335327,-3,-3.62453,0x27c68e6c;
+		use_point_scids = 0x01e00595,0x01e00596;
 	}
 }
 [t:door_grs_peasant_left,n:0x01e001fe]
 {
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
 	[placement]
 	{
 	  q orientation = 0,0.173648,0,0.984808;
 	  p position = -0.0786819,-3.65,-3.23096,0xe20d59f1;
+		use_point_scids = 0x01e00589,0x01e0058a;
 	}
 }
-[t:door_grs_peasant_left,n:0x01e001fb]
+[t:door_grs_peasant_left,n:0x01e0057a]
+{
+	[common]
+	{
+		dev_instance_text = "HOME OF WOMAN DRINKING IN TAVERN AND TAVERN OWNER";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.139173,0,-0.990268;
+	  p position = -0.364273,-3,-3.60643,0x1cb457b8;
+		use_point_scids = 0x01e00597,0x01e00598;
+	}
+}
+[t:door_glb_keep_01,n:0x01e007dd]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[door_basic]
+	{
+	  x second_door = 0x01E007DE;
+	}
+	[placement]
+	{
+	  p position = -0.0222778,-3.5,0.0343094,0xfbca357d;
+		use_point_scids = 0x01e007df,0x01e007e0;
+	}
+}
+[t:door_glb_keep_right_01,n:0x01e007de]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[door_basic]
+	{
+	  x second_door = 0x01E007DD;
+	}
+	[placement]
+	{
+	  q orientation = 0,-3.23444e-007,0,1;
+	  p position = -0.0515289,-3.5,0.0355988,0xfbca357d;
+		use_point_scids = 0x01e007df,0x01e007e0;
+	}
+}
+[t:door_glb_keep_01,n:0x01e001cf]
 {
 	[aspect]
 	{
@@ -84,11 +154,11 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.173648,0,0.984808;
-	  p position = -0.101929,-3.65,-3.24102,0xac40477a;
+	  p position = -0.0499954,-3.5,0.917526,0x756d8d64;
+		use_point_scids = 0x01e000a9;
 	}
 }
-[t:door_grs_peasant_left,n:0x01e001e6]
+[t:door_glb_keep_right_01,n:0x01e001d1]
 {
 	[aspect]
 	{
@@ -96,20 +166,31 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.173648,0,0.984808;
-	  p position = -0.0509872,-3.65,-3.16301,0x59bd3d08;
+	  q orientation = 0,-3.23444e-007,0,1;
+	  p position = -0.00279236,-3.5,0.934677,0x756d8d64;
+		use_point_scids = 0x01e000a9;
 	}
 }
-[t:door_glb_woodfence_left_01,n:0x01e000ed]
+[t:door_grs_peasant_left,n:0x01e0056b]
 {
-	[aspect]
+	[placement]
 	{
-	  b is_selectable = false;
+	  q orientation = 0,0.707107,0,-0.707107;
+	  p position = 11.7135,-2.7,-0.0999451,0xc1f08538;
+		use_point_scids = 0x01e0057d,0x01e0057e;
+	}
+}
+[t:door_grs_peasant_left,n:0x01e0057b]
+{
+	[common]
+	{
+		dev_instance_text = "WOMAN OUTSIDE THE COOP";
 	}
 	[placement]
 	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.33418,-0.8,0.41021,0xaf0e3b04;
+	  q orientation = 0,0.139173,0,-0.990268;
+	  p position = -0.345425,-3,-3.60176,0x11319524;
+		use_point_scids = 0x01e00599,0x01e0059a;
 	}
 }
 [t:door_glb_woodfence_right_01,n:0x01e000ee]
@@ -122,6 +203,45 @@
 	{
 	  q orientation = 0,-0.819152,0,0.573577;
 	  p position = 1.79048,-0.8,0.750816,0xb1822289;
+	}
+}
+[t:door_grs_peasant_left,n:0x01e001e6]
+{
+	[common]
+	{
+		dev_instance_text = "DWARVES";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.173648,0,0.984808;
+	  p position = -0.0509872,-3.65,-3.16301,0x59bd3d08;
+		use_point_scids = 0x01e0058d,0x01e0058e;
+	}
+}
+[t:door_grs_peasant_left,n:0x01e0057c]
+{
+	[common]
+	{
+		dev_instance_text = "COUNCIL WOMAN HOME";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.139173,0,-0.990268;
+	  p position = -0.362457,-3,-3.58066,0x577ac29b;
+		use_point_scids = 0x01e00591,0x01e00592;
+	}
+}
+[t:door_grs_peasant_left,n:0x01e001e2]
+{
+	[common]
+	{
+		dev_instance_text = "HOME OF COUNCI MAN AND SCRIBE WOMAN.";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.173648,0,0.984808;
+	  p position = -0.0521469,-3.65,-3.18228,0xeac3552a;
+		use_point_scids = 0x01e00583,0x01e00584;
 	}
 }
 [t:rack_csl_armor_gen_01,n:0x01e001eb]
@@ -220,31 +340,51 @@
 	  p position = 4.98823,-3.1,1.07268,0x8f4cbe68;
 	}
 }
-[t:door_grs_peasant_left,n:0x01e001e2]
+[t:door_grs_peasant_left,n:0x01e00569]
 {
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
 	[placement]
 	{
-	  q orientation = 0,0.173648,0,0.984808;
-	  p position = -0.0521469,-3.65,-3.18228,0xeac3552a;
+	  q orientation = 0,-0.173648,0,0.984808;
+	  p position = 3.97992,-3.1,-7.17052,0x8f4cbe68;
+		use_point_scids = 0x01e0057f,0x01e00580;
 	}
 }
 [t:door_grs_peasant_left,n:0x01e001f2]
 {
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
 	[placement]
 	{
 	  q orientation = 0,0.173648,0,0.984808;
 	  p position = -0.0602608,-3.65,-3.20481,0xbe11c26b;
+		use_point_scids = 0x01e0058f,0x01e00590;
 	}
 }
-[t:door_glb_keep_01,n:0x01e001cf]
+[t:door_grs_peasant_left,n:0x01e001fb]
+{
+	[common]
+	{
+		dev_instance_text = "WOMAN ON BED, MAN DRINKING WITH DWARVES";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.173648,0,0.984808;
+	  p position = -0.101929,-3.65,-3.24102,0xac40477a;
+		use_point_scids = 0x01e0058b,0x01e0058c;
+	}
+}
+[t:door_grs_peasant_left,n:0x01e00573]
+{
+	[common]
+	{
+		dev_instance_text = "HOME OF COUPLE DRINKING IN TAVERN";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.139173,0,-0.990268;
+	  p position = -0.390076,-3,-3.63516,0xd00b934a;
+		use_point_scids = 0x01e00593,0x01e00594;
+	}
+}
+[t:door_glb_woodfence_left_01,n:0x01e000ed]
 {
 	[aspect]
 	{
@@ -252,20 +392,16 @@
 	}
 	[placement]
 	{
-	  p position = -0.0499954,-3.5,0.917526,0x756d8d64;
-		use_point_scids = 0x01e000a9;
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.33418,-0.8,0.41021,0xaf0e3b04;
 	}
 }
-[t:door_glb_keep_right_01,n:0x01e001d1]
+[t:door_grs_peasant_left,n:0x01e00565]
 {
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
 	[placement]
 	{
-	  q orientation = 0,-3.23444e-007,0,1;
-	  p position = -0.00279236,-3.5,0.934677,0x756d8d64;
-		use_point_scids = 0x01e000a9;
+	  q orientation = 0,-0.382683,0,-0.92388;
+	  p position = -4.75035,-4.25,-2.75269,0x0a491661;
+		use_point_scids = 0x01e00581,0x01e00582;
 	}
 }

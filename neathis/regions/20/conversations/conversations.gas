@@ -1,3 +1,51 @@
+[barkeep]
+{
+	[text*]
+	{
+		screen_text = "Be slow with your liquor, friend. We do not know how much longer we'll be under siege. I only serve two mugs a customer per a day.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[council_main]
+{
+	[text*]
+	{
+		screen_text = "Any individual crushing the walking bones into dust is most welcome here. However, I must ask you to leave the council room. There are more concerns to our safety than just destroying the necromancer playthings. Secrecy is one of them.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[dwarf_01]
+{
+	[text*]
+	{
+		screen_text = "I tell you, if we just ask the smith to fashion us some decent pickaxes, we may carve a decent cave into the mountain. The townspeople would be able to escape to safety. Four dwarves can cut through stone wall like through butter.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[dwarf_02]
+{
+	[text*]
+	{
+		screen_text = "I really miss tearing some quality iron from the mountain's stone cold clutches. Sitting in tavern only has its charm after a hard day's work.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[dwarf_03]
+{
+	[text*]
+	{
+		screen_text = "We smashed a good load of skeletons to pieces yesterday. Sadly, we cannot charge into them every day. This siege is about endurance, not a short-term berserk rage. After three days of fighting in full armor, you are bound to fall by exhaustion.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[dwarf_04]
+{
+	[text*]
+	{
+		screen_text = "Hey, traveler, a new face in the town, eh? Hope you'll join us the next time we charge at them. Hope you have a decent nature mage on you, some of the townsfolk have already perished during the fighting.";
+	  f scroll_rate = 10.000000;
+	}
+}
 [join_bolingar]
 {
 	[text*]
@@ -30,7 +78,64 @@
 	[text*]
 	{
 		choice = potential_member;
-		screen_text = "You are the one who destroyed the latest offensive of the undead. I watched the battle, but Boryev would not let us join. At least I redirected enemy blows aimed at our soldier. Such interference is small enough to pass unnoticed by enemy sorcerrers. But under protection of someone as powerful as you, I might be able to join the real fight. What do you say?";
+		screen_text = "You are the one who destroyed the latest offensive of the undead. I watched the battle, but Boryev would not let us join. At least I redirected enemy blows aimed at our soldiers. Such interference is small enough to pass unnoticed by enemy sorcerers. But under protection of someone as powerful as you, I might be able to join the real fight. What do you say?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[join_ulfgrim]
+{
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "We expected lively action when we arrived here, but the bloody mayor said our names were too controversial to be connected with his name, so we waste our days here. Breaking out in any direction is out of question, taking on those undead armies without a healer and a couple of rangers would soon get us killed. Say, how about you take us with you? You seem like worthy partner for such a feat.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_01]
+{
+	[text*]
+	{
+		screen_text = "Everyone's worried about the day the undead break the gates. I'm more concerned about the day we run out of ale.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_02]
+{
+	[text*]
+	{
+		screen_text = "If you need a place to sleep, my barn is open to guests. Just do not disturb the animals.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_03]
+{
+	[text*]
+	{
+		screen_text = "I sure could use an extra mead. Perhaps you could sell me your today's dose?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_04]
+{
+	[text*]
+	{
+		screen_text = "I can't believe we had a group of complete strangers fight our battle. We should be out there, crushing skeleton after skeleton, but no, we are only allowed to charge forward every three days. I don't want to think about what could have happened if you weren't out there.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_05]
+{
+	[text*]
+	{
+		screen_text = "Thank you for your help, friend. Later we may find you a permanent position in our garrison, if you wish.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_06]
+{
+	[text*]
+	{
+		screen_text = "Normally you might even get arrested for interrupting a council meeting. These days, we all just enjoy anything unusual happening in our days.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -79,12 +184,51 @@
 	  f scroll_rate = 10.000000;
 	}
 }
-[join_ulfgrim]
+[woman_01]
 {
 	[text*]
 	{
-		choice = potential_member;
-		screen_text = "We expected lively action when we arrived here, but the bloody mayor said our names were too controversial to be connected with his name, so we waste our days here. Breaking out in any direction is out of question, taking on those undead armies without a healer and a couple of rangers would soon get us killed. Say, how about you take us with you? You seem like worthy partner for such a feat.";
+		screen_text = "Peaceful, isn't it? If all soldiers learnt to love plants and relax, they might fight as good as I did yesterday. The necromancer never saw my iceshard coming.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[woman_02]
+{
+	[text*]
+	{
+		screen_text = "First, we were excited to all we can to help the city hold out. Stocking on everything that might be useful, throwing rocks off the wall at the skeletons...But the enthusiasm eventually faded. Now it's just tiring routine of not being able to do pretty much anything.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[woman_03]
+{
+	[text*]
+	{
+		screen_text = "My husband died during the first raid. We were unprepared, and a few skeletons managed to enter the city. He fought bravely to defend me, but as his enemies fell, he fell too. If we were wary since the first reports of skeletons in the woods, he might have lived. But would life in constant military alert really be a life worth living? I am not sure. I am not sure whom to be angry at, either. Our guards? Myself, because I wasn't prepared to stand by him in the fight? Ah, who's to know?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[woman_04]
+{
+	[text*]
+	{
+		screen_text = "Limiting the ale per customer is necessary, but it saddens me heavily to see fighting man not get drunk enough after a full day's fight. How long can they last that way?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[woman_05]
+{
+	[text*]
+	{
+		screen_text = "For the love of Azunai, a new face!";
+	  f scroll_rate = 10.000000;
+	}
+}
+[woman_06]
+{
+	[text*]
+	{
+		screen_text = "Please, no fast talking, I will not be able to to scribe it down correctly.";
 	  f scroll_rate = 10.000000;
 	}
 }

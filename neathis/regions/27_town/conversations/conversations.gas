@@ -1,0 +1,144 @@
+[barkeep]
+{
+	[text*]
+	{
+		screen_text = "Want a cold one? I better use up all the ale I have here. It would be a shame if it fell into undead hands, right?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_01]
+{
+	[text*]
+	{
+	  i order = 0;
+		screen_text = "Ah, hello there. We do not get many travelers these days. Are you here to take shelter in our castle? Most supplies we had in our cellars are now stored there. Everyone is making preparations, you might as well help them.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		screen_text = "I'm going to keep tending to the crops for as long as possible. If the undead do not manage to climb the cliffs, we will be in for a hard winter, as we will have eaten all of our supplies by then.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_02]
+{
+	[text*]
+	{
+		screen_text = "I just hope we will not have to use the shelter.I dread to kill all the pigs so young.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_03]
+{
+	[text*]
+	{
+		screen_text = "It may seem like we have plenty of supplies in the castle, but let me tell you, we may have last for years. That won't be enough by far.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_04]
+{
+	[text*]
+	{
+		screen_text = "Full armor on. You're here about the undead situation? Well, move along. I'm done listening about it. It's all everyine here talk about.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[man_05]
+{
+	[text*]
+	{
+		screen_text = "They say if you stare at the void for too long, it will stare back. Someone has to keep an eye on undead, thought. Once they find a way up the collapsed cliff, we will have to run fast.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_general]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "I've already had most of my wares hauled to the castle, but I still have some supplies here. Would you like anything you see?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[smith]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Now that we're going to take shelter in the castle, I need to make supplies of weapons for fending off armies beneath walls. Really long mauls, morningstarts, throwing spears and hammers, anything will do. In the meanwhile, would you like to buy something more conventional?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[smith_02]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Hello, the blacksmith is busy preparing weaponry for the siege. Perhaps I might interest you with a few pieces not necessary for our preparations?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[woman_01]
+{
+	[text*]
+	{
+		choice = more;
+	  i order = 0;
+		screen_text = "Ah, hello! Are you coming from the hot springs? You must have met my sister then, keeping the watch over the road. Are they alright?";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		choice = more;
+	  i order = 1;
+		screen_text = "I'm glad to hear that. I'm so afraid that the undead will come from that direction, too. We had our road collapsed, so unless they have undead spiders, I guess we are safe. However, anything could crawll out of the springs. I swear, if anything undead comes from that direction, I'm never setting a foot in the springs again.";
+	  f scroll_rate = 10.000000;
+	}
+	[text*]
+	{
+		screen_text = "I have to wonder - if you kill an undead, does it come back undead again?";
+	  f scroll_rate = 10.000000;
+	}
+}
+[woman_02]
+{
+	[text*]
+	{
+		screen_text = "Fluffy, Duffy, Muffy N,... I was looking forward to seeing them grow up. Now, when the undead begin their move, we will slaughter them, either to save them from the torture of the undead or to keep us fed one more week.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[woman_03]
+{
+	[text*]
+	{
+		screen_text = "Nooo, do not start conversation. It's going to be about the undead.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[woman_04]
+{
+	[text*]
+	{
+		screen_text = "Yet another miller girl, nothing exciting to see here. Sorry if I'm a little grumpy, but I'm busy moving my supplies to the castle.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[woman_06]
+{
+	[text*]
+	{
+		screen_text = "Unfortunately, we currently do not accept guests. There is an undead horde flowing from the kingdom's direction. We collapsed the cliff and there is currently no entry into the town from that direction, but we are preparing for a siege. You're welcome to help in stocking supplies and if it comes to that, you may take shelter here with us. We are preparing to accept refugees, too.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_magic]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Cooking will be a tough task once the supplies start running short. Fortunately, my summon spells should keep us going for much longer than the usual supplies could. Before that happens, may I interest you in some of my magic wares?";
+	  f scroll_rate = 10.000000;
+	}
+}
