@@ -1,3 +1,59 @@
+[t:2w_jeriah,n:0x02800634]
+{
+	[common]
+	{
+		screen_name = "Torrel";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_general;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.78417,-4.25,-0.731689,0x560e2ca2;
+		use_point_scids = 0x0280062a;
+	}
+}
+[t:2w_yadze,n:0x02800623]
+{
+	[common]
+	{
+		screen_name = "Kwoyn";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = smith_02;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_bl_f_g_c_low;
+			es_feet = bo_bo_le_light;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.986286,0,-0.165047;
+	  p position = 4.05804,-3.1,-0.430267,0x26598aea;
+		use_point_scids = 0x02800629;
+	}
+}
 [t:2w_merchant_blacksmith_glacern,n:0x02800626]
 {
 	[common]
@@ -3188,61 +3244,5 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -3.75366,0,-3.77966,0x133c96b3;
-	}
-}
-[t:2w_yadze,n:0x02800623]
-{
-	[common]
-	{
-		screen_name = "Kwoyn";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = smith_02;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_bl_f_g_c_low;
-			es_feet = bo_bo_le_light;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.986286,0,-0.165047;
-	  p position = 4.05804,-3.1,-0.430267,0x26598aea;
-		use_point_scids = 0x02800629;
-	}
-}
-[t:2w_jeriah,n:0x02800634]
-{
-	[common]
-	{
-		screen_name = "Torrel";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_general;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.78417,-4.25,-0.731689,0x560e2ca2;
-		use_point_scids = 0x0280062A;
 	}
 }

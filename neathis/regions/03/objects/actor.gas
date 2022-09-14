@@ -1088,12 +1088,8 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 7;
-	  f damage_bonus_max_nmagic = 7;
-	  f damage_bonus_max_ranged = 7;
-	  f damage_bonus_min_cmagic = 3;
-	  f damage_bonus_min_nmagic = 3;
-	  f damage_bonus_min_ranged = 3;
+	  f damage_bonus_max_nmagic = 25;
+	  f damage_bonus_min_nmagic = 15;
 	}
 	[common]
 	{
@@ -1348,10 +1344,10 @@
 			es_chest = bd_ro_m_g_c_001;
 			es_feet = bo_bo_le_f_g_c_avg;
 			es_forearms = gl_ra_gl_le_f_g_c_fin;
-			es_spellbook = book_glb_magic_01;
 		}
 		[other]
 		{
+			il_active_primary_spell = spell_zap;
 			il_main = spell_healing_hands;
 			il_main = spell_resurrect;
 		}
@@ -1668,8 +1664,7 @@
 		{
 			es_chest = bd_sl_f_g_c_fun;
 			es_head = he_ca_ro_slope_01;
-			es_spellbook = book_glb_magic_01;
-			es_weapon_hand = dg_g_c_1h_avg;
+			es_weapon_hand = hm_g_c_1h1m_avg;
 		}
 		[other]
 		{
@@ -1697,6 +1692,7 @@
 	}
 	[placement]
 	{
+	  q orientation = 0,1,0,-1.66939e-007;
 	  p position = 1.24281,0,-1.27131,0x0df44142;
 	}
 }
@@ -1853,11 +1849,12 @@
 	}
 	[inventory]
 	{
+		selected_active_location = il_active_melee_weapon;
 		[equipment]
 		{
 			es_chest = bd_le_f_g_c_fun;
 			es_head = he_ca_ro_thin_04;
-			es_spellbook = book_glb_magic_01;
+			es_weapon_hand = ax_g_c_1h1b_low;
 		}
 		[other]
 		{
@@ -2246,6 +2243,27 @@
 	  p position = 0.84544,0,-2.8426,0x262ace06;
 	}
 }
+[t:skrubb_farm,n:0x00400083]
+{
+	[placement]
+	{
+	  p position = 1.28882,1.90735e-006,1.37111,0x71c8b8b6;
+	}
+}
+[t:skrubb_farm,n:0x00400084]
+{
+	[placement]
+	{
+	  p position = -0.346317,1.90735e-006,1.28823,0x71c8b8b6;
+	}
+}
+[t:skrubb_farm,n:0x00400085]
+{
+	[placement]
+	{
+	  p position = 1.85419,1.90735e-006,-0.942453,0x71c8b8b6;
+	}
+}
 [t:skrubb,n:0x00400051]
 {
 	[aspect]
@@ -2273,27 +2291,6 @@
 	[placement]
 	{
 	  p position = -1.74811,0,3.80132,0xd4e99a8b;
-	}
-}
-[t:skrubb_farm,n:0x00400083]
-{
-	[placement]
-	{
-	  p position = 1.28882,1.90735e-006,1.37111,0x71c8b8b6;
-	}
-}
-[t:skrubb_farm,n:0x00400084]
-{
-	[placement]
-	{
-	  p position = -0.346317,1.90735e-006,1.28823,0x71c8b8b6;
-	}
-}
-[t:skrubb_farm,n:0x00400085]
-{
-	[placement]
-	{
-	  p position = 1.85419,1.90735e-006,-0.942453,0x71c8b8b6;
 	}
 }
 [t:skrubb_farm,n:0x00400042]
