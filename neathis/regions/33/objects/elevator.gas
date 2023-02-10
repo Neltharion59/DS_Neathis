@@ -1,0 +1,38 @@
+[t:elevator_2s_1c_2n,n:0x02f0000d]
+{
+	[elevator_2s_1c_2n]
+	{
+	  i connect_door_level1 = 9;
+	  i connect_door_level2 = 9;
+	  x connect_node_level1 = 0xCB5C87F0;
+	  x connect_node_level2 = 0x528B283C;
+	  f duration = 4;
+	  i elevator_door_level1 = 2;
+	  i elevator_door_level2 = 2;
+	  x elevator_node = 0x6F54F661;
+		material = "stone";
+	}
+	[placement]
+	{
+	  p position = -1.63182,0.249998,-0.350648,0x6f54f661;
+	}
+}
+[t:elevator_2s_1c_2n,n:0x02f00013]
+{
+	[elevator_2s_1c_2n]
+	{
+	  i connect_door_level1 = 9;
+	  i connect_door_level2 = 10;
+	  x connect_node_level1 = 0xB1E221CB;
+	  x connect_node_level2 = 0xB1E221CB;
+	  f duration = 5;
+	  i elevator_door_level1 = 1;
+	  i elevator_door_level2 = 1;
+	  x elevator_node = 0xF56CD088;
+		material = "stone";
+	}
+	[placement]
+	{
+	  p position = 3.80716,0,1.42866,0x9cb97581;
+	}
+}

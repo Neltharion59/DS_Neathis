@@ -421,8 +421,8 @@
 		}
 		[other]
 		{
-			il_main = spell_healing_hands;
 			il_main = spell_resurrect;
+			il_main = spell_healing_hands;
 		}
 	}
 	[mind]
@@ -1344,10 +1344,10 @@
 			es_chest = bd_ro_m_g_c_001;
 			es_feet = bo_bo_le_f_g_c_avg;
 			es_forearms = gl_ra_gl_le_f_g_c_fin;
+			es_spellbook = book_glb_magic_01;
 		}
 		[other]
 		{
-			il_active_primary_spell = spell_zap;
 			il_main = spell_healing_hands;
 			il_main = spell_resurrect;
 		}
@@ -2159,6 +2159,10 @@
 }
 [t:gremal_boss_01,n:0x0040006c]
 {
+	[defend]
+	{
+	  f defense = 10;
+	}
 	[placement]
 	{
 	  p position = -0.579479,-1.90735e-006,-3.16978,0x16d6f2b2;
