@@ -11,7 +11,17 @@
 {
 	[text*]
 	{
+		choice = shop;
 		screen_text = "Buy some potion, sell some loot. It's not gonna matter in a few days.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_03]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "It's difficult to fight while wispering invincibility spell the entire time, but what else can I do? Maybe you want to get your spell too?";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -92,15 +102,6 @@
 	[text*]
 	{
 		screen_text = "I swear we couldn't smell worse if we were dead.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[shop_03]
-{
-	[text*]
-	{
-		choice = shop;
-		screen_text = "It's difficult to fight while wispering invincibility spell the entire time, but what else can I do? Maybe you want to get your spell too?";
 	  f scroll_rate = 10.000000;
 	}
 }

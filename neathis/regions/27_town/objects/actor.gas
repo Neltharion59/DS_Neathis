@@ -1,14 +1,24 @@
-[t:2w_jeriah,n:0x02800634]
+[t:2w_verrus,n:0x02800634]
 {
 	[common]
 	{
-		screen_name = "Torrel";
+		screen_name = "Liarth";
 	}
 	[conversation]
 	{
 		[conversations]
 		{
 			* = shop_general;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ra_le_r_g_o_fin;
+			es_feet = bo_bo_le_light;
+			es_forearms = gl_gl_le_f_g_c_avg;
+			es_head = he_ra_ca_ro_flat_02;
 		}
 	}
 	[mind]
@@ -1263,11 +1273,11 @@
 	  p position = 1.32886,-3.65,1.27991,0x50a40b53;
 	}
 }
-[t:2w_onoc,n:0x02800641]
+[t:2w_azunite_priestess_lilyaire_prieve,n:0x02800641]
 {
 	[common]
 	{
-		screen_name = "Therezeere";
+		screen_name = "Theriath";
 	}
 	[conversation]
 	{
@@ -1275,6 +1285,19 @@
 		{
 			* = shop_magic;
 		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ra_ro_m_g_c_089;
+			es_feet = bo_bo_le_light;
+			es_head = he_ca_ro_wizard_04;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
 	}
 	[placement]
 	{

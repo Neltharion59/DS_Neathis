@@ -6,7 +6,7 @@
 		{
 			[*]
 			{
-				action* = mood_change("map_world_nt_r1_2");
+				action* = mood_change("map_world_nt_r1_1");
 			  b can_self_destruct = true;
 				condition* = party_member_within_bounding_box(3.500000,1.000000,0.400000,"on_every_enter");
 			  f delay = 0.000000;
@@ -599,7 +599,7 @@
 		{
 			[*]
 			{
-				action* = mood_change("map_world_nt_r1_2");
+				action* = mood_change("map_world_nt_r1_1");
 			  b can_self_destruct = true;
 				condition* = party_member_within_bounding_box(1.000000,1.000000,0.100000,"on_every_enter");
 			  f delay = 0.000000;
@@ -1414,6 +1414,13 @@
 	  p position = 0.631134,-3.65,-3.36532,0x73a7fd22;
 	}
 }
+[t:use_point,n:0x0300000b]
+{
+	[placement]
+	{
+	  p position = 0.993164,-3.65,-2.52775,0xa35bc476;
+	}
+}
 [t:trigger_fade_nodes_global_box,n:0x03000079]
 {
 	[common]
@@ -1853,7 +1860,7 @@
 		{
 			[*]
 			{
-				action* = mood_change("map_world_nt_r1_2");
+				action* = mood_change("map_world_nt_r1_1");
 			  b can_self_destruct = true;
 				condition* = party_member_within_bounding_box(10.000000,1.000000,0.400000,"on_every_enter");
 			  f delay = 0.000000;

@@ -1,0 +1,40 @@
+[t:elevator_2s_1c_2n,n:0x03300795]
+{
+	[elevator_2s_1c_2n]
+	{
+	  i connect_door_level1 = 13;
+	  i connect_door_level2 = 2;
+	  x connect_node_level1 = 0x90F41140;
+	  x connect_node_level2 = 0x585791CC;
+	  f duration = 5;
+	  i elevator_door_level1 = 4;
+	  i elevator_door_level2 = 4;
+	  x elevator_node = 0x7AD12166;
+		material = "dc_pulley";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.7807,0.5,3.21765,0x90f41140;
+	}
+}
+[t:elevator_2s_1c_2n,n:0x03300799]
+{
+	[elevator_2s_1c_2n]
+	{
+	  i connect_door_level1 = 13;
+	  i connect_door_level2 = 2;
+	  x connect_node_level1 = 0xBFDBBB24;
+	  x connect_node_level2 = 0x3FCE9EDC;
+	  f duration = 5;
+	  i elevator_door_level1 = 4;
+	  i elevator_door_level2 = 4;
+	  x elevator_node = 0xE5E5F70C;
+		material = "dc_pulley";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.940735,0,1.63261,0xa73bfec3;
+	}
+}

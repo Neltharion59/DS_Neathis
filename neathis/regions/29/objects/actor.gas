@@ -1,147 +1,3 @@
-[t:2w_ghost,n:0x02a009b6]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 7.63278,-2.8,0.488668,0x3553bf64;
-	}
-}
-[t:2w_ghost,n:0x02a00898]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -2.9227,0,-1.37802,0x1546c3b2;
-	}
-}
-[t:2w_ghost,n:0x02a00899]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.77288,0,1.62454,0x1546c3b2;
-	}
-}
-[t:2w_ghost,n:0x02a00848]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.92388,0,0.382683;
-	  p position = -1.79943,0,0.504488,0x82d09b2f;
-	}
-}
-[t:2w_ghost,n:0x02a00847]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -0.826313,0,0.409919,0xb4aff5b9;
-	}
-}
-[t:2w_ghost,n:0x02a000a7]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -6.02097,0,-1.85266,0x4552c3fe;
-	}
-}
-[t:2w_ghost,n:0x02a000a4]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382684,0,0.92388;
-	  p position = 3.97999,0,0.212298,0xa39b3ded;
-	}
-}
-[t:2w_ghost,n:0x02a000a6]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -2.34933,0,-0.267623,0xa39b3ded;
-	}
-}
-[t:2w_ghost,n:0x02a000ac]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.105088,0,-0.437991,0xd111b35f;
-	}
-}
-[t:2w_ghost,n:0x02a000ab]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 1.26579,0,-0.274085,0xdab84c0c;
-	}
-}
-[t:2w_ghost,n:0x02a000a9]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 0.836317,0,0.628415,0xfe7b70fc;
-	}
-}
-[t:2w_ghost,n:0x02a000f6]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 2.01671,-3.5,-1.31112,0x34310c1b;
-	}
-}
 [t:dragon,n:0x02a0008e]
 {
 	[aspect]
@@ -150,7 +6,25 @@
 	}
 	[common]
 	{
-		screen_name = "Trisamys";
+		screen_name = "Trisamys the Protector";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x02A0014A,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[placement]
 	{
@@ -161,7 +35,16 @@
 {
 	[aspect]
 	{
-	  f experience_value = 2.001e+006;
+	  f experience_value = 1.43334e+007;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 558;
+	  f damage_bonus_min_cmagic = 512;
+	}
+	[defend]
+	{
+	  f defense = 805.7;
 	}
 	[mind]
 	{
@@ -171,33 +54,24 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,2.98023e-008,0,1;
-	  p position = 7.08493,1.1,-4.22372,0x27cecc6c;
-	}
-}
-[t:2w_drake_black,n:0x02a00093]
-{
-	[aspect]
-	{
-	  f experience_value = 2.001e+006;
-	}
-	[mind]
-	{
-	  f outer_comfort_zone_range = 27;
-	  f ranged_engage_range = 27;
-	  f sight_range = 30;
-	}
-	[placement]
-	{
-	  q orientation = 0,-4.69147e-008,0,1;
-	  p position = -7.45021,1.1,-4.81425,0x27cecc6c;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 7.40611,0,0.0380468,0xaa2fda7b;
 	}
 }
 [t:2w_drake_black,n:0x02a00092]
 {
 	[aspect]
 	{
-	  f experience_value = 2.001e+006;
+	  f experience_value = 1.43334e+007;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 558;
+	  f damage_bonus_min_cmagic = 512;
+	}
+	[defend]
+	{
+	  f defense = 805.7;
 	}
 	[mind]
 	{
@@ -210,86 +84,91 @@
 	  p position = 1.48994,0,0.686116,0xb64f556e;
 	}
 }
-[t:gom,n:0x02a00181]
+[t:2w_drake_black,n:0x02a00093]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.43334e+007;
 	}
-	[common]
+	[attack]
 	{
-		screen_name = "Archmage";
+	  f damage_bonus_max_cmagic = 558;
+	  f damage_bonus_min_cmagic = 512;
 	}
-	[generator_in_object]
+	[defend]
 	{
-		child_template_name = "";
-	  f spawn_chance = 0;
+	  f defense = 805.7;
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+	  f outer_comfort_zone_range = 27;
+	  f ranged_engage_range = 27;
+	  f sight_range = 30;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,1.45468e-007;
-	  p position = -1.51595,1,1.41493,0x9bc725b8;
+	  q orientation = 0,1,0,0;
+	  p position = -0.0758467,0,0.636522,0x10e09d0b;
 	}
 }
-[t:2w_ghost,n:0x02a000f8]
+[t:2w_ghost,n:0x02a000f9]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,0.382683;
+	  p position = -0.407602,1,1.26802,0x7a718a5b;
+	}
+}
+[t:2w_ghost,n:0x02a000fa]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.77094,1,1.13303,0xa2779398;
+	  p position = 0.542899,1,1.6115,0x7a718a5b;
 	}
 }
-[t:gom,n:0x02a00183]
+[t:2w_ghost,n:0x02a000f6]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,1.45468e-007;
-	  p position = -1.43283,1,0.914581,0x074fc471;
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 2.01671,-3.5,-1.31112,0x34310c1b;
+	}
+}
+[t:2w_ghost,n:0x02a000fb]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -1.65165,1,0.693109,0xe7399e92;
+	}
+}
+[t:2w_ghost,n:0x02a000fc]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.50045,1,1.49163,0x2c4aba54;
 	}
 }
 [t:gom,n:0x02a00180]
@@ -306,7 +185,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -319,7 +200,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -327,19 +208,7 @@
 	  p position = 2.1985,-3.5,-2.1898,0xfa191b58;
 	}
 }
-[t:2w_ghost,n:0x02a000fc]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.50045,1,1.49163,0x2c4aba54;
-	}
-}
-[t:gom,n:0x02a00182]
+[t:gom,n:0x02a00183]
 {
 	[actor]
 	{
@@ -353,7 +222,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -366,216 +237,216 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
 	  q orientation = 0,1,0,1.45468e-007;
-	  p position = 2.0455,-3.5,-1.56697,0x7b8d8477;
-	}
-}
-[t:2w_ghost,n:0x02a000f9]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.923879,0,0.382683;
-	  p position = -0.407602,1,1.26802,0x7a718a5b;
-	}
-}
-[t:2w_ghost,n:0x02a000fa]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 0.542899,1,1.6115,0x7a718a5b;
-	}
-}
-[t:2w_ghost,n:0x02a00896]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 2.3003,1,0.928016,0x16e51d72;
-	}
-}
-[t:2w_ghost,n:0x02a00897]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -1.08422,1,0.805868,0x16e51d72;
-	}
-}
-[t:2w_ghost,n:0x02a0089a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -1.06983,0,0.926069,0x24a7d4a5;
-	}
-}
-[t:2w_ghost,n:0x02a0089b]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -0.607876,0,-0.88859,0x24a7d4a5;
-	}
-}
-[t:2w_ghost,n:0x02a00894]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -3.10247,0,-2.99703,0x46d702fe;
-	}
-}
-[t:2w_ghost,n:0x02a00895]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 3.71879,0,-2.8396,0x46d702fe;
-	}
-}
-[t:2w_ghost,n:0x02a0089d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -3.17121,0,-3.81532,0xc298b81f;
-	}
-}
-[t:2w_ghost,n:0x02a0089e]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -1.57699,0,2.16499,0xc298b81f;
-	}
-}
-[t:2w_ghost,n:0x02a0089c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382684;
-	  p position = -2.05317,0,1.09803,0xcb61d4b2;
-	}
-}
-[t:2w_ghost,n:0x02a0089f]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -1.40378,0,0.131805,0xce24ffe8;
-	}
-}
-[t:2w_ghost,n:0x02a008a0]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 3.97449,0,0.207025,0xce24ffe8;
-	}
-}
-[t:2w_ghost,n:0x02a008a1]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.85371,0,-0.169858,0xcaa62ce0;
-	}
-}
-[t:2w_ghost,n:0x02a000f7]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -0.883284,1,0.993923,0x52db31b6;
-	}
-}
-[t:2w_ghost,n:0x02a000fb]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -1.65165,1,0.693109,0xe7399e92;
+	  p position = -1.43283,1,0.914581,0x074fc471;
 	}
 }
 [t:2w_ghost,n:0x02a0084f]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = -1.98317,1,1.16743,0x179aaccf;
+	}
+}
+[t:2w_ghost,n:0x02a00848]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = -1.79943,0,0.504488,0x82d09b2f;
+	}
+}
+[t:2w_ghost,n:0x02a0084d]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.96968,0,0.568762,0xa99cc700;
+	}
+}
+[t:2w_ghost,n:0x02a0084e]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.56297,0,-0.24209,0x4e2ba168;
+	}
+}
+[t:2w_ghost,n:0x02a00847]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.826313,0,0.409919,0xb4aff5b9;
+	}
+}
+[t:2w_ghost,n:0x02a0084a]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.563493,0,0.297212,0x1dbdfba9;
+	}
+}
+[t:2w_ghost,n:0x02a0084b]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.49725,0,-0.385699,0x76c27a5d;
+	}
+}
+[t:2w_ghost,n:0x02a0084c]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.70858,0,-0.347051,0x71f2b71b;
+	}
+}
+[t:2w_ghost,n:0x02a00849]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.86619,0,-1.15256,0xfa345ad4;
+	}
+}
+[t:2w_ghost,n:0x02a000f8]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.77094,1,1.13303,0xa2779398;
+	}
+}
+[t:2w_ghost,n:0x02a000a7]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -6.02097,0,-1.85266,0x4552c3fe;
+	}
+}
+[t:2w_ghost,n:0x02a000a9]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.836317,0,0.628415,0xfe7b70fc;
+	}
+}
+[t:2w_ghost,n:0x02a000a4]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382684,0,0.92388;
+	  p position = 3.97999,0,0.212298,0xa39b3ded;
+	}
+}
+[t:2w_ghost,n:0x02a000a6]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -2.34933,0,-0.267623,0xa39b3ded;
+	}
+}
+[t:2w_ghost,n:0x02a000ac]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.105088,0,-0.437991,0xd111b35f;
+	}
+}
+[t:2w_ghost,n:0x02a000ab]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.26579,0,-0.274085,0xdab84c0c;
+	}
+}
+[t:2w_ghost,n:0x02a000f7]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.883284,1,0.993923,0x52db31b6;
 	}
 }
 [t:gom,n:0x02a0017f]
@@ -592,7 +463,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -605,7 +478,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -627,7 +500,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -640,12 +515,147 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
 	  q orientation = 0,1,0,1.45468e-007;
 	  p position = 1.47292,-3.5,-2.00899,0xe7e5e638;
+	}
+}
+[t:gom,n:0x02a00181]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.45468e-007;
+	  p position = -1.51595,1,1.41493,0x9bc725b8;
+	}
+}
+[t:gom,n:0x02a00182]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.45468e-007;
+	  p position = 2.0455,-3.5,-1.56697,0x7b8d8477;
+	}
+}
+[t:gom,n:0x02a0009f]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.45468e-007;
+	  p position = 2.08738,1,-2.05436,0xc8c9b5e3;
+	}
+}
+[t:2w_ghost,n:0x02a008f5]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -0.584293,1,0.550892,0xe1e742cc;
+	}
+}
+[t:2w_ghost,n:0x02a008f4]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -1.01532,-3.5,-0.714998,0x21174508;
 	}
 }
 [t:gom,n:0x02a0017d]
@@ -662,7 +672,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -675,7 +687,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -683,7 +695,7 @@
 	  p position = 2.17414,-3.5,-2.01732,0x8ffeda36;
 	}
 }
-[t:gom,n:0x02a0017b]
+[t:gom,n:0x02a0017c]
 {
 	[actor]
 	{
@@ -697,7 +709,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -710,317 +724,19 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
 	  q orientation = 0,1,0,1.45468e-007;
-	  p position = 1.79895,-3.5,-1.94101,0x977bf94e;
-	}
-}
-[t:2w_ghost,n:0x02a00940]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 2.15354,0,1.2262,0xad85a62f;
-	}
-}
-[t:2w_ghost,n:0x02a0094f]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -3.09292,0,-2.38962,0x7b8fc31d;
-	}
-}
-[t:2w_ghost,n:0x02a00950]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,4.62452e-007;
-	  p position = 0.738744,0,2.54573,0x7b8fc31d;
-	}
-}
-[t:2w_ghost,n:0x02a00951]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,4.75917e-007;
-	  p position = 5.48302,0,0.102876,0x7b8fc31d;
-	}
-}
-[t:2w_ghost,n:0x02a0094d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 1.77546,0,-0.444358,0x84084fbb;
-	}
-}
-[t:2w_ghost,n:0x02a0094e]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -0.118953,0,1.43306,0x84084fbb;
-	}
-}
-[t:2w_ghost,n:0x02a0094c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 0.450006,0,-0.188972,0x1b8b9749;
-	}
-}
-[t:2w_ghost,n:0x02a0094b]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 0.144315,0,2.14615,0x0a7fdc73;
-	}
-}
-[t:2w_ghost,n:0x02a0094a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 0.110364,0,-0.317976,0x309329e3;
-	}
-}
-[t:2w_ghost,n:0x02a00941]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -2.9625,0,-1.0384,0x82f89970;
-	}
-}
-[t:2w_ghost,n:0x02a00942]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 2.9547,0,-0.0756638,0x82f89970;
-	}
-}
-[t:2w_ghost,n:0x02a00949]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -1.21913,0,0.0505521,0x4f533afa;
-	}
-}
-[t:2w_ghost,n:0x02a00945]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -6.70777,0,3.60308,0x6172a497;
-	}
-}
-[t:2w_ghost,n:0x02a00946]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -1.84728,0,-1.32741,0x6172a497;
-	}
-}
-[t:2w_ghost,n:0x02a00947]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 6.35465,0,2.6858,0x6172a497;
-	}
-}
-[t:2w_ghost,n:0x02a00948]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 2.1255,0,-1.49387,0x6172a497;
-	}
-}
-[t:2w_ghost,n:0x02a00943]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 5.40473,0,-1.70065,0x71e22da4;
-	}
-}
-[t:2w_ghost,n:0x02a00944]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -3.68209,0,-1.98548,0x71e22da4;
-	}
-}
-[t:2w_ghost,n:0x02a008f4]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -1.01532,-3.5,-0.714998,0x21174508;
-	}
-}
-[t:gom,n:0x02a00179]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,1.45468e-007;
-	  p position = -1.33869,1,1.41158,0x8a70e1c4;
-	}
-}
-[t:gom,n:0x02a00178]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,6.93489e-015;
-	  p position = -1.01089,1,1.31351,0xc4be3c66;
+	  p position = 0.677818,1,0.697907,0xeea650c9;
 	}
 }
 [t:2w_ghost,n:0x02a008f6]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
@@ -1042,7 +758,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -1055,7 +773,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -1063,1916 +781,23 @@
 	  p position = 2.19222,1,-2.15041,0x89a1125b;
 	}
 }
-[t:gom,n:0x02a0009f]
+[t:2w_hell_boar,n:0x02a00201]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-1.45468e-007;
-	  p position = 2.08738,1,-2.05436,0xc8c9b5e3;
-	}
-}
-[t:2w_ghost,n:0x02a008f5]
-{
-	[aspect]
-	{
-	  f experience_value = 1.2e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -0.584293,1,0.550892,0xe1e742cc;
-	}
-}
-[t:2w_skrubb,n:0x02a001e5]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = 1.76196,0,1.59067,0x7d205f33;
-	}
-}
-[t:2w_hell_boar,n:0x02a00207]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.43917,0,-2.94028,0xee43c814;
-	}
-}
-[t:2w_hell_boar,n:0x02a0020c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.01184,0,-0.483272,0x018c9faa;
-	}
-}
-[t:2w_hell_boar,n:0x02a0020b]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.532176,0,-3.9818,0x176e5766;
-	}
-}
-[t:2w_hell_boar,n:0x02a00208]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.391712,0,-1.12606,0x816ced6c;
-	}
-}
-[t:2w_hell_boar,n:0x02a0020d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.44171,0,-0.355351,0x46a54da8;
-	}
-}
-[t:2w_hell_boar,n:0x02a00212]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.412127,0,-3.56909,0x46a54da8;
-	}
-}
-[t:2w_hell_boar,n:0x02a00268]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.47758,0,-1.35888,0xd52c4357;
-	}
-}
-[t:2w_hell_boar,n:0x02a00222]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.743614,0,0.242105,0x6b407d52;
-	}
-}
-[t:2w_hell_boar,n:0x02a00223]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.92011,0,1.81541,0x6b407d52;
-	}
-}
-[t:2w_hell_boar,n:0x02a00224]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.55271,0,3.78579,0x6b407d52;
-	}
-}
-[t:2w_hell_boar,n:0x02a00225]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.34559,0,3.12939,0x6b407d52;
-	}
-}
-[t:2w_hell_boar,n:0x02a00226]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.65241,0,0.297296,0x6b407d52;
-	}
-}
-[t:2w_hell_boar,n:0x02a00227]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.616506,0,-2.1274,0x6f1434a8;
-	}
-}
-[t:2w_hell_boar,n:0x02a00228]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.26196,0,-0.838577,0x6f1434a8;
-	}
-}
-[t:2w_synged,n:0x02a00916]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.05619,0,-0.904663,0x79a71abf;
-	}
-}
-[t:2w_synged,n:0x02a00915]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.07046,0,-1.74935,0xee5a87c5;
-	}
-}
-[t:2w_synged,n:0x02a00917]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.89017,0,3.20311,0xee5a87c5;
-	}
-}
-[t:2w_hell_boar,n:0x02a0025a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.07767,0,-3.48496,0xf10fd545;
-	}
-}
-[t:2w_hell_boar,n:0x02a00257]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.18281,0,0.729356,0xd169b9e4;
-	}
-}
-[t:2w_hell_boar,n:0x02a00258]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.154751,0,1.84816,0xd169b9e4;
-	}
-}
-[t:2w_hell_boar,n:0x02a00259]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.99131,0,-0.544006,0xd169b9e4;
-	}
-}
-[t:2w_skrubb,n:0x02a000c2]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = 3.90848,0,2.13175,0xdf548755;
-	}
-}
-[t:gom,n:0x02a000aa]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 2.33877,0,1.43074,0x10e50a80;
-	}
-}
-[t:2w_hell_boar,n:0x02a00235]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.26135,0,-2.85061,0x28ed3539;
-	}
-}
-[t:2w_hell_boar,n:0x02a00236]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.26556,0,-0.778495,0x28ed3539;
-	}
-}
-[t:2w_hell_boar,n:0x02a00237]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.23708,0,0.701182,0x87e63f64;
-	}
-}
-[t:2w_hell_boar,n:0x02a00239]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.83824,0,2.81883,0x87e63f64;
-	}
-}
-[t:2w_hell_boar,n:0x02a00231]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.64968,0,3.37653,0x20357dee;
-	}
-}
-[t:2w_hell_boar,n:0x02a00232]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.68936,0,-1.27348,0x20357dee;
-	}
-}
-[t:2w_hell_boar,n:0x02a00233]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.0391086,0,-1.51282,0x20357dee;
-	}
-}
-[t:2w_hell_boar,n:0x02a00234]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.503303,0,0.136494,0x20357dee;
-	}
-}
-[t:2w_hell_boar,n:0x02a00238]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.66457,0,0.0884635,0x20357dee;
-	}
-}
-[t:2w_skrubb,n:0x02a001e6]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.24805e-007;
-	  p position = -2.09143,0,-3.26586,0x4983e47f;
-	}
-}
-[t:2w_skrubb,n:0x02a001e7]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-5.36442e-007;
-	  p position = 3.31142,0,-3.30143,0x4983e47f;
-	}
-}
-[t:2w_synged,n:0x02a00922]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.53775,0,-2.09481,0x5d027eee;
-	}
-}
-[t:2w_synged,n:0x02a00923]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.82357,0,3.95846,0x6381f12c;
-	}
-}
-[t:2w_hell_boar,n:0x02a00269]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.10991,0,1.29861,0x89eeb74e;
-	}
-}
-[t:2w_hell_boar,n:0x02a0026a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.922009,0,3.99559,0x89eeb74e;
-	}
-}
-[t:2w_hell_boar,n:0x02a0026b]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.193688,0,-1.45235,0x89eeb74e;
-	}
-}
-[t:2w_hell_boar,n:0x02a0026c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.594516,0,-3.71915,0x89eeb74e;
-	}
-}
-[t:2w_hell_boar,n:0x02a0026d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.82411,0,-1.4851,0x89eeb74e;
-	}
-}
-[t:2w_hell_boar,n:0x02a0026e]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.468093,0,1.75086,0x89eeb74e;
-	}
-}
-[t:2w_hell_boar,n:0x02a0026f]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.81511,0,-3.13953,0x89eeb74e;
-	}
-}
-[t:2w_synged,n:0x02a00918]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.85545,0,-1.89284,0x96b439e4;
-	}
-}
-[t:2w_synged,n:0x02a00921]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.97424,0,-3.02309,0x186a03d0;
-	}
-}
-[t:2w_hell_boar,n:0x02a00270]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.54454,0,-0.255412,0x5c1f78c0;
-	}
-}
-[t:2w_hell_boar,n:0x02a00271]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.916335,0,0.679947,0x5c1f78c0;
-	}
-}
-[t:2w_hell_boar,n:0x02a00272]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.599236,0,-0.285927,0x5c1f78c0;
-	}
-}
-[t:2w_hell_boar,n:0x02a00273]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.3772,0,0.27023,0x5c1f78c0;
-	}
-}
-[t:2w_hell_boar,n:0x02a00274]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.51929,-2,-4.39859,0x31076aea;
-	}
-}
-[t:gom,n:0x02a00085]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 2.8289,0,-0.812199,0x0e718b4e;
-	}
-}
-[t:2w_skrubb,n:0x02a001e2]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,-0.707106;
-	  p position = 1.30167,0,2.2712,0x2076d5f4;
-	}
-}
-[t:2w_hell_boar,n:0x02a00275]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.68755,0,1.64425,0x93930a27;
-	}
-}
-[t:2w_hell_boar,n:0x02a00276]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.600182,0,0.567112,0x93930a27;
-	}
-}
-[t:2w_hell_boar,n:0x02a00277]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.986551,0,1.35983,0x93930a27;
-	}
-}
-[t:2w_hell_boar,n:0x02a00278]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.15477,0,0.941895,0x93930a27;
-	}
-}
-[t:2w_hell_boar,n:0x02a0027b]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.82896,0,-0.270034,0x93930a27;
-	}
-}
-[t:2w_hell_boar,n:0x02a0027c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.46571,-4,-5.8106,0x02c3c6eb;
-	}
-}
-[t:2w_hell_boar,n:0x02a00279]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.64084,-4,-5.54031,0x6982277e;
-	}
-}
-[t:2w_hell_boar,n:0x02a0027a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.59314,-4,-5.84078,0x6982277e;
-	}
-}
-[t:2w_hell_boar,n:0x02a0027d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.83138,-4,-5.76406,0x6982277e;
-	}
-}
-[t:2w_synged,n:0x02a0091f]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.813653,0,-2.85884,0x4fd3c2e1;
-	}
-}
-[t:gom,n:0x02a00096]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 2.99197,0,2.99368,0x72429643;
-	}
-}
-[t:gom,n:0x02a00094]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -1.77236,0,-1.25175,0x00d3f476;
-	}
-}
-[t:gom,n:0x02a00098]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -2.70586,12,0.0464471,0x502196d4;
-	}
-}
-[t:2w_hell_boar,n:0x02a00285]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.476334,0,0.0964125,0x59f1e6c7;
-	}
-}
-[t:2w_hell_boar,n:0x02a00286]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.18605,0,-0.929519,0x59f1e6c7;
-	}
-}
-[t:2w_hell_boar,n:0x02a00287]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.17635,0,-0.14746,0x59f1e6c7;
-	}
-}
-[t:2w_hell_boar,n:0x02a00288]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.652576,0,-0.377792,0x59f1e6c7;
-	}
-}
-[t:2w_skrubb,n:0x02a000ff]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = -3.17781,0,-0.780701,0x5e8f2a3b;
-	}
-}
-[t:2w_hell_boar,n:0x02a00282]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.490443,0,-3.28786,0x5edcff41;
-	}
-}
-[t:2w_hell_boar,n:0x02a00283]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.29854,0,-2.81216,0x5edcff41;
-	}
-}
-[t:2w_hell_boar,n:0x02a00284]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.453515,0,-2.95676,0x5edcff41;
-	}
-}
-[t:2w_synged,n:0x02a0091d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.50003,0,0.636573,0x70404448;
-	}
-}
-[t:gom,n:0x02a00095]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 3.66688,0,0.194085,0xa13a7654;
-	}
-}
-[t:2w_hell_boar,n:0x02a0027e]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.23167,0,-0.306435,0x9d5a3619;
-	}
-}
-[t:2w_hell_boar,n:0x02a0027f]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.602928,0,-1.0245,0x9d5a3619;
-	}
-}
-[t:2w_hell_boar,n:0x02a00280]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.74076,0,-1.04979,0x9d5a3619;
-	}
-}
-[t:2w_hell_boar,n:0x02a00281]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.258819,0,1.36978,0x9d5a3619;
-	}
-}
-[t:2w_synged,n:0x02a0091c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.21516,0,-1.34091,0xed93043c;
-	}
-}
-[t:gom,n:0x02a00091]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -3.0914,0,-0.196728,0x13f8651a;
-	}
-}
-[t:2w_hell_boar,n:0x02a0028b]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.621411,0,-1.14828,0x6ef80ebb;
-	}
-}
-[t:2w_hell_boar,n:0x02a0028c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.05112,0,-0.724235,0x6ef80ebb;
-	}
-}
-[t:2w_hell_boar,n:0x02a0028a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.463737,0.809612,2.0118,0xff631e1c;
-	}
-}
-[t:2w_hell_boar,n:0x02a00294]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.24755,0,-2.4631,0xd737bbaf;
-	}
-}
-[t:2w_skrubb,n:0x02a001e4]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-6.55651e-007;
-	  p position = -1.51103,0,-0.789849,0xfb511f6b;
-	}
-}
-[t:2w_hell_boar,n:0x02a00293]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.42701,2,0.240525,0xed66d476;
-	}
-}
-[t:2w_hell_boar,n:0x02a00295]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.54766,2,1.60268,0xed66d476;
-	}
-}
-[t:2w_hell_boar,n:0x02a00292]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.65155,2.93902,1.05257,0xa4b67375;
-	}
-}
-[t:2w_synged,n:0x02a0091b]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.94508,0,-1.19828,0x0e8d9cec;
-	}
-}
-[t:gom,n:0x02a00097]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -0.135422,0,-0.395275,0x9795d53b;
-	}
-}
-[t:2w_hell_boar,n:0x02a002a8]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.78243,12,-0.0621445,0x71fd7712;
-	}
-}
-[t:2w_hell_boar,n:0x02a002a6]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.91614,-3.75797,-2.71233,0x106b2c2b;
-	}
-}
-[t:2w_hell_boar,n:0x02a002a7]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.30179,-4,-2.76105,0x106b2c2b;
-	}
-}
-[t:2w_hell_boar,n:0x02a002a9]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.82413,-3.9807,-2.06648,0x106b2c2b;
-	}
-}
-[t:2w_synged,n:0x02a00931]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.25939,0,2.74584,0xe1f24530;
-	}
-}
-[t:2w_hell_boar,n:0x02a002b7]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.249603,0,-0.583775,0xbaec13b9;
-	}
-}
-[t:2w_hell_boar,n:0x02a002b8]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.845772,0,2.03891,0xbaec13b9;
-	}
-}
-[t:2w_hell_boar,n:0x02a002b9]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.02489,0,-0.00263522,0xbaec13b9;
-	}
-}
-[t:2w_hell_boar,n:0x02a002ba]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.37513,0,-0.374241,0xbaec13b9;
-	}
-}
-[t:2w_hell_boar,n:0x02a002bb]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.51724,0,1.49623,0xbaec13b9;
-	}
-}
-[t:2w_hell_boar,n:0x02a002bc]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.944245,0,-1.60571,0xbaec13b9;
-	}
-}
-[t:2w_hell_boar,n:0x02a002b6]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.61342,0,0.399585,0x07c68208;
-	}
-}
-[t:2w_hell_boar,n:0x02a00909]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.11663,0,-3.04041,0xebc994a2;
-	}
-}
-[t:2w_hell_boar,n:0x02a00908]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.89203,0,2.42752,0x3e2247ff;
-	}
-}
-[t:gom,n:0x02a00104]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.923879;
-	  p position = -1.60464,4,3.64308,0x0ba4a489;
-	}
-}
-[t:2w_synged,n:0x02a0093f]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.59933,3,0.507967,0xb8f54052;
-	}
-}
-[t:2w_synged,n:0x02a0093d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.83601,0,-1.34511,0x2001c5e2;
-	}
-}
-[t:gom,n:0x02a0008c]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 1.38536,3,-1.10275,0xd58588f7;
-	}
-}
-[t:2w_synged,n:0x02a0093c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.894626,3,2.37822,0xd58588f7;
-	}
-}
-[t:2w_synged,n:0x02a0093e]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.418205,3,-0.680134,0xcd8b4fe9;
-	}
-}
-[t:2w_hell_boar,n:0x02a002af]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.38302,0,-1.58475,0x2aaaf6ef;
-	}
-}
-[t:2w_hell_boar,n:0x02a002b1]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.45876,0,-0.673324,0x6f64a9f1;
-	}
-}
-[t:2w_hell_boar,n:0x02a002b2]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.63417,0,-0.149386,0x6f64a9f1;
-	}
-}
-[t:2w_hell_boar,n:0x02a002b4]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.13109,0,-0.37646,0x6f64a9f1;
-	}
-}
-[t:2w_hell_boar,n:0x02a002b0]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.8738,0,1.93918,0x29689801;
-	}
-}
-[t:2w_hell_boar,n:0x02a002b3]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.37256,0,2.4478,0x29689801;
-	}
-}
-[t:2w_hell_boar,n:0x02a002b5]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.0506,0,3.98659,0x29689801;
-	}
-}
-[t:2w_hell_boar,n:0x02a002aa]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.786895,0,-1.10975,0xeaa6bf23;
-	}
-}
-[t:2w_hell_boar,n:0x02a002ab]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.00435697,0,-2.41817,0xeaa6bf23;
-	}
-}
-[t:2w_hell_boar,n:0x02a002ac]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.825485,0,-0.889225,0xeaa6bf23;
-	}
-}
-[t:2w_hell_boar,n:0x02a002ad]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.73543,0,-1.71849,0xeaa6bf23;
-	}
-}
-[t:2w_hell_boar,n:0x02a002ae]
-{
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.38806,0,-0.378594,0xeaa6bf23;
-	}
-}
-[t:2w_skrubb,n:0x02a00106]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = -0.0546883,0,3.34836,0xdf618a8c;
+	  p position = 0.77282,0,-2.08861,0x649b64ae;
 	}
 }
 [t:2w_hell_boar,n:0x02a00202]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -2984,7 +809,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -2996,7 +821,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3004,31 +829,21 @@
 	  p position = -1.09981,0,3.44673,0x5088aeb0;
 	}
 }
-[t:2w_hell_boar,n:0x02a00201]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.77282,0,-2.08861,0x649b64ae;
-	}
-}
 [t:2w_skrubb,n:0x02a00105]
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -3048,7 +863,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -3060,7 +875,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3072,7 +887,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3084,7 +899,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3096,7 +911,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3108,7 +923,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3120,7 +935,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3132,15 +947,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -3170,7 +987,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -3183,7 +1002,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -3191,139 +1010,7 @@
 	  p position = -0.924118,0,-1.11978,0x475b2a50;
 	}
 }
-[t:2w_hell_boar,n:0x02a00299]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.0204675,-1.11555,-2.84454,0x187d14e4;
-	}
-}
-[t:2w_hell_boar,n:0x02a0029a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.75165,-1,-3.95723,0x187d14e4;
-	}
-}
-[t:2w_hell_boar,n:0x02a0029e]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.2191,-0.868053,-1.73611,0x187d14e4;
-	}
-}
-[t:2w_hell_boar,n:0x02a0029f]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.44517,-1,-3.96644,0x187d14e4;
-	}
-}
-[t:2w_hell_boar,n:0x02a00298]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.12863,0,-1.06932,0x376e9bf5;
-	}
-}
-[t:2w_hell_boar,n:0x02a0029d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.31992,0,-1.54068,0x376e9bf5;
-	}
-}
-[t:2w_hell_boar,n:0x02a00297]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.76727,0,-0.382895,0x7cb1ffe5;
-	}
-}
-[t:2w_hell_boar,n:0x02a0029b]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.270317,0,-0.814247,0x7cb1ffe5;
-	}
-}
-[t:2w_hell_boar,n:0x02a0029c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.93391,0,-1.87389,0x7cb1ffe5;
-	}
-}
-[t:2w_hell_boar,n:0x02a00296]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.35624,-1,-3.34888,0xb6a5f528;
-	}
-}
-[t:2w_synged,n:0x02a0091a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.16891,-0.724653,-1.24536,0xa4e1ed59;
-	}
-}
-[t:gom,n:0x02a0017c]
+[t:gom,n:0x02a00097]
 {
 	[actor]
 	{
@@ -3337,7 +1024,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -3350,19 +1039,534 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,1.45468e-007;
-	  p position = 0.677818,1,0.697907,0xeea650c9;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.135422,0,-0.395275,0x9795d53b;
+	}
+}
+[t:2w_synged,n:0x02a0091c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.21516,0,-1.34091,0xed93043c;
+	}
+}
+[t:2w_hell_boar,n:0x02a0028b]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.621411,0,-1.14828,0x6ef80ebb;
+	}
+}
+[t:2w_hell_boar,n:0x02a0028c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.05112,0,-0.724235,0x6ef80ebb;
+	}
+}
+[t:gom,n:0x02a00091]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -3.0914,0,-0.196728,0x13f8651a;
+	}
+}
+[t:2w_skrubb,n:0x02a000ff]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382684,0,-0.923879;
+	  p position = -3.17781,0,-0.780701,0x5e8f2a3b;
+	}
+}
+[t:2w_hell_boar,n:0x02a00285]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.476334,0,0.0964125,0x59f1e6c7;
+	}
+}
+[t:2w_hell_boar,n:0x02a00286]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.18605,0,-0.929519,0x59f1e6c7;
+	}
+}
+[t:2w_hell_boar,n:0x02a00287]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.17635,0,-0.14746,0x59f1e6c7;
+	}
+}
+[t:2w_hell_boar,n:0x02a00288]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.652576,0,-0.377792,0x59f1e6c7;
+	}
+}
+[t:gom,n:0x02a00098]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -2.70586,12,0.0464471,0x502196d4;
+	}
+}
+[t:2w_hell_boar,n:0x02a0027e]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.23167,0,-0.306435,0x9d5a3619;
+	}
+}
+[t:2w_hell_boar,n:0x02a0027f]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.602928,0,-1.0245,0x9d5a3619;
+	}
+}
+[t:2w_hell_boar,n:0x02a00280]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.74076,0,-1.04979,0x9d5a3619;
+	}
+}
+[t:2w_hell_boar,n:0x02a00281]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.258819,0,1.36978,0x9d5a3619;
+	}
+}
+[t:gom,n:0x02a00094]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.77236,0,-1.25175,0x00d3f476;
+	}
+}
+[t:2w_hell_boar,n:0x02a00282]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.490443,0,-3.28786,0x5edcff41;
+	}
+}
+[t:2w_hell_boar,n:0x02a00283]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.29854,0,-2.81216,0x5edcff41;
+	}
+}
+[t:2w_hell_boar,n:0x02a00284]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.453515,0,-2.95676,0x5edcff41;
+	}
+}
+[t:2w_synged,n:0x02a0091d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.50003,0,0.636573,0x70404448;
+	}
+}
+[t:gom,n:0x02a00095]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 3.66688,0,0.194085,0xa13a7654;
+	}
+}
+[t:2w_synged,n:0x02a0091f]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.813653,0,-2.85884,0x4fd3c2e1;
+	}
+}
+[t:gom,n:0x02a00096]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 2.99197,0,2.99368,0x72429643;
+	}
+}
+[t:2w_hell_boar,n:0x02a00275]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.68755,0,1.64425,0x93930a27;
+	}
+}
+[t:2w_hell_boar,n:0x02a00276]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.600182,0,0.567112,0x93930a27;
+	}
+}
+[t:2w_hell_boar,n:0x02a00277]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.986551,0,1.35983,0x93930a27;
+	}
+}
+[t:2w_hell_boar,n:0x02a00278]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.15477,0,0.941895,0x93930a27;
+	}
+}
+[t:2w_hell_boar,n:0x02a0027b]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.82896,0,-0.270034,0x93930a27;
+	}
+}
+[t:2w_hell_boar,n:0x02a0027c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.46571,-4,-5.8106,0x02c3c6eb;
+	}
+}
+[t:2w_hell_boar,n:0x02a00279]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.64084,-4,-5.54031,0x6982277e;
+	}
+}
+[t:2w_hell_boar,n:0x02a0027a]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.59314,-4,-5.84078,0x6982277e;
+	}
+}
+[t:2w_hell_boar,n:0x02a0027d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.83138,-4,-5.76406,0x6982277e;
 	}
 }
 [t:2w_hell_boar,n:0x02a00289]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3374,7 +1578,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3386,7 +1590,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3398,7 +1602,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3410,7 +1614,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -3418,35 +1622,11 @@
 	  p position = -2.83949,0.877683,-1.6785,0x9ed4deea;
 	}
 }
-[t:2w_hell_boar,n:0x02a0028f]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.78128,-0.139969,-0.279939,0x0700e038;
-	}
-}
-[t:2w_synged,n:0x02a0091e]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.85587,0.235396,0.506825,0x0700e038;
-	}
-}
 [t:2w_synged,n:0x02a00920]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -3454,7 +1634,79 @@
 	  p position = -1.1357,0,-0.73069,0xe04673cc;
 	}
 }
-[t:gom,n:0x02a0008d]
+[t:2w_synged,n:0x02a00921]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.97424,0,-3.02309,0x186a03d0;
+	}
+}
+[t:2w_hell_boar,n:0x02a00270]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.54454,0,-0.255412,0x5c1f78c0;
+	}
+}
+[t:2w_hell_boar,n:0x02a00271]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.916335,0,0.679947,0x5c1f78c0;
+	}
+}
+[t:2w_hell_boar,n:0x02a00272]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.599236,0,-0.285927,0x5c1f78c0;
+	}
+}
+[t:2w_hell_boar,n:0x02a00273]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.3772,0,0.27023,0x5c1f78c0;
+	}
+}
+[t:2w_hell_boar,n:0x02a00274]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.51929,-2,-4.39859,0x31076aea;
+	}
+}
+[t:gom,n:0x02a00085]
 {
 	[actor]
 	{
@@ -3468,7 +1720,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -3481,39 +1735,29 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -2.83632,0,-2.36655,0x798a0159;
+	  p position = 2.8289,0,-0.812199,0x0e718b4e;
 	}
 }
-[t:2w_synged,n:0x02a00911]
+[t:2w_skrubb,n:0x02a001e2]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.08698,0,1.98524,0x896cdd9f;
-	}
-}
-[t:2w_skrubb,n:0x02a001e8]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -3525,83 +1769,71 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707106,0,0.707107;
-	  p position = -0.95679,0,-2.55718,0x4f90853b;
+	  q orientation = 0,-0.707107,0,-0.707106;
+	  p position = 1.30167,0,2.2712,0x2076d5f4;
 	}
 }
-[t:2w_hell_boar,n:0x02a00205]
+[t:2w_skrubb,n:0x02a001e6]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.55282,0,-0.256195,0x5b24dc15;
+	  q orientation = 0,1,0,-8.24805e-007;
+	  p position = -2.09143,0,-3.26586,0x4983e47f;
 	}
 }
-[t:2w_hell_boar,n:0x02a00206]
+[t:2w_skrubb,n:0x02a001e7]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.32841,0,2.67218,0x5b24dc15;
+	  q orientation = 0,1,0,-5.36442e-007;
+	  p position = 3.31142,0,-3.30143,0x4983e47f;
 	}
 }
-[t:2w_hell_boar,n:0x02a00209]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.81921,0,-3.15964,0x551ce012;
-	}
-}
-[t:2w_hell_boar,n:0x02a0020a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.64259,0,-2.43235,0x551ce012;
-	}
-}
-[t:2w_hell_boar,n:0x02a00213]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -6.83982,2,-0.0766313,0xfb438bc3;
-	}
-}
-[t:2w_hell_boar,n:0x02a00214]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -6.95991,2,-2.12418,0xfb438bc3;
-	}
-}
-[t:gom,n:0x02a00084]
+[t:gom,n:0x02a000bc]
 {
 	[actor]
 	{
@@ -3615,7 +1847,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -3628,63 +1862,103 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -0.656928,2,-3.84472,0x541ef6e6;
+	  p position = -1.71337,0,-3.99446,0x17be9b9d;
 	}
 }
-[t:2w_synged,n:0x02a00914]
+[t:gom,n:0x02a000bb]
 {
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.61703,2,-2.52956,0x541ef6e6;
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.278671,0,1.01942,0xc85d5d35;
 	}
 }
-[t:2w_hell_boar,n:0x02a00215]
+[t:gom,n:0x02a000bd]
 {
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.622742,0,-1.93555,0x426d99aa;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 2.80434,12,0.170403,0x066441ab;
 	}
 }
-[t:2w_hell_boar,n:0x02a00216]
+[t:2w_skrubb,n:0x02a000d5]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.385296,0,1.21226,0x426d99aa;
-	}
-}
-[t:2w_skrubb,n:0x02a0017a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -3697,274 +1971,60 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = 1.75844,0,-2.21436,0x40b7867a;
+	  p position = -0.430679,0,-1.44283,0xd1e35bfc;
 	}
 }
-[t:2w_hell_boar,n:0x02a00217]
+[t:2w_hell_boar,n:0x02a0023d]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.63631,0,2.63425,0x9f239602;
+	  p position = -0.533607,0,-0.567108,0x3d0919dd;
 	}
 }
-[t:2w_hell_boar,n:0x02a0021a]
+[t:2w_hell_boar,n:0x02a0023e]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.85463,0,2.32491,0x9f239602;
+	  p position = -0.312027,0,1.31858,0x3d0919dd;
 	}
 }
-[t:2w_hell_boar,n:0x02a0021d]
+[t:2w_synged,n:0x02a00929]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.71509,0,3.34443,0x9f239602;
+	  p position = 2.71551,0,1.97691,0xe9902fe3;
 	}
 }
-[t:2w_hell_boar,n:0x02a0021b]
+[t:2w_skrubb,n:0x02a000df]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.65932,0,-1.53495,0x76c1eedb;
-	}
-}
-[t:2w_hell_boar,n:0x02a0021c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.57349,0,-0.943953,0x76c1eedb;
-	}
-}
-[t:2w_hell_boar,n:0x02a0021e]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.43768,0,-3.00451,0x76c1eedb;
-	}
-}
-[t:2w_hell_boar,n:0x02a00220]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.55685,0,-0.416839,0x76c1eedb;
-	}
-}
-[t:2w_hell_boar,n:0x02a00221]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.99171,0,-2.70394,0x76c1eedb;
-	}
-}
-[t:2w_skrubb,n:0x02a001f8]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,-0.707106;
-	  p position = 2.41833,0,-1.23164,0x530e7c50;
-	}
-}
-[t:2w_hell_boar,n:0x02a00263]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.912949,0,0.930858,0xc67d9973;
-	}
-}
-[t:2w_hell_boar,n:0x02a00264]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.167878,0,-1.51954,0xc67d9973;
-	}
-}
-[t:2w_hell_boar,n:0x02a00265]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.0798031,0,1.44522,0xc67d9973;
-	}
-}
-[t:2w_hell_boar,n:0x02a00266]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.21461,0,1.61758,0xc67d9973;
-	}
-}
-[t:2w_hell_boar,n:0x02a00267]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.21879,0,-2.37786,0xc67d9973;
-	}
-}
-[t:2w_skrubb,n:0x02a001f6]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,-0.707106;
-	  p position = -0.488106,0,2.86877,0xba9e9f62;
-	}
-}
-[t:2w_skrubb,n:0x02a001f7]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,-0.707106;
-	  p position = 0.12867,0,-1.97636,0x2525a801;
-	}
-}
-[t:2w_hell_boar,n:0x02a00261]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.62207,0,-2.70566,0x2f619344;
-	}
-}
-[t:2w_skrubb,n:0x02a000be]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -3977,10 +2037,70 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = -3.86354,0,-3.7595,0x14dcca22;
+	  p position = -1.22313,0,-1.37794,0xf3cd4e51;
 	}
 }
-[t:gom,n:0x02a000af]
+[t:2w_hell_boar,n:0x02a0024c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.46923,0,-3.05345,0x29517815;
+	}
+}
+[t:2w_hell_boar,n:0x02a0024e]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,-2.98023e-008,0,1;
+	  p position = 2.03633,0,-1.58272,0x29517815;
+	}
+}
+[t:2w_hell_boar,n:0x02a00249]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.375031,0,-0.99385,0xc371ab82;
+	}
+}
+[t:2w_hell_boar,n:0x02a0024a]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.45315,0,-3.57416,0xc371ab82;
+	}
+}
+[t:2w_hell_boar,n:0x02a0024b]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.71902,0,-1.94405,0xc371ab82;
+	}
+}
+[t:gom,n:0x02a000b9]
 {
 	[actor]
 	{
@@ -3994,7 +2114,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -4007,138 +2129,157 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 2.41197,0,-1.51051,0x7a2d7621;
+	  q orientation = 0,0.382684,0,0.923879;
+	  p position = -1.12393,0,-2.42752,0x334d3374;
 	}
 }
-[t:gom,n:0x02a000b7]
+[t:2w_skrubb,n:0x02a000e2]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
-		screen_name = "Archmage";
+		screen_name = "Skrubb Pureblood";
 	}
-	[generator_in_object]
+	[defend]
 	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
+	  f defense = 672;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -0.100232,0,-3.55629,0x7a2d7621;
+	  q orientation = 0,-0.382684,0,-0.923879;
+	  p position = -0.4646,0,0.649696,0xa01394d1;
 	}
 }
-[t:2w_synged,n:0x02a00928]
+[t:2w_synged,n:0x02a0092b]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.35316,0,-2.01265,0x598fb4a1;
+	  p position = -2.58476,0,-0.192689,0xa01394d1;
 	}
 }
-[t:2w_hell_boar,n:0x02a0025f]
+[t:2w_hell_boar,n:0x02a00248]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.19611,0,2.25161,0xf516e331;
+	  p position = -2.09335,0,-3.80048,0xc20441fe;
 	}
 }
-[t:2w_hell_boar,n:0x02a00260]
+[t:2w_hell_boar,n:0x02a00253]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.22437,0,0.16735,0xf516e331;
+	  p position = 3.09516,0,-0.387595,0x6a948d90;
 	}
 }
-[t:2w_hell_boar,n:0x02a00262]
+[t:2w_hell_boar,n:0x02a00254]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.5918,0,3.21371,0xf516e331;
+	  p position = 0.320588,0,-1.85983,0x6a948d90;
 	}
 }
-[t:2w_hell_boar,n:0x02a00229]
+[t:2w_hell_boar,n:0x02a00255]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.10159,0,2.44912,0x49bf9631;
+	  p position = 0.297524,0,-0.305679,0x6a948d90;
 	}
 }
-[t:2w_hell_boar,n:0x02a0022c]
+[t:2w_hell_boar,n:0x02a00256]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.276745,0,3.52975,0x49bf9631;
+	  p position = 3.00067,0,-1.97623,0x6a948d90;
 	}
 }
-[t:2w_hell_boar,n:0x02a0022d]
+[t:2w_synged,n:0x02a00927]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.7396,0,3.48442,0x49bf9631;
+	  p position = -3.52849,0,3.25958,0xaddce0fd;
+	}
+}
+[t:2w_hell_boar,n:0x02a0022e]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.30616,0,2.53064,0xdd1a7ac0;
+	}
+}
+[t:2w_hell_boar,n:0x02a0022f]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.712182,0,3.39143,0xdd1a7ac0;
 	}
 }
 [t:2w_hell_boar,n:0x02a0022a]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -4150,7 +2291,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -4162,7 +2303,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -4174,7 +2315,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -4196,7 +2337,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -4209,7 +2352,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -4221,7 +2364,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -4229,55 +2372,95 @@
 	  p position = -2.92491,0,-1.06062,0x44e86800;
 	}
 }
-[t:2w_hell_boar,n:0x02a0025b]
+[t:gom,n:0x02a000af]
 {
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.43524,0,0.466018,0x37b86b10;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 2.41197,0,-1.51051,0x7a2d7621;
 	}
 }
-[t:2w_hell_boar,n:0x02a0025c]
+[t:gom,n:0x02a000b7]
 {
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.235031,0,-0.743789,0x37b86b10;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.100232,0,-3.55629,0x7a2d7621;
 	}
 }
-[t:2w_hell_boar,n:0x02a0025d]
+[t:2w_skrubb,n:0x02a000be]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.11009,0,3.1091,0x37b86b10;
-	}
-}
-[t:2w_skrubb,n:0x02a000ce]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -4290,233 +2473,457 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = 2.78107,0,3.84006,0x2cbeca7f;
+	  p position = -3.86354,0,-3.7595,0x14dcca22;
 	}
 }
-[t:2w_synged,n:0x02a00927]
+[t:2w_hell_boar,n:0x02a00261]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.52849,0,3.25958,0xaddce0fd;
+	  p position = 1.62207,0,-2.70566,0x2f619344;
 	}
 }
-[t:2w_hell_boar,n:0x02a0022e]
+[t:2w_hell_boar,n:0x02a0025f]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.30616,0,2.53064,0xdd1a7ac0;
+	  p position = -1.19611,0,2.25161,0xf516e331;
 	}
 }
-[t:2w_hell_boar,n:0x02a0022f]
+[t:2w_hell_boar,n:0x02a00260]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.712182,0,3.39143,0xdd1a7ac0;
+	  p position = -1.22437,0,0.16735,0xf516e331;
 	}
 }
-[t:2w_synged,n:0x02a00925]
+[t:2w_hell_boar,n:0x02a00262]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.0624648,0,3.38652,0x86cbf186;
+	  p position = -2.5918,0,3.21371,0xf516e331;
 	}
 }
-[t:2w_hell_boar,n:0x02a0023a]
+[t:2w_hell_boar,n:0x02a00268]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.0902251,0,-0.352951,0xd9e1fa95;
+	  p position = -3.47758,0,-1.35888,0xd52c4357;
 	}
 }
-[t:2w_hell_boar,n:0x02a0023b]
+[t:2w_synged,n:0x02a00928]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.12211,0,-0.13816,0xd9e1fa95;
+	  p position = -2.35316,0,-2.01265,0x598fb4a1;
 	}
 }
-[t:2w_hell_boar,n:0x02a0023c]
+[t:2w_hell_boar,n:0x02a00227]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.66434,0,0.0389248,0xd9e1fa95;
+	  p position = -0.616506,0,-2.1274,0x6f1434a8;
 	}
 }
-[t:2w_hell_boar,n:0x02a0023d]
+[t:2w_hell_boar,n:0x02a00228]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.533607,0,-0.567108,0x3d0919dd;
+	  p position = 1.26196,0,-0.838577,0x6f1434a8;
 	}
 }
-[t:2w_hell_boar,n:0x02a0023e]
+[t:2w_hell_boar,n:0x02a00222]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.312027,0,1.31858,0x3d0919dd;
+	  p position = -0.743614,0,0.242105,0x6b407d52;
 	}
 }
-[t:gom,n:0x02a000bb]
+[t:2w_hell_boar,n:0x02a00223]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.92011,0,1.81541,0x6b407d52;
+	}
+}
+[t:2w_hell_boar,n:0x02a00224]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.55271,0,3.78579,0x6b407d52;
+	}
+}
+[t:2w_hell_boar,n:0x02a00225]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.34559,0,3.12939,0x6b407d52;
+	}
+}
+[t:2w_hell_boar,n:0x02a00226]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.65241,0,0.297296,0x6b407d52;
+	}
+}
+[t:2w_synged,n:0x02a00915]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.07046,0,-1.74935,0xee5a87c5;
+	}
+}
+[t:2w_synged,n:0x02a00917]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.89017,0,3.20311,0xee5a87c5;
+	}
+}
+[t:2w_synged,n:0x02a00916]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.05619,0,-0.904663,0x79a71abf;
+	}
+}
+[t:2w_skrubb,n:0x02a001e5]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
-		screen_name = "Archmage";
+		screen_name = "Skrubb Pureblood";
 	}
-	[generator_in_object]
+	[defend]
 	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
+	  f defense = 672;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.278671,0,1.01942,0xc85d5d35;
+	  q orientation = 0,-0.382684,0,-0.923879;
+	  p position = 1.76196,0,1.59067,0x7d205f33;
 	}
 }
-[t:gom,n:0x02a000bc]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-		trigger_msg = we_invalid;
-		trigger_msg2 = we_invalid;
-	}
-	[aspect]
-	{
-	  f experience_value = 1.01112e+007;
-	}
-	[common]
-	{
-		screen_name = "Archmage";
-	}
-	[generator_in_object]
-	{
-		child_template_name = "";
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -1.71337,0,-3.99446,0x17be9b9d;
-	}
-}
-[t:2w_hell_boar,n:0x02a0024f]
+[t:2w_hell_boar,n:0x02a00207]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.18069,0,-0.561127,0xb31769ae;
+	  p position = 2.43917,0,-2.94028,0xee43c814;
 	}
 }
-[t:2w_hell_boar,n:0x02a00250]
+[t:2w_hell_boar,n:0x02a0020c]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.634445,0,-1.1538,0xb31769ae;
+	  p position = 1.01184,0,-0.483272,0x018c9faa;
 	}
 }
-[t:2w_hell_boar,n:0x02a00251]
+[t:2w_synged,n:0x02a00918]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.10085,0,-1.42052,0xb31769ae;
+	  p position = 1.85545,0,-1.89284,0x96b439e4;
 	}
 }
-[t:2w_hell_boar,n:0x02a00252]
+[t:2w_hell_boar,n:0x02a00269]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.13218,0,1.10099,0xb31769ae;
+	  p position = -2.10991,0,1.29861,0x89eeb74e;
+	}
+}
+[t:2w_hell_boar,n:0x02a0026a]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.922009,0,3.99559,0x89eeb74e;
+	}
+}
+[t:2w_hell_boar,n:0x02a0026b]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.193688,0,-1.45235,0x89eeb74e;
+	}
+}
+[t:2w_hell_boar,n:0x02a0026c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.594516,0,-3.71915,0x89eeb74e;
+	}
+}
+[t:2w_hell_boar,n:0x02a0026d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.82411,0,-1.4851,0x89eeb74e;
+	}
+}
+[t:2w_hell_boar,n:0x02a0026e]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.468093,0,1.75086,0x89eeb74e;
+	}
+}
+[t:2w_hell_boar,n:0x02a0026f]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.81511,0,-3.13953,0x89eeb74e;
+	}
+}
+[t:2w_synged,n:0x02a00923]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.82357,0,3.95846,0x6381f12c;
+	}
+}
+[t:2w_synged,n:0x02a00922]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.53775,0,-2.09481,0x5d027eee;
+	}
+}
+[t:2w_hell_boar,n:0x02a00237]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.23708,0,0.701182,0x87e63f64;
+	}
+}
+[t:2w_hell_boar,n:0x02a00239]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.83824,0,2.81883,0x87e63f64;
+	}
+}
+[t:2w_hell_boar,n:0x02a00231]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.64968,0,3.37653,0x20357dee;
+	}
+}
+[t:2w_hell_boar,n:0x02a00232]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.68936,0,-1.27348,0x20357dee;
+	}
+}
+[t:2w_hell_boar,n:0x02a00233]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.0391086,0,-1.51282,0x20357dee;
+	}
+}
+[t:2w_hell_boar,n:0x02a00234]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.503303,0,0.136494,0x20357dee;
+	}
+}
+[t:2w_hell_boar,n:0x02a00238]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.66457,0,0.0884635,0x20357dee;
 	}
 }
 [t:gom,n:0x02a000b8]
@@ -4533,7 +2940,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -4546,7 +2955,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -4558,7 +2967,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -4566,31 +2975,141 @@
 	  p position = 3.42424,0,-2.59898,0xf1a95812;
 	}
 }
-[t:2w_synged,n:0x02a0092e]
+[t:2w_hell_boar,n:0x02a0024f]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.307723,0,-3.52583,0xd1910f0c;
+	  p position = -3.18069,0,-0.561127,0xb31769ae;
 	}
 }
-[t:2w_skrubb,n:0x02a000d5]
+[t:2w_hell_boar,n:0x02a00250]
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.634445,0,-1.1538,0xb31769ae;
+	}
+}
+[t:2w_hell_boar,n:0x02a00251]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.10085,0,-1.42052,0xb31769ae;
+	}
+}
+[t:2w_hell_boar,n:0x02a00252]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.13218,0,1.10099,0xb31769ae;
+	}
+}
+[t:2w_hell_boar,n:0x02a0023a]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.0902251,0,-0.352951,0xd9e1fa95;
+	}
+}
+[t:2w_hell_boar,n:0x02a0023b]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.12211,0,-0.13816,0xd9e1fa95;
+	}
+}
+[t:2w_hell_boar,n:0x02a0023c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.66434,0,0.0389248,0xd9e1fa95;
+	}
+}
+[t:2w_hell_boar,n:0x02a00257]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.18281,0,0.729356,0xd169b9e4;
+	}
+}
+[t:2w_hell_boar,n:0x02a00258]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.154751,0,1.84816,0xd169b9e4;
+	}
+}
+[t:2w_hell_boar,n:0x02a00259]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.99131,0,-0.544006,0xd169b9e4;
+	}
+}
+[t:2w_skrubb,n:0x02a000c2]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -4603,10 +3122,10 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = -0.430679,0,-1.44283,0xd1e35bfc;
+	  p position = 3.90848,0,2.13175,0xdf548755;
 	}
 }
-[t:gom,n:0x02a000bd]
+[t:gom,n:0x02a000aa]
 {
 	[actor]
 	{
@@ -4620,7 +3139,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -4633,15 +3154,147 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 2.80434,12,0.170403,0x066441ab;
+	  p position = 2.33877,0,1.43074,0x10e50a80;
 	}
 }
-[t:gom,n:0x02a000b9]
+[t:2w_hell_boar,n:0x02a0025a]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.07767,0,-3.48496,0xf10fd545;
+	}
+}
+[t:2w_synged,n:0x02a00925]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.0624648,0,3.38652,0x86cbf186;
+	}
+}
+[t:2w_hell_boar,n:0x02a00229]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.10159,0,2.44912,0x49bf9631;
+	}
+}
+[t:2w_hell_boar,n:0x02a0022c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.276745,0,3.52975,0x49bf9631;
+	}
+}
+[t:2w_hell_boar,n:0x02a0022d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.7396,0,3.48442,0x49bf9631;
+	}
+}
+[t:2w_hell_boar,n:0x02a00235]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.26135,0,-2.85061,0x28ed3539;
+	}
+}
+[t:2w_hell_boar,n:0x02a00236]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.26556,0,-0.778495,0x28ed3539;
+	}
+}
+[t:2w_hell_boar,n:0x02a0020b]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.532176,0,-3.9818,0x176e5766;
+	}
+}
+[t:2w_hell_boar,n:0x02a00208]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.391712,0,-1.12606,0x816ced6c;
+	}
+}
+[t:2w_hell_boar,n:0x02a0020d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.44171,0,-0.355351,0x46a54da8;
+	}
+}
+[t:2w_hell_boar,n:0x02a00212]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.412127,0,-3.56909,0x46a54da8;
+	}
+}
+[t:gom,n:0x02a00084]
 {
 	[actor]
 	{
@@ -4655,7 +3308,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -4668,171 +3323,197 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.382684,0,0.923879;
-	  p position = -1.12393,0,-2.42752,0x334d3374;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.656928,2,-3.84472,0x541ef6e6;
 	}
 }
-[t:2w_hell_boar,n:0x02a0024c]
+[t:2w_synged,n:0x02a00914]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.46923,0,-3.05345,0x29517815;
-	}
-}
-[t:2w_hell_boar,n:0x02a0024e]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,-2.98023e-008,0,1;
-	  p position = 2.03633,0,-1.58272,0x29517815;
-	}
-}
-[t:2w_hell_boar,n:0x02a0023f]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.043014,0,2.12667,0x6524c939;
+	  p position = -2.61703,2,-2.52956,0x541ef6e6;
 	}
 }
-[t:2w_hell_boar,n:0x02a00240]
+[t:2w_hell_boar,n:0x02a00215]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.1172,0,2.75942,0x6524c939;
+	  p position = 0.622742,0,-1.93555,0x426d99aa;
 	}
 }
-[t:2w_hell_boar,n:0x02a00241]
+[t:2w_hell_boar,n:0x02a00216]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.33,0,0.86699,0x6524c939;
+	  p position = -0.385296,0,1.21226,0x426d99aa;
 	}
 }
-[t:2w_hell_boar,n:0x02a00242]
+[t:2w_hell_boar,n:0x02a00213]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.99358,0,-0.55754,0x6524c939;
+	  p position = -6.83982,2,-0.0766313,0xfb438bc3;
 	}
 }
-[t:2w_hell_boar,n:0x02a00244]
+[t:2w_hell_boar,n:0x02a00214]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.173782,0,0.105385,0x6524c939;
+	  p position = -6.95991,2,-2.12418,0xfb438bc3;
 	}
 }
-[t:2w_hell_boar,n:0x02a00245]
+[t:2w_hell_boar,n:0x02a00209]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.17448,0,-2.09892,0x6524c939;
+	  p position = -1.81921,0,-3.15964,0x551ce012;
 	}
 }
-[t:2w_hell_boar,n:0x02a00246]
+[t:2w_hell_boar,n:0x02a0020a]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.62366,0,-0.44435,0x6524c939;
+	  p position = 1.64259,0,-2.43235,0x551ce012;
 	}
 }
-[t:2w_hell_boar,n:0x02a00247]
+[t:2w_hell_boar,n:0x02a00205]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.393875,0,0.458298,0x6524c939;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.55282,0,-0.256195,0x5b24dc15;
 	}
 }
-[t:2w_synged,n:0x02a0092a]
+[t:2w_hell_boar,n:0x02a00206]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.596328,0,0.685272,0x6524c939;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.32841,0,2.67218,0x5b24dc15;
 	}
 }
-[t:2w_hell_boar,n:0x02a0024d]
+[t:2w_skrubb,n:0x02a001e9]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.76985,0,1.88755,0x1e6ce5f6;
-	}
-}
-[t:2w_skrubb,n:0x02a000df]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.04662e-007;
+	  p position = -3.8454,0,-0.0471163,0x4be90110;
+	}
+}
+[t:2w_skrubb,n:0x02a001e8]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -0.95679,0,-2.55718,0x4f90853b;
+	}
+}
+[t:2w_skrubb,n:0x02a0017a]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -4845,94 +3526,120 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = -1.22313,0,-1.37794,0xf3cd4e51;
+	  p position = 1.75844,0,-2.21436,0x40b7867a;
 	}
 }
-[t:2w_synged,n:0x02a00929]
+[t:2w_hell_boar,n:0x02a00217]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.71551,0,1.97691,0xe9902fe3;
+	  p position = 2.63631,0,2.63425,0x9f239602;
 	}
 }
-[t:2w_hell_boar,n:0x02a00243]
+[t:2w_hell_boar,n:0x02a0021a]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -3.47703,0,0.0550757,0x81ea2445;
+	  p position = 1.85463,0,2.32491,0x9f239602;
 	}
 }
-[t:2w_hell_boar,n:0x02a00249]
+[t:2w_hell_boar,n:0x02a0021d]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.375031,0,-0.99385,0xc371ab82;
+	  p position = 3.71509,0,3.34443,0x9f239602;
 	}
 }
-[t:2w_hell_boar,n:0x02a0024a]
+[t:2w_hell_boar,n:0x02a0021b]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.45315,0,-3.57416,0xc371ab82;
+	  p position = 1.65932,0,-1.53495,0x76c1eedb;
 	}
 }
-[t:2w_hell_boar,n:0x02a0024b]
+[t:2w_hell_boar,n:0x02a0021c]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.71902,0,-1.94405,0xc371ab82;
+	  p position = 3.57349,0,-0.943953,0x76c1eedb;
 	}
 }
-[t:2w_hell_boar,n:0x02a00248]
+[t:2w_hell_boar,n:0x02a0021e]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.09335,0,-3.80048,0xc20441fe;
+	  p position = 1.43768,0,-3.00451,0x76c1eedb;
 	}
 }
-[t:2w_skrubb,n:0x02a000e2]
+[t:2w_hell_boar,n:0x02a00220]
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.55685,0,-0.416839,0x76c1eedb;
+	}
+}
+[t:2w_hell_boar,n:0x02a00221]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.99171,0,-2.70394,0x76c1eedb;
+	}
+}
+[t:2w_skrubb,n:0x02a001f8]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -4944,35 +3651,85 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = -0.4646,0,0.649696,0xa01394d1;
+	  q orientation = 0,-0.707107,0,-0.707106;
+	  p position = 2.41833,0,-1.23164,0x530e7c50;
 	}
 }
-[t:2w_synged,n:0x02a0092b]
+[t:2w_hell_boar,n:0x02a00263]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -2.58476,0,-0.192689,0xa01394d1;
+	  p position = -0.912949,0,0.930858,0xc67d9973;
 	}
 }
-[t:2w_skrubb,n:0x02a000eb]
+[t:2w_hell_boar,n:0x02a00264]
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.167878,0,-1.51954,0xc67d9973;
+	}
+}
+[t:2w_hell_boar,n:0x02a00265]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.0798031,0,1.44522,0xc67d9973;
+	}
+}
+[t:2w_hell_boar,n:0x02a00266]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.21461,0,1.61758,0xc67d9973;
+	}
+}
+[t:2w_hell_boar,n:0x02a00267]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.21879,0,-2.37786,0xc67d9973;
+	}
+}
+[t:2w_skrubb,n:0x02a001f6]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -4984,47 +3741,25 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = 1.51015,0,-2.21193,0x04af3740;
+	  q orientation = 0,-0.707107,0,-0.707106;
+	  p position = -0.488106,0,2.86877,0xba9e9f62;
 	}
 }
-[t:2w_synged,n:0x02a0092c]
+[t:2w_skrubb,n:0x02a001f7]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.174088,0,-0.0875701,0x04af3740;
-	}
-}
-[t:2w_synged,n:0x02a0092d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.775e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.31992,0,-0.928893,0x04af3740;
-	}
-}
-[t:2w_skrubb,n:0x02a000d9]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -5036,63 +3771,15 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = -1.86163,0,-0.92627,0x9440680b;
-	}
-}
-[t:2w_hell_boar,n:0x02a00253]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.09516,0,-0.387595,0x6a948d90;
-	}
-}
-[t:2w_hell_boar,n:0x02a00254]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.320588,0,-1.85983,0x6a948d90;
-	}
-}
-[t:2w_hell_boar,n:0x02a00255]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.297524,0,-0.305679,0x6a948d90;
-	}
-}
-[t:2w_hell_boar,n:0x02a00256]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.00067,0,-1.97623,0x6a948d90;
+	  q orientation = 0,-0.707107,0,-0.707106;
+	  p position = 0.12867,0,-1.97636,0x2525a801;
 	}
 }
 [t:2w_hell_boar,n:0x02a00906]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5104,7 +3791,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -5116,7 +3803,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5128,7 +3815,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5140,7 +3827,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5162,7 +3849,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -5175,7 +3864,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -5187,7 +3876,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5199,7 +3888,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5211,7 +3900,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -5223,7 +3912,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5235,7 +3924,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -5247,7 +3936,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5259,15 +3948,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -5297,7 +3988,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -5310,7 +4003,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -5332,7 +4025,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -5345,7 +4040,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -5357,15 +4052,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -5381,211 +4078,47 @@
 	  p position = -2.20607,0,-2.79162,0xa9462db1;
 	}
 }
-[t:2w_synged,n:0x02a00910]
+[t:2w_hell_boar,n:0x02a00908]
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.3343,0,3.64367,0xdfab50f9;
+	  p position = -1.89203,0,2.42752,0x3e2247ff;
 	}
 }
-[t:2w_hell_boar,n:0x02a001f9]
+[t:2w_hell_boar,n:0x02a00909]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.177441,0,-2.80111,0xc1cc55cd;
+	  p position = 3.11663,0,-3.04041,0xebc994a2;
 	}
 }
-[t:2w_hell_boar,n:0x02a001fb]
+[t:2w_hell_boar,n:0x02a002e4]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.0507584,0,0.0754089,0xc1cc55cd;
-	}
-}
-[t:2w_hell_boar,n:0x02a001fc]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.30485,0,2.06615,0xc1cc55cd;
-	}
-}
-[t:2w_hell_boar,n:0x02a001fd]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.67476,0,-2.11578,0xc1cc55cd;
-	}
-}
-[t:2w_hell_boar,n:0x02a001fe]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.39365,0,-1.68367,0xc1cc55cd;
-	}
-}
-[t:2w_hell_boar,n:0x02a001ff]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.37769,0,0.289361,0xc1cc55cd;
-	}
-}
-[t:2w_hell_boar,n:0x02a00200]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -0.55814,0,-3.40721,0xc1cc55cd;
-	}
-}
-[t:2w_hell_boar,n:0x02a0090b]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.55567,0,-1.83423,0x7fcdf3a1;
-	}
-}
-[t:2w_hell_boar,n:0x02a0090c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 3.71407,0,1.43982,0x7fcdf3a1;
-	}
-}
-[t:2w_hell_boar,n:0x02a0090d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.76049,0,-0.0786624,0x7fcdf3a1;
-	}
-}
-[t:2w_hell_boar,n:0x02a0090f]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.97066,0,2.2784,0x7fcdf3a1;
-	}
-}
-[t:2w_skrubb,n:0x02a001e9]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.04662e-007;
-	  p position = -3.8454,0,-0.0471163,0x4be90110;
-	}
-}
-[t:2w_skrubb,n:0x02a001ef]
-{
-	[aspect]
-	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
-	  f scale_multiplier = 0.71;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Pureblood";
-	}
-	[defend]
-	{
-	  f defense = 672;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,-0.707106;
-	  p position = 1.93888,0,-0.164878,0x3f74982f;
+	  p position = 2.54904,0,2.285,0x46c15ac5;
 	}
 }
 [t:2w_hell_boar,n:0x02a002e0]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5597,15 +4130,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -5621,71 +4156,11 @@
 	  p position = 3.74495,0,-3.64194,0x36ee055e;
 	}
 }
-[t:2w_hell_boar,n:0x02a002e1]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 1.88699,0,-0.74258,0xba907e80;
-	}
-}
-[t:2w_hell_boar,n:0x02a002e5]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.558242,0,1.63957,0xba907e80;
-	}
-}
-[t:2w_hell_boar,n:0x02a002e6]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.02982,0,0.399887,0xba907e80;
-	}
-}
-[t:2w_hell_boar,n:0x02a002e8]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 0.137314,0,-1.01247,0xba907e80;
-	}
-}
-[t:2w_hell_boar,n:0x02a002e4]
-{
-	[aspect]
-	{
-	  f experience_value = 1.10012e+006;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = 2.54904,0,2.285,0x46c15ac5;
-	}
-}
 [t:2w_hell_boar,n:0x02a002e3]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5697,7 +4172,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5709,15 +4184,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -5737,7 +4214,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -5745,11 +4222,59 @@
 	  p position = -1.13116,0,2.30679,0x19f3d5f6;
 	}
 }
+[t:2w_hell_boar,n:0x02a002e1]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.88699,0,-0.74258,0xba907e80;
+	}
+}
+[t:2w_hell_boar,n:0x02a002e5]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.558242,0,1.63957,0xba907e80;
+	}
+}
+[t:2w_hell_boar,n:0x02a002e6]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.02982,0,0.399887,0xba907e80;
+	}
+}
+[t:2w_hell_boar,n:0x02a002e8]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.137314,0,-1.01247,0xba907e80;
+	}
+}
 [t:2w_hell_boar,n:0x02a002e2]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5761,7 +4286,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5773,7 +4298,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5785,7 +4310,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5797,7 +4322,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5809,7 +4334,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5821,7 +4346,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5833,15 +4358,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -5861,7 +4388,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5873,7 +4400,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -5885,7 +4412,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5897,7 +4424,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5909,7 +4436,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5921,7 +4448,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5933,7 +4460,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -5945,7 +4472,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5957,7 +4484,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5969,7 +4496,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5981,7 +4508,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -5993,7 +4520,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6005,7 +4532,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6017,7 +4544,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6029,15 +4556,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -6057,7 +4586,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6069,7 +4598,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6081,7 +4610,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6093,7 +4622,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6105,7 +4634,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6127,7 +4656,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -6140,7 +4671,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -6152,7 +4683,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6164,7 +4695,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6176,7 +4707,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6188,7 +4719,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6200,7 +4731,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6212,7 +4743,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6224,7 +4755,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6236,15 +4767,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -6274,7 +4807,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -6287,7 +4822,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -6309,7 +4844,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -6322,7 +4859,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -6334,15 +4871,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -6362,15 +4901,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -6390,7 +4931,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -6402,7 +4943,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -6414,15 +4955,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -6442,7 +4985,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6454,7 +4997,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6466,7 +5009,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6478,7 +5021,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6490,7 +5033,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6502,7 +5045,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6514,7 +5057,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6536,7 +5079,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -6549,7 +5094,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -6561,7 +5106,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -6573,7 +5118,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6585,7 +5130,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6597,7 +5142,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6609,7 +5154,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6621,7 +5166,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6643,7 +5188,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -6656,7 +5203,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -6668,7 +5215,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6680,7 +5227,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6692,7 +5239,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6704,7 +5251,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6716,7 +5263,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -6738,7 +5285,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -6751,7 +5300,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -6773,7 +5322,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -6786,7 +5337,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -6798,7 +5349,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
@@ -6810,7 +5361,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
@@ -6822,7 +5373,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
@@ -6834,7 +5385,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
@@ -6846,7 +5397,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
@@ -6858,7 +5409,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
@@ -6870,7 +5421,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
@@ -6882,7 +5433,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
@@ -6894,7 +5445,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6906,7 +5457,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6918,7 +5469,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6930,7 +5481,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6942,7 +5493,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6954,7 +5505,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -6976,7 +5527,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -6989,7 +5542,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -6997,19 +5550,33 @@
 	  p position = -0.744509,0,1.56001,0x1d0f709e;
 	}
 }
+[t:2w_hell_boar,n:0x02a002b6]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.61342,0,0.399585,0x07c68208;
+	}
+}
 [t:2w_skrubb,n:0x02a001ea]
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -7029,7 +5596,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -7037,11 +5604,83 @@
 	  p position = 0.155045,0,-0.423912,0xc3164e7c;
 	}
 }
+[t:2w_hell_boar,n:0x02a002b7]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.249603,0,-0.583775,0xbaec13b9;
+	}
+}
+[t:2w_hell_boar,n:0x02a002b8]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.845772,0,2.03891,0xbaec13b9;
+	}
+}
+[t:2w_hell_boar,n:0x02a002b9]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.02489,0,-0.00263522,0xbaec13b9;
+	}
+}
+[t:2w_hell_boar,n:0x02a002ba]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.37513,0,-0.374241,0xbaec13b9;
+	}
+}
+[t:2w_hell_boar,n:0x02a002bb]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.51724,0,1.49623,0xbaec13b9;
+	}
+}
+[t:2w_hell_boar,n:0x02a002bc]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.944245,0,-1.60571,0xbaec13b9;
+	}
+}
 [t:2w_hell_boar,n:0x02a002be]
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7049,19 +5688,1044 @@
 	  p position = 3.50719,0,-3.63141,0x186f44b6;
 	}
 }
-[t:2w_skrubb,n:0x02a001f3]
+[t:gom,n:0x02a00104]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.923879;
+	  p position = -1.60464,4,3.64308,0x0ba4a489;
+	}
+}
+[t:2w_synged,n:0x02a0093f]
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.59933,3,0.507967,0xb8f54052;
+	}
+}
+[t:2w_synged,n:0x02a0093d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.83601,0,-1.34511,0x2001c5e2;
+	}
+}
+[t:gom,n:0x02a0008c]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 1.38536,3,-1.10275,0xd58588f7;
+	}
+}
+[t:2w_synged,n:0x02a0093c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.894626,3,2.37822,0xd58588f7;
+	}
+}
+[t:2w_synged,n:0x02a0093e]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.418205,3,-0.680134,0xcd8b4fe9;
+	}
+}
+[t:2w_hell_boar,n:0x02a002af]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.38302,0,-1.58475,0x2aaaf6ef;
+	}
+}
+[t:2w_hell_boar,n:0x02a002b1]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.45876,0,-0.673324,0x6f64a9f1;
+	}
+}
+[t:2w_hell_boar,n:0x02a002b2]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.63417,0,-0.149386,0x6f64a9f1;
+	}
+}
+[t:2w_hell_boar,n:0x02a002b4]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.13109,0,-0.37646,0x6f64a9f1;
+	}
+}
+[t:2w_hell_boar,n:0x02a002b0]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.8738,0,1.93918,0x29689801;
+	}
+}
+[t:2w_hell_boar,n:0x02a002b3]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.37256,0,2.4478,0x29689801;
+	}
+}
+[t:2w_hell_boar,n:0x02a002b5]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.0506,0,3.98659,0x29689801;
+	}
+}
+[t:2w_hell_boar,n:0x02a002a6]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.91614,-3.75797,-2.71233,0x106b2c2b;
+	}
+}
+[t:2w_hell_boar,n:0x02a002a7]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.30179,-4,-2.76105,0x106b2c2b;
+	}
+}
+[t:2w_hell_boar,n:0x02a002a9]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.82413,-3.9807,-2.06648,0x106b2c2b;
+	}
+}
+[t:2w_synged,n:0x02a00931]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.25939,0,2.74584,0xe1f24530;
+	}
+}
+[t:2w_hell_boar,n:0x02a002aa]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.786895,0,-1.10975,0xeaa6bf23;
+	}
+}
+[t:2w_hell_boar,n:0x02a002ab]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.00435697,0,-2.41817,0xeaa6bf23;
+	}
+}
+[t:2w_hell_boar,n:0x02a002ac]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.825485,0,-0.889225,0xeaa6bf23;
+	}
+}
+[t:2w_hell_boar,n:0x02a002ad]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.73543,0,-1.71849,0xeaa6bf23;
+	}
+}
+[t:2w_hell_boar,n:0x02a002ae]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.38806,0,-0.378594,0xeaa6bf23;
+	}
+}
+[t:2w_hell_boar,n:0x02a002a8]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.78243,12,-0.0621445,0x71fd7712;
+	}
+}
+[t:2w_skrubb,n:0x02a00106]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382684,0,-0.923879;
+	  p position = -0.0546883,0,3.34836,0xdf618a8c;
+	}
+}
+[t:2w_synged,n:0x02a0091a]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.16891,-0.724653,-1.24536,0xa4e1ed59;
+	}
+}
+[t:2w_hell_boar,n:0x02a00296]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.35624,-1,-3.34888,0xb6a5f528;
+	}
+}
+[t:2w_hell_boar,n:0x02a00297]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.76727,0,-0.382895,0x7cb1ffe5;
+	}
+}
+[t:2w_hell_boar,n:0x02a0029b]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.270317,0,-0.814247,0x7cb1ffe5;
+	}
+}
+[t:2w_hell_boar,n:0x02a0029c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.93391,0,-1.87389,0x7cb1ffe5;
+	}
+}
+[t:2w_hell_boar,n:0x02a00299]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.0204675,-1.11555,-2.84454,0x187d14e4;
+	}
+}
+[t:2w_hell_boar,n:0x02a0029a]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.75165,-1,-3.95723,0x187d14e4;
+	}
+}
+[t:2w_hell_boar,n:0x02a0029e]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.2191,-0.868053,-1.73611,0x187d14e4;
+	}
+}
+[t:2w_hell_boar,n:0x02a0029f]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.44517,-1,-3.96644,0x187d14e4;
+	}
+}
+[t:2w_hell_boar,n:0x02a00298]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.12863,0,-1.06932,0x376e9bf5;
+	}
+}
+[t:2w_hell_boar,n:0x02a0029d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.31992,0,-1.54068,0x376e9bf5;
+	}
+}
+[t:2w_skrubb,n:0x02a00108]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382684,0,-0.923879;
+	  p position = 1.03017,0,-0.216846,0x9c5d27da;
+	}
+}
+[t:gom,n:0x02a0008d]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -2.83632,0,-2.36655,0x798a0159;
+	}
+}
+[t:2w_hell_boar,n:0x02a001f9]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.177441,0,-2.80111,0xc1cc55cd;
+	}
+}
+[t:2w_hell_boar,n:0x02a001fb]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.0507584,0,0.0754089,0xc1cc55cd;
+	}
+}
+[t:2w_hell_boar,n:0x02a001fc]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.30485,0,2.06615,0xc1cc55cd;
+	}
+}
+[t:2w_hell_boar,n:0x02a001fd]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.67476,0,-2.11578,0xc1cc55cd;
+	}
+}
+[t:2w_hell_boar,n:0x02a001fe]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.39365,0,-1.68367,0xc1cc55cd;
+	}
+}
+[t:2w_hell_boar,n:0x02a001ff]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.37769,0,0.289361,0xc1cc55cd;
+	}
+}
+[t:2w_hell_boar,n:0x02a00200]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.55814,0,-3.40721,0xc1cc55cd;
+	}
+}
+[t:2w_synged,n:0x02a00910]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.3343,0,3.64367,0xdfab50f9;
+	}
+}
+[t:2w_hell_boar,n:0x02a0090b]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.55567,0,-1.83423,0x7fcdf3a1;
+	}
+}
+[t:2w_hell_boar,n:0x02a0090c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.71407,0,1.43982,0x7fcdf3a1;
+	}
+}
+[t:2w_hell_boar,n:0x02a0090d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.76049,0,-0.0786624,0x7fcdf3a1;
+	}
+}
+[t:2w_hell_boar,n:0x02a0090f]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.97066,0,2.2784,0x7fcdf3a1;
+	}
+}
+[t:2w_synged,n:0x02a00911]
+{
+	[aspect]
+	{
+	  f experience_value = 5.775e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.08698,0,1.98524,0x896cdd9f;
+	}
+}
+[t:2w_ghost,n:0x02a009cd]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,5.36442e-007;
+	  p position = -3.40417,0,3.37977,0xd0ef6c6e;
+	}
+}
+[t:2w_ghost,n:0x02a009ce]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,5.36442e-007;
+	  p position = -3.4485,0,-3.81192,0xd0ef6c6e;
+	}
+}
+[t:2w_ghost,n:0x02a009b8]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -3.32833,0,0.513238,0x9815ef9d;
+	}
+}
+[t:2w_ghost,n:0x02a009b9]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -0.185959,0,1.00615,0x85192328;
+	}
+}
+[t:2w_ghost,n:0x02a009ba]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -0.398665,0,1.60179,0x79341ba7;
+	}
+}
+[t:2w_ghost,n:0x02a009bb]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 0.539571,0,1.03325,0x9e522b1b;
+	}
+}
+[t:2w_ghost,n:0x02a009cb]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 1.76996,0,-0.0568814,0x51f189a5;
+	}
+}
+[t:2w_ghost,n:0x02a009cc]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -2.11956,0,0.705235,0x51f189a5;
+	}
+}
+[t:2w_ghost,n:0x02a009c7]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 3.86239,0,-1.8758,0xac752e4e;
+	}
+}
+[t:2w_ghost,n:0x02a009c5]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 1.83587,0,-0.739934,0x5c742688;
+	}
+}
+[t:2w_ghost,n:0x02a009c6]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -0.437949,0,3.98247,0xd9ea1288;
+	}
+}
+[t:2w_ghost,n:0x02a009c1]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 0.782734,0,-1.19205,0x95ae05e6;
+	}
+}
+[t:2w_ghost,n:0x02a009c2]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 0.546593,0,-1.22455,0x079f83ad;
+	}
+}
+[t:2w_ghost,n:0x02a009c4]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -0.0813724,0,-0.666311,0x8aa55f8b;
+	}
+}
+[t:2w_ghost,n:0x02a009bd]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -2.59423,0,1.25199,0xae087831;
+	}
+}
+[t:2w_ghost,n:0x02a009c0]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 1.56357,0,0.0552544,0x8aa1a055;
+	}
+}
+[t:2w_ghost,n:0x02a009be]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 0.554936,0,1.83883,0xec2bac1a;
+	}
+}
+[t:2w_ghost,n:0x02a009bf]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -3.38238,0,0.378449,0xec2bac1a;
+	}
+}
+[t:2w_ghost,n:0x02a009bc]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,0.382684;
+	  p position = 1.52901,0,-0.110017,0x67920fa4;
+	}
+}
+[t:2w_ghost,n:0x02a009b5]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,-7.91355e-007,0,1;
+	  p position = -0.151923,0,0.376159,0xde626459;
+	}
+}
+[t:2w_ghost,n:0x02a009b7]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.923879;
+	  p position = -0.670078,0,-0.0655554,0x47dc9cbe;
+	}
+}
+[t:2w_ghost,n:0x02a009b6]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,-7.45058e-007,0,1;
+	  p position = 1.6654,0,-1.24204,0x1e21d44f;
+	}
+}
+[t:2w_ghost,n:0x02a009c8]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -0.356868,0,3.58192,0xa1048a92;
+	}
+}
+[t:2w_ghost,n:0x02a009c9]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -3.93732,0,0.384364,0xa1048a92;
+	}
+}
+[t:2w_ghost,n:0x02a009ca]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -3.1385,0,1.05309,0x4e86a5eb;
+	}
+}
+[t:2w_ghost,n:0x02a009c3]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 0.395919,0,1.90715,0x85028da5;
+	}
+}
+[t:2w_skrubb,n:0x02a001f3]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -7081,15 +6745,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -7109,7 +6775,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7121,7 +6787,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -7133,7 +6799,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7145,7 +6811,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7157,7 +6823,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7169,7 +6835,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7181,7 +6847,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7193,7 +6859,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7205,15 +6871,17 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -7233,7 +6901,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7245,7 +6913,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7257,7 +6925,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7269,7 +6937,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7281,7 +6949,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7293,7 +6961,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.775e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
@@ -7315,7 +6983,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -7328,7 +6998,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -7350,7 +7020,9 @@
 	}
 	[aspect]
 	{
-	  f experience_value = 1.01112e+007;
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
 	}
 	[common]
 	{
@@ -7363,7 +7035,7 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
 	}
 	[placement]
 	{
@@ -7375,7 +7047,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7387,7 +7059,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7399,7 +7071,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7411,7 +7083,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7423,7 +7095,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.10012e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
@@ -7431,19 +7103,87 @@
 	  p position = 2.65785,0,-0.41138,0xd0864bcd;
 	}
 }
-[t:2w_skrubb,n:0x02a00108]
+[t:2w_skrubb,n:0x02a001ef]
 {
 	[aspect]
 	{
-	  f experience_value = 1.501e+006;
-	  f life = 952;
-	  f max_life = 952;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
 	  f scale_multiplier = 0.71;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707106;
+	  p position = 1.93888,0,-0.164878,0x3f74982f;
+	}
+}
+[t:2w_hell_boar,n:0x02a0025b]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.43524,0,0.466018,0x37b86b10;
+	}
+}
+[t:2w_hell_boar,n:0x02a0025c]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.235031,0,-0.743789,0x37b86b10;
+	}
+}
+[t:2w_hell_boar,n:0x02a0025d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.10012e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.11009,0,3.1091,0x37b86b10;
+	}
+}
+[t:2w_skrubb,n:0x02a000ce]
+{
+	[aspect]
+	{
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
 	}
 	[common]
 	{
@@ -7456,378 +7196,843 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382684,0,-0.923879;
-	  p position = 1.03017,0,-0.216846,0x9c5d27da;
+	  p position = 2.78107,0,3.84006,0x2cbeca7f;
 	}
 }
-[t:2w_ghost,n:0x02a009cd]
+[t:2w_skrubb,n:0x02a000eb]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,5.36442e-007;
-	  p position = -3.40417,0,3.37977,0xd0ef6c6e;
+	  q orientation = 0,-0.382684,0,-0.923879;
+	  p position = 1.51015,0,-2.21193,0x04af3740;
 	}
 }
-[t:2w_ghost,n:0x02a009ce]
+[t:2w_synged,n:0x02a0092c]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,5.36442e-007;
-	  p position = -3.4485,0,-3.81192,0xd0ef6c6e;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.174088,0,-0.0875701,0x04af3740;
 	}
 }
-[t:2w_ghost,n:0x02a009b8]
+[t:2w_synged,n:0x02a0092d]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -3.32833,0,0.513238,0x9815ef9d;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.31992,0,-0.928893,0x04af3740;
 	}
 }
-[t:2w_ghost,n:0x02a009b9]
+[t:2w_skrubb,n:0x02a000d9]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -0.185959,0,1.00615,0x85192328;
+	  q orientation = 0,-0.382684,0,-0.923879;
+	  p position = -1.86163,0,-0.92627,0x9440680b;
 	}
 }
-[t:2w_ghost,n:0x02a009ba]
+[t:2w_hell_boar,n:0x02a0023f]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -0.398665,0,1.60179,0x79341ba7;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.043014,0,2.12667,0x6524c939;
 	}
 }
-[t:2w_ghost,n:0x02a009bb]
+[t:2w_hell_boar,n:0x02a00240]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 0.539571,0,1.03325,0x9e522b1b;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.1172,0,2.75942,0x6524c939;
 	}
 }
-[t:2w_ghost,n:0x02a009cb]
+[t:2w_hell_boar,n:0x02a00241]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 1.76996,0,-0.0568814,0x51f189a5;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.33,0,0.86699,0x6524c939;
 	}
 }
-[t:2w_ghost,n:0x02a009cc]
+[t:2w_hell_boar,n:0x02a00242]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -2.11956,0,0.705235,0x51f189a5;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.99358,0,-0.55754,0x6524c939;
 	}
 }
-[t:2w_ghost,n:0x02a009c7]
+[t:2w_hell_boar,n:0x02a00244]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 3.86239,0,-1.8758,0xac752e4e;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.173782,0,0.105385,0x6524c939;
 	}
 }
-[t:2w_ghost,n:0x02a009c5]
+[t:2w_hell_boar,n:0x02a00245]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 1.83587,0,-0.739934,0x5c742688;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.17448,0,-2.09892,0x6524c939;
 	}
 }
-[t:2w_ghost,n:0x02a009c6]
+[t:2w_hell_boar,n:0x02a00246]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -0.437949,0,3.98247,0xd9ea1288;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.62366,0,-0.44435,0x6524c939;
 	}
 }
-[t:2w_ghost,n:0x02a009c1]
+[t:2w_hell_boar,n:0x02a00247]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 0.782734,0,-1.19205,0x95ae05e6;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.393875,0,0.458298,0x6524c939;
 	}
 }
-[t:2w_ghost,n:0x02a009c2]
+[t:2w_synged,n:0x02a0092a]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 0.546593,0,-1.22455,0x079f83ad;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.596328,0,0.685272,0x6524c939;
 	}
 }
-[t:2w_ghost,n:0x02a009c4]
+[t:2w_hell_boar,n:0x02a0024d]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -0.0813724,0,-0.666311,0x8aa55f8b;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -2.76985,0,1.88755,0x1e6ce5f6;
 	}
 }
-[t:2w_ghost,n:0x02a009bd]
+[t:2w_hell_boar,n:0x02a00243]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -2.59423,0,1.25199,0xae087831;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.47703,0,0.0550757,0x81ea2445;
 	}
 }
-[t:2w_ghost,n:0x02a009c0]
+[t:2w_synged,n:0x02a0092e]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 1.56357,0,0.0552544,0x8aa1a055;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.307723,0,-3.52583,0xd1910f0c;
 	}
 }
-[t:2w_ghost,n:0x02a009be]
+[t:2w_hell_boar,n:0x02a0028a]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 0.554936,0,1.83883,0xec2bac1a;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.463737,0.809612,2.0118,0xff631e1c;
 	}
 }
-[t:2w_ghost,n:0x02a009bf]
+[t:2w_hell_boar,n:0x02a0028f]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -3.38238,0,0.378449,0xec2bac1a;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.78128,-0.139969,-0.279939,0x0700e038;
 	}
 }
-[t:2w_ghost,n:0x02a009bc]
+[t:2w_synged,n:0x02a0091e]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.923879,0,0.382684;
-	  p position = 1.52901,0,-0.110017,0x67920fa4;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.85587,0.235396,0.506825,0x0700e038;
 	}
 }
-[t:2w_ghost,n:0x02a009b5]
+[t:2w_skrubb,n:0x02a001e4]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.501e+006;
+	  f life = 1952;
+	  f life_recovery_period = 5;
+	  f life_recovery_unit = 1;
+	  f max_life = 1952;
+	  f scale_multiplier = 0.71;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Pureblood";
+	}
+	[defend]
+	{
+	  f defense = 672;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -0.151923,0,0.376159,0xde626459;
+	  q orientation = 0,1,0,-6.55651e-007;
+	  p position = -1.51103,0,-0.789849,0xfb511f6b;
 	}
 }
-[t:2w_ghost,n:0x02a009ca]
+[t:2w_hell_boar,n:0x02a00294]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -3.1385,0,1.05309,0x4e86a5eb;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.24755,0,-2.4631,0xd737bbaf;
 	}
 }
-[t:2w_ghost,n:0x02a009c8]
+[t:2w_hell_boar,n:0x02a00292]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -0.356868,0,3.58192,0xa1048a92;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -3.65155,2.93902,1.05257,0xa4b67375;
 	}
 }
-[t:2w_ghost,n:0x02a009c9]
+[t:2w_hell_boar,n:0x02a00293]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -3.93732,0,0.384364,0xa1048a92;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 2.42701,2,0.240525,0xed66d476;
 	}
 }
-[t:2w_ghost,n:0x02a009b7]
+[t:2w_hell_boar,n:0x02a00295]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.10012e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = -0.670078,0,-0.0655554,0x47dc9cbe;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.54766,2,1.60268,0xed66d476;
 	}
 }
-[t:2w_ghost,n:0x02a009c3]
+[t:2w_synged,n:0x02a0091b]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 5.775e+006;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707106,0,0.707107;
-	  p position = 0.395919,0,1.90715,0x85028da5;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 1.94508,0,-1.19828,0x0e8d9cec;
 	}
 }
-[t:2w_ghost,n:0x02a0084d]
+[t:gom,n:0x02a00178]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,6.93489e-015;
+	  p position = -1.01089,1,1.31351,0xc4be3c66;
+	}
+}
+[t:2w_ghost,n:0x02a00896]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.96968,0,0.568762,0xa99cc700;
+	  p position = 2.3003,1,0.928016,0x16e51d72;
 	}
 }
-[t:2w_ghost,n:0x02a0084e]
+[t:2w_ghost,n:0x02a00897]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.56297,0,-0.24209,0x4e2ba168;
+	  p position = -1.08422,1,0.805868,0x16e51d72;
 	}
 }
-[t:2w_ghost,n:0x02a00849]
+[t:2w_ghost,n:0x02a0089a]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.86619,0,-1.15256,0xfa345ad4;
+	  p position = -1.06983,0,0.926069,0x24a7d4a5;
 	}
 }
-[t:2w_ghost,n:0x02a0084a]
+[t:2w_ghost,n:0x02a0089b]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -0.563493,0,0.297212,0x1dbdfba9;
+	  p position = -0.607876,0,-0.88859,0x24a7d4a5;
 	}
 }
-[t:2w_ghost,n:0x02a0084b]
+[t:2w_ghost,n:0x02a00894]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.49725,0,-0.385699,0x76c27a5d;
+	  p position = -3.10247,0,-2.99703,0x46d702fe;
 	}
 }
-[t:2w_ghost,n:0x02a0084c]
+[t:2w_ghost,n:0x02a00895]
 {
 	[aspect]
 	{
-	  f experience_value = 1.2e+006;
+	  f experience_value = 9.2e+006;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.70858,0,-0.347051,0x71f2b71b;
+	  p position = 3.71879,0,-2.8396,0x46d702fe;
+	}
+}
+[t:2w_ghost,n:0x02a0089d]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -3.17121,0,-3.81532,0xc298b81f;
+	}
+}
+[t:2w_ghost,n:0x02a0089e]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -1.57699,0,2.16499,0xc298b81f;
+	}
+}
+[t:2w_ghost,n:0x02a0089c]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382684;
+	  p position = -2.05317,0,1.09803,0xcb61d4b2;
+	}
+}
+[t:2w_ghost,n:0x02a0089f]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -1.40378,0,0.131805,0xce24ffe8;
+	}
+}
+[t:2w_ghost,n:0x02a008a0]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 3.97449,0,0.207025,0xce24ffe8;
+	}
+}
+[t:2w_ghost,n:0x02a008a1]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.85371,0,-0.169858,0xcaa62ce0;
+	}
+}
+[t:2w_ghost,n:0x02a00898]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -2.9227,0,-1.37802,0x1546c3b2;
+	}
+}
+[t:2w_ghost,n:0x02a00899]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.77288,0,1.62454,0x1546c3b2;
+	}
+}
+[t:gom,n:0x02a00179]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.45468e-007;
+	  p position = -1.33869,1,1.41158,0x8a70e1c4;
+	}
+}
+[t:gom,n:0x02a0017b]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+		trigger_msg = we_invalid;
+		trigger_msg2 = we_invalid;
+	}
+	[aspect]
+	{
+	  f experience_value = 1.71112e+007;
+	  f life = 5710;
+	  f max_life = 5710;
+	}
+	[common]
+	{
+		screen_name = "Archmage";
+	}
+	[generator_in_object]
+	{
+		child_template_name = "";
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.45468e-007;
+	  p position = 1.79895,-3.5,-1.94101,0x977bf94e;
+	}
+}
+[t:2w_ghost,n:0x02a00940]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 2.15354,0,1.2262,0xad85a62f;
+	}
+}
+[t:2w_ghost,n:0x02a0094f]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -3.09292,0,-2.38962,0x7b8fc31d;
+	}
+}
+[t:2w_ghost,n:0x02a00950]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,4.62452e-007;
+	  p position = 0.738744,0,2.54573,0x7b8fc31d;
+	}
+}
+[t:2w_ghost,n:0x02a00951]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,4.75917e-007;
+	  p position = 5.48302,0,0.102876,0x7b8fc31d;
+	}
+}
+[t:2w_ghost,n:0x02a00945]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -6.70777,0,3.60308,0x6172a497;
+	}
+}
+[t:2w_ghost,n:0x02a00946]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -1.84728,0,-1.32741,0x6172a497;
+	}
+}
+[t:2w_ghost,n:0x02a00947]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 6.35465,0,2.6858,0x6172a497;
+	}
+}
+[t:2w_ghost,n:0x02a00948]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 2.1255,0,-1.49387,0x6172a497;
+	}
+}
+[t:2w_ghost,n:0x02a00943]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 5.40473,0,-1.70065,0x71e22da4;
+	}
+}
+[t:2w_ghost,n:0x02a00944]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -3.68209,0,-1.98548,0x71e22da4;
+	}
+}
+[t:2w_ghost,n:0x02a00949]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -1.21913,0,0.0505521,0x4f533afa;
+	}
+}
+[t:2w_ghost,n:0x02a00941]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = -2.9625,0,-1.0384,0x82f89970;
+	}
+}
+[t:2w_ghost,n:0x02a0094b]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 0.144315,0,2.14615,0x0a7fdc73;
+	}
+}
+[t:2w_ghost,n:0x02a0094a]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 0.110364,0,-0.317976,0x309329e3;
+	}
+}
+[t:2w_ghost,n:0x02a0094c]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 0.450006,0,-0.188972,0x1b8b9749;
+	}
+}
+[t:2w_ghost,n:0x02a0094d]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707106,0,0.707107;
+	  p position = 1.77546,0,-0.444358,0x84084fbb;
+	}
+}
+[t:2w_ghost,n:0x02a0094e]
+{
+	[aspect]
+	{
+	  f experience_value = 9.2e+006;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.118953,0,1.43306,0x84084fbb;
 	}
 }
