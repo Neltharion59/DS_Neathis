@@ -787,6 +787,23 @@
 		use_point_scids = 0x027015e5;
 	}
 }
+[t:chest_cav_02_gl_r1,n:0x027015da]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.6;
+	}
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.23114,0.530879,1.89751,0xf85eb619;
+		use_point_scids = 0x027015e6;
+	}
+}
 [t:pot_cav_02_gl_r1,n:0x027015ad]
 {
 	[placement]
@@ -891,23 +908,6 @@
 	  q orientation = 0,0.707107,0,-0.707106;
 	  p position = 0.1604,0.530879,0.0575104,0x64f1cc7f;
 		use_point_scids = 0x027015e9;
-	}
-}
-[t:chest_cav_02_gl_r1,n:0x027015da]
-{
-	[aspect]
-	{
-	  f scale_multiplier = 0.6;
-	}
-	[inventory]
-	{
-	  b drop_at_use_point = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.23114,0.530879,1.89751,0xf85eb619;
-		use_point_scids = 0x027015e6;
 	}
 }
 [t:chest_cav_02_gl_r1,n:0x027015db]

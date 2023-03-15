@@ -1151,7 +1151,7 @@
 	[placement]
 	{
 	  q orientation = 5.30532e-008,0.707107,3.46994e-008,0.707107;
-	  p position = 3.19194,0,0.130142,0x81b2b919;
+	  p position = -3.16124,0,-0.0952148,0x175f14ed;
 	}
 }
 [t:3w_guard_ranged,n:0x0330011d]
@@ -1178,8 +1178,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382684,0,0.92388;
-	  p position = 2.32298,-6,-7.61728,0x518f3e2f;
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -1.49534,-6,-7.02658,0x518f3e2f;
 	}
 }
 [t:bandit_ranged,n:0x033001a3]
@@ -1208,12 +1208,17 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.05586,-6,-6.97221,0x518f3e2f;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 2.44971,0,0.461182,0x175f14ed;
 	}
 }
 [t:3w_traveler_guard_02,n:0x033001be]
 {
+	[aspect]
+	{
+	  f mana_recovery_period = 1;
+	  f mana_recovery_unit = 500;
+	}
 	[common]
 	{
 		screen_name = "Legionnare Wizard";
@@ -1238,8 +1243,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,-0.382683;
-	  p position = 2.61097,-6,-5.95567,0x518f3e2f;
+	  q orientation = 0,0.923879,0,0.382684;
+	  p position = -2.7774,0,-1.68733,0x175f14ed;
 	}
 }
 [t:phaedriel,n:0x03300767]
@@ -2128,7 +2133,9 @@
 	}
 	[mind]
 	{
-		movement_orders = mo_hold;
+		disposition_orders = ad_offensive;
+	  f melee_engage_range = 12;
+	  f ranged_engage_range = 12;
 	}
 	[placement]
 	{
@@ -2138,6 +2145,10 @@
 }
 [t:mp_village_idiot,n:0x03300294]
 {
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
 	[mind]
 	{
 	  b actor_auto_fidgets = false;
@@ -2145,7 +2156,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,1.66939e-007;
-	  p position = -0.659383,0,0.544785,0xa985f645;
+	  p position = -0.280807,0,1.35455,0xa985f645;
 	}
 }
 [t:mp_townfolk_male_03,n:0x03300296]
@@ -2168,8 +2179,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.02224,0,1.22038,0xa985f645;
+	  q orientation = 0,-1,0,-5.28297e-008;
+	  p position = 3.8418,0,-0.496338,0xa985f645;
 		use_point_scids = 0x03300298;
 	}
 }
@@ -2202,12 +2213,16 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.77249,0,0.925007,0x2a553c91;
+	  p position = -1.13133,-2,-0.488436,0x9dc3dc1b;
 		use_point_scids = 0x0330029b;
 	}
 }
 [t:townfolk_m_05,n:0x03300292]
 {
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
 	[inventory]
 	{
 		[equipment]
@@ -2222,12 +2237,16 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.08707,-2,-0.437668,0x6bf06d49;
+	  q orientation = 0,-5.28297e-008,0,1;
+	  p position = -1.50789,-2,-0.235428,0x6bf06d49;
 	}
 }
 [t:townfolk_m_01,n:0x0330028c]
 {
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
 	[mind]
 	{
 	  b actor_auto_fidgets = false;
@@ -2235,23 +2254,15 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.551456,-2,-0.556885,0x4cf7771c;
+	  p position = 0.188875,-2,-0.708755,0x4cf7771c;
 	}
 }
 [t:townfolk_m_04,n:0x0330028f]
 {
-	[mind]
+	[aspect]
 	{
-	  b actor_auto_fidgets = false;
+	  b is_selectable = false;
 	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -1.73161,0,0.458989,0x988488c8;
-	}
-}
-[t:mp_townfolk_m_03,n:0x03300284]
-{
 	[mind]
 	{
 	  b actor_auto_fidgets = false;
@@ -2259,23 +2270,47 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.0343771,-2,-0.578964,0xe0252caf;
+	  p position = -1.60509,0,1.14396,0x988488c8;
 	}
 }
-[t:townfolk_m_02,n:0x03300287]
+[t:mp_townfolk_m_03,n:0x03300284]
 {
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
 	[mind]
 	{
 	  b actor_auto_fidgets = false;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-2.09483e-007;
-	  p position = 2.6871,0,1.63066,0x484ef0d8;
+	  q orientation = 0,-5.58615e-008,0,1;
+	  p position = -0.674944,-2,-0.378601,0xe0252caf;
+	}
+}
+[t:townfolk_m_02,n:0x03300287]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[mind]
+	{
+	  b actor_auto_fidgets = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.809091,-2,-0.810562,0xdb9b383e;
 	}
 }
 [t:townfolk_m_06,n:0x03300289]
 {
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
 	[mind]
 	{
 	  b actor_auto_fidgets = false;

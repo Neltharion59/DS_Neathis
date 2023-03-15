@@ -34,7 +34,7 @@
 {
 	[text*]
 	{
-		screen_text = "Hello. As is the tradition, the western wing of the castle has been overrun because I did not seal the door properly. Now, my punishment is to guard the entry in case something foul leaves the area. I could try to clear the place out, but I do not dare to do that by myself and captain would not assign any men to help. If you are not in hurry, could you perhaps do that for me? You may take anything you find there as a reward.";
+		screen_text = "Hello. As is the tradition, the western wing of the castle has been overrun because I did not seal the door properly. Now, my punishment is to clear the area out. How about you cover my back?";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -62,6 +62,14 @@
 	  f scroll_rate = 10.000000;
 	}
 }
+[guard_top_4]
+{
+	[text*]
+	{
+		screen_text = "Every year we fight that army. Every year we shatter every one last of them. Every year there's a new army. I wonder who conjures them?";
+	  f scroll_rate = 10.000000;
+	}
+}
 [guard_tower_1]
 {
 	[text*]
@@ -83,7 +91,6 @@
 	[text*]
 	{
 		choice = shop;
-		sample = s_v_bt_adwana2;
 		screen_text = "Greetings, visitor. It is highly unusual for a new face to show up here, at castle Cryhold. Whatever cause brought you here must have had you desperate. Both the Cave of Garrison and the Cave of Passage are overflowing with ice warriors. Our powers and resources are focused on preparing for the annual onslaught from the Cave of Garrison. The Cave of Passage leads into the kingdom, but is guarded heavily. What could you possibly seek here? I see, it's none of my business. Nevertheless. my supplies are available, if you can pay for them.";
 	  f scroll_rate = 10.000000;
 	}
@@ -94,14 +101,6 @@
 	{
 		choice = shop;
 		screen_text = "Must have a been a lonely way here, friend. I would not be able to make it here without our entire regiment, that's for sure. Most people are here to fight. I am but a quartermaster, tasked with managing our supplies of weapons and armor. It may sound simple. but it occupies me full time, really. Although we usually end up using up all the gear we bring here, I'm quite sure it won't hurt to sell you some. Or perhaps, you have a few items to extend our supply?";
-	  f scroll_rate = 10.000000;
-	}
-}
-[guard_top_4]
-{
-	[text*]
-	{
-		screen_text = "Every year we fight that army. Every year we shatter every one last of them. Every year there's a new army. I wonder who conjures them?";
 	  f scroll_rate = 10.000000;
 	}
 }
