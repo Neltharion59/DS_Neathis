@@ -1,0 +1,26 @@
+[t:elevator_2s_2c_1n,n:0x0350012e]
+{
+	[placement]
+	{
+	  p position = 1.89973,0,1.62786,0xec094987;
+	}
+}
+[t:elevator_2s_1c_2n,n:0x0350012f]
+{
+	[elevator_2s_1c_2n]
+	{
+	  i connect_door_level1 = 10;
+	  i connect_door_level2 = 2;
+	  x connect_node_level1 = 0x474502FC;
+	  x connect_node_level2 = 0xA4DC3080;
+	  f duration = 5;
+	  i elevator_door_level1 = 1;
+	  i elevator_door_level2 = 1;
+	  x elevator_node = 0x6351FD08;
+		material = "ds_pulley";
+	}
+	[placement]
+	{
+	  p position = -1.14679,-0.6,-0.0279694,0xa4dc3080;
+	}
+}

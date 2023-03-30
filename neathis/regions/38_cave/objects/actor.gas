@@ -1,0 +1,391 @@
+[t:mp_npc_dwarf_01,n:0x03600edc]
+{
+	[common]
+	{
+		screen_name = "Dhos";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = boar_keeper;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_sl_f_g_c_fun;
+			es_feet = bo_bo_le_light;
+			es_weapon_hand = shovel;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 2.23124,0,-1.71228,0x47964612;
+	}
+}
+[t:hell_boar,n:0x03600ed9]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[aspect]
+	{
+	  f experience_value = 0;
+	  b is_invincible = true;
+	  b is_selectable = false;
+	  f scale_multiplier = 1.7;
+	}
+	[common]
+	{
+		screen_name = "Boar";
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,2.98023e-008,0,1;
+	  p position = -1.8338,0,-3.58021,0x428fd4d8;
+	}
+}
+[t:hell_boar,n:0x03600eda]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[aspect]
+	{
+	  f experience_value = 0;
+	  b is_invincible = true;
+	  b is_selectable = false;
+	  f scale_multiplier = 1.7;
+	}
+	[common]
+	{
+		screen_name = "Boar";
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.820978,0,2.06168,0x428fd4d8;
+	}
+}
+[t:hell_boar,n:0x03600ed8]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[aspect]
+	{
+	  f experience_value = 0;
+	  b is_invincible = true;
+	  b is_selectable = false;
+	  f scale_multiplier = 1.7;
+	}
+	[common]
+	{
+		screen_name = "Boar";
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,2.98023e-008,0,1;
+	  p position = 0.0803013,0,1.02559,0x98855df0;
+	}
+}
+[t:hell_boar,n:0x03600edb]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[aspect]
+	{
+	  f experience_value = 0;
+	  b is_invincible = true;
+	  b is_selectable = false;
+	  f scale_multiplier = 1.7;
+	}
+	[common]
+	{
+		screen_name = "Boar";
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.923879,0,-0.382684;
+	  p position = 3.72564,0,3.71783,0x50a76cf2;
+	}
+}
+[t:mp_npc_dwarf_02,n:0x03600edd]
+{
+	[common]
+	{
+		screen_name = "Sharid";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = boar_helper;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.32925,0,3.68336,0x50a76cf2;
+	}
+}
+[t:mp_npc_dwarf_01,n:0x03600ede]
+{
+	[common]
+	{
+		screen_name = "Daruel";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = farmer_1;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_le_r_g_c_low;
+			es_feet = bo_ra_bo_le_f_g_c_fin;
+			es_weapon_hand = torch_small;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -3.42631,0,2.93607,0x164bb883;
+	}
+}
+[t:utraean_priest_sarden,n:0x03600ee8]
+{
+	[common]
+	{
+		screen_name = "Olyn";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = farmer_6;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ra_ch_r_g_o_fin;
+			es_feet = bo_bo_le_f_g_c_avg;
+			es_weapon_hand = torch_small;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.66939e-007;
+	  p position = 3.0476,0,3.65585,0x164bb883;
+	}
+}
+[t:gloern,n:0x03600ee0]
+{
+	[aspect]
+	{
+	  b is_invincible = true;
+	  f max_life = 147;
+	  f max_mana = 37;
+	}
+	[common]
+	{
+		screen_name = "Tarlik";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = farmer_3;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_le_r_g_c_low;
+			es_feet = bo_ra_bo_le_f_g_c_fin;
+			es_weapon_hand = torch_small;
+		}
+		[other]
+		{
+			il_main = book_glb_lore_goldsniffer;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.923879;
+	  p position = -2.44644,0,-0.363907,0xd95b0f22;
+	}
+}
+[t:mp_dwarf_legionnaire_guard,n:0x03600ee4]
+{
+	[common]
+	{
+		screen_name = "Virrez";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = farmer_5;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_le_r_g_c_low;
+			es_feet = bo_ra_bo_le_f_g_c_fin;
+			es_weapon_hand = torch_small;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.817444,0,1.04683,0xb563779e;
+	}
+}
+[t:ulfgrim,n:0x03600ee2]
+{
+	[aspect]
+	{
+	  b is_invincible = true;
+	  f max_life = 882;
+	  f max_mana = 169;
+	}
+	[common]
+	{
+		screen_name = "Naryn";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = farmer_4;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_le_r_g_c_low;
+			es_feet = bo_ra_bo_le_f_g_c_fin;
+			es_weapon_hand = torch_small;
+		}
+		[other]
+		{
+			il_main = ax_g_c_2h2b_avg;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.923879;
+	  p position = -3.61842,0,0.950081,0x68a1b3f9;
+	}
+}
+[t:rhut,n:0x03600edf]
+{
+	[aspect]
+	{
+	  b is_invincible = true;
+	  f max_life = 842.8;
+	  f max_mana = 164;
+	}
+	[common]
+	{
+		screen_name = "Zhont";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = farmer_2;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_le_r_g_c_low;
+			es_feet = bo_ra_bo_le_f_g_c_fin;
+			es_weapon_hand = torch_small;
+		}
+		[other]
+		{
+			il_main = book_glb_lore_droog_2;
+		}
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,-0.92388;
+	  p position = -2.27679,0,-2.06194,0xe8a183b0;
+	}
+}
