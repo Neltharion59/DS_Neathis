@@ -2782,6 +2782,162 @@
 	  p position = -2.81863,0.522791,1.11395,0x38082667;
 	}
 }
+[t:verrus,n:0x01900437]
+{
+	[common]
+	{
+		screen_name = "Nimth";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_01;
+		}
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_ranged_weapon;
+		[equipment]
+		{
+			es_chest = bd_br_f_g_c_avg;
+			es_feet = bo_bo_le_light;
+			es_head = he_op_pl_roman;
+			es_shield_hand = bw_g_d_s_l_c_avg;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.82886,0,1.22716,0x3b659e97;
+	}
+}
+[t:mitromus_wyman,n:0x01900532]
+{
+	[common]
+	{
+		screen_name = "Solmariel";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_02;
+		}
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_ranged_weapon;
+		[equipment]
+		{
+			es_chest = bd_ba_r_g_o_fin;
+			es_feet = bo_bo_le_light;
+			es_head = he_vi_pl_knight;
+			es_shield_hand = bw_g_c_s_l_c_avg;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,0.382684;
+	  p position = -2.78381,0,2.95701,0x3b659e97;
+	}
+}
+[t:mule,n:0x01900533]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[aspect]
+	{
+	  b is_collidable = false;
+	  b is_invincible = true;
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-4.69147e-008;
+	  p position = 2.87473,0,-0.0873409,0xf7c0ba75;
+	}
+}
+[t:mule,n:0x01900534]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[aspect]
+	{
+	  b is_collidable = false;
+	  b is_invincible = true;
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 1.3383,0,-0.23352,0xf7c0ba75;
+	}
+}
+[t:mule,n:0x01900555]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[aspect]
+	{
+	  b is_collidable = false;
+	  b is_invincible = true;
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 0.0312105,0,-0.373718,0xf7c0ba75;
+	}
+}
+[t:mule,n:0x01900556]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[aspect]
+	{
+	  b is_collidable = false;
+	  b is_invincible = true;
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.1301,0,-1.3089,0xf7c0ba75;
+	}
+}
 [t:soul_stinger,n:0x01900286]
 {
 	[placement]
@@ -6449,7 +6605,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 3.98567,0,-1.24274,0xadb73572;
+	  p position = 3.98567,0,-1.18614,0xadb73572;
 	}
 }
 [t:proxo,n:0x0190056c]
@@ -8642,26 +8798,17 @@
 	  p position = 0.0224123,1,1.903,0x3ace2256;
 	}
 }
-[t:wise_woman_ninale,n:0x0190042e]
+[t:mother_zaod,n:0x0190042e]
 {
 	[common]
 	{
-		screen_name = "Thereese";
+		screen_name = "Yalinna";
 	}
 	[conversation]
 	{
 		[conversations]
 		{
 			* = shop_03;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ro_m_d_c_043;
-			es_feet = bo_bo_le_light;
-			es_head = he_ra_ca_ro_wizard_06;
 		}
 	}
 	[mind]
@@ -8671,163 +8818,6 @@
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -2.77917,0,-0.598796,0x3b659e97;
-	}
-}
-[t:verrus,n:0x01900437]
-{
-	[common]
-	{
-		screen_name = "Nimth";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_01;
-		}
-	}
-	[inventory]
-	{
-		selected_active_location = il_active_ranged_weapon;
-		[equipment]
-		{
-			es_chest = bd_br_f_g_c_avg;
-			es_feet = bo_bo_le_light;
-			es_head = he_op_pl_roman;
-			es_shield_hand = bw_g_d_s_l_c_avg;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.82886,0,1.22716,0x3b659e97;
-	}
-}
-[t:mitromus_wyman,n:0x01900532]
-{
-	[common]
-	{
-		screen_name = "Solmariel";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_02;
-		}
-	}
-	[inventory]
-	{
-		selected_active_location = il_active_ranged_weapon;
-		[equipment]
-		{
-			es_chest = bd_ba_r_g_o_fin;
-			es_feet = bo_bo_le_light;
-			es_head = he_vi_pl_knight;
-			es_shield_hand = bw_g_c_s_l_c_avg;
-		}
-	}
-	[mind]
-	{
-		jat_stop = world\ai\jobs\common\job_stop.skrit;
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.923879,0,0.382684;
-	  p position = -2.78381,0,2.95701,0x3b659e97;
-	}
-}
-[t:mule,n:0x01900533]
-{
-	[actor]
-	{
-		alignment = aa_neutral;
-	}
-	[aspect]
-	{
-	  b is_collidable = false;
-	  b is_invincible = true;
-	}
-	[mind]
-	{
-	  b actor_may_attack = false;
-	  b actor_may_be_attacked = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-4.69147e-008;
-	  p position = 2.87473,0,-0.0873409,0xf7c0ba75;
-	}
-}
-[t:mule,n:0x01900534]
-{
-	[actor]
-	{
-		alignment = aa_neutral;
-	}
-	[aspect]
-	{
-	  b is_collidable = false;
-	  b is_invincible = true;
-	}
-	[mind]
-	{
-	  b actor_may_attack = false;
-	  b actor_may_be_attacked = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = 1.3383,0,-0.23352,0xf7c0ba75;
-	}
-}
-[t:mule,n:0x01900555]
-{
-	[actor]
-	{
-		alignment = aa_neutral;
-	}
-	[aspect]
-	{
-	  b is_collidable = false;
-	  b is_invincible = true;
-	}
-	[mind]
-	{
-	  b actor_may_attack = false;
-	  b actor_may_be_attacked = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = 0.0312105,0,-0.373718,0xf7c0ba75;
-	}
-}
-[t:mule,n:0x01900556]
-{
-	[actor]
-	{
-		alignment = aa_neutral;
-	}
-	[aspect]
-	{
-	  b is_collidable = false;
-	  b is_invincible = true;
-	}
-	[mind]
-	{
-	  b actor_may_attack = false;
-	  b actor_may_be_attacked = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -1.1301,0,-1.3089,0xf7c0ba75;
+	  p position = -2.93976,0,-0.777517,0x3b659e97;
 	}
 }

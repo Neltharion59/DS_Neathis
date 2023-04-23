@@ -1,0 +1,14 @@
+[t:emt_sound,n:0x03801cfc]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = 2.83765,0.450001,8.46281,0x39a10e27;
+	}
+	[sound_emitter]
+	{
+	  b continual_loop = true;
+		event_sound = "env_waterfall";
+	  f min_dist = 24;
+	}
+}
