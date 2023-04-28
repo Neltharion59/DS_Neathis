@@ -14,6 +14,14 @@
 	  f scroll_rate = 10.000000;
 	}
 }
+[npc_3]
+{
+	[text*]
+	{
+		screen_text = "I smashed head of the droog who came for me. Whatever drove him to such hatred is surely a terrifying.";
+	  f scroll_rate = 10.000000;
+	}
+}
 [shop_general]
 {
 	[text*]
@@ -41,11 +49,12 @@
 	  f scroll_rate = 10.000000;
 	}
 }
-[npc_3]
+[shop_droog_potion]
 {
 	[text*]
 	{
-		screen_text = "I smashed head of the droog who came for me. Whatever drove him to such hatred is surely a terrifying.";
+		choice = shop;
+		screen_text = "It's madness out there, I tell you. I've heard you've slain some of the radicals. I do not wish to die at your blade as they did. Please, purchase any supplies you like. But don't take too long, or they might see me with you. You cannot imagine what they do to those like me.";
 	  f scroll_rate = 10.000000;
 	}
 }
