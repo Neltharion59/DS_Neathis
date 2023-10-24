@@ -1,0 +1,37 @@
+[t:emt_light_ray_blue,n:0x03b0016c]
+{
+	[placement]
+	{
+	  p position = -0.593125,-1.34256,0.456573,0x5f9802ba;
+	}
+}
+[t:emt_light_ray_blue,n:0x03b0016d]
+{
+	[placement]
+	{
+	  p position = -0.532357,-35.319,0.408447,0x5f9802ba;
+	}
+}
+[t:emt_sound,n:0x03b0018c]
+{
+	[placement]
+	{
+	  q orientation = 0,-2.98023e-008,0,1;
+	  p position = 6.22215,1.76769,-1.86121,0x17b615b6;
+	}
+	[sound_emitter]
+	{
+	  b continual_loop = true;
+		event_sound = "env_moaning";
+	  f max_dist = 70;
+	  f min_dist = 10;
+	}
+}
+[t:emitter_glb_smoke_01,n:0x03b0018f]
+{
+	[placement]
+	{
+	  q orientation = 0,-2.98023e-008,0,1;
+	  p position = 6.23644,2.4388,-1.54895,0x17b615b6;
+	}
+}

@@ -1,0 +1,158 @@
+[t:3w_hydrack,n:0x03d00022]
+{
+	[aspect]
+	{
+	  f experience_value = 4.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 909;
+	  f damage_bonus_min_cmagic = 724;
+	}
+	[placement]
+	{
+	  q orientation = 0,-4.69147e-008,0,1;
+	  p position = 0.471478,-1.75,-3.78694,0x6adfaf81;
+	}
+}
+[t:3w_hydrack,n:0x03d00023]
+{
+	[aspect]
+	{
+	  f experience_value = 4.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 909;
+	  f damage_bonus_min_cmagic = 724;
+	}
+	[placement]
+	{
+	  q orientation = 0,-4.69147e-008,0,1;
+	  p position = 3.6482,-1.75,-2.78778,0xa7b86187;
+	}
+}
+[t:3w_hydrack,n:0x03d00025]
+{
+	[aspect]
+	{
+	  f experience_value = 4.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 909;
+	  f damage_bonus_min_cmagic = 724;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1.05411e-007,0,1;
+	  p position = 2.06969,-1.75,-3.88246,0xcdfd3a3a;
+	}
+}
+[t:3w_hydrack,n:0x03d00024]
+{
+	[aspect]
+	{
+	  f experience_value = 4.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 909;
+	  f damage_bonus_min_cmagic = 724;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,4.69147e-008;
+	  p position = -0.0777512,-1.75,-4.14982,0x42d6c64e;
+	}
+}
+[t:3w_hydrack,n:0x03d00026]
+{
+	[aspect]
+	{
+	  f experience_value = 4.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 909;
+	  f damage_bonus_min_cmagic = 724;
+	}
+	[placement]
+	{
+	  q orientation = 0,-4.69147e-008,0,1;
+	  p position = 3.47092,-1.75,-3.03667,0x63d4e2cf;
+	}
+}
+[t:3w_hydrack,n:0x03d00027]
+{
+	[aspect]
+	{
+	  f experience_value = 4.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 909;
+	  f damage_bonus_min_cmagic = 724;
+	}
+	[placement]
+	{
+	  q orientation = 0,-4.69147e-008,0,1;
+	  p position = -1.82928,-1.75,-2.82612,0xcb95ba56;
+	}
+}
+[t:3w_hydrack,n:0x03d00028]
+{
+	[aspect]
+	{
+	  f experience_value = 4.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 909;
+	  f damage_bonus_min_cmagic = 724;
+	}
+	[placement]
+	{
+	  q orientation = 0,-4.69147e-008,0,1;
+	  p position = 3.86215,-1.75,-2.87076,0x7f080db4;
+	}
+}
+[t:3w_fury,n:0x03d00000]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 300;
+	}
+	[common]
+	{
+		screen_name = "Zaligos the Guardian";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x03B00417,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.0348511,0,0.0421906,0x370670ce;
+	}
+}

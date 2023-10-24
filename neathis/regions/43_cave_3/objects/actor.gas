@@ -1,0 +1,192 @@
+[t:3w_drake_molten,n:0x03e00041]
+{
+	[aspect]
+	{
+	  f experience_value = 6.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 568;
+	  f damage_bonus_min_cmagic = 508;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.85378,0,3.24907,0xc4a6a003;
+	}
+}
+[t:3w_drake_molten,n:0x03e00042]
+{
+	[aspect]
+	{
+	  f experience_value = 6.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 568;
+	  f damage_bonus_min_cmagic = 508;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.11934,0,3.48438,0xc4a6a003;
+	}
+}
+[t:3w_fury,n:0x03e00000]
+{
+	[aspect]
+	{
+	  f experience_value = 4.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 300;
+	}
+	[common]
+	{
+		screen_name = "Sclianth the Guardian";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x03B00417,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.2076,0,-3.09948,0x2bdd983f;
+	}
+}
+[t:3w_drake_molten,n:0x03e0003f]
+{
+	[aspect]
+	{
+	  f experience_value = 6.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 568;
+	  f damage_bonus_min_cmagic = 508;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.70057,0,0.556206,0x49cf792d;
+	}
+}
+[t:3w_drake_molten,n:0x03e00040]
+{
+	[aspect]
+	{
+	  f experience_value = 6.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 568;
+	  f damage_bonus_min_cmagic = 508;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.551254,0,3.75572,0x06ce4b2e;
+	}
+}
+[t:3w_drake_molten,n:0x03e0003e]
+{
+	[aspect]
+	{
+	  f experience_value = 6.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 568;
+	  f damage_bonus_min_cmagic = 508;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.619664,0,0.554394,0x02e41c06;
+	}
+}
+[t:3w_drake_molten,n:0x03e0003c]
+{
+	[aspect]
+	{
+	  f experience_value = 6.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 568;
+	  f damage_bonus_min_cmagic = 508;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.769478,0,-0.36236,0xb28f3000;
+	}
+}
+[t:3w_drake_molten,n:0x03e0003d]
+{
+	[aspect]
+	{
+	  f experience_value = 6.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 568;
+	  f damage_bonus_min_cmagic = 508;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.338341,0,-0.173301,0x6fe1051a;
+	}
+}
+[t:3w_drake_molten,n:0x03e0003b]
+{
+	[aspect]
+	{
+	  f experience_value = 6.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 568;
+	  f damage_bonus_min_cmagic = 508;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.332697,0,-0.0942841,0x39b47ec3;
+	}
+}
+[t:3w_drake_molten,n:0x03e0003a]
+{
+	[aspect]
+	{
+	  f experience_value = 6.51102e+014;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 568;
+	  f damage_bonus_min_cmagic = 508;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.733088,0,0.198355,0x4905232d;
+	}
+}
