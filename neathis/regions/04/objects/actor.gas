@@ -293,6 +293,13 @@
 }
 [t:troll,n:0x00700b44]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = scythe_g_1h_avg;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -317,10 +324,38 @@
 }
 [t:troll,n:0x00700b47]
 {
+	[aspect]
+	{
+	  f experience_value = 300;
+	  f life = 100;
+	  f life_recovery_period = 6;
+	  f max_life = 100;
+	  f scale_multiplier = 1.45;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 10;
+	  f damage_bonus_min_melee = 10;
+	}
+	[common]
+	{
+		screen_name = "Maurus the Feared";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = cb_un_2h_horrid;
+		}
+	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.64155,0,-2.73826,0xb22139b6;
+	  q orientation = 0,6.02253e-007,0,1;
+	  p position = 2.78028,0,-3.43271,0xb22139b6;
 	}
 }
 [t:troll,n:0x00700b45]
@@ -328,7 +363,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.73999,0,-3.88692,0x28797286;
+	  p position = 0.0793858,0,1.08249,0xc628ec72;
 	}
 }
 [t:troll,n:0x00700b49]
@@ -336,7 +371,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.76308,0,1.68387,0xd7ba8a75;
+	  p position = 0.102476,0,-1.34671,0xc628ec72;
 	}
 }
 [t:krug_throw,n:0x00700ad0]
@@ -1594,6 +1629,13 @@
 }
 [t:troll,n:0x00700d12]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = mc_g_c_s_1h_fun;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -1602,17 +1644,31 @@
 }
 [t:troll,n:0x00700d10]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = sd_g_c_bl_1h_avg;
+		}
+	}
 	[placement]
 	{
-	  q orientation = 0,0.382683,0,0.92388;
+	  q orientation = 0,-0.382684,0,0.92388;
 	  p position = -2.4743,0,-1.06183,0x98a79665;
 	}
 }
 [t:troll,n:0x00700d11]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ss_g_c_st_1h_fun;
+		}
+	}
 	[placement]
 	{
-	  q orientation = 0,0.382683,0,0.92388;
+	  q orientation = 0,-0.382684,0,0.92388;
 	  p position = -0.9021,0,0.696667,0x98a79665;
 	}
 }
@@ -3920,5 +3976,405 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -0.480768,0,-0.785808,0x49eff6d5;
+	}
+}
+[t:krug_dog,n:0x0070001b]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.82259,0,-2.19987,0x8baece0f;
+	}
+}
+[t:krug_dog,n:0x00700024]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.31853,-6,-1.86995,0x5ba7f6f7;
+	}
+}
+[t:krug_dog,n:0x0070004b]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.82611,0,0.979118,0x4fb191f8;
+	}
+}
+[t:krug_dog,n:0x00700133]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.13913,0,1.30942,0x4fb191f8;
+	}
+}
+[t:krug_dog,n:0x00700134]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.31004,0,0.770149,0x4fb191f8;
+	}
+}
+[t:krug_dog,n:0x00700168]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.74142,0.20769,1.07367,0x15865b6d;
+	}
+}
+[t:krug_dog,n:0x00700dfa]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.65887,-0.292873,0.158539,0x15865b6d;
+	}
+}
+[t:krug_dog,n:0x00700dfb]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.67407,-0.196923,0.448288,0x053351fb;
+	}
+}
+[t:krug_dog,n:0x00700dfc]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.77539,0,2.12714,0xfa9554ef;
+	}
+}
+[t:krug_dog,n:0x00700dfd]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.04188,0,2.32608,0xfa9554ef;
+	}
+}
+[t:krug_dog,n:0x00700dfe]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.26529,0,1.2489,0xfa9554ef;
+	}
+}
+[t:krug_dog,n:0x00700dff]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.0342712,0,0.572691,0xa34bfa63;
+	}
+}
+[t:krug_dog,n:0x00700e00]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.742035,0,1.72925,0xa34bfa63;
+	}
+}
+[t:krug_dog,n:0x00700e01]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.97743,5.97015,4.50015,0xe0cd0b56;
+	}
+}
+[t:krug_dog,n:0x00700e02]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.980408,0,1.38086,0xa34bfa63;
+	}
+}
+[t:krug_dog,n:0x00700e03]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.70673,0,0.236334,0xa34bfa63;
+	}
+}
+[t:krug_dog,n:0x00700e04]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.92519,5.91081,3.51404,0xe0cd0b56;
+	}
+}
+[t:krug_dog,n:0x00700e05]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.474548,0,-0.706539,0xa34bfa63;
+	}
+}
+[t:krug_shaman,n:0x00700e06]
+{
+	[placement]
+	{
+	  p position = -0.827545,0,-0.456587,0xa34bfa63;
+	}
+}
+[t:krug_shaman,n:0x00700e07]
+{
+	[aspect]
+	{
+	  f experience_value = 99;
+	  f life = 141;
+	  f max_life = 141;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_min_cmagic = 20;
+	}
+	[common]
+	{
+		screen_name = "Knazdag the Imbuer";
+	}
+	[defend]
+	{
+	  f defense = 95;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.85703,0,-3.4763,0x90b2ecfa;
+	}
+}
+[t:krug_dog_killer,n:0x00700e08]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.0217285,0,1.67589,0xa34bfa63;
+	}
+}
+[t:krug_dog,n:0x00700e0b]
+{
+	[aspect]
+	{
+	  f experience_value = 222;
+	  f life = 214;
+	  f max_life = 214;
+	  f scale_multiplier = 1.58;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_melee = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Mastiff";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  p position = -0.1651,0,0.227742,0x021cfb5b;
+	}
+}
+[t:krug_dog,n:0x00700e0c]
+{
+	[aspect]
+	{
+	  f experience_value = 222;
+	  f life = 214;
+	  f max_life = 214;
+	  f scale_multiplier = 1.58;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_melee = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Mastiff";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  p position = -3.09799,0,2.04046,0xab40fca8;
+	}
+}
+[t:krug_dog,n:0x00700e0d]
+{
+	[aspect]
+	{
+	  f experience_value = 222;
+	  f life = 214;
+	  f max_life = 214;
+	  f scale_multiplier = 1.58;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_melee = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Mastiff";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  p position = -3.30499,0,0.0815735,0x8d398e1e;
+	}
+}
+[t:krug_dog,n:0x00700e0e]
+{
+	[aspect]
+	{
+	  f experience_value = 222;
+	  f life = 214;
+	  f max_life = 214;
+	  f scale_multiplier = 1.58;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_melee = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Mastiff";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  p position = -2.13295,0,1.67249,0x92366105;
+	}
+}
+[t:krug_dog,n:0x00700e0f]
+{
+	[aspect]
+	{
+	  f experience_value = 222;
+	  f life = 214;
+	  f max_life = 214;
+	  f scale_multiplier = 1.58;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_melee = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Mastiff";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  p position = -0.824921,0,3.43196,0x46cc1fff;
+	}
+}
+[t:krug_dog,n:0x00700e10]
+{
+	[aspect]
+	{
+	  f experience_value = 222;
+	  f life = 214;
+	  f max_life = 214;
+	  f scale_multiplier = 1.58;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_melee = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Mastiff";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  p position = 1.23566,0,3.03572,0x46cc1fff;
+	}
+}
+[t:krug_dog,n:0x00700e11]
+{
+	[aspect]
+	{
+	  f experience_value = 222;
+	  f life = 214;
+	  f max_life = 214;
+	  f scale_multiplier = 1.58;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_melee = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Mastiff";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  p position = -3.3263,0,-1.56046,0xc741c782;
+	}
+}
+[t:krug_dog,n:0x00700e12]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -2.43446,0,-1.11795,0xc741c782;
+	}
+}
+[t:krug_dog,n:0x00700e13]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.6237,0,-2.2908,0xc741c782;
+	}
+}
+[t:krug_dog,n:0x00700e14]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -3.9729,0,-2.24252,0xc741c782;
 	}
 }
