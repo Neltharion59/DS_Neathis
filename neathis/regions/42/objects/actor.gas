@@ -1080,6 +1080,66 @@
 	  p position = -12.9873,20.237,-40.6787,0x3c866b8d;
 	}
 }
+[t:3w_lilialaniliel,n:0x03a000fc]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_magic;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_un_sc_f_dragon;
+			es_feet = bo_un_bo_sc_f_dragon;
+			es_forearms = gl_un_gl_sc_f_dragon;
+			es_head = he_un_vi_dragon;
+			es_weapon_hand = st_un_tiger;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.4393,0,0.731873,0xbe59a090;
+	}
+}
+[t:3w_sar_vinien,n:0x03a000fd]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_magic;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_un_sc_f_dragon;
+			es_feet = bo_un_bo_sc_f_dragon;
+			es_forearms = gl_un_gl_sc_f_dragon;
+			es_head = he_un_vi_dragon;
+			es_weapon_hand = sd_un_big_1h_g_cleaver;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.59907,-4,-0.494019,0xb136b52b;
+	}
+}
 [t:3w_dragon,n:0x03a000f0]
 {
 	[aspect]
@@ -2576,7 +2636,7 @@
 	  p position = -2.80324,0,-1.68327,0x063338cd;
 	}
 }
-[t:3w_lilialaniliel,n:0x03a000fc]
+[t:3w_mitromus_wyman,n:0x03a000f4]
 {
 	[conversation]
 	{
@@ -2587,13 +2647,14 @@
 	}
 	[inventory]
 	{
+		selected_active_location = il_active_ranged_weapon;
 		[equipment]
 		{
 			es_chest = bd_un_sc_f_dragon;
 			es_feet = bo_un_bo_sc_f_dragon;
 			es_forearms = gl_un_gl_sc_f_dragon;
 			es_head = he_un_vi_dragon;
-			es_weapon_hand = st_un_tiger;
+			es_shield_hand = bw_g_c_s_m_r_avg;
 		}
 	}
 	[mind]
@@ -2603,36 +2664,6 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.47285,0,0.687927,0xbe59a090;
-	}
-}
-[t:3w_sar_vinien,n:0x03a000fd]
-{
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_magic;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_un_sc_f_dragon;
-			es_feet = bo_un_bo_sc_f_dragon;
-			es_forearms = gl_un_gl_sc_f_dragon;
-			es_head = he_un_vi_dragon;
-			es_weapon_hand = sd_un_big_1h_g_cleaver;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.59907,-4,-0.494019,0xb136b52b;
+	  p position = -3.62933,0,-0.59436,0xbe59a090;
 	}
 }
