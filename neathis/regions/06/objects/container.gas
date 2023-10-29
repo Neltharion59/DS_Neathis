@@ -46,6 +46,32 @@
 	  p position = -8.64392,8.05,0.758512,0x2bc9fe5a;
 	}
 }
+[t:chest_csl_03_dm_r11,n:0x00a00280]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.46048,0,-1.2211,0xcb58f263;
+		use_point_scids = 0x00a00286;
+	}
+}
+[t:chest_csl_03_dm_r11,n:0x00a00281]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.56157,0,0.485912,0xcb58f263;
+		use_point_scids = 0x00a00286;
+	}
+}
 [t:footlocker_glb_01_dm_r2,n:0x00a0006f]
 {
 	[placement]
@@ -328,31 +354,5 @@
 	[placement]
 	{
 	  p position = -3.65643,-1.2,-3.76981,0x3089b397;
-	}
-}
-[t:chest_csl_03_dm_r11,n:0x00a00280]
-{
-	[inventory]
-	{
-	  b drop_at_use_point = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.46048,0,-1.2211,0xcb58f263;
-		use_point_scids = 0x00A00286;
-	}
-}
-[t:chest_csl_03_dm_r11,n:0x00a00281]
-{
-	[inventory]
-	{
-	  b drop_at_use_point = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.56157,0,0.485912,0xcb58f263;
-		use_point_scids = 0x00A00286;
 	}
 }

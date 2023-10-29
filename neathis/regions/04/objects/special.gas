@@ -163,6 +163,30 @@
 	  p position = -0.874695,0,3.1842,0xdb7ed02a;
 	}
 }
+[t:frag_glb_generic_darker_10,n:0x00700e09]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 3;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -3.70496,0,0.792599,0x98a79665;
+	}
+}
+[t:frag_glb_generic_darker_10,n:0x00700e0a]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 3;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,-0.923879;
+	  p position = -3.84335,0,0.569734,0x98a79665;
+	}
+}
 [t:trigger_change_mood_box,n:0x00700da2]
 {
 	[common]
@@ -349,27 +373,60 @@
 	  p position = 0.0012207,-6,-0.165108,0xd9d5ef48;
 	}
 }
-[t:frag_glb_generic_darker_10,n:0x00700e09]
+[t:trigger_generic,n:0x00700e19]
 {
-	[aspect]
+	[common]
 	{
-	  f scale_multiplier = 3;
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00700E1A,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(3.000000,1.500000,0.100000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,-0.382683;
-	  p position = -3.70496,0,0.792599,0x98a79665;
+	  p position = 0.0357704,-1.22716,-1.54677,0x9e2db895;
 	}
 }
-[t:frag_glb_generic_darker_10,n:0x00700e0a]
+[t:trigger_generic,n:0x00700e1c]
 {
-	[aspect]
+	[common]
 	{
-	  f scale_multiplier = 3;
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00700E1D,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(7.000000,1.500000,0.100000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,-0.923879;
-	  p position = -3.84335,0,0.569734,0x98a79665;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.376099,0,0.135868,0x02cb131e;
 	}
 }

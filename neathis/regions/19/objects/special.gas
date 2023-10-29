@@ -260,3 +260,53 @@
 	  p position = 3.00222,-1.2,-3.75967,0xde294d7a;
 	}
 }
+[t:use_point,n:0x01d001fb]
+{
+	[placement]
+	{
+	  p position = -2.61467,0,0.0885048,0x80e414b9;
+	}
+}
+[t:use_point,n:0x01d001fc]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.14342,0,0.37627,0xcda9dc07;
+	}
+}
+[t:use_point,n:0x01d001fd]
+{
+	[placement]
+	{
+	  p position = 3.01272,0,0.798843,0x80e414b9;
+	}
+}
+[t:trigger_generic,n:0x01d00207]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x01D001FE,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(10.000000,1.500000,0.100000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 0.0590515,0,0.186195,0x7df13df7;
+	}
+}

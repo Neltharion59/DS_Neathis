@@ -1,3 +1,62 @@
+[t:trigger_generic,n:0x01a00034]
+{
+	[common]
+	{
+		dev_instance_text = "ACTIVATE THE ROBOT";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x01A001B1,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_entered_world",0,"on_every_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,2.98023e-008,0,1;
+	  p position = 2.33932,-2,-1.4377,0x2b14dc88;
+	}
+}
+[t:trigger_generic,n:0x01a00033]
+{
+	[common]
+	{
+		dev_instance_text = "ACTIVATE THE ROBOT";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x01A001B2,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_entered_world",0,"on_every_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = -2.63232,0,0.168365,0x28f218d7;
+	}
+}
 [t:use_point,n:0x01a0019f]
 {
 	[placement]
@@ -94,6 +153,34 @@
 	  p position = 3.11143,0,1.50685,0xa9d5ac13;
 	}
 }
+[t:trigger_fade_nodes_box,n:0x01a00031]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = fade_nodes(0x0000001B,20,20,20,"out:black");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(4.000000,3.000000,0.100000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = true;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = -0.0543976,-3.5,-5.33972,0x8b291ab2;
+	}
+}
 [t:trigger_fade_nodes_box,n:0x01a00027]
 {
 	[common]
@@ -150,7 +237,7 @@
 	  p position = 0.00769806,0.0999999,-4.07681,0x4762b27b;
 	}
 }
-[t:trigger_fade_nodes_box,n:0x01a00031]
+[t:trigger_generic,n:0x01a0001c]
 {
 	[common]
 	{
@@ -158,38 +245,9 @@
 		{
 			[*]
 			{
-				action* = fade_nodes(0x0000001B,20,20,20,"out:black");
+				action* = send_world_message("we_req_activate",0x01A00036,0f,"default","every",0);
 			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(4.000000,3.000000,0.100000,"on_every_enter");
-			  f delay = 0.000000;
-			  b flip_flop = true;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  p position = -0.0543976,-3.5,-5.33972,0x8b291ab2;
-	}
-}
-[t:trigger_generic,n:0x01a00033]
-{
-	[common]
-	{
-		dev_instance_text = "ACTIVATE THE ROBOT";
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_activate",0x01A001B2,0f,"default","every",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_entered_world",0,"on_every_message");
+				condition* = party_member_within_bounding_box(2.000000,1.500000,0.100000,"on_first_enter");
 			  f delay = 0.000000;
 			  b flip_flop = false;
 			  b multi_player = true;
@@ -197,43 +255,13 @@
 				occupants_group = ;
 			  f reset_duration = 0.000000;
 			  b single_player = true;
-			  b single_shot = false;
+			  b single_shot = true;
 			  b start_active = true;
 			}
 		}
 	}
 	[placement]
 	{
-	  p position = -2.63232,0,0.168365,0x28f218d7;
-	}
-}
-[t:trigger_generic,n:0x01a00034]
-{
-	[common]
-	{
-		dev_instance_text = "ACTIVATE THE ROBOT";
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_activate",0x01A001B1,0f,"default","every",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_entered_world",0,"on_every_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,2.98023e-008,0,1;
-	  p position = 2.33932,-2,-1.4377,0x2b14dc88;
+	  p position = 3.02732,2,6.35905,0xc156cfe8;
 	}
 }

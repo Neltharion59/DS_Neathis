@@ -2782,6 +2782,29 @@
 	  p position = -2.81863,0.522791,1.11395,0x38082667;
 	}
 }
+[t:mother_zaod,n:0x0190042e]
+{
+	[common]
+	{
+		screen_name = "Yalinna";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_03;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -2.93976,0,-0.777517,0x3b659e97;
+	}
+}
 [t:verrus,n:0x01900437]
 {
 	[common]
@@ -8348,20 +8371,6 @@
 	  p position = -3.57552,-0.35,-2.35726,0x74437949;
 	}
 }
-[t:blaster,n:0x0190061f]
-{
-	[placement]
-	{
-	  p position = -0.160435,-0.45,-0.390198,0x977b9ede;
-	}
-}
-[t:perforator,n:0x01900622]
-{
-	[placement]
-	{
-	  p position = 0.0753059,-0.450005,-0.30962,0xb611770f;
-	}
-}
 [t:blaster,n:0x01900620]
 {
 	[placement]
@@ -8796,28 +8805,5 @@
 	{
 	  q orientation = 0,0.92388,0,-0.382683;
 	  p position = 0.0224123,1,1.903,0x3ace2256;
-	}
-}
-[t:mother_zaod,n:0x0190042e]
-{
-	[common]
-	{
-		screen_name = "Yalinna";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_03;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -2.93976,0,-0.777517,0x3b659e97;
 	}
 }

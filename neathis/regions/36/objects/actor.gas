@@ -1124,6 +1124,34 @@
 	  p position = 0.0598712,1,-0.0913239,0x970a49dc;
 	}
 }
+[t:3w_guard_ranged,n:0x0330011d]
+{
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 500;
+	  f damage_bonus_min_ranged = 500;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = guard_gate;
+		}
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  f melee_engage_range = 12;
+	  f outer_comfort_zone_range = 12;
+	  f ranged_engage_range = 12;
+	  f sight_range = 16;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -1.49534,-6,-7.02658,0x518f3e2f;
+	}
+}
 [t:bandit_ranged,n:0x03300121]
 {
 	[actor]
@@ -1152,34 +1180,6 @@
 	{
 	  q orientation = 5.30532e-008,0.707107,3.46994e-008,0.707107;
 	  p position = -3.16124,0,-0.0952148,0x175f14ed;
-	}
-}
-[t:3w_guard_ranged,n:0x0330011d]
-{
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 500;
-	  f damage_bonus_min_ranged = 500;
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = guard_gate;
-		}
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	  f melee_engage_range = 12;
-	  f outer_comfort_zone_range = 12;
-	  f ranged_engage_range = 12;
-	  f sight_range = 16;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -1.49534,-6,-7.02658,0x518f3e2f;
 	}
 }
 [t:bandit_ranged,n:0x033001a3]

@@ -9,7 +9,7 @@
 {
 	[placement]
 	{
-	  p position = 2.66468,-1.90735e-006,-0.520314,0xf855e544;
+	  p position = 2.55592,0,-0.609425,0xf855e544;
 	}
 }
 [t:troll_forest,n:0x0120002d]
@@ -39,7 +39,8 @@
 {
 	[placement]
 	{
-	  p position = 0.323996,1.90735e-006,3.48367,0x088edec5;
+	  q orientation = 0,2.98023e-008,0,1;
+	  p position = -0.243849,0,3.5648,0x088edec5;
 	}
 }
 [t:troll_forest,n:0x01200033]
@@ -69,7 +70,7 @@
 {
 	[placement]
 	{
-	  p position = 1.70631,0,3.20247,0x5021ef9c;
+	  p position = 1.3523,0,3.38092,0x5021ef9c;
 	}
 }
 [t:troll_forest,n:0x0120004b]
@@ -259,6 +260,51 @@
 	  p position = 1.07759,0,-1.18567,0x5272e340;
 	}
 }
+[t:merik,n:0x01200008]
+{
+	[aspect]
+	{
+	  f max_life = 186.2;
+	  f max_mana = 264;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join_merik;
+		}
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_melee_weapon;
+		[equipment]
+		{
+			es_feet = bo_bo_le_f_g_c_avg;
+			es_weapon_hand = st_ra_g_o_r_puller;
+		}
+		[other]
+		{
+			il_active_primary_spell = spell_iceshard;
+			il_main = spell_firespray;
+			il_main = spell_healing_hands;
+			il_main = spell_hold_creature;
+			il_main = spell_spark;
+			il_main = spell_dancing_zap;
+			il_main = spell_resurrect;
+			il_main = spell_mana_channel;
+			il_main = spell_healing_wind;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,5.96046e-008,0,1;
+	  p position = 3.91681,0,-0.564621,0xd968073b;
+	}
+}
 [t:troll_forest,n:0x0120004d]
 {
 	[placement]
@@ -287,27 +333,38 @@
 	  p position = -3.45844,0,1.99957,0x10bd9622;
 	}
 }
-[t:merik,n:0x01200008]
+[t:troll_forest,n:0x0120000d]
 {
 	[aspect]
 	{
-	  f max_life = 186.2;
-	  f max_mana = 264;
+	  f experience_value = 2964;
+	  f life = 1247;
+	  f max_life = 1247;
+	  f scale_multiplier = 1.55;
 	}
-	[conversation]
+	[attack]
 	{
-		[conversations]
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_melee = 30;
+	}
+	[common]
+	{
+		screen_name = "Forest Troll Brawler";
+	}
+	[defend]
+	{
+	  f defense = 200;
+	}
+	[inventory]
+	{
+		[equipment]
 		{
-			* = join_merik;
+			es_weapon_hand = st_g_o_b_fun;
 		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
 	}
 	[placement]
 	{
-	  q orientation = 0,5.96046e-008,0,1;
-	  p position = 3.91681,0,-0.564621,0xd968073b;
+	  q orientation = 0,2.98023e-008,0,1;
+	  p position = -3.12985,0,-0.284012,0x088edec5;
 	}
 }
