@@ -52,6 +52,31 @@
 	  p position = -0.0408263,-1.92825,0.583234,0x32eab337;
 	}
 }
+[t:emt_sound_act,n:0x00100b00]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.0625,-1.24334,-0.117664,0xe5e15919;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "env_shrine_health";
+	  b start_on_creation = false;
+	}
+}
+[t:emt_sound_act,n:0x0010025f]
+{
+	[placement]
+	{
+	  p position = 0.0511932,-0.75,0.0197906,0x27f854d8;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "env_shrine_mana";
+	  b start_on_creation = false;
+	}
+}
 [t:emt_glow,n:0x0010002c]
 {
 	[glow_emitter]

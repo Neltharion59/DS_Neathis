@@ -553,3 +553,16 @@
 	  p position = 0.141571,2.5035,-0.248055,0x32e12bae;
 	}
 }
+[t:emt_sound_act,n:0x02c0037f]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.0625,-1.24334,-0.117676,0x38748df0;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "env_shrine_health";
+	  b start_on_creation = false;
+	}
+}

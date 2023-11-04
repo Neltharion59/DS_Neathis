@@ -35,6 +35,41 @@
 	  p position = -2.5831,0,0.649653,0x75258f18;
 	}
 }
+[t:troll_forest,n:0x0120000d]
+{
+	[aspect]
+	{
+	  f experience_value = 2964;
+	  f life = 1247;
+	  f max_life = 1247;
+	  f scale_multiplier = 1.55;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_melee = 30;
+	}
+	[common]
+	{
+		screen_name = "Forest Troll Brawler";
+	}
+	[defend]
+	{
+	  f defense = 200;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = st_g_o_b_fun;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,2.98023e-008,0,1;
+	  p position = -3.12985,0,-0.284012,0x088edec5;
+	}
+}
 [t:troll_forest,n:0x01200034]
 {
 	[placement]
@@ -280,11 +315,11 @@
 		[equipment]
 		{
 			es_feet = bo_bo_le_f_g_c_avg;
+			es_spellbook = book_glb_magic_01;
 			es_weapon_hand = st_ra_g_o_r_puller;
 		}
 		[other]
 		{
-			il_active_primary_spell = spell_iceshard;
 			il_main = spell_firespray;
 			il_main = spell_healing_hands;
 			il_main = spell_hold_creature;
@@ -331,40 +366,5 @@
 	[placement]
 	{
 	  p position = -3.45844,0,1.99957,0x10bd9622;
-	}
-}
-[t:troll_forest,n:0x0120000d]
-{
-	[aspect]
-	{
-	  f experience_value = 2964;
-	  f life = 1247;
-	  f max_life = 1247;
-	  f scale_multiplier = 1.55;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
-	}
-	[common]
-	{
-		screen_name = "Forest Troll Brawler";
-	}
-	[defend]
-	{
-	  f defense = 200;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_weapon_hand = st_g_o_b_fun;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,2.98023e-008,0,1;
-	  p position = -3.12985,0,-0.284012,0x088edec5;
 	}
 }

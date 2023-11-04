@@ -2377,7 +2377,7 @@
 	[placement]
 	{
 	  q orientation = 0,8.9407e-008,0,1;
-	  p position = -1.38504,0,3.56818,0xd486003f;
+	  p position = 1.63464,0,2.23972,0xd486003f;
 	}
 }
 [t:2w_gom_super,n:0x03500936]
@@ -2406,7 +2406,7 @@
 	[placement]
 	{
 	  q orientation = 0,2.98023e-008,0,1;
-	  p position = -1.57394,0,0.506378,0xd486003f;
+	  p position = -2.50449,0,0.44046,0xd486003f;
 	}
 }
 [t:2w_gom_super,n:0x03500934]
@@ -2435,7 +2435,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.94653,0,-3.6879,0x17bf8913;
+	  p position = -3.0593,0,-0.604858,0x17bf8913;
 	}
 }
 [t:3w_rock_golem,n:0x03500918]
@@ -5179,8 +5179,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,2.68221e-007;
-	  p position = 3.49843,0,-3.00937,0xe19f2de7;
+	  q orientation = 0,-2.68221e-007,0,1;
+	  p position = -0.722717,0,-1.1398,0x3483747f;
 	}
 }
 [t:3w_rock_golem,n:0x035008f7]
@@ -9734,5 +9734,77 @@
 	{
 	  q orientation = 0,1,0,0;
 	  p position = 9.18248,1.58271,-4.95195,0x1ba31ad2;
+	}
+}
+[t:3w_rock_golem,n:0x035009e4]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.68221e-007;
+	  p position = 3.0873,0,0.0388794,0x3483747f;
+	}
+}
+[t:3w_rock_golem,n:0x035009e5]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.68221e-007;
+	  p position = -0.0965118,0,-0.731171,0x8aec845a;
+	}
+}
+[t:3w_rock_golem,n:0x03500ccf]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.68221e-007;
+	  p position = 3.86737,0,-0.35643,0x33f01a82;
 	}
 }

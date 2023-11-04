@@ -245,6 +245,34 @@
 	  p position = -3.56944,0.218697,0.437394,0x90e5689b;
 	}
 }
+[t:trigger_generic,n:0x01700437]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x01700438,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(2.000000,1.500000,0.200000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = -0.0392316,0.918055,-1.78414,0xa3e4d201;
+	}
+}
 [t:trigger_fade_nodes_global_box,n:0x017000ce]
 {
 	[common]
@@ -508,6 +536,35 @@
 	  p position = 3.39642,0,1.42578,0x5747e26c;
 	}
 }
+[t:trigger_generic,n:0x0170043b]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x0170043C,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(8.000000,1.500000,0.200000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.92206,0,-1.07345,0x77b0974e;
+	}
+}
 [t:trigger_change_mood_box,n:0x017001a0]
 {
 	[common]
@@ -535,34 +592,6 @@
 	{
 	  q orientation = 0,-3.57628e-007,0,1;
 	  p position = 0.0450069,-12,-4.49216,0xd6f05c0e;
-	}
-}
-[t:trigger_generic,n:0x01700437]
-{
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_activate",0x01700438,0f,"default","every",0);
-			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(2.000000,1.500000,0.200000,"on_first_enter");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = true;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  p position = -0.0392316,0.918055,-1.78414,0xa3e4d201;
 	}
 }
 [t:trigger_generic,n:0x01700439]
@@ -593,7 +622,7 @@
 	  p position = 0.0525033,0.95,-2.80228,0xed717131;
 	}
 }
-[t:trigger_generic,n:0x0170043b]
+[t:trigger_mana_shrine,n:0x0170043d]
 {
 	[common]
 	{
@@ -601,24 +630,54 @@
 		{
 			[*]
 			{
-				action* = send_world_message("we_req_activate",0x0170043C,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x0170043E,0f,"16386","party_member_within_sphere",0), doc("[*labelled condition (party_member_within_sphere)*]");
 			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(8.000000,1.500000,0.200000,"on_first_enter");
+				condition* = party_member_within_sphere(1.800000,"on_every_enter");
 			  f delay = 0.000000;
 			  b flip_flop = false;
 			  b multi_player = true;
 			  b no_trig_bits = false;
 				occupants_group = ;
+			  f reset_duration = 0.100000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+			[*]
+			{
+				action* = when_false send_world_message("we_req_deactivate",0x0170043E,0f,"default","",0);
+				action* = send_world_message("we_req_activate",0x0170043F,0f,"default","",0);
+				action* = when_false send_world_message("we_req_deactivate",0x0170043F,0f,"default","",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_sphere(1.800000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = true;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
 			  f reset_duration = 0.000000;
 			  b single_player = true;
-			  b single_shot = true;
+			  b single_shot = false;
 			  b start_active = true;
 			}
 		}
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 0.92206,0,-1.07345,0x77b0974e;
+	  p position = 0.0239412,-0.75,-0.0608367,0x73274d1c;
+	}
+}
+[t:mana_shrine,n:0x0170043e]
+{
+	[fountain]
+	{
+	  f heal_amount = 80;
+	  f health_left = 99999;
+	  f health_regen = 80;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.59522e-008,0,1;
+	  p position = 0.0480499,0.0810814,-0.00190725,0x73274d1c;
 	}
 }

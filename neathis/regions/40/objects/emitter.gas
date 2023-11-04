@@ -12,3 +12,28 @@
 	  f min_dist = 24;
 	}
 }
+[t:emt_sound_act,n:0x03801d21]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.0625,-1.24334,-0.117661,0x086715d7;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "env_shrine_health";
+	  b start_on_creation = false;
+	}
+}
+[t:emt_sound_act,n:0x03801d25]
+{
+	[placement]
+	{
+	  p position = 0.051178,-0.75,0.0197906,0x804599fd;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "env_shrine_mana";
+	  b start_on_creation = false;
+	}
+}

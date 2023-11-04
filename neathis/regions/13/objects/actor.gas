@@ -19,6 +19,14 @@
 	  p position = -3.69079,0,2.5576,0xae122bce;
 	}
 }
+[t:tretch,n:0x01500064]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.87851,0,0.0191817,0x71434255;
+	}
+}
 [t:phaedriel,n:0x01500046]
 {
 	[aspect]
@@ -61,14 +69,6 @@
 	[placement]
 	{
 	  p position = -0.703307,0,-3.0883,0xb9fb4bc4;
-	}
-}
-[t:tretch,n:0x01500064]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.87851,0,0.0191817,0x71434255;
 	}
 }
 [t:swamp_witch,n:0x0150008f]
@@ -378,6 +378,101 @@
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = 3.95371,0,-0.255941,0x9ff3cd72;
+	}
+}
+[t:zombie_02_boss_01,n:0x01500045]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707107;
+	  p position = -2.93816,0.5,-0.131058,0x8a7217ba;
+	}
+}
+[t:zombie_headless,n:0x0150004d]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.923879,0,-0.382684;
+	  p position = -2.81833,0.5,1.45824,0x8a7217ba;
+	}
+}
+[t:zombie_headless,n:0x0150004e]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -2.46789,0.5,-1.52078,0x8a7217ba;
+	}
+}
+[t:zombie_02,n:0x01500051]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.10197,0.5,2.35181,0x8a7217ba;
+	}
+}
+[t:zombie_02,n:0x01500052]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -3.59214,0.5,-3.25633,0x8a7217ba;
+	}
+}
+[t:zombie_03,n:0x01500053]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -4.4528,0.5,2.55759,0x8a7217ba;
+	}
+}
+[t:zombie_01,n:0x01500054]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -4.02309,0.5,-2.58893,0x8a7217ba;
+	}
+}
+[t:swamp_witch,n:0x01500055]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -4.10374,0.5,3.17503,0x8a7217ba;
+	}
+}
+[t:swamp_witch_boss_02,n:0x01500056]
+{
+	[aspect]
+	{
+	  f experience_value = 15050;
+	  f life = 1496;
+	  f max_life = 1496;
+	  f scale_multiplier = 1.2;
+	}
+	[common]
+	{
+		screen_name = "Thulietta the Occult";
+	}
+	[defend]
+	{
+	  f defense = 400;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.73892,0.5,-0.701767,0x8a7217ba;
+	}
+}
+[t:swamp_witch,n:0x01500057]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 7.92833,0.5,2.58647,0x8a7217ba;
 	}
 }
 [t:syrrus,n:0x015000c4]
@@ -763,7 +858,8 @@
 {
 	[placement]
 	{
-	  p position = -3.87339,0,0.923214,0x97ed81ec;
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.09602,0,-1.95638,0x97ed81ec;
 	}
 }
 [t:swamp_witch,n:0x01500090]
@@ -836,98 +932,99 @@
 	  p position = 3.89561,0,1.72171,0xaffdc6f2;
 	}
 }
-[t:zombie_02_boss_01,n:0x01500045]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,-0.707107;
-	  p position = -2.93816,0.5,-0.131058,0x8a7217ba;
-	}
-}
-[t:zombie_headless,n:0x0150004d]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.923879,0,-0.382684;
-	  p position = -2.81833,0.5,1.45824,0x8a7217ba;
-	}
-}
-[t:zombie_headless,n:0x0150004e]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -2.46789,0.5,-1.52078,0x8a7217ba;
-	}
-}
-[t:zombie_02,n:0x01500051]
+[t:swamp_witch,n:0x01500040]
 {
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.10197,0.5,2.35181,0x8a7217ba;
+	  p position = -2.77677,0,1.16731,0x95ed39ab;
 	}
 }
-[t:zombie_02,n:0x01500052]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -3.59214,0.5,-3.25633,0x8a7217ba;
-	}
-}
-[t:zombie_03,n:0x01500053]
+[t:swamp_witch,n:0x01500041]
 {
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -4.4528,0.5,2.55759,0x8a7217ba;
+	  p position = 2.3974,0,0.971573,0xda6b4fac;
 	}
 }
-[t:zombie_01,n:0x01500054]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -4.02309,0.5,-2.58893,0x8a7217ba;
-	}
-}
-[t:swamp_witch,n:0x01500055]
+[t:swamp_witch,n:0x01500042]
 {
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -4.10374,0.5,3.17503,0x8a7217ba;
+	  p position = 3.05402,0,-3.09495,0x9e90604a;
 	}
 }
-[t:swamp_witch_boss_02,n:0x01500056]
-{
-	[aspect]
-	{
-	  f experience_value = 15050;
-	  f life = 1496;
-	  f max_life = 1496;
-	  f scale_multiplier = 1.2;
-	}
-	[common]
-	{
-		screen_name = "Thulietta the Occult";
-	}
-	[defend]
-	{
-	  f defense = 400;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.73892,0.5,-0.701767,0x8a7217ba;
-	}
-}
-[t:swamp_witch,n:0x01500057]
+[t:swamp_witch,n:0x0150004f]
 {
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 7.92833,0.5,2.58647,0x8a7217ba;
+	  p position = 1.06393,2,3.48778,0xe9684341;
+	}
+}
+[t:swamp_witch,n:0x01500050]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.14172,2,1.94377,0x662a1b00;
+	}
+}
+[t:swamp_witch,n:0x015000ad]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.0238953,0,-3.90044,0x03962bd8;
+	}
+}
+[t:swamp_witch,n:0x015000b0]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.25972,0,0.273727,0xd3a6d5e8;
+	}
+}
+[t:swamp_witch,n:0x015000ba]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.259247,0,1.49507,0xd921048e;
+	}
+}
+[t:swamp_witch,n:0x015000bc]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 3.40382,0,-3.56261,0x5d4905ef;
+	}
+}
+[t:swamp_witch,n:0x015000be]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 16.1323,0,8.87045,0x8a7217ba;
+	}
+}
+[t:swamp_witch,n:0x015001ea]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.19341,0,-0.680809,0x3ec0434d;
+	}
+}
+[t:swamp_witch,n:0x0150043d]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -9.82207,0.0777933,5.82951,0x8a7217ba;
 	}
 }
