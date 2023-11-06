@@ -10,3 +10,29 @@
 	  b start_on_creation = false;
 	}
 }
+[t:emt_sound,n:0x02a001b7]
+{
+	[placement]
+	{
+	  p position = -2.96067,-0.113811,-2.10417,0x8a2acb4b;
+	}
+	[sound_emitter]
+	{
+	  b continual_loop = true;
+		event_sound = "env_waterfall";
+	  f max_dist = 30;
+	}
+}
+[t:emt_sound,n:0x02a001b8]
+{
+	[placement]
+	{
+	  p position = 3.1564,0.472652,0.425552,0xdb735b7b;
+	}
+	[sound_emitter]
+	{
+	  b continual_loop = true;
+		event_sound = "env_waterfall";
+	  f max_dist = 30;
+	}
+}

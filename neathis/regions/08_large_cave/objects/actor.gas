@@ -11,7 +11,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,-0.707107;
-	  p position = 0.0832329,0,0.650391,0xd2ffa045;
+	  p position = 1.53328,0,0.269001,0xd2ffa045;
 	}
 }
 [t:rock_beast,n:0x00f00008]
@@ -4040,8 +4040,21 @@
 }
 [t:giant_spider,n:0x00f003cd]
 {
+	[aspect]
+	{
+	  f experience_value = 300;
+	  f life = 640;
+	  f max_life = 640;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 30;
+	  f damage_bonus_min_cmagic = 30;
+	}
 	[common]
 	{
+		screen_name = "Monumental Spider";
 		[instance_triggers]
 		{
 			[*]
@@ -4060,6 +4073,10 @@
 			  b start_active = true;
 			}
 		}
+	}
+	[defend]
+	{
+	  f defense = 120;
 	}
 	[placement]
 	{

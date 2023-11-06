@@ -11,3 +11,16 @@
 	  b start_on_creation = false;
 	}
 }
+[t:emt_sound,n:0x004016a5]
+{
+	[placement]
+	{
+	  p position = -3.01627,0.0452347,0.476171,0x1383af02;
+	}
+	[sound_emitter]
+	{
+	  b continual_loop = true;
+		event_sound = "env_waterfall";
+	  f max_dist = 30;
+	}
+}

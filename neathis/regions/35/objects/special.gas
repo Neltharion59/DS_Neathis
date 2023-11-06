@@ -164,6 +164,65 @@
 	  p position = 0.142914,-3.94253,-0.195648,0x12c5913c;
 	}
 }
+[t:trigger_mana_shrine,n:0x03201b66]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x03201B67,0f,"16386","party_member_within_sphere",0), doc("[*labelled condition (party_member_within_sphere)*]");
+			  b can_self_destruct = true;
+				condition* = party_member_within_sphere(1.800000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.100000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+			[*]
+			{
+				action* = when_false send_world_message("we_req_deactivate",0x03201B67,0f,"default","",0);
+				action* = send_world_message("we_req_activate",0x03201B68,0f,"default","",0);
+				action* = when_false send_world_message("we_req_deactivate",0x03201B68,0f,"default","",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_sphere(1.800000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = true;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 0.0239258,-0.75,-0.0608368,0x5796b212;
+	}
+}
+[t:mana_shrine,n:0x03201b67]
+{
+	[fountain]
+	{
+	  f heal_amount = 400;
+	  f health_left = 999999;
+	  f health_regen = 400;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.59522e-008,0,1;
+	  p position = 0.0480347,0.0810814,-0.00190735,0x5796b212;
+	}
+}
 [t:trigger_generic,n:0x03201b62]
 {
 	[common]
@@ -353,62 +412,110 @@
 	  p position = 0.083065,-1.24225,-0.0750427,0xeb7a1dc1;
 	}
 }
-[t:trigger_mana_shrine,n:0x03201b66]
+[t:use_point,n:0x03201220]
 {
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_activate",0x03201B67,0f,"16386","party_member_within_sphere",0), doc("[*labelled condition (party_member_within_sphere)*]");
-			  b can_self_destruct = true;
-				condition* = party_member_within_sphere(1.800000,"on_every_enter");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.100000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-			[*]
-			{
-				action* = when_false send_world_message("we_req_deactivate",0x03201B67,0f,"default","",0);
-				action* = send_world_message("we_req_activate",0x03201B68,0f,"default","",0);
-				action* = when_false send_world_message("we_req_deactivate",0x03201B68,0f,"default","",0);
-			  b can_self_destruct = true;
-				condition* = party_member_within_sphere(1.800000,"on_every_enter");
-			  f delay = 0.000000;
-			  b flip_flop = true;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
 	[placement]
 	{
-	  p position = 0.0239258,-0.75,-0.0608368,0x5796b212;
+	  p position = -3.49808,0,-0.968201,0x5e8578c0;
 	}
 }
-[t:mana_shrine,n:0x03201b67]
+[t:use_point,n:0x03201b6a]
 {
-	[fountain]
-	{
-	  f heal_amount = 400;
-	  f health_left = 999999;
-	  f health_regen = 400;
-	}
 	[placement]
 	{
-	  q orientation = 0,1.59522e-008,0,1;
-	  p position = 0.0480347,0.0810814,-0.00190735,0x5796b212;
+	  q orientation = 0,1,0,0;
+	  p position = -0.576965,0,-1.01159,0xa53b3354;
+	}
+}
+[t:use_point,n:0x03201b6c]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.104248,0,-1.68887,0x09becdb2;
+	}
+}
+[t:use_point,n:0x03201b6e]
+{
+	[placement]
+	{
+	  p position = -0.269012,0,1.00553,0x2a704dbe;
+	}
+}
+[t:use_point,n:0x03201b6f]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 3.07668,0,-2.97934,0x2b18cdd7;
+	}
+}
+[t:use_point,n:0x03201b70]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.46459,2.5,6.84927,0xca613288;
+	}
+}
+[t:use_point,n:0x03201b71]
+{
+	[placement]
+	{
+	  p position = -0.103455,-0.6,-0.728706,0x71b06181;
+	}
+}
+[t:use_point,n:0x03201b73]
+{
+	[placement]
+	{
+	  p position = 0.601318,2,1.23367,0xc44066e0;
+	}
+}
+[t:use_point,n:0x03201b75]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.32479,0,-0.223206,0x4a0963ea;
+	}
+}
+[t:use_point,n:0x03201b76]
+{
+	[placement]
+	{
+	  p position = 1.43268,0,-1.59634,0xe0030fc8;
+	}
+}
+[t:use_point,n:0x03201b77]
+{
+	[placement]
+	{
+	  q orientation = 0,2.98023e-008,0,1;
+	  p position = -1.63074,0,1.42593,0xe0030fc8;
+	}
+}
+[t:use_point,n:0x03201b79]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.23022,0,1.00729,0x1161c4e2;
+	}
+}
+[t:use_point,n:0x03201b7b]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 3.33472,0,2.88696,0x53f96a05;
+	}
+}
+[t:use_point,n:0x03201b7c]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.22864,0,1.80664,0xcfc0fbc9;
 	}
 }

@@ -4747,1470 +4747,6 @@
 	  p position = -3.89162,-4,-1.5662,0x55897e49;
 	}
 }
-[t:2w_chicken_white_super,n:0x037002b6]
-{
-	[aspect]
-	{
-	  f experience_value = 0;
-	  b is_selectable = false;
-	  f life = 1;
-	  f mana = 1;
-	  f max_life = 1;
-	  f max_mana = 1;
-	  f scale_multiplier = 0.25;
-	}
-	[attack]
-	{
-	  f damage_max = 1;
-	  f damage_min = 1;
-	}
-	[body]
-	{
-	  f avg_move_velocity = 0;
-	  b can_turn_and_move = false;
-	}
-	[defend]
-	{
-	  f defense = 0;
-	}
-	[mind]
-	{
-	  b actor_auto_fidgets = false;
-	  b actor_may_attack = false;
-	  b actor_may_be_attacked = false;
-	}
-	[placement]
-	{
-	  p position = -3.75512,-4,-1.31506,0x503580db;
-	}
-}
-[t:2w_chicken_white_super,n:0x037002b8]
-{
-	[aspect]
-	{
-	  f experience_value = 0;
-	  b is_selectable = false;
-	  f life = 1;
-	  f mana = 1;
-	  f max_life = 1;
-	  f max_mana = 1;
-	  f scale_multiplier = 0.25;
-	}
-	[attack]
-	{
-	  f damage_max = 1;
-	  f damage_min = 1;
-	}
-	[body]
-	{
-	  f avg_move_velocity = 0;
-	  b can_turn_and_move = false;
-	}
-	[defend]
-	{
-	  f defense = 0;
-	}
-	[mind]
-	{
-	  b actor_auto_fidgets = false;
-	  b actor_may_attack = false;
-	  b actor_may_be_attacked = false;
-	}
-	[placement]
-	{
-	  p position = -3.61857,-4,-1.31551,0x503580db;
-	}
-}
-[t:3w_rock_golem,n:0x0370008d]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.4913,-4,-1.09645,0xe17442d3;
-	}
-}
-[t:3w_krug_shaman,n:0x0370011d]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1874;
-	  f max_life = 1874;
-	  f scale_multiplier = 1.3;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 400;
-	  f reload_delay = 1;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.07303,8,4.99564,0xbffad6ce;
-	}
-}
-[t:3w_krug_grunt,n:0x037000c0]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.13884,0,-0.633321,0x66b8fccf;
-	}
-}
-[t:3w_krug_grunt,n:0x037000c3]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.69243,0,-1.47587,0x66b8fccf;
-	}
-}
-[t:3w_krug_throw,n:0x03700104]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1402;
-	  f max_life = 1402;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 400;
-	  f damage_bonus_min_ranged = 400;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.87381,0,-1.24105,0x66b8fccf;
-	}
-}
-[t:3w_krug_shaman,n:0x0370011c]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1874;
-	  f max_life = 1874;
-	  f scale_multiplier = 1.3;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 400;
-	  f reload_delay = 1;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.0813446,0,1.72451,0x66b8fccf;
-	}
-}
-[t:3w_krug_grunt,n:0x037000c7]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.605545,6,5.54195,0x2a817a40;
-	}
-}
-[t:3w_krug_grunt,n:0x037000c8]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 3.35431,6,4.80702,0x2a817a40;
-	}
-}
-[t:3w_krug_grunt,n:0x037000c9]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.43997,5.98678,5.05458,0x2a817a40;
-	}
-}
-[t:3w_krug_throw,n:0x03700105]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1402;
-	  f max_life = 1402;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 400;
-	  f damage_bonus_min_ranged = 400;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.871765,6,5.40837,0x2a817a40;
-	}
-}
-[t:3w_krug_shaman,n:0x0370011a]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1874;
-	  f max_life = 1874;
-	  f scale_multiplier = 1.3;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 400;
-	  f reload_delay = 1;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.33505,6,5.87551,0x2a817a40;
-	}
-}
-[t:3w_krug_apprentice,n:0x037000b0]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1102;
-	  f max_life = 1102;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_max_nmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	  f damage_bonus_min_nmagic = 500;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.57599,0,-3.2236,0xc0f0a5f2;
-	}
-}
-[t:3w_krug_apprentice,n:0x037000b3]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1102;
-	  f max_life = 1102;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_max_nmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	  f damage_bonus_min_nmagic = 500;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.0131721,0,-1.80548,0xc0f0a5f2;
-	}
-}
-[t:3w_krug_apprentice,n:0x037000b4]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1102;
-	  f max_life = 1102;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_max_nmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	  f damage_bonus_min_nmagic = 500;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.20126,0,-2.66899,0xc0f0a5f2;
-	}
-}
-[t:3w_krug_grunt,n:0x037000ba]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.318958,0,-2.44167,0xc0f0a5f2;
-	}
-}
-[t:3w_krug_grunt,n:0x037000ca]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.09683,0,3.67108,0xc0f0a5f2;
-	}
-}
-[t:3w_krug_shaman,n:0x03700119]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1874;
-	  f max_life = 1874;
-	  f scale_multiplier = 1.3;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 400;
-	  f reload_delay = 1;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.293465,0,0.485779,0xc0f0a5f2;
-	}
-}
-[t:3w_krug_apprentice,n:0x037000f5]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1102;
-	  f max_life = 1102;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_max_nmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	  f damage_bonus_min_nmagic = 500;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.551193,12,1.23076,0xb3dc6d05;
-	}
-}
-[t:3w_krug_grunt,n:0x037000ff]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -1.79584,12,0.0420799,0xb3dc6d05;
-	}
-}
-[t:3w_krug_throw,n:0x0370010e]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1402;
-	  f max_life = 1402;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 400;
-	  f damage_bonus_min_ranged = 400;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.852951,12,-0.150917,0xb3dc6d05;
-	}
-}
-[t:3w_krug_apprentice,n:0x037000b1]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1102;
-	  f max_life = 1102;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_max_nmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	  f damage_bonus_min_nmagic = 500;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.24724,0,-0.507328,0x7a82f327;
-	}
-}
-[t:3w_krug_apprentice,n:0x037000b2]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1102;
-	  f max_life = 1102;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_max_nmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	  f damage_bonus_min_nmagic = 500;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.546722,0,-0.824127,0x7a82f327;
-	}
-}
-[t:3w_krug_grunt,n:0x037000bb]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 3.6142,0,-0.313988,0x7a82f327;
-	}
-}
-[t:3w_krug_grunt,n:0x037000bc]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.455627,0,-1.0829,0x7a82f327;
-	}
-}
-[t:3w_krug_grunt,n:0x037000be]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.08789,0,1.45328,0x7a82f327;
-	}
-}
-[t:3w_krug_grunt,n:0x037000bd]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.90601,0,-1.92374,0xa0b2d3f7;
-	}
-}
-[t:3w_krug_grunt,n:0x037000ce]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 3.12648,0,3.19383,0xa0b2d3f7;
-	}
-}
-[t:3w_krug_shaman,n:0x03700117]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1874;
-	  f max_life = 1874;
-	  f scale_multiplier = 1.3;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 400;
-	  f reload_delay = 1;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.98888,0,1.90703,0xa0b2d3f7;
-	}
-}
-[t:3w_krug_shaman,n:0x03700118]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1874;
-	  f max_life = 1874;
-	  f scale_multiplier = 1.3;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 400;
-	  f reload_delay = 1;
-	}
-	[mind]
-	{
-	  b actor_auto_switches_to_karate = false;
-	  b actor_auto_switches_to_melee = false;
-		actor_weapon_preference = wp_none;
-	  b on_enemy_entered_icz_switch_to_melee = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.50195,0,2.33037,0xf5196bd5;
-	}
-}
-[t:3w_krug_grunt,n:0x037000cb]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.42786,-3.96997,-1.38396,0x4c7c7d2f;
-	}
-}
-[t:3w_krug_throw,n:0x03700111]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1402;
-	  f max_life = 1402;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 400;
-	  f damage_bonus_min_ranged = 400;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.37589,8,5.98003,0x4c7c7d2f;
-	}
-}
-[t:3w_krug_throw,n:0x03700112]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1402;
-	  f max_life = 1402;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 400;
-	  f damage_bonus_min_ranged = 400;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.00938034,8,5.56012,0x4c7c7d2f;
-	}
-}
-[t:2w_chicken_white_super,n:0x037002ab]
-{
-	[aspect]
-	{
-	  f experience_value = 0;
-	  b is_selectable = false;
-	  f life = 1;
-	  f mana = 1;
-	  f max_life = 1;
-	  f max_mana = 1;
-	  f scale_multiplier = 0.25;
-	}
-	[attack]
-	{
-	  f damage_max = 1;
-	  f damage_min = 1;
-	}
-	[body]
-	{
-	  f avg_move_velocity = 0;
-	  b can_turn_and_move = false;
-	}
-	[defend]
-	{
-	  f defense = 0;
-	}
-	[mind]
-	{
-	  b actor_auto_fidgets = false;
-	  b actor_may_attack = false;
-	  b actor_may_be_attacked = false;
-	}
-	[placement]
-	{
-	  p position = -3.71436,-3.96314,-1.77417,0x91929cd4;
-	}
-}
-[t:2w_chicken_white_super,n:0x037002ad]
-{
-	[aspect]
-	{
-	  f experience_value = 0;
-	  b is_selectable = false;
-	  f life = 1;
-	  f mana = 1;
-	  f max_life = 1;
-	  f max_mana = 1;
-	  f scale_multiplier = 0.25;
-	}
-	[attack]
-	{
-	  f damage_max = 1;
-	  f damage_min = 1;
-	}
-	[body]
-	{
-	  f avg_move_velocity = 0;
-	  b can_turn_and_move = false;
-	}
-	[defend]
-	{
-	  f defense = 0;
-	}
-	[mind]
-	{
-	  b actor_auto_fidgets = false;
-	  b actor_may_attack = false;
-	  b actor_may_be_attacked = false;
-	}
-	[placement]
-	{
-	  p position = -3.7148,-3.93931,-1.91072,0x91929cd4;
-	}
-}
-[t:3w_krug_grunt,n:0x037000cc]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.919846,0,1.03271,0xad7e167c;
-	}
-}
-[t:3w_krug_grunt,n:0x037000cd]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.536453,0,0.823257,0xad7e167c;
-	}
-}
-[t:3w_krug_grunt,n:0x037000cf]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 2409.6;
-	  f max_life = 2409.6;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 300;
-	  f damage_bonus_min_melee = 300;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.473389,0,0.423939,0xad7e167c;
-	}
-}
-[t:3w_krug_throw,n:0x03700106]
-{
-	[aspect]
-	{
-	  f experience_value = 1.00011e+012;
-	  f life = 1402;
-	  f max_life = 1402;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 400;
-	  f damage_bonus_min_ranged = 400;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.946228,0,-0.069294,0xad7e167c;
-	}
-}
-[t:3w_spiked_maw,n:0x037000a5]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 3.3998,0,0.0511093,0x8f9e60d1;
-	}
-}
-[t:3w_spiked_maw,n:0x037000a3]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = -2.86829,2,-0.547371,0x53d0eac3;
-	}
-}
-[t:3w_spiked_maw,n:0x037000a4]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = -1.97569,2,0.278191,0x53d0eac3;
-	}
-}
-[t:3w_rock_golem,n:0x03700090]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.597855,0,-0.570068,0x1a774ed0;
-	}
-}
-[t:3w_rock_golem,n:0x03700091]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.44976,0,0.779129,0x1a774ed0;
-	}
-}
-[t:3w_spiked_maw,n:0x037000a9]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = -1.64767,0,-0.45636,0x1a774ed0;
-	}
-}
-[t:3w_spiked_maw,n:0x037000aa]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = 0.0524521,0,-1.54871,0x1a774ed0;
-	}
-}
-[t:3w_rock_beast,n:0x0370008f]
-{
-	[aspect]
-	{
-	  f experience_value = 6.11122e+012;
-	  f life = 5280.4;
-	  f max_life = 5280.4;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 1562;
-	  f damage_bonus_max_melee = 400;
-	  f damage_bonus_min_cmagic = 1423;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 4000;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = -2.85529,0,1.69321,0xff0a4583;
-	}
-}
-[t:3w_spiked_maw,n:0x037000a8]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = 2.16208,0,1.55457,0xff0a4583;
-	}
-}
-[t:3w_spiked_maw,n:0x037000a7]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = -0.846863,2,2.89122,0xff097175;
-	}
-}
-[t:3w_spiked_maw,n:0x037000a6]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = -1.12798,0,0.229492,0x991df571;
-	}
-}
-[t:3w_rock_golem,n:0x03700094]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.09818,0,2.1017,0xcf639567;
-	}
-}
-[t:3w_spiked_maw,n:0x0370009a]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = 3.86697,0,3.27644,0xcf639567;
-	}
-}
-[t:3w_rock_golem,n:0x03700093]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.94836,0,0.129105,0x2616ff61;
-	}
-}
-[t:3w_spiked_maw,n:0x0370009e]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = -2.04398,0,0.388046,0x2616ff61;
-	}
-}
-[t:3w_spiked_maw,n:0x0370009f]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = -2.33847,0,-0.0740662,0x2616ff61;
-	}
-}
-[t:3w_rock_golem,n:0x03700092]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.632126,0,0.371094,0x00c21bb4;
-	}
-}
-[t:3w_spiked_maw,n:0x0370009c]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = -0.714142,0,-1.4529,0x00c21bb4;
-	}
-}
-[t:3w_spiked_maw,n:0x0370009d]
-{
-	[aspect]
-	{
-	  f experience_value = 8.22233e+011;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  p position = -0.961456,0,-1.32597,0x00c21bb4;
-	}
-}
-[t:3w_rock_golem,n:0x03700095]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.34622,12,1.40961,0xfaa00af7;
-	}
-}
-[t:3w_rock_golem,n:0x03700096]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.35339,0,-0.884552,0x01028d3a;
-	}
-}
-[t:3w_spiked_dweller,n:0x03700097]
-{
-	[aspect]
-	{
-	  f experience_value = 5.11122e+012;
-	  f life = 1861;
-	  f max_life = 1861;
-	  f scale_multiplier = 2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 900;
-	  f damage_bonus_min_cmagic = 550;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 0.904068,0,1.12762,0x01028d3a;
-	}
-}
-[t:3w_spiked_dweller,n:0x03700099]
-{
-	[aspect]
-	{
-	  f experience_value = 5.11122e+012;
-	  f life = 1861;
-	  f max_life = 1861;
-	  f scale_multiplier = 2;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 900;
-	  f damage_bonus_min_cmagic = 550;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 1.83138,0,-0.900833,0x01028d3a;
-	}
-}
 [t:3w_krug_apprentice,n:0x037000b5]
 {
 	[aspect]
@@ -6563,6 +5099,274 @@
 	  p position = -0.609051,0,-3.72459,0xa4a7a3b6;
 	}
 }
+[t:3w_krug_apprentice,n:0x037000b1]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1102;
+	  f max_life = 1102;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_max_nmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_nmagic = 500;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.24724,0,-0.507328,0x7a82f327;
+	}
+}
+[t:3w_krug_apprentice,n:0x037000b2]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1102;
+	  f max_life = 1102;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_max_nmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_nmagic = 500;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.546722,0,-0.824127,0x7a82f327;
+	}
+}
+[t:3w_krug_grunt,n:0x037000bb]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 3.6142,0,-0.313988,0x7a82f327;
+	}
+}
+[t:3w_krug_grunt,n:0x037000bc]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.455627,0,-1.0829,0x7a82f327;
+	}
+}
+[t:3w_krug_grunt,n:0x037000be]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.08789,0,1.45328,0x7a82f327;
+	}
+}
+[t:3w_krug_apprentice,n:0x037000b0]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1102;
+	  f max_life = 1102;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_max_nmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_nmagic = 500;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.57599,0,-3.2236,0xc0f0a5f2;
+	}
+}
+[t:3w_krug_apprentice,n:0x037000b3]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1102;
+	  f max_life = 1102;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_max_nmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_nmagic = 500;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.0131721,0,-1.80548,0xc0f0a5f2;
+	}
+}
+[t:3w_krug_apprentice,n:0x037000b4]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1102;
+	  f max_life = 1102;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_max_nmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_nmagic = 500;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.20126,0,-2.66899,0xc0f0a5f2;
+	}
+}
+[t:3w_krug_grunt,n:0x037000ba]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.318958,0,-2.44167,0xc0f0a5f2;
+	}
+}
+[t:3w_krug_grunt,n:0x037000ca]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 1.09683,0,3.67108,0xc0f0a5f2;
+	}
+}
+[t:3w_krug_shaman,n:0x03700119]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1874;
+	  f max_life = 1874;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 400;
+	  f reload_delay = 1;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.293465,0,0.485779,0xc0f0a5f2;
+	}
+}
 [t:3w_krug_grunt,n:0x037000c2]
 {
 	[aspect]
@@ -6611,7 +5415,86 @@
 	  p position = -2.99727,0,-3.80993,0x553bec9a;
 	}
 }
-[t:3w_krug_shaman,n:0x0370011e]
+[t:3w_krug_grunt,n:0x037000c7]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.605545,6,5.54195,0x2a817a40;
+	}
+}
+[t:3w_krug_grunt,n:0x037000c8]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 3.35431,6,4.80702,0x2a817a40;
+	}
+}
+[t:3w_krug_grunt,n:0x037000c9]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 1.43997,5.98678,5.05458,0x2a817a40;
+	}
+}
+[t:3w_krug_throw,n:0x03700105]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1402;
+	  f max_life = 1402;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.871765,6,5.40837,0x2a817a40;
+	}
+}
+[t:3w_krug_shaman,n:0x0370011a]
 {
 	[aspect]
 	{
@@ -6636,10 +5519,10 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.78071,0,-0.515854,0xa09b6e25;
+	  p position = 3.33505,6,5.87551,0x2a817a40;
 	}
 }
-[t:3w_krug_grunt,n:0x037000c4]
+[t:3w_krug_grunt,n:0x037000c0]
 {
 	[aspect]
 	{
@@ -6656,10 +5539,10 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -1.31391,7.94719,4.20113,0x7d3ddc84;
+	  p position = 1.13884,0,-0.633321,0x66b8fccf;
 	}
 }
-[t:3w_krug_grunt,n:0x037000c5]
+[t:3w_krug_grunt,n:0x037000c3]
 {
 	[aspect]
 	{
@@ -6676,10 +5559,85 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.220403,8,4.55493,0x7d3ddc84;
+	  p position = 1.69243,0,-1.47587,0x66b8fccf;
 	}
 }
-[t:3w_krug_grunt,n:0x037000c6]
+[t:3w_krug_throw,n:0x03700104]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1402;
+	  f max_life = 1402;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.87381,0,-1.24105,0x66b8fccf;
+	}
+}
+[t:3w_krug_shaman,n:0x0370011c]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1874;
+	  f max_life = 1874;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 400;
+	  f reload_delay = 1;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.0813446,0,1.72451,0x66b8fccf;
+	}
+}
+[t:3w_krug_apprentice,n:0x037000f5]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1102;
+	  f max_life = 1102;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_max_nmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	  f damage_bonus_min_nmagic = 500;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.551193,12,1.23076,0xb3dc6d05;
+	}
+}
+[t:3w_krug_grunt,n:0x037000ff]
 {
 	[aspect]
 	{
@@ -6696,7 +5654,26 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -1.80181,7.86206,3.33344,0x7d3ddc84;
+	  p position = -1.79584,12,0.0420799,0xb3dc6d05;
+	}
+}
+[t:3w_krug_throw,n:0x0370010e]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1402;
+	  f max_life = 1402;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.852951,12,-0.150917,0xb3dc6d05;
 	}
 }
 [t:3w_krug_shaman,n:0x037001b2]
@@ -9426,35 +8403,6 @@
 	  p position = -1.45049,0,-2.51974,0xba1156dc;
 	}
 }
-[t:2w_gom_super,n:0x037000ee]
-{
-	[aspect]
-	{
-	  f experience_value = 4.30011e+012;
-	  f life = 7982;
-	  f life_recovery_period = 6;
-	  f max_life = 7982;
-	  f scale_multiplier = 0.7;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Lesser Balor";
-	}
-	[defend]
-	{
-	  f defense = 3124;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.58638,0,0.563446,0x044413b3;
-	}
-}
 [t:3w_rock_golem,n:0x03700190]
 {
 	[aspect]
@@ -9501,6 +8449,35 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -1.58878,0,-3.18689,0xe1d9b6ef;
+	}
+}
+[t:2w_gom_super,n:0x037000ee]
+{
+	[aspect]
+	{
+	  f experience_value = 4.30011e+012;
+	  f life = 7982;
+	  f life_recovery_period = 6;
+	  f max_life = 7982;
+	  f scale_multiplier = 0.7;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[common]
+	{
+		screen_name = "Lesser Balor";
+	}
+	[defend]
+	{
+	  f defense = 3124;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.58638,0,0.563446,0x044413b3;
 	}
 }
 [t:3w_rock_beast,n:0x037000eb]
@@ -18263,30 +17240,6 @@
 	  p position = 3.0009,0,0.882568,0xbc04f1bc;
 	}
 }
-[t:3w_rock_golem,n:0x0370036e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.62503,-0.251278,-0.408813,0x5b5695b4;
-	}
-}
 [t:3w_rock_golem,n:0x0370036d]
 {
 	[aspect]
@@ -18311,30 +17264,6 @@
 	  p position = 1.06255,0.249205,0.622864,0x1f44d349;
 	}
 }
-[t:3w_rock_golem,n:0x0370036c]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.67661,-0.193104,-0.305359,0x220616be;
-	}
-}
 [t:3w_rock_golem,n:0x0370036a]
 {
 	[aspect]
@@ -18357,6 +17286,30 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -2.04269,0.518018,1.09009,0x9c3902cd;
+	}
+}
+[t:3w_rock_golem,n:0x0370036c]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.67661,-0.193104,-0.305359,0x220616be;
 	}
 }
 [t:3w_rock_golem,n:0x0370036b]
@@ -18911,6 +17864,30 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -2.50739,-0.25795,-0.5159,0xce7aa417;
+	}
+}
+[t:3w_rock_golem,n:0x0370036e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.62503,-0.251278,-0.408813,0x5b5695b4;
 	}
 }
 [t:3w_spiked_maw,n:0x0370042a]
@@ -20773,7 +19750,7 @@
 	  p position = 1.23013,0,0.00112915,0x5ac6a316;
 	}
 }
-[t:3w_rock_golem,n:0x0370008b]
+[t:3w_rock_golem,n:0x0370008d]
 {
 	[aspect]
 	{
@@ -20794,127 +19771,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.71163,5.93198,0.926613,0x0bb2cfce;
-	}
-}
-[t:3w_rock_golem,n:0x0370008e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.620571,5.93323,1.73162,0x0bb2cfce;
-	}
-}
-[t:3w_rock_golem,n:0x03700088]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.96664,0,0.23596,0x48a20ed6;
-	}
-}
-[t:3w_rock_golem,n:0x03700089]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.452538,0,-0.0734816,0x48a20ed6;
-	}
-}
-[t:3w_rock_golem,n:0x0370008a]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.21783,0,-0.0392523,0x48a20ed6;
-	}
-}
-[t:3w_rock_golem,n:0x0370008c]
-{
-	[aspect]
-	{
-	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 400;
-	}
-	[defend]
-	{
-	  f defense = 3000;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.52116,0,-0.63166,0xd0804910;
+	  p position = 3.4913,-4,-1.09645,0xe17442d3;
 	}
 }
 [t:2w_gom_super,n:0x0370005e]
@@ -21401,5 +20258,1148 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 2.00317,0,3.19662,0x0b7cf83f;
+	}
+}
+[t:3w_rock_golem,n:0x03700088]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.96664,0,0.23596,0x48a20ed6;
+	}
+}
+[t:3w_rock_golem,n:0x03700089]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.452538,0,-0.0734816,0x48a20ed6;
+	}
+}
+[t:3w_rock_golem,n:0x0370008a]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.21783,0,-0.0392523,0x48a20ed6;
+	}
+}
+[t:3w_rock_golem,n:0x0370008b]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.71163,5.93198,0.926613,0x0bb2cfce;
+	}
+}
+[t:3w_rock_golem,n:0x0370008e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.620571,5.93323,1.73162,0x0bb2cfce;
+	}
+}
+[t:3w_rock_golem,n:0x0370008c]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.52116,0,-0.63166,0xd0804910;
+	}
+}
+[t:2w_chicken_white_super,n:0x037002b6]
+{
+	[aspect]
+	{
+	  f experience_value = 0;
+	  b is_selectable = false;
+	  f life = 1;
+	  f mana = 1;
+	  f max_life = 1;
+	  f max_mana = 1;
+	  f scale_multiplier = 0.25;
+	}
+	[attack]
+	{
+	  f damage_max = 1;
+	  f damage_min = 1;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 0;
+	  b can_turn_and_move = false;
+	}
+	[defend]
+	{
+	  f defense = 0;
+	}
+	[mind]
+	{
+	  b actor_auto_fidgets = false;
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  p position = -3.75512,-4,-1.31506,0x503580db;
+	}
+}
+[t:2w_chicken_white_super,n:0x037002b8]
+{
+	[aspect]
+	{
+	  f experience_value = 0;
+	  b is_selectable = false;
+	  f life = 1;
+	  f mana = 1;
+	  f max_life = 1;
+	  f max_mana = 1;
+	  f scale_multiplier = 0.25;
+	}
+	[attack]
+	{
+	  f damage_max = 1;
+	  f damage_min = 1;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 0;
+	  b can_turn_and_move = false;
+	}
+	[defend]
+	{
+	  f defense = 0;
+	}
+	[mind]
+	{
+	  b actor_auto_fidgets = false;
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  p position = -3.61857,-4,-1.31551,0x503580db;
+	}
+}
+[t:3w_krug_shaman,n:0x0370011e]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1874;
+	  f max_life = 1874;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 400;
+	  f reload_delay = 1;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.78071,0,-0.515854,0xa09b6e25;
+	}
+}
+[t:3w_krug_grunt,n:0x037000c4]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -1.31391,7.94719,4.20113,0x7d3ddc84;
+	}
+}
+[t:3w_krug_grunt,n:0x037000c5]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.220403,8,4.55493,0x7d3ddc84;
+	}
+}
+[t:3w_krug_grunt,n:0x037000c6]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -1.80181,7.86206,3.33344,0x7d3ddc84;
+	}
+}
+[t:3w_krug_shaman,n:0x0370011d]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1874;
+	  f max_life = 1874;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 400;
+	  f reload_delay = 1;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.07303,8,4.99564,0xbffad6ce;
+	}
+}
+[t:3w_krug_grunt,n:0x037000cb]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 1.42786,-3.96997,-1.38396,0x4c7c7d2f;
+	}
+}
+[t:3w_krug_throw,n:0x03700111]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1402;
+	  f max_life = 1402;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.37589,8,5.98003,0x4c7c7d2f;
+	}
+}
+[t:3w_krug_throw,n:0x03700112]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1402;
+	  f max_life = 1402;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.00938034,8,5.56012,0x4c7c7d2f;
+	}
+}
+[t:3w_krug_grunt,n:0x037000bd]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -3.90601,0,-1.92374,0xa0b2d3f7;
+	}
+}
+[t:3w_krug_grunt,n:0x037000ce]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 3.12648,0,3.19383,0xa0b2d3f7;
+	}
+}
+[t:3w_krug_shaman,n:0x03700117]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1874;
+	  f max_life = 1874;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 400;
+	  f reload_delay = 1;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.98888,0,1.90703,0xa0b2d3f7;
+	}
+}
+[t:3w_krug_shaman,n:0x03700118]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1874;
+	  f max_life = 1874;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 400;
+	  f reload_delay = 1;
+	}
+	[mind]
+	{
+	  b actor_auto_switches_to_karate = false;
+	  b actor_auto_switches_to_melee = false;
+		actor_weapon_preference = wp_none;
+	  b on_enemy_entered_icz_switch_to_melee = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.50195,0,2.33037,0xf5196bd5;
+	}
+}
+[t:2w_chicken_white_super,n:0x037002ab]
+{
+	[aspect]
+	{
+	  f experience_value = 0;
+	  b is_selectable = false;
+	  f life = 1;
+	  f mana = 1;
+	  f max_life = 1;
+	  f max_mana = 1;
+	  f scale_multiplier = 0.25;
+	}
+	[attack]
+	{
+	  f damage_max = 1;
+	  f damage_min = 1;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 0;
+	  b can_turn_and_move = false;
+	}
+	[defend]
+	{
+	  f defense = 0;
+	}
+	[mind]
+	{
+	  b actor_auto_fidgets = false;
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  p position = -3.71436,-3.96314,-1.77417,0x91929cd4;
+	}
+}
+[t:2w_chicken_white_super,n:0x037002ad]
+{
+	[aspect]
+	{
+	  f experience_value = 0;
+	  b is_selectable = false;
+	  f life = 1;
+	  f mana = 1;
+	  f max_life = 1;
+	  f max_mana = 1;
+	  f scale_multiplier = 0.25;
+	}
+	[attack]
+	{
+	  f damage_max = 1;
+	  f damage_min = 1;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 0;
+	  b can_turn_and_move = false;
+	}
+	[defend]
+	{
+	  f defense = 0;
+	}
+	[mind]
+	{
+	  b actor_auto_fidgets = false;
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
+	[placement]
+	{
+	  p position = -3.7148,-3.93931,-1.91072,0x91929cd4;
+	}
+}
+[t:3w_krug_grunt,n:0x037000cc]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.919846,0,1.03271,0xad7e167c;
+	}
+}
+[t:3w_krug_grunt,n:0x037000cd]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.536453,0,0.823257,0xad7e167c;
+	}
+}
+[t:3w_krug_grunt,n:0x037000cf]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 2409.6;
+	  f max_life = 2409.6;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 300;
+	  f damage_bonus_min_melee = 300;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.473389,0,0.423939,0xad7e167c;
+	}
+}
+[t:3w_krug_throw,n:0x03700106]
+{
+	[aspect]
+	{
+	  f experience_value = 1.00011e+012;
+	  f life = 1402;
+	  f max_life = 1402;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.946228,0,-0.069294,0xad7e167c;
+	}
+}
+[t:3w_spiked_maw,n:0x037000a5]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 3.3998,0,0.0511093,0x8f9e60d1;
+	}
+}
+[t:3w_spiked_maw,n:0x037000a3]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = -2.86829,2,-0.547371,0x53d0eac3;
+	}
+}
+[t:3w_spiked_maw,n:0x037000a4]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = -1.97569,2,0.278191,0x53d0eac3;
+	}
+}
+[t:3w_rock_golem,n:0x03700090]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.597855,0,-0.570068,0x1a774ed0;
+	}
+}
+[t:3w_rock_golem,n:0x03700091]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.44976,0,0.779129,0x1a774ed0;
+	}
+}
+[t:3w_spiked_maw,n:0x037000a9]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = -1.64767,0,-0.45636,0x1a774ed0;
+	}
+}
+[t:3w_spiked_maw,n:0x037000aa]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = 0.0524521,0,-1.54871,0x1a774ed0;
+	}
+}
+[t:3w_rock_beast,n:0x0370008f]
+{
+	[aspect]
+	{
+	  f experience_value = 6.11122e+012;
+	  f life = 5280.4;
+	  f max_life = 5280.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 1562;
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_cmagic = 1423;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 4000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -2.85529,0,1.69321,0xff0a4583;
+	}
+}
+[t:3w_spiked_maw,n:0x037000a8]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = 2.16208,0,1.55457,0xff0a4583;
+	}
+}
+[t:3w_spiked_maw,n:0x037000a7]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = -0.846863,2,2.89122,0xff097175;
+	}
+}
+[t:3w_spiked_maw,n:0x037000a6]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = -1.12798,0,0.229492,0x991df571;
+	}
+}
+[t:3w_rock_golem,n:0x03700094]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.09818,0,2.1017,0xcf639567;
+	}
+}
+[t:3w_spiked_maw,n:0x0370009a]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = 3.86697,0,3.27644,0xcf639567;
+	}
+}
+[t:3w_rock_golem,n:0x03700093]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.94836,0,0.129105,0x2616ff61;
+	}
+}
+[t:3w_spiked_maw,n:0x0370009e]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = -2.04398,0,0.388046,0x2616ff61;
+	}
+}
+[t:3w_spiked_maw,n:0x0370009f]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = -2.33847,0,-0.0740662,0x2616ff61;
+	}
+}
+[t:3w_rock_golem,n:0x03700092]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.632126,0,0.371094,0x00c21bb4;
+	}
+}
+[t:3w_spiked_maw,n:0x0370009c]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = -0.714142,0,-1.4529,0x00c21bb4;
+	}
+}
+[t:3w_spiked_maw,n:0x0370009d]
+{
+	[aspect]
+	{
+	  f experience_value = 8.22233e+011;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  p position = -0.961456,0,-1.32597,0x00c21bb4;
+	}
+}
+[t:3w_rock_golem,n:0x03700095]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.34622,12,1.40961,0xfaa00af7;
+	}
+}
+[t:3w_rock_golem,n:0x03700096]
+{
+	[aspect]
+	{
+	  f experience_value = 2.11122e+012;
+	  f life = 2217;
+	  f max_life = 2217;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.35339,0,-0.884552,0x01028d3a;
+	}
+}
+[t:3w_spiked_dweller,n:0x03700097]
+{
+	[aspect]
+	{
+	  f experience_value = 5.11122e+012;
+	  f life = 1861;
+	  f max_life = 1861;
+	  f scale_multiplier = 2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 900;
+	  f damage_bonus_min_cmagic = 550;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.904068,0,1.12762,0x01028d3a;
+	}
+}
+[t:3w_spiked_dweller,n:0x03700099]
+{
+	[aspect]
+	{
+	  f experience_value = 5.11122e+012;
+	  f life = 1861;
+	  f max_life = 1861;
+	  f scale_multiplier = 2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 900;
+	  f damage_bonus_min_cmagic = 550;
+	}
+	[defend]
+	{
+	  f defense = 3000;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.83138,0,-0.900833,0x01028d3a;
 	}
 }

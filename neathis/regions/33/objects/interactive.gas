@@ -13,6 +13,78 @@
 		use_point_scids = 0x02f0000e;
 	}
 }
+[t:respawn_statue,n:0x02f00a21]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,-0.707107;
+	  p position = 2.7632,2,3.52248,0xac51af30;
+		use_point_scids = 0x02f00a22;
+	}
+}
+[t:respawn_statue,n:0x02f00a1b]
+{
+	[placement]
+	{
+	  q orientation = 0,-4.69147e-008,0,1;
+	  p position = -3.82438,0,-1.04356,0x549c8f70;
+		use_point_scids = 0x02f00a1c;
+	}
+}
+[t:respawn_statue,n:0x02f00a1d]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.264,0,-1.11861,0xc28be9cd;
+		use_point_scids = 0x02f00a1e;
+	}
+}
+[t:respawn_statue,n:0x02f00a1f]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.0229,0,-1.08256,0x8b425cc7;
+		use_point_scids = 0x02f00a20;
+	}
+}
+[t:respawn_statue,n:0x02f00a18]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.49226,0,1.85461,0x24be5abf;
+		use_point_scids = 0x02f00a19;
+	}
+}
+[t:respawn_statue,n:0x02f006a6]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = 2.42215,0,-3.96917,0x778d8fdd;
+		use_point_scids = 0x02f0009d;
+	}
+}
+[t:respawn_statue,n:0x02f00a16]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -2.46332,2,-3.69705,0x13e670f4;
+		use_point_scids = 0x02f00a17;
+	}
+}
+[t:respawn_statue,n:0x02f006a7]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 3.43414,2,3.9883,0x60e56ad3;
+		use_point_scids = 0x02f006a8,0x02f00a14,0x02f00a15;
+	}
+}
 [t:lever_glb_01,n:0x02f00011]
 {
 	[on_off_lever]
@@ -28,6 +100,15 @@
 		use_point_scids = 0x02f0000e;
 	}
 }
+[t:respawn_statue,n:0x02f00a23]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 7.09634,-2,5.66943,0xf7b6953e;
+		use_point_scids = 0x02f00a24;
+	}
+}
 [t:lever_glb_01,n:0x02f00017]
 {
 	[on_off_lever]
@@ -40,5 +121,18 @@
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 3.68854,1.63351,-1.87532,0x9cb97581;
 		use_point_scids = 0x02f00014;
+	}
+}
+[t:respawn_statue,n:0x02f00a25]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 2;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.85651,-0.45,-1.71052,0x3052b534;
+		use_point_scids = 0x02f00a26,0x02f00a27,0x02f00a28,0x02f00a29;
 	}
 }

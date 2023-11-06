@@ -198,6 +198,95 @@
 	  p position = 3.92937,0,0.117043,0x0677841d;
 	}
 }
+[t:3w_seck_guard_elite_reveal,n:0x03f00061]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_melee = 400;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -1.06148,0,-3.82516,0x941e14a4;
+	}
+}
+[t:3w_seck_guard_elite_reveal,n:0x03f00062]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_melee = 400;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  p position = -3.29814,0,0.655249,0xabdc5365;
+	}
+}
+[t:3w_seck_archer_elite_reveal,n:0x03f00064]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  p position = -1.77071,-1.90735e-006,0.727466,0xabdc5365;
+	}
+}
+[t:3w_seck_guard_elite_reveal,n:0x03f00063]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_melee = 400;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  p position = -1.47053,0,-0.0941687,0x60934aee;
+	}
+}
 [t:3w_seck_mage_high,n:0x03f0005d]
 {
 	[aspect]
@@ -286,73 +375,6 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 1.11974,0,-3.08709,0xbbdc2e5f;
-	}
-}
-[t:3w_seck_guard_elite_reveal,n:0x03f00061]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 400;
-	  f damage_bonus_min_melee = 400;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,-0.382683;
-	  p position = -1.06148,0,-3.82516,0x941e14a4;
-	}
-}
-[t:3w_seck_guard_elite_reveal,n:0x03f00062]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 400;
-	  f damage_bonus_min_melee = 400;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  p position = -3.29814,0,0.655249,0xabdc5365;
-	}
-}
-[t:3w_seck_archer_elite_reveal,n:0x03f00064]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 400;
-	  f damage_bonus_min_ranged = 400;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  p position = -1.77071,-1.90735e-006,0.727466,0xabdc5365;
 	}
 }
 [t:3w_seck_guard_elite_reveal,n:0x03f00077]
@@ -1643,6 +1665,49 @@
 	  p position = -2.46252,1.96586,0.883698,0x5176a8e9;
 	}
 }
+[t:3w_gom,n:0x03f00219]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life = 3434;
+	  f life_recovery_period = 4;
+	  f max_life = 3434;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Seck Archmage";
+	}
+	[defend]
+	{
+	  f defense = 1075;
+	}
+	[generator_in_object]
+	{
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  p position = 2.72418,1.90205,3.0529,0x5176a8e9;
+	}
+}
 [t:3w_gresh,n:0x03f00204]
 {
 	[aspect]
@@ -1674,6 +1739,28 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 3.01978,0,0.546608,0x0a88335b;
+	}
+}
+[t:3w_seck_archer_elite_reveal,n:0x03f00217]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  p position = 0.485474,6,3.51782,0x44e1bed8;
 	}
 }
 [t:3w_seck_archer_elite_reveal,n:0x03f000ff]
@@ -2181,6 +2268,39 @@
 	  p position = -0.640456,1.90735e-006,1.19457,0xf1f8f581;
 	}
 }
+[t:3w_gresh,n:0x03f0021d]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life = 3434;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	  f max_life = 3434;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Seck Necromancer";
+	}
+	[defend]
+	{
+	  f defense = 1075;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.389404,0,2.4948,0xf1f8f581;
+	}
+}
 [t:3w_seck_archer_elite_reveal,n:0x03f000e8]
 {
 	[aspect]
@@ -2445,6 +2565,72 @@
 	  p position = -0.0374665,-0.0492163,-0.905323,0x88f668c1;
 	}
 }
+[t:3w_gresh,n:0x03f0021f]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life = 3434;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	  f max_life = 3434;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Seck Necromancer";
+	}
+	[defend]
+	{
+	  f defense = 1075;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.319031,0.0680456,-0.472677,0x88f668c1;
+	}
+}
+[t:3w_gresh,n:0x03f00220]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life = 3434;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	  f max_life = 3434;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Seck Necromancer";
+	}
+	[defend]
+	{
+	  f defense = 1075;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 0.550415,-0.333948,1.17022,0x88f668c1;
+	}
+}
 [t:3w_seck_archer_elite_reveal,n:0x03f000d9]
 {
 	[aspect]
@@ -2575,6 +2761,39 @@
 	[placement]
 	{
 	  p position = -0.466564,0,2.28463,0x14cec344;
+	}
+}
+[t:3w_gresh,n:0x03f00221]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life = 3434;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	  f max_life = 3434;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Seck Necromancer";
+	}
+	[defend]
+	{
+	  f defense = 1075;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 0.987272,0,2.86957,0x14cec344;
 	}
 }
 [t:3w_seck_archer_elite,n:0x03f000a4]
@@ -3605,6 +3824,39 @@
 	  p position = 3.11658,0,2.8439,0xaf46b0b6;
 	}
 }
+[t:3w_gresh,n:0x03f0021e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life = 3434;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	  f max_life = 3434;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Seck Necromancer";
+	}
+	[defend]
+	{
+	  f defense = 1075;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 2.1044,0,0.693581,0xaf46b0b6;
+	}
+}
 [t:3w_seck_mage_high_reveal,n:0x03f000d4]
 {
 	[aspect]
@@ -4107,7 +4359,7 @@
 	}
 	[placement]
 	{
-	  p position = -0.188751,0,-0.440825,0x238516bb;
+	  p position = -1.33467,0,-1.06375,0x238516bb;
 	}
 }
 [t:3w_seck_guard_elite_reveal,n:0x03f000f7]
@@ -4129,7 +4381,73 @@
 	}
 	[placement]
 	{
-	  p position = -0.505221,1.90735e-006,1.07902,0x238516bb;
+	  p position = -1.68925,0,1.00568,0x238516bb;
+	}
+}
+[t:3w_gresh,n:0x03f0021b]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life = 3434;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	  f max_life = 3434;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Seck Necromancer";
+	}
+	[defend]
+	{
+	  f defense = 1075;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 0.814106,2.05553,9.9819,0xf6551dfb;
+	}
+}
+[t:3w_gresh,n:0x03f0021c]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life = 3434;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	  f max_life = 3434;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Seck Necromancer";
+	}
+	[defend]
+	{
+	  f defense = 1075;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.630531,2.20739,9.48492,0xf6551dfb;
 	}
 }
 [t:3w_gom_super,n:0x03f00008]
@@ -4189,6 +4507,28 @@
 	[placement]
 	{
 	  p position = -3.82553,0,-3.314,0x6fc27682;
+	}
+}
+[t:3w_seck_archer_elite_reveal,n:0x03f00103]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  p position = -3.6401,0,1.52312,0x1b12baf8;
 	}
 }
 [t:3w_seck_archer_elite_reveal,n:0x03f00101]
@@ -4323,7 +4663,51 @@
 	  p position = -0.121927,0,0.600824,0xdb47357c;
 	}
 }
-[t:3w_seck_archer_elite_reveal,n:0x03f00103]
+[t:3w_seck_guard_elite,n:0x03f00213]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_melee = 400;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  p position = 1.44232,0,0.951344,0x052ef56b;
+	}
+}
+[t:3w_seck_guard_elite,n:0x03f00214]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_melee = 400;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  p position = 0.017395,0,-3.55081,0x052ef56b;
+	}
+}
+[t:3w_seck_archer_elite_reveal,n:0x03f00215]
 {
 	[aspect]
 	{
@@ -4342,7 +4726,105 @@
 	}
 	[placement]
 	{
-	  p position = -3.6401,0,1.52312,0x1b12baf8;
+	  p position = 2.08148,0,-1.01204,0x052ef56b;
+	}
+}
+[t:3w_seck_archer_elite_reveal,n:0x03f00216]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  p position = 1.25549,0,-1.67366,0x052ef56b;
+	}
+}
+[t:3w_gom,n:0x03f00218]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[alignment_switcher]
+	{
+		alignment_spawn = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life = 3434;
+	  f life_recovery_period = 4;
+	  f max_life = 3434;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Seck Archmage";
+	}
+	[defend]
+	{
+	  f defense = 1075;
+	}
+	[generator_in_object]
+	{
+	  f spawn_chance = 0;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  p position = 2.17804,0,-2.76129,0x052ef56b;
+	}
+}
+[t:3w_gresh,n:0x03f0021a]
+{
+	[aspect]
+	{
+	  f experience_value = 2.51102e+015;
+	  f life = 3434;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	  f max_life = 3434;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Seck Necromancer";
+	}
+	[defend]
+	{
+	  f defense = 1075;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 2.29938,0,-0.430103,0x052ef56b;
 	}
 }
 [t:3w_seck_guard_elite_reveal,n:0x03f00152]
@@ -6040,487 +6522,5 @@
 	{
 	  q orientation = 0,-0.92388,0,0.382683;
 	  p position = -0.844224,0,-1.02975,0x59367840;
-	}
-}
-[t:3w_seck_guard_elite_reveal,n:0x03f00063]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 400;
-	  f damage_bonus_min_melee = 400;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  p position = -1.47053,0,-0.0941687,0x60934aee;
-	}
-}
-[t:3w_seck_guard_elite,n:0x03f00213]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 400;
-	  f damage_bonus_min_melee = 400;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  p position = 1.44232,0,0.951344,0x052ef56b;
-	}
-}
-[t:3w_seck_guard_elite,n:0x03f00214]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 400;
-	  f damage_bonus_min_melee = 400;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  p position = 0.017395,0,-3.55081,0x052ef56b;
-	}
-}
-[t:3w_seck_archer_elite_reveal,n:0x03f00215]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 400;
-	  f damage_bonus_min_ranged = 400;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  p position = 2.08148,0,-1.01204,0x052ef56b;
-	}
-}
-[t:3w_seck_archer_elite_reveal,n:0x03f00216]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 400;
-	  f damage_bonus_min_ranged = 400;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  p position = 1.25549,0,-1.67366,0x052ef56b;
-	}
-}
-[t:3w_seck_archer_elite_reveal,n:0x03f00217]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 400;
-	  f damage_bonus_min_ranged = 400;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  p position = 0.485474,6,3.51782,0x44e1bed8;
-	}
-}
-[t:3w_gom,n:0x03f00218]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-	}
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life = 3434;
-	  f life_recovery_period = 4;
-	  f max_life = 3434;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
-	}
-	[common]
-	{
-		screen_name = "Seck Archmage";
-	}
-	[defend]
-	{
-	  f defense = 1075;
-	}
-	[generator_in_object]
-	{
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  p position = 2.17804,0,-2.76129,0x052ef56b;
-	}
-}
-[t:3w_gom,n:0x03f00219]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[alignment_switcher]
-	{
-		alignment_spawn = aa_evil;
-	}
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life = 3434;
-	  f life_recovery_period = 4;
-	  f max_life = 3434;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
-	}
-	[common]
-	{
-		screen_name = "Seck Archmage";
-	}
-	[defend]
-	{
-	  f defense = 1075;
-	}
-	[generator_in_object]
-	{
-	  f spawn_chance = 0;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  p position = 2.72418,1.90205,3.0529,0x5176a8e9;
-	}
-}
-[t:3w_gresh,n:0x03f0021a]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life = 3434;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	  f max_life = 3434;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
-	}
-	[common]
-	{
-		screen_name = "Seck Necromancer";
-	}
-	[defend]
-	{
-	  f defense = 1075;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 2.29938,0,-0.430103,0x052ef56b;
-	}
-}
-[t:3w_gresh,n:0x03f0021b]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life = 3434;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	  f max_life = 3434;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
-	}
-	[common]
-	{
-		screen_name = "Seck Necromancer";
-	}
-	[defend]
-	{
-	  f defense = 1075;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 0.814106,2.05553,9.9819,0xf6551dfb;
-	}
-}
-[t:3w_gresh,n:0x03f0021c]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life = 3434;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	  f max_life = 3434;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
-	}
-	[common]
-	{
-		screen_name = "Seck Necromancer";
-	}
-	[defend]
-	{
-	  f defense = 1075;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -0.630531,2.20739,9.48492,0xf6551dfb;
-	}
-}
-[t:3w_gresh,n:0x03f0021d]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life = 3434;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	  f max_life = 3434;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
-	}
-	[common]
-	{
-		screen_name = "Seck Necromancer";
-	}
-	[defend]
-	{
-	  f defense = 1075;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -0.389404,0,2.4948,0xf1f8f581;
-	}
-}
-[t:3w_gresh,n:0x03f0021e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life = 3434;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	  f max_life = 3434;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
-	}
-	[common]
-	{
-		screen_name = "Seck Necromancer";
-	}
-	[defend]
-	{
-	  f defense = 1075;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 2.1044,0,0.693581,0xaf46b0b6;
-	}
-}
-[t:3w_gresh,n:0x03f0021f]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life = 3434;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	  f max_life = 3434;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
-	}
-	[common]
-	{
-		screen_name = "Seck Necromancer";
-	}
-	[defend]
-	{
-	  f defense = 1075;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -0.319031,0.0680456,-0.472677,0x88f668c1;
-	}
-}
-[t:3w_gresh,n:0x03f00220]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life = 3434;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	  f max_life = 3434;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
-	}
-	[common]
-	{
-		screen_name = "Seck Necromancer";
-	}
-	[defend]
-	{
-	  f defense = 1075;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 0.550415,-0.333948,1.17022,0x88f668c1;
-	}
-}
-[t:3w_gresh,n:0x03f00221]
-{
-	[aspect]
-	{
-	  f experience_value = 2.51102e+015;
-	  f life = 3434;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 1;
-	  f max_life = 3434;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
-	}
-	[common]
-	{
-		screen_name = "Seck Necromancer";
-	}
-	[defend]
-	{
-	  f defense = 1075;
-	}
-	[mind]
-	{
-		disposition_orders = ad_offensive;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 0.987272,0,2.86957,0x14cec344;
 	}
 }

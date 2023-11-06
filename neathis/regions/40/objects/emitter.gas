@@ -12,6 +12,18 @@
 	  f min_dist = 24;
 	}
 }
+[t:emt_sound_act,n:0x03801d25]
+{
+	[placement]
+	{
+	  p position = 0.051178,-0.75,0.0197906,0x804599fd;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "env_shrine_mana";
+	  b start_on_creation = false;
+	}
+}
 [t:emt_sound_act,n:0x03801d21]
 {
 	[placement]
@@ -22,18 +34,6 @@
 	[sound_emitter_act]
 	{
 		event_sound = "env_shrine_health";
-	  b start_on_creation = false;
-	}
-}
-[t:emt_sound_act,n:0x03801d25]
-{
-	[placement]
-	{
-	  p position = 0.051178,-0.75,0.0197906,0x804599fd;
-	}
-	[sound_emitter_act]
-	{
-		event_sound = "env_shrine_mana";
 	  b start_on_creation = false;
 	}
 }

@@ -425,8 +425,8 @@
 		}
 		[other]
 		{
-			il_main = spell_resurrect;
 			il_main = spell_healing_hands;
+			il_main = spell_resurrect;
 		}
 	}
 	[mind]
@@ -1222,6 +1222,43 @@
 	  p position = -1.38223,0,-1.3531,0x76b4685f;
 	}
 }
+[t:gremal_killer,n:0x004012de]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -1.11835,0,-2.07413,0xf86af03e;
+	}
+}
+[t:gremal_killer,n:0x00400071]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.770008,1.90735e-006,1.31495,0x110c1b36;
+	}
+}
+[t:gremal_killer,n:0x00400072]
+{
+	[placement]
+	{
+	  p position = 3.60995,1.90735e-006,-0.705456,0x09179af3;
+	}
+}
+[t:skrubb_farm,n:0x00400094]
+{
+	[placement]
+	{
+	  p position = 2.35444,1.90735e-006,-1.28566,0x0404587c;
+	}
+}
+[t:skrubb_farm,n:0x00400095]
+{
+	[placement]
+	{
+	  p position = 3.63969,0,0.723721,0x0404587c;
+	}
+}
 [t:phrak_piercer_boss_01,n:0x0040005f]
 {
 	[placement]
@@ -1313,74 +1350,49 @@
 	  p position = 3.23928,0,-3.78978,0x447a36b5;
 	}
 }
-[t:zed,n:0x004012bb]
+[t:skrubb_farm,n:0x00400096]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[aspect]
-	{
-	  f experience_value = 40;
-	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 10;
-	  f max_life = 68.6;
-	  f max_mana = 80;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 7;
-	  f damage_bonus_max_nmagic = 3;
-	  f damage_bonus_max_ranged = 3;
-	  f damage_bonus_min_cmagic = 7;
-	  f damage_bonus_min_nmagic = 3;
-	  f damage_bonus_min_ranged = 3;
-	}
-	[common]
-	{
-		membership = krug, party_krug_shaman, monster;
-		screen_name = "Bandit";
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ro_m_g_c_001;
-			es_feet = bo_bo_le_f_g_c_avg;
-			es_forearms = gl_ra_gl_le_f_g_c_fin;
-			es_spellbook = book_glb_magic_01;
-		}
-		[other]
-		{
-			il_main = spell_healing_hands;
-			il_main = spell_resurrect;
-		}
-	}
-	[mind]
-	{
-	  b actor_auto_heals_self_life = true;
-	  b actor_auto_reanimates_friends = true;
-	  b actor_auto_switches_to_magic = true;
-	  b actor_auto_switches_to_melee = true;
-	  b actor_auto_switches_to_ranged = true;
-	  f com_range = 14;
-		combat_orders = co_free;
-		disposition_orders = ad_offensive;
-	  f inner_comfort_zone_range = 14;
-	  f limited_movement_range = 14;
-	  f melee_engage_range = 14;
-		movement_orders = mo_free;
-	  f outer_comfort_zone_range = 14;
-	  f ranged_engage_range = 14;
-	  f sight_range = 18;
-	}
 	[placement]
 	{
-	  q orientation = 0,0.382683,0,0.923879;
-	  p position = -0.397385,0,-3.70188,0x8b5ef7f1;
+	  p position = -2.47453,1.90735e-006,-1.65357,0x2288f46e;
 	}
 }
-[t:ulora,n:0x004012bc]
+[t:skrubb_farm,n:0x00400092]
+{
+	[placement]
+	{
+	  p position = -2.91279,0,0.332977,0x04efe0b4;
+	}
+}
+[t:skrubb_farm,n:0x00400093]
+{
+	[placement]
+	{
+	  p position = -3.0539,1.90735e-006,-1.82478,0x04efe0b4;
+	}
+}
+[t:skrubb_farm,n:0x0040007e]
+{
+	[placement]
+	{
+	  p position = -1.56823,0,3.08862,0x2ff6f988;
+	}
+}
+[t:skrubb_farm,n:0x00400080]
+{
+	[placement]
+	{
+	  p position = 0.389229,0,3.95048,0x2ff6f988;
+	}
+}
+[t:skrubb_farm,n:0x0040007f]
+{
+	[placement]
+	{
+	  p position = -2.94938,-1.90735e-006,1.03043,0xb8be6a31;
+	}
+}
+[t:ulora,n:0x004012be]
 {
 	[actor]
 	{
@@ -1410,12 +1422,13 @@
 	}
 	[inventory]
 	{
+		selected_active_location = il_active_ranged_weapon;
 		[equipment]
 		{
-			es_chest = bd_sl_f_g_c_fun;
+			es_chest = bd_le_f_g_c_avg;
 			es_feet = bo_bo_le_f_g_c_avg;
 			es_head = he_ca_le_avg;
-			es_weapon_hand = cb_g_d_r_1h_low;
+			es_shield_hand = bw_g_c_s_s_r_avg;
 		}
 		[other]
 		{
@@ -1443,8 +1456,34 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.25595,0,-0.378223,0x8b5ef7f1;
+	  q orientation = 0,2.08616e-007,0,-1;
+	  p position = 0.840202,0,1.57999,0x1f92ddd4;
+	}
+}
+[t:skrubb,n:0x0040004e]
+{
+	[aspect]
+	{
+	  f life = 52;
+	  f max_life = 52;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 27;
+	  f damage_bonus_min_cmagic = 24;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Devourer";
+	}
+	[defend]
+	{
+	  f defense = 15;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382684,0,0.92388;
+	  p position = 2.42305,0,1.61652,0x8ba20e01;
 	}
 }
 [t:skrubb_farm,n:0x00400090]
@@ -1590,6 +1629,140 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 1.34631,0,-3.19586,0x5d2061dc;
+	}
+}
+[t:zed,n:0x004012bb]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f mana_recovery_period = 1;
+	  f mana_recovery_unit = 10;
+	  f max_life = 68.6;
+	  f max_mana = 80;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 7;
+	  f damage_bonus_max_nmagic = 3;
+	  f damage_bonus_max_ranged = 3;
+	  f damage_bonus_min_cmagic = 7;
+	  f damage_bonus_min_nmagic = 3;
+	  f damage_bonus_min_ranged = 3;
+	}
+	[common]
+	{
+		membership = krug, party_krug_shaman, monster;
+		screen_name = "Bandit";
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ro_m_g_c_001;
+			es_feet = bo_bo_le_f_g_c_avg;
+			es_forearms = gl_ra_gl_le_f_g_c_fin;
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = spell_healing_hands;
+			il_main = spell_resurrect;
+		}
+	}
+	[mind]
+	{
+	  b actor_auto_heals_self_life = true;
+	  b actor_auto_reanimates_friends = true;
+	  b actor_auto_switches_to_magic = true;
+	  b actor_auto_switches_to_melee = true;
+	  b actor_auto_switches_to_ranged = true;
+	  f com_range = 14;
+		combat_orders = co_free;
+		disposition_orders = ad_offensive;
+	  f inner_comfort_zone_range = 14;
+	  f limited_movement_range = 14;
+	  f melee_engage_range = 14;
+		movement_orders = mo_free;
+	  f outer_comfort_zone_range = 14;
+	  f ranged_engage_range = 14;
+	  f sight_range = 18;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.923879;
+	  p position = -0.397385,0,-3.70188,0x8b5ef7f1;
+	}
+}
+[t:ulora,n:0x004012bc]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f mana_recovery_period = 1;
+	  f mana_recovery_unit = 10;
+	  f max_life = 49;
+	  f max_mana = 30;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 7;
+	  f damage_bonus_max_nmagic = 3;
+	  f damage_bonus_max_ranged = 3;
+	  f damage_bonus_min_cmagic = 7;
+	  f damage_bonus_min_nmagic = 3;
+	  f damage_bonus_min_ranged = 3;
+	}
+	[common]
+	{
+		membership = krug, party_krug_shaman, monster;
+		screen_name = "Bandit";
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_sl_f_g_c_fun;
+			es_feet = bo_bo_le_f_g_c_avg;
+			es_head = he_ca_le_avg;
+			es_weapon_hand = cb_g_d_r_1h_low;
+		}
+		[other]
+		{
+			il_main = book_glb_lore_azunite;
+			il_main = he_ca_le_avg;
+		}
+	}
+	[mind]
+	{
+	  b actor_auto_heals_self_life = true;
+	  b actor_auto_reanimates_friends = true;
+	  b actor_auto_switches_to_magic = true;
+	  b actor_auto_switches_to_melee = true;
+	  b actor_auto_switches_to_ranged = true;
+	  f com_range = 14;
+		combat_orders = co_free;
+		disposition_orders = ad_offensive;
+	  f inner_comfort_zone_range = 14;
+	  f limited_movement_range = 14;
+	  f melee_engage_range = 14;
+		movement_orders = mo_free;
+	  f outer_comfort_zone_range = 14;
+	  f ranged_engage_range = 14;
+	  f sight_range = 18;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.25595,0,-0.378223,0x8b5ef7f1;
 	}
 }
 [t:skrubb_farm,n:0x0040008a]
@@ -1964,142 +2137,6 @@
 	  p position = 3.09406,0,-0.193619,0xf3535b92;
 	}
 }
-[t:skrubb,n:0x0040004e]
-{
-	[aspect]
-	{
-	  f life = 52;
-	  f max_life = 52;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 27;
-	  f damage_bonus_min_cmagic = 24;
-	}
-	[common]
-	{
-		screen_name = "Skrubb Devourer";
-	}
-	[defend]
-	{
-	  f defense = 15;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382684,0,0.92388;
-	  p position = 2.42305,0,1.61652,0x8ba20e01;
-	}
-}
-[t:skrubb_farm,n:0x00400096]
-{
-	[placement]
-	{
-	  p position = -2.47453,1.90735e-006,-1.65357,0x2288f46e;
-	}
-}
-[t:skrubb_farm,n:0x00400092]
-{
-	[placement]
-	{
-	  p position = -2.91279,0,0.332977,0x04efe0b4;
-	}
-}
-[t:skrubb_farm,n:0x00400093]
-{
-	[placement]
-	{
-	  p position = -3.0539,1.90735e-006,-1.82478,0x04efe0b4;
-	}
-}
-[t:skrubb_farm,n:0x0040007e]
-{
-	[placement]
-	{
-	  p position = -1.56823,0,3.08862,0x2ff6f988;
-	}
-}
-[t:skrubb_farm,n:0x00400080]
-{
-	[placement]
-	{
-	  p position = 0.389229,0,3.95048,0x2ff6f988;
-	}
-}
-[t:skrubb_farm,n:0x0040007f]
-{
-	[placement]
-	{
-	  p position = -2.94938,-1.90735e-006,1.03043,0xb8be6a31;
-	}
-}
-[t:ulora,n:0x004012be]
-{
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[aspect]
-	{
-	  f experience_value = 40;
-	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 10;
-	  f max_life = 49;
-	  f max_mana = 30;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 7;
-	  f damage_bonus_max_nmagic = 3;
-	  f damage_bonus_max_ranged = 3;
-	  f damage_bonus_min_cmagic = 7;
-	  f damage_bonus_min_nmagic = 3;
-	  f damage_bonus_min_ranged = 3;
-	}
-	[common]
-	{
-		membership = krug, party_krug_shaman, monster;
-		screen_name = "Bandit";
-	}
-	[inventory]
-	{
-		selected_active_location = il_active_ranged_weapon;
-		[equipment]
-		{
-			es_chest = bd_le_f_g_c_avg;
-			es_feet = bo_bo_le_f_g_c_avg;
-			es_head = he_ca_le_avg;
-			es_shield_hand = bw_g_c_s_s_r_avg;
-		}
-		[other]
-		{
-			il_main = book_glb_lore_azunite;
-			il_main = he_ca_le_avg;
-		}
-	}
-	[mind]
-	{
-	  b actor_auto_heals_self_life = true;
-	  b actor_auto_reanimates_friends = true;
-	  b actor_auto_switches_to_magic = true;
-	  b actor_auto_switches_to_melee = true;
-	  b actor_auto_switches_to_ranged = true;
-	  f com_range = 14;
-		combat_orders = co_free;
-		disposition_orders = ad_offensive;
-	  f inner_comfort_zone_range = 14;
-	  f limited_movement_range = 14;
-	  f melee_engage_range = 14;
-		movement_orders = mo_free;
-	  f outer_comfort_zone_range = 14;
-	  f ranged_engage_range = 14;
-	  f sight_range = 18;
-	}
-	[placement]
-	{
-	  q orientation = 0,2.08616e-007,0,-1;
-	  p position = 0.840202,0,1.57999,0x1f92ddd4;
-	}
-}
 [t:rusk,n:0x004012bd]
 {
 	[actor]
@@ -2205,50 +2242,6 @@
 	  p position = -1.34626,0,1.83731,0xd3c44378;
 	}
 }
-[t:skrubb_farm,n:0x00400094]
-{
-	[placement]
-	{
-	  p position = 2.35444,1.90735e-006,-1.28566,0x0404587c;
-	}
-}
-[t:skrubb_farm,n:0x00400095]
-{
-	[placement]
-	{
-	  p position = 3.63969,0,0.723721,0x0404587c;
-	}
-}
-[t:gremal_killer,n:0x004012de]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -1.11835,0,-2.07413,0xf86af03e;
-	}
-}
-[t:gremal_killer,n:0x00400071]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -0.770008,1.90735e-006,1.31495,0x110c1b36;
-	}
-}
-[t:gremal_killer,n:0x00400072]
-{
-	[placement]
-	{
-	  p position = 3.60995,1.90735e-006,-0.705456,0x09179af3;
-	}
-}
-[t:skrubb_farm,n:0x0040004b]
-{
-	[placement]
-	{
-	  p position = -3.5102,0,-0.331686,0x8758b5e2;
-	}
-}
 [t:skrubb_farm,n:0x00400048]
 {
 	[placement]
@@ -2284,6 +2277,13 @@
 	  p position = 1.85419,1.90735e-006,-0.942453,0x71c8b8b6;
 	}
 }
+[t:skrubb_farm,n:0x004012d8]
+{
+	[placement]
+	{
+	  p position = -1.74811,0,3.80132,0xd4e99a8b;
+	}
+}
 [t:skrubb,n:0x00400051]
 {
 	[aspect]
@@ -2310,11 +2310,18 @@
 	  p position = -0.237213,0,-2.72239,0xa532e6d0;
 	}
 }
-[t:skrubb_farm,n:0x004012d8]
+[t:skrubb_farm,n:0x0040004b]
 {
 	[placement]
 	{
-	  p position = -1.74811,0,3.80132,0xd4e99a8b;
+	  p position = -3.5102,0,-0.331686,0x8758b5e2;
+	}
+}
+[t:skrubb_farm,n:0x00400041]
+{
+	[placement]
+	{
+	  p position = -1.27505,0,-1.86306,0x8df73fa4;
 	}
 }
 [t:skrubb_farm,n:0x00400042]
@@ -2336,13 +2343,6 @@
 	[placement]
 	{
 	  p position = 2.37836,0,2.99466,0x7e6b0910;
-	}
-}
-[t:skrubb_farm,n:0x00400041]
-{
-	[placement]
-	{
-	  p position = -1.27505,0,-1.86306,0x8df73fa4;
 	}
 }
 [t:gyorn,n:0x004012c9]

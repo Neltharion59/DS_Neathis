@@ -1,3 +1,42 @@
+[t:generator_generic,n:0x01e00088]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog_skeleton";
+	  x initial_command = 0x01E00095;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 0.6,0.5,0.3;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.0435429,0,-1.33549,0xf329d3a3;
+	}
+}
+[t:generator_generic,n:0x01e0004e]
+{
+	[generator_basic]
+	{
+		child_template_name = "wraith_mage";
+	  x initial_command = 0x01E00031;
+	  i num_children_incubating = 15;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 1,0,1;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.916035,0,-3.80728,0xb62b77cf;
+	}
+}
 [t:generator_generic,n:0x01e00086]
 {
 	[generator_basic]
@@ -38,12 +77,12 @@
 	  p position = 3.14482,0,-0.585558,0x1c3a4eb3;
 	}
 }
-[t:generator_generic,n:0x01e00088]
+[t:generator_generic,n:0x01e0008f]
 {
 	[generator_basic]
 	{
 		child_template_name = "krug_dog_skeleton";
-	  x initial_command = 0x01E00095;
+	  x initial_command = 0x01E00091;
 	  i max_alive_children = 10;
 	  i num_children_incubating = 40;
 	  f spawn_period = 10;
@@ -51,117 +90,19 @@
 	[gizmo]
 	{
 	  v diffuse_color = 0.6,0.5,0.3;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.0435429,0,-1.33549,0xf329d3a3;
-	}
-}
-[t:generator_generic,n:0x01e0004e]
-{
-	[generator_basic]
-	{
-		child_template_name = "wraith_mage";
-	  x initial_command = 0x01E00031;
-	  i num_children_incubating = 15;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 1,0,1;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.916035,0,-3.80728,0xb62b77cf;
+	  p position = -2.4497,-12,-5.00053,0x87dbd93b;
 	}
 }
-[t:generator_generic,n:0x01e00089]
-{
-	[generator_basic]
-	{
-		child_template_name = "krug_dog_skeleton";
-	  x initial_command = 0x01E00099;
-	  i max_alive_children = 10;
-	  i num_children_incubating = 40;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 0.6,0.5,0.3;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 2.97673,-1,-3.12962,0xb3e290f1;
-	}
-}
-[t:generator_generic,n:0x01e0008a]
-{
-	[generator_basic]
-	{
-		child_template_name = "krug_dog_skeleton";
-	  x initial_command = 0x01E0009D;
-	  i max_alive_children = 10;
-	  i num_children_incubating = 40;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 0.6,0.5,0.3;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.25104,0,-0.309242,0x5e7e2043;
-	}
-}
-[t:generator_generic,n:0x01e0008b]
-{
-	[generator_basic]
-	{
-		child_template_name = "krug_dog_skeleton";
-	  x initial_command = 0x01E000A3;
-	  i max_alive_children = 10;
-	  i num_children_incubating = 40;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 0.6,0.5,0.3;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 2.83596,0,1.85138,0x50256647;
-	}
-}
-[t:generator_generic,n:0x01e0008c]
-{
-	[generator_basic]
-	{
-		child_template_name = "krug_dog_skeleton";
-	  x initial_command = 0x01E000A0;
-	  i max_alive_children = 10;
-	  i num_children_incubating = 40;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 0.6,0.5,0.3;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 2.2913,0,-1.90169,0xba6fb501;
-	}
-}
-[t:generator_generic,n:0x01e00055]
+[t:generator_generic,n:0x01e00057]
 {
 	[generator_basic]
 	{
 		child_template_name = "wraith_archer";
+	  x initial_command = 0x01E00058;
 	  i num_children_incubating = 15;
 	  f spawn_period = 10;
 	}
@@ -171,66 +112,75 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.53298,1,1.55581,0x81c03f28;
+	  p position = 1.92676,0,0.413471,0x0a07283f;
 	}
 }
-[t:generator_generic,n:0x01e0006a]
+[t:generator_generic,n:0x01e00059]
 {
 	[generator_basic]
 	{
-		child_template_name = "skeleton_mercenary_reveal_02";
-	  i num_children_incubating = 15;
-	  f spawn_period = 14;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 0,1,1;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.30236,0,-1.91947,0x68a9adb1;
-	}
-}
-[t:generator_generic,n:0x01e0006d]
-{
-	[generator_basic]
-	{
-		child_template_name = "skeleton_mercenary_archer_reveal_02";
-	  i num_children_incubating = 15;
-	  f spawn_period = 14;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 0,1,1;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.09834,0,-1.61296,0x68a9adb1;
-	}
-}
-[t:generator_generic,n:0x01e0003d]
-{
-	[generator_basic]
-	{
-		child_template_name = "wraith_lesser";
-	  i num_children_incubating = 30;
+		child_template_name = "skeleton_mercenary";
+	  x initial_command = 0x01E0005E;
+	  i max_alive_children = 7;
+	  i num_children_incubating = 12;
 	  f spawn_period = 10;
 	}
+	[gizmo]
+	{
+	  v diffuse_color = 1,1,0;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.11939,0,1.01955,0x3008fc22;
+	  p position = -0.990837,0,-2.19084,0x277e1f6a;
 	}
 }
-[t:generator_generic,n:0x01e00050]
+[t:generator_generic,n:0x01e0005c]
+{
+	[generator_basic]
+	{
+		child_template_name = "skeleton_mercenary";
+	  x initial_command = 0x01E00061;
+	  i max_alive_children = 7;
+	  i num_children_incubating = 12;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 1,1,0;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.51167,0,-0.249649,0x277e1f6a;
+	}
+}
+[t:generator_generic,n:0x01e0005d]
+{
+	[generator_basic]
+	{
+		child_template_name = "skeleton_mercenary_archer";
+	  x initial_command = 0x01E00063;
+	  i max_alive_children = 7;
+	  i num_children_incubating = 12;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 1,1,0;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.13184,0,-1.7103,0x277e1f6a;
+	}
+}
+[t:generator_generic,n:0x01e00046]
 {
 	[generator_basic]
 	{
 		child_template_name = "wraith_mage";
-	  x initial_command = 0x01E00051;
+	  x initial_command = 0x01E00048;
 	  i num_children_incubating = 15;
 	  f spawn_period = 10;
 	}
@@ -241,86 +191,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.12009,0,-1.9296,0x53086d3d;
-	}
-}
-[t:generator_generic,n:0x01e0003e]
-{
-	[generator_basic]
-	{
-		child_template_name = "wraith_lesser";
-	  i num_children_incubating = 30;
-	  f spawn_period = 10;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.454332,0,2.14693,0xda89a4ec;
-	}
-}
-[t:generator_generic,n:0x01e00056]
-{
-	[generator_basic]
-	{
-		child_template_name = "wraith_archer";
-	  i num_children_incubating = 15;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 1,0,0;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.63739,0,-2.33139,0xda89a4ec;
-	}
-}
-[t:generator_generic,n:0x01e0004f]
-{
-	[generator_basic]
-	{
-		child_template_name = "wraith_mage";
-	  x initial_command = 0x01E00052;
-	  i num_children_incubating = 15;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 1,0,1;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.13896,0,0.0695,0xc83c051f;
-	}
-}
-[t:generator_generic,n:0x01e00044]
-{
-	[generator_basic]
-	{
-		child_template_name = "wraith_lesser";
-	  i num_children_incubating = 30;
-	  f spawn_period = 10;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.4632,0,-1.40486,0xc40be9d2;
-	}
-}
-[t:generator_generic,n:0x01e00045]
-{
-	[generator_basic]
-	{
-		child_template_name = "wraith_lesser";
-	  i num_children_incubating = 30;
-	  f spawn_period = 10;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.161825,0,0.314133,0x071400ff;
+	  p position = 1.41589,0,-2.94044,0x014ba36f;
 	}
 }
 [t:generator_generic,n:0x01e0006b]
@@ -389,7 +260,7 @@
 	  p position = -2.18492,2,5.58043,0x45801171;
 	}
 }
-[t:generator_generic,n:0x01e00033]
+[t:generator_generic,n:0x01e00045]
 {
 	[generator_basic]
 	{
@@ -400,10 +271,10 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.17633,0,1.40647,0xb4858ffa;
+	  p position = 0.161825,0,0.314133,0x071400ff;
 	}
 }
-[t:generator_generic,n:0x01e00040]
+[t:generator_generic,n:0x01e00044]
 {
 	[generator_basic]
 	{
@@ -414,10 +285,10 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.29785,0,0.691858,0x392bf562;
+	  p position = 1.4632,0,-1.40486,0xc40be9d2;
 	}
 }
-[t:generator_generic,n:0x01e00041]
+[t:generator_generic,n:0x01e0003d]
 {
 	[generator_basic]
 	{
@@ -428,75 +299,28 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.55896,0,-1.48761,0x1e2a669c;
+	  p position = 0.11939,0,1.01955,0x3008fc22;
 	}
 }
-[t:generator_generic,n:0x01e00059]
+[t:generator_generic,n:0x01e0003e]
 {
 	[generator_basic]
 	{
-		child_template_name = "skeleton_mercenary";
-	  x initial_command = 0x01E0005E;
-	  i max_alive_children = 7;
-	  i num_children_incubating = 12;
+		child_template_name = "wraith_lesser";
+	  i num_children_incubating = 30;
 	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 1,1,0;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.990837,0,-2.19084,0x277e1f6a;
+	  p position = 0.454332,0,2.14693,0xda89a4ec;
 	}
 }
-[t:generator_generic,n:0x01e0005c]
-{
-	[generator_basic]
-	{
-		child_template_name = "skeleton_mercenary";
-	  x initial_command = 0x01E00061;
-	  i max_alive_children = 7;
-	  i num_children_incubating = 12;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 1,1,0;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.51167,0,-0.249649,0x277e1f6a;
-	}
-}
-[t:generator_generic,n:0x01e0005d]
-{
-	[generator_basic]
-	{
-		child_template_name = "skeleton_mercenary_archer";
-	  x initial_command = 0x01E00063;
-	  i max_alive_children = 7;
-	  i num_children_incubating = 12;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 1,1,0;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.13184,0,-1.7103,0x277e1f6a;
-	}
-}
-[t:generator_generic,n:0x01e00057]
+[t:generator_generic,n:0x01e00056]
 {
 	[generator_basic]
 	{
 		child_template_name = "wraith_archer";
-	  x initial_command = 0x01E00058;
 	  i num_children_incubating = 15;
 	  f spawn_period = 10;
 	}
@@ -506,35 +330,16 @@
 	}
 	[placement]
 	{
-	  p position = 1.92676,0,0.413471,0x0a07283f;
-	}
-}
-[t:generator_generic,n:0x01e0008f]
-{
-	[generator_basic]
-	{
-		child_template_name = "krug_dog_skeleton";
-	  x initial_command = 0x01E00091;
-	  i max_alive_children = 10;
-	  i num_children_incubating = 40;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 0.6,0.5,0.3;
-	}
-	[placement]
-	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.4497,-12,-5.00053,0x87dbd93b;
+	  p position = 2.63739,0,-2.33139,0xda89a4ec;
 	}
 }
-[t:generator_generic,n:0x01e00046]
+[t:generator_generic,n:0x01e0004f]
 {
 	[generator_basic]
 	{
 		child_template_name = "wraith_mage";
-	  x initial_command = 0x01E00048;
+	  x initial_command = 0x01E00052;
 	  i num_children_incubating = 15;
 	  f spawn_period = 10;
 	}
@@ -545,10 +350,28 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.41589,0,-2.94044,0x014ba36f;
+	  p position = 1.13896,0,0.0695,0xc83c051f;
 	}
 }
-[t:generator_generic,n:0x01e0006e]
+[t:generator_generic,n:0x01e0006a]
+{
+	[generator_basic]
+	{
+		child_template_name = "skeleton_mercenary_reveal_02";
+	  i num_children_incubating = 15;
+	  f spawn_period = 14;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 0,1,1;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.30236,0,-1.91947,0x68a9adb1;
+	}
+}
+[t:generator_generic,n:0x01e0006d]
 {
 	[generator_basic]
 	{
@@ -563,7 +386,144 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.62456,0,-0.73436,0x838d71df;
+	  p position = -3.09834,0,-1.61296,0x68a9adb1;
+	}
+}
+[t:generator_generic,n:0x01e00050]
+{
+	[generator_basic]
+	{
+		child_template_name = "wraith_mage";
+	  x initial_command = 0x01E00051;
+	  i num_children_incubating = 15;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 1,0,1;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.12009,0,-1.9296,0x53086d3d;
+	}
+}
+[t:generator_generic,n:0x01e00055]
+{
+	[generator_basic]
+	{
+		child_template_name = "wraith_archer";
+	  i num_children_incubating = 15;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 1,0,0;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.53298,1,1.55581,0x81c03f28;
+	}
+}
+[t:generator_generic,n:0x01e0008b]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog_skeleton";
+	  x initial_command = 0x01E000A3;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 0.6,0.5,0.3;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 2.83596,0,1.85138,0x50256647;
+	}
+}
+[t:generator_generic,n:0x01e0008c]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog_skeleton";
+	  x initial_command = 0x01E000A0;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 0.6,0.5,0.3;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 2.2913,0,-1.90169,0xba6fb501;
+	}
+}
+[t:generator_generic,n:0x01e0008d]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog_skeleton";
+	  x initial_command = 0x01E00097;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 0.6,0.5,0.3;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -1.79362,-1,-2.83624,0x610f9772;
+	}
+}
+[t:generator_generic,n:0x01e00089]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog_skeleton";
+	  x initial_command = 0x01E00099;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 0.6,0.5,0.3;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 2.97673,-1,-3.12962,0xb3e290f1;
+	}
+}
+[t:generator_generic,n:0x01e0008a]
+{
+	[generator_basic]
+	{
+		child_template_name = "krug_dog_skeleton";
+	  x initial_command = 0x01E0009D;
+	  i max_alive_children = 10;
+	  i num_children_incubating = 40;
+	  f spawn_period = 10;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 0.6,0.5,0.3;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.25104,0,-0.309242,0x5e7e2043;
 	}
 }
 [t:generator_generic,n:0x01e00054]
@@ -616,24 +576,6 @@
 	  p position = 1.30618,1,2.76818,0x933085f9;
 	}
 }
-[t:generator_generic,n:0x01e00069]
-{
-	[generator_basic]
-	{
-		child_template_name = "skeleton_mercenary_reveal_02";
-	  i num_children_incubating = 15;
-	  f spawn_period = 14;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 0,1,1;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.26589,0,1.55981,0xf2aa16a1;
-	}
-}
 [t:generator_generic,n:0x01e0003f]
 {
 	[generator_basic]
@@ -664,6 +606,84 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 0.107119,0,1.16843,0x52380e74;
+	}
+}
+[t:generator_generic,n:0x01e00069]
+{
+	[generator_basic]
+	{
+		child_template_name = "skeleton_mercenary_reveal_02";
+	  i num_children_incubating = 15;
+	  f spawn_period = 14;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 0,1,1;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.26589,0,1.55981,0xf2aa16a1;
+	}
+}
+[t:generator_generic,n:0x01e00041]
+{
+	[generator_basic]
+	{
+		child_template_name = "wraith_lesser";
+	  i num_children_incubating = 30;
+	  f spawn_period = 10;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.55896,0,-1.48761,0x1e2a669c;
+	}
+}
+[t:generator_generic,n:0x01e00040]
+{
+	[generator_basic]
+	{
+		child_template_name = "wraith_lesser";
+	  i num_children_incubating = 30;
+	  f spawn_period = 10;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.29785,0,0.691858,0x392bf562;
+	}
+}
+[t:generator_generic,n:0x01e0006e]
+{
+	[generator_basic]
+	{
+		child_template_name = "skeleton_mercenary_archer_reveal_02";
+	  i num_children_incubating = 15;
+	  f spawn_period = 14;
+	}
+	[gizmo]
+	{
+	  v diffuse_color = 0,1,1;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.62456,0,-0.73436,0x838d71df;
+	}
+}
+[t:generator_generic,n:0x01e00033]
+{
+	[generator_basic]
+	{
+		child_template_name = "wraith_lesser";
+	  i num_children_incubating = 30;
+	  f spawn_period = 10;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.17633,0,1.40647,0xb4858ffa;
 	}
 }
 [t:generator_generic,n:0x01e00422]
@@ -712,25 +732,5 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -3.17043,0,0.865799,0xe6002ce6;
-	}
-}
-[t:generator_generic,n:0x01e0008d]
-{
-	[generator_basic]
-	{
-		child_template_name = "krug_dog_skeleton";
-	  x initial_command = 0x01E00097;
-	  i max_alive_children = 10;
-	  i num_children_incubating = 40;
-	  f spawn_period = 10;
-	}
-	[gizmo]
-	{
-	  v diffuse_color = 0.6,0.5,0.3;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.78814e-007,0,1;
-	  p position = -1.79362,-1,-2.83624,0x610f9772;
 	}
 }
