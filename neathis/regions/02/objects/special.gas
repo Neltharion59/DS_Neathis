@@ -27,6 +27,29 @@
 	  p position = 3.33797,0,-0.990147,0x262fcc55;
 	}
 }
+[t:use_point,n:0x00202cb2]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.70455,0,-1.23349,0x79707f2a;
+	}
+}
+[t:use_point,n:0x00202cb3]
+{
+	[placement]
+	{
+	  p position = -3.07289,0,-1.72656,0xbb689471;
+	}
+}
+[t:use_point,n:0x00202cb1]
+{
+	[placement]
+	{
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = -2.10331,0,0.0656586,0xef2ca4bf;
+	}
+}
 [t:trigger_change_mood_box,n:0x0020011f]
 {
 	[common]
@@ -744,14 +767,6 @@
 	  p position = 0.447754,-3.65,-3.91272,0x48e88eae;
 	}
 }
-[t:use_point,n:0x00202cac]
-{
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,-0.382683;
-	  p position = 3.4145,0,-0.456909,0xcfd9f3f6;
-	}
-}
 [t:use_point,n:0x00202cad]
 {
 	[placement]
@@ -768,6 +783,14 @@
 	  p position = 2.51161,0,-0.33577,0xbe9a6143;
 	}
 }
+[t:use_point,n:0x00202cac]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = 3.4145,0,-0.456909,0xcfd9f3f6;
+	}
+}
 [t:use_point,n:0x00202caf]
 {
 	[placement]
@@ -776,26 +799,33 @@
 	  p position = 3.03403,0,-3.38025,0x7ebcb22e;
 	}
 }
-[t:use_point,n:0x00202cb1]
+[t:trigger_change_mood_box,n:0x00202cb4]
 {
-	[placement]
+	[common]
 	{
-	  q orientation = 0,-6.46033e-009,0,1;
-	  p position = -2.10331,0,0.0656586,0xef2ca4bf;
+	  b is_single_player = false;
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = mood_change("map_world_bt_r1_1");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(8.000000,2.000000,8.000000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
 	}
-}
-[t:use_point,n:0x00202cb2]
-{
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.70455,0,-1.23349,0x79707f2a;
-	}
-}
-[t:use_point,n:0x00202cb3]
-{
-	[placement]
-	{
-	  p position = -3.07289,0,-1.72656,0xbb689471;
+	  q orientation = 0,0.566406,0,0.824127;
+	  p position = -1.59912,0,1.56142,0xbece9eda;
 	}
 }

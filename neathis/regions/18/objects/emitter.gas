@@ -10,3 +10,17 @@
 	  b start_on_creation = false;
 	}
 }
+[t:emt_sound_act,n:0x01c0094a]
+{
+	[placement]
+	{
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = 1.49669,0,0.0508118,0x8d0da249;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "secret_found_1";
+	  b repeat = false;
+	  b start_on_creation = false;
+	}
+}

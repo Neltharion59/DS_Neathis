@@ -7,3 +7,31 @@
 		use_point_scids = 0x00100b6a,0x00100b69,0x00100b67,0x00100b68;
 	}
 }
+[t:lever_glb_01,n:0x00100b7c]
+{
+	[on_off_lever]
+	{
+	  x on_scid = 0x00100B74;
+	  b one_shot = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = 1.93528,1.20572,1.3024,0xe83654f7;
+		use_point_scids = 0x00100ba0;
+	}
+}
+[t:lever_glb_01,n:0x00100b9a]
+{
+	[on_off_lever]
+	{
+	  x on_scid = 0x00100B94;
+	  b one_shot = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.98023e-008;
+	  p position = -1.16863,0.877029,1.83374,0xc26130dd;
+		use_point_scids = 0x00100b9f;
+	}
+}

@@ -182,6 +182,7 @@
 	}
 	[placement]
 	{
+	  q orientation = 0,-6.46033e-009,0,1;
 	  p position = 1.33072,0,-1.73415,0x409add15;
 		use_point_scids = 0x00c00040;
 	}
@@ -314,5 +315,17 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -1.42285,-1.5,-0.978283,0x17c7333c;
+	}
+}
+[t:chest_csl_08_un_sd_r1,n:0x00c00075]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  p position = -0.0232773,-1.2,-0.385254,0x3888159a;
+		use_point_scids = 0x00C0007F;
 	}
 }

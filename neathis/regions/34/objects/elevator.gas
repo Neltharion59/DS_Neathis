@@ -1,3 +1,49 @@
+[t:elevator_2s_1c_2n,n:0x0300074e]
+{
+	[common]
+	{
+		dev_instance_text = "GOES DOWN";
+	}
+	[elevator_2s_1c_2n]
+	{
+	  i connect_door_level1 = 6;
+	  i connect_door_level2 = 13;
+	  x connect_node_level1 = 0x95F8D7DF;
+	  x connect_node_level2 = 0x95F8D7DF;
+	  f duration = 4;
+	  i elevator_door_level1 = 1;
+	  i elevator_door_level2 = 1;
+	  x elevator_node = 0x0C197B3F;
+		material = "stone";
+	}
+	[placement]
+	{
+	  p position = 1.21122,0,1.33479,0x95f8d7df;
+	}
+}
+[t:elevator_2s_1c_2n,n:0x0300074f]
+{
+	[common]
+	{
+		dev_instance_text = "GOES UP";
+	}
+	[elevator_2s_1c_2n]
+	{
+	  i connect_door_level1 = 13;
+	  i connect_door_level2 = 6;
+	  x connect_node_level1 = 0x95F8D7DF;
+	  x connect_node_level2 = 0x95F8D7DF;
+	  f duration = 4;
+	  i elevator_door_level1 = 1;
+	  i elevator_door_level2 = 1;
+	  x elevator_node = 0x564E5489;
+		material = "stone";
+	}
+	[placement]
+	{
+	  p position = 1.21344,0,-1.3455,0x95f8d7df;
+	}
+}
 [t:elevator_2s_1c_1n,n:0x030000b1]
 {
 	[elevator_2s_1c_1n]

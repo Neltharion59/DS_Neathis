@@ -62,3 +62,17 @@
 	  p position = 0.862785,4.17591,1.3802,0x254a3252;
 	}
 }
+[t:emt_sound_act,n:0x03000751]
+{
+	[placement]
+	{
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = 1.49669,0,0.0508118,0x95f8d7df;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "secret_found_1";
+	  b repeat = false;
+	  b start_on_creation = false;
+	}
+}

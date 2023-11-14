@@ -552,6 +552,15 @@
 		use_point_scids = 0x0350008a,0x0350008b;
 	}
 }
+[t:respawn_statue,n:0x03500cdd]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.31476,0,1.23389,0x3f25fa2f;
+		use_point_scids = 0x03500cde,0x03500cdf,0x03500ce0,0x03500ce1;
+	}
+}
 [t:sign_glb_blacksmith_03,n:0x035005c0]
 {
 	[placement]
@@ -1396,15 +1405,6 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 0.627087,2.00299,1.40688,0xaad451fa;
-		use_point_scids = 0x03500CDC;
-	}
-}
-[t:respawn_statue,n:0x03500cdd]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.31476,0,1.23389,0x3f25fa2f;
-		use_point_scids = 0x03500CDE,0x03500CDF,0x03500CE0,0x03500CE1;
+		use_point_scids = 0x03500cdc;
 	}
 }

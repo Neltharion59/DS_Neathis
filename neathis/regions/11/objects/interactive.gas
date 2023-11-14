@@ -16,3 +16,17 @@
 		use_point_scids = 0x0120062a,0x0120062b,0x0120062c,0x0120062d;
 	}
 }
+[t:lever_glb_01,n:0x012006c6]
+{
+	[on_off_lever]
+	{
+	  x on_scid = 0x012006C1;
+	  b one_shot = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 5.86007,1.79082,0.0740662,0xb702b035;
+		use_point_scids = 0x012006C8;
+	}
+}

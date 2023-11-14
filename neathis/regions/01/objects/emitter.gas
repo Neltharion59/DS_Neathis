@@ -65,31 +65,32 @@
 	  b start_on_creation = false;
 	}
 }
-[t:emt_sound_act,n:0x0010025f]
+[t:emt_sound_act,n:0x00100b75]
 {
 	[placement]
 	{
-	  p position = 0.0511932,-0.75,0.0197906,0x27f854d8;
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = 1.49669,0,0.0508118,0x338eee73;
 	}
 	[sound_emitter_act]
 	{
-		event_sound = "env_shrine_mana";
+		event_sound = "secret_found_1";
+	  b repeat = false;
 	  b start_on_creation = false;
 	}
 }
-[t:emt_glow,n:0x0010002c]
+[t:emt_sound_act,n:0x00100b95]
 {
-	[glow_emitter]
-	{
-	  f blue = 0.85;
-	  f green = 0.54;
-	  f red = 0;
-	  f scale = 19;
-	  b sparkle = true;
-	}
 	[placement]
 	{
-	  p position = -0.466561,3.42456,3.26886,0x034bf870;
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = 1.49669,0,0.0508118,0x65c40f7f;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "secret_found_1";
+	  b repeat = false;
+	  b start_on_creation = false;
 	}
 }
 [t:emt_sound,n:0x00100b6b]
@@ -98,6 +99,20 @@
 	{
 	  q orientation = 0,-1,0,-1.66939e-007;
 	  p position = -3.07441,-0.00695038,-0.447739,0xd63dac6e;
+	}
+	[sound_emitter]
+	{
+	  b continual_loop = true;
+		event_sound = "env_waterfall";
+	  f max_dist = 30;
+	}
+}
+[t:emt_sound,n:0x00100b71]
+{
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 0.176117,1.73671,-0.190781,0x2354b012;
 	}
 	[sound_emitter]
 	{
@@ -148,6 +163,18 @@
 	  f max_dist = 30;
 	}
 }
+[t:emt_sound_act,n:0x0010025f]
+{
+	[placement]
+	{
+	  p position = 0.0511932,-0.75,0.0197906,0x27f854d8;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "env_shrine_mana";
+	  b start_on_creation = false;
+	}
+}
 [t:emt_sound,n:0x00100b70]
 {
 	[placement]
@@ -162,17 +189,18 @@
 	  f max_dist = 30;
 	}
 }
-[t:emt_sound,n:0x00100b71]
+[t:emt_glow,n:0x0010002c]
 {
+	[glow_emitter]
+	{
+	  f blue = 0.85;
+	  f green = 0.54;
+	  f red = 0;
+	  f scale = 19;
+	  b sparkle = true;
+	}
 	[placement]
 	{
-	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = 0.176117,1.73671,-0.190781,0x2354b012;
-	}
-	[sound_emitter]
-	{
-	  b continual_loop = true;
-		event_sound = "env_waterfall";
-	  f max_dist = 30;
+	  p position = -0.466561,3.42456,3.26886,0x034bf870;
 	}
 }

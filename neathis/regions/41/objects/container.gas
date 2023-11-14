@@ -1,3 +1,15 @@
+[t:3w_chest_csl_07_chamber,n:0x03900f6f]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  p position = -0.0232773,-1.2,-0.385254,0xde5e00c0;
+		use_point_scids = 0x03900f70;
+	}
+}
 [t:3w_chest_csl_07_chamber,n:0x03900f4a]
 {
 	[aspect]
@@ -149,6 +161,23 @@
 	  q orientation = 0,1,0,6.49566e-008;
 	  p position = -3.10907,-12,-3.59851,0x6cfd7d76;
 		use_point_scids = 0x03900e0f;
+	}
+}
+[t:3w_chest_csl_07_chamber,n:0x03900f6b]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.7;
+	}
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,9.55219e-008;
+	  p position = -3.5824,-12,-2.47061,0xa659aa82;
+		use_point_scids = 0x03900f6a;
 	}
 }
 [t:crate_glb,n:0x03900ad0]
@@ -3025,20 +3054,38 @@
 	  p position = -1.50525,-3.5,-0.730324,0xf3a18251;
 	}
 }
-[t:3w_chest_csl_07_chamber,n:0x03900f6b]
+[t:crate_glb,n:0x03900f81]
 {
 	[aspect]
 	{
-	  f scale_multiplier = 0.7;
+	  f scale_multiplier = 0.25;
+	  f selection_indicator_scale = 2;
 	}
-	[inventory]
+	[common]
 	{
-	  b drop_at_use_point = true;
+		screen_name = "Basket of Decaying Food";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x03900F80,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,9.55219e-008;
-	  p position = -3.5824,-12,-2.47061,0xa659aa82;
-		use_point_scids = 0x03900F6A;
+	  q orientation = 0.353553,0.353553,-0.146447,0.853553;
+	  p position = 1.20435,0,-0.80761,0x24e5acbf;
 	}
 }

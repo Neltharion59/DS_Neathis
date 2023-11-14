@@ -67,37 +67,6 @@
 		use_point_scids = 0x001000ef,0x001000f0;
 	}
 }
-[t:urn_cav_02_cr_r1,n:0x001000d6]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.4494,-1.5,1.9018,0xa69bf0b2;
-	}
-}
-[t:urn_cav_01_cr_r1,n:0x001000d8]
-{
-	[placement]
-	{
-	  p position = 0.430115,-1.5,1.64684,0xa69bf0b2;
-	}
-}
-[t:urn_cav_01_cr_r1,n:0x001000d7]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 3.17397,0,1.76006,0xc3c013ee;
-	}
-}
-[t:urn_cav_01_cr_r1,n:0x001000e2]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.06755,0.0268933,1.58364,0xe83654f7;
-	}
-}
 [t:urn_cav_01_cr_r1,n:0x001000d2]
 {
 	[placement]
@@ -128,6 +97,30 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 0.263225,-0.0420235,-0.353203,0x8e29745e;
+	}
+}
+[t:urn_cav_01_cr_r1,n:0x001000e2]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.06755,0.0268933,1.58364,0xe83654f7;
+	}
+}
+[t:chest_csl_02_fh_r3,n:0x00100b96]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+		[other]
+		{
+			il_main = bd_un_le_f_pad_avg;
+		}
+	}
+	[placement]
+	{
+	  p position = -0.0232773,-1.2,-0.385254,0xd7e83ead;
+		use_point_scids = 0x00100b9b;
 	}
 }
 [t:barrel_glb_fh_r1,n:0x001000ce]
@@ -176,5 +169,44 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 0.711617,0.0281421,1.52158,0x160330f9;
+	}
+}
+[t:urn_cav_01_cr_r1,n:0x001000d7]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.17397,0,1.76006,0xc3c013ee;
+	}
+}
+[t:urn_cav_02_cr_r1,n:0x001000d6]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.4494,-1.5,1.9018,0xa69bf0b2;
+	}
+}
+[t:urn_cav_01_cr_r1,n:0x001000d8]
+{
+	[placement]
+	{
+	  p position = 0.430115,-1.5,1.64684,0xa69bf0b2;
+	}
+}
+[t:chest_csl_02_fh_r3,n:0x00100b77]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+		[other]
+		{
+			il_main = bo_bo_le_f_g_c_healthy;
+		}
+	}
+	[placement]
+	{
+	  p position = -0.0232773,-1.2,-0.385253,0xd4ec9ad3;
+		use_point_scids = 0x00100b7e;
 	}
 }

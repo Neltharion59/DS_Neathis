@@ -1,13 +1,14 @@
-[t:emt_sound_act,n:0x02a0011c]
+[t:emt_sound,n:0x02a001b8]
 {
 	[placement]
 	{
-	  p position = 0.0511932,-0.75,0.0197906,0x22a65aa4;
+	  p position = 3.1564,0.472652,0.425552,0xdb735b7b;
 	}
-	[sound_emitter_act]
+	[sound_emitter]
 	{
-		event_sound = "env_shrine_mana";
-	  b start_on_creation = false;
+	  b continual_loop = true;
+		event_sound = "env_waterfall";
+	  f max_dist = 30;
 	}
 }
 [t:emt_sound,n:0x02a001b7]
@@ -23,16 +24,29 @@
 	  f max_dist = 30;
 	}
 }
-[t:emt_sound,n:0x02a001b8]
+[t:emt_sound_act,n:0x02a0011c]
 {
 	[placement]
 	{
-	  p position = 3.1564,0.472652,0.425552,0xdb735b7b;
+	  p position = 0.0511932,-0.75,0.0197906,0x22a65aa4;
 	}
-	[sound_emitter]
+	[sound_emitter_act]
 	{
-	  b continual_loop = true;
-		event_sound = "env_waterfall";
-	  f max_dist = 30;
+		event_sound = "env_shrine_mana";
+	  b start_on_creation = false;
+	}
+}
+[t:emt_sound_act,n:0x02a001bc]
+{
+	[placement]
+	{
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = 1.4967,0,0.0508118,0x5e1e3723;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "secret_found_1";
+	  b repeat = false;
+	  b start_on_creation = false;
 	}
 }

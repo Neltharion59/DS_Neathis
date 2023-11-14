@@ -1,0 +1,27 @@
+[t:emt_sound_act,n:0x0030009c]
+{
+	[placement]
+	{
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = 1.49669,0,0.0508118,0x78735f64;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "secret_found_1";
+	  b repeat = false;
+	  b start_on_creation = false;
+	}
+}
+[t:emt_sound,n:0x003000aa]
+{
+	[placement]
+	{
+	  p position = 2.80843,0,0.562237,0x5fc44161;
+	}
+	[sound_emitter]
+	{
+		event_sound = "env_spider_scurry";
+	  f max_repeat_rate = 7;
+	  f repeat_rate = 4;
+	}
+}
