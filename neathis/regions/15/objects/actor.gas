@@ -5188,20 +5188,6 @@
 	  p position = -0.605403,0.378376,-1.39582,0xb7348006;
 	}
 }
-[t:blaster,n:0x019004e4]
-{
-	[placement]
-	{
-	  p position = 1.24646,-6,-0.699768,0x12ca0c09;
-	}
-}
-[t:blaster,n:0x019004e5]
-{
-	[placement]
-	{
-	  p position = -1.47415,-5.9592,-0.876587,0x12ca0c09;
-	}
-}
 [t:kill_bot,n:0x019008f9]
 {
 	[aspect]
@@ -8805,5 +8791,27 @@
 	{
 	  q orientation = 0,4.38495e-007,0,-1;
 	  p position = -0.00561404,1,3.32175,0x3ace2256;
+	}
+}
+[t:goblin_inventor,n:0x01900ced]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[common]
+	{
+		screen_name = "Rekli Outventor";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = 15_goblin_quest;
+		}
+	}
+	[placement]
+	{
+	  p position = -0.112045,-6,-0.302795,0x12ca0c09;
 	}
 }

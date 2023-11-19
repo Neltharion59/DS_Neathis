@@ -126,6 +126,7 @@
 {
 	[common]
 	{
+		dev_instance_text = "QUEST";
 		[instance_triggers]
 		{
 			[*]
@@ -133,6 +134,7 @@
 				action* = send_world_message("we_req_delete",0x03A000F5,0f,"default","every",0);
 				action* = send_world_message("we_req_delete",0x03A000F7,0f,"default","every",0);
 				action* = send_world_message("we_req_activate",0x03A000F6,5f,"default","every",0);
+				action* = change_quest_state("41_cult","completed",0);
 			  b can_self_destruct = true;
 				condition* = receive_world_message("we_req_activate",0,"on_every_message");
 			  f delay = 0.000000;
@@ -179,6 +181,36 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 3.1433,0,-0.410522,0x9b879748;
+	}
+}
+[t:trigger_change_mood_box,n:0x03a001a3]
+{
+	[common]
+	{
+	  b is_single_player = false;
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = mood_change("map_world_gd_a_r1_3");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(12.000000,6.000000,12.000000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.310257,0,0.0183105,0x1b981962;
 	}
 }
 [t:trigger_change_mood_box,n:0x03a000b8]
@@ -318,35 +350,5 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 3.98036,-12,-4.97355,0x5cdb1339;
-	}
-}
-[t:trigger_change_mood_box,n:0x03a001a3]
-{
-	[common]
-	{
-	  b is_single_player = false;
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = mood_change("map_world_gd_a_r1_3");
-			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(12.000000,6.000000,12.000000,"on_every_enter");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.310257,0,0.0183105,0x1b981962;
 	}
 }

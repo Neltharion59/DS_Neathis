@@ -40,6 +40,8 @@
 {
 	[text*]
 	{
+		activate_quest* = 08_giant,0;
+	  b quest_dialog = true;
 		screen_text = "I'm pretty nervous about the cave up this hill. I could swear I heard some disturbing grunts from there. I cannot afford to investigate however - what if I wake up something we can't cope with?";
 	  f scroll_rate = 10.000000;
 	}
@@ -195,6 +197,8 @@
 {
 	[text*]
 	{
+		activate_quest* = 08_blockage,0;
+	  b quest_dialog = true;
 		screen_text = "They're already setting up explosives. It will take some thought, so I recommend you to go something else meanwhile.";
 	  f scroll_rate = 10.000000;
 	}

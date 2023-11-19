@@ -22,11 +22,22 @@
 	  f scroll_rate = 10.000000;
 	}
 }
+[shop_droog_potion]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "It's madness out there, I tell you. I've heard you've slain some of the radicals. I do not wish to die at your blade as they did. Please, purchase any supplies you like. But don't take too long, or they might see me with you. You cannot imagine what they do to those like me.";
+	  f scroll_rate = 10.000000;
+	}
+}
 [shop_general]
 {
 	[text*]
 	{
 		choice = shop;
+		complete_quest* = 38_desert;
+	  b quest_dialog = true;
 		screen_text = "The dwarves say the road from Windcast to the kingdom is blocked. This leaves us no option to warn them about the droog agression and the rampant demons. What? You cleared the Cave of Passage? Perhaps there is still hope to crush them before things get serious. The garrison at Cryhold might still be there. With their help, perhaps we could barricade ourselves at Windcast and prevent the droog from entering the central areas of kingdom. Before we depart, would you like to relieve me of some weight?";
 	  f scroll_rate = 10.000000;
 	}
@@ -46,15 +57,6 @@
 	{
 		choice = shop;
 		screen_text = "I was lucky to be on my rest here when the droog rebellion started. But the bad luck caught up with me anyway, as the mules ran away when a bold gikk sneaked up on them. We'll have to leave our cars here. Would like to buy something first?";
-	  f scroll_rate = 10.000000;
-	}
-}
-[shop_droog_potion]
-{
-	[text*]
-	{
-		choice = shop;
-		screen_text = "It's madness out there, I tell you. I've heard you've slain some of the radicals. I do not wish to die at your blade as they did. Please, purchase any supplies you like. But don't take too long, or they might see me with you. You cannot imagine what they do to those like me.";
 	  f scroll_rate = 10.000000;
 	}
 }

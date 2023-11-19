@@ -61,6 +61,15 @@
 	  f scroll_rate = 10.000000;
 	}
 }
+[shop_magic]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Cooking will be a tough task once the supplies start running short. Fortunately, my summon spells should keep us going for much longer than the usual supplies could. Before that happens, may I interest you in some of my magic wares?";
+	  f scroll_rate = 10.000000;
+	}
+}
 [smith]
 {
 	[text*]
@@ -130,15 +139,6 @@
 	[text*]
 	{
 		screen_text = "Unfortunately, we currently do not accept guests. There is an undead horde flowing from the kingdom's direction. We collapsed the cliff and there is currently no entry into the town from that direction, but we are preparing for a siege. You're welcome to help in stocking supplies and if it comes to that, you may take shelter here with us. We are preparing to accept refugees, too.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[shop_magic]
-{
-	[text*]
-	{
-		choice = shop;
-		screen_text = "Cooking will be a tough task once the supplies start running short. Fortunately, my summon spells should keep us going for much longer than the usual supplies could. Before that happens, may I interest you in some of my magic wares?";
 	  f scroll_rate = 10.000000;
 	}
 }

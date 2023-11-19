@@ -11,8 +11,10 @@
 {
 	[text*]
 	{
+		activate_quest* = 13_witches,0;
 		choice = potential_member;
-		screen_text = "Thank you for helping me handle those atrocities. I am Phaedriel, a famous witchhunter, you surely have heard of me. This swamp is full of witches, and I am here to hunt them to extinction. They even chased entire village from their homes, now rotten and falling apart. If you are headed opposite of where you came from,  you are going to pass their territory. How about you take me with you? Blasting through middle of their territory with well-armed party will surely help me get my job done faster.";
+	  b quest_dialog = true;
+		screen_text = "Thank you for helping me handle those atrocities. I am Phaedriel, a famous witchhunter, you surely have heard of me. This swamp is full of witches, and I am here to hunt them to extinction. They even chased entire village from their homes, now rotten and falling apart. If you are headed opposite of where you came from,  you are going to pass their territory. How about you take me with you? Blasting through middle of their territory with well-armed party will surely help me get my job done faster.There is this particular coven across this wooden bridge I would like to sink my arrows into.";
 	  f scroll_rate = 10.000000;
 	}
 }

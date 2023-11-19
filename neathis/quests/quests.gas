@@ -1,0 +1,452 @@
+[chapters]
+{
+}
+[quests]
+{
+	[01_leave_cult]
+	{
+		quest_image = b_gui_ig_i_ic_c_phaedriel;
+		screen_name = leave the cult territory;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 01:conversations:goodbye;
+			description = leave the territory of the clan you have been cast from.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = serpent mother servant;
+		}
+	}
+	[02_cellar]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_02;
+		screen_name = infested cellar;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 02:conversations:farmer_w;
+			description = clear the cellar from vermin;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = blessana;
+		}
+	}
+	[02_wolf_pack]
+	{
+		quest_image = b_gui_ig_i_ic_sp_046;
+		screen_name = wolf pack;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 02:conversations:farmer_3;
+			description = find the wolf pack threatening the village of lammairth;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = veeratha;
+		}
+		[*]
+		{
+			address = 01:conversations:goodbye;
+			description = find the leader of the aggressive wolf pack;
+		  b is_consumable = true;
+		  i order = 1;
+		  b required = true;
+			speaker = varrtick;
+		}
+	}
+	[03_breadcrumbs]
+	{
+		quest_image = b_gui_ig_i_it_gold-pile;
+		screen_name = breadcrumbs;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			description = follow the breadcrumbs;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = ;
+		}
+	}
+	[08_blockage]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_06;
+		screen_name = landslide;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 07:conversations:house_renter;
+			description = occupy yourself by exploring around until the blockade is removed;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = loreo;
+		}
+	}
+	[08_giant]
+	{
+		screen_name = threat unknown;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 02:conversations:farmer_3;
+			description = investigate the suspicious sounds on the slope;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = luwetiz;
+		}
+	}
+	[11_trog]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_04;
+		screen_name = trog menace;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 01:conversations:goodbye;
+			description = destroy the trog army before it's too strong;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = merik;
+		}
+	}
+	[13_witches]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_16;
+		screen_name = the hunted coven;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 02:conversations:farmer;
+			description = hunt down the coven of witches.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = phaedriel;
+		}
+	}
+	[15_trade]
+	{
+		screen_name = Civilizational Exchange;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 02:conversations:farmer_2;
+			description = Find a goblin willing to bargain with the Kindom's traders.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = Nimth;
+		}
+	}
+	[20_castle]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_24;
+		screen_name = castle siege;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			description = repel the waves attacking the castle until it's safe to enter.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = ;
+		}
+	}
+	[24_cyclops]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_41;
+		screen_name = the cyclops king;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 03_cave_bandit:conversations:join_zed;
+			description = slay the cyclops king;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = captain durreth;
+		}
+	}
+	[34_loner]
+	{
+		screen_name = heretic;
+		[*]
+		{
+			address = 01:conversations:goodbye;
+			description = investigate what is the local loner up to;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = barkeep;
+		}
+	}
+	[34_wall]
+	{
+		screen_name = on the march;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 01:conversations:goodbye;
+			description = find the soldiers facing the ice invasion.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = barkeep;
+		}
+	}
+	[34_witch]
+	{
+		screen_name = mystery shrouded in ice;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 01:conversations:goodbye;
+			description = search for the source of malice within the village;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = barkeep;
+		}
+	}
+	[36_barracks]
+	{
+		screen_name = pest problem;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 02:conversations:farmer_w;
+			description = clear the spider-infested part of the castle.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = foli the guard;
+		}
+	}
+	[36_cave]
+	{
+		screen_name = the cave of passage;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 01:conversations:goodbye;
+			description = pass the cave of passage;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = moophy the captain;
+		}
+	}
+	[38_desert]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_17;
+		screen_name = demonspawn from desert;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 03_cave_bandit:conversations:join_gyorn;
+			description = invastigate the fate of the desert people;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = dwarven guard;
+		}
+	}
+	[38_traveler_dwarves]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_15;
+		screen_name = treasure hunters;
+		[*]
+		{
+			address = 03_cave_bandit:conversations:join_rusk;
+			description = find the travelling dwarven treasure hunters.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = origar;
+		}
+	}
+	[41_cult]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_18;
+		screen_name = the secret of the dragon cult;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 02:conversations:shop_magic;
+			description = put an end to the invasion of the dragon cultists.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = legionnaire captain;
+		}
+	}
+	[41_siege]
+	{
+		screen_name = cult invasion;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 03:conversations:wolf_mistress;
+			description = break the siege the dragon cultists have laid to the castle;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = phennias;
+		}
+	}
+	[41_wasps]
+	{
+		screen_name = picnic with consequences;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 03_cave_bandit:conversations:join_zed;
+			description = destroy the picnic basket at the top of the castle;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = tamen;
+		}
+	}
+	[43_guard_1]
+	{
+		screen_name = the first guardian of the pyramid;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			description = slay the first guardian of the pyramid;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = ;
+		}
+	}
+	[43_guard_2]
+	{
+		screen_name = the second guardian of the pyramid;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			description = slay the second guardian of the pyramid;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = ;
+		}
+	}
+	[43_guard_3]
+	{
+		screen_name = the third guardian of the pyramid;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			description = slay the third guardian of the pyramid;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = ;
+		}
+	}
+	[43_pyramid]
+	{
+		screen_name = the forbidden pyramid;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			description = find a way into the forbidden pyramid.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = ;
+		}
+	}
+	[44_seck]
+	{
+		screen_name = the evil within;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			description = destroy the abominations imprisoned under the pyramid.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = ;
+		}
+	}
+	[global_cities]
+	{
+		quest_image = b_i_glb_picture-01;
+		screen_name = sojourn;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			description = this tiny village is not a place to stay. look for your new home.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = ;
+		}
+		[*]
+		{
+			description = the village in mountains does not seem like new home either.;
+		  b is_consumable = true;
+		  i order = 1;
+		  b required = true;
+			speaker = ;
+		}
+		[*]
+		{
+			description = the rotting village in the middle of swamp does not seem to be the place;
+		  b is_consumable = true;
+		  i order = 2;
+		  b required = true;
+			speaker = ;
+		}
+		[*]
+		{
+			description = cold castle under siege of waves of undead does not feel like home either.;
+		  b is_consumable = true;
+		  i order = 3;
+		  b required = true;
+			speaker = ;
+		}
+		[*]
+		{
+			description = dusty mines of the dwarves would not be the ideal home;
+		  b is_consumable = true;
+		  i order = 4;
+		  b required = true;
+			speaker = ;
+		}
+		[*]
+		{
+			description = the freezing winds have no hope of touch your home;
+		  b is_consumable = true;
+		  i order = 5;
+		  b required = true;
+			speaker = ;
+		}
+		[*]
+		{
+			description = dwarven city has its appeal but you know you'd never fit in.;
+		  b is_consumable = true;
+		  i order = 6;
+		  b required = true;
+			speaker = ;
+		}
+		[*]
+		{
+			description = the city of bloodthirsty droog fanatics is not going to be your home either,;
+		  b is_consumable = true;
+		  i order = 7;
+		  b required = true;
+			speaker = ;
+		}
+	}
+}

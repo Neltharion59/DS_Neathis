@@ -33,7 +33,9 @@
 {
 	[text*]
 	{
-		screen_text = "We expect the wolves to attack us in force anyday. We have reports of at least two packs forming on the outskirts of village.";
+		activate_quest* = 02_wolf_pack,0;
+	  b quest_dialog = true;
+		screen_text = "We expect the wolves to attack us in force anyday. We have reports of at least two packs forming on the outskirts of village. Some ought to take care of them, but no one seems to care.";
 	  f scroll_rate = 10.000000;
 	}
 }

@@ -58,46 +58,6 @@
 	  p position = -3.07069,0,0.906943,0x7b85bf7c;
 	}
 }
-[t:elevator_2s_1c_2n,n:0x02a00131]
-{
-	[elevator_2s_1c_2n]
-	{
-	  i connect_door_level1 = 10;
-	  i connect_door_level2 = 11;
-	  x connect_node_level1 = 0x30443A7F;
-	  x connect_node_level2 = 0xF3431671;
-	  f duration = 5;
-	  i elevator_door_level1 = 1;
-	  i elevator_door_level2 = 1;
-	  x elevator_node = 0x84CB9BC7;
-		material = "dc_pulley";
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.32185,0,0.985684,0x803c041f;
-	}
-}
-[t:elevator_2s_1c_2n,n:0x02a00132]
-{
-	[elevator_2s_1c_2n]
-	{
-	  i connect_door_level1 = 11;
-	  i connect_door_level2 = 10;
-	  x connect_node_level1 = 0xF3431671;
-	  x connect_node_level2 = 0xE9A0CEE9;
-	  f duration = 5;
-	  i elevator_door_level1 = 1;
-	  i elevator_door_level2 = 1;
-	  x elevator_node = 0x84CB9BC7;
-		material = "dc_pulley";
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.09587,0,1.39308,0x8868a4ca;
-	}
-}
 [t:elevator_2s_1c_2n,n:0x02a001b9]
 {
 	[common]
@@ -142,5 +102,45 @@
 	[placement]
 	{
 	  p position = 1.21344,0,-1.3455,0x5e1e3723;
+	}
+}
+[t:elevator_2s_1c_2n,n:0x02a00131]
+{
+	[elevator_2s_1c_2n]
+	{
+	  i connect_door_level1 = 10;
+	  i connect_door_level2 = 11;
+	  x connect_node_level1 = 0x30443A7F;
+	  x connect_node_level2 = 0xF3431671;
+	  f duration = 5;
+	  i elevator_door_level1 = 1;
+	  i elevator_door_level2 = 1;
+	  x elevator_node = 0x84CB9BC7;
+		material = "dc_pulley";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.32185,0,0.985684,0x803c041f;
+	}
+}
+[t:elevator_2s_1c_2n,n:0x02a00132]
+{
+	[elevator_2s_1c_2n]
+	{
+	  i connect_door_level1 = 11;
+	  i connect_door_level2 = 10;
+	  x connect_node_level1 = 0xF3431671;
+	  x connect_node_level2 = 0xE9A0CEE9;
+	  f duration = 5;
+	  i elevator_door_level1 = 1;
+	  i elevator_door_level2 = 1;
+	  x elevator_node = 0x84CB9BC7;
+		material = "dc_pulley";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.09587,0,1.39308,0x8868a4ca;
 	}
 }

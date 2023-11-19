@@ -136,6 +136,7 @@
 			[*]
 			{
 				action* = send_world_message("we_req_activate",0x03B00417,0f,"default","every",0);
+				action* = change_quest_state("43_guard_2","completed",0);
 			  b can_self_destruct = true;
 				condition* = receive_world_message("we_killed",0,"on_first_message");
 			  f delay = 0.000000;
@@ -153,6 +154,6 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.0348511,0,0.0421906,0x370670ce;
+	  p position = 0.0230408,0,0.0931702,0x370670ce;
 	}
 }

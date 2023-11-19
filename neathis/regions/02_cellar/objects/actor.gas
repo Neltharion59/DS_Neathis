@@ -106,6 +106,27 @@
 	  f damage_max = 32;
 	  f damage_min = 30;
 	}
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("02_cellar","completed",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
 	[defend]
 	{
 	  f defense = 30;
@@ -435,6 +456,38 @@
 	  p position = -3.97982,0,-0.0745678,0x7bc8e1ba;
 	}
 }
+[t:spider_adolescent_yellow,n:0x003000a6]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.0312139,-1.2,0.287998,0xd87a0595;
+	}
+}
+[t:spider_adolescent_yellow,n:0x003000a7]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.398886,-1.2,0.423073,0xd87a0595;
+	}
+}
+[t:spider_adolescent_yellow,n:0x003000a8]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.380083,-1.2,0.573959,0xd87a0595;
+	}
+}
+[t:spider_adolescent_yellow,n:0x003000a9]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.125443,-1.2,0.557018,0xd87a0595;
+	}
+}
 [t:spider_adolescent_yellow,n:0x0030000c]
 {
 	[placement]
@@ -696,37 +749,5 @@
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = -0.997417,1,0.186893,0x99ca8afc;
-	}
-}
-[t:spider_adolescent_yellow,n:0x003000a6]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.0312139,-1.2,0.287998,0xd87a0595;
-	}
-}
-[t:spider_adolescent_yellow,n:0x003000a7]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.398886,-1.2,0.423073,0xd87a0595;
-	}
-}
-[t:spider_adolescent_yellow,n:0x003000a8]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.380083,-1.2,0.573959,0xd87a0595;
-	}
-}
-[t:spider_adolescent_yellow,n:0x003000a9]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.125443,-1.2,0.557018,0xd87a0595;
 	}
 }

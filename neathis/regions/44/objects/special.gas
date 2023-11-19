@@ -866,3 +866,31 @@
 	  p position = 0.0890961,-1.2,0.0889835,0x3d5e701e;
 	}
 }
+[t:trigger_generic,n:0x03f002e6]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("44_seck","active",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(20.000000,5.500000,1.000000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 0.322854,0.176198,-1.35329,0xf71be40f;
+	}
+}

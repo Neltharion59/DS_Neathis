@@ -819,6 +819,18 @@
 	  p position = -0.0838572,-2,-0.979729,0x4ea09614;
 	}
 }
+[t:2w_chest_csl_08_un_sd_r2,n:0x02a001bd]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  p position = -0.0232773,-1.2,-0.385254,0xd7b6a8b9;
+		use_point_scids = 0x02a001be;
+	}
+}
 [t:2w_chest_csl_02_gi_r5,n:0x02a00a70]
 {
 	[inventory]
@@ -1559,17 +1571,5 @@
 	  q orientation = 0,1,0,-1.66939e-007;
 	  p position = -1.95605,-2,-0.240693,0xd5021d80;
 		use_point_scids = 0x02a009b4;
-	}
-}
-[t:2w_chest_csl_08_un_sd_r2,n:0x02a001bd]
-{
-	[inventory]
-	{
-	  b drop_at_use_point = true;
-	}
-	[placement]
-	{
-	  p position = -0.0232773,-1.2,-0.385254,0xd7b6a8b9;
-		use_point_scids = 0x02a001be;
 	}
 }

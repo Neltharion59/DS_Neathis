@@ -43,6 +43,20 @@
 		use_point_scids = 0x03201b79;
 	}
 }
+[t:lever_glb_01,n:0x03201b81]
+{
+	[on_off_lever]
+	{
+	  x on_scid = 0x032015EE;
+	  b one_shot = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.19209e-007;
+	  p position = -2.25885,1.01307,0.567688,0x99487dd1;
+		use_point_scids = 0x03201b83;
+	}
+}
 [t:respawn_statue,n:0x03201b7a]
 {
 	[placement]
@@ -70,17 +84,354 @@
 		use_point_scids = 0x03201220;
 	}
 }
-[t:lever_glb_01,n:0x03201b81]
+[t:sign_ice_01,n:0x03201c2b]
 {
-	[on_off_lever]
+	[common]
 	{
-	  x on_scid = 0x032015EE;
-	  b one_shot = true;
+		screen_name = "Fort Cryhold";
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,1.19209e-007;
-	  p position = -2.25885,1.01307,0.567688,0x99487dd1;
-		use_point_scids = 0x03201B83;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.57585,0,1.38255,0x0cf56b2c;
+	}
+}
+[t:sign_ice_01,n:0x03201c2c]
+{
+	[common]
+	{
+		screen_name = "Icicle Heart";
+	}
+	[placement]
+	{
+	  p position = -0.800627,0,1.43308,0x0cf56b2c;
+	}
+}
+[t:sign_ice_01,n:0x03201c2d]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  p position = -0.800654,-0.311385,1.37748,0x0cf56b2c;
+	}
+}
+[t:sign_ice_01,n:0x03201c2e]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  p position = -0.78975,0,0.3007,0x9f60682b;
+	}
+}
+[t:sign_ice_01,n:0x03201c30]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.448524,0,0.112579,0x9f60682b;
+	}
+}
+[t:sign_ice_01,n:0x03201c31]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.574944,-0.349078,0.104454,0x9f60682b;
+	}
+}
+[t:sign_ice_01,n:0x03201c33]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  p position = -1.25208,0,0.782982,0xaad303e2;
+	}
+}
+[t:sign_ice_01,n:0x03201c34]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.937592,0,0.77845,0xaad303e2;
+	}
+}
+[t:sign_ice_01,n:0x03201c35]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.988373,-0.297293,0.798019,0xaad303e2;
+	}
+}
+[t:sign_ice_01,n:0x03201c36]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707107;
+	  p position = 3.61926,-0.273433,-1.49984,0x3e0c3f22;
+	}
+}
+[t:sign_ice_01,n:0x03201c37]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.23877,0,-1.67363,0x3e0c3f22;
+	}
+}
+[t:sign_ice_01,n:0x03201c3a]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 3.62457,-0.537396,-1.49586,0x3e0c3f22;
+	}
+}
+[t:sign_ice_01,n:0x03201c3e]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  q orientation = 0,3.12407e-007,0,-1;
+	  p position = -0.916992,-9.53674e-007,0.494843,0x415cdcd7;
+	}
+}
+[t:sign_ice_01,n:0x03201c3f]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.67099,4.76837e-007,0.488064,0x415cdcd7;
+	}
+}
+[t:sign_ice_01,n:0x03201c40]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  p position = -0.914978,-0.243778,0.44939,0x415cdcd7;
+	}
+}
+[t:sign_ice_01,n:0x03201c42]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.98023e-008;
+	  p position = 1.28046,0,1.93842,0x22918831;
+	}
+}
+[t:sign_ice_01,n:0x03201c44]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.05145,0,1.90884,0x22918831;
+	}
+}
+[t:sign_ice_01,n:0x03201c45]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.06033,-0.221761,1.89627,0x22918831;
+	}
+}
+[t:sign_ice_01,n:0x03201c48]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707107;
+	  p position = -0.666656,0,0.0662231,0x237cf871;
+	}
+}
+[t:sign_ice_01,n:0x03201c49]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  p position = -0.882507,4.76837e-007,0.115814,0x237cf871;
+	}
+}
+[t:sign_ice_01,n:0x03201c4a]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,6.46033e-009,0,1;
+	  p position = -0.857559,-0.240832,0.0450745,0x237cf871;
+	}
+}
+[t:sign_ice_01,n:0x03201c4c]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.03357,0,-0.468414,0x23a9b3fa;
+	}
+}
+[t:sign_ice_01,n:0x03201c4d]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  p position = -1.30597,0,-0.330429,0x23a9b3fa;
+	}
+}
+[t:sign_ice_01,n:0x03201c4e]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  p position = -1.315,-0.308325,-0.357269,0x23a9b3fa;
+	}
+}
+[t:sign_ice_01,n:0x03201c50]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  p position = -3.9706,-1.2,-3.97687,0x477065cd;
+	}
+}
+[t:sign_ice_01,n:0x03201c51]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 0.196693,1.75065,1.69086,0x0a1f89b5;
+	}
+}
+[t:sign_ice_01,n:0x03201c52]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 0.209167,1.49654,1.71857,0x0a1f89b5;
+	}
+}
+[t:sign_ice_01,n:0x03201c54]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.83502,0,3.3736,0xb568d72b;
+	}
+}
+[t:sign_ice_01,n:0x03201c56]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-5.96046e-008;
+	  p position = 3.98737,0,3.33289,0xb568d72b;
+	}
+}
+[t:sign_ice_01,n:0x03201c57]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 3.98224,-0.293455,3.33556,0xb568d72b;
 	}
 }

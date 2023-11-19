@@ -1,3 +1,16 @@
+[t:emt_sound,n:0x003000aa]
+{
+	[placement]
+	{
+	  p position = 2.80843,0,0.562237,0x5fc44161;
+	}
+	[sound_emitter]
+	{
+		event_sound = "env_spider_scurry";
+	  f max_repeat_rate = 7;
+	  f repeat_rate = 4;
+	}
+}
 [t:emt_sound_act,n:0x0030009c]
 {
 	[placement]
@@ -10,18 +23,5 @@
 		event_sound = "secret_found_1";
 	  b repeat = false;
 	  b start_on_creation = false;
-	}
-}
-[t:emt_sound,n:0x003000aa]
-{
-	[placement]
-	{
-	  p position = 2.80843,0,0.562237,0x5fc44161;
-	}
-	[sound_emitter]
-	{
-		event_sound = "env_spider_scurry";
-	  f max_repeat_rate = 7;
-	  f repeat_rate = 4;
 	}
 }

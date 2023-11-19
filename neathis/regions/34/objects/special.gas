@@ -321,6 +321,35 @@
 	  p position = 0.613724,-3.75,-3.3701,0x3cf79001;
 	}
 }
+[t:trigger_generic,n:0x03000802]
+{
+	[common]
+	{
+		dev_instance_text = "QUEST";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("global_cities","active",5);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(5.000000,3.000000,0.100000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 0.0423546,-1.15577,-0.935349,0xe065d996;
+	}
+}
 [t:trigger_fade_nodes_global_box,n:0x0300005d]
 {
 	[common]
@@ -2267,6 +2296,66 @@
 	  p position = -5.85421,-1.4,6.44544,0xb5bb9b6a;
 	}
 }
+[t:trigger_fade_nodes_global_box,n:0x030007ca]
+{
+	[common]
+	{
+	  b is_single_player = false;
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = fade_nodes_global(0x00000030,30,30,30,"out:black");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(5.100000,2.000000,5.010000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,2.1532e-007,0,-1;
+	  p position = 0.511696,-1.4,2.88148,0xb5bb9b6a;
+	}
+}
+[t:trigger_change_mood_box,n:0x030007cc]
+{
+	[common]
+	{
+	  b is_single_player = false;
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = mood_change("map_world_nt_r1_tavern");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(5.000000,2.000000,5.100000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 0.507309,-1.4,3.64101,0xb5bb9b6a;
+	}
+}
 [t:use_point,n:0x030000ab]
 {
 	[placement]
@@ -2368,65 +2457,5 @@
 	{
 	  q orientation = 0,2.1532e-007,0,-1;
 	  p position = 0.604028,0.5,0.295197,0xf8764e61;
-	}
-}
-[t:trigger_fade_nodes_global_box,n:0x030007ca]
-{
-	[common]
-	{
-	  b is_single_player = false;
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = fade_nodes_global(0x00000030,30,30,30,"out:black");
-			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(5.100000,2.000000,5.010000,"on_every_enter");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,2.1532e-007,0,-1;
-	  p position = 0.511696,-1.4,2.88148,0xb5bb9b6a;
-	}
-}
-[t:trigger_change_mood_box,n:0x030007cc]
-{
-	[common]
-	{
-	  b is_single_player = false;
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = mood_change("map_world_nt_r1_tavern");
-			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(5.000000,2.000000,5.100000,"on_every_enter");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = 0.507309,-1.4,3.64101,0xb5bb9b6a;
 	}
 }

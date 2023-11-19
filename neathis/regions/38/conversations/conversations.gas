@@ -90,6 +90,8 @@
 {
 	[text*]
 	{
+		activate_quest* = 38_desert,0;
+	  b quest_dialog = true;
 		screen_text = "It's been a long time since someone passed the Cave of Passage. Most visitors we get here come through the direct route from the kingdom, but we've had another of our famous landslides. It'll take a few months before we manage to clear the path. It's not that critical, the kingdom does not depend on us, and we can do well for years without it. The path to desert is open, but the desert people do not visit us often. We've seen the demonspawn come from that direction lately. I wonder if it's their doing. We better be prepared for anything.";
 	  f scroll_rate = 10.000000;
 	}
@@ -106,6 +108,8 @@
 {
 	[text*]
 	{
+		activate_quest* = 38_traveler_dwarves,0;
+	  b quest_dialog = true;
 		screen_text = "Hello, traveler. You're here for the store, not for an idle chat, am I right? Unfortunately, Keroth is currently on a raid with his lads. Every few weeks they set out into the mountains to hunt for treasures, mostly in krug camps. I guess that's why they sneak come here stealing our supplies here and there.";
 	  f scroll_rate = 10.000000;
 	}
@@ -198,6 +202,14 @@
 	  f scroll_rate = 10.000000;
 	}
 }
+[major]
+{
+	[text*]
+	{
+		screen_text = "Greeting, traveler. I am the town major of Windcast. So, you're coming from the Cave of Passage? We're not in the best situation right now, with roads not being patrolled, but we should push our advantage while we still have it. I will send a troop with a caravan so that we may establish route to the Cryhold fortress. I sincerely thank you in name of entire Windcast.";
+	  f scroll_rate = 10.000000;
+	}
+}
 [seamster]
 {
 	[text*]
@@ -245,14 +257,6 @@
 	[text*]
 	{
 		screen_text = "Hey there, lad! Step back, if you don't want timbers in your eye.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[major]
-{
-	[text*]
-	{
-		screen_text = "Greeting, traveler. I am the town major of Windcast. So, you're coming from the Cave of Passage? We're not in the best situation right now, with roads not being patrolled, but we should push our advantage while we still have it. I will send a troop with a caravan so that we may establish route to the Cryhold fortress. I sincerely thank you in name of entire Windcast.";
 	  f scroll_rate = 10.000000;
 	}
 }

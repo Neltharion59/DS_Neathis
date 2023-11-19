@@ -348,6 +348,65 @@
 	  p position = -0.00509262,-3.5,1.26068,0xd3f44e11;
 	}
 }
+[t:trigger_generic,n:0x033008bd]
+{
+	[common]
+	{
+		dev_instance_text = "QUEST";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("34_wall","completed",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(4.000000,2.000000,0.100000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 0.135454,-6,1.20551,0x518f3e2f;
+	}
+}
+[t:trigger_change_mood_box,n:0x03300884]
+{
+	[common]
+	{
+	  b is_single_player = false;
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = mood_change("map_world_path2ac_3");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(8.000000,4.000000,8.000000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-1.66939e-007,0,1;
+	  p position = 0.299473,0,1.98647,0x175f14ed;
+	}
+}
 [t:trigger_change_mood_box,n:0x033002b4]
 {
 	[common]
@@ -602,35 +661,5 @@
 	[placement]
 	{
 	  p position = -0.0801334,-1.25038,1.42445,0x708ddfe5;
-	}
-}
-[t:trigger_change_mood_box,n:0x03300884]
-{
-	[common]
-	{
-	  b is_single_player = false;
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = mood_change("map_world_path2ac_3");
-			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(8.000000,4.000000,8.000000,"on_every_enter");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-1.66939e-007,0,1;
-	  p position = 0.299473,0,1.98647,0x175f14ed;
 	}
 }

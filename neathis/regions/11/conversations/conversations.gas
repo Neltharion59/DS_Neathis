@@ -1,3 +1,14 @@
+[join_merik]
+{
+	[text*]
+	{
+		activate_quest* = 11_trog,0;
+		choice = potential_member;
+	  b quest_dialog = true;
+		screen_text = "Greetings! Are you hoping to pass the mountain and reach the kingdom? Don't let your hopes up. The trog dominion has grown significantly while we were too busy trading. They dwell these caves, and are as numerous as kingdom's armies. It won't take them long before they have the confidence to leave their caves, in one direction or another, but the consequences will be fatal. If you are going to push through, how about you take me with you? Perhaps we could decimate the trog population along the way. If we survive.";
+	  f scroll_rate = 10.000000;
+	}
+}
 [shop_1]
 {
 	[text*]
@@ -36,15 +47,6 @@
 	{
 		choice = shop;
 		screen_text = "Don't worry, child. Rubisten is not dangerous, but better keep your distance. I burnt my finger when I tried to touch it. Would you like to buy something?";
-	  f scroll_rate = 10.000000;
-	}
-}
-[join_merik]
-{
-	[text*]
-	{
-		choice = potential_member;
-		screen_text = "Greetings! Are you hoping to pass the mountain and reach the kingdom? Don't let your hopes up. The trog dominion has grown significantly while we were too busy trading. They dwell these caves, and are as numerous as kingdom's armies. It won't take them long before they have the confidence to leave their caves, in one direction or another, but the consequences will be fatal. If you are going to push through, how about you take me with you? Perhaps we could decimate the trog population along the way. If we survive.";
 	  f scroll_rate = 10.000000;
 	}
 }

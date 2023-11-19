@@ -55,6 +55,21 @@
 	  p position = -0.168712,-12,-3.55881,0x9f830e36;
 	}
 }
+[t:use_point,n:0x01500495]
+{
+	[placement]
+	{
+	  p position = 0.08576,0,0.294594,0xe5bbd4d5;
+	}
+}
+[t:use_point,n:0x01500496]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -3.45661,0,1.46271,0xe5bbd4d5;
+	}
+}
 [t:trigger_fade_nodes_box,n:0x01500222]
 {
 	[common]
@@ -109,6 +124,14 @@
 	[placement]
 	{
 	  p position = 1.26477,-2.01134,-2.96806,0xf284384a;
+	}
+}
+[t:use_point,n:0x01500494]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.80009,0,-1.60876,0x9ff3cd72;
 	}
 }
 [t:use_point,n:0x01500035]
@@ -201,6 +224,21 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 2.91908,-1.2,-3.15735,0xb4b3f76c;
+	}
+}
+[t:use_point,n:0x01500497]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.999336,0,-1.76157,0x95ed39ab;
+	}
+}
+[t:use_point,n:0x01500499]
+{
+	[placement]
+	{
+	  p position = -7.84247,4,1.22868,0x3630d1dc;
 	}
 }
 [t:use_point,n:0x0150003c]
@@ -356,41 +394,43 @@
 	  p position = 0.083065,-1.24225,-0.075058,0xfa511f21;
 	}
 }
-[t:use_point,n:0x01500494]
+[t:accumulate_trigger,n:0x01500542]
 {
+	[generic_accumtrigger]
+	{
+	  i num_til_send = 2;
+	  x send_to_scid = 0x01500543;
+	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 3.80009,0,-1.60876,0x9ff3cd72;
+	  p position = 1.07658,0,1.95538,0x8dfefe75;
 	}
 }
-[t:use_point,n:0x01500495]
+[t:trigger_generic,n:0x01500543]
 {
-	[placement]
+	[common]
 	{
-	  p position = 0.08576,0,0.294594,0xe5bbd4d5;
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("13_witches","completed",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_activate",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
-}
-[t:use_point,n:0x01500496]
-{
 	[placement]
 	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -3.45661,0,1.46271,0xe5bbd4d5;
-	}
-}
-[t:use_point,n:0x01500497]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.999336,0,-1.76157,0x95ed39ab;
-	}
-}
-[t:use_point,n:0x01500499]
-{
-	[placement]
-	{
-	  p position = -7.84247,4,1.22868,0x3630d1dc;
+	  p position = 1.09881,0,0.431641,0x8dfefe75;
 	}
 }

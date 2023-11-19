@@ -2,8 +2,10 @@
 {
 	[text*]
 	{
+		activate_quest* = 01_leave_cult,0;
 		choice = more;
 	  i order = 0;
+	  b quest_dialog = true;
 		screen_text = "The Order of Serpent has banished you, child. You must leave our shrine and never return. If you try to enter any of our sacred lands, you shall be executed. The Serpent does not wish to send any of her children to certain death however, so we prepared a few items for you to help you survive in the lands of barbariands.";
 	  f scroll_rate = 10.000000;
 	}

@@ -1,3 +1,17 @@
+[t:emt_sound_act,n:0x014003e8]
+{
+	[placement]
+	{
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = 1.49669,0,0.0508118,0x15572ffb;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "secret_found_1";
+	  b repeat = false;
+	  b start_on_creation = false;
+	}
+}
 [t:emt_sound_act,n:0x014003e0]
 {
 	[placement]
@@ -20,20 +34,6 @@
 	[sound_emitter_act]
 	{
 		event_sound = "env_shrine_mana";
-	  b start_on_creation = false;
-	}
-}
-[t:emt_sound_act,n:0x014003e8]
-{
-	[placement]
-	{
-	  q orientation = 0,-6.46033e-009,0,1;
-	  p position = 1.49669,0,0.0508118,0x15572ffb;
-	}
-	[sound_emitter_act]
-	{
-		event_sound = "secret_found_1";
-	  b repeat = false;
 	  b start_on_creation = false;
 	}
 }

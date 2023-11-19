@@ -102,11 +102,21 @@
 	  f scroll_rate = 10.000000;
 	}
 }
+[guard_08]
+{
+	[text*]
+	{
+		screen_text = "As much as I love axes, I must admit that shooting an arrow into ugly face of a cyclops is rather satisfying.";
+	  f scroll_rate = 10.000000;
+	}
+}
 [guard_captain]
 {
 	[text*]
 	{
-		screen_text = "We heard the sounds of your battle, so I rounded the boys at the entrance. We're not usually that paranoid, but we had to fight hard to teach the necromancers not to try to break into here. We haven't seen any of them trying to enter here since we cut down several of them.";
+		activate_quest* = 24_cyclops,0;
+	  b quest_dialog = true;
+		screen_text = "We heard the sounds of your battle, so I rounded the boys at the entrance. We're not usually that paranoid, but we had to fight hard to teach the necromancers not to try to break into here. We haven't seen any of them trying to enter here ever since we cut down several of them. The cyclopses make me worried too. The recent wave of violence must be coming from their king. We might need to somehow sneak into his domain and put him to an end.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -125,14 +135,6 @@
 	{
 		choice = shop;
 		screen_text = "The premises are improvised, but my spells and potions are just as fine as in any arcane shop in the kingdom. See for yourself.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[guard_08]
-{
-	[text*]
-	{
-		screen_text = "As much as I love axes, I must admit that shooting an arrow into ugly face of a cyclops is rather satisfying.";
 	  f scroll_rate = 10.000000;
 	}
 }

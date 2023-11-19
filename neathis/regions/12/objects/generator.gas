@@ -74,22 +74,6 @@
 	  p position = -2.12323,-5.93375,-1.50688,0x5e0c4ed1;
 	}
 }
-[t:generator_generic,n:0x014001b1]
-{
-	[generator_basic]
-	{
-		child_template_name = "trog";
-	  x initial_command = 0x014001BE;
-	  i max_alive_children = 7;
-	  i num_children_incubating = 7;
-	  f spawn_period = 4;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.846497,0,1.88849,0x9eeee42b;
-	}
-}
 [t:generator_generic,n:0x014001b2]
 {
 	[generator_basic]
@@ -104,6 +88,22 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -0.416992,0,1.41427,0xd33cb26a;
+	}
+}
+[t:generator_generic,n:0x014001b1]
+{
+	[generator_basic]
+	{
+		child_template_name = "trog";
+	  x initial_command = 0x014001BE;
+	  i max_alive_children = 7;
+	  i num_children_incubating = 7;
+	  f spawn_period = 4;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.846497,0,1.88849,0x9eeee42b;
 	}
 }
 [t:generator_generic,n:0x014001b0]

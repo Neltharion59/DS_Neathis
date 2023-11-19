@@ -74,6 +74,8 @@
 {
 	[text*]
 	{
+		activate_quest* = 41_cult,0;
+	  b quest_dialog = true;
 		screen_text = "You have done us a great favor by liberating us from the siege. Those cultists appeared out of nowhere and forced us to shut our gates. I hope the droog were able to hold their city against their attacks...the droog did WHAT? I cannot believe my ears. Yes, Tarrawiath fortress is ready to accept any refugees. We need to commence negotiations immediately. Whatever is going on here, we need to unite kingdom's forces. If you're feeling adventurous, you might investingate where they are coming from. We need to know what we're dealing with.";
 	  f scroll_rate = 10.000000;
 	}
@@ -82,6 +84,8 @@
 {
 	[text*]
 	{
+		activate_quest* = 41_siege,0;
+	  b quest_dialog = true;
 		screen_text = "We cannot storm the droog city neither break the siege of Tarrawiath fortress. If only I had more man at my disposal. I can see you're not accustomed to following orders, but if you would be able to weaken the forces of the dragon cultists, perhaps we might be able to push through to the Tarrawiath fortress. There, we would me much safer and I'm sure they would appreciate the resources we carry on us.";
 	  f scroll_rate = 10.000000;
 	}
@@ -107,6 +111,16 @@
 	[text*]
 	{
 		screen_text = "Keeping the soldiers fed seems extra important now that the siege has taken place. I'm just worried the supplies might run out soon. At least from time to time a mudfish swims in through the wells. That adds some variety to our diet.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[servant_picnic]
+{
+	[text*]
+	{
+		activate_quest* = 41_wasps,0;
+	  b quest_dialog = true;
+		screen_text = "Oh dear, the commander is going to have my head. I am Tamen, the queen's personal servant, when she's accommodated here. You see, a few weeks ago, me and Ralph, one of the guards, went upstairs to the castle roof for a eh...picnic and some castle defense strategem discussion. However, we forgot the basket of food we took there for some refreshment. The thing is, you cannot really leave food out in the open around these parts. As a rule, swarms of deadly wasps pop out of nowhere, whenever you do. Now, the wasps occupy the castle roof, and our soldiers cannot use the high ground to observe enemy advances or shower them with arrows. So far, no one managed to clear them out to find the source of food for them. When someone does, the queen's sigil on the basket will be the evidence of my guilt in this mess. I beg you, traveler, go to the roof and destroy the basket. That way, no one will ever find out I was involved in this. There are some spare chests on the rooftop. Feel welcome to help yourself to them as your reward.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -199,14 +213,6 @@
 	[text*]
 	{
 		screen_text = "It's a shame how the droog people behave in the face of a threat. These overzealous religious tendencies have been the doom of way too many races and civilizations. I hope we can bring them to reason before an inevitable tragedy happens.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[servant_picnic]
-{
-	[text*]
-	{
-		screen_text = "Oh dear, the commander is going to have my head. I am Tamen, the queen's personal servant, when she's accommodated here. You see, a few weeks ago, me and Ralph, one of the guards, went upstairs to the castle roof for a eh...picnic and some castle defense strategem discussion. However, we forgot the basket of food we took there for some refreshment. The thing is, you cannot really leave food out in the open around these parts. As a rule, swarms of deadly wasps pop out of nowhere, whenever you do. Now, the wasps occupy the castle roof, and our soldiers cannot use the high ground to observe enemy advances or shower them with arrows. So far, no one managed to clear them out to find the source of food for them. When someone does, the queen's sigil on the basket will be the evidence of my guilt in this mess. I beg you, traveler, go to the roof and destroy the basket. That way, no one will ever find out I was involved in this. There are some spare chests on the rooftop. Feel welcome to help yourself to them as your reward.";
 	  f scroll_rate = 10.000000;
 	}
 }

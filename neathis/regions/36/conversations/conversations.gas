@@ -2,6 +2,8 @@
 {
 	[text*]
 	{
+		activate_quest* = 36_cave,0;
+	  b quest_dialog = true;
 		screen_text = "Welcome to fort Cryhold, traveller. It is rare to see a passerby, but I've already seen some here in my lifetime. You are here either to prove your heroism by defending the castle against the ice warriors, or you want to reach the kingdom mainland at all costs. In that case, the Cave of Passage would be the path you need to take. You just need to exist the castle and head west. The northern Cave of Garrison holds the ice army that is about to attack us. The Cave of passage is the one with much smaller number of inhabitants, but it has become the resting place of many heroes before you. The last time some made it through was twenty years ago, when the kingdom's army needed to march towards the northern lands. You are welcome to stay at the for as long as you need. The Cryhold is here to keep all the cries that war brings upon people at this point, far from the towns and villages.";
 	  f scroll_rate = 10.000000;
 	}
@@ -34,6 +36,8 @@
 {
 	[text*]
 	{
+		activate_quest* = 36_barracks,0;
+	  b quest_dialog = true;
 		screen_text = "Hello. As is the tradition, the western wing of the castle has been overrun because I did not seal the door properly. Now, my punishment is to clear the area out. How about you cover my back?";
 	  f scroll_rate = 10.000000;
 	}

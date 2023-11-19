@@ -1,3 +1,15 @@
+[t:sign_glb_01,n:0x00202d5f]
+{
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.98402,4.76837e-007,-3.23611,0x07da8d60;
+	}
+}
 [t:respawn_statue,n:0x00202cb0]
 {
 	[placement]
@@ -5,6 +17,51 @@
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -3.26609,1,1.46666,0x7d572ece;
 		use_point_scids = 0x00202cb1,0x00202cb2,0x00202cb3;
+	}
+}
+[t:sign_glb_01,n:0x00202d62]
+{
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
+	[placement]
+	{
+	  p position = -0.17112,-1.99726,-3.51929,0x18564fb8;
+	}
+}
+[t:sign_glb_01,n:0x00202d64]
+{
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 1.76938,2.01588,3.34708,0x566df1b4;
+	}
+}
+[t:sign_glb_01,n:0x00202d65]
+{
+	[common]
+	{
+		screen_name = "Meadflow Hills";
+	}
+	[placement]
+	{
+	  p position = 1.58383,1.64494,3.65387,0x566df1b4;
+	}
+}
+[t:sign_glb_01,n:0x00202d66]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  p position = 1.58011,1.33975,3.71121,0x566df1b4;
 	}
 }
 [t:door_grs_peasant_left,n:0x0020008c]
@@ -103,5 +160,77 @@
 	{
 	  p position = 2.16585,0,-2.26682,0x87a435fd;
 		use_point_scids = 0x00202cac,0x00202cad,0x00202cae,0x00202caf;
+	}
+}
+[t:sign_glb_magicshop_01,n:0x00202d69]
+{
+	[common]
+	{
+		screen_name = "Apprentice's Pal";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.207912,0,0.978148;
+	  p position = -2.03333,-4.56791,-3.90181,0x89592e59;
+	}
+}
+[t:sign_glb_generalstore_01,n:0x00202d6a]
+{
+	[common]
+	{
+		screen_name = "Jack of All Trades'";
+	}
+	[placement]
+	{
+	  q orientation = 0,-4.69147e-008,0,1;
+	  p position = 2.23444,-4.65,-5.30463,0x48e88eae;
+	}
+}
+[t:sign_glb_stonebridge_gate,n:0x00202d6e]
+{
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
+	[placement]
+	{
+	  q orientation = 9.10607e-007,-0.707107,-4.64889e-007,0.707107;
+	  p position = 2.85629,1.24675,-3.23849,0xbc42d1de;
+	}
+}
+[t:sign_glb_stonebridge_gate,n:0x00202d6f]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[placement]
+	{
+	  q orientation = -4.6489e-007,-0.707107,-9.10606e-007,-0.707107;
+	  p position = 2.81909,1.27345,-3.24713,0xbc42d1de;
+	}
+}
+[t:sign_glb_stonebridge_gate,n:0x00202d76]
+{
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
+	[placement]
+	{
+	  q orientation = -6.63385e-007,0.92388,7.77976e-007,-0.382683;
+	  p position = 0.699936,1.21637,-0.552574,0xedaaa53a;
+	}
+}
+[t:sign_glb_stonebridge_gate,n:0x00202d77]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[placement]
+	{
+	  q orientation = 7.77976e-007,0.382683,6.63385e-007,0.92388;
+	  p position = 0.662735,1.21637,-0.561211,0xedaaa53a;
 	}
 }
