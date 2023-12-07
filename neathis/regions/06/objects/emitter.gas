@@ -1,3 +1,95 @@
+[t:emt_sound,n:0x00a0028d]
+{
+	[placement]
+	{
+	  p position = 0.0507657,1.71818,0.0653715,0xac1015ab;
+	}
+	[sound_emitter]
+	{
+	  b continual_loop = true;
+		event_sound = "env_waterfall";
+	  f max_dist = 30;
+	}
+}
+[t:emt_sound,n:0x00a00396]
+{
+	[placement]
+	{
+	  p position = -0.316048,-0.0500002,-0.0757942,0xf389f7de;
+	}
+	[sound_emitter]
+	{
+	  b continual_loop = true;
+		event_sound = "amb_water_drip";
+	  f max_dist = 10;
+	  f min_dist = 2;
+	}
+}
+[t:emt_generic,n:0x00a00398]
+{
+	[generic_emitter]
+	{
+	  f rep_freq_max = 0.7;
+	  f rep_freq_min = 0.1;
+	  b water_wave = true;
+	}
+	[placement]
+	{
+	  p position = -0.777824,1.82061,0.669559,0xf389f7de;
+	}
+}
+[t:emt_generic,n:0x00a00399]
+{
+	[generic_emitter]
+	{
+	  f rep_freq_max = 0.7;
+	  f rep_freq_min = 0.1;
+	  b water_wave = true;
+	}
+	[placement]
+	{
+	  p position = 0.343193,1.82061,1.80274,0xf389f7de;
+	}
+}
+[t:emt_generic,n:0x00a0039a]
+{
+	[generic_emitter]
+	{
+	  f rep_freq_max = 0.7;
+	  f rep_freq_min = 0.1;
+	  b water_wave = true;
+	}
+	[placement]
+	{
+	  p position = 0.841801,1.82061,-0.00550842,0xf389f7de;
+	}
+}
+[t:emt_generic,n:0x00a0039b]
+{
+	[generic_emitter]
+	{
+	  f rep_freq_max = 0.7;
+	  f rep_freq_min = 0.1;
+	  b water_wave = true;
+	}
+	[placement]
+	{
+	  p position = 1.43738,1.82061,1.15368,0xf389f7de;
+	}
+}
+[t:emt_generic,n:0x00a0039c]
+{
+	[generic_emitter]
+	{
+	  f rep_freq_max = 0.7;
+	  f rep_freq_min = 0.1;
+	  b water_wave = true;
+	}
+	[placement]
+	{
+	  p position = 1.37751,1.82061,-0.724171,0xf389f7de;
+	}
+}
 [t:emt_sound,n:0x00a0028e]
 {
 	[placement]
@@ -23,11 +115,51 @@
 	  b start_on_creation = false;
 	}
 }
-[t:emt_sound,n:0x00a0028d]
+[t:emt_generic,n:0x00a0056e]
+{
+	[generic_emitter]
+	{
+	  f rep_freq_max = 0.3;
+	  f rep_freq_min = 0.2;
+	  b water_splash = true;
+	}
+	[placement]
+	{
+	  p position = 1.6587,-1.47538,2.29048,0x75f77bcb;
+	}
+}
+[t:emt_glow,n:0x00a00570]
+{
+	[glow_emitter]
+	{
+	  f blue = 0.6;
+	  f red = 0;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.66627,-1.43285,2.26781,0x75f77bcb;
+	}
+}
+[t:emt_particle,n:0x00a00577]
+{
+	[particle_emitter]
+	{
+	  f blue = 1;
+	  f green = 0.4;
+	  f red = 0;
+	}
+	[placement]
+	{
+	  q orientation = -0.5,0.5,0.5,0.5;
+	  p position = 2.93776,-1.88716,-0.94458,0x19472adc;
+	}
+}
+[t:emt_sound,n:0x00a00391]
 {
 	[placement]
 	{
-	  p position = 0.0507657,1.71818,0.0653715,0xac1015ab;
+	  p position = 9.91371,-12,-4.00462,0x0a22c1b0;
 	}
 	[sound_emitter]
 	{

@@ -1,0 +1,74 @@
+[t:use_point,n:0x040000c2]
+{
+	[placement]
+	{
+	  p position = -3.60922,-5.94785,-0.0995998,0xebf381b5;
+	}
+}
+[t:use_point,n:0x040000c6]
+{
+	[placement]
+	{
+	  p position = 1.76709,-3.97671,-4.96451,0x8074ab76;
+	}
+}
+[t:use_point,n:0x040000c9]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.78343,-4,-3.39106,0x3ff0eca3;
+	}
+}
+[t:use_point,n:0x040000ce]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -2.94839,-5.94583,-0.749176,0x244b159e;
+	}
+}
+[t:use_point,n:0x040000cf]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.05898,-6,-1.01257,0x5c9b92f8;
+	}
+}
+[t:use_point,n:0x040000cb]
+{
+	[placement]
+	{
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = 3.16824,-3.93068,-4.43896,0x1d9defc8;
+	}
+}
+[t:trigger_change_mood_box,n:0x040000b0]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = mood_change("map_world_id_r1_1");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(4.000000,2.000000,0.100000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 0.400485,-5.93283,3.62114,0x4362f1e5;
+	}
+}

@@ -7,6 +7,91 @@
 		use_point_scids = 0x00a00290;
 	}
 }
+[t:sign_glb_01,n:0x00a0033a]
+{
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -3.16075,-1,-2.74843,0x7423fc30;
+	}
+}
+[t:sign_glb_01,n:0x00a0033c]
+{
+	[common]
+	{
+		screen_name = "Meadflow Hills";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.09049,-1,-2.53411,0x7423fc30;
+	}
+}
+[t:sign_glb_01,n:0x00a0033d]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.13609,-1.25124,-2.53032,0x7423fc30;
+	}
+}
+[t:sign_glb_01,n:0x00a00343]
+{
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.39066,0,-1.27533,0xccf3a560;
+	}
+}
+[t:sign_glb_01,n:0x00a00344]
+{
+	[common]
+	{
+		screen_name = "Meadflow Hills";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 2.5675,0,-1.32895,0xccf3a560;
+	}
+}
+[t:sign_glb_01,n:0x00a00345]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 2.5985,-0.314043,-1.33393,0xccf3a560;
+	}
+}
+[t:rack_csl_armor_gen_01_dm_r11,n:0x00a00284]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.49012e-007;
+	  p position = -16.4714,-12,-16.9318,0xebe68bc2;
+		use_point_scids = 0x00a00286;
+	}
+}
 [t:rack_csl_armor_gen_01_dm_r11,n:0x00a00282]
 {
 	[inventory]
@@ -46,20 +131,7 @@
 		use_point_scids = 0x00a00286;
 	}
 }
-[t:rack_csl_armor_gen_01_dm_r11,n:0x00a00284]
-{
-	[inventory]
-	{
-	  b drop_at_use_point = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,1.49012e-007;
-	  p position = -16.4714,-12,-16.9318,0xebe68bc2;
-		use_point_scids = 0x00a00286;
-	}
-}
-[t:sign_glb_01,n:0x00a0033a]
+[t:sign_glb_01,n:0x00a00347]
 {
 	[common]
 	{
@@ -67,11 +139,10 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,0;
-	  p position = -3.16075,-1,-2.74843,0x7423fc30;
+	  p position = -0.847858,0,-1.41694,0xedfbf4f9;
 	}
 }
-[t:sign_glb_01,n:0x00a0033c]
+[t:sign_glb_01,n:0x00a00348]
 {
 	[common]
 	{
@@ -80,10 +151,10 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.09049,-1,-2.53411,0x7423fc30;
+	  p position = -0.576767,0,-1.50856,0xedfbf4f9;
 	}
 }
-[t:sign_glb_01,n:0x00a0033d]
+[t:sign_glb_01,n:0x00a00349]
 {
 	[common]
 	{
@@ -92,7 +163,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.13609,-1.25124,-2.53032,0x7423fc30;
+	  p position = -0.629162,-0.319544,-1.50492,0xedfbf4f9;
 	}
 }
 [t:sign_glb_01,n:0x00a0033f]
@@ -130,74 +201,48 @@
 	  p position = 1.75705,3.7168,0.721264,0x97fa4f57;
 	}
 }
-[t:sign_glb_01,n:0x00a00343]
+[t:door_grs_peasant_left,n:0x00a003f7]
 {
-	[common]
-	{
-		screen_name = "Lammairth";
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.39066,0,-1.27533,0xccf3a560;
+	  q orientation = 0,-0.173648,0,-0.984808;
+	  p position = -0.0823517,-3.65,-3.19607,0x75f77bcb;
+		use_point_scids = 0x00a003fc,0x00a003fd;
 	}
 }
-[t:sign_glb_01,n:0x00a00344]
+[t:door_grs_peasant_left,n:0x00a003fa]
 {
-	[common]
-	{
-		screen_name = "Meadflow Hills";
-	}
 	[placement]
 	{
-	  q orientation = 0,1,0,0;
-	  p position = 2.5675,0,-1.32895,0xccf3a560;
+	  q orientation = 0,0.130526,0,-0.991445;
+	  p position = -0.368256,-3,-3.58933,0xdfed3a59;
+		use_point_scids = 0x00a00402,0x00a00403;
 	}
 }
-[t:sign_glb_01,n:0x00a00345]
+[t:door_grs_peasant_left,n:0x00a003f8]
 {
-	[common]
-	{
-		screen_name = "Central Lands";
-	}
 	[placement]
 	{
-	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = 2.5985,-0.314043,-1.33393,0xccf3a560;
+	  q orientation = 0,-0.173648,0,-0.984808;
+	  p position = -0.105442,-3.65,-3.19131,0xee02b7ee;
+		use_point_scids = 0x00a003fe,0x00a003ff;
 	}
 }
-[t:sign_glb_01,n:0x00a00347]
+[t:door_grs_peasant_left,n:0x00a003f9]
 {
-	[common]
-	{
-		screen_name = "Lammairth";
-	}
 	[placement]
 	{
-	  p position = -0.847858,0,-1.41694,0xedfbf4f9;
+	  q orientation = 0,0.130526,0,-0.991445;
+	  p position = -0.358452,-3,-3.59529,0x19472adc;
+		use_point_scids = 0x00a00400,0x00a00401;
 	}
 }
-[t:sign_glb_01,n:0x00a00348]
+[t:door_grs_peasant_left,n:0x00a003fb]
 {
-	[common]
-	{
-		screen_name = "Meadflow Hills";
-	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.576767,0,-1.50856,0xedfbf4f9;
-	}
-}
-[t:sign_glb_01,n:0x00a00349]
-{
-	[common]
-	{
-		screen_name = "Central Lands";
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.629162,-0.319544,-1.50492,0xedfbf4f9;
+	  q orientation = 0,0.130526,0,-0.991445;
+	  p position = -0.361702,-3,-3.59534,0x34ec5104;
+		use_point_scids = 0x00a00404,0x00a00405;
 	}
 }
