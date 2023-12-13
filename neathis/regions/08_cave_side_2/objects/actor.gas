@@ -1,0 +1,32 @@
+[t:mp_townfolk_female_03,n:0x043000d0]
+{
+	[common]
+	{
+		screen_name = "Thrennona";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = cave_traveler;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_bl_f_g_c_low;
+			es_feet = bo_bo_le_light;
+		}
+	}
+	[mind]
+	{
+	  b actor_auto_fidgets = false;
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.38839,0,0.826263,0xa9b41b2f;
+	}
+}

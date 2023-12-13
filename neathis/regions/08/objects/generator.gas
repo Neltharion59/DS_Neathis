@@ -63,19 +63,6 @@
 	  p position = 17.4274,5.59999,-50.5046,0x845c4b6c;
 	}
 }
-[t:generator_generic,n:0x00d00096]
-{
-	[generator_basic]
-	{
-		child_template_name = "moth";
-	  x initial_command = 0x00D0008A;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 1.41942,0,-0.600216,0xe8aa0a5d;
-	}
-}
 [t:generator_generic,n:0x00d00095]
 {
 	[generator_basic]
@@ -87,5 +74,18 @@
 	{
 	  q orientation = 0,1,0,0;
 	  p position = 1.6127,0,-2.97443,0x2af590c5;
+	}
+}
+[t:generator_generic,n:0x00d00096]
+{
+	[generator_basic]
+	{
+		child_template_name = "moth";
+	  x initial_command = 0x00D0008A;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 1.41942,0,-0.600216,0xe8aa0a5d;
 	}
 }

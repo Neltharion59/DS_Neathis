@@ -1,0 +1,34 @@
+[t:footlocker_glb_01_dm_r11,n:0x04400015]
+{
+	[placement]
+	{
+	  q orientation = 0,-4.69147e-008,0,1;
+	  p position = 0.334017,-3.92132,0.531063,0x89ddf836;
+	}
+}
+[t:chest_csl_03_dm_r11,n:0x04400008]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -3.81628,-12,-2.5786,0xf831145c;
+		use_point_scids = 0x04400009;
+	}
+}
+[t:chest_gob_01_dm_r11,n:0x0440000b]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-6.46033e-009;
+	  p position = -3.1177,-12,-2.67219,0x3aa8735b;
+		use_point_scids = 0x04400013;
+	}
+}

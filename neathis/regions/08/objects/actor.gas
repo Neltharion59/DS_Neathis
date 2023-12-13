@@ -1,8 +1,18 @@
-[t:moth,n:0x00d0001d]
+[t:mule_cf_r1,n:0x00d0049a]
 {
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+	}
 	[placement]
 	{
-	  p position = 0.104204,0,0.00257301,0x50fe8aed;
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.58943,0,-1.34347,0x6f5b5aa0;
 	}
 }
 [t:moth,n:0x00d0001e]
@@ -19,118 +29,17 @@
 	  p position = -0.278215,0,3.63782,0x88951c9c;
 	}
 }
-[t:moth,n:0x00d0000f]
+[t:mp_townfolk_m_01,n:0x00d0010b]
 {
-	[placement]
+	[common]
 	{
-	  p position = -1.70512,0,2.04714,0x473df964;
-	}
-}
-[t:moth,n:0x00d00011]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 2.15986,0,2.23156,0x473df964;
-	}
-}
-[t:moth,n:0x00d0000e]
-{
-	[placement]
-	{
-	  p position = 2.64418,0,-1.08578,0x6a1a2f7f;
-	}
-}
-[t:moth,n:0x00d00010]
-{
-	[placement]
-	{
-	  p position = 1.36475,0,1.65166,0x6a1a2f7f;
-	}
-}
-[t:moth,n:0x00d0000d]
-{
-	[placement]
-	{
-	  p position = -1.07537,0,-0.0183716,0x3954652e;
-	}
-}
-[t:moth,n:0x00d00012]
-{
-	[placement]
-	{
-	  p position = 0.790726,0,1.3485,0x3954652e;
-	}
-}
-[t:mule,n:0x00d00376]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-5.96046e-008;
-	  p position = 3.95827,0,1.23989,0xe7e86912;
-	}
-}
-[t:mule,n:0x00d00377]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.49012e-007;
-	  p position = 2.78439,0,0.973648,0xe7e86912;
-	}
-}
-[t:mule,n:0x00d00378]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.49012e-007;
-	  p position = 1.44485,0,1.10029,0xe7e86912;
-	}
-}
-[t:mule,n:0x00d00379]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.49012e-007;
-	  p position = 0.368332,0,0.958061,0xe7e86912;
-	}
-}
-[t:mule,n:0x00d0037a]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.49012e-007;
-	  p position = -0.582047,0,1.01512,0xe7e86912;
-	}
-}
-[t:mule,n:0x00d0037b]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.49012e-007;
-	  p position = -1.74576,0,1.08755,0xe7e86912;
-	}
-}
-[t:mule,n:0x00d0037c]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.49012e-007;
-	  p position = -3.04211,0,0.886398,0xe7e86912;
-	}
-}
-[t:kroduk,n:0x00d00393]
-{
-	[aspect]
-	{
-	  i gold_value = 0;
-	  f max_life = 215.6;
-	  f max_mana = 43;
+		screen_name = "Loreo";
 	}
 	[conversation]
 	{
 		[conversations]
 		{
-			* = join_kroduk;
+			* = son_b4_blockade;
 		}
 	}
 	[mind]
@@ -139,27 +48,355 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-5.96046e-008,0,1;
-	  p position = 0.972095,0,2.03087,0xd220dca7;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.54668,0,-0.251188,0x662c63fa;
 	}
 }
-[t:mp_guard_02,n:0x00d0038e]
+[t:mp_guard_04,n:0x00d0038b]
 {
 	[common]
 	{
-		screen_name = "Zukk";
+		screen_name = "Nealini";
 	}
 	[conversation]
 	{
 		[conversations]
 		{
-			* = guard_pass_4;
+			* = guard_1;
 		}
 	}
 	[placement]
 	{
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = 1.12714,0,-1.6889,0xa3692388;
+	}
+}
+[t:mp_guard_03,n:0x00d0038c]
+{
+	[common]
+	{
+		screen_name = "Lennorien";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = guard_2;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = -3.56654,0,-1.17205,0x94c3ac21;
+	}
+}
+[t:mp_townfolk_m_01,n:0x00d0010c]
+{
+	[common]
+	{
+		screen_name = "Loreo";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = son_after_blockade;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.266685,0,1.39147,0xca6c1df2;
+	}
+}
+[t:mp_townfolk_m_05,n:0x00d00389]
+{
+	[common]
+	{
+		screen_name = "Captain Lommero";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = captain;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_br_f_g_c_low;
+			es_feet = bo_bo_le_light;
+			es_weapon_hand = sd_un_big_2h_g_eye;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -2.2176,0,-1.55628,0x4d7180bf;
+	}
+}
+[t:mule,n:0x00d0037e]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.8505,0,0.963921,0x0974672a;
+	}
+}
+[t:mule,n:0x00d0037f]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,-0.92388;
+	  p position = -1.864,0,-0.932617,0x0974672a;
+	}
+}
+[t:mule,n:0x00d00380]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.997507,0,-1.21456,0x0974672a;
+	}
+}
+[t:mule,n:0x00d00381]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.67134,0,1.02073,0x0974672a;
+	}
+}
+[t:mule,n:0x00d00382]
+{
+	[placement]
+	{
 	  q orientation = 0,-0.923879,0,-0.382684;
-	  p position = 0.46167,0,0.916552,0x40b2e397;
+	  p position = -1.6246,0,3.08952,0x0974672a;
+	}
+}
+[t:mp_townfolk_f_04,n:0x00d00386]
+{
+	[common]
+	{
+		screen_name = "Pettunia";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = mule_tender_1_f;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_le_r_g_c_avg;
+			es_feet = bo_bo_le_light;
+			es_weapon_hand = cb_g_d_r_1h_low;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.57203,0,-3.13195,0x0974672a;
+	}
+}
+[t:magician_killean_herne,n:0x00d003a4]
+{
+	[common]
+	{
+		screen_name = "Gantrag";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_magic;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = -3.89386e-008,1,1.61289e-008,0;
+	  p position = -2.821,0,-0.204441,0x294ad2c4;
+	}
+}
+[t:mule,n:0x00d0016e]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.45944,0,-0.113469,0x514436c7;
+	}
+}
+[t:mule,n:0x00d0016f]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.18035,-1.90735e-006,-1.32179,0x514436c7;
+	}
+}
+[t:mule,n:0x00d00170]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,1.49012e-007;
+	  p position = -0.50329,-9.53674e-007,3.22216,0x9ed79f6f;
+	}
+}
+[t:mule,n:0x00d00171]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-5.96046e-008;
+	  p position = -1.63446,-9.53674e-007,3.12043,0x9ed79f6f;
+	}
+}
+[t:mp_townfolk_female_04,n:0x00d00396]
+{
+	[common]
+	{
+		screen_name = "Kleaza";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = merchant_tired_1;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.03935,0,1.9101,0x9ed79f6f;
+	}
+}
+[t:smithy_liorne,n:0x00d003a7]
+{
+	[common]
+	{
+		screen_name = "Thewer";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_smith;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.73851,0,-3.7844,0x9ed79f6f;
+	}
+}
+[t:mp_townfolk_male_02,n:0x00d00397]
+{
+	[common]
+	{
+		screen_name = "Keller";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = merchant_tired_2;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.777588,0,0.231407,0x9638e830;
+	}
+}
+[t:mp_townfolk_male_03,n:0x00d003a2]
+{
+	[common]
+	{
+		screen_name = "Vivil";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = merchant_tired_3;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_sc_f_g_c_fun;
+			es_feet = bo_bo_le_light;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -2.1063,0,0.497063,0x4ff9bf2c;
+	}
+}
+[t:nalin_starbringer,n:0x00d003a9]
+{
+	[common]
+	{
+		screen_name = "Trisha";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_2;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ro_m_d_c_043;
+			es_feet = bo_bo_le_light;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-5.96046e-008;
+	  p position = -0.355634,0,2.47807,0x4ff9bf2c;
 	}
 }
 [t:mp_guard_05,n:0x00d0038d]
@@ -241,81 +478,38 @@
 	  p position = -3.9207,0,0.649139,0x036820b0;
 	}
 }
-[t:mp_townfolk_male_03,n:0x00d003a2]
+[t:mp_guard_02,n:0x00d0038e]
 {
 	[common]
 	{
-		screen_name = "Vivil";
+		screen_name = "Zukk";
 	}
 	[conversation]
 	{
 		[conversations]
 		{
-			* = merchant_tired_3;
+			* = guard_pass_4;
 		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_sc_f_g_c_fun;
-			es_feet = bo_bo_le_light;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -2.1063,0,0.497063,0x4ff9bf2c;
+	  q orientation = 0,-0.923879,0,-0.382684;
+	  p position = 0.46167,0,0.916552,0x40b2e397;
 	}
 }
-[t:nalin_starbringer,n:0x00d003a9]
-{
-	[common]
-	{
-		screen_name = "Trisha";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_2;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ro_m_d_c_043;
-			es_feet = bo_bo_le_light;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-5.96046e-008;
-	  p position = -0.355634,0,2.47807,0x4ff9bf2c;
-	}
-}
-[t:lorun,n:0x00d00392]
+[t:kroduk,n:0x00d00393]
 {
 	[aspect]
 	{
 	  i gold_value = 0;
-	  f max_life = 147;
-	  f max_mana = 185;
+	  f max_life = 215.6;
+	  f max_mana = 43;
 	}
 	[conversation]
 	{
 		[conversations]
 		{
-			* = join_lorun;
+			* = join_kroduk;
 		}
 	}
 	[mind]
@@ -324,458 +518,64 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,-0.382683;
-	  p position = -1.56778,0,0.323761,0xad8de29a;
+	  q orientation = 0,-5.96046e-008,0,1;
+	  p position = 0.972095,0,2.03087,0xd220dca7;
 	}
 }
-[t:mule,n:0x00d00170]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,1.49012e-007;
-	  p position = -0.50329,-9.53674e-007,3.22216,0x9ed79f6f;
-	}
-}
-[t:mule,n:0x00d00171]
+[t:mule,n:0x00d00376]
 {
 	[placement]
 	{
 	  q orientation = 0,1,0,-5.96046e-008;
-	  p position = -1.63446,-9.53674e-007,3.12043,0x9ed79f6f;
+	  p position = 3.95827,0,1.23989,0xe7e86912;
 	}
 }
-[t:mp_townfolk_female_04,n:0x00d00396]
+[t:mule,n:0x00d00377]
 {
-	[common]
-	{
-		screen_name = "Kleaza";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = merchant_tired_1;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 1.03935,0,1.9101,0x9ed79f6f;
-	}
-}
-[t:smithy_liorne,n:0x00d003a7]
-{
-	[common]
-	{
-		screen_name = "Thewer";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_smith;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.73851,0,-3.7844,0x9ed79f6f;
-	}
-}
-[t:mp_guard_ranged,n:0x00d00391]
-{
-	[common]
-	{
-		screen_name = "Luvetiz";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = guard_3_ranged;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_un_pl_f_g_c_avg;
-			es_feet = bo_bo_ch_f_g_c_avg;
-			es_head = he_ca_pl_dome;
-			es_shield_hand = bw_g_c_s_m_c_avg;
-		}
-	}
 	[placement]
 	{
 	  q orientation = 0,1,0,-1.49012e-007;
-	  p position = 0.754608,-1.88532,-3.42662,0x8edca3d4;
+	  p position = 2.78439,0,0.973648,0xe7e86912;
 	}
 }
-[t:mule,n:0x00d00172]
+[t:mule,n:0x00d00378]
 {
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,-0.707107;
-	  p position = 0.807388,0,0.331261,0xdf348438;
+	  q orientation = 0,1,0,-1.49012e-007;
+	  p position = 1.44485,0,1.10029,0xe7e86912;
 	}
 }
-[t:mule,n:0x00d00375]
+[t:mule,n:0x00d00379]
 {
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 0.856247,0,-0.705971,0xdf348438;
+	  q orientation = 0,1,0,-1.49012e-007;
+	  p position = 0.368332,0,0.958061,0xe7e86912;
 	}
 }
-[t:mule,n:0x00d0037d]
+[t:mule,n:0x00d0037a]
 {
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 0.708149,0,1.53057,0xdf348438;
+	  q orientation = 0,1,0,-1.49012e-007;
+	  p position = -0.582047,0,1.01512,0xe7e86912;
 	}
 }
-[t:mp_townfolk_f_01,n:0x00d0039f]
-{
-	[common]
-	{
-		screen_name = "Theria";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = traveler;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ro_m_g_c_024;
-			es_feet = bo_bo_le_light;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,1.49012e-007;
-	  p position = -2.99964,0,-1.42759,0xdf348438;
-	}
-}
-[t:jeriah,n:0x00d003a3]
-{
-	[common]
-	{
-		screen_name = "Merrito";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.19209e-007,0,1;
-	  p position = -1.79417,0,-1.56352,0x98772a5f;
-	}
-}
-[t:mp_guard_04,n:0x00d0038b]
-{
-	[common]
-	{
-		screen_name = "Nealini";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = guard_1;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.92388,0,0.382683;
-	  p position = 1.12714,0,-1.6889,0xa3692388;
-	}
-}
-[t:mp_guard_03,n:0x00d0038c]
-{
-	[common]
-	{
-		screen_name = "Lennorien";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = guard_2;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.92388,0,0.382683;
-	  p position = -3.56654,0,-1.17205,0x94c3ac21;
-	}
-}
-[t:mp_townfolk_m_01,n:0x00d0010b]
-{
-	[common]
-	{
-		screen_name = "Loreo";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = son_b4_blockade;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.54668,0,-0.251188,0x662c63fa;
-	}
-}
-[t:mule,n:0x00d0037e]
+[t:mule,n:0x00d0037b]
 {
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.8505,0,0.963921,0x0974672a;
+	  q orientation = 0,1,0,-1.49012e-007;
+	  p position = -1.74576,0,1.08755,0xe7e86912;
 	}
 }
-[t:mule,n:0x00d0037f]
+[t:mule,n:0x00d0037c]
 {
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,-0.92388;
-	  p position = -1.864,0,-0.932617,0x0974672a;
-	}
-}
-[t:mule,n:0x00d00380]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.997507,0,-1.21456,0x0974672a;
-	}
-}
-[t:mule,n:0x00d00381]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.67134,0,1.02073,0x0974672a;
-	}
-}
-[t:mule,n:0x00d00382]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.923879,0,-0.382684;
-	  p position = -1.6246,0,3.08952,0x0974672a;
-	}
-}
-[t:mp_townfolk_f_04,n:0x00d00386]
-{
-	[common]
-	{
-		screen_name = "Pettunia";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = mule_tender_1_f;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_le_r_g_c_avg;
-			es_feet = bo_bo_le_light;
-			es_weapon_hand = cb_g_d_r_1h_low;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.57203,0,-3.13195,0x0974672a;
-	}
-}
-[t:mp_townfolk_m_05,n:0x00d00389]
-{
-	[common]
-	{
-		screen_name = "Captain Lommero";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = captain;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_br_f_g_c_low;
-			es_feet = bo_bo_le_light;
-			es_weapon_hand = sd_un_big_2h_g_eye;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -2.2176,0,-1.55628,0x4d7180bf;
-	}
-}
-[t:magician_killean_herne,n:0x00d003a4]
-{
-	[common]
-	{
-		screen_name = "Gantrag";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_magic;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = -3.89386e-008,1,1.61289e-008,0;
-	  p position = -2.821,0,-0.204441,0x294ad2c4;
-	}
-}
-[t:mule,n:0x00d0016e]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.45944,0,-0.113469,0x514436c7;
-	}
-}
-[t:mule,n:0x00d0016f]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.18035,-1.90735e-006,-1.32179,0x514436c7;
-	}
-}
-[t:mp_townfolk_male_02,n:0x00d00397]
-{
-	[common]
-	{
-		screen_name = "Keller";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = merchant_tired_2;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 0.777588,0,0.231407,0x9638e830;
-	}
-}
-[t:mp_townfolk_m_01,n:0x00d0010c]
-{
-	[common]
-	{
-		screen_name = "Loreo";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = son_after_blockade;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.266685,0,1.39147,0xca6c1df2;
-	}
-}
-[t:cave_giant,n:0x00d00372]
-{
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = change_quest_state("08_giant","completed",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_killed",0,"on_first_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = true;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  p position = 0.926487,-4,-1.43453,0x3bf3ba4a;
-	}
-}
-[t:moth,n:0x00d00017]
-{
-	[placement]
-	{
-	  p position = 0.652884,0,1.18717,0x3af89b80;
+	  q orientation = 0,1,0,-1.49012e-007;
+	  p position = -3.04211,0,0.886398,0xe7e86912;
 	}
 }
 [t:moth,n:0x00d00018]
@@ -792,40 +592,11 @@
 	  p position = -1.23518,-1.90735e-006,0.8375,0x1436c8de;
 	}
 }
-[t:moth,n:0x00d00013]
+[t:moth,n:0x00d00017]
 {
 	[placement]
 	{
-	  p position = 3.91999,-1.90735e-006,-2.8008,0x502b4170;
-	}
-}
-[t:moth,n:0x00d00014]
-{
-	[placement]
-	{
-	  p position = 1.75587,0,-1.53662,0x502b4170;
-	}
-}
-[t:mine_worm,n:0x00d0001b]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 3.27903,0,0.189926,0x502b4170;
-	}
-}
-[t:moth,n:0x00d00015]
-{
-	[placement]
-	{
-	  p position = -2.19653,-1.90735e-006,-0.41327,0xcc200b72;
-	}
-}
-[t:moth,n:0x00d00016]
-{
-	[placement]
-	{
-	  p position = -3.9718,12,-0.306495,0xc080232b;
+	  p position = 0.652884,0,1.18717,0x3af89b80;
 	}
 }
 [t:moth,n:0x00d00019]
@@ -1776,6 +1547,216 @@
 	  p position = -3.5175,12,0.540649,0xb50d5fb8;
 	}
 }
+[t:moth,n:0x00d00016]
+{
+	[placement]
+	{
+	  p position = -3.9718,12,-0.306495,0xc080232b;
+	}
+}
+[t:moth,n:0x00d00015]
+{
+	[placement]
+	{
+	  p position = -2.19653,-1.90735e-006,-0.41327,0xcc200b72;
+	}
+}
+[t:moth,n:0x00d00013]
+{
+	[placement]
+	{
+	  p position = 3.91999,-1.90735e-006,-2.8008,0x502b4170;
+	}
+}
+[t:moth,n:0x00d00014]
+{
+	[placement]
+	{
+	  p position = 1.75587,0,-1.53662,0x502b4170;
+	}
+}
+[t:mine_worm,n:0x00d0001b]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 3.27903,0,0.189926,0x502b4170;
+	}
+}
+[t:mule,n:0x00d00172]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707107;
+	  p position = 0.807388,0,0.331261,0xdf348438;
+	}
+}
+[t:mule,n:0x00d00375]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.856247,0,-0.705971,0xdf348438;
+	}
+}
+[t:mule,n:0x00d0037d]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.708149,0,1.53057,0xdf348438;
+	}
+}
+[t:mp_townfolk_f_01,n:0x00d0039f]
+{
+	[common]
+	{
+		screen_name = "Theria";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = traveler;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ro_m_g_c_024;
+			es_feet = bo_bo_le_light;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.49012e-007;
+	  p position = -2.99964,0,-1.42759,0xdf348438;
+	}
+}
+[t:jeriah,n:0x00d003a3]
+{
+	[common]
+	{
+		screen_name = "Merrito";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.19209e-007,0,1;
+	  p position = -1.79417,0,-1.56352,0x98772a5f;
+	}
+}
+[t:lorun,n:0x00d00392]
+{
+	[aspect]
+	{
+	  i gold_value = 0;
+	  f max_life = 147;
+	  f max_mana = 185;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join_lorun;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -1.56778,0,0.323761,0xad8de29a;
+	}
+}
+[t:mp_guard_ranged,n:0x00d00391]
+{
+	[common]
+	{
+		screen_name = "Luvetiz";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = guard_3_ranged;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_un_pl_f_g_c_avg;
+			es_feet = bo_bo_ch_f_g_c_avg;
+			es_head = he_ca_pl_dome;
+			es_shield_hand = bw_g_c_s_m_c_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.49012e-007;
+	  p position = 0.754608,-1.88532,-3.42662,0x8edca3d4;
+	}
+}
+[t:moth,n:0x00d00035]
+{
+	[placement]
+	{
+	  p position = 3.1781,0,-1.3474,0x96899fd3;
+	}
+}
+[t:moth,n:0x00d00036]
+{
+	[placement]
+	{
+	  p position = 1.47229,1.90735e-006,-2.96933,0x96899fd3;
+	}
+}
+[t:moth,n:0x00d00037]
+{
+	[placement]
+	{
+	  p position = -1.25806,0,-2.538,0x96899fd3;
+	}
+}
+[t:moth,n:0x00d00039]
+{
+	[placement]
+	{
+	  p position = 3.3063,1.90735e-006,2.62142,0x96899fd3;
+	}
+}
+[t:moth,n:0x00d0003a]
+{
+	[placement]
+	{
+	  p position = -0.31131,0,-3.66976,0xe2885ff7;
+	}
+}
+[t:moth,n:0x00d00038]
+{
+	[placement]
+	{
+	  p position = 3.74771,0,0.423059,0x2af590c5;
+	}
+}
 [t:krug_shaman_boss_01,n:0x00d000e3]
 {
 	[common]
@@ -1897,89 +1878,82 @@
 	  p position = -3.29469,0,-1.31705,0x2f357921;
 	}
 }
-[t:moth,n:0x00d00038]
+[t:cave_giant,n:0x00d00372]
 {
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("08_giant","completed",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
 	[placement]
 	{
-	  p position = 3.74771,0,0.423059,0x2af590c5;
+	  p position = 0.926487,-4,-1.43453,0x3bf3ba4a;
 	}
 }
-[t:moth,n:0x00d00035]
+[t:moth,n:0x00d0000e]
 {
 	[placement]
 	{
-	  p position = 3.1781,0,-1.3474,0x96899fd3;
+	  p position = 2.64418,0,-1.08578,0x6a1a2f7f;
 	}
 }
-[t:moth,n:0x00d00036]
+[t:moth,n:0x00d00010]
 {
 	[placement]
 	{
-	  p position = 1.47229,1.90735e-006,-2.96933,0x96899fd3;
+	  p position = 1.36475,0,1.65166,0x6a1a2f7f;
 	}
 }
-[t:moth,n:0x00d00037]
+[t:moth,n:0x00d0000f]
 {
 	[placement]
 	{
-	  p position = -1.25806,0,-2.538,0x96899fd3;
+	  p position = -1.70512,0,2.04714,0x473df964;
 	}
 }
-[t:moth,n:0x00d00039]
+[t:moth,n:0x00d00011]
 {
 	[placement]
 	{
-	  p position = 3.3063,1.90735e-006,2.62142,0x96899fd3;
+	  q orientation = 0,1,0,0;
+	  p position = 2.15986,0,2.23156,0x473df964;
 	}
 }
-[t:moth,n:0x00d0003a]
+[t:moth,n:0x00d0000d]
 {
 	[placement]
 	{
-	  p position = -0.31131,0,-3.66976,0xe2885ff7;
+	  p position = -1.07537,0,-0.0183716,0x3954652e;
 	}
 }
-[t:gremal_killer,n:0x00d00028]
+[t:moth,n:0x00d00012]
 {
 	[placement]
 	{
-	  p position = 0.310261,-1.90735e-006,0.745798,0x410df967;
+	  p position = 0.790726,0,1.3485,0x3954652e;
 	}
 }
-[t:gremal_killer,n:0x00d0002a]
+[t:moth,n:0x00d0001d]
 {
 	[placement]
 	{
-	  p position = -1.55047,0,0.615692,0x410df967;
-	}
-}
-[t:gremal_killer,n:0x00d0002b]
-{
-	[placement]
-	{
-	  p position = -3.39672,1.90735e-006,1.30367,0x410df967;
-	}
-}
-[t:mine_worm,n:0x00d0001c]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -3.50809,0,-0.268484,0x051942d3;
-	}
-}
-[t:moth,n:0x00d0000a]
-{
-	[placement]
-	{
-	  p position = -3.62315,1.90735e-006,-2.36847,0x36be6c47;
-	}
-}
-[t:moth,n:0x00d0000c]
-{
-	[placement]
-	{
-	  p position = 0.371451,-1.90735e-006,0.537689,0x36be6c47;
+	  p position = 0.104204,0,0.00257301,0x50fe8aed;
 	}
 }
 [t:moth,n:0x00d00008]
@@ -2001,5 +1975,48 @@
 	[placement]
 	{
 	  p position = -3.64781,0,0.59102,0x26520c16;
+	}
+}
+[t:moth,n:0x00d0000a]
+{
+	[placement]
+	{
+	  p position = -3.62315,1.90735e-006,-2.36847,0x36be6c47;
+	}
+}
+[t:moth,n:0x00d0000c]
+{
+	[placement]
+	{
+	  p position = 0.371451,-1.90735e-006,0.537689,0x36be6c47;
+	}
+}
+[t:mine_worm,n:0x00d0001c]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -3.50809,0,-0.268484,0x051942d3;
+	}
+}
+[t:gremal_killer,n:0x00d00028]
+{
+	[placement]
+	{
+	  p position = 0.310261,-1.90735e-006,0.745798,0x410df967;
+	}
+}
+[t:gremal_killer,n:0x00d0002a]
+{
+	[placement]
+	{
+	  p position = -1.55047,0,0.615692,0x410df967;
+	}
+}
+[t:gremal_killer,n:0x00d0002b]
+{
+	[placement]
+	{
+	  p position = -3.39672,1.90735e-006,1.30367,0x410df967;
 	}
 }

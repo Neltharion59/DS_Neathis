@@ -1,15 +1,3 @@
-[t:emt_sound_act,n:0x00d003d7]
-{
-	[placement]
-	{
-	  p position = 0.0511932,-0.75,0.0197906,0x6e4ff47e;
-	}
-	[sound_emitter_act]
-	{
-		event_sound = "env_shrine_mana";
-	  b start_on_creation = false;
-	}
-}
 [t:emt_sound_act,n:0x00d003d3]
 {
 	[placement]
@@ -20,6 +8,18 @@
 	[sound_emitter_act]
 	{
 		event_sound = "env_shrine_health";
+	  b start_on_creation = false;
+	}
+}
+[t:emt_sound_act,n:0x00d003d7]
+{
+	[placement]
+	{
+	  p position = 0.0511932,-0.75,0.0197906,0x6e4ff47e;
+	}
+	[sound_emitter_act]
+	{
+		event_sound = "env_shrine_mana";
 	  b start_on_creation = false;
 	}
 }
