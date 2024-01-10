@@ -1,5 +1,14 @@
 [t:skrubb_small,n:0x0070000b]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
@@ -8,6 +17,15 @@
 }
 [t:skrubb_small,n:0x0070000a]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
@@ -32,6 +50,15 @@
 }
 [t:skrubb_small,n:0x0070000e]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = -1.46672,1.90735e-006,-0.641636,0x1399ef42;
@@ -39,6 +66,15 @@
 }
 [t:skrubb_small,n:0x00700011]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = 0.97571,0,1.53865,0x1a208e41;
@@ -46,6 +82,15 @@
 }
 [t:skrubb_small,n:0x00700010]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -54,6 +99,15 @@
 }
 [t:skrubb_small,n:0x00700016]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = 3.73168,0,-0.455159,0xc9de8172;
@@ -61,6 +115,15 @@
 }
 [t:skrubb_small,n:0x00700012]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = -1.40232,-1.90735e-006,3.11306,0x8abfd994;
@@ -68,6 +131,15 @@
 }
 [t:skrubb_small,n:0x00700014]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = 3.34158,1.90735e-006,3.03938,0xb7d85cd6;
@@ -75,6 +147,15 @@
 }
 [t:skrubb_small,n:0x0070001e]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -83,6 +164,15 @@
 }
 [t:skrubb_small,n:0x0070001f]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -91,6 +181,15 @@
 }
 [t:skrubb_small,n:0x00700022]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -99,6 +198,15 @@
 }
 [t:skrubb_small,n:0x00700023]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -540,15 +648,15 @@
 {
 	[aspect]
 	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
 	  f scale_multiplier = 1.58;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -692,6 +800,110 @@
 	  p position = 1.60868,0,-3.82855,0x8efdf108;
 	}
 }
+[t:krug_scavenger,n:0x00700eb4]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_g_d_2h2b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-3.8743e-007;
+	  p position = 0.929798,0,0.847046,0x3f21816e;
+	}
+}
+[t:krug_scavenger,n:0x00700ed5]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_g_d_2h2b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-3.8743e-007;
+	  p position = 2.04109,0,0.0248108,0x3f21816e;
+	}
+}
+[t:krug_scavenger,n:0x00700ed6]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_g_d_2h2b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-3.8743e-007;
+	  p position = 2.1371,0,1.81342,0x3f21816e;
+	}
+}
+[t:krug_shaman,n:0x00700ed7]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.903683,0,0.964844,0x3f21816e;
+	}
+}
 [t:krug_shaman,n:0x00700b31]
 {
 	[placement]
@@ -714,6 +926,38 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 0.801257,9.53674e-007,-2.16075,0x432ee58c;
+	}
+}
+[t:krug_scavenger,n:0x00700ebd]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 2.47452,0,-3.19821,0x432ee58c;
 	}
 }
 [t:krug_shaman,n:0x00700b32]
@@ -848,6 +1092,102 @@
 	  p position = 1.95659,0,0.743408,0x6dcccece;
 	}
 }
+[t:krug_scavenger,n:0x00700eb2]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_g_d_2h2b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-3.8743e-007;
+	  p position = -2.1698,0,-0.757202,0xef394d53;
+	}
+}
+[t:krug_scavenger,n:0x00700eb3]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_g_d_2h2b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-3.8743e-007;
+	  p position = -3.60725,-1.2,-2.47653,0xc3ad9a44;
+	}
+}
+[t:krug_scavenger,n:0x00700eb1]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_g_d_2h2b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-3.8743e-007;
+	  p position = -0.371645,0,-0.289673,0x2a90adc6;
+	}
+}
 [t:krug_dog,n:0x00700b41]
 {
 	[placement]
@@ -869,33 +1209,6 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 1.95447,0,-0.839426,0x398f33ff;
-	}
-}
-[t:krug_dog,n:0x00700e11]
-{
-	[aspect]
-	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
-	  f scale_multiplier = 1.58;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
-	}
-	[common]
-	{
-		screen_name = "Krug Mastiff";
-	}
-	[defend]
-	{
-	  f defense = 50;
-	}
-	[placement]
-	{
-	  p position = -3.3263,0,-1.56046,0xc741c782;
 	}
 }
 [t:krug_dog,n:0x00700e12]
@@ -922,19 +1235,19 @@
 	  p position = -3.9729,0,-2.24252,0xc741c782;
 	}
 }
-[t:krug_dog,n:0x00700e0b]
+[t:krug_dog,n:0x00700eb6]
 {
 	[aspect]
 	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
 	  f scale_multiplier = 1.58;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -946,7 +1259,71 @@
 	}
 	[placement]
 	{
-	  p position = -0.1651,0,0.227742,0x021cfb5b;
+	  p position = -2.3951,0,-2.16055,0xc741c782;
+	}
+}
+[t:krug_scavenger,n:0x00700eba]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -2.19009,0,0.0476685,0xc741c782;
+	}
+}
+[t:krug_scavenger,n:0x00700ebb]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -0.312168,0,0.0142517,0xc741c782;
 	}
 }
 [t:krug_dog,n:0x00700b57]
@@ -1000,6 +1377,65 @@
 	[placement]
 	{
 	  p position = -0.171204,0,0.809432,0x2bb80860;
+	}
+}
+[t:krug_dog,n:0x00700eb7]
+{
+	[aspect]
+	{
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
+	  f scale_multiplier = 1.58;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
+	}
+	[common]
+	{
+		screen_name = "Krug Mastiff";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  p position = -1.24277,0,0.944599,0x2bb80860;
+	}
+}
+[t:krug_scavenger,n:0x00700ebc]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 1.1095,0,1.87114,0x2bb80860;
 	}
 }
 [t:krug_dog,n:0x00700d5e]
@@ -1266,6 +1702,38 @@
 	  p position = 3.4516,0,-2.11395,0x0f78e469;
 	}
 }
+[t:krug_scavenger,n:0x00700ec1]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 3.46309,0,-3.82669,0x0f78e469;
+	}
+}
 [t:krug_grunt,n:0x00700b6f]
 {
 	[placement]
@@ -1286,6 +1754,38 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -2.42793,0,-1.68576,0x5071c3e6;
+	}
+}
+[t:krug_scavenger,n:0x00700ec2]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -0.761772,0,-0.89447,0x5071c3e6;
 	}
 }
 [t:krug_dog,n:0x00700c07]
@@ -1494,6 +1994,33 @@
 	  p position = -1.61542,9.53674e-007,-1.27932,0x61793187;
 	}
 }
+[t:krug_dog,n:0x00700eb8]
+{
+	[aspect]
+	{
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
+	  f scale_multiplier = 1.58;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
+	}
+	[common]
+	{
+		screen_name = "Krug Mastiff";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  p position = 3.64554,0,-1.87895,0x14b35c20;
+	}
+}
 [t:krug_dog,n:0x00700dac]
 {
 	[placement]
@@ -1516,6 +2043,102 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -3.88898,0,3.1548,0x7d961e02;
+	}
+}
+[t:krug_scavenger,n:0x00700ec5]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -0.328003,0,3.1884,0x7d961e02;
+	}
+}
+[t:krug_scavenger,n:0x00700ec6]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -2.35489,0,1.8049,0x7d961e02;
+	}
+}
+[t:krug_scavenger,n:0x00700ec7]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 2.44736,0,2.6149,0x7d961e02;
 	}
 }
 [t:krug_shaman,n:0x00700d65]
@@ -1734,6 +2357,45 @@
 	  p position = -1.26382,-1.5,-1.55122,0x55c78071;
 	}
 }
+[t:krug_scavenger,n:0x00700ecf]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 1.75082,0,-1.14235,0x02cb131e;
+	}
+}
+[t:krug_grunt,n:0x00700ed4]
+{
+	[placement]
+	{
+	  p position = 2.91479,0,-1.1047,0x02cb131e;
+	}
+}
 [t:troll,n:0x00700d12]
 {
 	[inventory]
@@ -1783,15 +2445,15 @@
 {
 	[aspect]
 	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
 	  f scale_multiplier = 1.58;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -1804,33 +2466,6 @@
 	[placement]
 	{
 	  p position = -0.498535,6,-1.70757,0x5b2f9ef7;
-	}
-}
-[t:krug_dog,n:0x00700e38]
-{
-	[aspect]
-	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
-	  f scale_multiplier = 1.58;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
-	}
-	[common]
-	{
-		screen_name = "Krug Mastiff";
-	}
-	[defend]
-	{
-	  f defense = 50;
-	}
-	[placement]
-	{
-	  p position = 0.740082,6,-0.499293,0x5b2f9ef7;
 	}
 }
 [t:skeleton_archer,n:0x00700bff]
@@ -2058,15 +2693,15 @@
 {
 	[aspect]
 	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
 	  f scale_multiplier = 1.58;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -2079,6 +2714,170 @@
 	[placement]
 	{
 	  p position = 10.8737,1.46017,5.45357,0x495fc46a;
+	}
+}
+[t:krug_scavenger,n:0x00700ed0]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -3.5235,0,-1.47688,0xc1210ea1;
+	}
+}
+[t:krug_scavenger,n:0x00700ecd]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -1.28876,0,1.29128,0xbb896133;
+	}
+}
+[t:krug_shaman,n:0x00700ed1]
+{
+	[placement]
+	{
+	  p position = -1.42679,0,0.485905,0xbb896133;
+	}
+}
+[t:krug_shaman,n:0x00700ed2]
+{
+	[placement]
+	{
+	  p position = 0.0758057,0,1.92864,0xbb896133;
+	}
+}
+[t:krug_grunt,n:0x00700ed3]
+{
+	[aspect]
+	{
+	  f experience_value = 50;
+	  f life = 78;
+	  f mana = 78;
+	  f max_life = 78;
+	  f scale_multiplier = 1.33;
+	}
+	[attack]
+	{
+	  f damage_max = 20;
+	  f damage_min = 20;
+	  b is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Krug Gruntus";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00700DAB,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h2b_avg;
+		}
+	}
+	[placement]
+	{
+	  p position = -1.92471,0,1.75925,0xbb896133;
+	}
+}
+[t:krug_scavenger,n:0x00700ece]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 2.60788,0,0.606319,0xbd2f19c1;
 	}
 }
 [t:krug_shaman,n:0x00700d64]
@@ -2112,6 +2911,33 @@
 	  p position = -0.414757,0,2.34326,0x0b4efe0c;
 	}
 }
+[t:krug_dog,n:0x00700eb9]
+{
+	[aspect]
+	{
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
+	  f scale_multiplier = 1.58;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
+	}
+	[common]
+	{
+		screen_name = "Krug Mastiff";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  p position = -2.22339,0,-1.67654,0xcf5b2895;
+	}
+}
 [t:krug_throw,n:0x00700d6d]
 {
 	[placement]
@@ -2125,6 +2951,38 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 2.85486,0,1.19698,0xacdebd22;
+	}
+}
+[t:krug_scavenger,n:0x00700eca]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 2.49588,0,0.903366,0xacdebd22;
 	}
 }
 [t:krug_grunt,n:0x00700d6a]
@@ -2190,6 +3048,70 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -0.927444,0,-1.61505,0x1f66edb5;
+	}
+}
+[t:krug_scavenger,n:0x00700ecb]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -2.60726,0,-0.455505,0x1f66edb5;
+	}
+}
+[t:krug_scavenger,n:0x00700ecc]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 0.923355,0,0.131378,0x1f66edb5;
 	}
 }
 [t:krug_dog,n:0x00700dca]
@@ -2382,6 +3304,38 @@
 	  p position = 1.35901,0,-0.58252,0x99dcb001;
 	}
 }
+[t:krug_scavenger,n:0x00700ec8]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 0.363258,0,0.401917,0x99dcb001;
+	}
+}
 [t:krug_grunt,n:0x00700d5d]
 {
 	[aspect]
@@ -2416,6 +3370,38 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 0.314072,0,-1.71875,0x4ba5dc76;
+	}
+}
+[t:krug_scavenger,n:0x00700ec9]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 0.155289,0,-2.91068,0x4ba5dc76;
 	}
 }
 [t:krug_throw,n:0x00700c2d]
@@ -2469,6 +3455,38 @@
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = -1.1326,0,-2.16198,0xb34cdcd7;
+	}
+}
+[t:krug_scavenger,n:0x00700ec3]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 0.200287,0,-2.30398,0xb34cdcd7;
 	}
 }
 [t:krug_throw,n:0x00700c2c]
@@ -2547,15 +3565,15 @@
 {
 	[aspect]
 	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
 	  f scale_multiplier = 1.58;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -2642,15 +3660,15 @@
 {
 	[aspect]
 	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
 	  f scale_multiplier = 1.58;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -2735,15 +3753,15 @@
 {
 	[aspect]
 	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
 	  f scale_multiplier = 1.58;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -3107,15 +4125,15 @@
 {
 	[aspect]
 	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
 	  f scale_multiplier = 1.58;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -3256,6 +4274,70 @@
 	  p position = 1.67407,-0.196923,0.448288,0x053351fb;
 	}
 }
+[t:krug_scavenger,n:0x00700ebe]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 0.743713,-0.343909,0.147209,0x053351fb;
+	}
+}
+[t:krug_scavenger,n:0x00700ebf]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -0.709137,0.216305,1.06979,0x053351fb;
+	}
+}
 [t:krug_dog,n:0x00700168]
 {
 	[placement]
@@ -3300,15 +4382,15 @@
 {
 	[aspect]
 	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
 	  f scale_multiplier = 1.58;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -3375,6 +4457,38 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 1.87165,0,0.387482,0x9f1b0a5a;
+	}
+}
+[t:krug_scavenger,n:0x00700ec0]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = 0.049511,0,0.460815,0x9f1b0a5a;
 	}
 }
 [t:krug_shaman,n:0x00700ba5]
@@ -3448,46 +4562,19 @@
 	  p position = 1.17802,0,-3.65958,0x34a786c6;
 	}
 }
-[t:krug_dog,n:0x00700e0f]
-{
-	[aspect]
-	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
-	  f scale_multiplier = 1.58;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
-	}
-	[common]
-	{
-		screen_name = "Krug Mastiff";
-	}
-	[defend]
-	{
-	  f defense = 50;
-	}
-	[placement]
-	{
-	  p position = -0.824921,0,3.43196,0x46cc1fff;
-	}
-}
 [t:krug_dog,n:0x00700e10]
 {
 	[aspect]
 	{
-	  f experience_value = 222;
-	  f life = 214;
-	  f max_life = 214;
+	  f experience_value = 70;
+	  f life = 112;
+	  f max_life = 112;
 	  f scale_multiplier = 1.58;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 40;
-	  f damage_bonus_min_melee = 30;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -3651,6 +4738,15 @@
 }
 [t:skrubb_small,n:0x00700020]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = 0.000869751,0,0.0341635,0x64d87dac;
@@ -3658,6 +4754,15 @@
 }
 [t:skrubb_small,n:0x00700021]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -3682,6 +4787,15 @@
 }
 [t:skrubb_small,n:0x0070001d]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -3690,6 +4804,15 @@
 }
 [t:skrubb_small,n:0x0070001c]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -3928,6 +5051,38 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 3.89386,-1.2,-1.17589,0x02021b4f;
+	}
+}
+[t:krug_scavenger,n:0x00700ec4]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -3.17116,-1.2,3.70995,0x02021b4f;
 	}
 }
 [t:krug_grunt,n:0x00700c58]
@@ -4302,6 +5457,15 @@
 }
 [t:skrubb_small,n:0x0070004a]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = 1.56296,0,2.10197,0x2a90d1fc;
@@ -4309,6 +5473,15 @@
 }
 [t:skrubb_small,n:0x0070004c]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = 2.78751,-1.90735e-006,3.69884,0xb7570573;
@@ -4337,6 +5510,15 @@
 }
 [t:skrubb_small,n:0x0070004d]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = 1.3092,0,-2.37605,0xf6ef20cc;
@@ -4406,6 +5588,15 @@
 }
 [t:skrubb_small,n:0x0070004f]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = -0.0698907,0,-1.10595,0xebfa4bb4;
@@ -4413,6 +5604,15 @@
 }
 [t:skrubb_small,n:0x00700050]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = 2.15076,0,-0.143999,0xebfa4bb4;
@@ -4455,6 +5655,15 @@
 }
 [t:skrubb_small,n:0x00700051]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = 1.01602,-1.90735e-006,2.3774,0x8287ef0d;
@@ -4469,6 +5678,15 @@
 }
 [t:skrubb_small,n:0x0070004e]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = -3.31928,0,-0.961734,0x69f5ece6;
@@ -4491,6 +5709,15 @@
 }
 [t:skrubb_small,n:0x00700167]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 4.21468e-008,-0.382684,2.10734e-008,0.92388;
@@ -4506,6 +5733,15 @@
 }
 [t:skrubb_small,n:0x00700018]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  p position = -0.936335,1.90735e-006,1.0923,0x5a112bce;
@@ -4537,6 +5773,15 @@
 }
 [t:skrubb_small,n:0x0070000d]
 {
+	[aspect]
+	{
+	  f life = 31;
+	  f max_life = 31;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;

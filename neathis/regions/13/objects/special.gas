@@ -126,6 +126,46 @@
 	  p position = 1.26477,-2.01134,-2.96806,0xf284384a;
 	}
 }
+[t:accumulate_trigger,n:0x01500542]
+{
+	[generic_accumtrigger]
+	{
+	  i num_til_send = 2;
+	  x send_to_scid = 0x01500543;
+	}
+	[placement]
+	{
+	  p position = 1.07658,0,1.95538,0x8dfefe75;
+	}
+}
+[t:trigger_generic,n:0x01500543]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("13_witches","completed",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_activate",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 1.09881,0,0.431641,0x8dfefe75;
+	}
+}
 [t:use_point,n:0x01500494]
 {
 	[placement]
@@ -141,7 +181,7 @@
 	  p position = 3.31908,2,1.66524,0xa327f94c;
 	}
 }
-[t:trigger_fade_nodes_global_box,n:0x0150000d]
+[t:trigger_fade_nodes_box,n:0x0150000d]
 {
 	[common]
 	{
@@ -149,7 +189,7 @@
 		{
 			[*]
 			{
-				action* = fade_nodes_global(0x00000015,20,20,20,"out:black");
+				action* = fade_nodes(0x00000015,20,20,20,"out:black");
 			  b can_self_destruct = true;
 				condition* = party_member_within_bounding_box(2.000000,2.000000,0.200000,"on_every_enter");
 			  f delay = 0.000000;
@@ -169,7 +209,7 @@
 	  p position = 5.98486,0.5,-8.25328,0x8a7217ba;
 	}
 }
-[t:trigger_fade_nodes_global_box,n:0x0150000e]
+[t:trigger_fade_nodes_box,n:0x0150000e]
 {
 	[common]
 	{
@@ -177,7 +217,7 @@
 		{
 			[*]
 			{
-				action* = fade_nodes_global(0x00000015,20,20,20,"in");
+				action* = fade_nodes(0x00000015,20,20,20,"in");
 			  b can_self_destruct = true;
 				condition* = party_member_within_bounding_box(2.000000,2.000000,0.200000,"on_every_enter");
 			  f delay = 0.000000;
@@ -392,45 +432,5 @@
 	[placement]
 	{
 	  p position = 0.083065,-1.24225,-0.075058,0xfa511f21;
-	}
-}
-[t:accumulate_trigger,n:0x01500542]
-{
-	[generic_accumtrigger]
-	{
-	  i num_til_send = 2;
-	  x send_to_scid = 0x01500543;
-	}
-	[placement]
-	{
-	  p position = 1.07658,0,1.95538,0x8dfefe75;
-	}
-}
-[t:trigger_generic,n:0x01500543]
-{
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = change_quest_state("13_witches","completed",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_req_activate",0,"on_first_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = true;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  p position = 1.09881,0,0.431641,0x8dfefe75;
 	}
 }

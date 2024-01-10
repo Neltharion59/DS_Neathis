@@ -962,6 +962,17 @@
 }
 [t:2w_drake_red,n:0x0250011a]
 {
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 351;
+	  f damage_bonus_max_melee = 200;
+	  f damage_bonus_min_cmagic = 299;
+	  f damage_bonus_min_melee = 100;
+	}
+	[common]
+	{
+		screen_name = "Dhiarmos the Vulcano";
+	}
 	[placement]
 	{
 	  q orientation = 0,1,0,-1.66939e-007;
@@ -1233,6 +1244,30 @@
 	[placement]
 	{
 	  p position = 0.857391,0,-0.177085,0xf53dcee1;
+	}
+}
+[t:2w_synged,n:0x025002a5]
+{
+	[aspect]
+	{
+	  f experience_value = 575000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.553266,0,-1.40281,0x01b0f602;
+	}
+}
+[t:2w_synged,n:0x025002a4]
+{
+	[aspect]
+	{
+	  f experience_value = 575000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.6523,-2,-3.17704,0x71b281a3;
 	}
 }
 [t:2w_synged,n:0x025000eb]

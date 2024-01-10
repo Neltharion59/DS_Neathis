@@ -110,14 +110,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -125,7 +126,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -133,6 +134,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -142,6 +146,147 @@
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = 3.39084,0.330525,0.661051,0x9deb0fb2;
+	}
+}
+[t:crab,n:0x00b0170b]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -3.61311,0.252252,0.504503,0x9deb0fb2;
+	}
+}
+[t:crab,n:0x00b0170a]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.627602,0,-0.992165,0xdf7f5340;
+	}
+}
+[t:crab,n:0x00b01706]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.53845,0,-0.536327,0x8d9cb9cb;
 	}
 }
 [t:fish_blue,n:0x00b00074]
@@ -154,6 +299,53 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 0.28054,-0.97883,-3.73537,0x29077188;
+	}
+}
+[t:crab,n:0x00b0172e]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.815065,-0.999773,-3.99773,0x29077188;
 	}
 }
 [t:fish_blue,n:0x00b00076]
@@ -190,6 +382,147 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 1.19588,-0.989882,-3.87353,0x6676dd3e;
+	}
+}
+[t:crab,n:0x00b01730]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382684,0,0.923879;
+	  p position = -1.38559,0.693341,2.58112,0x943a5643;
+	}
+}
+[t:crab,n:0x00b01731]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.3778,0.627702,1.3136,0x22d32554;
+	}
+}
+[t:crab,n:0x00b01732]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -3.09771,1,3.5293,0x22d32554;
 	}
 }
 [t:fish_blue,n:0x00b00087]
@@ -276,6 +609,65 @@
 	  p position = 0.669703,-1,-2.36203,0xfc7c1816;
 	}
 }
+[t:crab,n:0x00b01733]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.06416,-1,-2.77694,0xfc7c1816;
+	}
+}
+[t:fish_blue,n:0x00b0008e]
+{
+	[mind]
+	{
+	  b on_enemy_entered_weapon_engage_range_attack = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.93347,-1,-3.09715,0x24a0d8fd;
+	}
+}
 [t:mp_townfolk_m_05,n:0x00b00091]
 {
 	[common]
@@ -299,26 +691,12 @@
 	}
 	[mind]
 	{
-	  b actor_may_attack = true;
-	  b actor_may_be_attacked = true;
 		jat_talk = world\ai\jobs\common\job_talk.skrit;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,0;
-	  p position = -2.35778,-0.0373726,-0.0747452,0xfc7c1816;
-	}
-}
-[t:fish_blue,n:0x00b0008e]
-{
-	[mind]
-	{
-	  b on_enemy_entered_weapon_engage_range_attack = true;
-	}
-	[placement]
-	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.93347,-1,-3.09715,0x24a0d8fd;
+	  p position = -1.18797,0,-1.5261,0x161fb024;
 	}
 }
 [t:butterfly,n:0x00b0011f]
@@ -992,14 +1370,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1007,7 +1386,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1015,6 +1394,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1035,14 +1417,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1050,7 +1433,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1058,6 +1441,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1078,14 +1464,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1093,7 +1480,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1101,6 +1488,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1336,14 +1726,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1351,7 +1742,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1359,6 +1750,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1379,14 +1773,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1394,7 +1789,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1402,6 +1797,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1422,14 +1820,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1437,7 +1836,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1445,6 +1844,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1549,14 +1951,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1564,7 +1967,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1572,6 +1975,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1628,14 +2034,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1643,7 +2050,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1651,6 +2058,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1755,14 +2165,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1770,7 +2181,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1778,6 +2189,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1846,14 +2260,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1861,7 +2276,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1869,6 +2284,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1889,14 +2307,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1904,7 +2323,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -1912,6 +2331,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -1980,14 +2402,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -1995,7 +2418,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -2003,6 +2426,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -2023,14 +2449,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -2038,7 +2465,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -2046,6 +2473,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -2057,6 +2487,53 @@
 	  p position = -3.84015,-1,-3.03325,0x4ad5a1e1;
 	}
 }
+[t:crab,n:0x00b0171c]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -1.61092,0.698982,1.99491,0x4ad5a1e1;
+	}
+}
 [t:crab,n:0x00b00aaf]
 {
 	[actor]
@@ -2066,14 +2543,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -2081,7 +2559,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -2089,6 +2567,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -2109,14 +2590,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -2124,7 +2606,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -2132,6 +2614,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -2152,14 +2637,15 @@
 	[aspect]
 	{
 	  f experience_value = 40;
+	  b is_selectable = true;
 	  f life = 74;
 	  f max_life = 74;
 	  f scale_multiplier = 9;
 	}
 	[attack]
 	{
-	  f damage_max = 100;
-	  f damage_min = 75;
+	  f damage_max = 60;
+	  f damage_min = 50;
 	}
 	[common]
 	{
@@ -2167,7 +2653,7 @@
 	}
 	[defend]
 	{
-	  f defense = 200;
+	  f defense = 100;
 	}
 	[mind]
 	{
@@ -2175,6 +2661,9 @@
 		disposition_orders = ad_offensive;
 	  f limited_movement_range = 40;
 	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
 	  f outer_comfort_zone_range = 13;
 	  f personal_space_range = 0.6;
 	  f ranged_engage_range = 13;
@@ -2184,6 +2673,53 @@
 	{
 	  q orientation = 0,0.92388,0,-0.382683;
 	  p position = -1.66735,-0.318961,-0.55476,0x8474d6da;
+	}
+}
+[t:crab,n:0x00b0171d]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 3.73994,0.653618,1.76809,0x8474d6da;
 	}
 }
 [t:fish_blue,n:0x00b0004d]
@@ -2220,6 +2756,53 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 1.54512,0,0.678726,0x1b51dacf;
+	}
+}
+[t:crab,n:0x00b01713]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.558258,0.823542,1.41522,0x13189d6b;
 	}
 }
 [t:fish_blue,n:0x00b00044]
@@ -2581,6 +3164,53 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 2.63834,0,-0.490026,0x70953bdc;
+	}
+}
+[t:crab,n:0x00b0172f]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -1.13844,0,0.733764,0x70953bdc;
 	}
 }
 [t:fish_blue,n:0x00b0007a]
@@ -3009,6 +3639,100 @@
 	  p position = -3.94444,-1,-1.19833,0x7b9d9d04;
 	}
 }
+[t:crab,n:0x00b01722]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 3.09375,0.841278,2.70639,0x7b9d9d04;
+	}
+}
+[t:crab,n:0x00b01723]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.0977097,1,3.8335,0x7b9d9d04;
+	}
+}
 [t:fish_blue,n:0x00b00042]
 {
 	[mind]
@@ -3019,6 +3743,53 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 0.86425,-1,-2.9868,0x69037532;
+	}
+}
+[t:crab,n:0x00b01724]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.85305,0.525156,1.12578,0x69037532;
 	}
 }
 [t:fish_blue,n:0x00b00040]
@@ -3068,6 +3839,53 @@
 	  p position = -3.90198,-1,-2.16323,0x8748cff7;
 	}
 }
+[t:crab,n:0x00b01728]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.0981903,-0.0446319,-1.93044,0x8748cff7;
+	}
+}
 [t:fish_blue,n:0x00b00030]
 {
 	[mind]
@@ -3078,6 +3896,100 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -2.91291,-1,-3.62358,0x6dc73533;
+	}
+}
+[t:crab,n:0x00b01726]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 2.47249,-0.206718,-0.413437,0x6dc73533;
+	}
+}
+[t:crab,n:0x00b01727]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -2.29237,0.623428,1.61714,0x6dc73533;
 	}
 }
 [t:fish_blue,n:0x00b0001d]
@@ -3140,6 +4052,53 @@
 	  p position = 1.68999,0,-1.22952,0xc21f5076;
 	}
 }
+[t:crab,n:0x00b0172a]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -2.69126,0,0.393799,0xc21f5076;
+	}
+}
 [t:fish_blue,n:0x00b00012]
 {
 	[mind]
@@ -3186,6 +4145,53 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -1.30597,0,-3.76518,0xabc9d30b;
+	}
+}
+[t:crab,n:0x00b0172b]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.11239,0,2.03535,0xabc9d30b;
 	}
 }
 [t:fish_blue,n:0x00b0001f]
@@ -3284,6 +4290,100 @@
 	  p position = 2.39543,0,3.86191,0x5738aee0;
 	}
 }
+[t:crab,n:0x00b01729]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -0.183122,0,3.31888,0x5738aee0;
+	}
+}
+[t:crab,n:0x00b01725]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.93396,0.46698,-1.13741,0xb947e3ef;
+	}
+}
 [t:fish_blue,n:0x00b00015]
 {
 	[mind]
@@ -3354,6 +4454,53 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -0.999054,0,-1.36592,0x6228f56d;
+	}
+}
+[t:crab,n:0x00b0172d]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.152206,0,-1.69795,0x6228f56d;
 	}
 }
 [t:fish_blue,n:0x00b0002d]
@@ -3486,5 +4633,99 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 2.26043,0,1.53958,0xa44ca980;
+	}
+}
+[t:crab,n:0x00b0172c]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 3.83334,0,0.373886,0xa44ca980;
+	}
+}
+[t:crab,n:0x00b01705]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 40;
+	  b is_selectable = true;
+	  f life = 74;
+	  f max_life = 74;
+	  f scale_multiplier = 9;
+	}
+	[attack]
+	{
+	  f damage_max = 60;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mudcrab";
+	}
+	[defend]
+	{
+	  f defense = 100;
+	}
+	[mind]
+	{
+	  f com_range = 13;
+		disposition_orders = ad_offensive;
+	  f limited_movement_range = 40;
+	  f melee_engage_range = 13;
+	  b on_enemy_entered_ocz_attack = true;
+	  b on_enemy_entered_ocz_flee = false;
+	  b on_friend_entered_ocz_flee = false;
+	  f outer_comfort_zone_range = 13;
+	  f personal_space_range = 0.6;
+	  f ranged_engage_range = 13;
+	  f sight_range = 13;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.564655,0,1.95129,0x7b56adab;
 	}
 }

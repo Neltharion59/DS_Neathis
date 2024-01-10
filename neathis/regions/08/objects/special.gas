@@ -51,6 +51,35 @@
 	  p position = 2.19459,0.500338,1.07396,0xd74aa94e;
 	}
 }
+[t:trigger_change_mood_box,n:0x00d0049b]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = mood_change("map_world_df_bandits_2");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(4.000000,2.000000,0.010000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-5.28297e-008;
+	  p position = -0.0627308,-12,-3.21291,0x9503488e;
+	}
+}
 [t:trigger_generic,n:0x00d00109]
 {
 	[common]
@@ -77,7 +106,36 @@
 	}
 	[placement]
 	{
-	  p position = 1.10999,0,0.0158062,0x662c63fa;
+	  q orientation = 0,1,0,0;
+	  p position = 2.67374,0,-0.736837,0x4b07c395;
+	}
+}
+[t:trigger_generic,n:0x00d003ce]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00D003CF,10f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_activate",0,"on_every_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 1.0714,0,0.965227,0xac1862f6;
 	}
 }
 [t:trigger_generic,n:0x00d003cf]
@@ -106,35 +164,7 @@
 	}
 	[placement]
 	{
-	  p position = -1.28171,0,1.6219,0x662c63fa;
-	}
-}
-[t:trigger_generic,n:0x00d003ce]
-{
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_activate",0x00D003CF,10f,"default","every",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_req_activate",0,"on_every_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  p position = -1.16858,0,0.559383,0xac1862f6;
+	  p position = 1.25461,0,-0.576527,0xac1862f6;
 	}
 }
 [t:trigger_change_mood_box,n:0x00d003ab]
@@ -444,6 +474,42 @@
 	  p position = -1.2795,0,1.65412,0xe20a9070;
 	}
 }
+[t:trigger_change_mood_box,n:0x00d0047f]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = mood_change("map_world_df_bandits_6");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(4.000000,2.000000,0.010000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 0.219727,-6,0.610382,0x88fff8ad;
+	}
+}
+[t:spawnpoint,n:0x00d000d5]
+{
+	[placement]
+	{
+	  p position = 2.68293,0,-1.30862,0x7ee7a503;
+	}
+}
 [t:trigger_generic,n:0x00d000ef]
 {
 	[common]
@@ -474,11 +540,33 @@
 	  p position = -1.09291,0.331166,-0.187645,0x22a5cf12;
 	}
 }
-[t:spawnpoint,n:0x00d000d5]
+[t:trigger_change_mood_box,n:0x00d0047e]
 {
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = mood_change("map_world_df_bandits_6");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(4.000000,2.000000,0.010000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
 	[placement]
 	{
-	  p position = 2.68293,0,-1.30862,0x7ee7a503;
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = -0.111404,-12,-3.80275,0xc560677f;
 	}
 }
 [t:use_point,n:0x00d003df]
@@ -573,6 +661,35 @@
 	  p position = -2.14526,0,0.803858,0x84e554c4;
 	}
 }
+[t:trigger_change_mood_box,n:0x00d0049c]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = mood_change("map_world_df_bandits_6");
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(4.000000,2.000000,0.010000,"on_every_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = -0.0713959,-12,-3.35865,0xbf0caada;
+	}
+}
 [t:trigger_mana_shrine,n:0x00d003d5]
 {
 	[common]
@@ -600,7 +717,7 @@
 				action* = send_world_message("we_req_activate",0x00D003D7,0f,"default","",0);
 				action* = when_false send_world_message("we_req_deactivate",0x00D003D7,0f,"default","",0);
 			  b can_self_destruct = true;
-				condition* = party_member_within_sphere(1.800000,"on_every_enter");
+				condition* = party_member_within_sphere(1.800000,"while_inside");
 			  f delay = 0.000000;
 			  b flip_flop = true;
 			  b multi_player = true;
@@ -789,63 +906,5 @@
 	{
 	  q orientation = 0,-1,0,-1.66939e-007;
 	  p position = 0.0269775,1.14912,10.6725,0xb23484a9;
-	}
-}
-[t:trigger_change_mood_box,n:0x00d0049b]
-{
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = mood_change("map_world_df_bandits_2");
-			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(4.000000,2.000000,0.010000,"on_every_enter");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-5.28297e-008;
-	  p position = -0.0627308,-12,-3.21291,0x9503488e;
-	}
-}
-[t:trigger_change_mood_box,n:0x00d0049c]
-{
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = mood_change("map_world_df_bandits_6");
-			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(4.000000,2.000000,0.010000,"on_every_enter");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = -0.0713959,-12,-3.35865,0xbf0caada;
 	}
 }

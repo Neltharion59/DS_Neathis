@@ -425,8 +425,8 @@
 		}
 		[other]
 		{
-			il_main = spell_healing_hands;
 			il_main = spell_resurrect;
+			il_main = spell_healing_hands;
 		}
 	}
 	[mind]
@@ -1834,6 +1834,24 @@
 	{
 		membership = krug, party_krug_shaman, monster;
 		screen_name = "Bandit";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00401758,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[inventory]
 	{
@@ -2031,6 +2049,24 @@
 	{
 		membership = krug, party_krug_shaman, monster;
 		screen_name = "Bandit";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00401758,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[inventory]
 	{
@@ -2098,6 +2134,24 @@
 	{
 		membership = krug, party_krug_shaman, monster;
 		screen_name = "Bandit";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00401758,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[inventory]
 	{
@@ -2474,7 +2528,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,2.98023e-008;
-	  p position = -1.96262,0,0.179474,0xedced167;
+	  p position = -2.69206,0,-0.0800018,0xedced167;
 	}
 }
 [t:rusk,n:0x004012cc]
@@ -2608,6 +2662,70 @@
 	{
 	  q orientation = 0,0.923879,0,-0.382684;
 	  p position = 0.370895,0,0.0795135,0xedced167;
+	}
+}
+[t:gloern,n:0x00401757]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f max_life = 147;
+	  f max_mana = 37;
+	  f scale_multiplier = 1.3;
+	}
+	[common]
+	{
+		screen_name = "Bandit Boss";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("02_bandits","completed",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_bl_f_g_c_low;
+			es_head = he_ca_sl_avg;
+			es_shield_hand = sh_z_g_c_r_m_avg;
+			es_weapon_hand = ax_g_c_1h1b_avg;
+		}
+		[other]
+		{
+			il_main = book_glb_lore_goldsniffer;
+		}
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  f melee_engage_range = 11;
+		movement_orders = mo_free;
+	  b on_enemy_entered_ocz_attack = true;
+	  f outer_comfort_zone_range = 11;
+	  f ranged_engage_range = 11;
+	  f sight_range = 16;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -1.26164,-9.53674e-007,0.817474,0xedced167;
 	}
 }
 [t:gyorn,n:0x004012c6]

@@ -796,6 +796,55 @@
 	  p position = -1.09288,0,0.455719,0x07746454;
 	}
 }
+[t:scorpion,n:0x01100069]
+{
+	[aspect]
+	{
+	  f experience_value = 400;
+	  f life = 341;
+	  f max_life = 341;
+	  f scale_multiplier = 1.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 40;
+	}
+	[common]
+	{
+		screen_name = "Scorpula";
+	}
+	[defend]
+	{
+	  f defense = 99;
+	}
+	[placement]
+	{
+	  p position = -2.06799,0,-2.13073,0x44850f37;
+	}
+}
+[t:shard_teal,n:0x011000c5]
+{
+	[placement]
+	{
+	  p position = 0.395098,0,2.35681,0x44850f37;
+	}
+}
+[t:shard_teal,n:0x011000c6]
+{
+	[placement]
+	{
+	  p position = 1.93106,0,1.26402,0x44850f37;
+	}
+}
+[t:scorpion,n:0x01100177]
+{
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -3.26511,0,0.908413,0x44850f37;
+	}
+}
 [t:scorpion,n:0x0110017b]
 {
 	[placement]
@@ -1286,55 +1335,6 @@
 	{
 	  q orientation = 0,1,0,0;
 	  p position = -0.722809,0,-0.0606747,0x44569be8;
-	}
-}
-[t:scorpion,n:0x01100069]
-{
-	[aspect]
-	{
-	  f experience_value = 400;
-	  f life = 341;
-	  f max_life = 341;
-	  f scale_multiplier = 1.75;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 40;
-	}
-	[common]
-	{
-		screen_name = "Scorpula";
-	}
-	[defend]
-	{
-	  f defense = 99;
-	}
-	[placement]
-	{
-	  p position = -2.06799,0,-2.13073,0x44850f37;
-	}
-}
-[t:shard_teal,n:0x011000c5]
-{
-	[placement]
-	{
-	  p position = 0.395098,0,2.35681,0x44850f37;
-	}
-}
-[t:shard_teal,n:0x011000c6]
-{
-	[placement]
-	{
-	  p position = 1.93106,0,1.26402,0x44850f37;
-	}
-}
-[t:scorpion,n:0x01100177]
-{
-	[placement]
-	{
-	  q orientation = 0,0.923879,0,-0.382684;
-	  p position = -3.26511,0,0.908413,0x44850f37;
 	}
 }
 [t:mine_worm,n:0x01100060]

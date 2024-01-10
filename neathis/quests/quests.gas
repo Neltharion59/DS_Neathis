@@ -11,11 +11,25 @@
 		[*]
 		{
 			address = 01:conversations:goodbye;
-			description = leave the territory of the clan you have been cast from.;
+			description = leave the territory of the cult you have been cast from.;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
 			speaker = serpent mother servant;
+		}
+	}
+	[02_bandits]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_14;
+		screen_name = band of bandits;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			description = find and eliminate the bandit leader;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = ;
 		}
 	}
 	[02_cellar]
@@ -49,7 +63,7 @@
 		}
 		[*]
 		{
-			address = 01:conversations:goodbye;
+			address = 02:conversations:wolf_mistress;
 			description = find the leader of the aggressive wolf pack;
 		  b is_consumable = true;
 		  i order = 1;
@@ -71,6 +85,21 @@
 			speaker = ;
 		}
 	}
+	[07_beauty]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_03;
+		screen_name = beauty and the beast;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 07:conversations:pig_keeper;
+			description = slay both the beauty and the beast;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = dhiir;
+		}
+	}
 	[08_blockage]
 	{
 		quest_image = b_gui_ig_mnu_jnl_quest_06;
@@ -78,7 +107,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 07:conversations:house_renter;
+			address = 08:conversations:son_b4_blockade;
 			description = occupy yourself by exploring around until the blockade is removed;
 		  b is_consumable = true;
 		  i order = 0;
@@ -88,16 +117,17 @@
 	}
 	[08_giant]
 	{
+		quest_image = b_gui_ig_i_ic_sp_033;
 		screen_name = threat unknown;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 02:conversations:farmer_3;
+			address = 08:conversations:guard_3_ranged;
 			description = investigate the suspicious sounds on the slope;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
-			speaker = luwetiz;
+			speaker = luvetiz;
 		}
 	}
 	[11_trog]
@@ -107,7 +137,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 01:conversations:goodbye;
+			address = 11:conversations:join_merik;
 			description = destroy the trog army before it's too strong;
 		  b is_consumable = true;
 		  i order = 0;
@@ -122,7 +152,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 02:conversations:farmer;
+			address = 13:conversations:join_phaedriel;
 			description = hunt down the coven of witches.;
 		  b is_consumable = true;
 		  i order = 0;
@@ -132,16 +162,32 @@
 	}
 	[15_trade]
 	{
-		screen_name = Civilizational Exchange;
+		quest_image = b_gui_ig_i_ic_sp_155;
+		screen_name = civilizational exchange;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 02:conversations:farmer_2;
-			description = Find a goblin willing to bargain with the Kindom's traders.;
+			address = 15:conversations:shop_01;
+			description = find a goblin willing to bargain with the kindom's traders.;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
-			speaker = Nimth;
+			speaker = nimth;
+		}
+	}
+	[17_witches]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_06;
+		screen_name = the only path;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 17:conversations:villager_04;
+			description = defeat the witches blocking the path to kingdom;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = karim;
 		}
 	}
 	[20_castle]
@@ -151,7 +197,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			description = repel the waves attacking the castle until it's safe to enter.;
+			description = repel the undead attacking the castle until it's safe to enter.;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -165,7 +211,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 03_cave_bandit:conversations:join_zed;
+			address = 24:conversations:guard_captain;
 			description = slay the cyclops king;
 		  b is_consumable = true;
 		  i order = 0;
@@ -173,12 +219,58 @@
 			speaker = captain durreth;
 		}
 	}
+	[27_north]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_12;
+		screen_name = blank space;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 27:conversations:intersection_guard;
+			description = explore the unknown territory to the north;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = triviella;
+		}
+	}
+	[27_supplies]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_19;
+		screen_name = Preparing for the Siege;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 27_town:conversations:man_03;
+			description = Deliver the crate's from the farmers house to the castle;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = Viwith;
+		}
+	}
+	[29_traders]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_15;
+		screen_name = determined businessmen;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 29:conversations:shop;
+			description = find the traders in the city of magnifica;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = lady tilliana;
+		}
+	}
 	[34_loner]
 	{
+		quest_image = b_gui_ig_i_ic_sp_020;
 		screen_name = heretic;
 		[*]
 		{
-			address = 01:conversations:goodbye;
+			address = 34:conversations:barkeep;
 			description = investigate what is the local loner up to;
 		  b is_consumable = true;
 		  i order = 0;
@@ -188,11 +280,12 @@
 	}
 	[34_wall]
 	{
+		quest_image = b_gui_ig_mnu_jnl_quest_05;
 		screen_name = on the march;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 01:conversations:goodbye;
+			address = 34:conversations:barkeep;
 			description = find the soldiers facing the ice invasion.;
 		  b is_consumable = true;
 		  i order = 0;
@@ -202,11 +295,12 @@
 	}
 	[34_witch]
 	{
+		quest_image = b_gui_ig_i_ic_sp_028;
 		screen_name = mystery shrouded in ice;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 01:conversations:goodbye;
+			address = 34:conversations:barkeep;
 			description = search for the source of malice within the village;
 		  b is_consumable = true;
 		  i order = 0;
@@ -216,11 +310,12 @@
 	}
 	[36_barracks]
 	{
+		quest_image = b_gui_ig_mnu_jnl_quest_40;
 		screen_name = pest problem;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 02:conversations:farmer_w;
+			address = 36:conversations:guard_infested_area;
 			description = clear the spider-infested part of the castle.;
 		  b is_consumable = true;
 		  i order = 0;
@@ -230,11 +325,12 @@
 	}
 	[36_cave]
 	{
+		quest_image = b_gui_ig_mnu_jnl_quest_30;
 		screen_name = the cave of passage;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 01:conversations:goodbye;
+			address = 36:conversations:captain;
 			description = pass the cave of passage;
 		  b is_consumable = true;
 		  i order = 0;
@@ -249,7 +345,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 03_cave_bandit:conversations:join_gyorn;
+			address = 38:conversations:entry_guard_03;
 			description = invastigate the fate of the desert people;
 		  b is_consumable = true;
 		  i order = 0;
@@ -263,7 +359,7 @@
 		screen_name = treasure hunters;
 		[*]
 		{
-			address = 03_cave_bandit:conversations:join_rusk;
+			address = 38:conversations:gs_1;
 			description = find the travelling dwarven treasure hunters.;
 		  b is_consumable = true;
 		  i order = 0;
@@ -278,7 +374,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 02:conversations:shop_magic;
+			address = 41:conversations:guard_captain;
 			description = put an end to the invasion of the dragon cultists.;
 		  b is_consumable = true;
 		  i order = 0;
@@ -288,11 +384,12 @@
 	}
 	[41_siege]
 	{
+		quest_image = b_gui_ig_mnu_jnl_quest_19;
 		screen_name = cult invasion;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 03:conversations:wolf_mistress;
+			address = 41:conversations:man_01;
 			description = break the siege the dragon cultists have laid to the castle;
 		  b is_consumable = true;
 		  i order = 0;
@@ -302,11 +399,12 @@
 	}
 	[41_wasps]
 	{
+		quest_image = b_gui_ig_i_ic_sp_072;
 		screen_name = picnic with consequences;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 03_cave_bandit:conversations:join_zed;
+			address = 41:conversations:servant_picnic;
 			description = destroy the picnic basket at the top of the castle;
 		  b is_consumable = true;
 		  i order = 0;
@@ -316,6 +414,7 @@
 	}
 	[43_guard_1]
 	{
+		quest_image = b_gui_ig_mnu_jnl_chapter_01;
 		screen_name = the first guardian of the pyramid;
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -329,6 +428,7 @@
 	}
 	[43_guard_2]
 	{
+		quest_image = b_gui_ig_mnu_jnl_chapter_02;
 		screen_name = the second guardian of the pyramid;
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -342,6 +442,7 @@
 	}
 	[43_guard_3]
 	{
+		quest_image = b_gui_ig_mnu_jnl_chapter_03;
 		screen_name = the third guardian of the pyramid;
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -355,6 +456,7 @@
 	}
 	[43_pyramid]
 	{
+		quest_image = b_gui_ig_mnu_jnl_quest_38;
 		screen_name = the forbidden pyramid;
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -368,6 +470,7 @@
 	}
 	[44_seck]
 	{
+		quest_image = b_gui_ig_mnu_jnl_quest_22;
 		screen_name = the evil within;
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -426,7 +529,7 @@
 		}
 		[*]
 		{
-			description = the freezing winds have no hope of touch your home;
+			description = the freezing winds have no hope of becoming your home;
 		  b is_consumable = true;
 		  i order = 5;
 		  b required = true;

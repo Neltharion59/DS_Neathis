@@ -16,15 +16,6 @@
 		use_point_scids = 0x01100070;
 	}
 }
-[t:respawn_statue,n:0x0110006d]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.36615,0.970622,-0.00412416,0x4c62ed9e;
-		use_point_scids = 0x0110006e;
-	}
-}
 [t:lever_glb_01,n:0x01100078]
 {
 	[on_off_lever]
@@ -36,6 +27,15 @@
 	{
 	  q orientation = 0,1,0,0;
 	  p position = 1.74614,2.0257,-2.72384,0xcd655a51;
-		use_point_scids = 0x0110007A;
+		use_point_scids = 0x0110007a;
+	}
+}
+[t:respawn_statue,n:0x0110006d]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.36615,0.970622,-0.00412416,0x4c62ed9e;
+		use_point_scids = 0x0110006e;
 	}
 }

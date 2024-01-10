@@ -18,6 +18,54 @@
 	  p position = -0.0270157,-0.95,1.05183,0x8e7303ec;
 	}
 }
+[t:sign_glb_01,n:0x00b0170f]
+{
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-4.69147e-008;
+	  p position = 0.973615,1,3.89542,0xfc7c1816;
+	}
+}
+[t:sign_glb_01,n:0x00b01710]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.78328,-0.254711,1.2167,0x4a3f282d;
+	}
+}
+[t:sign_glb_fortress_kroth_03,n:0x00b0170c]
+{
+	[common]
+	{
+		screen_name = "Meadflow Hills";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.84376,1.87648,-0.709888,0xe4322b72;
+	}
+}
+[t:sign_glb_fortress_kroth_03,n:0x00b0170d]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 3.72734,1.86642,-0.724395,0xe4322b72;
+	}
+}
 [t:door_glb_woodfence_left_01,n:0x00b00aaa]
 {
 	[aspect]
@@ -67,6 +115,54 @@
 		use_point_scids = 0x00b00099,0x00b00098;
 	}
 }
+[t:sign_glb_blacksmith_left,n:0x00b0171a]
+{
+	[common]
+	{
+		screen_name = "Ironmouth";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707106;
+	  p position = 3.94904,0,1.01641,0x8a56f0ea;
+	}
+}
+[t:sign_glb_blacksmith_right,n:0x00b0171b]
+{
+	[common]
+	{
+		screen_name = "Ironmouth";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.95348,0,1.24759,0x8a56f0ea;
+	}
+}
+[t:sign_glb_01,n:0x00b01712]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707107;
+	  p position = -0.790901,0,-1.6483,0x27a4cb28;
+	}
+}
+[t:sign_glb_01,n:0x00b01714]
+{
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
+	[placement]
+	{
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = -1.12699,0,-1.61494,0x27a4cb28;
+	}
+}
 [t:door_glb_woodfence_left_01,n:0x00b00aa7]
 {
 	[aspect]
@@ -85,6 +181,17 @@
 	  q orientation = 0,0.173648,0,0.984808;
 	  p position = -0.0721588,-3.65,-3.20601,0x90a203ec;
 		use_point_scids = 0x00b0009c,0x00b0009b;
+	}
+}
+[t:sign_glb_magicshop_01,n:0x00b01719]
+{
+	[common]
+	{
+		screen_name = "The Study Place";
+	}
+	[placement]
+	{
+	  p position = 2.22691,-4.57817,-5.36765,0x90a203ec;
 	}
 }
 [t:door_grs_peasant_left,n:0x00b000a6]
@@ -116,6 +223,18 @@
 		use_point_scids = 0x00b000a2,0x00b000a1;
 	}
 }
+[t:sign_glb_blacksmith_03,n:0x00b0171e]
+{
+	[common]
+	{
+		screen_name = "Ironmouth";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.66939e-007;
+	  p position = 5.97591,-4.65,-5.50617,0x51419468;
+	}
+}
 [t:door_grs_peasant_left,n:0x00b000a9]
 {
 	[placement]
@@ -143,31 +262,7 @@
 		use_point_scids = 0x00b0009e,0x00b0009f;
 	}
 }
-[t:sign_glb_fortress_kroth_03,n:0x00b0170c]
-{
-	[common]
-	{
-		screen_name = "Meadflow Hills";
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.84376,1.87648,-0.709888,0xe4322b72;
-	}
-}
-[t:sign_glb_fortress_kroth_03,n:0x00b0170d]
-{
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 3.72734,1.86642,-0.724395,0xe4322b72;
-	}
-}
-[t:sign_glb_01,n:0x00b0170f]
+[t:sign_glb_01,n:0x00b01720]
 {
 	[common]
 	{
@@ -175,11 +270,11 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-1,0,-4.69147e-008;
-	  p position = 0.973615,1,3.89542,0xfc7c1816;
+	  q orientation = 0,-0.923879,0,-0.382684;
+	  p position = -1.52293,0,1.47124,0x110cbd99;
 	}
 }
-[t:sign_glb_01,n:0x00b01710]
+[t:sign_glb_01,n:0x00b01721]
 {
 	[common]
 	{
@@ -187,39 +282,7 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.78328,-0.254711,1.2167,0x4a3f282d;
-	}
-}
-[t:sign_glb_01,n:0x00b01712]
-{
-	[common]
-	{
-		screen_name = "Central Lands";
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,-0.707107;
-	  p position = -0.790901,0,-1.6483,0x27a4cb28;
-	}
-}
-[t:sign_glb_01,n:0x00b01713]
-{
-	[placement]
-	{
-	  p position = -2.13708,-4.76837e-007,-1.20102,0xb5f13e29;
-	}
-}
-[t:sign_glb_01,n:0x00b01714]
-{
-	[common]
-	{
-		screen_name = "Lammairth";
-	}
-	[placement]
-	{
-	  q orientation = 0,-6.46033e-009,0,1;
-	  p position = -1.12699,0,-1.61494,0x27a4cb28;
+	  p position = -1.88277,0,1.80443,0x110cbd99;
 	}
 }
 [t:sign_glb_fortress_kroth_03,n:0x00b01717]
@@ -244,75 +307,5 @@
 	{
 	  q orientation = 0,1,0,3.9595e-007;
 	  p position = -2.35623,1.72727,2.02364,0xa7327eb0;
-	}
-}
-[t:sign_glb_magicshop_01,n:0x00b01719]
-{
-	[common]
-	{
-		screen_name = "The Study Place";
-	}
-	[placement]
-	{
-	  p position = 2.22691,-4.57817,-5.36765,0x90a203ec;
-	}
-}
-[t:sign_glb_blacksmith_left,n:0x00b0171a]
-{
-	[common]
-	{
-		screen_name = "Ironmouth";
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707106;
-	  p position = 3.94904,0,1.01641,0x8a56f0ea;
-	}
-}
-[t:sign_glb_blacksmith_right,n:0x00b0171b]
-{
-	[common]
-	{
-		screen_name = "Ironmouth";
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.95348,0,1.24759,0x8a56f0ea;
-	}
-}
-[t:sign_glb_blacksmith_03,n:0x00b0171e]
-{
-	[common]
-	{
-		screen_name = "Ironmouth";
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,1.66939e-007;
-	  p position = 5.97591,-4.65,-5.50617,0x51419468;
-	}
-}
-[t:sign_glb_01,n:0x00b01720]
-{
-	[common]
-	{
-		screen_name = "Lammairth";
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.923879,0,-0.382684;
-	  p position = -1.52293,0,1.47124,0x110cbd99;
-	}
-}
-[t:sign_glb_01,n:0x00b01721]
-{
-	[common]
-	{
-		screen_name = "Central Lands";
-	}
-	[placement]
-	{
-	  p position = -1.88277,0,1.80443,0x110cbd99;
 	}
 }

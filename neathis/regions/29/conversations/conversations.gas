@@ -1,0 +1,27 @@
+[guard_magic]
+{
+	[text*]
+	{
+		screen_text = "By Azunai, you do not bear the mark of protection. Lady Tilliana spent a good fortune to obtain them for us and the mule. All the monsters recognize them and leave us alone. Otherwise we would have to fight our way here. I hope you won't screw things for us.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[guard_phys]
+{
+	[text*]
+	{
+		screen_text = "Lady Tilliana does not like folks approaching her too close. Remember that my mallet is waiting at the height of your head. You make a move I don't like, there won't be any warning.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop]
+{
+	[text*]
+	{
+		activate_quest* = 29_traders,0;
+		choice = shop;
+	  b quest_dialog = true;
+		screen_text = "Ah, I can see there is a lot of competition these days. I know Gerriave's band is ahead of us, and now we've met you. It seems that the city of Magnifica is making a lot of deals these days. What do you think they are planning? War? City expansion? Temple construction? One never knows what motivations drive actions of The Cult of the Eye. And Nehemalton is not gonna tell us, is he? Anyway, if you wish to do some minor trading before the main deal, I have no objection. I carry enough treasures to make Nehemalton part with The Bejewelled dress of queen Dhuria.";
+	  f scroll_rate = 10.000000;
+	}
+}

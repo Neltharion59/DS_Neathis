@@ -64,6 +64,30 @@
 	  p position = 1.58011,1.33975,3.71121,0x566df1b4;
 	}
 }
+[t:sign_glb_stonebridge_gate,n:0x00202d76]
+{
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
+	[placement]
+	{
+	  q orientation = -6.63385e-007,0.92388,7.77976e-007,-0.382683;
+	  p position = 0.699936,1.21637,-0.552574,0xedaaa53a;
+	}
+}
+[t:sign_glb_stonebridge_gate,n:0x00202d77]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[placement]
+	{
+	  q orientation = 7.77976e-007,0.382683,6.63385e-007,0.92388;
+	  p position = 0.662735,1.21637,-0.561211,0xedaaa53a;
+	}
+}
 [t:door_grs_peasant_left,n:0x0020008c]
 {
 	[placement]
@@ -71,6 +95,18 @@
 	  q orientation = 0,0.173648,0,0.984808;
 	  p position = -0.110611,-3.65,-3.16962,0x89592e59;
 		use_point_scids = 0x0020008d,0x0020008e;
+	}
+}
+[t:sign_glb_magicshop_01,n:0x00202d69]
+{
+	[common]
+	{
+		screen_name = "Apprentice's Pal";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.207912,0,0.978148;
+	  p position = -2.03333,-4.56791,-3.90181,0x89592e59;
 	}
 }
 [t:door_glb_woodfence_left_01,n:0x002000d7]
@@ -94,6 +130,15 @@
 		use_point_scids = 0x00200097,0x00200096;
 	}
 }
+[t:door_grs_peasant_left,n:0x00200092]
+{
+	[placement]
+	{
+	  q orientation = 0,0.139174,0,-0.990268;
+	  p position = -0.380692,-3,-3.52744,0xb02f4f34;
+		use_point_scids = 0x00200093,0x00200094;
+	}
+}
 [t:door_glb_woodfence_left_01,n:0x002000d6]
 {
 	[aspect]
@@ -106,13 +151,28 @@
 	  p position = 0.00802612,-0.849998,1.97495,0x8e63f099;
 	}
 }
-[t:door_grs_peasant_left,n:0x00200092]
+[t:sign_glb_stonebridge_gate,n:0x00202d6e]
 {
+	[common]
+	{
+		screen_name = "Lammairth";
+	}
 	[placement]
 	{
-	  q orientation = 0,0.139174,0,-0.990268;
-	  p position = -0.380692,-3,-3.52744,0xb02f4f34;
-		use_point_scids = 0x00200093,0x00200094;
+	  q orientation = 9.10607e-007,-0.707107,-4.64889e-007,0.707107;
+	  p position = 2.85629,1.24675,-3.23849,0xbc42d1de;
+	}
+}
+[t:sign_glb_stonebridge_gate,n:0x00202d6f]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[placement]
+	{
+	  q orientation = -4.6489e-007,-0.707107,-9.10606e-007,-0.707107;
+	  p position = 2.81909,1.27345,-3.24713,0xbc42d1de;
 	}
 }
 [t:door_grs_peasant_left,n:0x00200098]
@@ -154,26 +214,6 @@
 		use_point_scids = 0x00200090,0x00200091;
 	}
 }
-[t:respawn_statue,n:0x00202cab]
-{
-	[placement]
-	{
-	  p position = 2.16585,0,-2.26682,0x87a435fd;
-		use_point_scids = 0x00202cac,0x00202cad,0x00202cae,0x00202caf;
-	}
-}
-[t:sign_glb_magicshop_01,n:0x00202d69]
-{
-	[common]
-	{
-		screen_name = "Apprentice's Pal";
-	}
-	[placement]
-	{
-	  q orientation = 0,0.207912,0,0.978148;
-	  p position = -2.03333,-4.56791,-3.90181,0x89592e59;
-	}
-}
 [t:sign_glb_generalstore_01,n:0x00202d6a]
 {
 	[common]
@@ -186,51 +226,11 @@
 	  p position = 2.23444,-4.65,-5.30463,0x48e88eae;
 	}
 }
-[t:sign_glb_stonebridge_gate,n:0x00202d6e]
+[t:respawn_statue,n:0x00202cab]
 {
-	[common]
-	{
-		screen_name = "Lammairth";
-	}
 	[placement]
 	{
-	  q orientation = 9.10607e-007,-0.707107,-4.64889e-007,0.707107;
-	  p position = 2.85629,1.24675,-3.23849,0xbc42d1de;
-	}
-}
-[t:sign_glb_stonebridge_gate,n:0x00202d6f]
-{
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
-	[placement]
-	{
-	  q orientation = -4.6489e-007,-0.707107,-9.10606e-007,-0.707107;
-	  p position = 2.81909,1.27345,-3.24713,0xbc42d1de;
-	}
-}
-[t:sign_glb_stonebridge_gate,n:0x00202d76]
-{
-	[common]
-	{
-		screen_name = "Lammairth";
-	}
-	[placement]
-	{
-	  q orientation = -6.63385e-007,0.92388,7.77976e-007,-0.382683;
-	  p position = 0.699936,1.21637,-0.552574,0xedaaa53a;
-	}
-}
-[t:sign_glb_stonebridge_gate,n:0x00202d77]
-{
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
-	[placement]
-	{
-	  q orientation = 7.77976e-007,0.382683,6.63385e-007,0.92388;
-	  p position = 0.662735,1.21637,-0.561211,0xedaaa53a;
+	  p position = 2.16585,0,-2.26682,0x87a435fd;
+		use_point_scids = 0x00202cac,0x00202cad,0x00202cae,0x00202caf;
 	}
 }

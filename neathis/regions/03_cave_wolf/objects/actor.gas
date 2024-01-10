@@ -5,6 +5,50 @@
 	  p position = 2.85245,0,-1.64956,0x90794bf4;
 	}
 }
+[t:krug_shaman_boss_01,n:0x0050006d]
+{
+	[aspect]
+	{
+	  f life = 91;
+	  f max_life = 91;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 11;
+	  f damage_bonus_min_cmagic = 8;
+	}
+	[common]
+	{
+		screen_name = "Wolf leader";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("02_wolf_pack","completed",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[mind]
+	{
+	  b actor_auto_uses_stored_items = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.78201,0,-1.87012,0x817f6db0;
+	}
+}
 [t:wolf_gray,n:0x00500002]
 {
 	[placement]
@@ -19,28 +63,38 @@
 	  p position = 2.20646,0,1.51356,0x1a1dc362;
 	}
 }
-[t:krug_shaman_boss_01,n:0x0050006d]
+[t:wolf_gray,n:0x00500129]
 {
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 3;
-	  f damage_bonus_min_cmagic = 3;
-	}
-	[common]
-	{
-		screen_name = "Wolf leader";
-	}
-	[defend]
-	{
-	  f defense = 30;
-	}
-	[mind]
-	{
-	  b actor_auto_uses_stored_items = false;
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -3.78201,0,-1.87012,0x817f6db0;
+	  p position = -1.2207,0,-3.69037,0x4aae91c5;
+	}
+}
+[t:wolf_gray,n:0x0050012a]
+{
+	[placement]
+	{
+	  p position = -0.360054,0,-3.06936,0x4aae91c5;
+	}
+}
+[t:wolf_gray,n:0x0050012b]
+{
+	[placement]
+	{
+	  p position = 3.19371,0,2.97252,0xc3af5585;
+	}
+}
+[t:wolf_gray,n:0x0050012c]
+{
+	[placement]
+	{
+	  p position = -2.17604,0,-1.51045,0x817f6db0;
+	}
+}
+[t:wolf_gray,n:0x0050012d]
+{
+	[placement]
+	{
+	  p position = -3.73366,0,-1.2258,0x817f6db0;
 	}
 }

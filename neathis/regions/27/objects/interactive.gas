@@ -1,59 +1,3 @@
-[t:respawn_statue,n:0x02701633]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.33133,0,3.30537,0x670e03a8;
-		use_point_scids = 0x02701634,0x02701635,0x02701636,0x02701637;
-	}
-}
-[t:respawn_statue,n:0x02701638]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,5.96046e-008;
-	  p position = 1.65387,0,-3.11899,0x9f9454d3;
-		use_point_scids = 0x02701639,0x0270163a,0x0270163b,0x0270163c;
-	}
-}
-[t:respawn_statue,n:0x02701641]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 2.56598,0,-2.48222,0x6da2c5c8;
-		use_point_scids = 0x02701642,0x02701643,0x02701644,0x02701645;
-	}
-}
-[t:respawn_statue,n:0x0270163e]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.59296,1.25,1.88922,0xec28fab3;
-		use_point_scids = 0x0270163f,0x02701640;
-	}
-}
-[t:respawn_statue,n:0x0270163d]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-2.98023e-008;
-	  p position = 2.12274,1.25,-1.40387,0xecf9b956;
-		use_point_scids = 0x0270163f,0x02701640;
-	}
-}
-[t:sign_swp_01,n:0x027016ef]
-{
-	[common]
-	{
-		screen_name = "Lohara";
-	}
-	[placement]
-	{
-	  p position = -1.24927,0,-3.6976,0xe3beeac2;
-	}
-}
 [t:sign_swp_01,n:0x027016f0]
 {
 	[common]
@@ -64,6 +8,15 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -3.97868,-0.370924,-1.08378,0xda12637b;
+	}
+}
+[t:respawn_statue,n:0x02701633]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.33133,0,3.30537,0x670e03a8;
+		use_point_scids = 0x02701634,0x02701635,0x02701636,0x02701637;
 	}
 }
 [t:sign_swp_01,n:0x027016f3]
@@ -90,6 +43,17 @@
 	  p position = -2.94238,-9.53674e-007,3.83002,0xf31a9bdf;
 	}
 }
+[t:sign_swp_01,n:0x027016ef]
+{
+	[common]
+	{
+		screen_name = "Lohara";
+	}
+	[placement]
+	{
+	  p position = -1.24927,0,-3.6976,0xe3beeac2;
+	}
+}
 [t:sign_swp_01,n:0x027016f6]
 {
 	[common]
@@ -111,6 +75,15 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 2.99359,0,1.00882,0x71787a7f;
+	}
+}
+[t:respawn_statue,n:0x02701638]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,5.96046e-008;
+	  p position = 1.65387,0,-3.11899,0x9f9454d3;
+		use_point_scids = 0x02701639,0x0270163a,0x0270163b,0x0270163c;
 	}
 }
 [t:sign_swp_01,n:0x027016f9]
@@ -137,6 +110,38 @@
 	  p position = 3.31911,-0.287187,-0.133606,0x5c2d6c5b;
 	}
 }
+[t:respawn_statue,n:0x02701641]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 2.56598,0,-2.48222,0x6da2c5c8;
+		use_point_scids = 0x02701642,0x02701643,0x02701644,0x02701645;
+	}
+}
+[t:sign_swp_01,n:0x027016fe]
+{
+	[common]
+	{
+		screen_name = "Lohara";
+	}
+	[placement]
+	{
+	  p position = -2.41571,-9.53674e-007,-1.58752,0x47006132;
+	}
+}
+[t:sign_swp_01,n:0x027016ff]
+{
+	[common]
+	{
+		screen_name = "Errath Mine";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = -2.2428,-0.397528,-2.09534,0x47006132;
+	}
+}
 [t:sign_swp_01,n:0x027016fc]
 {
 	[common]
@@ -161,26 +166,21 @@
 	  p position = -0.650269,-0.310336,0.406433,0x8f42d6b8;
 	}
 }
-[t:sign_swp_01,n:0x027016fe]
+[t:respawn_statue,n:0x0270163e]
 {
-	[common]
-	{
-		screen_name = "Lohara";
-	}
 	[placement]
 	{
-	  p position = -2.41571,-9.53674e-007,-1.58752,0x47006132;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.59296,1.25,1.88922,0xec28fab3;
+		use_point_scids = 0x0270163f,0x02701640;
 	}
 }
-[t:sign_swp_01,n:0x027016ff]
+[t:respawn_statue,n:0x0270163d]
 {
-	[common]
-	{
-		screen_name = "Errath Mine";
-	}
 	[placement]
 	{
-	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = -2.2428,-0.397528,-2.09534,0x47006132;
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = 2.12274,1.25,-1.40387,0xecf9b956;
+		use_point_scids = 0x0270163f,0x02701640;
 	}
 }

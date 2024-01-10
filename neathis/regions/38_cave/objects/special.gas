@@ -27,7 +27,7 @@
 	  p position = -0.0992762,-11.9978,-0.163643,0x3a4483f4;
 	}
 }
-[t:trigger_fade_nodes_global_box,n:0x03600000]
+[t:trigger_fade_nodes_box,n:0x03600000]
 {
 	[common]
 	{
@@ -35,7 +35,7 @@
 		{
 			[*]
 			{
-				action* = fade_nodes_global(0x00000035,99,99,99,"out:black");
+				action* = fade_nodes(0x00000035,99,99,99,"out:black");
 			  b can_self_destruct = true;
 				condition* = party_member_within_bounding_box(2.000000,2.000000,0.200000,"on_every_enter");
 			  f delay = 0.000000;
@@ -56,7 +56,7 @@
 	  p position = -0.0364552,-1.51454,-2.35484,0x442381a4;
 	}
 }
-[t:trigger_fade_nodes_global_box,n:0x03600001]
+[t:trigger_fade_nodes_box,n:0x03600001]
 {
 	[common]
 	{
@@ -64,7 +64,7 @@
 		{
 			[*]
 			{
-				action* = fade_nodes_global(0x00000035,99,99,99,"in");
+				action* = fade_nodes(0x00000035,99,99,99,"in");
 			  b can_self_destruct = true;
 				condition* = party_member_within_bounding_box(2.000000,2.000000,0.200000,"on_every_enter");
 			  f delay = 0.000000;

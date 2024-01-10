@@ -11716,8 +11716,8 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 2500;
-	  f damage_bonus_min_cmagic = 2300;
+	  f damage_bonus_max_cmagic = 4500;
+	  f damage_bonus_min_cmagic = 3300;
 	}
 	[placement]
 	{
@@ -12674,58 +12674,37 @@
 	  p position = 1.99339,0,-3.50397,0xa59cc4e2;
 	}
 }
-[t:chicken_white_super,n:0x02d000a0]
+[t:3w_cave_giant,n:0x02d02b7d]
 {
 	[aspect]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
+	  f experience_value = 5.91112e+008;
+	  f life = 7917;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 1;
+	  f max_life = 7917;
+	  f scale_multiplier = 2;
 	}
-	[defend]
+	[attack]
 	{
-	  f defense = 745;
+	  f damage_bonus_max_melee = 500;
+	  f damage_bonus_min_melee = 500;
 	}
-	[placement]
+	[common]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.688,0,0.888229,0xbc48731e;
+		screen_name = "Thurmalin the Pummeler";
 	}
-}
-[t:chicken_white_super,n:0x02d000a1]
-{
-	[aspect]
+	[inventory]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
+		[equipment]
+		{
+			es_weapon_hand = cb_g_d_r_1h_avg;
+		}
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.46375,-12,-4.66226,0xb6affa2a;
-	}
-}
-[t:chicken_white_super,n:0x02d0009f]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.463425,0,-0.590729,0x4f073f00;
+	  q orientation = 0,0.382684,0,0.92388;
+	  p position = 0.600189,0,-0.244759,0x4f073f00;
 	}
 }
 [t:chicken_white_super,n:0x02d00016]

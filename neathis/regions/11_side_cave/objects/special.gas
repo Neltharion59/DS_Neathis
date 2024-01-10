@@ -92,7 +92,7 @@
 	[placement]
 	{
 	  q orientation = 0,-5.96046e-008,0,1;
-	  p position = -0.0287094,-0.118946,0.422186,0x243bde30;
+	  p position = -0.315525,0.565096,1.61777,0x243bde30;
 	}
 }
 [t:use_point,n:0x01300080]
@@ -166,7 +166,7 @@
 				action* = send_world_message("we_req_activate",0x0130007A,0f,"default","",0);
 				action* = when_false send_world_message("we_req_deactivate",0x0130007A,0f,"default","",0);
 			  b can_self_destruct = true;
-				condition* = party_member_within_sphere(1.800000,"on_every_enter");
+				condition* = party_member_within_sphere(1.800000,"while_inside");
 			  f delay = 0.000000;
 			  b flip_flop = true;
 			  b multi_player = true;

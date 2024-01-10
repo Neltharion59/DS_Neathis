@@ -8,6 +8,7 @@
 			[*]
 			{
 				action* = send_world_message("we_req_activate",0x00400F6D,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x00401759,0f,"default","every",0);
 			  b can_self_destruct = true;
 				condition* = receive_world_message("we_req_use",0,"on_every_message");
 			  f delay = 0.000000;
@@ -24,7 +25,7 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,0.382683;
+	  q orientation = 0,0.382684,0,0.92388;
 	  p position = 0.311493,0,0.457901,0x22cb648f;
 	}
 }

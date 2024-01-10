@@ -32,7 +32,9 @@
 {
 	[text*]
 	{
-		screen_text = "It may seem like we have plenty of supplies in the castle, but let me tell you, we may have last for years. That won't be enough by far.";
+		activate_quest* = 27_supplies,0;
+	  b quest_dialog = true;
+		screen_text = "It may seem like we have plenty of supplies in the castle, but let me tell you, we may have last for years. That won't be enough by far. Hey, how about you land a hand by taking the crates from my house and delivering them to the castle? Just drop them at the entry hall on the green carpet. We'll take it from there.";
 	  f scroll_rate = 10.000000;
 	}
 }

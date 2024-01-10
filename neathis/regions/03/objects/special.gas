@@ -164,6 +164,35 @@
 	  p position = 0.0830688,-1.24225,-0.0750542,0x8b27d831;
 	}
 }
+[t:trigger_generic,n:0x00401759]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00401759,5f,"default","every",0);
+				action* = send_world_message("we_req_delete",0x00401756,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_activate",0,"on_every_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 3.11797,9.53674e-007,-3.31529,0x2ff6f988;
+	}
+}
 [t:trigger_change_mood_box,n:0x004012d1]
 {
 	[common]
@@ -343,6 +372,46 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -3.76422,0,-0.459991,0x76538991;
+	}
+}
+[t:accumulate_trigger,n:0x00401758]
+{
+	[generic_accumtrigger]
+	{
+	  i num_til_send = 1;
+	  x send_to_scid = 0x0040175A;
+	}
+	[placement]
+	{
+	  p position = 2.71852,0,-2.38816,0x3a6d32a8;
+	}
+}
+[t:trigger_generic,n:0x0040175a]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("02_bandits","active",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_activate",0,"on_every_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = 2.54581,0,-0.815895,0x3a6d32a8;
 	}
 }
 [t:use_point,n:0x004012ab]

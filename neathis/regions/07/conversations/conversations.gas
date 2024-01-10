@@ -48,6 +48,15 @@
 	  f scroll_rate = 10.000000;
 	}
 }
+[join_torg]
+{
+	[text*]
+	{
+		choice = potential_member;
+		screen_text = "My brother said it all. Let's smash the krug!";
+	  f scroll_rate = 10.000000;
+	}
+}
 [major]
 {
 	[text*]
@@ -60,7 +69,9 @@
 {
 	[text*]
 	{
-		screen_text = "They're getting nice and fat. We will need that if supply caravans are not restored soon.";
+		activate_quest* = 07_beauty,0;
+	  b quest_dialog = true;
+		screen_text = "They're getting nice and fat. We will need that if supply caravans are not restored soon. That is of course if we manage to put them to good use before The Beauty and The Beast manage to snap them from our village. That brigand and her pet have been giving us tough time really. How she managed to tame that powerful beast is truly beyond me.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -146,15 +157,6 @@
 	{
 	  i order = 1;
 		screen_text = "Don't worry, we're safe here. There are dwarves living in the mountains, in holes and pits that no krug or human could ever find. They take a lot of joy in popping out of their holes, smashing a few skulls and disappearing again. If we were in immediate danger, they would give us a warning. Besides, we currently have two dwarves visiting, they may tell you themselves.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[join_torg]
-{
-	[text*]
-	{
-		choice = potential_member;
-		screen_text = "My brother said it all. Let's smash the krug!";
 	  f scroll_rate = 10.000000;
 	}
 }

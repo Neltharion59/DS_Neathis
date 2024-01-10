@@ -50,11 +50,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -62,6 +57,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -77,11 +76,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -89,6 +83,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -104,11 +102,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -116,6 +109,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -131,11 +128,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -143,6 +135,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -160,13 +156,18 @@
 	  f max_life = 297;
 	  f scale_multiplier = 1.3;
 	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 8;
+	  f damage_bonus_min_cmagic = 8;
+	}
 	[common]
 	{
 		screen_name = "Mystico the Glacial Mentor";
 	}
 	[defend]
 	{
-	  f defense = 46;
+	  f defense = 56;
 	}
 	[mind]
 	{
@@ -187,11 +188,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -199,6 +195,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -214,11 +214,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -226,6 +221,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -241,11 +240,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -253,6 +247,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -509,11 +507,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -521,6 +514,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1032,18 +1029,6 @@
 	  p position = 3.36031,0,-2.59004,0x34798e7d;
 	}
 }
-[t:shard_teal,n:0x00a0036a]
-{
-	[aspect]
-	{
-	  f life = 48;
-	  f max_life = 48;
-	}
-	[placement]
-	{
-	  p position = -2.38324,-12,-5.19299,0x2ea08cc2;
-	}
-}
 [t:shard_teal,n:0x00a0036d]
 {
 	[aspect]
@@ -1102,6 +1087,19 @@
 	[placement]
 	{
 	  p position = -0.369411,0,0.947372,0x0e43f6da;
+	}
+}
+[t:shard_teal,n:0x00a0036a]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -2.07618,9.53674e-007,1.23368,0x59cba2d6;
 	}
 }
 [t:moth,n:0x00a00009]
@@ -1181,63 +1179,16 @@
 	  p position = -2.08974,-5.8344,-0.985641,0x20b1c9b5;
 	}
 }
-[t:merik,n:0x00a003a3]
+[t:braak_magic,n:0x00a003a3]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[aspect]
-	{
-	  f experience_value = 120;
-	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 10;
-	  f max_life = 186.2;
-	  f max_mana = 264;
-	}
 	[common]
 	{
-		screen_name = "Cryomancer Apprentice";
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ro_m_g_c_008;
-			es_feet = bo_bo_le_f_g_c_avg;
-			es_head = he_ca_ro_turban_01;
-		}
-		[other]
-		{
-			il_main = spell_firespray;
-			il_main = spell_healing_hands;
-			il_main = spell_hold_creature;
-			il_main = spell_spark;
-			il_main = spell_dancing_zap;
-			il_main = spell_resurrect;
-			il_main = spell_mana_channel;
-			il_main = spell_healing_wind;
-		}
-	}
-	[mind]
-	{
-		combat_orders = co_free;
-		disposition_orders = ad_offensive;
-	  i flee_count = 50;
-	  f limited_movement_range = 9;
-	  f melee_engage_range = 12;
-		movement_orders = mo_free;
-	  b on_enemy_entered_icz_flee = true;
-	  b on_engaged_lost_consciousness_abort_attack = true;
-	  b on_job_reached_travel_distance_abort_attack = true;
-	  f outer_comfort_zone_range = 12;
-	  f ranged_engage_range = 12;
-	  f sight_range = 16;
+		screen_name = "Ice Mage Apprentice";
 	}
 	[placement]
 	{
 	  q orientation = 0,1,0,-5.96046e-008;
-	  p position = 1.0456,-3.65,-0.227547,0x75f77bcb;
+	  p position = 1.01658,-3.65,-0.231308,0x75f77bcb;
 	}
 }
 [t:spider_frostnid,n:0x00a005d9]
@@ -1249,11 +1200,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1261,6 +1207,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1276,11 +1226,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1288,6 +1233,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1303,11 +1252,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1315,6 +1259,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1330,11 +1278,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1342,6 +1285,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1357,11 +1304,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1369,6 +1311,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1384,11 +1330,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1396,6 +1337,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1411,11 +1356,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1423,6 +1363,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1438,11 +1382,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1450,6 +1389,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1465,11 +1408,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1477,6 +1415,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1492,11 +1434,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1504,6 +1441,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1519,11 +1460,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1531,6 +1467,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1546,11 +1486,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1559,9 +1494,40 @@
 	{
 	  f defense = 20;
 	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
 	[placement]
 	{
 	  p position = 3.0647,-3.65,-1.03638,0x75f77bcb;
+	}
+}
+[t:moth,n:0x00a003bc]
+{
+	[aspect]
+	{
+	  f experience_value = 312;
+	  f life = 178;
+	  f max_life = 178;
+	  f scale_multiplier = 2.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 7;
+	  f damage_bonus_min_cmagic = 5;
+	}
+	[common]
+	{
+		screen_name = "Gorgonoth";
+	}
+	[defend]
+	{
+	  f defense = 99;
+	}
+	[placement]
+	{
+	  p position = -3.02426,0,-0.683914,0x5c7abf44;
 	}
 }
 [t:moth,n:0x00a005b2]
@@ -1596,63 +1562,16 @@
 	  p position = -1.19027,0,0.0449333,0xa5914630;
 	}
 }
-[t:merik,n:0x00a003a2]
+[t:braak_magic,n:0x00a003a2]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[aspect]
-	{
-	  f experience_value = 120;
-	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 10;
-	  f max_life = 186.2;
-	  f max_mana = 264;
-	}
 	[common]
 	{
-		screen_name = "Cryomancer Apprentice";
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ro_m_g_c_008;
-			es_feet = bo_bo_le_f_g_c_avg;
-			es_head = he_ca_ro_turban_01;
-		}
-		[other]
-		{
-			il_main = spell_firespray;
-			il_main = spell_healing_hands;
-			il_main = spell_hold_creature;
-			il_main = spell_spark;
-			il_main = spell_dancing_zap;
-			il_main = spell_resurrect;
-			il_main = spell_mana_channel;
-			il_main = spell_healing_wind;
-		}
-	}
-	[mind]
-	{
-		combat_orders = co_free;
-		disposition_orders = ad_offensive;
-	  i flee_count = 50;
-	  f limited_movement_range = 9;
-	  f melee_engage_range = 12;
-		movement_orders = mo_free;
-	  b on_enemy_entered_icz_flee = true;
-	  b on_engaged_lost_consciousness_abort_attack = true;
-	  b on_job_reached_travel_distance_abort_attack = true;
-	  f outer_comfort_zone_range = 12;
-	  f ranged_engage_range = 12;
-	  f sight_range = 16;
+		screen_name = "Ice Mage Apprentice";
 	}
 	[placement]
 	{
 	  q orientation = 0,1,0,-6.46033e-009;
-	  p position = 0.669849,-3,0.670204,0xdfed3a59;
+	  p position = 0.666088,-3,0.699226,0xdfed3a59;
 	}
 }
 [t:spider_frostnid,n:0x00a005cd]
@@ -1664,11 +1583,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1676,6 +1590,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1691,11 +1609,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1703,6 +1616,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1718,11 +1635,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1730,6 +1642,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1745,11 +1661,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1757,6 +1668,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1772,11 +1687,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1784,6 +1694,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1799,11 +1713,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1811,6 +1720,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1826,11 +1739,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1838,6 +1746,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1853,11 +1765,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1865,6 +1772,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1880,11 +1791,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1892,6 +1798,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1907,11 +1817,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1919,6 +1824,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -1934,11 +1843,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -1947,68 +1851,25 @@
 	{
 	  f defense = 20;
 	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
 	[placement]
 	{
 	  p position = 1.31223,-4.97114,-7.394,0xdfed3a59;
 	}
 }
-[t:merik,n:0x00a0039d]
+[t:braak_magic,n:0x00a0039d]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[aspect]
-	{
-	  f experience_value = 120;
-	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 10;
-	  f max_life = 186.2;
-	  f max_mana = 264;
-	}
 	[common]
 	{
-		screen_name = "Cryomancer Apprentice";
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ro_m_g_c_008;
-			es_feet = bo_bo_le_f_g_c_avg;
-			es_head = he_ca_ro_turban_01;
-		}
-		[other]
-		{
-			il_main = spell_firespray;
-			il_main = spell_healing_hands;
-			il_main = spell_hold_creature;
-			il_main = spell_spark;
-			il_main = spell_dancing_zap;
-			il_main = spell_resurrect;
-			il_main = spell_mana_channel;
-			il_main = spell_healing_wind;
-		}
-	}
-	[mind]
-	{
-		combat_orders = co_free;
-		disposition_orders = ad_offensive;
-	  i flee_count = 50;
-	  f limited_movement_range = 9;
-	  f melee_engage_range = 12;
-		movement_orders = mo_free;
-	  b on_enemy_entered_icz_flee = true;
-	  b on_engaged_lost_consciousness_abort_attack = true;
-	  b on_job_reached_travel_distance_abort_attack = true;
-	  f outer_comfort_zone_range = 12;
-	  f ranged_engage_range = 12;
-	  f sight_range = 16;
+		screen_name = "Ice Mage Apprentice";
 	}
 	[placement]
 	{
 	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = -1.05926,-3.65,0.489059,0xee02b7ee;
+	  p position = -1.06302,-3.65,0.518082,0xee02b7ee;
 	}
 }
 [t:spider_frostnid,n:0x00a005bf]
@@ -2020,11 +1881,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2032,6 +1888,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2047,11 +1907,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2059,6 +1914,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2074,11 +1933,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2086,6 +1940,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2101,11 +1959,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2113,6 +1966,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2128,11 +1985,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2140,6 +1992,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2155,11 +2011,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2167,6 +2018,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2182,11 +2037,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2194,6 +2044,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2209,11 +2063,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2221,6 +2070,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2236,11 +2089,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2248,6 +2096,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2263,11 +2115,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2275,6 +2122,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2290,11 +2141,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2302,6 +2148,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2317,11 +2167,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2329,6 +2174,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2344,11 +2193,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2356,6 +2200,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2371,11 +2219,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2383,6 +2226,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2398,11 +2245,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2410,6 +2252,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2451,65 +2297,16 @@
 	  p position = 0.278435,0,3.07164,0x926822d8;
 	}
 }
-[t:merik,n:0x00a00397]
+[t:braak_magic,n:0x00a00397]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[aspect]
-	{
-	  f experience_value = 120;
-	  f life = -0.659438;
-		life_state = ls_alive_unconscious;
-	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 10;
-	  f max_life = 186.2;
-	  f max_mana = 264;
-	}
 	[common]
 	{
-		screen_name = "Cryomancer Apprentice";
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ro_m_g_c_008;
-			es_feet = bo_bo_le_f_g_c_avg;
-			es_head = he_ca_ro_turban_01;
-		}
-		[other]
-		{
-			il_main = spell_firespray;
-			il_main = spell_healing_hands;
-			il_main = spell_hold_creature;
-			il_main = spell_spark;
-			il_main = spell_dancing_zap;
-			il_main = spell_resurrect;
-			il_main = spell_mana_channel;
-			il_main = spell_healing_wind;
-		}
-	}
-	[mind]
-	{
-		combat_orders = co_free;
-		disposition_orders = ad_offensive;
-	  i flee_count = 50;
-	  f limited_movement_range = 9;
-	  f melee_engage_range = 12;
-		movement_orders = mo_free;
-	  b on_enemy_entered_icz_flee = true;
-	  b on_engaged_lost_consciousness_abort_attack = true;
-	  b on_job_reached_travel_distance_abort_attack = true;
-	  f outer_comfort_zone_range = 12;
-	  f ranged_engage_range = 12;
-	  f sight_range = 16;
+		screen_name = "Ice Mage Apprentice";
 	}
 	[placement]
 	{
 	  q orientation = 0,1,0,0;
-	  p position = 0.390305,-3,-0.323967,0x19472adc;
+	  p position = 0.32737,-3,-0.3554,0x19472adc;
 	}
 }
 [t:spider_frostnid,n:0x00a005b5]
@@ -2521,11 +2318,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2533,6 +2325,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2548,11 +2344,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2560,6 +2351,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2575,11 +2370,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2587,6 +2377,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2602,11 +2396,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2614,6 +2403,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2629,11 +2422,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2641,6 +2429,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2656,11 +2448,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2668,6 +2455,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2683,11 +2474,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2695,6 +2481,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2710,11 +2500,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2722,6 +2507,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2737,11 +2526,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2749,6 +2533,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2764,11 +2552,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2777,68 +2560,25 @@
 	{
 	  f defense = 20;
 	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
 	[placement]
 	{
 	  p position = 4.52085,-4.2,-3.96113,0x19472adc;
 	}
 }
-[t:merik,n:0x00a003a4]
+[t:braak_magic,n:0x00a003a4]
 {
-	[actor]
-	{
-		alignment = aa_evil;
-	}
-	[aspect]
-	{
-	  f experience_value = 120;
-	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 10;
-	  f max_life = 186.2;
-	  f max_mana = 264;
-	}
 	[common]
 	{
-		screen_name = "Cryomancer Apprentice";
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ro_m_g_c_008;
-			es_feet = bo_bo_le_f_g_c_avg;
-			es_head = he_ca_ro_turban_01;
-		}
-		[other]
-		{
-			il_main = spell_firespray;
-			il_main = spell_healing_hands;
-			il_main = spell_hold_creature;
-			il_main = spell_spark;
-			il_main = spell_dancing_zap;
-			il_main = spell_resurrect;
-			il_main = spell_mana_channel;
-			il_main = spell_healing_wind;
-		}
-	}
-	[mind]
-	{
-		combat_orders = co_free;
-		disposition_orders = ad_offensive;
-	  i flee_count = 50;
-	  f limited_movement_range = 9;
-	  f melee_engage_range = 12;
-		movement_orders = mo_free;
-	  b on_enemy_entered_icz_flee = true;
-	  b on_engaged_lost_consciousness_abort_attack = true;
-	  b on_job_reached_travel_distance_abort_attack = true;
-	  f outer_comfort_zone_range = 12;
-	  f ranged_engage_range = 12;
-	  f sight_range = 16;
+		screen_name = "Ice Mage Apprentice";
 	}
 	[placement]
 	{
 	  q orientation = -2.09794e-016,-1,-4.72404e-009,-6.46033e-009;
-	  p position = -0.50502,-3,0.334289,0x34ec5104;
+	  p position = -0.475998,-3,0.33805,0x34ec5104;
 	}
 }
 [t:spider_frostnid,n:0x00a005e5]
@@ -2850,11 +2590,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2862,6 +2597,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2877,11 +2616,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2889,6 +2623,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2904,11 +2642,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2916,6 +2649,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2931,11 +2668,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2943,6 +2675,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2958,11 +2694,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2970,6 +2701,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -2985,11 +2720,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -2997,6 +2727,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -3012,11 +2746,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -3024,6 +2753,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -3039,11 +2772,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -3051,6 +2779,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -3066,11 +2798,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -3078,6 +2805,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -3093,11 +2824,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -3105,6 +2831,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -3120,11 +2850,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -3132,6 +2857,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -3147,11 +2876,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -3159,6 +2883,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -3174,11 +2902,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -3186,6 +2909,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -3201,11 +2928,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -3213,6 +2935,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
@@ -3228,11 +2954,6 @@
 	  f max_life = 24;
 	  f scale_multiplier = 0.3;
 	}
-	[attack]
-	{
-	  f damage_max = 17;
-	  f damage_min = 12;
-	}
 	[common]
 	{
 		screen_name = "Cryo Puppet";
@@ -3240,6 +2961,10 @@
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{

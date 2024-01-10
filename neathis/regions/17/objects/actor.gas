@@ -6641,7 +6641,7 @@
 	}
 	[common]
 	{
-		screen_name = "Armed Villager";
+		screen_name = "Karim";
 	}
 	[conversation]
 	{
@@ -6676,7 +6676,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,0;
-	  p position = 1.38378,0,1.25476,0xf215088b;
+	  p position = 1.46139,0,1.08673,0xf215088b;
 	}
 }
 [t:phaedriel,n:0x01b0003b]
@@ -6766,7 +6766,7 @@
 	}
 	[placement]
 	{
-	  p position = -2.2471,0,0.126312,0xf215088b;
+	  p position = -2.16436,0,-0.0997314,0xf215088b;
 	}
 }
 [t:azunite_priestess_challe,n:0x01b00dda]
@@ -9573,10 +9573,48 @@
 }
 [t:swamp_witch_boss_02,n:0x01b0010a]
 {
+	[aspect]
+	{
+	  f experience_value = 14050;
+	  f life = 1978;
+	  f max_life = 1978;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 75;
+	  f damage_bonus_min_cmagic = 50;
+	}
+	[common]
+	{
+		screen_name = "Sephanna";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("17_witches","completed",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 424;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.67296,0,-0.248596,0x69bf7e4a;
+	  p position = -2.64102,0,-0.694427,0x69bf7e4a;
 	}
 }
 [t:swamp_witch,n:0x01b0010b]

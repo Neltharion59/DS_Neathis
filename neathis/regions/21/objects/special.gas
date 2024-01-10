@@ -339,7 +339,7 @@
 				action* = send_world_message("we_req_activate",0x01F000E1,0f,"default","",0);
 				action* = when_false send_world_message("we_req_deactivate",0x01F000E1,0f,"default","",0);
 			  b can_self_destruct = true;
-				condition* = party_member_within_sphere(1.800000,"on_every_enter");
+				condition* = party_member_within_sphere(1.800000,"while_inside");
 			  f delay = 0.000000;
 			  b flip_flop = true;
 			  b multi_player = true;

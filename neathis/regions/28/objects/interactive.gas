@@ -1,3 +1,17 @@
+[t:lever_glb_01,n:0x02900448]
+{
+	[on_off_lever]
+	{
+	  x on_scid = 0x02900443;
+	  b one_shot = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.76005,-2.36399,0.540648,0xd6f730d5;
+		use_point_scids = 0x0290044a;
+	}
+}
 [t:respawn_statue,n:0x02900439]
 {
 	[placement]
@@ -41,19 +55,5 @@
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 1.81985,0,-0.42387,0x8e1bef09;
 		use_point_scids = 0x0290040b,0x02900437,0x02900438;
-	}
-}
-[t:lever_glb_01,n:0x02900448]
-{
-	[on_off_lever]
-	{
-	  x on_scid = 0x02900443;
-	  b one_shot = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 1.76005,-2.36399,0.540648,0xd6f730d5;
-		use_point_scids = 0x0290044A;
 	}
 }

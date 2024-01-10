@@ -2426,32 +2426,6 @@
 	  p position = 1.56059,0,-0.204781,0x6c356a92;
 	}
 }
-[t:3w_ice_archer,n:0x03400022]
-{
-	[aspect]
-	{
-	  f experience_value = 3.71112e+010;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 300;
-	  f damage_bonus_min_ranged = 300;
-	}
-	[defend]
-	{
-	  f defense = 1200;
-	}
-	[mind]
-	{
-	  i flee_count = 200;
-	  b on_life_ratio_low_flee = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,-6.02253e-007,0,1;
-	  p position = -1.04651,0,-0.795654,0x74922a27;
-	}
-}
 [t:3w_ice_warrior,n:0x0340001a]
 {
 	[aspect]
@@ -2506,6 +2480,32 @@
 	{
 	  q orientation = 0,-0.92388,0,0.382683;
 	  p position = -3.20627,0,-0.960182,0x74922a27;
+	}
+}
+[t:3w_ice_archer,n:0x03400022]
+{
+	[aspect]
+	{
+	  f experience_value = 3.71112e+010;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 300;
+	  f damage_bonus_min_ranged = 300;
+	}
+	[defend]
+	{
+	  f defense = 1200;
+	}
+	[mind]
+	{
+	  i flee_count = 200;
+	  b on_life_ratio_low_flee = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-6.02253e-007,0,1;
+	  p position = -1.04651,0,-0.795654,0x74922a27;
 	}
 }
 [t:3w_ice_warrior,n:0x03400019]

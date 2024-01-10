@@ -1,48 +1,3 @@
-[t:respawn_statue,n:0x03700bb5]
-{
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,-0.382683;
-	  p position = -2.4454,2,4.01465,0xc3d23561;
-		use_point_scids = 0x03700bb7;
-	}
-}
-[t:respawn_statue,n:0x03700bb6]
-{
-	[placement]
-	{
-	  q orientation = 0,0.923879,0,-0.382684;
-	  p position = -2.03174,2,4.08472,0x3b0109e2;
-		use_point_scids = 0x03700bb7;
-	}
-}
-[t:respawn_statue,n:0x03700bb8]
-{
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 3.34799,-3.87593,0.356934,0x0730e2b8;
-		use_point_scids = 0x03700bb9;
-	}
-}
-[t:respawn_statue,n:0x037003e7]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 1.1077,-4,-1.86209,0x05f12a3f;
-		use_point_scids = 0x0370043d,0x037009e4;
-	}
-}
-[t:respawn_statue,n:0x03700bba]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.75599,2,0.584045,0x6c884494;
-		use_point_scids = 0x03700bbb,0x03700bbc,0x03700bbd;
-	}
-}
 [t:sign_glb_01,n:0x03700c6c]
 {
 	[common]
@@ -89,7 +44,7 @@
 	  p position = -2.84471,0.757548,-3.09945,0x5c68d825;
 	}
 }
-[t:sign_glb_01,n:0x03700c70]
+[t:sign_glb_01,n:0x03700c7a]
 {
 	[common]
 	{
@@ -97,11 +52,11 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = -0.0246887,0.701765,-1.49469,0xbd4812a1;
+	  q orientation = 0,-6.49566e-008,0,1;
+	  p position = -3.21159,0,0.321625,0x2a29d24f;
 	}
 }
-[t:sign_glb_01,n:0x03700c71]
+[t:sign_glb_01,n:0x03700c7b]
 {
 	[common]
 	{
@@ -109,11 +64,11 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -0.0382233,0.425606,-1.49112,0xbd4812a1;
+	  q orientation = 0,-4.69147e-008,0,1;
+	  p position = -3.23009,0.250854,0.192535,0x2a29d24f;
 	}
 }
-[t:sign_glb_01,n:0x03700c72]
+[t:sign_glb_01,n:0x03700c7c]
 {
 	[common]
 	{
@@ -121,11 +76,11 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.183289,0.707243,-0.918434,0xbd4812a1;
+	  q orientation = 0,-1,0,-1.82891e-007;
+	  p position = -3.01285,-0.258408,-0.286896,0x2a29d24f;
 	}
 }
-[t:sign_glb_01,n:0x03700c73]
+[t:sign_glb_01,n:0x03700c7d]
 {
 	[common]
 	{
@@ -133,8 +88,136 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,-0.707107;
-	  p position = -0.0753326,0.428212,-0.905762,0xbd4812a1;
+	  q orientation = 0,-1,0,-1.82891e-007;
+	  p position = -2.90799,-0.496849,-0.24585,0x2a29d24f;
+	}
+}
+[t:respawn_statue,n:0x03700bb5]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -2.4454,2,4.01465,0xc3d23561;
+		use_point_scids = 0x03700bb7;
+	}
+}
+[t:respawn_statue,n:0x03700bb6]
+{
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -2.03174,2,4.08472,0x3b0109e2;
+		use_point_scids = 0x03700bb7;
+	}
+}
+[t:sign_glb_01,n:0x03700c84]
+{
+	[common]
+	{
+		screen_name = "Sandrock Awe";
+	}
+	[placement]
+	{
+	  p position = 1.81696,0.382248,-1.84998,0x812edea8;
+	}
+}
+[t:sign_glb_01,n:0x03700c85]
+{
+	[common]
+	{
+		screen_name = "Droock Fort";
+	}
+	[placement]
+	{
+	  p position = 1.82779,0.129807,-1.85834,0x812edea8;
+	}
+}
+[t:sign_glb_01,n:0x03700c86]
+{
+	[common]
+	{
+		screen_name = "Windcast";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = 1.99948,-0.175446,-2.00153,0x812edea8;
+	}
+}
+[t:sign_glb_01,n:0x03700c87]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 2.03551,-0.455078,-2.00659,0x812edea8;
+	}
+}
+[t:sign_glb_01,n:0x03700c7f]
+{
+	[common]
+	{
+		screen_name = "Sandrock Awe";
+	}
+	[placement]
+	{
+	  p position = -3.99075,0,1.15729,0x58fbbaca;
+	}
+}
+[t:sign_glb_01,n:0x03700c80]
+{
+	[common]
+	{
+		screen_name = "Droock Fort";
+	}
+	[placement]
+	{
+	  p position = -3.97533,-0.243462,1.16705,0x58fbbaca;
+	}
+}
+[t:sign_glb_01,n:0x03700c81]
+{
+	[common]
+	{
+		screen_name = "Windcast";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.69621,0,1.03571,0x58fbbaca;
+	}
+}
+[t:sign_glb_01,n:0x03700c82]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.76019,-0.238701,1.03345,0x58fbbaca;
+	}
+}
+[t:respawn_statue,n:0x03700bb8]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 3.34799,-3.87593,0.356934,0x0730e2b8;
+		use_point_scids = 0x03700bb9;
+	}
+}
+[t:respawn_statue,n:0x037003e7]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.1077,-4,-1.86209,0x05f12a3f;
+		use_point_scids = 0x0370043d,0x037009e4;
 	}
 }
 [t:sign_glb_01,n:0x03700c75]
@@ -185,136 +268,43 @@
 	  p position = -1.75202,-0.18178,0.635452,0x2f272cdc;
 	}
 }
-[t:sign_glb_01,n:0x03700c7a]
+[t:sign_glb_01,n:0x03700c70]
 {
 	[common]
 	{
 		screen_name = "Sandrock Awe";
-	}
-	[placement]
-	{
-	  q orientation = 0,-6.49566e-008,0,1;
-	  p position = -3.21159,0,0.321625,0x2a29d24f;
-	}
-}
-[t:sign_glb_01,n:0x03700c7b]
-{
-	[common]
-	{
-		screen_name = "Droock Fort";
-	}
-	[placement]
-	{
-	  q orientation = 0,-4.69147e-008,0,1;
-	  p position = -3.23009,0.250854,0.192535,0x2a29d24f;
-	}
-}
-[t:sign_glb_01,n:0x03700c7c]
-{
-	[common]
-	{
-		screen_name = "Windcast";
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-1.82891e-007;
-	  p position = -3.01285,-0.258408,-0.286896,0x2a29d24f;
-	}
-}
-[t:sign_glb_01,n:0x03700c7d]
-{
-	[common]
-	{
-	  b rollover_life = false;
-		screen_name = "Central Lands";
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-1.82891e-007;
-	  p position = -2.90799,-0.496849,-0.24585,0x2a29d24f;
-	}
-}
-[t:sign_glb_01,n:0x03700c7f]
-{
-	[common]
-	{
-		screen_name = "Sandrock Awe";
-	}
-	[placement]
-	{
-	  p position = -3.99075,0,1.15729,0x58fbbaca;
-	}
-}
-[t:sign_glb_01,n:0x03700c80]
-{
-	[common]
-	{
-		screen_name = "Droock Fort";
-	}
-	[placement]
-	{
-	  p position = -3.97533,-0.243462,1.16705,0x58fbbaca;
-	}
-}
-[t:sign_glb_01,n:0x03700c81]
-{
-	[common]
-	{
-		screen_name = "Windcast";
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.69621,0,1.03571,0x58fbbaca;
-	}
-}
-[t:sign_glb_01,n:0x03700c82]
-{
-	[common]
-	{
-		screen_name = "Central Lands";
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.76019,-0.238701,1.03345,0x58fbbaca;
-	}
-}
-[t:sign_glb_01,n:0x03700c84]
-{
-	[common]
-	{
-		screen_name = "Sandrock Awe";
-	}
-	[placement]
-	{
-	  p position = 1.81696,0.382248,-1.84998,0x812edea8;
-	}
-}
-[t:sign_glb_01,n:0x03700c85]
-{
-	[common]
-	{
-		screen_name = "Droock Fort";
-	}
-	[placement]
-	{
-	  p position = 1.82779,0.129807,-1.85834,0x812edea8;
-	}
-}
-[t:sign_glb_01,n:0x03700c86]
-{
-	[common]
-	{
-		screen_name = "Windcast";
 	}
 	[placement]
 	{
 	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = 1.99948,-0.175446,-2.00153,0x812edea8;
+	  p position = -0.0246887,0.701765,-1.49469,0xbd4812a1;
 	}
 }
-[t:sign_glb_01,n:0x03700c87]
+[t:sign_glb_01,n:0x03700c71]
+{
+	[common]
+	{
+		screen_name = "Droock Fort";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -0.0382233,0.425606,-1.49112,0xbd4812a1;
+	}
+}
+[t:sign_glb_01,n:0x03700c72]
+{
+	[common]
+	{
+		screen_name = "Windcast";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.183289,0.707243,-0.918434,0xbd4812a1;
+	}
+}
+[t:sign_glb_01,n:0x03700c73]
 {
 	[common]
 	{
@@ -322,8 +312,31 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = 2.03551,-0.455078,-2.00659,0x812edea8;
+	  q orientation = 0,0.707107,0,-0.707107;
+	  p position = -0.0753326,0.428212,-0.905762,0xbd4812a1;
+	}
+}
+[t:sign_glb_01,n:0x03700c8b]
+{
+	[common]
+	{
+		screen_name = "Sandrock Awe";
+	}
+	[placement]
+	{
+	  p position = 3.98921,-0.425423,-1.58551,0x9bbb480e;
+	}
+}
+[t:sign_glb_01,n:0x03700c8c]
+{
+	[common]
+	{
+		screen_name = "Droock Fort";
+	}
+	[placement]
+	{
+	  q orientation = 0,5.96046e-008,0,1;
+	  p position = 3.96677,-0.653648,-1.60059,0x9bbb480e;
 	}
 }
 [t:sign_glb_01,n:0x03700c89]
@@ -350,26 +363,12 @@
 	  p position = -1.98767,-0.24839,1.79115,0x225e1c83;
 	}
 }
-[t:sign_glb_01,n:0x03700c8b]
+[t:respawn_statue,n:0x03700bba]
 {
-	[common]
-	{
-		screen_name = "Sandrock Awe";
-	}
 	[placement]
 	{
-	  p position = 3.98921,-0.425423,-1.58551,0x9bbb480e;
-	}
-}
-[t:sign_glb_01,n:0x03700c8c]
-{
-	[common]
-	{
-		screen_name = "Droock Fort";
-	}
-	[placement]
-	{
-	  q orientation = 0,5.96046e-008,0,1;
-	  p position = 3.96677,-0.653648,-1.60059,0x9bbb480e;
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.75599,2,0.584045,0x6c884494;
+		use_point_scids = 0x03700bbb,0x03700bbc,0x03700bbd;
 	}
 }
