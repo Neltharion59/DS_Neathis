@@ -237,16 +237,16 @@
 	[27_supplies]
 	{
 		quest_image = b_gui_ig_mnu_jnl_quest_19;
-		screen_name = Preparing for the Siege;
+		screen_name = preparing for the siege;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
 			address = 27_town:conversations:man_03;
-			description = Deliver the crate's from the farmers house to the castle;
+			description = deliver the crate's from the farmers house to the castle;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
-			speaker = Viwith;
+			speaker = viwith;
 		}
 	}
 	[29_traders]
@@ -262,6 +262,29 @@
 		  i order = 0;
 		  b required = true;
 			speaker = lady tilliana;
+		}
+	}
+	[31_basilisk]
+	{
+		quest_image = b_gui_ig_i_ic_sp_029;
+		screen_name = Basilisk;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 31:conversations:shop_02;
+			description = Find the basilisk;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = Yonairen;
+		}
+		[*]
+		{
+			description = The basilisk must be nearby. Destroy it.;
+		  b is_consumable = true;
+		  i order = 1;
+		  b required = true;
+			speaker = ;
 		}
 	}
 	[34_loner]

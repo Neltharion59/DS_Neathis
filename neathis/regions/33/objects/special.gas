@@ -1115,7 +1115,7 @@
 				action* = fade_nodes(0x00000030,10,10,10,"out:black");
 				action* = fade_nodes(0x00000030,11,11,11,"out:black");
 			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(3.000000,2.000000,0.100000,"on_first_enter");
+				condition* = party_member_within_bounding_box(3.000000,2.000000,0.100000,"on_every_enter");
 			  f delay = 0.000000;
 			  b flip_flop = false;
 			  b multi_player = true;

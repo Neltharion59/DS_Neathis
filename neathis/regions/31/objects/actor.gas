@@ -142,6 +142,34 @@
 	  p position = 2.46393,0,0.317056,0xb1e4c80d;
 	}
 }
+[t:2w_chicken_white_super,n:0x02d02eb5]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -0.535444,0,-1.53149,0x67cdcc3a;
+	}
+}
 [t:chicken_white_super,n:0x02d00b9e]
 {
 	[aspect]
@@ -268,6 +296,34 @@
 	  p position = 3.20232,0,1.94838,0xec7f391a;
 	}
 }
+[t:2w_chicken_red_super,n:0x02d02ecc]
+{
+	[aspect]
+	{
+	  f experience_value = 1.01112e+008;
+	  f life = 5257;
+	  f max_life = 5257;
+	  f scale_multiplier = 5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 222;
+	  f damage_bonus_min_cmagic = 222;
+	}
+	[common]
+	{
+		screen_name = "Chickenleader";
+	}
+	[defend]
+	{
+	  f defense = 700;
+	}
+	[placement]
+	{
+	  q orientation = 0,6.46033e-009,0,1;
+	  p position = 3.06431,0,0.625885,0xec7f391a;
+	}
+}
 [t:chicken_white_super,n:0x02d00036]
 {
 	[aspect]
@@ -349,6 +405,11 @@
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
 	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
 	[common]
 	{
 		screen_name = "Chickenmaster";
@@ -366,6 +427,34 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 0.287079,0,-1.71273,0x4274c796;
+	}
+}
+[t:2w_chicken_red_super,n:0x02d02ecd]
+{
+	[aspect]
+	{
+	  f experience_value = 1.01112e+008;
+	  f life = 5257;
+	  f max_life = 5257;
+	  f scale_multiplier = 5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 222;
+	  f damage_bonus_min_cmagic = 222;
+	}
+	[common]
+	{
+		screen_name = "Chickenleader";
+	}
+	[defend]
+	{
+	  f defense = 700;
+	}
+	[placement]
+	{
+	  q orientation = 0,6.46033e-009,0,1;
+	  p position = 1.00817,0,1.26608,0xd773b4f8;
 	}
 }
 [t:chicken_white_super,n:0x02d0003a]
@@ -386,24 +475,6 @@
 	  p position = -1.95013,0,0.610184,0x7ebff061;
 	}
 }
-[t:chicken_white_super,n:0x02d0003c]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.504845,0,-0.284302,0x50110869;
-	}
-}
 [t:chicken_white_super,n:0x02d0003d]
 {
 	[aspect]
@@ -422,22 +493,32 @@
 	  p position = -2.43877,0,0.288757,0x50110869;
 	}
 }
-[t:chicken_white_super,n:0x02d0003e]
+[t:2w_chicken_white_super,n:0x02d02ebb]
 {
 	[aspect]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
 	}
 	[defend]
 	{
-	  f defense = 745;
+	  f defense = 918.9;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.17722,0,0.339584,0x5f846839;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 2.34287,0,-0.348694,0x5f846839;
 	}
 }
 [t:3w_snapper,n:0x02d000c1]
@@ -1778,22 +1859,32 @@
 	  p position = 2.26247,0,1.15901,0x7500f4fc;
 	}
 }
-[t:chicken_white_super,n:0x02d0008e]
+[t:2w_chicken_red_super,n:0x02d02ed0]
 {
 	[aspect]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
+	  f experience_value = 1.01112e+008;
+	  f life = 5257;
+	  f max_life = 5257;
+	  f scale_multiplier = 5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 222;
+	  f damage_bonus_min_cmagic = 222;
+	}
+	[common]
+	{
+		screen_name = "Chickenleader";
 	}
 	[defend]
 	{
-	  f defense = 745;
+	  f defense = 700;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 3.86835,0,1.30956,0x2bbecaeb;
+	  q orientation = 0,6.46033e-009,0,1;
+	  p position = 2.78089,0,0.140961,0x3cc51c50;
 	}
 }
 [t:chicken_white_super,n:0x02d0008c]
@@ -1814,22 +1905,32 @@
 	  p position = -0.197034,0,-0.123077,0xc6aab86d;
 	}
 }
-[t:chicken_white_super,n:0x02d0008d]
+[t:2w_chicken_white_super,n:0x02d02ec8]
 {
 	[aspect]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
 	}
 	[defend]
 	{
-	  f defense = 745;
+	  f defense = 918.9;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.57949,0,1.32468,0x5e7ff78c;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 0.216233,0,1.483,0xc6aab86d;
 	}
 }
 [t:chicken_red_super,n:0x02d0005a]
@@ -1840,6 +1941,11 @@
 	  f life = 4000;
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
 	}
 	[common]
 	{
@@ -2074,8 +2180,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-1.59522e-008,0,1;
-	  p position = 1.59588,0,0.487122,0x4ba338a8;
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.888047,0,1.07617,0x4ba338a8;
 	}
 }
 [t:3w_snapper,n:0x02d029d0]
@@ -2793,24 +2899,6 @@
 	  p position = -0.939468,0,-1.04972,0x529c347c;
 	}
 }
-[t:chicken_white_super,n:0x02d00044]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.778,0,-3.77741,0xc416dc86;
-	}
-}
 [t:chicken_white_super,n:0x02d00045]
 {
 	[aspect]
@@ -2827,6 +2915,34 @@
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
 	  p position = -3.19119,0,-1.91707,0xc416dc86;
+	}
+}
+[t:2w_chicken_white_super,n:0x02d02eba]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -3.7506,0,-2.95419,0xc416dc86;
 	}
 }
 [t:chicken_white_super,n:0x02d00046]
@@ -2865,40 +2981,32 @@
 	  p position = -3.42125,0,-3.98402,0x68a5862b;
 	}
 }
-[t:chicken_white_super,n:0x02d00050]
+[t:2w_chicken_white_super,n:0x02d02eb9]
 {
 	[aspect]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
 	}
 	[defend]
 	{
-	  f defense = 745;
+	  f defense = 918.9;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.33539,0,-0.326523,0x2fc3488a;
-	}
-}
-[t:chicken_white_super,n:0x02d00052]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.69345,0,-2.8463,0x2fc3488a;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 2.62452,0,-1.9662,0x2fc3488a;
 	}
 }
 [t:3w_snapper,n:0x02d000fe]
@@ -2997,24 +3105,6 @@
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
 	  p position = 3.75023,0,-2.54108,0x79e36aca;
-	}
-}
-[t:chicken_white_super,n:0x02d0008b]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.32988,0,-2.71153,0x79e36aca;
 	}
 }
 [t:3w_snapper,n:0x02d000f8]
@@ -3451,6 +3541,34 @@
 	  p position = -3.27408,0,-1.16232,0xfbde4c32;
 	}
 }
+[t:2w_chicken_white_super,n:0x02d02ec7]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 1.42461,0,-1.16966,0x2c97f308;
+	}
+}
 [t:chicken_white_super,n:0x02d00088]
 {
 	[aspect]
@@ -3495,6 +3613,11 @@
 	  f life = 4000;
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
 	}
 	[common]
 	{
@@ -3564,6 +3687,134 @@
 	  p position = -0.580124,0,0.403137,0x3e3c5ecb;
 	}
 }
+[t:3w_snapper,n:0x02d02f00]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.8591,0,-1.25111,0x0b195d62;
+	}
+}
+[t:3w_snapper,n:0x02d02f0a]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.579208,0,3.28123,0xe9a34824;
+	}
+}
+[t:3w_snapper,n:0x02d02f11]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.82248,0,1.24512,0xe9a34824;
+	}
+}
+[t:3w_snapper,n:0x02d02f12]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.03854,0,2.86887,0xe9a34824;
+	}
+}
+[t:3w_snapper,n:0x02d02f01]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.09366,0,1.71709,0xfe7e78b4;
+	}
+}
+[t:3w_snapper,n:0x02d02f09]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.3732,0,-1.09996,0xc58d3094;
+	}
+}
+[t:3w_snapper,n:0x02d02f0b]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.17728,0,0.487717,0x584a3c22;
+	}
+}
+[t:3w_snapper,n:0x02d02f10]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.85181,0,1.02481,0x849a62ac;
+	}
+}
 [t:3w_snapper,n:0x02d0016b]
 {
 	[aspect]
@@ -3610,6 +3861,22 @@
 	[placement]
 	{
 	  p position = -1.87038,0,2.6866,0xf3272b7d;
+	}
+}
+[t:3w_snapper,n:0x02d02f1b]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.56213,0,2.27451,0xe4c8a6e7;
 	}
 }
 [t:3w_snapper,n:0x02d00152]
@@ -3740,16 +4007,1942 @@
 	  p position = -0.0730896,0,-2.51762,0xa0f898ca;
 	}
 }
-[t:2w_swamp_witch,n:0x02d001a9]
+[t:3w_swamp_witch,n:0x02d02ea7]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.675598,5.90559,1.28937,0xfbb90f5d;
+	  p position = -2.99539,-1,-2.79349,0xf8a42619;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02ea8]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.925293,6,0.0530701,0xcc898483;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02ea9]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.34821,0,-0.927551,0xa02ce545;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02eaa]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.69943,0,1.12413,0xa02ce545;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02ead]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.71503,0,0.177963,0x06175056;
+	}
+}
+[t:3w_mucosa_raider,n:0x02d02e76]
+{
+	[aspect]
+	{
+	  f experience_value = 5.41112e+007;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-4.69147e-008;
+	  p position = 3.31052,-12,-4.57026,0xe2a8d65d;
+	}
+}
+[t:3w_mucosa_predator,n:0x02d02e79]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 1.56735,-12,-5.00839,0xe2a8d65d;
+	}
+}
+[t:3w_mucosa_raider,n:0x02d02e78]
+{
+	[aspect]
+	{
+	  f experience_value = 5.41112e+007;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382683;
+	  p position = 2.18222,-12,-4.66669,0xac49b883;
+	}
+}
+[t:3w_mucosa_raider,n:0x02d02e77]
+{
+	[aspect]
+	{
+	  f experience_value = 5.41112e+007;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-4.69147e-008;
+	  p position = -3.40925,0,-0.527679,0x7e2fdc74;
+	}
+}
+[t:3w_mine_worm,n:0x02d02e73]
+{
+	[aspect]
+	{
+	  f experience_value = 5.81112e+007;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 632;
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_cmagic = 474;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 1615.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.72202,-1.2,-3.81818,0x0e612e58;
+	}
+}
+[t:3w_mine_worm,n:0x02d02e74]
+{
+	[aspect]
+	{
+	  f experience_value = 5.81112e+007;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 632;
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_cmagic = 474;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 1615.9;
+	}
+	[placement]
+	{
+	  p position = -0.0965881,0,0.677414,0x17036bdb;
+	}
+}
+[t:3w_mine_worm,n:0x02d02e75]
+{
+	[aspect]
+	{
+	  f experience_value = 5.81112e+007;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 632;
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_cmagic = 474;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 1615.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.35867,12,-0.552643,0xb8811e76;
+	}
+}
+[t:3w_mine_worm,n:0x02d02e71]
+{
+	[aspect]
+	{
+	  f experience_value = 5.81112e+007;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 632;
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_cmagic = 474;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 1615.9;
+	}
+	[placement]
+	{
+	  p position = 0.16687,0,-0.611786,0xf6cad719;
+	}
+}
+[t:3w_mine_worm,n:0x02d02e72]
+{
+	[aspect]
+	{
+	  f experience_value = 5.81112e+007;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 632;
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_cmagic = 474;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 1615.9;
+	}
+	[placement]
+	{
+	  p position = -3.27747,0,0.0979919,0xe2c6b1d2;
+	}
+}
+[t:3w_mine_worm,n:0x02d02e70]
+{
+	[aspect]
+	{
+	  f experience_value = 5.81112e+007;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 632;
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_cmagic = 474;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 1615.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.36984,12,-0.0270615,0x2fcb0bd9;
+	}
+}
+[t:3w_mine_worm,n:0x02d02e6d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.81112e+007;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 632;
+	  f damage_bonus_max_melee = 400;
+	  f damage_bonus_min_cmagic = 474;
+	  f damage_bonus_min_melee = 400;
+	}
+	[defend]
+	{
+	  f defense = 1615.9;
+	}
+	[placement]
+	{
+	  p position = -1.92398,-12,-4.83847,0x542ddeac;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02eb1]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.01077,-3.9385,-1.64585,0x602b95e5;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02eab]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.77527,6,0.630501,0x3390bca6;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02eaf]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.262329,0,-0.25264,0x03efbb3a;
+	}
+}
+[t:chicken_white_super,n:0x02d02eb2]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -1.80965,0,0.883453,0x6624620b;
+	}
+}
+[t:chicken_white_super,n:0x02d02eb3]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -0.0892944,0,-0.955505,0x6624620b;
+	}
+}
+[t:2w_chicken_white_super,n:0x02d02ec5]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -2.63017,1,3.85809,0xe64d0ca2;
+	}
+}
+[t:chicken_white_super,n:0x02d00085]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.360046,0,-0.726578,0xc538657b;
+	}
+}
+[t:2w_chicken_white_super,n:0x02d02ec6]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -0.269653,0,0.505295,0xc538657b;
+	}
+}
+[t:3w_snapper,n:0x02d02f15]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.837433,0,-3.04968,0xd8183b3f;
+	}
+}
+[t:3w_snapper,n:0x02d02f20]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.80455,0,3.39142,0xd8183b3f;
+	}
+}
+[t:3w_snapper,n:0x02d02915]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.53705,0,3.0094,0x58791707;
+	}
+}
+[t:3w_snapper,n:0x02d02f16]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.61485,0,2.22981,0x58791707;
+	}
+}
+[t:3w_snapper,n:0x02d02f1f]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.64613,0,-2.61368,0x58791707;
+	}
+}
+[t:3w_snapper,n:0x02d0018b]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.28735,0,1.03799,0x5c59d300;
+	}
+}
+[t:3w_snapper,n:0x02d02f1e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.89621,0,-1.00296,0xbbd3807d;
+	}
+}
+[t:3w_snapper,n:0x02d0014c]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.544952,0,-0.637329,0xc6b5e523;
+	}
+}
+[t:3w_snapper,n:0x02d0014d]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.84384,0,0.641205,0xc6b5e523;
+	}
+}
+[t:3w_snapper,n:0x02d0014e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.86838,0,-0.787338,0xc6b5e523;
+	}
+}
+[t:3w_snapper,n:0x02d02916]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.82861,0,-1.94212,0xc6b5e523;
+	}
+}
+[t:3w_snapper,n:0x02d02f17]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.9146,0,0.371017,0xc6b5e523;
+	}
+}
+[t:3w_snapper,n:0x02d02f25]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.94124,0,-3.02054,0xc6b5e523;
+	}
+}
+[t:3w_snapper,n:0x02d02f23]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.37045,0,-1.15292,0xa53832f0;
+	}
+}
+[t:3w_snapper,n:0x02d02f24]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.18643,0,-2.51195,0x72642b07;
+	}
+}
+[t:3w_snapper,n:0x02d02f18]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.68425,0,-1.10245,0xcd75660d;
+	}
+}
+[t:3w_snapper,n:0x02d02f1c]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.565521,0,-3.05078,0xcd75660d;
+	}
+}
+[t:3w_snapper,n:0x02d02f1d]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.04959,0,2.92545,0xcd75660d;
+	}
+}
+[t:3w_snapper,n:0x02d02f22]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.87608,0,-3.42732,0xcd75660d;
+	}
+}
+[t:3w_snapper,n:0x02d02f26]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.60838,0,-1.00253,0xcd75660d;
+	}
+}
+[t:3w_snapper,n:0x02d02f14]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.67642,0,2.52496,0x4af9ebbb;
+	}
+}
+[t:3w_snapper,n:0x02d02f19]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.80574,0,1.48459,0x4af9ebbb;
+	}
+}
+[t:3w_snapper,n:0x02d02f13]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.12206,0,1.93628,0xb21e9bf4;
+	}
+}
+[t:3w_snapper,n:0x02d02f1a]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.21579,0,1.60831,0xb21e9bf4;
+	}
+}
+[t:3w_snapper,n:0x02d02f21]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.425552,0,0.949188,0xb21e9bf4;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02ea6]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,2.98023e-008,0,1;
+	  p position = 0.877686,0,0.852295,0x413f9881;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02eac]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.38678,0,-1.46648,0xe2da0a77;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02eb0]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.202545,0,1.07709,0x228535e2;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02eae]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.622833,4.37304,3.0157,0x379df563;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b88]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.831665,0,0.671738,0xdf638171;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b89]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.219437,0,-1.18311,0x87fb7d45;
+	}
+}
+[t:3w_swamp_witch,n:0x02d001aa]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.47208,0,-0.794525,0x8ca57d1e;
+	}
+}
+[t:3w_swamp_witch,n:0x02d001ab]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.01773,0,1.5419,0x8ca57d1e;
+	}
+}
+[t:3w_swamp_witch,n:0x02d001a5]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.28604,0,0.40033,0xb6e58d94;
+	}
+}
+[t:3w_swamp_witch,n:0x02d001a4]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.30406,0,1.75909,0x2c11acfa;
+	}
+}
+[t:3w_swamp_witch,n:0x02d0019e]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.19887,2,-0.371948,0x1ed7206a;
+	}
+}
+[t:3w_swamp_witch,n:0x02d0019f]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.60847,2,0.259888,0x9a2f9413;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b85]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.49313,2,-1.05481,0x9a2f9413;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b86]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.33727,2,2.97968,0x59976c95;
+	}
+}
+[t:3w_snapper,n:0x02d0290f]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.11786,0,-3.17729,0x1b60acd6;
+	}
+}
+[t:3w_snapper,n:0x02d02a8e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.47261,0,-0.415283,0x90c946b1;
+	}
+}
+[t:3w_snapper,n:0x02d02a8f]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.26007,0,0.754059,0x90c946b1;
+	}
+}
+[t:3w_snapper,n:0x02d02a90]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.99677,0,1.16034,0x90c946b1;
+	}
+}
+[t:3w_snapper,n:0x02d02a91]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.825333,0,-0.799347,0x90c946b1;
+	}
+}
+[t:3w_snapper,n:0x02d02911]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.1019,0,-1.75574,0x9e19f81d;
+	}
+}
+[t:3w_snapper,n:0x02d02a8c]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.18599,0,1.70926,0x9e19f81d;
+	}
+}
+[t:3w_snapper,n:0x02d02a8d]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.53528,0,1.95706,0x584b2af5;
+	}
+}
+[t:3w_snapper,n:0x02d02a87]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.840332,0,0.317719,0x033f2a9e;
+	}
+}
+[t:3w_snapper,n:0x02d02a88]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.309601,0,0.43071,0x033f2a9e;
+	}
+}
+[t:3w_snapper,n:0x02d02a85]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.69751,-5.95799,-5.2205,0xa2e83e63;
+	}
+}
+[t:3w_snapper,n:0x02d02a86]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.99774,-5.99969,-4.7112,0xa2e83e63;
+	}
+}
+[t:3w_snapper,n:0x02d02a84]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.49614,-5.94945,-5.50461,0xa00b8e99;
+	}
+}
+[t:3w_snapper,n:0x02d02a89]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.15982,-5.91656,-5.18225,0xa00b8e99;
+	}
+}
+[t:3w_snapper,n:0x02d02a8a]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.632339,-5.94588,-5.46964,0xa00b8e99;
+	}
+}
+[t:3w_snapper,n:0x02d02a8b]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.64827,-5.9811,-5.81482,0xa00b8e99;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b87]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.05714,0,-3.91974,0xb8744be2;
+	}
+}
+[t:3w_swamp_witch,n:0x02d001a8]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.32541,-1.85544,-2.08766,0x74415906;
 	}
 }
 [t:3w_snapper,n:0x02d00167]
@@ -3930,24 +6123,6 @@
 	[placement]
 	{
 	  p position = -0.990982,0.495491,2.94733,0x1f6f5319;
-	}
-}
-[t:chicken_white_super,n:0x02d00178]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.66718,0.725774,1.90005,0x1f6f5319;
 	}
 }
 [t:3w_snapper,n:0x02d02a70]
@@ -4436,6 +6611,34 @@
 	  p position = 1.7178,-0.677266,-1.72226,0x962802d7;
 	}
 }
+[t:2w_chicken_white_super,n:0x02d02ec3]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -2.05043,0.951188,2.39627,0x962802d7;
+	}
+}
 [t:chicken_white_super,n:0x02d00170]
 {
 	[aspect]
@@ -4452,24 +6655,6 @@
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
 	  p position = 2.79211,0,-1.8231,0xeec19f47;
-	}
-}
-[t:chicken_white_super,n:0x02d00171]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -2.92435,0.89713,2.2554,0x86f3b17b;
 	}
 }
 [t:3w_snapper,n:0x02d02a67]
@@ -4697,24 +6882,6 @@
 	  p position = 1.42,-0.434078,-1.21156,0x96ef0043;
 	}
 }
-[t:chicken_white_super,n:0x02d00172]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -1.16531,0.67173,1.6075,0x96ef0043;
-	}
-}
 [t:chicken_white_super,n:0x02d00173]
 {
 	[aspect]
@@ -4911,392 +7078,32 @@
 	  p position = -3.01054,-1,-3.29437,0xc567d733;
 	}
 }
-[t:3w_snapper,n:0x02d02911]
+[t:2w_chicken_white_super,n:0x02d02ec4]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
 	}
 	[attack]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
 	}
 	[placement]
 	{
-	  p position = 1.1019,0,-1.75574,0x9e19f81d;
-	}
-}
-[t:3w_snapper,n:0x02d02a8c]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.18599,0,1.70926,0x9e19f81d;
-	}
-}
-[t:2w_swamp_witch,n:0x02d001a8]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.32541,-1.85544,-2.08766,0x74415906;
-	}
-}
-[t:3w_snapper,n:0x02d02a85]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.69751,-5.95799,-5.2205,0xa2e83e63;
-	}
-}
-[t:3w_snapper,n:0x02d02a86]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.99774,-5.99969,-4.7112,0xa2e83e63;
-	}
-}
-[t:3w_snapper,n:0x02d02a84]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.49614,-5.94945,-5.50461,0xa00b8e99;
-	}
-}
-[t:3w_snapper,n:0x02d02a89]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.15982,-5.91656,-5.18225,0xa00b8e99;
-	}
-}
-[t:3w_snapper,n:0x02d02a8a]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.632339,-5.94588,-5.46964,0xa00b8e99;
-	}
-}
-[t:3w_snapper,n:0x02d02a8b]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.64827,-5.9811,-5.81482,0xa00b8e99;
-	}
-}
-[t:2w_swamp_witch,n:0x02d001aa]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.47208,0,-0.794525,0x8ca57d1e;
-	}
-}
-[t:2w_swamp_witch,n:0x02d001ab]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.01773,0,1.5419,0x8ca57d1e;
-	}
-}
-[t:2w_swamp_witch,n:0x02d001ae]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.58337,0,1.16449,0xcbc5f6cf;
-	}
-}
-[t:2w_swamp_witch,n:0x02d001af]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.0653992,0,-0.435944,0xcbc5f6cf;
-	}
-}
-[t:2w_swamp_witch,n:0x02d001ac]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-5.96046e-008,0,1;
-	  p position = 2.40146,-12,-5.80328,0xdf6a256d;
-	}
-}
-[t:2w_swamp_witch,n:0x02d001ad]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.51349,0,-2.9417,0xe44ecf57;
-	}
-}
-[t:2w_swamp_witch,n:0x02d001a4]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.30406,0,1.75909,0x2c11acfa;
-	}
-}
-[t:2w_swamp_witch,n:0x02d001a5]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.28604,0,0.40033,0xb6e58d94;
-	}
-}
-[t:2w_swamp_witch,n:0x02d0019e]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.19887,2,-0.371948,0x1ed7206a;
-	}
-}
-[t:2w_swamp_witch,n:0x02d0019f]
-{
-	[aspect]
-	{
-	  f experience_value = 4.1022e+007;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.60847,2,0.259888,0x9a2f9413;
-	}
-}
-[t:3w_snapper,n:0x02d0290f]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.11786,0,-3.17729,0x1b60acd6;
-	}
-}
-[t:3w_snapper,n:0x02d02a8e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.47261,0,-0.415283,0x90c946b1;
-	}
-}
-[t:3w_snapper,n:0x02d02a8f]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.26007,0,0.754059,0x90c946b1;
-	}
-}
-[t:3w_snapper,n:0x02d02a90]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.99677,0,1.16034,0x90c946b1;
-	}
-}
-[t:3w_snapper,n:0x02d02a91]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 0.825333,0,-0.799347,0x90c946b1;
-	}
-}
-[t:3w_snapper,n:0x02d02a8d]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.53528,0,1.95706,0x584b2af5;
-	}
-}
-[t:3w_snapper,n:0x02d02a87]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.840332,0,0.317719,0x033f2a9e;
-	}
-}
-[t:3w_snapper,n:0x02d02a88]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.309601,0,0.43071,0x033f2a9e;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -3.27492,1,3.56808,0x0e97d7d4;
 	}
 }
 [t:3w_snapper,n:0x02d0015e]
@@ -5593,11 +7400,119 @@
 	  p position = -1.87767,0,-1.2749,0xbc03961c;
 	}
 }
-[t:2w_swamp_witch,n:0x02d00198]
+[t:3w_swamp_witch,n:0x02d02b81]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.93845,0,-1.24489,0xa1dfee65;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b82]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.29532,0,-1.41241,0xa1dfee65;
+	}
+}
+[t:3w_swamp_witch,n:0x02d00198]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5605,11 +7520,39 @@
 	  p position = -2.0621,0,-0.376556,0x9623f5b2;
 	}
 }
-[t:2w_swamp_witch,n:0x02d00199]
+[t:3w_swamp_witch,n:0x02d00199]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5617,11 +7560,79 @@
 	  p position = 3.09732,0,1.22406,0x9623f5b2;
 	}
 }
-[t:2w_swamp_witch,n:0x02d0019a]
+[t:3w_swamp_witch,n:0x02d02b80]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.51706,3.95679,2.59698,0x5385691d;
+	}
+}
+[t:3w_swamp_witch,n:0x02d0019a]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5629,11 +7640,39 @@
 	  p position = 2.83704,0,0.879333,0x23d06b47;
 	}
 }
-[t:2w_swamp_witch,n:0x02d0019b]
+[t:3w_swamp_witch,n:0x02d0019b]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5641,11 +7680,39 @@
 	  p position = -2.70053,0,1.46402,0x23d06b47;
 	}
 }
-[t:2w_swamp_witch,n:0x02d001a2]
+[t:3w_swamp_witch,n:0x02d001a2]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5653,11 +7720,39 @@
 	  p position = -3.15488,-1,-3.26367,0x7fbe8207;
 	}
 }
-[t:2w_swamp_witch,n:0x02d001a0]
+[t:3w_swamp_witch,n:0x02d001a0]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5665,11 +7760,39 @@
 	  p position = -1.85876,0,-3.63177,0x4b182bf9;
 	}
 }
-[t:2w_swamp_witch,n:0x02d001a1]
+[t:3w_swamp_witch,n:0x02d001a1]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5677,11 +7800,159 @@
 	  p position = 1.67526,0,-1.05054,0x1e47695e;
 	}
 }
-[t:2w_swamp_witch,n:0x02d001a6]
+[t:3w_swamp_witch,n:0x02d02b79]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.246216,-1.05142,-3.48582,0x7d826062;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b78]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.227539,0,-2.5643,0x88ec0a40;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b8a]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.375519,0,-0.546539,0xab705485;
+	}
+}
+[t:3w_swamp_witch,n:0x02d001a6]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5689,11 +7960,39 @@
 	  p position = -3.52582,0,3.46295,0xf3f93501;
 	}
 }
-[t:2w_swamp_witch,n:0x02d001a7]
+[t:3w_swamp_witch,n:0x02d001a7]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5701,11 +8000,358 @@
 	  p position = 0.782364,0,-3.70459,0xf3f93501;
 	}
 }
-[t:2w_swamp_witch,n:0x02d0019c]
+[t:3w_swamp_witch,n:0x02d02b8b]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.94341,0,2.51163,0x0cb78d20;
+	}
+}
+[t:3w_swamp_witch,n:0x02d001ad]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.51349,0,-2.9417,0xe44ecf57;
+	}
+}
+[t:3w_swamp_witch,n:0x02d001ac]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  p position = 2.40146,-12,-5.80328,0xdf6a256d;
+	}
+}
+[t:3w_swamp_witch,n:0x02d001ae]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.58337,0,1.16449,0xcbc5f6cf;
+	}
+}
+[t:3w_swamp_witch,n:0x02d001af]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.0653992,0,-0.435944,0xcbc5f6cf;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b7f]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.37811,-1.93781,-3.686,0x074de6bf;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b7a]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.25339,0,-0.625549,0x15361b20;
+	}
+}
+[t:3w_swamp_witch,n:0x02d02b7e]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.71637,0,-0.810196,0x15361b20;
+	}
+}
+[t:3w_swamp_witch,n:0x02d0019c]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5713,11 +8359,39 @@
 	  p position = -2.29156,-1.2,3.82191,0xc71a4ad5;
 	}
 }
-[t:2w_swamp_witch,n:0x02d001a3]
+[t:3w_swamp_witch,n:0x02d001a3]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5725,11 +8399,39 @@
 	  p position = 2.02094,0,-1.50584,0x7e792650;
 	}
 }
-[t:2w_swamp_witch,n:0x02d0019d]
+[t:3w_swamp_witch,n:0x02d0019d]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5737,11 +8439,79 @@
 	  p position = 0.0710449,0,3.43477,0x709a4fac;
 	}
 }
-[t:2w_swamp_witch,n:0x02d00195]
+[t:3w_swamp_witch,n:0x02d02b83]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.789917,0,2.51913,0x709a4fac;
+	}
+}
+[t:3w_swamp_witch,n:0x02d00195]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5749,11 +8519,39 @@
 	  p position = -3.17598,3.92481,1.43307,0x33037a3a;
 	}
 }
-[t:2w_swamp_witch,n:0x02d00196]
+[t:3w_swamp_witch,n:0x02d00196]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
@@ -5761,16 +8559,84 @@
 	  p position = 0.782837,0,-1.79762,0x4008caa5;
 	}
 }
-[t:2w_swamp_witch,n:0x02d00197]
+[t:3w_swamp_witch,n:0x02d02b84]
 {
 	[aspect]
 	{
 	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.495163,0,-0.525665,0x3b3a24b6;
+	}
+}
+[t:3w_swamp_witch,n:0x02d00197]
+{
+	[aspect]
+	{
+	  f experience_value = 4.1022e+007;
+	  f life = 1772.3;
+	  f mana = 23200;
+	  f max_life = 1772.3;
+	  f max_mana = 23200;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 50;
+	  f max_move_velocity = 50;
+	  f min_move_velocity = 50;
+	}
+	[common]
+	{
+		screen_name = "Witch";
+	}
+	[defend]
+	{
+	  f defense = 931.7;
+	}
+	[mind]
+	{
+		disposition_orders = ad_offensive;
+	  i flee_count = 10000;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.24106,0,-1.17669,0x237760c7;
+	  p position = -0.241058,0,-1.1767,0x237760c7;
 	}
 }
 [t:3w_snapper,n:0x02d0290b]
@@ -5966,22 +8832,36 @@
 	  p position = -1.95055,0,0.625916,0x61058a55;
 	}
 }
-[t:chicken_white_super,n:0x02d00082]
+[t:3w_snapper,n:0x02d02f0f]
 {
 	[aspect]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
+	  f experience_value = 2.59308e+007;
 	}
-	[defend]
+	[attack]
 	{
-	  f defense = 745;
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -1.37999,0,-2.19141,0x75eb3579;
+	  p position = -1.56648,0,-3.00427,0x3824daee;
+	}
+}
+[t:3w_snapper,n:0x02d02f0e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.0118,0,-2.29694,0x97afe10e;
 	}
 }
 [t:chicken_white_super,n:0x02d00083]
@@ -6018,6 +8898,34 @@
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
 	  p position = 3.58305,0,0.471237,0x75eb3579;
+	}
+}
+[t:2w_chicken_white_super,n:0x02d02ec2]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 1.87561,0,0.567032,0x75eb3579;
 	}
 }
 [t:3w_snapper,n:0x02d0012c]
@@ -6435,6 +9343,11 @@
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
 	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
 	[common]
 	{
 		screen_name = "Chickenmaster";
@@ -6452,24 +9365,6 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -3.54187,5.84197,-44.1438,0x921a126d;
-	}
-}
-[t:chicken_white_super,n:0x02d0007a]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 11.4926,6.20101,-48.0056,0x9723659d;
 	}
 }
 [t:chicken_white_super,n:0x02d0007b]
@@ -6508,6 +9403,34 @@
 	  p position = 15.0497,5.76401,-49.0131,0x9723659d;
 	}
 }
+[t:2w_chicken_white_super,n:0x02d02ec1]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 14.1126,5.92568,-49.6336,0x9723659d;
+	}
+}
 [t:chicken_white_super,n:0x02d00080]
 {
 	[aspect]
@@ -6544,7 +9467,7 @@
 	  p position = 0.638992,0,-0.805328,0x624d2af1;
 	}
 }
-[t:3w_snapper,n:0x02d00113]
+[t:3w_snapper,n:0x02d02ee9]
 {
 	[aspect]
 	{
@@ -6557,10 +9480,10 @@
 	}
 	[placement]
 	{
-	  p position = 1.62741,0,-0.0690002,0x3f8f75d7;
+	  p position = 1.09016,0,0.642822,0x0b38b987;
 	}
 }
-[t:3w_snapper,n:0x02d00114]
+[t:3w_snapper,n:0x02d02eea]
 {
 	[aspect]
 	{
@@ -6573,10 +9496,10 @@
 	}
 	[placement]
 	{
-	  p position = -1.80768,0,-0.148422,0x7d85063a;
+	  p position = -3.1469,0,0.178925,0x0b38b987;
 	}
 }
-[t:3w_snapper,n:0x02d00115]
+[t:3w_snapper,n:0x02d00106]
 {
 	[aspect]
 	{
@@ -6589,10 +9512,10 @@
 	}
 	[placement]
 	{
-	  p position = -3.23843,0,2.0816,0x6a2d0a9b;
+	  p position = -1.36203,0,0.251091,0x02b5d567;
 	}
 }
-[t:3w_snapper,n:0x02d02a49]
+[t:3w_snapper,n:0x02d02ee2]
 {
 	[aspect]
 	{
@@ -6605,10 +9528,10 @@
 	}
 	[placement]
 	{
-	  p position = -1.72403,0,-0.163269,0x6a2d0a9b;
+	  p position = -0.986816,0,1.21867,0x02b5d567;
 	}
 }
-[t:3w_snapper,n:0x02d02a4a]
+[t:3w_snapper,n:0x02d02eee]
 {
 	[aspect]
 	{
@@ -6621,10 +9544,10 @@
 	}
 	[placement]
 	{
-	  p position = 0.0744324,0,-0.852158,0x6a2d0a9b;
+	  p position = 2.43776,0,-0.0733948,0x90ffc032;
 	}
 }
-[t:3w_snapper,n:0x02d02a4b]
+[t:3w_snapper,n:0x02d02ef5]
 {
 	[aspect]
 	{
@@ -6637,10 +9560,10 @@
 	}
 	[placement]
 	{
-	  p position = 1.18306,0,0.149475,0x6a2d0a9b;
+	  p position = -1.32982,0,-0.309677,0x90ffc032;
 	}
 }
-[t:3w_snapper,n:0x02d02a4c]
+[t:3w_snapper,n:0x02d02ef7]
 {
 	[aspect]
 	{
@@ -6653,28 +9576,10 @@
 	}
 	[placement]
 	{
-	  p position = 0.981491,0,-0.906097,0x6a2d0a9b;
+	  p position = 1.73885,0,-1.55177,0x90ffc032;
 	}
 }
-[t:chicken_white_super,n:0x02d00073]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.02521,0,2.46836,0x168441b0;
-	}
-}
-[t:3w_snapper,n:0x02d00123]
+[t:3w_snapper,n:0x02d02ef8]
 {
 	[aspect]
 	{
@@ -6687,10 +9592,10 @@
 	}
 	[placement]
 	{
-	  p position = -1.59982,0,-0.835258,0xc7daf74f;
+	  p position = -3.88904,0,0.99469,0x8c21c8f6;
 	}
 }
-[t:3w_snapper,n:0x02d00124]
+[t:3w_snapper,n:0x02d00108]
 {
 	[aspect]
 	{
@@ -6703,182 +9608,10 @@
 	}
 	[placement]
 	{
-	  p position = -3.00452,0,-1.17497,0xc7daf74f;
+	  p position = -0.364182,0,-2.93312,0x406ae7b3;
 	}
 }
-[t:chicken_white_super,n:0x02d00072]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -2.14427,0,-0.625443,0x59ef2f66;
-	}
-}
-[t:chicken_white_super,n:0x02d00071]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.475639,0,3.38744,0x38938b99;
-	}
-}
-[t:chicken_white_super,n:0x02d02926]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.72429,0,3.96979,0x4be1f898;
-	}
-}
-[t:chicken_white_super,n:0x02d02927]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.93501,0,1.40671,0xc242bc43;
-	}
-}
-[t:chicken_white_super,n:0x02d02925]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 2.77952,0,-0.329346,0x40e86050;
-	}
-}
-[t:chicken_white_super,n:0x02d0006e]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -1.0354,0,1.24985,0xc2fe6555;
-	}
-}
-[t:chicken_white_super,n:0x02d00070]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.95311,0,-0.140106,0x71adfaa7;
-	}
-}
-[t:chicken_white_super,n:0x02d0006f]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -1.31211,0,2.95145,0x58dafcee;
-	}
-}
-[t:chicken_red_super,n:0x02d00058]
-{
-	[aspect]
-	{
-	  f experience_value = 8.71112e+007;
-	  f life = 4000;
-	  f max_life = 4000;
-	  f scale_multiplier = 4.5;
-	}
-	[common]
-	{
-		screen_name = "Chickenmaster";
-	}
-	[defend]
-	{
-	  f defense = 600;
-	}
-	[mind]
-	{
-	  f ranged_engage_range = 18;
-	  f sight_range = 20;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 1.86943,0,-2.22782,0xff0b080a;
-	}
-}
-[t:3w_snapper,n:0x02d00125]
+[t:3w_snapper,n:0x02d02a28]
 {
 	[aspect]
 	{
@@ -6891,10 +9624,10 @@
 	}
 	[placement]
 	{
-	  p position = -0.93306,0,-0.169373,0xb589db89;
+	  p position = 3.21129,0,0.51606,0x406ae7b3;
 	}
 }
-[t:3w_snapper,n:0x02d00126]
+[t:3w_snapper,n:0x02d02ef4]
 {
 	[aspect]
 	{
@@ -6907,373 +9640,10 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,0;
-	  p position = -0.599136,0,-1.44989,0xb589db89;
+	  p position = -3.06689,0,-0.250603,0x406ae7b3;
 	}
 }
-[t:chicken_white_super,n:0x02d0006b]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 3.39621,0,-2.21694,0x70656ef6;
-	}
-}
-[t:chicken_white_super,n:0x02d0006a]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -2.07178,0,-0.737251,0xa0fea75e;
-	}
-}
-[t:chicken_white_super,n:0x02d0006c]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.74581,0,-2.88435,0xf33b9cc6;
-	}
-}
-[t:chicken_white_super,n:0x02d0006d]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.423016,0,-0.219833,0x0cd8485b;
-	}
-}
-[t:chicken_white_super,n:0x02d00066]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -1.94836,0,-1.56315,0x3281f476;
-	}
-}
-[t:chicken_white_super,n:0x02d00060]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -0.649837,0,-1.81942,0x971dd000;
-	}
-}
-[t:chicken_white_super,n:0x02d00061]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 2.55544,0,-1.62559,0x971dd000;
-	}
-}
-[t:chicken_white_super,n:0x02d00062]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.17186,0,3.05376,0x331979d0;
-	}
-}
-[t:chicken_red_super,n:0x02d02aad]
-{
-	[aspect]
-	{
-	  f experience_value = 8.71112e+007;
-	  f life = 4000;
-	  f max_life = 4000;
-	  f scale_multiplier = 4.5;
-	}
-	[common]
-	{
-		screen_name = "Chickenmaster";
-	}
-	[defend]
-	{
-	  f defense = 600;
-	}
-	[mind]
-	{
-	  f ranged_engage_range = 18;
-	  f sight_range = 20;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.6333,0,3.81635,0x331979d0;
-	}
-}
-[t:chicken_white_super,n:0x02d02921]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 3.7127,0,-3.59117,0x98bb20de;
-	}
-}
-[t:chicken_white_super,n:0x02d00023]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 2.0577,0,1.39959,0xd1503030;
-	}
-}
-[t:chicken_white_super,n:0x02d00025]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.42049,0,-1.53227,0xd1503030;
-	}
-}
-[t:chicken_red_super,n:0x02d02aa7]
-{
-	[aspect]
-	{
-	  f experience_value = 8.71112e+007;
-	  f life = 4000;
-	  f max_life = 4000;
-	  f scale_multiplier = 4.5;
-	}
-	[common]
-	{
-		screen_name = "Chickenmaster";
-	}
-	[defend]
-	{
-	  f defense = 600;
-	}
-	[mind]
-	{
-	  f ranged_engage_range = 18;
-	  f sight_range = 20;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 2.20967,0,-0.980965,0xd1503030;
-	}
-}
-[t:chicken_white_super,n:0x02d00024]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.62751,0,-3.20529,0xc6605b32;
-	}
-}
-[t:chicken_white_super,n:0x02d00026]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -1.52454,-2,-5.09206,0x9e950c2e;
-	}
-}
-[t:chicken_white_super,n:0x02d00027]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -1.90807,-2,-3.53799,0x9e950c2e;
-	}
-}
-[t:chicken_white_super,n:0x02d00028]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -2.53206,0,0.73568,0x6773b580;
-	}
-}
-[t:chicken_white_super,n:0x02d00053]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 2.88461,0,-0.492142,0x4a1b848d;
-	}
-}
-[t:chicken_white_super,n:0x02d00054]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.33728,0,0.74144,0x4a1b848d;
-	}
-}
-[t:3w_snapper,n:0x02d0010a]
+[t:3w_snapper,n:0x02d00107]
 {
 	[aspect]
 	{
@@ -7286,10 +9656,10 @@
 	}
 	[placement]
 	{
-	  p position = -3.02,-0.192371,-0.384743,0x1149f0e2;
+	  p position = -3.10699,0,3.47105,0x5a329307;
 	}
 }
-[t:3w_snapper,n:0x02d0010d]
+[t:3w_snapper,n:0x02d00109]
 {
 	[aspect]
 	{
@@ -7302,169 +9672,7 @@
 	}
 	[placement]
 	{
-	  p position = -3.06038,-0.455399,-0.910797,0x1149f0e2;
-	}
-}
-[t:3w_snapper,n:0x02d02a0c]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.67775,-0.514057,-1.02811,0x1149f0e2;
-	}
-}
-[t:3w_snapper,n:0x02d02a0d]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.90164,-0.550495,-1.10099,0x1149f0e2;
-	}
-}
-[t:3w_snapper,n:0x02d02a0f]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.91364,-1,-2.56739,0x1149f0e2;
-	}
-}
-[t:3w_snapper,n:0x02d02a10]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.98358,-1,-2.05387,0x1149f0e2;
-	}
-}
-[t:chicken_white_super,n:0x02d00055]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 2.20868,1,3.66846,0x6dc996f7;
-	}
-}
-[t:3w_snapper,n:0x02d00112]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 0.975204,0.258766,0.617661,0x6dc996f7;
-	}
-}
-[t:3w_snapper,n:0x02d02a0e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.87965,-1,-3.17492,0x6dc996f7;
-	}
-}
-[t:3w_snapper,n:0x02d02a14]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.21477,0,-2.08436,0x0c42119c;
-	}
-}
-[t:3w_snapper,n:0x02d02a15]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.0740204,0,-2.71761,0x0c42119c;
-	}
-}
-[t:3w_snapper,n:0x02d02a16]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 0.919891,0,-0.778915,0x0c42119c;
+	  p position = 0.893799,0,3.54807,0x5a329307;
 	}
 }
 [t:3w_snapper,n:0x02d02a17]
@@ -7545,102 +9753,6 @@
 	[placement]
 	{
 	  p position = -1.61524,0,3.98296,0xb3c3342f;
-	}
-}
-[t:3w_snapper,n:0x02d02a1c]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.14839,0,1.78545,0x7d8c4203;
-	}
-}
-[t:3w_snapper,n:0x02d02a1d]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -3.26351,0,-2.22459,0x7d8c4203;
-	}
-}
-[t:3w_snapper,n:0x02d00107]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -3.10699,0,3.47105,0x5a329307;
-	}
-}
-[t:3w_snapper,n:0x02d00109]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 0.893799,0,3.54807,0x5a329307;
-	}
-}
-[t:3w_snapper,n:0x02d00108]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.364182,0,-2.93312,0x406ae7b3;
-	}
-}
-[t:3w_snapper,n:0x02d02a28]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.21129,0,0.51606,0x406ae7b3;
 	}
 }
 [t:3w_snapper,n:0x02d02a26]
@@ -7739,7 +9851,7 @@
 	  p position = -2.991,0,0.665092,0x0889968d;
 	}
 }
-[t:3w_snapper,n:0x02d00116]
+[t:3w_snapper,n:0x02d02a1c]
 {
 	[aspect]
 	{
@@ -7752,10 +9864,10 @@
 	}
 	[placement]
 	{
-	  p position = 2.36462,0,2.83939,0x7d5dbb2e;
+	  p position = -1.14839,0,1.78545,0x7d8c4203;
 	}
 }
-[t:3w_snapper,n:0x02d00117]
+[t:3w_snapper,n:0x02d02a1d]
 {
 	[aspect]
 	{
@@ -7768,10 +9880,10 @@
 	}
 	[placement]
 	{
-	  p position = 3.77301,0,1.95479,0x7d5dbb2e;
+	  p position = -3.26351,0,-2.22459,0x7d8c4203;
 	}
 }
-[t:3w_snapper,n:0x02d00119]
+[t:3w_snapper,n:0x02d02a1e]
 {
 	[aspect]
 	{
@@ -7784,10 +9896,10 @@
 	}
 	[placement]
 	{
-	  p position = 1.98578,0,-0.365143,0x7d5dbb2e;
+	  p position = -3.6358,0,3.41653,0x59e1e918;
 	}
 }
-[t:3w_snapper,n:0x02d00100]
+[t:3w_snapper,n:0x02d02a1f]
 {
 	[aspect]
 	{
@@ -7800,10 +9912,10 @@
 	}
 	[placement]
 	{
-	  p position = -2.98807,-1,-3.89854,0x79d442a6;
+	  p position = -1.82005,0,-1.95279,0x59e1e918;
 	}
 }
-[t:3w_snapper,n:0x02d00106]
+[t:3w_snapper,n:0x02d02a22]
 {
 	[aspect]
 	{
@@ -7816,10 +9928,10 @@
 	}
 	[placement]
 	{
-	  p position = -1.36203,0,0.251091,0x02b5d567;
+	  p position = -2.56717,0,-0.79525,0x59e1e918;
 	}
 }
-[t:3w_snapper,n:0x02d00105]
+[t:3w_snapper,n:0x02d02a23]
 {
 	[aspect]
 	{
@@ -7832,10 +9944,10 @@
 	}
 	[placement]
 	{
-	  p position = 2.77388,0,3.21526,0xff5ba2d8;
+	  p position = -1.3082,0,-1.4332,0x59e1e918;
 	}
 }
-[t:3w_snapper,n:0x02d00103]
+[t:3w_snapper,n:0x02d02a25]
 {
 	[aspect]
 	{
@@ -7848,805 +9960,7 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.278671,0,0.318054,0xd10f5f96;
-	}
-}
-[t:3w_snapper,n:0x02d00104]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.68614,0,-0.457047,0xd10f5f96;
-	}
-}
-[t:3w_snapper,n:0x02d00102]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.79483,0,2.89187,0xe9b6eeb8;
-	}
-}
-[t:3w_snapper,n:0x02d00101]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -3.44818,0,-0.104393,0x042d40e4;
-	}
-}
-[t:3w_snapper,n:0x02d000ff]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.87437,0,0.383789,0xe17e112c;
-	}
-}
-[t:3w_snapper,n:0x02d00147]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.70349,0,-0.624115,0xb5122acd;
-	}
-}
-[t:3w_snapper,n:0x02d00148]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.24547,0,-1.08734,0xb5122acd;
-	}
-}
-[t:3w_snapper,n:0x02d00144]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.963516,0,-2.31567,0x83d27e06;
-	}
-}
-[t:3w_snapper,n:0x02d00145]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.1553,0,-3.79959,0x83d27e06;
-	}
-}
-[t:3w_snapper,n:0x02d00146]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.89284,0,-2.01804,0x83d27e06;
-	}
-}
-[t:3w_snapper,n:0x02d00118]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.13707,0,-1.90482,0xbc6e9cbc;
-	}
-}
-[t:chicken_white_super,n:0x02d00074]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 3.87286,0,-3.73679,0x446007c9;
-	}
-}
-[t:chicken_white_super,n:0x02d00076]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 1.26193,0,1.00314,0x71a77a7c;
-	}
-}
-[t:chicken_white_super,n:0x02d00075]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 3.98683,0,0.542786,0x26bd58be;
-	}
-}
-[t:3w_snapper,n:0x02d02a3d]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.60303,0,2.04874,0xc3c39cbc;
-	}
-}
-[t:3w_snapper,n:0x02d02a3e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.10731,0,1.57977,0xc3c39cbc;
-	}
-}
-[t:3w_snapper,n:0x02d02a41]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.90228,0,0.441345,0xc3c39cbc;
-	}
-}
-[t:3w_snapper,n:0x02d02a42]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.96877,0,-0.234718,0xc3c39cbc;
-	}
-}
-[t:3w_snapper,n:0x02d02a43]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.23485,0,-1.72409,0xc3c39cbc;
-	}
-}
-[t:3w_snapper,n:0x02d02a44]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.65236,0,-2.20975,0xc3c39cbc;
-	}
-}
-[t:3w_snapper,n:0x02d00127]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.68439,0,-1.76615,0x6d4d9ac1;
-	}
-}
-[t:3w_snapper,n:0x02d00128]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.76389,0,-1.50743,0x6d4d9ac1;
-	}
-}
-[t:3w_snapper,n:0x02d00129]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.7857,0,-0.0239258,0x6d4d9ac1;
-	}
-}
-[t:3w_snapper,n:0x02d0012a]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.71478,0,3.02341,0xe4227aaa;
-	}
-}
-[t:3w_snapper,n:0x02d00120]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.10812,-0.287903,-0.575806,0xbd30b412;
-	}
-}
-[t:3w_snapper,n:0x02d02a31]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.80791,-0.817799,-1.6356,0xbd30b412;
-	}
-}
-[t:3w_snapper,n:0x02d02a32]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.83789,-1,-2.62054,0xbd30b412;
-	}
-}
-[t:3w_snapper,n:0x02d0011e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.764793,-0.042676,0.22345,0xc4f72f4f;
-	}
-}
-[t:3w_snapper,n:0x02d0011f]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.91732,-0.333351,-0.666702,0xc4f72f4f;
-	}
-}
-[t:3w_snapper,n:0x02d00121]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.90759,0.480514,0.967583,0xc4f72f4f;
-	}
-}
-[t:3w_snapper,n:0x02d00122]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.63654,0.0920486,0.274963,0xc4f72f4f;
-	}
-}
-[t:3w_snapper,n:0x02d02a30]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.611771,-0.521256,-0.69986,0xc4f72f4f;
-	}
-}
-[t:3w_snapper,n:0x02d02a33]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.01028,-1.09897,-2.50327,0xc4f72f4f;
-	}
-}
-[t:3w_snapper,n:0x02d02a34]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.53503,-1,-2.69515,0xc4f72f4f;
-	}
-}
-[t:3w_snapper,n:0x02d02a37]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.00482,-0.424664,-0.849327,0xc4f72f4f;
-	}
-}
-[t:3w_snapper,n:0x02d02a38]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.47521,-0.893148,-1.66457,0xc4f72f4f;
-	}
-}
-[t:3w_snapper,n:0x02d02a39]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.25911,-1,-2.71111,0xc4f72f4f;
-	}
-}
-[t:chicken_white_super,n:0x02d00068]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-5.96046e-008;
-	  p position = -1.70564,0,-0.657097,0x3012196e;
-	}
-}
-[t:chicken_white_super,n:0x02d00067]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -2.23112,0,-1.2444,0xedf7a75a;
-	}
-}
-[t:chicken_white_super,n:0x02d00069]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 3.77422,0,-0.0139847,0xedf7a75a;
-	}
-}
-[t:chicken_white_super,n:0x02d00063]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -0.171364,0,-0.491631,0x93422fdc;
-	}
-}
-[t:chicken_white_super,n:0x02d00064]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 2.43203,0,-1.76427,0x93422fdc;
-	}
-}
-[t:chicken_white_super,n:0x02d00065]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -0.185913,0,-2.37292,0x93422fdc;
-	}
-}
-[t:chicken_red_super,n:0x02d02aa9]
-{
-	[aspect]
-	{
-	  f experience_value = 8.71112e+007;
-	  f life = 4000;
-	  f max_life = 4000;
-	  f scale_multiplier = 4.5;
-	}
-	[common]
-	{
-		screen_name = "Chickenmaster";
-	}
-	[defend]
-	{
-	  f defense = 600;
-	}
-	[mind]
-	{
-	  f ranged_engage_range = 18;
-	  f sight_range = 20;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -5.27314,0.55,1.08829,0x51ac9052;
-	}
-}
-[t:chicken_red_super,n:0x02d02aaa]
-{
-	[aspect]
-	{
-	  f experience_value = 8.71112e+007;
-	  f life = 4000;
-	  f max_life = 4000;
-	  f scale_multiplier = 4.5;
-	}
-	[common]
-	{
-		screen_name = "Chickenmaster";
-	}
-	[defend]
-	{
-	  f defense = 600;
-	}
-	[mind]
-	{
-	  f ranged_engage_range = 18;
-	  f sight_range = 20;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.1042,0,0.50032,0x545a7be1;
-	}
-}
-[t:chicken_white_super,n:0x02d00056]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -0.67627,0.270508,2.03536,0x16a74956;
-	}
-}
-[t:3w_snapper,n:0x02d00110]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.183502,0.0734009,1.37359,0x16a74956;
-	}
-}
-[t:3w_snapper,n:0x02d00111]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 0.128891,-0.0678374,0.519089,0x16a74956;
+	  p position = 2.37039,0,0.567993,0x59e1e918;
 	}
 }
 [t:3w_snapper,n:0x02d0010b]
@@ -8761,7 +10075,7 @@
 	  p position = -2.21954,-1,-3.19863,0x759ebf1e;
 	}
 }
-[t:3w_snapper,n:0x02d02a1e]
+[t:3w_snapper,n:0x02d00110]
 {
 	[aspect]
 	{
@@ -8774,10 +10088,10 @@
 	}
 	[placement]
 	{
-	  p position = -3.6358,0,3.41653,0x59e1e918;
+	  p position = -0.183502,0.0734009,1.37359,0x16a74956;
 	}
 }
-[t:3w_snapper,n:0x02d02a1f]
+[t:3w_snapper,n:0x02d00111]
 {
 	[aspect]
 	{
@@ -8790,10 +10104,10 @@
 	}
 	[placement]
 	{
-	  p position = -1.82005,0,-1.95279,0x59e1e918;
+	  p position = 0.128891,-0.0678374,0.519089,0x16a74956;
 	}
 }
-[t:3w_snapper,n:0x02d02a22]
+[t:3w_snapper,n:0x02d0010a]
 {
 	[aspect]
 	{
@@ -8806,10 +10120,10 @@
 	}
 	[placement]
 	{
-	  p position = -2.56717,0,-0.79525,0x59e1e918;
+	  p position = -3.02,-0.192371,-0.384743,0x1149f0e2;
 	}
 }
-[t:3w_snapper,n:0x02d02a23]
+[t:3w_snapper,n:0x02d0010d]
 {
 	[aspect]
 	{
@@ -8822,10 +10136,10 @@
 	}
 	[placement]
 	{
-	  p position = -1.3082,0,-1.4332,0x59e1e918;
+	  p position = -3.06038,-0.455399,-0.910797,0x1149f0e2;
 	}
 }
-[t:3w_snapper,n:0x02d02a25]
+[t:3w_snapper,n:0x02d02a0c]
 {
 	[aspect]
 	{
@@ -8838,10 +10152,10 @@
 	}
 	[placement]
 	{
-	  p position = 2.37039,0,0.567993,0x59e1e918;
+	  p position = 2.67775,-0.514057,-1.02811,0x1149f0e2;
 	}
 }
-[t:3w_snapper,n:0x02d02a20]
+[t:3w_snapper,n:0x02d02a0d]
 {
 	[aspect]
 	{
@@ -8854,10 +10168,10 @@
 	}
 	[placement]
 	{
-	  p position = -2.77,0,3.30936,0x853a9626;
+	  p position = 3.90164,-0.550495,-1.10099,0x1149f0e2;
 	}
 }
-[t:3w_snapper,n:0x02d02a21]
+[t:3w_snapper,n:0x02d02a0f]
 {
 	[aspect]
 	{
@@ -8870,10 +10184,10 @@
 	}
 	[placement]
 	{
-	  p position = -3.56879,0,3.63284,0x853a9626;
+	  p position = 2.91364,-1,-2.56739,0x1149f0e2;
 	}
 }
-[t:3w_snapper,n:0x02d02a24]
+[t:3w_snapper,n:0x02d02a10]
 {
 	[aspect]
 	{
@@ -8886,250 +10200,365 @@
 	}
 	[placement]
 	{
-	  p position = 0.835548,0,3.22422,0x853a9626;
+	  p position = -2.98358,-1,-2.05387,0x1149f0e2;
 	}
 }
-[t:3w_snapper,n:0x02d0011a]
+[t:3w_chicken_white_super,n:0x02d02f28]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 9.71112e+007;
+	  f life = 8389.4;
+	  f max_life = 8389.4;
+	  f scale_multiplier = 5.75;
 	}
 	[attack]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 100;
+	}
+	[common]
+	{
+		screen_name = "Huge Chicken";
+	}
+	[defend]
+	{
+	  f defense = 1047.4;
 	}
 	[placement]
 	{
-	  p position = 1.13269,0.522734,3.93914,0xa82fa55c;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 0.418503,0,1.6246,0xa09a2a51;
 	}
 }
-[t:3w_snapper,n:0x02d0011b]
+[t:chicken_red_super,n:0x02d02aaa]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 8.71112e+007;
+	  f life = 4000;
+	  f max_life = 4000;
+	  f scale_multiplier = 4.5;
 	}
 	[attack]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
+	[common]
+	{
+		screen_name = "Chickenmaster";
+	}
+	[defend]
+	{
+	  f defense = 600;
+	}
+	[mind]
+	{
+	  f ranged_engage_range = 18;
+	  f sight_range = 20;
 	}
 	[placement]
 	{
-	  p position = 0.329781,0.130961,1.2763,0xa82fa55c;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.1042,0,0.50032,0x545a7be1;
 	}
 }
-[t:3w_snapper,n:0x02d0011c]
+[t:chicken_red_super,n:0x02d02aa9]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 8.71112e+007;
+	  f life = 4000;
+	  f max_life = 4000;
+	  f scale_multiplier = 4.5;
 	}
 	[attack]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
+	[common]
+	{
+		screen_name = "Chickenmaster";
+	}
+	[defend]
+	{
+	  f defense = 600;
+	}
+	[mind]
+	{
+	  f ranged_engage_range = 18;
+	  f sight_range = 20;
 	}
 	[placement]
 	{
-	  p position = -0.665344,-0.332672,2.60809,0xa82fa55c;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -5.27314,0.55,1.08829,0x51ac9052;
 	}
 }
-[t:3w_snapper,n:0x02d02a47]
+[t:chicken_white_super,n:0x02d00063]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
 	}
-	[attack]
+	[defend]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f defense = 745;
 	}
 	[placement]
 	{
-	  p position = 3.92514,0,-3.55597,0xa33d661d;
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -0.171364,0,-0.491631,0x93422fdc;
 	}
 }
-[t:3w_snapper,n:0x02d02a3f]
+[t:chicken_white_super,n:0x02d00064]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
 	}
-	[attack]
+	[defend]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f defense = 745;
 	}
 	[placement]
 	{
-	  p position = 1.70583,0,3.14875,0x6680689f;
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 2.43203,0,-1.76427,0x93422fdc;
 	}
 }
-[t:3w_snapper,n:0x02d02a40]
+[t:chicken_white_super,n:0x02d00065]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
 	}
-	[attack]
+	[defend]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f defense = 745;
 	}
 	[placement]
 	{
-	  p position = 2.2044,0,2.52771,0x6680689f;
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -0.185913,0,-2.37292,0x93422fdc;
 	}
 }
-[t:3w_snapper,n:0x02d02a45]
+[t:chicken_white_super,n:0x02d00023]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
 	}
-	[attack]
+	[defend]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f defense = 745;
 	}
 	[placement]
 	{
-	  p position = -1.81465,0,2.50482,0x6680689f;
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 2.0577,0,1.39959,0xd1503030;
 	}
 }
-[t:3w_snapper,n:0x02d02a46]
+[t:chicken_white_super,n:0x02d00025]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
 	}
-	[attack]
+	[defend]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f defense = 745;
 	}
 	[placement]
 	{
-	  p position = -1.25698,0,2.00598,0x6680689f;
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 1.42049,0,-1.53227,0xd1503030;
 	}
 }
-[t:3w_snapper,n:0x02d02a48]
+[t:chicken_red_super,n:0x02d02aa7]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 8.71112e+007;
+	  f life = 4000;
+	  f max_life = 4000;
+	  f scale_multiplier = 4.5;
 	}
 	[attack]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
+	[common]
+	{
+		screen_name = "Chickenmaster";
+	}
+	[defend]
+	{
+	  f defense = 600;
+	}
+	[mind]
+	{
+	  f ranged_engage_range = 18;
+	  f sight_range = 20;
 	}
 	[placement]
 	{
-	  p position = -3.76157,0,3.84769,0x6680689f;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 2.20967,0,-0.980965,0xd1503030;
 	}
 }
-[t:3w_snapper,n:0x02d0011d]
+[t:chicken_white_super,n:0x02d00024]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
 	}
-	[attack]
+	[defend]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f defense = 745;
 	}
 	[placement]
 	{
-	  p position = 3.83756,-0.464172,-0.928345,0x4dbef2bc;
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.62751,0,-3.20529,0xc6605b32;
 	}
 }
-[t:3w_snapper,n:0x02d02a2d]
+[t:chicken_white_super,n:0x02d00067]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
 	}
-	[attack]
+	[defend]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f defense = 745;
 	}
 	[placement]
 	{
-	  p position = 2.5949,0.389961,0.779922,0x4dbef2bc;
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -2.23112,0,-1.2444,0xedf7a75a;
 	}
 }
-[t:3w_snapper,n:0x02d02a2e]
+[t:2w_chicken_white_super,n:0x02d02ebe]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
 	}
 	[attack]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
 	}
 	[placement]
 	{
-	  p position = 0.0330353,-0.958356,-1.49823,0x4dbef2bc;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 1.40627,0,0.0812149,0xedf7a75a;
 	}
 }
-[t:3w_snapper,n:0x02d02a2f]
+[t:chicken_white_super,n:0x02d0006c]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
 	}
-	[attack]
+	[defend]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f defense = 745;
 	}
 	[placement]
 	{
-	  p position = -2.6291,0.298317,0.596634,0x4dbef2bc;
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -3.74581,0,-2.88435,0xf33b9cc6;
 	}
 }
-[t:3w_snapper,n:0x02d02a35]
+[t:2w_chicken_white_super,n:0x02d02ebf]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
 	}
 	[attack]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
 	}
 	[placement]
 	{
-	  p position = -0.600174,-1.13998,-2.13378,0x4dbef2bc;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -3.12285,0,-2.3204,0xa0fea75e;
 	}
 }
-[t:3w_snapper,n:0x02d02a36]
+[t:2w_chicken_red_super,n:0x02d02ed1]
 {
 	[aspect]
 	{
-	  f experience_value = 2.59308e+007;
+	  f experience_value = 1.01112e+008;
+	  f life = 5257;
+	  f max_life = 5257;
+	  f scale_multiplier = 5;
 	}
 	[attack]
 	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
+	  f damage_bonus_max_cmagic = 222;
+	  f damage_bonus_min_cmagic = 222;
+	}
+	[common]
+	{
+		screen_name = "Chickenleader";
+	}
+	[defend]
+	{
+	  f defense = 700;
 	}
 	[placement]
 	{
-	  p position = 0.590179,-0.849449,-1.38625,0x4dbef2bc;
+	  q orientation = 0,6.46033e-009,0,1;
+	  p position = -1.53618,0,-2.23536,0xa0fea75e;
 	}
 }
-[t:3w_snapper,n:0x02d02a3a]
+[t:3w_snapper,n:0x02d00125]
 {
 	[aspect]
 	{
@@ -9142,10 +10571,10 @@
 	}
 	[placement]
 	{
-	  p position = -3.8884,-1,-3.50557,0x4dbef2bc;
+	  p position = -0.93306,0,-0.169373,0xb589db89;
 	}
 }
-[t:3w_snapper,n:0x02d02a3b]
+[t:3w_snapper,n:0x02d00126]
 {
 	[aspect]
 	{
@@ -9158,10 +10587,11 @@
 	}
 	[placement]
 	{
-	  p position = -0.807297,-1.06137,-3.3863,0x4dbef2bc;
+	  q orientation = 0,1,0,0;
+	  p position = -0.599136,0,-1.44989,0xb589db89;
 	}
 }
-[t:3w_snapper,n:0x02d02a3c]
+[t:3w_snapper,n:0x02d00123]
 {
 	[aspect]
 	{
@@ -9174,7 +10604,361 @@
 	}
 	[placement]
 	{
-	  p position = 2.49098,-1,-3.20175,0x4dbef2bc;
+	  p position = -1.59982,0,-0.835258,0xc7daf74f;
+	}
+}
+[t:3w_snapper,n:0x02d00124]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.00452,0,-1.17497,0xc7daf74f;
+	}
+}
+[t:chicken_white_super,n:0x02d00072]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -2.14427,0,-0.625443,0x59ef2f66;
+	}
+}
+[t:chicken_white_super,n:0x02d00073]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 1.02521,0,2.46836,0x168441b0;
+	}
+}
+[t:chicken_white_super,n:0x02d00071]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.475639,0,3.38744,0x38938b99;
+	}
+}
+[t:chicken_white_super,n:0x02d02926]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -3.72429,0,3.96979,0x4be1f898;
+	}
+}
+[t:chicken_white_super,n:0x02d02927]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 1.93501,0,1.40671,0xc242bc43;
+	}
+}
+[t:chicken_white_super,n:0x02d02925]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 2.77952,0,-0.329346,0x40e86050;
+	}
+}
+[t:2w_chicken_white_super,n:0x02d02ec0]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 1.79523,0,-1.56467,0xc2fe6555;
+	}
+}
+[t:chicken_white_super,n:0x02d00070]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -3.95311,0,-0.140106,0x71adfaa7;
+	}
+}
+[t:chicken_white_super,n:0x02d0006f]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -1.31211,0,2.95145,0x58dafcee;
+	}
+}
+[t:chicken_red_super,n:0x02d00058]
+{
+	[aspect]
+	{
+	  f experience_value = 8.71112e+007;
+	  f life = 4000;
+	  f max_life = 4000;
+	  f scale_multiplier = 4.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
+	[common]
+	{
+		screen_name = "Chickenmaster";
+	}
+	[defend]
+	{
+	  f defense = 600;
+	}
+	[mind]
+	{
+	  f ranged_engage_range = 18;
+	  f sight_range = 20;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.86943,0,-2.22782,0xff0b080a;
+	}
+}
+[t:chicken_white_super,n:0x02d0006d]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.423016,0,-0.219833,0x0cd8485b;
+	}
+}
+[t:chicken_white_super,n:0x02d00066]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -1.94836,0,-1.56315,0x3281f476;
+	}
+}
+[t:chicken_white_super,n:0x02d00061]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 2.55544,0,-1.62559,0x971dd000;
+	}
+}
+[t:chicken_red_super,n:0x02d02aad]
+{
+	[aspect]
+	{
+	  f experience_value = 8.71112e+007;
+	  f life = 4000;
+	  f max_life = 4000;
+	  f scale_multiplier = 4.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
+	[common]
+	{
+		screen_name = "Chickenmaster";
+	}
+	[defend]
+	{
+	  f defense = 600;
+	}
+	[mind]
+	{
+	  f ranged_engage_range = 18;
+	  f sight_range = 20;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 2.86834,0,-1.0324,0x971dd000;
+	}
+}
+[t:3w_chicken_white_super,n:0x02d02f27]
+{
+	[aspect]
+	{
+	  f experience_value = 9.71112e+007;
+	  f life = 8389.4;
+	  f max_life = 8389.4;
+	  f scale_multiplier = 5.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 100;
+	}
+	[common]
+	{
+		screen_name = "Huge Chicken";
+	}
+	[defend]
+	{
+	  f defense = 1047.4;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 1.59811,0,-1.13929,0x971dd000;
+	}
+}
+[t:chicken_white_super,n:0x02d02921]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 3.7127,0,-3.59117,0x98bb20de;
 	}
 }
 [t:chicken_red_super,n:0x02d02aa8]
@@ -9185,6 +10969,11 @@
 	  f life = 4000;
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
 	}
 	[common]
 	{
@@ -9223,22 +11012,32 @@
 	  p position = 2.08072,-1.2,3.84594,0x8d7e8467;
 	}
 }
-[t:chicken_white_super,n:0x02d00034]
+[t:2w_chicken_white_super,n:0x02d02eb8]
 {
 	[aspect]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
 	}
 	[defend]
 	{
-	  f defense = 745;
+	  f defense = 918.9;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.18016,0,-1.65871,0x23c6b525;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -2.93877,0,-1.81435,0x23c6b525;
 	}
 }
 [t:chicken_white_super,n:0x02d00037]
@@ -9717,6 +11516,685 @@
 	  p position = 3.19824,0,3.1692,0x35c1bd07;
 	}
 }
+[t:chicken_white_super,n:0x02d00026]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -1.52454,-2,-5.09206,0x9e950c2e;
+	}
+}
+[t:chicken_white_super,n:0x02d00027]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -1.90807,-2,-3.53799,0x9e950c2e;
+	}
+}
+[t:chicken_white_super,n:0x02d00028]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = -2.53206,0,0.73568,0x6773b580;
+	}
+}
+[t:chicken_white_super,n:0x02d00053]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 2.88461,0,-0.492142,0x4a1b848d;
+	}
+}
+[t:chicken_white_super,n:0x02d00054]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 0.33728,0,0.74144,0x4a1b848d;
+	}
+}
+[t:2w_chicken_white_super,n:0x02d02ebd]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 0.631744,0,-0.986191,0x4a1b848d;
+	}
+}
+[t:3w_snapper,n:0x02d00103]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.278671,0,0.318054,0xd10f5f96;
+	}
+}
+[t:3w_snapper,n:0x02d00104]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.68614,0,-0.457047,0xd10f5f96;
+	}
+}
+[t:3w_snapper,n:0x02d02ee6]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.1731,0,2.23217,0x48248bb0;
+	}
+}
+[t:3w_snapper,n:0x02d02ee7]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.89105,0,-2.30563,0x48248bb0;
+	}
+}
+[t:3w_snapper,n:0x02d00102]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.79483,0,2.89187,0xe9b6eeb8;
+	}
+}
+[t:3w_snapper,n:0x02d02efa]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.90955,0,3.96173,0xfc5774c5;
+	}
+}
+[t:3w_snapper,n:0x02d02efb]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.12965,0,0.586884,0xfc5774c5;
+	}
+}
+[t:3w_snapper,n:0x02d02ee3]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.98756,0,-1.09216,0xeca102ba;
+	}
+}
+[t:3w_snapper,n:0x02d02ee5]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.43724,0,-1.82027,0xeca102ba;
+	}
+}
+[t:3w_snapper,n:0x02d000ff]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.87437,0,0.383789,0xe17e112c;
+	}
+}
+[t:3w_snapper,n:0x02d02ef9]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.27183,0,-1.91818,0xe17e112c;
+	}
+}
+[t:3w_snapper,n:0x02d02efe]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.80329,0,-0.98259,0xe17e112c;
+	}
+}
+[t:3w_snapper,n:0x02d02eff]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.60837,0,0.0846863,0x7b6a33bd;
+	}
+}
+[t:3w_snapper,n:0x02d02f02]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.83069,0,3.4968,0xe782c39f;
+	}
+}
+[t:3w_snapper,n:0x02d02f03]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.405914,0,1.12595,0xe782c39f;
+	}
+}
+[t:3w_snapper,n:0x02d02f05]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.80486,0,-1.1651,0x79e77b3f;
+	}
+}
+[t:3w_snapper,n:0x02d02f06]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.24533,0,-0.360031,0x79e77b3f;
+	}
+}
+[t:3w_snapper,n:0x02d00144]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.963516,0,-2.31567,0x83d27e06;
+	}
+}
+[t:3w_snapper,n:0x02d00145]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.1553,0,-3.79959,0x83d27e06;
+	}
+}
+[t:3w_snapper,n:0x02d00146]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.89284,0,-2.01804,0x83d27e06;
+	}
+}
+[t:3w_snapper,n:0x02d02f04]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.07945,0,-3.79497,0x83d27e06;
+	}
+}
+[t:3w_snapper,n:0x02d02f08]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.25894,0,2.7218,0x83d27e06;
+	}
+}
+[t:3w_snapper,n:0x02d02f0c]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.665039,0,3.94005,0x83d27e06;
+	}
+}
+[t:3w_snapper,n:0x02d02f07]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.04048,0,-2.46825,0x188dd04c;
+	}
+}
+[t:3w_snapper,n:0x02d02f0d]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.5567,0,-2.75775,0x188dd04c;
+	}
+}
+[t:3w_snapper,n:0x02d02efd]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.36337,0,-3.57658,0x068b427b;
+	}
+}
+[t:3w_snapper,n:0x02d00101]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.44818,0,-0.104393,0x042d40e4;
+	}
+}
+[t:3w_snapper,n:0x02d02efc]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.24539,0,-3.93602,0x042d40e4;
+	}
+}
+[t:3w_snapper,n:0x02d00105]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.77388,0,3.21526,0xff5ba2d8;
+	}
+}
+[t:3w_snapper,n:0x02d02ee4]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.26746,0,-2.38622,0xff5ba2d8;
+	}
+}
+[t:3w_snapper,n:0x02d02a14]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.21477,0,-2.08436,0x0c42119c;
+	}
+}
+[t:3w_snapper,n:0x02d02a15]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.0740204,0,-2.71761,0x0c42119c;
+	}
+}
+[t:3w_snapper,n:0x02d02a16]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.919891,0,-0.778915,0x0c42119c;
+	}
+}
+[t:3w_snapper,n:0x02d00112]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.975204,0.258766,0.617661,0x6dc996f7;
+	}
+}
+[t:3w_snapper,n:0x02d02a0e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.87965,-1,-3.17492,0x6dc996f7;
+	}
+}
 [t:chicken_red_super,n:0x02d02aae]
 {
 	[aspect]
@@ -9725,6 +12203,11 @@
 	  f life = 4000;
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
 	}
 	[common]
 	{
@@ -9790,6 +12273,11 @@
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
 	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
 	[common]
 	{
 		screen_name = "Chickenmaster";
@@ -9809,7 +12297,35 @@
 	  p position = -0.398201,0,-1.36581,0xe7081772;
 	}
 }
-[t:chicken_white_super,n:0x02d00077]
+[t:2w_chicken_red_super,n:0x02d02ed2]
+{
+	[aspect]
+	{
+	  f experience_value = 1.01112e+008;
+	  f life = 5257;
+	  f max_life = 5257;
+	  f scale_multiplier = 5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 222;
+	  f damage_bonus_min_cmagic = 222;
+	}
+	[common]
+	{
+		screen_name = "Chickenleader";
+	}
+	[defend]
+	{
+	  f defense = 700;
+	}
+	[placement]
+	{
+	  q orientation = 0,6.46033e-009,0,1;
+	  p position = -3.92436,0,-0.643829,0xe7081772;
+	}
+}
+[t:chicken_white_super,n:0x02d00076]
 {
 	[aspect]
 	{
@@ -9824,7 +12340,1102 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.0240936,0,3.98917,0x66941461;
+	  p position = 1.26193,0,1.00314,0x71a77a7c;
+	}
+}
+[t:chicken_white_super,n:0x02d00075]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 3.98683,0,0.542786,0x26bd58be;
+	}
+}
+[t:3w_snapper,n:0x02d02a3d]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.60303,0,2.04874,0xc3c39cbc;
+	}
+}
+[t:3w_snapper,n:0x02d02a3e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.10731,0,1.57977,0xc3c39cbc;
+	}
+}
+[t:3w_snapper,n:0x02d02a41]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.90228,0,0.441345,0xc3c39cbc;
+	}
+}
+[t:3w_snapper,n:0x02d02a42]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.96877,0,-0.234718,0xc3c39cbc;
+	}
+}
+[t:3w_snapper,n:0x02d02a43]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.23485,0,-1.72409,0xc3c39cbc;
+	}
+}
+[t:3w_snapper,n:0x02d02a44]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.65236,0,-2.20975,0xc3c39cbc;
+	}
+}
+[t:chicken_white_super,n:0x02d00074]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-8.9407e-008;
+	  p position = 3.87286,0,-3.73679,0x446007c9;
+	}
+}
+[t:3w_snapper,n:0x02d00116]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.36462,0,2.83939,0x7d5dbb2e;
+	}
+}
+[t:3w_snapper,n:0x02d00117]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.77301,0,1.95479,0x7d5dbb2e;
+	}
+}
+[t:3w_snapper,n:0x02d00119]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.98578,0,-0.365143,0x7d5dbb2e;
+	}
+}
+[t:3w_snapper,n:0x02d02ef2]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.14349,0,1.93196,0x7d5dbb2e;
+	}
+}
+[t:3w_snapper,n:0x02d00118]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.13707,0,-1.90482,0xbc6e9cbc;
+	}
+}
+[t:3w_snapper,n:0x02d00115]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.23843,0,2.0816,0x6a2d0a9b;
+	}
+}
+[t:3w_snapper,n:0x02d02a49]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.72403,0,-0.163269,0x6a2d0a9b;
+	}
+}
+[t:3w_snapper,n:0x02d02a4a]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.0744324,0,-0.852158,0x6a2d0a9b;
+	}
+}
+[t:3w_snapper,n:0x02d02a4b]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.18306,0,0.149475,0x6a2d0a9b;
+	}
+}
+[t:3w_snapper,n:0x02d02a4c]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.981491,0,-0.906097,0x6a2d0a9b;
+	}
+}
+[t:3w_snapper,n:0x02d02eec]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.02348,0,1.02867,0x6a2d0a9b;
+	}
+}
+[t:3w_snapper,n:0x02d00114]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.80768,0,-0.148422,0x7d85063a;
+	}
+}
+[t:3w_snapper,n:0x02d00113]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.62741,0,-0.0690002,0x3f8f75d7;
+	}
+}
+[t:3w_snapper,n:0x02d02ee8]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.66428,0,-3.1978,0x3f8f75d7;
+	}
+}
+[t:3w_snapper,n:0x02d02eeb]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.48535,0,-1.24626,0x3f8f75d7;
+	}
+}
+[t:3w_snapper,n:0x02d02ef0]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.60309,0,3.97874,0x78363f85;
+	}
+}
+[t:3w_snapper,n:0x02d02ef1]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.03773,0,0.610596,0x75db765a;
+	}
+}
+[t:3w_snapper,n:0x02d02eef]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.278259,0,2.85146,0xb6e8fc61;
+	}
+}
+[t:3w_snapper,n:0x02d02ef3]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.65146,0,-3.65128,0xb6e8fc61;
+	}
+}
+[t:3w_snapper,n:0x02d02ef6]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.3709,0,-0.518692,0xb6e8fc61;
+	}
+}
+[t:3w_snapper,n:0x02d02eed]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.149918,0,1.22957,0x1044423d;
+	}
+}
+[t:3w_snapper,n:0x02d02a47]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.92514,0,-3.55597,0xa33d661d;
+	}
+}
+[t:3w_snapper,n:0x02d02a3f]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.70583,0,3.14875,0x6680689f;
+	}
+}
+[t:3w_snapper,n:0x02d02a40]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.2044,0,2.52771,0x6680689f;
+	}
+}
+[t:3w_snapper,n:0x02d02a45]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.81465,0,2.50482,0x6680689f;
+	}
+}
+[t:3w_snapper,n:0x02d02a46]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.25698,0,2.00598,0x6680689f;
+	}
+}
+[t:3w_snapper,n:0x02d02a48]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.76157,0,3.84769,0x6680689f;
+	}
+}
+[t:3w_snapper,n:0x02d02a20]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.77,0,3.30936,0x853a9626;
+	}
+}
+[t:3w_snapper,n:0x02d02a21]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.56879,0,3.63284,0x853a9626;
+	}
+}
+[t:3w_snapper,n:0x02d02a24]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.835548,0,3.22422,0x853a9626;
+	}
+}
+[t:3w_snapper,n:0x02d0011a]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.13269,0.522734,3.93914,0xa82fa55c;
+	}
+}
+[t:3w_snapper,n:0x02d0011b]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.329781,0.130961,1.2763,0xa82fa55c;
+	}
+}
+[t:3w_snapper,n:0x02d0011c]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.665344,-0.332672,2.60809,0xa82fa55c;
+	}
+}
+[t:3w_snapper,n:0x02d0011d]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.83756,-0.464172,-0.928345,0x4dbef2bc;
+	}
+}
+[t:3w_snapper,n:0x02d02a2d]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.5949,0.389961,0.779922,0x4dbef2bc;
+	}
+}
+[t:3w_snapper,n:0x02d02a2e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.0330353,-0.958356,-1.49823,0x4dbef2bc;
+	}
+}
+[t:3w_snapper,n:0x02d02a2f]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.6291,0.298317,0.596634,0x4dbef2bc;
+	}
+}
+[t:3w_snapper,n:0x02d02a35]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.600174,-1.13998,-2.13378,0x4dbef2bc;
+	}
+}
+[t:3w_snapper,n:0x02d02a36]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 0.590179,-0.849449,-1.38625,0x4dbef2bc;
+	}
+}
+[t:3w_snapper,n:0x02d02a3a]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -3.8884,-1,-3.50557,0x4dbef2bc;
+	}
+}
+[t:3w_snapper,n:0x02d02a3b]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.807297,-1.06137,-3.3863,0x4dbef2bc;
+	}
+}
+[t:3w_snapper,n:0x02d02a3c]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.49098,-1,-3.20175,0x4dbef2bc;
+	}
+}
+[t:3w_snapper,n:0x02d0011e]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.764793,-0.042676,0.22345,0xc4f72f4f;
+	}
+}
+[t:3w_snapper,n:0x02d0011f]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.91732,-0.333351,-0.666702,0xc4f72f4f;
+	}
+}
+[t:3w_snapper,n:0x02d00121]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.90759,0.480514,0.967583,0xc4f72f4f;
+	}
+}
+[t:3w_snapper,n:0x02d00122]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.63654,0.0920486,0.274963,0xc4f72f4f;
+	}
+}
+[t:3w_snapper,n:0x02d02a30]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -0.611771,-0.521256,-0.69986,0xc4f72f4f;
+	}
+}
+[t:3w_snapper,n:0x02d02a33]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.01028,-1.09897,-2.50327,0xc4f72f4f;
+	}
+}
+[t:3w_snapper,n:0x02d02a34]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.53503,-1,-2.69515,0xc4f72f4f;
+	}
+}
+[t:3w_snapper,n:0x02d02a37]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.00482,-0.424664,-0.849327,0xc4f72f4f;
+	}
+}
+[t:3w_snapper,n:0x02d02a38]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -1.47521,-0.893148,-1.66457,0xc4f72f4f;
+	}
+}
+[t:3w_snapper,n:0x02d02a39]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = -2.25911,-1,-2.71111,0xc4f72f4f;
+	}
+}
+[t:3w_snapper,n:0x02d00120]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.10812,-0.287903,-0.575806,0xbd30b412;
+	}
+}
+[t:3w_snapper,n:0x02d02a31]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.80791,-0.817799,-1.6356,0xbd30b412;
+	}
+}
+[t:3w_snapper,n:0x02d02a32]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.83789,-1,-2.62054,0xbd30b412;
+	}
+}
+[t:chicken_white_super,n:0x02d00068]
+{
+	[aspect]
+	{
+	  f experience_value = 5.91112e+007;
+	  f life = 3172;
+	  f max_life = 3172;
+	}
+	[defend]
+	{
+	  f defense = 745;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-5.96046e-008;
+	  p position = -1.70564,0,-0.657097,0x3012196e;
+	}
+}
+[t:3w_snapper,n:0x02d0012a]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.71478,0,3.02341,0xe4227aaa;
+	}
+}
+[t:3w_snapper,n:0x02d00127]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 3.68439,0,-1.76615,0x6d4d9ac1;
+	}
+}
+[t:3w_snapper,n:0x02d00128]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 1.76389,0,-1.50743,0x6d4d9ac1;
+	}
+}
+[t:3w_snapper,n:0x02d00129]
+{
+	[aspect]
+	{
+	  f experience_value = 2.59308e+007;
+	}
+	[attack]
+	{
+	  f damage_max = 183.7;
+	  f damage_min = 170.2;
+	}
+	[placement]
+	{
+	  p position = 2.7857,0,-0.0239258,0x6d4d9ac1;
 	}
 }
 [t:chicken_white_super,n:0x02d02928]
@@ -9917,50 +13528,88 @@
 	  p position = -0.0910645,0,2.51712,0x2b7662ff;
 	}
 }
-[t:chicken_red_super,n:0x02d00059]
+[t:2w_chicken_red_super,n:0x02d02ed3]
 {
 	[aspect]
 	{
-	  f experience_value = 8.71112e+007;
-	  f life = 4000;
-	  f max_life = 4000;
-	  f scale_multiplier = 4.5;
+	  f experience_value = 1.01112e+008;
+	  f life = 5257;
+	  f max_life = 5257;
+	  f scale_multiplier = 5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 222;
+	  f damage_bonus_min_cmagic = 222;
 	}
 	[common]
 	{
-		screen_name = "Chickenmaster";
+		screen_name = "Chickenleader";
 	}
 	[defend]
 	{
-	  f defense = 600;
-	}
-	[mind]
-	{
-	  f ranged_engage_range = 18;
-	  f sight_range = 20;
+	  f defense = 700;
 	}
 	[placement]
 	{
-	  q orientation = 0,-2.98023e-008,0,1;
-	  p position = -1.68895,0,1.7536,0x464c6e26;
+	  q orientation = 0,4.69147e-008,0,1;
+	  p position = 2.32951,0,0.948761,0xf17784d0;
 	}
 }
-[t:chicken_white_super,n:0x02d0060a]
+[t:2w_chicken_red_super,n:0x02d02ed4]
 {
 	[aspect]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
+	  f experience_value = 1.01112e+008;
+	  f life = 5257;
+	  f max_life = 5257;
+	  f scale_multiplier = 5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 222;
+	  f damage_bonus_min_cmagic = 222;
+	}
+	[common]
+	{
+		screen_name = "Chickenleader";
 	}
 	[defend]
 	{
-	  f defense = 745;
+	  f defense = 700;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.41994,0,1.21674,0x464c6e26;
+	  q orientation = 0,4.69147e-008,0,1;
+	  p position = 0.0399933,0,0.925598,0x464c6e26;
+	}
+}
+[t:3w_chicken_red_super,n:0x02d02ed5]
+{
+	[aspect]
+	{
+	  f experience_value = 1.51112e+008;
+	  f life = 6071;
+	  f max_life = 6071;
+	  f scale_multiplier = 6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 175;
+	  f damage_bonus_min_cmagic = 150;
+	}
+	[common]
+	{
+		screen_name = "Chickenking";
+	}
+	[defend]
+	{
+	  f defense = 855;
+	}
+	[placement]
+	{
+	  q orientation = 0,4.69147e-008,0,1;
+	  p position = -2.82491,0,-0.275726,0x464c6e26;
 	}
 }
 [t:chicken_white_super,n:0x02d0292c]
@@ -10015,732 +13664,6 @@
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
 	  p position = -2.36511,0,-2.16211,0x6e5f0f4f;
-	}
-}
-[t:3w_snapper,n:0x02d00184]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.56714,-0.0533943,0.0014267,0x0ad32559;
-	}
-}
-[t:3w_snapper,n:0x02d00185]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.95685,0.361465,0.733719,0x0ad32559;
-	}
-}
-[t:3w_snapper,n:0x02d00186]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.06427,-0.13353,-0.267059,0x0ad32559;
-	}
-}
-[t:3w_snapper,n:0x02d02a99]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -3.75952,-1,-2.23846,0x0ad32559;
-	}
-}
-[t:3w_snapper,n:0x02d0014f]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.9938,0,-3.16522,0x4564e734;
-	}
-}
-[t:3w_snapper,n:0x02d00150]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.455994,0,-2.87256,0x4564e734;
-	}
-}
-[t:3w_snapper,n:0x02d00151]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.14728,0,-0.905762,0x4564e734;
-	}
-}
-[t:3w_snapper,n:0x02d00183]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.04468,0.0560265,0.112053,0xbdd29c76;
-	}
-}
-[t:3w_snapper,n:0x02d00187]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.29681,-0.934793,-1.71468,0xbdd29c76;
-	}
-}
-[t:3w_snapper,n:0x02d02a97]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.19009,-0.590805,-1.18161,0xbdd29c76;
-	}
-}
-[t:3w_snapper,n:0x02d02a98]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.57382,-0.95536,-1.91072,0xbdd29c76;
-	}
-}
-[t:3w_snapper,n:0x02d02a9a]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 0.373138,-1.06491,-3.35086,0xbdd29c76;
-	}
-}
-[t:3w_snapper,n:0x02d02aa1]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.84381,-0.15514,-0.271233,0xbdd29c76;
-	}
-}
-[t:3w_snapper,n:0x02d02aa2]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.039978,-0.746008,-1.05264,0xbdd29c76;
-	}
-}
-[t:3w_snapper,n:0x02d02aa3]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.78156,-1,-3.4025,0xbdd29c76;
-	}
-}
-[t:3w_snapper,n:0x02d00181]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -3.11298,-0.129658,-0.259315,0xe497fab9;
-	}
-}
-[t:3w_snapper,n:0x02d00182]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.02301,-0.212494,-0.424988,0xe497fab9;
-	}
-}
-[t:3w_snapper,n:0x02d00188]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.23181,-0.49221,-0.984421,0xe497fab9;
-	}
-}
-[t:3w_snapper,n:0x02d00189]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.80896,-0.0264473,-0.0528946,0xe497fab9;
-	}
-}
-[t:3w_snapper,n:0x02d02a95]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.996399,-0.6838,-1.12303,0xe497fab9;
-	}
-}
-[t:3w_snapper,n:0x02d02a96]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.14883,-0.55127,-0.889748,0xe497fab9;
-	}
-}
-[t:3w_snapper,n:0x02d02a9b]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.46133,-1.05387,-2.40408,0xe497fab9;
-	}
-}
-[t:3w_snapper,n:0x02d02a9c]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.70981,-1,-2.80015,0xe497fab9;
-	}
-}
-[t:3w_snapper,n:0x02d02aa0]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.54175,-1.04583,-2.13255,0xe497fab9;
-	}
-}
-[t:3w_snapper,n:0x02d02aa4]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.940674,-1.00359,-3.96405,0xe497fab9;
-	}
-}
-[t:chicken_white_super,n:0x02d00085]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 0.360046,0,-0.726578,0xc538657b;
-	}
-}
-[t:chicken_white_super,n:0x02d00087]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -0.898041,0,2.19619,0xc538657b;
-	}
-}
-[t:chicken_white_super,n:0x02d00086]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -3.29135,0,-0.128311,0x8806716a;
-	}
-}
-[t:3w_snapper,n:0x02d0017e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.43025,-0.166199,-0.332397,0x66bcd154;
-	}
-}
-[t:3w_snapper,n:0x02d00180]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 0.77916,-0.737433,-1.19021,0x66bcd154;
-	}
-}
-[t:3w_snapper,n:0x02d0018a]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.12634,-0.44276,-0.885521,0x66bcd154;
-	}
-}
-[t:3w_snapper,n:0x02d0018c]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.65288,-1,-3.06579,0x66bcd154;
-	}
-}
-[t:3w_snapper,n:0x02d0018d]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.28456,-0.210361,-0.420723,0x66bcd154;
-	}
-}
-[t:3w_snapper,n:0x02d0018e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -2.24713,0.135433,0.270866,0x66bcd154;
-	}
-}
-[t:3w_snapper,n:0x02d02a94]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.36562,-0.750374,-1.50075,0x66bcd154;
-	}
-}
-[t:3w_snapper,n:0x02d02a9d]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.22638,-0.988238,-1.81237,0x66bcd154;
-	}
-}
-[t:3w_snapper,n:0x02d02a9e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.99501,-0.976034,-1.73797,0x66bcd154;
-	}
-}
-[t:3w_snapper,n:0x02d02a9f]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.85516,-1.01448,-3.30225,0x66bcd154;
-	}
-}
-[t:3w_snapper,n:0x02d0017f]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 1.84596,-0.31773,-0.63546,0x19953120;
-	}
-}
-[t:3w_snapper,n:0x02d0018b]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 3.28735,0,1.03799,0x5c59d300;
-	}
-}
-[t:3w_snapper,n:0x02d0014c]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -0.544952,0,-0.637329,0xc6b5e523;
-	}
-}
-[t:3w_snapper,n:0x02d0014d]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.84384,0,0.641205,0xc6b5e523;
-	}
-}
-[t:3w_snapper,n:0x02d0014e]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -1.86838,0,-0.787338,0xc6b5e523;
-	}
-}
-[t:3w_snapper,n:0x02d02916]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = 2.82861,0,-1.94212,0xc6b5e523;
-	}
-}
-[t:3w_snapper,n:0x02d02915]
-{
-	[aspect]
-	{
-	  f experience_value = 2.59308e+007;
-	}
-	[attack]
-	{
-	  f damage_max = 183.7;
-	  f damage_min = 170.2;
-	}
-	[placement]
-	{
-	  p position = -3.53705,0,3.0094,0x58791707;
 	}
 }
 [t:chicken_white_super,n:0x02d00098]
@@ -10815,22 +13738,88 @@
 	  p position = -2.6524,0,-0.508575,0x7561c0c9;
 	}
 }
-[t:chicken_white_super,n:0x02d00094]
+[t:2w_chicken_white_super,n:0x02d02ec9]
 {
 	[aspect]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
 	}
 	[defend]
 	{
-	  f defense = 745;
+	  f defense = 918.9;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -0.445641,0,3.2748,0x830d937a;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -3.7662,0,-0.900101,0x7561c0c9;
+	}
+}
+[t:3w_chicken_red_super,n:0x02d02ed6]
+{
+	[aspect]
+	{
+	  f experience_value = 1.51112e+008;
+	  f life = 6071;
+	  f max_life = 6071;
+	  f scale_multiplier = 6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 175;
+	  f damage_bonus_min_cmagic = 150;
+	}
+	[common]
+	{
+		screen_name = "Chickenking";
+	}
+	[defend]
+	{
+	  f defense = 855;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.45612,0,-1.6014,0x7561c0c9;
+	}
+}
+[t:3w_chicken_white_super,n:0x02d02ed7]
+{
+	[aspect]
+	{
+	  f experience_value = 9.71112e+007;
+	  f life = 8389.4;
+	  f max_life = 8389.4;
+	  f scale_multiplier = 5.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 100;
+	}
+	[common]
+	{
+		screen_name = "Huge Chicken";
+	}
+	[defend]
+	{
+	  f defense = 1047.4;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -3.44199,0,0.39209,0x7561c0c9;
 	}
 }
 [t:chicken_white_super,n:0x02d00192]
@@ -10849,6 +13838,34 @@
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
 	  p position = -0.312088,0,-1.09035,0x0f7b3adf;
+	}
+}
+[t:2w_chicken_red_super,n:0x02d02ecf]
+{
+	[aspect]
+	{
+	  f experience_value = 1.01112e+008;
+	  f life = 5257;
+	  f max_life = 5257;
+	  f scale_multiplier = 5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 222;
+	  f damage_bonus_min_cmagic = 222;
+	}
+	[common]
+	{
+		screen_name = "Chickenleader";
+	}
+	[defend]
+	{
+	  f defense = 700;
+	}
+	[placement]
+	{
+	  q orientation = 0,6.46033e-009,0,1;
+	  p position = -2.60977,0,-1.42651,0x0f7b3adf;
 	}
 }
 [t:3w_snapper,n:0x02d02997]
@@ -11401,6 +14418,62 @@
 	  p position = -2.87267,0,2.57087,0x8fe92e09;
 	}
 }
+[t:2w_chicken_white_super,n:0x02d02ebc]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -2.66618,0,1.14743,0x8fe92e09;
+	}
+}
+[t:3w_chicken_white_super,n:0x02d02ed8]
+{
+	[aspect]
+	{
+	  f experience_value = 9.71112e+007;
+	  f life = 8389.4;
+	  f max_life = 8389.4;
+	  f scale_multiplier = 5.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 100;
+	}
+	[common]
+	{
+		screen_name = "Huge Chicken";
+	}
+	[defend]
+	{
+	  f defense = 1047.4;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 3.11292,5.91173,3.34242,0x8d060dc2;
+	}
+}
 [t:chicken_white_super,n:0x02d0003f]
 {
 	[aspect]
@@ -11533,6 +14606,11 @@
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
 	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
 	[common]
 	{
 		screen_name = "Chickenmaster";
@@ -11578,6 +14656,11 @@
 	  f life = 4000;
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
 	}
 	[common]
 	{
@@ -11858,22 +14941,60 @@
 	  p position = -3.21489,0,0.529121,0xf8f3f419;
 	}
 }
-[t:chicken_white_super,n:0x02d0002a]
+[t:2w_chicken_white_super,n:0x02d02eb7]
 {
 	[aspect]
 	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
 	}
 	[defend]
 	{
-	  f defense = 745;
+	  f defense = 918.9;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = 2.11976,0,-2.24474,0x78ab3dae;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 2.39033,0,1.84641,0x321e8da9;
+	}
+}
+[t:2w_chicken_red_super,n:0x02d02ecb]
+{
+	[aspect]
+	{
+	  f experience_value = 1.01112e+008;
+	  f life = 5257;
+	  f max_life = 5257;
+	  f scale_multiplier = 5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 222;
+	  f damage_bonus_min_cmagic = 222;
+	}
+	[common]
+	{
+		screen_name = "Chickenleader";
+	}
+	[defend]
+	{
+	  f defense = 700;
+	}
+	[placement]
+	{
+	  q orientation = 0,6.46033e-009,0,1;
+	  p position = 3.56396,0,-2.94408,0x78ab3dae;
 	}
 }
 [t:chicken_white_super,n:0x02d00029]
@@ -12410,24 +15531,6 @@
 	  p position = 3.5213,0,3.93134,0x29f263cf;
 	}
 }
-[t:chicken_white_super,n:0x02d0009a]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-8.9407e-008;
-	  p position = -2.13985,0,2.1254,0x29f263cf;
-	}
-}
 [t:chicken_white_super,n:0x02d0009b]
 {
 	[aspect]
@@ -12444,6 +15547,34 @@
 	{
 	  q orientation = 0,1,0,-8.9407e-008;
 	  p position = -1.64134,0,-3.92561,0x29f263cf;
+	}
+}
+[t:2w_chicken_white_super,n:0x02d02eb6]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -1.09543,0,2.94322,0x29f263cf;
 	}
 }
 [t:chicken_white_super,n:0x02d0009c]
@@ -12509,6 +15640,11 @@
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
 	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
 	[common]
 	{
 		screen_name = "Chickenmaster";
@@ -12526,6 +15662,34 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -0.656949,0,-0.41539,0xe305dada;
+	}
+}
+[t:2w_chicken_red_super,n:0x02d02eca]
+{
+	[aspect]
+	{
+	  f experience_value = 1.01112e+008;
+	  f life = 5257;
+	  f max_life = 5257;
+	  f scale_multiplier = 5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 222;
+	  f damage_bonus_min_cmagic = 222;
+	}
+	[common]
+	{
+		screen_name = "Chickenleader";
+	}
+	[defend]
+	{
+	  f defense = 700;
+	}
+	[placement]
+	{
+	  q orientation = 0,6.46033e-009,0,1;
+	  p position = 1.93501,0,-1.19117,0x83edd6fe;
 	}
 }
 [t:chicken_white_super,n:0x02d000a4]
@@ -12573,6 +15737,11 @@
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
 	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
+	}
 	[common]
 	{
 		screen_name = "Chickenmaster";
@@ -12618,6 +15787,11 @@
 	  f life = 4000;
 	  f max_life = 4000;
 	  f scale_multiplier = 4.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 175;
 	}
 	[common]
 	{
@@ -13441,6 +16615,34 @@
 	  p position = 2.38911,0,-2.84908,0xff2cc637;
 	}
 }
+[t:2w_chicken_white_super,n:0x02d02eb4]
+{
+	[aspect]
+	{
+	  f experience_value = 8.41112e+007;
+	  f life = 5021.7;
+	  f max_life = 5021.7;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 225;
+	  f damage_bonus_min_melee = 150;
+	}
+	[common]
+	{
+		screen_name = "Large Chicken";
+	}
+	[defend]
+	{
+	  f defense = 918.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 2.56936,0,-2.62399,0xff2cc637;
+	}
+}
 [t:chicken_white_super,n:0x02d0000b]
 {
 	[aspect]
@@ -14010,24 +17212,6 @@
 	  p position = -3.06106,0,-0.616623,0x92a664c7;
 	}
 }
-[t:chicken_white_super,n:0x02d0004b]
-{
-	[aspect]
-	{
-	  f experience_value = 5.91112e+007;
-	  f life = 3172;
-	  f max_life = 3172;
-	}
-	[defend]
-	{
-	  f defense = 745;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 2.57874,0,-1.01979,0x92a664c7;
-	}
-}
 [t:3w_snapper,n:0x02d02964]
 {
 	[aspect]
@@ -14410,5 +17594,39 @@
 	[placement]
 	{
 	  p position = 3.36629,0,-1.78174,0xe1ed96eb;
+	}
+}
+[t:3w_jonn,n:0x02d0217c]
+{
+	[common]
+	{
+		screen_name = "Yonairen";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_02;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ra_fp_f_g_o_fin;
+			es_feet = bo_ra_bo_ch_f_g_c_fin;
+			es_forearms = gl_ra_gl_ch_f_g_c_fin;
+			es_head = he_fu_pl_horn_fin_02;
+			es_weapon_hand = sd_un_big_2h_d_barbed;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,4.25441e-008,0,1;
+	  p position = 2.43919,0,0.924988,0x4ba338a8;
 	}
 }

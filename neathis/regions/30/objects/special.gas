@@ -1787,6 +1787,34 @@
 	  p position = -0.874577,-0.25,-0.314392,0x6f43bead;
 	}
 }
+[t:trigger_generic,n:0x02c0019f]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("29_traders","completed",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(3.000000,2.500000,0.100000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = -4.53192,-1,-0.300537,0x27e616f3;
+	}
+}
 [t:use_point,n:0x02c00918]
 {
 	[placement]
@@ -3171,33 +3199,5 @@
 	[placement]
 	{
 	  p position = -0.960876,-0.25,-0.244316,0x9162c14a;
-	}
-}
-[t:trigger_generic,n:0x02c0019f]
-{
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = change_quest_state("29_traders","completed",0);
-			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(3.000000,2.500000,0.100000,"on_first_enter");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = true;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  p position = -4.53192,-1,-0.300537,0x27e616f3;
 	}
 }

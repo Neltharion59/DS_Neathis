@@ -55,6 +55,18 @@
 	  p position = 1.23754,-3.75,-3.72254,0x3cf79001;
 	}
 }
+[t:sign_ice_magicshop_02,n:0x03000824]
+{
+	[common]
+	{
+		screen_name = "Troll's Scrolls";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 3.20064,0,-1.69308,0xc9f0423d;
+	}
+}
 [t:door_ice_peasant_left,n:0x0300003a]
 {
 	[aspect]
@@ -98,6 +110,17 @@
 	  q orientation = 0,1,0,6.74638e-008;
 	  p position = -5.61393,-1,-7.94669,0xbc12295d;
 		use_point_scids = 0x0300008f,0x03000090;
+	}
+}
+[t:sign_ice_inn_03,n:0x03000827]
+{
+	[common]
+	{
+		screen_name = "Cozy Accomodator's";
+	}
+	[placement]
+	{
+	  p position = -3.69154,-2.46735,-9.99241,0xbc12295d;
 	}
 }
 [t:lever_glb_04,n:0x030000a9]
@@ -161,6 +184,18 @@
 		use_point_scids = 0x03000151,0x03000152;
 	}
 }
+[t:sign_ice_blacksmith_01,n:0x03000825]
+{
+	[common]
+	{
+		screen_name = "Cryhold Armory";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -6.37097,-4.78634,-4.00853,0x254a3252;
+	}
+}
 [t:door_ice_peasant_left,n:0x0300007b]
 {
 	[aspect]
@@ -183,6 +218,29 @@
 	{
 	  q orientation = 0,0.999962,0,0.0087267;
 	  p position = -1.79327,-1.5,-4.41315,0x2d5693d5;
+	}
+}
+[t:sign_ice_01,n:0x0300081e]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.128719,0,-0.916336,0x9bfab4f7;
+	}
+}
+[t:sign_ice_01,n:0x0300081f]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  p position = 0.283852,0,-0.600533,0x9bfab4f7;
 	}
 }
 [t:door_ice_peasant_left,n:0x03000080]
@@ -280,155 +338,6 @@
 	  q orientation = 0,-1,0,-1.66939e-007;
 	  p position = 0.124687,-6,-0.0318832,0x943ff7f9;
 		use_point_scids = 0x030003fa,0x030003fb;
-	}
-}
-[t:door_ice_gate,n:0x030003fe]
-{
-	[door_basic]
-	{
-	  x second_door = 0x030003FF;
-	}
-	[placement]
-	{
-	  p position = 0.100327,-6,0.16745,0x0987df11;
-		use_point_scids = 0x030003fc,0x030003fd;
-	}
-}
-[t:door_ice_gate_right,n:0x030003ff]
-{
-	[door_basic]
-	{
-	  x second_door = 0x030003FE;
-	}
-	[placement]
-	{
-	  p position = 0.090126,-6,0.153473,0x0987df11;
-		use_point_scids = 0x030003fc,0x030003fd;
-	}
-}
-[t:lever_glb_04,n:0x030000b6]
-{
-	[on_off_lever]
-	{
-	  x on_scid = 0x030000B1;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.573576,0,0.819152;
-	  p position = -2.87576,2.58692,1.65144,0x9b95b739;
-		use_point_scids = 0x030000b2,0x030000b3;
-	}
-}
-[t:lever_glb_04,n:0x030000b7]
-{
-	[on_off_lever]
-	{
-	  x on_scid = 0x030000B1;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.573576,0,0.819152;
-	  p position = -2.2862,12.3196,1.52954,0xaffe917d;
-		use_point_scids = 0x030000b2,0x030000b4,0x030000b5;
-	}
-}
-[t:door_ice_peasant_left,n:0x03000085]
-{
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
-	[placement]
-	{
-	  q orientation = -6.13647e-009,-0.990268,-1.28768e-008,-0.139173;
-	  p position = 0.947495,-3,-3.27414,0xb94c17ff;
-	}
-}
-[t:door_ice_peasant_left,n:0x03000081]
-{
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.986285,0,-0.165047;
-	  p position = 1.26031,-3.65,-3.6517,0x140a135e;
-	}
-}
-[t:door_ice_peasant_left,n:0x03000084]
-{
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
-	[placement]
-	{
-	  q orientation = -6.13647e-009,-0.990268,-1.28768e-008,-0.139173;
-	  p position = 0.998276,-3,-3.23911,0xfd658ed5;
-	}
-}
-[t:door_grs_peasant_left,n:0x0300009c]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -4.59412,-1.4,7.22174,0xb5bb9b6a;
-		use_point_scids = 0x03000095,0x030000a2;
-	}
-}
-[t:door_grs_peasant_left,n:0x0300009e]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -4.66592,-1.4,-1.805,0xb5bb9b6a;
-		use_point_scids = 0x03000096,0x030000a1;
-	}
-}
-[t:door_grs_peasant_left,n:0x0300009f]
-{
-	[placement]
-	{
-	  q orientation = 0,-3.4337e-007,0,1;
-	  p position = 1.91998,-1.4,0.882919,0xb5bb9b6a;
-		use_point_scids = 0x03000097,0x030000a0;
-	}
-}
-[t:lever_glb_04,n:0x030000ad]
-{
-	[on_off_lever]
-	{
-	  x on_scid = 0x030000A3;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.573576,0,0.819152;
-	  p position = -2.28137,12.3262,1.51132,0x700e17ef;
-		use_point_scids = 0x030000ab,0x030000b0,0x030000af;
-	}
-}
-[t:sign_ice_01,n:0x03000804]
-{
-	[common]
-	{
-		screen_name = "Central Lands";
-	}
-	[placement]
-	{
-	  q orientation = 0,-1,0,-1.66939e-007;
-	  p position = -1.07237,6,-0.0131073,0x9ecb2e7c;
-	}
-}
-[t:sign_ice_01,n:0x03000805]
-{
-	[common]
-	{
-		screen_name = "Icicle Hearth";
-	}
-	[placement]
-	{
-	  p position = -1.25087,5.62735,0.214279,0x9ecb2e7c;
 	}
 }
 [t:sign_ice_inn_02,n:0x0300080e]
@@ -547,6 +456,89 @@
 	  p position = -0.0207291,-4.83333,0.700531,0x943ff7f9;
 	}
 }
+[t:sign_ice_01,n:0x03000804]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.66939e-007;
+	  p position = -1.07237,6,-0.0131073,0x9ecb2e7c;
+	}
+}
+[t:sign_ice_01,n:0x03000805]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  p position = -1.25087,5.62735,0.214279,0x9ecb2e7c;
+	}
+}
+[t:sign_ice_01,n:0x03000821]
+{
+	[common]
+	{
+		screen_name = "Fort Cryhold";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 2.98357,0,1.6917,0x29957698;
+	}
+}
+[t:sign_ice_01,n:0x03000822]
+{
+	[common]
+	{
+		screen_name = "Icicle Hearth";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.6895,-0.282108,1.49503,0x29957698;
+	}
+}
+[t:sign_ice_01,n:0x03000823]
+{
+	[common]
+	{
+		screen_name = "Central Lands";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.68079,-0.586721,1.49583,0x29957698;
+	}
+}
+[t:door_ice_gate,n:0x030003fe]
+{
+	[door_basic]
+	{
+	  x second_door = 0x030003FF;
+	}
+	[placement]
+	{
+	  p position = 0.100327,-6,0.16745,0x0987df11;
+		use_point_scids = 0x030003fc,0x030003fd;
+	}
+}
+[t:door_ice_gate_right,n:0x030003ff]
+{
+	[door_basic]
+	{
+	  x second_door = 0x030003FE;
+	}
+	[placement]
+	{
+	  p position = 0.090126,-6,0.153473,0x0987df11;
+		use_point_scids = 0x030003fc,0x030003fd;
+	}
+}
 [t:sign_ice_01,n:0x03000819]
 {
 	[aspect]
@@ -615,97 +607,105 @@
 	  p position = -0.195427,-4.54747,0.990723,0x0987df11;
 	}
 }
-[t:sign_ice_01,n:0x0300081e]
+[t:lever_glb_04,n:0x030000b6]
 {
-	[common]
+	[on_off_lever]
 	{
-		screen_name = "Fort Cryhold";
+	  x on_scid = 0x030000B1;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.128719,0,-0.916336,0x9bfab4f7;
+	  q orientation = 0,-0.573576,0,0.819152;
+	  p position = -2.87576,2.58692,1.65144,0x9b95b739;
+		use_point_scids = 0x030000b2,0x030000b3;
 	}
 }
-[t:sign_ice_01,n:0x0300081f]
+[t:lever_glb_04,n:0x030000b7]
 {
-	[common]
+	[on_off_lever]
 	{
-		screen_name = "Central Lands";
+	  x on_scid = 0x030000B1;
 	}
 	[placement]
 	{
-	  p position = 0.283852,0,-0.600533,0x9bfab4f7;
+	  q orientation = 0,-0.573576,0,0.819152;
+	  p position = -2.2862,12.3196,1.52954,0xaffe917d;
+		use_point_scids = 0x030000b2,0x030000b4,0x030000b5;
 	}
 }
-[t:sign_ice_01,n:0x03000821]
+[t:door_ice_peasant_left,n:0x03000085]
 {
-	[common]
+	[aspect]
 	{
-		screen_name = "Fort Cryhold";
+	  b is_selectable = false;
 	}
+	[placement]
+	{
+	  q orientation = -6.13647e-009,-0.990268,-1.28768e-008,-0.139173;
+	  p position = 0.947495,-3,-3.27414,0xb94c17ff;
+	}
+}
+[t:door_ice_peasant_left,n:0x03000081]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.986285,0,-0.165047;
+	  p position = 1.26031,-3.65,-3.6517,0x140a135e;
+	}
+}
+[t:door_ice_peasant_left,n:0x03000084]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[placement]
+	{
+	  q orientation = -6.13647e-009,-0.990268,-1.28768e-008,-0.139173;
+	  p position = 0.998276,-3,-3.23911,0xfd658ed5;
+	}
+}
+[t:door_grs_peasant_left,n:0x0300009c]
+{
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 2.98357,0,1.6917,0x29957698;
+	  p position = -4.59412,-1.4,7.22174,0xb5bb9b6a;
+		use_point_scids = 0x03000095,0x030000a2;
 	}
 }
-[t:sign_ice_01,n:0x03000822]
+[t:door_grs_peasant_left,n:0x0300009e]
 {
-	[common]
-	{
-		screen_name = "Icicle Hearth";
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.6895,-0.282108,1.49503,0x29957698;
-	}
-}
-[t:sign_ice_01,n:0x03000823]
-{
-	[common]
-	{
-		screen_name = "Central Lands";
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.68079,-0.586721,1.49583,0x29957698;
-	}
-}
-[t:sign_ice_magicshop_02,n:0x03000824]
-{
-	[common]
-	{
-		screen_name = "Troll's Scrolls";
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 3.20064,0,-1.69308,0xc9f0423d;
-	}
-}
-[t:sign_ice_blacksmith_01,n:0x03000825]
-{
-	[common]
-	{
-		screen_name = "Cryhold Armory";
-	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -6.37097,-4.78634,-4.00853,0x254a3252;
+	  p position = -4.66592,-1.4,-1.805,0xb5bb9b6a;
+		use_point_scids = 0x03000096,0x030000a1;
 	}
 }
-[t:sign_ice_inn_03,n:0x03000827]
+[t:door_grs_peasant_left,n:0x0300009f]
 {
-	[common]
+	[placement]
 	{
-		screen_name = "Cozy Accomodator's";
+	  q orientation = 0,-3.4337e-007,0,1;
+	  p position = 1.91998,-1.4,0.882919,0xb5bb9b6a;
+		use_point_scids = 0x03000097,0x030000a0;
+	}
+}
+[t:lever_glb_04,n:0x030000ad]
+{
+	[on_off_lever]
+	{
+	  x on_scid = 0x030000A3;
 	}
 	[placement]
 	{
-	  p position = -3.69154,-2.46735,-9.99241,0xbc12295d;
+	  q orientation = 0,-0.573576,0,0.819152;
+	  p position = -2.28137,12.3262,1.51132,0x700e17ef;
+		use_point_scids = 0x030000ab,0x030000b0,0x030000af;
 	}
 }

@@ -75,6 +75,13 @@
 	{
 	  f experience_value = 324460;
 	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_g_o_1h1b_fun;
+		}
+	}
 	[placement]
 	{
 	  p position = -3.5451,3.8147e-006,3.3826,0x7c512440;
@@ -85,6 +92,18 @@
 	[aspect]
 	{
 	  f experience_value = 324460;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 300;
+	  f damage_bonus_min_ranged = 200;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = cw_ra_g_c_l_p_fin;
+		}
 	}
 	[placement]
 	{
@@ -108,9 +127,18 @@
 	{
 	  f experience_value = 324460;
 	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_ra_m_c_r_m_wreath;
+			es_weapon_hand = st_un_toreck;
+		}
+	}
 	[placement]
 	{
-	  p position = -1.18677,0,-0.608173,0x537a6f01;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.8047,0,-0.570854,0x537a6f01;
 	}
 }
 [t:2w_cyclops,n:0x0260003f]
@@ -183,6 +211,13 @@
 	{
 	  f experience_value = 324460;
 	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = cb_un_2h_troll_swamp;
+		}
+	}
 	[placement]
 	{
 	  p position = 2.24572,9.53674e-007,-0.203918,0xf660714a;
@@ -194,10 +229,17 @@
 	{
 	  f experience_value = 324460;
 	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = sd_ra_g_o_st_2h_avg;
+		}
+	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.65938,0,-1.22303,0x0312e844;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -3.67258,0,-1.21696,0x0312e844;
 	}
 }
 [t:2w_cyclops,n:0x0260001f]

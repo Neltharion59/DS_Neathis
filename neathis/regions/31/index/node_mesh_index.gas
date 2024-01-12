@@ -1,5 +1,7 @@
 [node_mesh_index]
 {
+	0x02d00490 = t_xxx_brdg_rck-16-l;
+	0x02d004a6 = t_xxx_brdg_tx-rck-wal-12;
 	0x02d004b6 = t_xxx_cnr_h2o_02a-ccav;
 	0x02d004b7 = t_xxx_cnr_h2o_02a-cnvx;
 	0x02d004b8 = t_xxx_cnr_h2o_02a-tx-02b-ccav-thick-l;
@@ -13,8 +15,12 @@
 	0x02d004c0 = t_xxx_cnr_h2o_02b-ccav;
 	0x02d004c1 = t_xxx_cnr_h2o_02b-cnvx;
 	0x02d004c4 = t_xxx_cnr_h2o_08-ccav;
-	0x02d004c6 = t_xxx_cnr_h2o_12-ccav;
 	0x02d004c7 = t_xxx_cnr_h2o_12-cnvx;
+	0x02d004ca = t_xxx_cnr_h2o_32-ccav;
+	0x02d004cb = t_xxx_cnr_h2o_32-cnvx;
+	0x02d004e7 = t_xxx_cnr_02a-tx-02b-cnvx-thick-r;
+	0x02d004e9 = t_xxx_cnr_02a-tx-02b-cnvx-thin-r;
+	0x02d004ea = t_xxx_cnr_02b-ccav;
 	0x02d004ec = t_xxx_cnr_04-ccav;
 	0x02d004ed = t_xxx_cnr_04-cnvx;
 	0x02d004ee = t_xxx_cnr_08-ccav;
@@ -23,6 +29,8 @@
 	0x02d004f1 = t_xxx_cnr_12-cnvx;
 	0x02d004f2 = t_xxx_cnr_24-ccav;
 	0x02d004f3 = t_xxx_cnr_24-cnvx;
+	0x02d004f4 = t_xxx_cnr_32-ccav;
+	0x02d004f5 = t_xxx_cnr_32-cnvx;
 	0x02d005f2 = t_xxx_flr_h2o_04x04-v0;
 	0x02d005f7 = t_xxx_flr_h2o_04x08-v0;
 	0x02d005f8 = t_xxx_flr_h2o_08x08-v0;
@@ -37,6 +45,8 @@
 	0x02d0061e = t_xxx_flr_08x08-v0;
 	0x02d00620 = t_xxx_flr_08x08-v2;
 	0x02d00621 = t_xxx_flr_08x08-v3;
+	0x02d00647 = t_xxx_flr_hills-tx-flr-32x32-a;
+	0x02d00648 = t_xxx_flr_hills-tx-flr-32x32-b;
 	0x02d00649 = t_xxx_flr_hills-tx-flr-32x32-c;
 	0x02d0066d = t_xxx_flr_stalagmite-8e;
 	0x02d00675 = t_xxx_for_tx-wal-12-l;
@@ -79,6 +89,8 @@
 	0x02d007d0 = t_xxx_rmp_pth-traverse-l;
 	0x02d007d4 = t_xxx_rmp_thck;
 	0x02d007d5 = t_xxx_rmp_thin;
+	0x02d007d6 = t_xxx_rmp_tx-02b-l;
+	0x02d007d8 = t_xxx_rmp_tx-rmp-l;
 	0x02d007d9 = t_xxx_rmp_tx-rmp-r;
 	0x02d007dc = t_xxx_rmp_tx-wal-04-thck-l;
 	0x02d007dd = t_xxx_rmp_tx-wal-04-thck-r;
@@ -116,6 +128,7 @@
 	0x02d008d2 = t_xxx_wal_h2o_02a-tx-02b-cnvx-thick-l;
 	0x02d008d3 = t_xxx_wal_h2o_02a-tx-02b-cnvx-thick-r;
 	0x02d008d4 = t_xxx_wal_h2o_02a-tx-02b-cnvx-thin-l;
+	0x02d008d5 = t_xxx_wal_h2o_02a-tx-02b-cnvx-thin-r;
 	0x02d008d6 = t_xxx_wal_h2o_02b-thick;
 	0x02d008d7 = t_xxx_wal_h2o_02b-thin;
 	0x02d008da = t_xxx_wal_h2o_04-diag-thin-l;
@@ -123,21 +136,31 @@
 	0x02d008e7 = t_xxx_wal_h2o_08-diag-thick-l;
 	0x02d008ed = t_xxx_wal_h2o_08-pth-tall-narrow-l;
 	0x02d008f1 = t_xxx_wal_h2o_08-thck;
+	0x02d008f2 = t_xxx_wal_h2o_08-thin;
+	0x02d008f3 = t_xxx_wal_h2o_08-tx-02b-l;
+	0x02d008fa = t_xxx_wal_h2o_08-tx-12-r;
 	0x02d008fd = t_xxx_wal_h2o_12-diag-thick-l;
 	0x02d008fe = t_xxx_wal_h2o_12-diag-thick-r;
 	0x02d00901 = t_xxx_wal_h2o_12-pth-tall-narrow-l;
 	0x02d00905 = t_xxx_wal_h2o_12-thck;
 	0x02d00906 = t_xxx_wal_h2o_12-thin;
-	0x02d00907 = t_xxx_wal_h2o_12-tx-02b-l;
 	0x02d00908 = t_xxx_wal_h2o_12-tx-02b-r;
 	0x02d0090d = t_xxx_wal_h2o_12-tx-24-l;
 	0x02d0090e = t_xxx_wal_h2o_12-tx-24-r;
-	0x02d0090f = t_xxx_wal_h2o_24-diag-thick-l;
 	0x02d00910 = t_xxx_wal_h2o_24-diag-thick-r;
 	0x02d00913 = t_xxx_wal_h2o_24-thck;
 	0x02d00914 = t_xxx_wal_h2o_24-thin;
 	0x02d00915 = t_xxx_wal_h2o_24-tx-02b-l;
 	0x02d00916 = t_xxx_wal_h2o_24-tx-02b-r;
+	0x02d00919 = t_xxx_wal_h2o_32-diag-thick-l;
+	0x02d0091a = t_xxx_wal_h2o_32-diag-thick-r;
+	0x02d0091b = t_xxx_wal_h2o_32-diag-thin-l;
+	0x02d0091d = t_xxx_wal_h2o_32-thck;
+	0x02d0091e = t_xxx_wal_h2o_32-thin;
+	0x02d0091f = t_xxx_wal_h2o_32-tx-02b-l;
+	0x02d00920 = t_xxx_wal_h2o_32-tx-02b-r;
+	0x02d0092c = t_xxx_wal_02a-thick;
+	0x02d0092d = t_xxx_wal_02a-thin;
 	0x02d00931 = t_xxx_wal_02a-tx-02b-ccav-thin-r;
 	0x02d00933 = t_xxx_wal_02a-tx-02b-cnvx-thick-r;
 	0x02d00938 = t_xxx_wal_02a-tx-04-ccav-l;
@@ -153,11 +176,14 @@
 	0x02d0094b = t_xxx_wal_04-thin;
 	0x02d0094e = t_xxx_wal_04-tx-08-l;
 	0x02d0094f = t_xxx_wal_04-tx-08-r;
+	0x02d00955 = t_xxx_wal_08-diag-thick-l;
 	0x02d00956 = t_xxx_wal_08-diag-thick-r;
 	0x02d00957 = t_xxx_wal_08-diag-thin-l;
+	0x02d00958 = t_xxx_wal_08-diag-thin-r;
 	0x02d0095a = t_xxx_wal_08-pth-r;
 	0x02d0095f = t_xxx_wal_08-thck;
 	0x02d00960 = t_xxx_wal_08-thin;
+	0x02d00964 = t_xxx_wal_08-tx-04-r;
 	0x02d00965 = t_xxx_wal_08-tx-12-l;
 	0x02d00966 = t_xxx_wal_08-tx-12-r;
 	0x02d00969 = t_xxx_wal_08-tx-rmp-l;
@@ -167,7 +193,7 @@
 	0x02d00970 = t_xxx_wal_12-diag-thin-r;
 	0x02d00975 = t_xxx_wal_12-thck;
 	0x02d00976 = t_xxx_wal_12-thin;
-	0x02d00977 = t_xxx_wal_12-tx-02b-l;
+	0x02d0097a = t_xxx_wal_12-tx-08-r;
 	0x02d0097b = t_xxx_wal_12-tx-24-l;
 	0x02d0097c = t_xxx_wal_12-tx-24-r;
 	0x02d0097d = t_xxx_wal_12-tx-rmp-l;
@@ -178,10 +204,14 @@
 	0x02d00984 = t_xxx_wal_24-diag-thin-r;
 	0x02d00985 = t_xxx_wal_24-thck;
 	0x02d00986 = t_xxx_wal_24-thin;
+	0x02d00987 = t_xxx_wal_24-tx-02b-l;
 	0x02d00988 = t_xxx_wal_24-tx-02b-r;
 	0x02d00989 = t_xxx_wal_24-tx-rmp-l;
 	0x02d0098a = t_xxx_wal_24-tx-rmp-r;
 	0x02d0098c = t_xxx_wal_24-tx-rvr-out;
+	0x02d0098d = t_xxx_wal_32-diag-thick-l;
+	0x02d00991 = t_xxx_wal_32-thck;
+	0x02d00992 = t_xxx_wal_32-thin;
 	0x02d009ac = t_xxx_wal_cave-split-12-back-base;
 	0x02d009ad = t_xxx_wal_cave-split-12-back-sides;
 	0x02d009ae = t_xxx_wal_cave-split-12-back-top;
@@ -191,6 +221,7 @@
 	0x02d009b3 = t_xxx_wal_cave-split-24-back-base;
 	0x02d009b6 = t_xxx_wal_cave-split-24-back-sides;
 	0x02d009b7 = t_xxx_wal_cave-split-24-back-top-secret-a;
+	0x02d009b8 = t_xxx_wal_cave-split-24-back-top;
 	0x02d009ba = t_xxx_wal_cave-split-24-front-base;
 	0x02d009bd = t_xxx_wal_cave-split-24-front-sides;
 	0x02d009bf = t_xxx_wal_cave-split-24-front-top;

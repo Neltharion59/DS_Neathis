@@ -261,6 +261,26 @@
 }
 [t:scorpion,n:0x01100165]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
@@ -269,6 +289,29 @@
 }
 [t:mine_worm,n:0x0110005e]
 {
+	[aspect]
+	{
+	  f experience_value = 117;
+	  f life = 337;
+	  f max_life = 337;
+	  f scale_multiplier = 1;
+	  f selection_indicator_scale = 1.15;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_melee = 70;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Cavernal Worm";
+	}
+	[defend]
+	{
+	  f defense = 302;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -277,6 +320,26 @@
 }
 [t:scorpion,n:0x01100161]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -285,6 +348,26 @@
 }
 [t:scorpion,n:0x01100166]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -330,6 +413,26 @@
 }
 [t:scorpion,n:0x01100083]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.923879,0,-0.382684;
@@ -338,6 +441,26 @@
 }
 [t:scorpion,n:0x01100082]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -531,6 +654,29 @@
 }
 [t:mine_worm,n:0x01100095]
 {
+	[aspect]
+	{
+	  f experience_value = 117;
+	  f life = 337;
+	  f max_life = 337;
+	  f scale_multiplier = 1;
+	  f selection_indicator_scale = 1.15;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_melee = 70;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Cavernal Worm";
+	}
+	[defend]
+	{
+	  f defense = 302;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
@@ -541,15 +687,19 @@
 {
 	[aspect]
 	{
-	  f experience_value = 400;
-	  f life = 341;
-	  f max_life = 341;
-	  f scale_multiplier = 1.75;
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 40;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
 	}
 	[common]
 	{
@@ -557,7 +707,7 @@
 	}
 	[defend]
 	{
-	  f defense = 99;
+	  f defense = 160;
 	}
 	[placement]
 	{
@@ -566,6 +716,26 @@
 }
 [t:scorpion,n:0x0110007d]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  p position = 1.15171,0,0.335984,0x0ca1a920;
@@ -573,6 +743,26 @@
 }
 [t:scorpion,n:0x0110007e]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -581,6 +771,26 @@
 }
 [t:scorpion,n:0x0110007f]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  p position = -1.25295,0,-0.348083,0x0ca1a920;
@@ -588,6 +798,26 @@
 }
 [t:scorpion,n:0x01100080]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -596,6 +826,26 @@
 }
 [t:scorpion,n:0x01100081]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  p position = 0.0469379,0,-3.23531,0x0ca1a920;
@@ -603,6 +853,26 @@
 }
 [t:scorpion,n:0x0110016a]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.923879,0,-0.382684;
@@ -611,6 +881,26 @@
 }
 [t:scorpion,n:0x011000a5]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -619,6 +909,26 @@
 }
 [t:scorpion,n:0x011000a6]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -627,6 +937,26 @@
 }
 [t:scorpion,n:0x011000a7]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  p position = 1.25332,0,0.418476,0xa3d0521a;
@@ -634,6 +964,29 @@
 }
 [t:mine_worm,n:0x011000aa]
 {
+	[aspect]
+	{
+	  f experience_value = 117;
+	  f life = 337;
+	  f max_life = 337;
+	  f scale_multiplier = 1;
+	  f selection_indicator_scale = 1.15;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_melee = 70;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Cavernal Worm";
+	}
+	[defend]
+	{
+	  f defense = 302;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -658,6 +1011,26 @@
 }
 [t:scorpion,n:0x011000a8]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -666,6 +1039,26 @@
 }
 [t:scorpion,n:0x011000a9]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  p position = 0.220779,0,-1.48137,0x8015fff8;
@@ -673,6 +1066,29 @@
 }
 [t:mine_worm,n:0x011000ae]
 {
+	[aspect]
+	{
+	  f experience_value = 117;
+	  f life = 337;
+	  f max_life = 337;
+	  f scale_multiplier = 1;
+	  f selection_indicator_scale = 1.15;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_melee = 70;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Cavernal Worm";
+	}
+	[defend]
+	{
+	  f defense = 302;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
@@ -681,6 +1097,29 @@
 }
 [t:mine_worm,n:0x011000ad]
 {
+	[aspect]
+	{
+	  f experience_value = 117;
+	  f life = 337;
+	  f max_life = 337;
+	  f scale_multiplier = 1;
+	  f selection_indicator_scale = 1.15;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_melee = 70;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Cavernal Worm";
+	}
+	[defend]
+	{
+	  f defense = 302;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -689,6 +1128,29 @@
 }
 [t:mine_worm,n:0x011000ab]
 {
+	[aspect]
+	{
+	  f experience_value = 117;
+	  f life = 337;
+	  f max_life = 337;
+	  f scale_multiplier = 1;
+	  f selection_indicator_scale = 1.15;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_melee = 70;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Cavernal Worm";
+	}
+	[defend]
+	{
+	  f defense = 302;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -697,6 +1159,29 @@
 }
 [t:mine_worm,n:0x011000ac]
 {
+	[aspect]
+	{
+	  f experience_value = 117;
+	  f life = 337;
+	  f max_life = 337;
+	  f scale_multiplier = 1;
+	  f selection_indicator_scale = 1.15;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_melee = 70;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Cavernal Worm";
+	}
+	[defend]
+	{
+	  f defense = 302;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -705,6 +1190,26 @@
 }
 [t:scorpion,n:0x011000bc]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  p position = 2.31228,0,2.97888,0x7f8275ca;
@@ -712,6 +1217,26 @@
 }
 [t:scorpion,n:0x011000bd]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -720,6 +1245,26 @@
 }
 [t:scorpion,n:0x011000be]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  p position = -0.0522127,0,0.0394821,0x7f8275ca;
@@ -727,6 +1272,26 @@
 }
 [t:scorpion_boss_01,n:0x011000c1]
 {
+	[aspect]
+	{
+	  f experience_value = 215;
+	  f life = 341;
+	  f max_life = 341;
+	  f scale_multiplier = 1.35;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 80;
+	  f damage_bonus_min_melee = 80;
+	  f melee_aim_pi_time = 0.2;
+	  f melee_fidget_time = 0.2;
+	  f melee_recover_time = 0.2;
+	  f melee_swing_time = 0.2;
+	}
+	[defend]
+	{
+	  f defense = 300;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
@@ -751,6 +1316,26 @@
 }
 [t:scorpion,n:0x011000b8]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -759,6 +1344,26 @@
 }
 [t:scorpion,n:0x011000b9]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  p position = -0.364977,0,1.38742,0x6888ebb9;
@@ -766,6 +1371,26 @@
 }
 [t:scorpion,n:0x011000ba]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -774,6 +1399,26 @@
 }
 [t:scorpion,n:0x011000bb]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -782,6 +1427,26 @@
 }
 [t:scorpion,n:0x011000bf]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -790,6 +1455,26 @@
 }
 [t:scorpion,n:0x011000c0]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.92388,0,0.382683;
@@ -800,15 +1485,19 @@
 {
 	[aspect]
 	{
-	  f experience_value = 400;
-	  f life = 341;
-	  f max_life = 341;
-	  f scale_multiplier = 1.75;
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
 	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 40;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
 	}
 	[common]
 	{
@@ -816,7 +1505,7 @@
 	}
 	[defend]
 	{
-	  f defense = 99;
+	  f defense = 160;
 	}
 	[placement]
 	{
@@ -839,6 +1528,26 @@
 }
 [t:scorpion,n:0x01100177]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.923879,0,-0.382684;
@@ -847,6 +1556,26 @@
 }
 [t:scorpion,n:0x0110017b]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -1339,6 +2068,29 @@
 }
 [t:mine_worm,n:0x01100060]
 {
+	[aspect]
+	{
+	  f experience_value = 117;
+	  f life = 337;
+	  f max_life = 337;
+	  f scale_multiplier = 1;
+	  f selection_indicator_scale = 1.15;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_melee = 70;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Cavernal Worm";
+	}
+	[defend]
+	{
+	  f defense = 302;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -1347,6 +2099,26 @@
 }
 [t:scorpion,n:0x01100162]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -1355,6 +2127,26 @@
 }
 [t:scorpion,n:0x01100163]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -1363,6 +2155,29 @@
 }
 [t:mine_worm,n:0x0110005f]
 {
+	[aspect]
+	{
+	  f experience_value = 117;
+	  f life = 337;
+	  f max_life = 337;
+	  f scale_multiplier = 1;
+	  f selection_indicator_scale = 1.15;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_melee = 70;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Cavernal Worm";
+	}
+	[defend]
+	{
+	  f defense = 302;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
@@ -1371,6 +2186,26 @@
 }
 [t:scorpion,n:0x01100160]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  p position = -2.67161,0,2.00888,0xc8fd5aab;
@@ -1378,6 +2213,26 @@
 }
 [t:scorpion,n:0x01100164]
 {
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 181;
+	  f max_life = 181;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 45;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
