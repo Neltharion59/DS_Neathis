@@ -30,6 +30,54 @@
 	  p position = 0.510712,0,-0.673805,0x83013906;
 	}
 }
+[t:generator_generic,n:0x02000471]
+{
+	[generator_basic]
+	{
+		child_template_name = "2w_skeleton";
+	  x initial_command = 0x0200047B;
+	  i max_alive_children = 3;
+	  i num_children_incubating = 3;
+	  f spawn_period = 2;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.379425,0,-2.28266,0xb86c6eff;
+	}
+}
+[t:generator_generic,n:0x02000470]
+{
+	[generator_basic]
+	{
+		child_template_name = "2w_skeleton";
+	  x initial_command = 0x0200047A;
+	  i max_alive_children = 3;
+	  i num_children_incubating = 3;
+	  f spawn_period = 2;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.417267,0,-1.92151,0xffedf95d;
+	}
+}
+[t:generator_generic,n:0x0200046f]
+{
+	[generator_basic]
+	{
+		child_template_name = "2w_skeleton";
+	  x initial_command = 0x02000479;
+	  i max_alive_children = 3;
+	  i num_children_incubating = 3;
+	  f spawn_period = 2;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.67294,0,3.90054,0x68243c02;
+	}
+}
 [t:generator_generic,n:0x02000474]
 {
 	[generator_basic]
@@ -88,53 +136,5 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 3.84293,-2,-3.21767,0x72a53766;
-	}
-}
-[t:generator_generic,n:0x02000470]
-{
-	[generator_basic]
-	{
-		child_template_name = "2w_skeleton";
-	  x initial_command = 0x0200047A;
-	  i max_alive_children = 3;
-	  i num_children_incubating = 3;
-	  f spawn_period = 2;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.417267,0,-1.92151,0xffedf95d;
-	}
-}
-[t:generator_generic,n:0x02000471]
-{
-	[generator_basic]
-	{
-		child_template_name = "2w_skeleton";
-	  x initial_command = 0x0200047B;
-	  i max_alive_children = 3;
-	  i num_children_incubating = 3;
-	  f spawn_period = 2;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.379425,0,-2.28266,0xb86c6eff;
-	}
-}
-[t:generator_generic,n:0x0200046f]
-{
-	[generator_basic]
-	{
-		child_template_name = "2w_skeleton";
-	  x initial_command = 0x02000479;
-	  i max_alive_children = 3;
-	  i num_children_incubating = 3;
-	  f spawn_period = 2;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.67294,0,3.90054,0x68243c02;
 	}
 }

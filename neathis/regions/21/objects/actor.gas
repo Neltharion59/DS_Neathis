@@ -26,21 +26,6 @@
 	  p position = -1.61763,0,0.628284,0x0ac76f9c;
 	}
 }
-[t:skeleton_mercenary_archer,n:0x01f00019]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = -3.19779,-5.95359,-1.97386,0x37061f2c;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01f00022]
-{
-	[placement]
-	{
-	  p position = -2.54403,-5.74458,-1.40219,0x37061f2c;
-	}
-}
 [t:skeleton_mercenary_reveal_02,n:0x01f0001c]
 {
 	[placement]
@@ -71,6 +56,21 @@
 	  p position = -3.45739,-5.9727,-0.390184,0x45f02bbd;
 	}
 }
+[t:skeleton_mercenary_archer,n:0x01f00019]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -3.19779,-5.95359,-1.97386,0x37061f2c;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f00022]
+{
+	[placement]
+	{
+	  p position = -2.54403,-5.74458,-1.40219,0x37061f2c;
+	}
+}
 [t:skeleton_mercenary_reveal_02,n:0x01f00078]
 {
 	[placement]
@@ -80,9 +80,43 @@
 }
 [t:skeleton_mercenary_reveal_02,n:0x01f00079]
 {
+	[aspect]
+	{
+	  f experience_value = 217980;
+	  f life = 4879;
+		material = ice;
+	  f max_life = 4879;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 200;
+	  f damage_bonus_min_melee = 200;
+	}
+	[common]
+	{
+		screen_name = "Uldnar the Shimmering";
+	}
+	[defend]
+	{
+	  f defense = 600;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_un_pl_f_crystal;
+			es_feet = bo_un_bo_pl_f_crytstal;
+			es_forearms = gl_un_gl_pl_f_crystal;
+			es_head = he_un_fu_crystal;
+			es_shield_hand = sh_un_kite_ice;
+			es_weapon_hand = sd_un_ice_avg;
+		}
+	}
 	[placement]
 	{
-	  p position = -0.656773,-1.17193,-1.47554,0xca9148fd;
+	  q orientation = 0,-0.923879,0,-0.382683;
+	  p position = -1.1686,-1.00248,1.35088,0xca9148fd;
 	}
 }
 [t:skeleton_mercenary_reveal_02,n:0x01f000ec]
@@ -538,15 +572,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,0;
-	  p position = -0.771255,0,0.759182,0x906ef149;
-	}
-}
-[t:wraith_terror,n:0x01f002c0]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 0.730484,0,0.0479507,0x906ef149;
+	  p position = -0.216217,0,-0.638351,0x597c652f;
 	}
 }
 [t:wraith_terror,n:0x01f002c1]
@@ -554,15 +580,23 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,0;
-	  p position = 0.892944,0,1.8576,0x906ef149;
+	  p position = 1.224,0,-0.533288,0x597c652f;
+	}
+}
+[t:wraith_terror,n:0x01f002c0]
+{
+	[placement]
+	{
+	  q orientation = 0,-2.98023e-008,0,1;
+	  p position = -1.75208,0,0.491043,0x748064f7;
 	}
 }
 [t:warlock,n:0x01f002c3]
 {
 	[placement]
 	{
-	  q orientation = 0,1,0,0;
-	  p position = -0.6203,0,1.18307,0x906ef149;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.56438,0,-0.500717,0x748064f7;
 	}
 }
 [t:wraith_terror,n:0x01f002be]
@@ -608,7 +642,8 @@
 {
 	[placement]
 	{
-	  p position = 1.89127,-3.15,-1.20955,0x8bb249eb;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.965874,0,0.908714,0xe36c2621;
 	}
 }
 [t:2w_skeleton_guard,n:0x01f00314]
@@ -1005,11 +1040,33 @@
 	  p position = -0.310171,0,-1.61179,0x17881e06;
 	}
 }
+[t:2w_skeleton_guard,n:0x01f004c2]
+{
+	[placement]
+	{
+	  p position = -0.217819,12,1.37621,0x698d3b28;
+	}
+}
+[t:2w_skeleton_guard,n:0x01f004c3]
+{
+	[placement]
+	{
+	  p position = 1.26459,12,1.34938,0x698d3b28;
+	}
+}
 [t:2w_skeleton,n:0x01f004bb]
 {
 	[placement]
 	{
 	  p position = 3.20387,12,0.621547,0x531ef303;
+	}
+}
+[t:2w_skeleton,n:0x01f004bd]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.32692,12,-0.0036087,0x531ef303;
 	}
 }
 [t:2w_skeleton,n:0x01f004be]
@@ -1028,6 +1085,14 @@
 	  p position = 2.44597,12,-0.0326395,0x531ef303;
 	}
 }
+[t:2w_skeleton_guard_boss_01,n:0x01f004c1]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 3.11926,12,-0.62674,0x531ef303;
+	}
+}
 [t:2w_skeleton_guard,n:0x01f004c4]
 {
 	[placement]
@@ -1035,42 +1100,12 @@
 	  p position = 3.8913,12,0.874352,0x531ef303;
 	}
 }
-[t:2w_skeleton,n:0x01f004bd]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.60935,0,-0.512079,0x51ac5d81;
-	}
-}
-[t:2w_skeleton_guard_boss_01,n:0x01f004c1]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -1.45551,0,-0.0669327,0x51ac5d81;
-	}
-}
-[t:2w_skeleton_guard,n:0x01f004c2]
-{
-	[placement]
-	{
-	  p position = -1.09377,0,-1.15877,0x51ac5d81;
-	}
-}
-[t:2w_skeleton_guard,n:0x01f004c3]
-{
-	[placement]
-	{
-	  p position = -0.270227,0,-1.60121,0x51ac5d81;
-	}
-}
 [t:2w_skeleton_guard,n:0x01f004c5]
 {
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.24251,0,0.178482,0x51ac5d81;
+	  p position = 2.42989,12,0.518028,0x531ef303;
 	}
 }
 [t:skeleton_mercenary_reveal_02,n:0x01f004c6]
@@ -1208,14 +1243,6 @@
 	  p position = -5.52472,-3.9183,-3.33142,0x8ffbf9b9;
 	}
 }
-[t:skeleton_mercenary_reveal_02,n:0x01f00063]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382684,0,0.923879;
-	  p position = -6.05292,-3.89408,-5.452,0x8ffbf9b9;
-	}
-}
 [t:skeleton_mercenary_archer,n:0x01f0006c]
 {
 	[placement]
@@ -1278,9 +1305,50 @@
 }
 [t:skeleton_mercenary_archer,n:0x01f0006a]
 {
+	[aspect]
+	{
+	  f experience_value = 312000;
+	  f life = 3064;
+	  f max_life = 3064;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 400;
+	  f damage_bonus_min_ranged = 400;
+	}
+	[common]
+	{
+		screen_name = "Nermos the Weathered";
+	}
+	[defend]
+	{
+	  f defense = 612;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_sl_f_g_c_fun;
+			es_head = he_ra_fu_pl_horn_mag;
+			es_shield_hand = bw_g_c_c_m_4_low;
+		}
+		[other]
+		{
+			il_main = ring_lloyd;
+		}
+	}
 	[placement]
 	{
-	  p position = -0.098938,0,0.0131836,0x59e1239e;
+	  p position = -0.27063,0,-0.390167,0x59e1239e;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f00063]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.853729,5.89892,1.18265,0xff6ea6ba;
 	}
 }
 [t:skeleton_mercenary_reveal_02,n:0x01f00064]
@@ -1318,7 +1386,7 @@
 {
 	[placement]
 	{
-	  p position = 1.37876,0,0.0869308,0x2ce463c3;
+	  p position = 1.46072,0,1.73959,0x2ce463c3;
 	}
 }
 [t:skeleton_mercenary_archer,n:0x01f004e8]
@@ -2166,7 +2234,7 @@
 {
 	[placement]
 	{
-	  p position = -1.74181,0,-0.174033,0xaa870609;
+	  p position = -0.995071,0,-0.528092,0xaa870609;
 	}
 }
 [t:warlock,n:0x01f002b7]
@@ -2175,6 +2243,14 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 0.902863,0,-0.460349,0xaa870609;
+	}
+}
+[t:warlock,n:0x01f002b8]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -0.960022,0,0.621502,0xaa870609;
 	}
 }
 [t:wraith_piercer,n:0x01f00267]
@@ -2525,13 +2601,6 @@
 	{
 	  q orientation = 0,1,0,0;
 	  p position = 1.99783,0,0.390808,0x3e8fafe8;
-	}
-}
-[t:warlock,n:0x01f002b8]
-{
-	[placement]
-	{
-	  p position = -1.28506,0,-0.750174,0x07529db5;
 	}
 }
 [t:2w_skeleton,n:0x01f00424]
@@ -3357,7 +3426,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.382684,0,0.923879;
-	  p position = -1.86943,0,3.86,0xf462f1c8;
+	  p position = -1.82063,0,3.83184,0xf462f1c8;
 	}
 }
 [t:skeleton_mercenary_reveal_02,n:0x01f00053]
@@ -3728,7 +3797,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.91074,0,0.452057,0x1a2cbdd8;
+	  p position = -3.8787,0,0.426685,0x1a2cbdd8;
 	}
 }
 [t:wraith_terror,n:0x01f001a4]
@@ -3736,6 +3805,34 @@
 	[placement]
 	{
 	  p position = 0.29678,0,0.475319,0x1a2cbdd8;
+	}
+}
+[t:2w_wraith_boss_01,n:0x01f005f4]
+{
+	[aspect]
+	{
+	  f experience_value = 250000;
+	  f life = 5701;
+	  f max_life = 5701;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_max = 340;
+	  f damage_min = 320;
+	}
+	[common]
+	{
+		screen_name = "Exarhagor the Menace";
+	}
+	[defend]
+	{
+	  f defense = 900;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-5.28297e-008;
+	  p position = 0.30661,-1.08121,0.045948,0x24a42467;
 	}
 }
 [t:wraith_terror,n:0x01f001a7]
@@ -3814,6 +3911,45 @@
 	  p position = 3.69073,-1.90735e-006,-3.34367,0x63c9adff;
 	}
 }
+[t:2w_krug_dog_skeleton,n:0x01f002aa]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 1.55;
+	}
+	[attack]
+	{
+	  f damage_max = 225;
+	  f damage_min = 175;
+	}
+	[common]
+	{
+		screen_name = "Kerberos";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x01F00121,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.923879,0,0.382684;
+	  p position = 0.725803,0,0.860039,0xc2664fa5;
+	}
+}
 [t:krug_dog_skeleton,n:0x01f000b8]
 {
 	[placement]
@@ -3828,6 +3964,45 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 1.58739,-1.90735e-006,-1.81995,0xdeeff6ee;
+	}
+}
+[t:2w_krug_dog_skeleton,n:0x01f002ab]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 1.55;
+	}
+	[attack]
+	{
+	  f damage_max = 225;
+	  f damage_min = 175;
+	}
+	[common]
+	{
+		screen_name = "Kerberos";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x01F00121,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707106;
+	  p position = 2.43744,0,-0.0260811,0x2aee6c36;
 	}
 }
 [t:skeleton_mercenary_archer_reveal_02,n:0x01f00074]
@@ -4284,13 +4459,6 @@
 	  p position = -0.0632934,0,-0.624405,0x18ccd7b1;
 	}
 }
-[t:wraith_terror,n:0x01f00414]
-{
-	[placement]
-	{
-	  p position = 2.91618,0,0.182571,0xe0aa3fd6;
-	}
-}
 [t:wraith_terror,n:0x01f00413]
 {
 	[placement]
@@ -4298,90 +4466,11 @@
 	  p position = -0.465691,0,-1.35468,0x148bb2df;
 	}
 }
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f000d5]
+[t:wraith_terror,n:0x01f00414]
 {
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.80379,0,-0.214912,0xf3597307;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f000d6]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.85852,0,0.767967,0xf3597307;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f000d7]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.113892,0,-0.823906,0xf3597307;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01f0009f]
-{
-	[placement]
-	{
-	  p position = -0.423279,0,-2.71561,0x70f2c980;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f0009b]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 3.83791,0,0.0240021,0xc73918a2;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01f0009d]
-{
-	[placement]
-	{
-	  p position = 0.733227,0,-1.43327,0xc73918a2;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f000a3]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.829605,0,-2.53154,0xc73918a2;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f000dc]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.89978,0,1.52161,0x678cc146;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01f0009c]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.72065,3.8147e-006,-1.09801,0xc63903e1;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f000a1]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.18478,0,-3.01772,0xc63903e1;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01f00096]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.3911,-3.8147e-006,-2.37947,0x2cd75f1f;
+	  p position = 2.91618,0,0.182571,0xe0aa3fd6;
 	}
 }
 [t:skeleton_mercenary_reveal_02,n:0x01f00099]
@@ -4389,98 +4478,6 @@
 	[placement]
 	{
 	  p position = 0.347569,3,0.948219,0xaf214d90;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01f0009e]
-{
-	[placement]
-	{
-	  p position = -1.76731,0,1.29321,0x50055777;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f000cf]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.50294,0,1.02843,0x50055777;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01f000a4]
-{
-	[placement]
-	{
-	  p position = -2.37359,-3.8147e-006,0.0622139,0xfc611976;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01f000a0]
-{
-	[placement]
-	{
-	  p position = -1.39518,0,1.63492,0x1ca7b659;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f000c9]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.88316,0,2.01524,0x1ca7b659;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f000ce]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.95171,0,0.438034,0x1ca7b659;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f000d8]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 3.25491,0,-3.19551,0x1ca7b659;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01f000a2]
-{
-	[placement]
-	{
-	  p position = -0.920153,3,-0.0920181,0x0bbc1362;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f0008e]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.74009,-5.98593,-1.52077,0xaf9d2b84;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f0008f]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.551254,-6,-1.54716,0xaf9d2b84;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f00090]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.526474,-5.96548,-1.42851,0xaf9d2b84;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01f00093]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.72894,-5.9229,-1.62878,0xaf9d2b84;
 	}
 }
 [t:skeleton_mercenary_archer_reveal_02,n:0x01f00094]
@@ -4620,8 +4617,291 @@
 {
 	[placement]
 	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -3.26849,3,0.468994,0x71249a0e;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f00096]
+{
+	[placement]
+	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.39896,0,-2.04939,0x73995a06;
+	  p position = 0.3911,-3.8147e-006,-2.37947,0x2cd75f1f;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f000d5]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.80379,0,-0.214912,0xf3597307;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f000d6]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.85852,0,0.767967,0xf3597307;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f000d7]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.113892,0,-0.823906,0xf3597307;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f0009f]
+{
+	[placement]
+	{
+	  p position = -0.423279,0,-2.71561,0x70f2c980;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f0009b]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.83791,0,0.0240021,0xc73918a2;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f0009d]
+{
+	[placement]
+	{
+	  p position = 0.733227,0,-1.43327,0xc73918a2;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f000a3]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.829605,0,-2.53154,0xc73918a2;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f000dc]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.89978,0,1.52161,0x678cc146;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f0009c]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.72065,3.8147e-006,-1.09801,0xc63903e1;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f000a1]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.18478,0,-3.01772,0xc63903e1;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f0009e]
+{
+	[placement]
+	{
+	  p position = -1.76731,0,1.29321,0x50055777;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f000cf]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.50294,0,1.02843,0x50055777;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f000a4]
+{
+	[placement]
+	{
+	  p position = -2.37359,-3.8147e-006,0.0622139,0xfc611976;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f000a0]
+{
+	[placement]
+	{
+	  p position = -1.39518,0,1.63492,0x1ca7b659;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f000c9]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.88316,0,2.01524,0x1ca7b659;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f000ce]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.95171,0,0.438034,0x1ca7b659;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f000d8]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.25491,0,-3.19551,0x1ca7b659;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f000a2]
+{
+	[placement]
+	{
+	  p position = -0.920153,3,-0.0920181,0x0bbc1362;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f0008e]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.74009,-5.98593,-1.52077,0xaf9d2b84;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f0008f]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.551254,-6,-1.54716,0xaf9d2b84;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f00090]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.526474,-5.96548,-1.42851,0xaf9d2b84;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f00093]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.72894,-5.9229,-1.62878,0xaf9d2b84;
+	}
+}
+[t:2w_skeleton_archer,n:0x01f005d8]
+{
+	[placement]
+	{
+	  p position = 2.43879,-8.05,-2.5564,0x0f0e1922;
+	}
+}
+[t:2w_skeleton_archer,n:0x01f005d2]
+{
+	[aspect]
+	{
+	  f experience_value = 250111;
+	  f life = 3098;
+	  f max_life = 3098;
+	  f scale_multiplier = 1.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 500;
+	  f damage_bonus_min_ranged = 300;
+	}
+	[common]
+	{
+		screen_name = "Dhiirn the Ranger of Darkmoon";
+	}
+	[defend]
+	{
+	  f defense = 780;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = bw_ra_g_c_c_l_4_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.50987e-007;
+	  p position = -0.165901,0,-1.85397,0x10b43046;
+	}
+}
+[t:2w_skeleton_archer,n:0x01f005d3]
+{
+	[placement]
+	{
+	  p position = 1.91669,0,-1.40556,0x10b43046;
+	}
+}
+[t:2w_skeleton_archer,n:0x01f005d4]
+{
+	[placement]
+	{
+	  p position = 1.2116,0,-0.972626,0x10b43046;
+	}
+}
+[t:2w_skeleton_archer,n:0x01f005d5]
+{
+	[placement]
+	{
+	  p position = 0.615898,0,-0.796371,0x10b43046;
+	}
+}
+[t:2w_skeleton_archer,n:0x01f005d6]
+{
+	[placement]
+	{
+	  p position = -0.877197,0,-0.705414,0x10b43046;
+	}
+}
+[t:2w_skeleton_archer,n:0x01f005d7]
+{
+	[placement]
+	{
+	  p position = -1.50116,0,-1.07957,0x10b43046;
+	}
+}
+[t:2w_skeleton,n:0x01f005d9]
+{
+	[placement]
+	{
+	  p position = 1.33001,0,-1.59801,0x10b43046;
+	}
+}
+[t:2w_skeleton,n:0x01f005da]
+{
+	[placement]
+	{
+	  p position = 0.647575,0,-1.52228,0x10b43046;
+	}
+}
+[t:2w_skeleton,n:0x01f005db]
+{
+	[placement]
+	{
+	  p position = -0.95359,0,-1.57114,0x10b43046;
+	}
+}
+[t:2w_skeleton,n:0x01f005dc]
+{
+	[placement]
+	{
+	  p position = -1.94636,0,-1.86346,0x10b43046;
 	}
 }
 [t:2w_skeleton,n:0x01f000d2]
@@ -4745,7 +5025,7 @@
 {
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
+	  q orientation = 0,-0.92388,0,-0.382683;
 	  p position = -3.30591,0,1.00073,0x48860ecf;
 	}
 }
@@ -4994,14 +5274,6 @@
 	{
 	  q orientation = 0,1,0,0;
 	  p position = 0.990828,-0.5,-1.03438,0x21323867;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01f00076]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.05541,0,-1.67066,0x8f0ab4d1;
 	}
 }
 [t:skeleton_mercenary_reveal_02,n:0x01f0023b]
@@ -5270,5 +5542,610 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -1.19481,0,1.94394,0x89972727;
+	}
+}
+[t:2w_wraith_lesser,n:0x01f002ad]
+{
+	[aspect]
+	{
+	  f experience_value = 238250;
+	  f life = 2917;
+	  f max_life = 2917;
+	  f scale_multiplier = 1.45;
+	}
+	[common]
+	{
+		screen_name = "Ommerain the Bloodpounder";
+	}
+	[defend]
+	{
+	  f defense = 523.7;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = hm_g_c_2h2m_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-1.66939e-007,0,-1;
+	  p position = -0.452548,0,-1.85748,0x9f999ff5;
+	}
+}
+[t:2w_skeleton_guard_boss_01,n:0x01f002ae]
+{
+	[aspect]
+	{
+	  f experience_value = 240600;
+	  f life = 3740;
+	  f max_life = 3740;
+	  f scale_multiplier = 1.2;
+	}
+	[common]
+	{
+		screen_name = "Hirron the Despoiled";
+	}
+	[defend]
+	{
+	  f defense = 840.7;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_un_m_o_k_m_maw;
+			es_weapon_hand = sd_un_g_1h_twirl;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707106;
+	  p position = 2.27734,0,-0.540161,0x1714b5d8;
+	}
+}
+[t:wraith_mage,n:0x01f002b1]
+{
+	[aspect]
+	{
+	  f experience_value = 210515;
+	  f life = 4050;
+	  f max_life = 4050;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 300;
+	  f damage_bonus_min_cmagic = 300;
+	}
+	[common]
+	{
+		screen_name = "Ringoroin the Magister";
+	}
+	[defend]
+	{
+	  f defense = 600;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.09296,0,0.684143,0x9751f6e7;
+	}
+}
+[t:punisher,n:0x01f002db]
+{
+	[aspect]
+	{
+	  f experience_value = 340000;
+	  f life = 6812;
+	  f max_life = 6812;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 400;
+	  f damage_bonus_min_cmagic = 400;
+	}
+	[common]
+	{
+		screen_name = "Skull of Rhuventos the Red";
+	}
+	[defend]
+	{
+	  f defense = 800;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-9.55219e-008;
+	  p position = 0.119194,-1.23721,-0.231575,0xd25163c3;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f002dc]
+{
+	[aspect]
+	{
+	  f experience_value = 307980;
+	  f life = 7091;
+	  f max_life = 7091;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 100;
+	}
+	[common]
+	{
+		screen_name = "Klain the Dragonslayer";
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_un_sc_f_dragon;
+			es_feet = bo_un_bo_sc_f_dragon;
+			es_forearms = gl_un_gl_sc_f_dragon;
+			es_head = he_un_vi_dragon;
+			es_shield_hand = sh_ra_m_o_r_m_shell;
+			es_weapon_hand = scythe_g_1h_mag;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707106;
+	  p position = -3.92603,0,-2.31414,0x73995a06;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f00529]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.67221,0,2.58981,0x2cd75f1f;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01f00534]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.13391,0,0.565727,0x73995a06;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f00599]
+{
+	[placement]
+	{
+	  p position = -3.12044,0,-3.90083,0x73995a06;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f005b4]
+{
+	[placement]
+	{
+	  p position = -2.88008,0,-0.575478,0x73995a06;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f005d1]
+{
+	[placement]
+	{
+	  p position = -2.69261,0,-1.79829,0x73995a06;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01f0070c]
+{
+	[placement]
+	{
+	  p position = 3.38661,3,1.10887,0x3564e67a;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0070d]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.755318,0,-2.6963,0xa55c535a;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0070e]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.785065,0,-1.1636,0xa55c535a;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0070f]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.36217,0,-1.6512,0xa55c535a;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00710]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.64673,0,-0.883675,0xd71d6160;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00711]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.93771,0,-3.68306,0xa55c535a;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00712]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.2524,3,-1.6873,0x1db1b1f7;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00713]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.476044,3,-1.27242,0x1db1b1f7;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00714]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.88332,0,-3.58124,0x3aae1d03;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00715]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.707581,3,-1.95804,0x1db1b1f7;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00716]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.04022,0,-0.1017,0x32ff0f2d;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00717]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.81042,0,-1.10333,0x32ff0f2d;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00718]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.565247,0,1.11177,0x32ff0f2d;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00719]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.23965,0,-0.690185,0xb740ec71;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0071a]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.32147,0,-0.0876312,0xb740ec71;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0071b]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.40927,0,0.426842,0x73995a06;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0071c]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.35934,0,-1.63593,0x73995a06;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0071d]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.92368,0,3.39223,0x2cd75f1f;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0071e]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.58859,0,2.4614,0x2cd75f1f;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0071f]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.10335,0,-2.85361,0x73995a06;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00720]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.459366,3,-1.03676,0x1ea7393c;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00721]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.12174,3,-0.189804,0x1ea7393c;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00722]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.687675,3,-1.34465,0x1ea7393c;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00723]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.83689,0,-2.39821,0x1ca7b659;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00724]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.37287,3,2.05679,0x1ea7393c;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00725]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.81993,3,-0.220947,0x0bbc1362;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00726]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.570877,3,-0.318115,0x0bbc1362;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00727]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.17293,3,-0.155884,0x0bbc1362;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00728]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.48897,3,-0.115051,0x0bbc1362;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00729]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.54396,0,-1.3059,0xfc611976;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0072a]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.09497,0,-0.67807,0xfc611976;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0072b]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.35957,3,1.0338,0x4a5fa2b0;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0072c]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.60516,0,-1.49399,0x678cc146;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0072d]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.94623,0,0.417648,0x678cc146;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0072e]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.33833,0,-0.205566,0x678cc146;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0072f]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.42969,0,-1.54391,0x678cc146;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00730]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.98268,0,-0.120552,0x678cc146;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00731]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.23733,0,-3.43883,0x2cd75f1f;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00732]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.95422,0,0.155609,0xc63903e1;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00733]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.14169,-0.75,0.595619,0xd38de0e9;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00734]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.079422,-0.75,0.875069,0xd38de0e9;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00735]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.62297,-0.75,0.166687,0xd38de0e9;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00736]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.25981,0,-3.14199,0x4b6f3337;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00737]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.887604,0,-3.15504,0x4b6f3337;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00738]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.324966,0,-3.73072,0x4b6f3337;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f00739]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.88739,0,-0.243217,0xba2e3112;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0073a]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.7149,0,0.763535,0xba2e3112;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0073b]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.97511,-1.15,1.06123,0xd38de0e9;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0073c]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.3074,0,-2.84245,0x94e96470;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0073d]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.98056,-3.99792,-4.00768,0x1b464788;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0073e]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.26948,0,-2.96162,0x94e96470;
+	}
+}
+[t:krug_dog_skeleton,n:0x01f0073f]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.50692,0,-1.66902,0x94e96470;
 	}
 }

@@ -460,6 +460,15 @@
 		use_point_scids = 0x01e00294,0x01e00295,0x01e0029a,0x01e0029b;
 	}
 }
+[t:respawn_statue,n:0x01e002a1]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -6.15596,-3.90693,-5.57787,0x1e74833d;
+		use_point_scids = 0x01e002a4;
+	}
+}
 [t:door_grs_peasant_left,n:0x01e00573]
 {
 	[common]
@@ -504,14 +513,5 @@
 	  q orientation = 0,-0.382683,0,-0.92388;
 	  p position = -4.75035,-4.25,-2.75269,0x0a491661;
 		use_point_scids = 0x01e00581,0x01e00582;
-	}
-}
-[t:respawn_statue,n:0x01e002a1]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -6.15596,-3.90693,-5.57787,0x1e74833d;
-		use_point_scids = 0x01e002a4;
 	}
 }

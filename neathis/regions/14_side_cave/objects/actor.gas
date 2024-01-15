@@ -148,9 +148,38 @@
 }
 [t:trog_warrior_boss_01,n:0x0180000c]
 {
+	[aspect]
+	{
+	  f experience_value = 10500;
+	  f life = 1238;
+	  f max_life = 1238;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 100;
+	}
+	[common]
+	{
+		screen_name = "Huwah the Plague";
+	}
+	[defend]
+	{
+	  f defense = 567;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_u_g_c_r_m_avg;
+			es_weapon_hand = cb_un_2h_troll_swamp;
+		}
+	}
 	[placement]
 	{
-	  p position = -2.74836,-1.90735e-006,0.309065,0x209bda6f;
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.162086,-1.90735e-006,0.547232,0xc2d8b37c;
 	}
 }
 [t:syrrus,n:0x01800000]
