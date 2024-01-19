@@ -117,9 +117,34 @@
 }
 [t:troll_forest,n:0x0120004d]
 {
+	[aspect]
+	{
+	  f experience_value = 3579;
+	  f life = 853;
+	  f life_recovery_period = 4;
+	  f max_life = 853;
+	  f scale_multiplier = 1.2;
+	}
+	[common]
+	{
+		screen_name = "Ruvuak the Cutter";
+	}
+	[defend]
+	{
+	  f defense = 150;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_un_m_o_r_m_aurora;
+			es_weapon_hand = sd_ra_g_o_st_1h_fin;
+		}
+	}
 	[placement]
 	{
-	  p position = -2.80881,0,3.90395,0x26d33fb9;
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -2.89894,0,3.91724,0x26d33fb9;
 	}
 }
 [t:troll_forest,n:0x01200055]

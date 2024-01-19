@@ -55,22 +55,6 @@
 	[common]
 	{
 		screen_name = "Supply Crate";
-		[instance_triggers]
-		{
-			[*]
-			{
-			  b can_self_destruct = true;
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
 	}
 	[defend]
 	{
@@ -85,7 +69,7 @@
 	[placement]
 	{
 	  q orientation = 2.8567e-008,-0.707107,-8.60492e-009,0.707107;
-	  p position = 0.930227,-3.65,0.800781,0xfbb9b2b3;
+	  p position = 0.936335,-3.65,0.804764,0xfbb9b2b3;
 	}
 }
 [t:sh_w_g_c_s_m_fun,n:0x02801fff]

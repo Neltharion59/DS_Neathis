@@ -159,10 +159,34 @@
 }
 [t:syrrus,n:0x015000ac]
 {
+	[aspect]
+	{
+	  f experience_value = 7852;
+	  f life = 2107;
+	  f max_life = 2107;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_nmagic = 50;
+	  f damage_bonus_max_ranged = 50;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_nmagic = 50;
+	  f damage_bonus_min_ranged = 50;
+	}
+	[common]
+	{
+		screen_name = "Preysnapper";
+	}
+	[defend]
+	{
+	  f defense = 185;
+	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 7.87776,0,-18.1425,0x2db835e7;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.89263,0,11.0034,0x0678cf7e;
 	}
 }
 [t:syrrus,n:0x015001eb]
@@ -715,9 +739,27 @@
 }
 [t:tretch,n:0x01500082]
 {
+	[aspect]
+	{
+	  f experience_value = 9571;
+	  f life = 6721;
+	  f max_life = 6721;
+	  f scale_multiplier = 2;
+	}
+	[attack]
+	{
+	  f attack_range = 4;
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 40;
+	}
+	[common]
+	{
+		screen_name = "The Weeping Oak";
+	}
 	[placement]
 	{
-	  p position = 3.7897,0,-1.4436,0xc725c62e;
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.89381,0,-2.45149,0xc725c62e;
 	}
 }
 [t:tretch,n:0x01500081]
@@ -780,7 +822,8 @@
 {
 	[placement]
 	{
-	  p position = 1.36349,0,-1.79764,0x5b5bb91a;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.605095,0,0.0837402,0xc725c62e;
 	}
 }
 [t:tretch,n:0x0150007e]
@@ -1069,5 +1112,196 @@
 	[placement]
 	{
 	  p position = 3.89561,0,1.72171,0xaffdc6f2;
+	}
+}
+[t:syrrus,n:0x0150053a]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 6.69788,-9.31323e-010,1.90002,0xf5ca1277;
+	}
+}
+[t:syrrus,n:0x0150053b]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 9.51575,0,-8.16226,0x2db835e7;
+	}
+}
+[t:syrrus,n:0x0150053c]
+{
+	[aspect]
+	{
+	  f experience_value = 7852;
+	  f life = 2107;
+	  f max_life = 2107;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_nmagic = 50;
+	  f damage_bonus_max_ranged = 50;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_nmagic = 50;
+	  f damage_bonus_min_ranged = 50;
+	}
+	[common]
+	{
+		screen_name = "Preysnapper";
+	}
+	[defend]
+	{
+	  f defense = 185;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 3.14864,9.31323e-010,-22.8749,0x4d9ed76d;
+	}
+}
+[t:syrrus,n:0x0150053d]
+{
+	[aspect]
+	{
+	  f experience_value = 7852;
+	  f life = 2107;
+	  f max_life = 2107;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_nmagic = 50;
+	  f damage_bonus_max_ranged = 50;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_nmagic = 50;
+	  f damage_bonus_min_ranged = 50;
+	}
+	[common]
+	{
+		screen_name = "Preysnapper";
+	}
+	[defend]
+	{
+	  f defense = 185;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.210434,0,1.71191,0x21e2a097;
+	}
+}
+[t:syrrus,n:0x0150053e]
+{
+	[aspect]
+	{
+	  f experience_value = 7852;
+	  f life = 2107;
+	  f max_life = 2107;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_nmagic = 50;
+	  f damage_bonus_max_ranged = 50;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_nmagic = 50;
+	  f damage_bonus_min_ranged = 50;
+	}
+	[common]
+	{
+		screen_name = "Preysnapper";
+	}
+	[defend]
+	{
+	  f defense = 185;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 11.9053,0,-7.57225,0xb3fcff12;
+	}
+}
+[t:swamp_witch,n:0x0150053f]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.914116,0,-2.34071,0xe04bc5fd;
+	}
+}
+[t:swamp_witch,n:0x01500540]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.3262,0,-3.8065,0xd31c1e3f;
+	}
+}
+[t:tretch,n:0x01500544]
+{
+	[placement]
+	{
+	  p position = -2.82246,2,1.92026,0xd1bf00a5;
+	}
+}
+[t:tretch,n:0x01500545]
+{
+	[placement]
+	{
+	  p position = 3.98387,0,0.259392,0xda6b4fac;
+	}
+}
+[t:tretch,n:0x01500546]
+{
+	[placement]
+	{
+	  p position = 1.43559,0,-2.03852,0x87a0eacd;
+	}
+}
+[t:tretch,n:0x01500547]
+{
+	[placement]
+	{
+	  p position = -3.0755,0,0.529739,0x52bf838d;
+	}
+}
+[t:tretch,n:0x01500548]
+{
+	[placement]
+	{
+	  p position = 3.3156,0,0.625671,0x3e5eb2bf;
+	}
+}
+[t:tretch,n:0x01500549]
+{
+	[placement]
+	{
+	  p position = -0.894936,4,1.08549,0x0f5953f7;
+	}
+}
+[t:tretch,n:0x0150054a]
+{
+	[placement]
+	{
+	  p position = -3.51476,0,-1.25198,0x7bd57962;
+	}
+}
+[t:tretch,n:0x0150054b]
+{
+	[placement]
+	{
+	  p position = 0.970512,6,3.79692,0xd7f4e649;
+	}
+}
+[t:tretch,n:0x0150054c]
+{
+	[placement]
+	{
+	  p position = 3.54981,0,-1.463,0x8fe0451a;
 	}
 }

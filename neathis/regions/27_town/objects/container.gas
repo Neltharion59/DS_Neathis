@@ -321,6 +321,55 @@
 	  p position = -1.85786,-3,-0.378096,0x71b5024e;
 	}
 }
+[t:crate_swp_01,n:0x02801fe3]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.33;
+	}
+	[common]
+	{
+		dev_instance_text = "QUEST";
+		screen_name = "Basket";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_delete",0x02801FE1,0f,"default","every",0);
+				action* = change_quest_state("27_wasps","completed",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_damaged",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.99695,1.04136,1.51438,0x819eeef9;
+	}
+}
+[t:2w_chest_csl_07_chamber,n:0x02802116]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1.08443e-007,0,1;
+	  p position = 0.0301514,1,0.578241,0x819eeef9;
+		use_point_scids = 0x02802117;
+	}
+}
 [t:chest_csl_03,n:0x028000a0]
 {
 	[aspect]
@@ -450,6 +499,23 @@
 	{
 	  q orientation = 0,0.923879,0,0.382684;
 	  p position = 2.29277,0,0.755684,0x85d7e61b;
+	}
+}
+[t:3w_chest_cav_01_un_ce_r1,n:0x02802002]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.49012e-007,0,1;
+	  p position = 3.24602,-3.5,-1.82383,0x2d74aa4a;
+		use_point_scids = 0x02802003;
 	}
 }
 [t:chest_csl_02,n:0x02800286]
@@ -4749,22 +4815,5 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 0.257835,-3.07982,-0.136856,0xf287badf;
-	}
-}
-[t:3w_chest_cav_01_un_ce_r1,n:0x02802002]
-{
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
-	[inventory]
-	{
-	  b drop_at_use_point = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,1.49012e-007,0,1;
-	  p position = 3.24602,-3.5,-1.82383,0x2d74aa4a;
-		use_point_scids = 0x02802003;
 	}
 }

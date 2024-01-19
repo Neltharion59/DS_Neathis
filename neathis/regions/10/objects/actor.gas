@@ -294,7 +294,6 @@
 	  f experience_value = 117;
 	  f life = 337;
 	  f max_life = 337;
-	  f scale_multiplier = 1;
 	  f selection_indicator_scale = 1.15;
 	}
 	[attack]
@@ -659,7 +658,6 @@
 	  f experience_value = 117;
 	  f life = 337;
 	  f max_life = 337;
-	  f scale_multiplier = 1;
 	  f selection_indicator_scale = 1.15;
 	}
 	[attack]
@@ -876,7 +874,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.923879,0,-0.382684;
-	  p position = -3.60893,0,1.79239,0x0ca1a920;
+	  p position = -3.58733,0,1.77263,0x0ca1a920;
 	}
 }
 [t:scorpion,n:0x011000a5]
@@ -969,7 +967,6 @@
 	  f experience_value = 117;
 	  f life = 337;
 	  f max_life = 337;
-	  f scale_multiplier = 1;
 	  f selection_indicator_scale = 1.15;
 	}
 	[attack]
@@ -1071,7 +1068,6 @@
 	  f experience_value = 117;
 	  f life = 337;
 	  f max_life = 337;
-	  f scale_multiplier = 1;
 	  f selection_indicator_scale = 1.15;
 	}
 	[attack]
@@ -1102,7 +1098,6 @@
 	  f experience_value = 117;
 	  f life = 337;
 	  f max_life = 337;
-	  f scale_multiplier = 1;
 	  f selection_indicator_scale = 1.15;
 	}
 	[attack]
@@ -1133,7 +1128,6 @@
 	  f experience_value = 117;
 	  f life = 337;
 	  f max_life = 337;
-	  f scale_multiplier = 1;
 	  f selection_indicator_scale = 1.15;
 	}
 	[attack]
@@ -1164,7 +1158,6 @@
 	  f experience_value = 117;
 	  f life = 337;
 	  f max_life = 337;
-	  f scale_multiplier = 1;
 	  f selection_indicator_scale = 1.15;
 	}
 	[attack]
@@ -1859,10 +1852,41 @@
 }
 [t:spider_stalagnid,n:0x011001c5]
 {
+	[aspect]
+	{
+	  b dynamically_lit = true;
+	  f experience_value = 1017;
+	  f life = 617;
+	  f max_life = 617;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 50;
+	  f damage_bonus_min_melee = 50;
+	  f melee_aim_pi_time = 0.25;
+	  f melee_fidget_time = 0.25;
+	  f melee_recover_time = 0.25;
+	  f melee_swing_time = 0.25;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 3;
+	  f max_move_velocity = 3;
+	  f min_move_velocity = 3;
+	}
+	[common]
+	{
+		screen_name = "Ravenous Stalagnid";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.51687,0,-0.573376,0x38385765;
+	  p position = 2.4798,0,-0.780214,0x38385765;
 	}
 }
 [t:spider_stalagnid,n:0x011001c6]
@@ -2073,7 +2097,6 @@
 	  f experience_value = 117;
 	  f life = 337;
 	  f max_life = 337;
-	  f scale_multiplier = 1;
 	  f selection_indicator_scale = 1.15;
 	}
 	[attack]
@@ -2160,7 +2183,6 @@
 	  f experience_value = 117;
 	  f life = 337;
 	  f max_life = 337;
-	  f scale_multiplier = 1;
 	  f selection_indicator_scale = 1.15;
 	}
 	[attack]

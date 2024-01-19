@@ -500,6 +500,174 @@
 	  p position = -6.24796,-1.5,2.40103,0xe554fa16;
 	}
 }
+[t:3w_pot_des_clay_01_fd_r1,n:0x03500dac]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.668472,5.91195,1.3912,0x48f0ef10;
+	}
+}
+[t:3w_pot_des_clay_01_fd_r1,n:0x03500dad]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.72748,5.93297,0.905487,0x48f0ef10;
+	}
+}
+[t:3w_pot_des_clay_03_fd_r1,n:0x03500dae]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.761108,5.87257,0.636658,0x48f0ef10;
+	}
+}
+[t:3w_pot_cav_01_fd_r1,n:0x03500daf]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.7205,5.93449,-0.0840759,0x48f0ef10;
+	}
+}
+[t:3w_chest_csl_08_un_fd_r1,n:0x03500db2]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.84613,0,-1.17471,0x521513ba;
+		use_point_scids = 0x03500db8;
+	}
+}
+[t:3w_pot_des_clay_02_fd_r1,n:0x03500db3]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.3343,0,-1.15282,0x521513ba;
+	}
+}
+[t:3w_pot_des_clay_02_fd_r1,n:0x03500db4]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.81798,0,-0.544785,0x521513ba;
+	}
+}
+[t:3w_pot_des_clay_05_fd_r1,n:0x03500db5]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.02058,0,-0.254166,0x521513ba;
+	}
+}
+[t:3w_pot_des_clay_02_fd_r1,n:0x03500db6]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.24675,0,0.267151,0x521513ba;
+	}
+}
+[t:3w_urn_cav_02_fd_r1,n:0x03500db7]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.41432,0,0.411774,0x521513ba;
+	}
+}
+[t:barrel_gob_exp,n:0x03500da7]
+{
+	[attack]
+	{
+	  f area_damage_radius = 6;
+	  f damage_max = 1500;
+	  f damage_min = 1500;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 2.19865,0,3.9474,0x57960f0b;
+	}
+}
+[t:barrel_gob_exp,n:0x03500da8]
+{
+	[attack]
+	{
+	  f area_damage_radius = 6;
+	  f damage_max = 1500;
+	  f damage_min = 1500;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 3.50378,0,-0.997833,0xc3bef6f2;
+	}
+}
+[t:barrel_gob_exp,n:0x03500da9]
+{
+	[attack]
+	{
+	  f area_damage_radius = 6;
+	  f damage_max = 1500;
+	  f damage_min = 1500;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 3.32133,-3.87477,0.409088,0xd5a9aad5;
+	}
+}
+[t:barrel_gob_exp,n:0x03500daa]
+{
+	[attack]
+	{
+	  f area_damage_radius = 6;
+	  f damage_max = 1500;
+	  f damage_min = 1500;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 0.398773,-4,-0.830383,0x84a1a78f;
+	}
+}
+[t:barrel_gob_exp,n:0x03500dab]
+{
+	[attack]
+	{
+	  f area_damage_radius = 6;
+	  f damage_max = 1500;
+	  f damage_min = 1500;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 1.57564,-3.57579,-0.0558777,0x84a1a78f;
+	}
+}
+[t:3w_chest_csl_08_un_fd_r1,n:0x03500db0]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -3.21823,-5.90429,-1.66501,0xb7ed5c0a;
+		use_point_scids = 0x03500db1;
+	}
+}
 [t:barrel_glb,n:0x03500576]
 {
 	[aspect]
@@ -8523,173 +8691,5 @@
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = -5.26639,-1.5,-0.657379,0x66ea6751;
-	}
-}
-[t:barrel_gob_exp,n:0x03500da7]
-{
-	[attack]
-	{
-	  f area_damage_radius = 6;
-	  f damage_max = 1500;
-	  f damage_min = 1500;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 2.19865,0,3.9474,0x57960f0b;
-	}
-}
-[t:barrel_gob_exp,n:0x03500da8]
-{
-	[attack]
-	{
-	  f area_damage_radius = 6;
-	  f damage_max = 1500;
-	  f damage_min = 1500;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 3.50378,0,-0.997833,0xc3bef6f2;
-	}
-}
-[t:barrel_gob_exp,n:0x03500da9]
-{
-	[attack]
-	{
-	  f area_damage_radius = 6;
-	  f damage_max = 1500;
-	  f damage_min = 1500;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 3.32133,-3.87477,0.409088,0xd5a9aad5;
-	}
-}
-[t:barrel_gob_exp,n:0x03500daa]
-{
-	[attack]
-	{
-	  f area_damage_radius = 6;
-	  f damage_max = 1500;
-	  f damage_min = 1500;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 0.398773,-4,-0.830383,0x84a1a78f;
-	}
-}
-[t:barrel_gob_exp,n:0x03500dab]
-{
-	[attack]
-	{
-	  f area_damage_radius = 6;
-	  f damage_max = 1500;
-	  f damage_min = 1500;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 1.57564,-3.57579,-0.0558777,0x84a1a78f;
-	}
-}
-[t:3w_pot_des_clay_01_fd_r1,n:0x03500dac]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.668472,5.91195,1.3912,0x48f0ef10;
-	}
-}
-[t:3w_pot_des_clay_01_fd_r1,n:0x03500dad]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.72748,5.93297,0.905487,0x48f0ef10;
-	}
-}
-[t:3w_pot_des_clay_03_fd_r1,n:0x03500dae]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.761108,5.87257,0.636658,0x48f0ef10;
-	}
-}
-[t:3w_pot_cav_01_fd_r1,n:0x03500daf]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.7205,5.93449,-0.0840759,0x48f0ef10;
-	}
-}
-[t:3w_chest_csl_08_un_fd_r1,n:0x03500db0]
-{
-	[inventory]
-	{
-	  b drop_at_use_point = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -3.21823,-5.90429,-1.66501,0xb7ed5c0a;
-		use_point_scids = 0x03500DB1;
-	}
-}
-[t:3w_chest_csl_08_un_fd_r1,n:0x03500db2]
-{
-	[inventory]
-	{
-	  b drop_at_use_point = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 3.84613,0,-1.17471,0x521513ba;
-		use_point_scids = 0x03500DB8;
-	}
-}
-[t:3w_pot_des_clay_02_fd_r1,n:0x03500db3]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.3343,0,-1.15282,0x521513ba;
-	}
-}
-[t:3w_pot_des_clay_02_fd_r1,n:0x03500db4]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.81798,0,-0.544785,0x521513ba;
-	}
-}
-[t:3w_pot_des_clay_05_fd_r1,n:0x03500db5]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.02058,0,-0.254166,0x521513ba;
-	}
-}
-[t:3w_pot_des_clay_02_fd_r1,n:0x03500db6]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -3.24675,0,0.267151,0x521513ba;
-	}
-}
-[t:3w_urn_cav_02_fd_r1,n:0x03500db7]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.41432,0,0.411774,0x521513ba;
 	}
 }

@@ -44,6 +44,14 @@
 	  p position = -0.102812,0,-1.45052,0x23f25e57;
 	}
 }
+[t:spider_adolescent,n:0x00c00048]
+{
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -0.471555,0,-0.667093,0x23f25e57;
+	}
+}
 [t:spider_adolescent,n:0x00c00049]
 {
 	[placement]
@@ -66,6 +74,14 @@
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = -3.33161,0,-1.56576,0xfd0facb4;
+	}
+}
+[t:spider_adolescent,n:0x00c0004e]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -2.06237,0,-1.31255,0xfd0facb4;
 	}
 }
 [t:spider_adolescent,n:0x00c0004f]
@@ -107,28 +123,12 @@
 	  p position = 0.411616,0,1.26917,0x409add15;
 	}
 }
-[t:spider_adolescent,n:0x00c00048]
-{
-	[placement]
-	{
-	  q orientation = 0,0.923879,0,-0.382684;
-	  p position = -0.471555,0,-0.667093,0x23f25e57;
-	}
-}
-[t:spider_adolescent,n:0x00c0004e]
-{
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -2.06237,0,-1.31255,0xfd0facb4;
-	}
-}
 [t:mucosa_small,n:0x00c00056]
 {
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.85909,0,1.02103,0xaaedb1e8;
+	  p position = -1.81158,0,0.846523,0xaaedb1e8;
 	}
 }
 [t:mucosa_small,n:0x00c00057]
@@ -181,10 +181,39 @@
 }
 [t:mucosa_small,n:0x00c00055]
 {
+	[aspect]
+	{
+	  f experience_value = 320;
+	  f life = 289;
+	  f max_life = 289;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 75;
+	  f damage_bonus_min_cmagic = 50;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 1.75;
+	  f min_move_velocity = 1.75;
+	}
+	[common]
+	{
+		screen_name = "Toxic Mucosa";
+	}
+	[defend]
+	{
+	  f defense = 200;
+	}
+	[generator_in_object]
+	{
+	  f spawn_chance = 0;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.702389,0,-1.21833,0xcbcefc88;
+	  p position = -0.717533,0,-0.8544,0xcbcefc88;
 	}
 }
 [t:mucosa,n:0x00c0005b]
@@ -265,5 +294,33 @@
 	{
 	  q orientation = -2.31092e-015,0.707107,-1.22179e-015,0.707107;
 	  p position = 0.603062,0,0.542999,0xebdb2f4d;
+	}
+}
+[t:spider_adolescent,n:0x00c00122]
+{
+	[aspect]
+	{
+	  f experience_value = 250;
+	  f life = 480;
+	  f max_life = 480;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_max = 75;
+	  f damage_min = 50;
+	}
+	[common]
+	{
+		screen_name = "Mature Arakun Spider";
+	}
+	[defend]
+	{
+	  f defense = 170;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -2.23264,0,-1.23552,0x23f25e57;
 	}
 }

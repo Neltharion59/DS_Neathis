@@ -21,30 +21,6 @@
 	  p position = 2.55111,-0.55,-2.10073,0x8c9d49c8;
 	}
 }
-[t:snapper,n:0x00300025]
-{
-	[aspect]
-	{
-	  f experience_value = 16;
-	  f life = 16;
-	  f max_life = 16;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_max = 15;
-	  f damage_min = 10;
-	}
-	[defend]
-	{
-	  f defense = 22;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.452057,1,1.89776,0x99ca8afc;
-	}
-}
 [t:snapper,n:0x00300026]
 {
 	[aspect]
@@ -750,5 +726,57 @@
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = -0.997417,1,0.186893,0x99ca8afc;
+	}
+}
+[t:snapper,n:0x00300025]
+{
+	[aspect]
+	{
+	  f experience_value = 16;
+	  f life = 16;
+	  f max_life = 16;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_max = 15;
+	  f damage_min = 10;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.452057,1,1.89776,0x99ca8afc;
+	}
+}
+[t:spider_adolescent_yellow,n:0x00300146]
+{
+	[aspect]
+	{
+	  f experience_value = 25;
+	  f life = 14;
+	  f max_life = 14;
+	  f scale_multiplier = 1.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 5;
+	  f damage_bonus_min_melee = 4;
+	}
+	[common]
+	{
+		screen_name = "Yellow Spider Mother";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-6.82368e-007;
+	  p position = 0.809858,0,-1.1758,0x533b832c;
 	}
 }

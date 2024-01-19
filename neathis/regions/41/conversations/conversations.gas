@@ -2,7 +2,7 @@
 {
 	[text*]
 	{
-		screen_text = "A friendly face, how unexpected. Ever since those dragon cultists began attacking our city, our people went mad. They blamed the kingdom folk for those attacks, talking about their sinful lives and righteous punishment.  Human and dwarven residents were disappearing, sometimes even a bloodied body was found. Some of us could what was coming, so we gathered the remaining townsfolk and tried to make it for the Tarrawiath fortress. But the dragon cultists seem to have overrun its oasis, forcing us to barricade ourselves in this canyon. With our delusional brethen attacking from one side and the mysterious cultists attacking from the other, our only choice is to repel their attacks until the fortress troops relieve us. Feel free to walk around, I'm sure others will be glad to have someone new to talk to.";
+		screen_text = "A friendly face, how unexpected. Ever since those dragon cultists began attacking our city, our people went mad. They blamed the kingdom folk for those attacks, talking about their sinful lives and righteous punishment.  Human and dwarven residents were disappearing, sometimes even a bloodied body was found. Some of us could see what was coming, so we gathered the remaining townsfolk and barricaded ourselves in this oasis. With our delusional brethen occupying the only route to the central lands, our only choice is to repel their attacks until someone relieves us. Feel free to walk around, I'm sure others will be glad to have someone new to talk to.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -30,23 +30,7 @@
 	  f scroll_rate = 10.000000;
 	}
 }
-[droog_guard_06]
-{
-	[text*]
-	{
-		screen_text = "The cultists have been silent for some time, but don't get your hopes up. They are still there, and planning an attack.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[droog_guard_07]
-{
-	[text*]
-	{
-		screen_text = "Abandon all your hope, friend. I'm afraid the cultists are bound to bucher the Tarrawiath fortress garrison, us, and then our enraged brethren.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[droog_guard_v05]
+[droog_guard_05]
 {
 	[text*]
 	{
@@ -70,23 +54,13 @@
 	  f scroll_rate = 10.000000;
 	}
 }
-[guard_captain]
+[man_01]
 {
 	[text*]
 	{
 		activate_quest* = 41_cult,0;
 	  b quest_dialog = true;
-		screen_text = "You have done us a great favor by liberating us from the siege. Those cultists appeared out of nowhere and forced us to shut our gates. I hope the droog were able to hold their city against their attacks...the droog did WHAT? I cannot believe my ears. Yes, Tarrawiath fortress is ready to accept any refugees. We need to commence negotiations immediately. Whatever is going on here, we need to unite kingdom's forces. If you're feeling adventurous, you might investingate where they are coming from. We need to know what we're dealing with.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[man_01]
-{
-	[text*]
-	{
-		activate_quest* = 41_siege,0;
-	  b quest_dialog = true;
-		screen_text = "We cannot storm the droog city neither break the siege of Tarrawiath fortress. If only I had more man at my disposal. I can see you're not accustomed to following orders, but if you would be able to weaken the forces of the dragon cultists, perhaps we might be able to push through to the Tarrawiath fortress. There, we would me much safer and I'm sure they would appreciate the resources we carry on us.";
+		screen_text = "We cannot storm the droog city and there is nowhere else to go. If only I had more men at my disposal. Our numbers were thinned when some of us decided to seek shelter in the cavern system to the north. But there, they only encountered slaughter. The dragon cult was believed to be gone from those parts, but they clearly are not. Only one fo the refugees made it back alive. Clearly, these cultists are just as dangerous as the droog radicals.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -94,7 +68,7 @@
 {
 	[text*]
 	{
-		screen_text = "If you ask me, we should set out, be it in one direction or the other. Dying with swords in our hands is more honorable than starving to death in the desert. If die here, the droog and the cultists will crush our bones under their feet, fiercely charging at each other.";
+		screen_text = "If you ask me, we should set out, in the only direction there is. Dying with swords in our hands is more honorable than starving to death in the desert.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -103,41 +77,6 @@
 	[text*]
 	{
 		screen_text = "Hello there, traveler. Have you come to liberate the common townsfolk of their burdensome fate in this remote desert? I'd do it myself, but no armor would fit me anymore. Haha!";
-	  f scroll_rate = 10.000000;
-	}
-}
-[servant_cook]
-{
-	[text*]
-	{
-		screen_text = "Keeping the soldiers fed seems extra important now that the siege has taken place. I'm just worried the supplies might run out soon. At least from time to time a mudfish swims in through the wells. That adds some variety to our diet.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[servant_picnic]
-{
-	[text*]
-	{
-		activate_quest* = 41_wasps,0;
-	  b quest_dialog = true;
-		screen_text = "Oh dear, the commander is going to have my head. I am Tamen, the queen's personal servant, when she's accommodated here. You see, a few weeks ago, me and Ralph, one of the guards, went upstairs to the castle roof for a eh...picnic and some castle defense strategem discussion. However, we forgot the basket of food we took there for some refreshment. The thing is, you cannot really leave food out in the open around these parts. As a rule, swarms of deadly wasps pop out of nowhere, whenever you do. Now, the wasps occupy the castle roof, and our soldiers cannot use the high ground to observe enemy advances or shower them with arrows. So far, no one managed to clear them out to find the source of food for them. When someone does, the queen's sigil on the basket will be the evidence of my guilt in this mess. I beg you, traveler, go to the roof and destroy the basket. That way, no one will ever find out I was involved in this. There are some spare chests on the rooftop. Feel welcome to help yourself to them as your reward.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[servant_washer]
-{
-	[text*]
-	{
-		screen_text = "The lady likes to make sure her clothes are washed regularly to prevent moths from eating them. This is why a washer is assigned to this garrison at all times. And this is why I am in a fortress besieged by some insane mysterious cultits right now. And still washing the clothes anyway. Could one's life be less meaningful than this?";
-	  f scroll_rate = 10.000000;
-	}
-}
-[shop_arms]
-{
-	[text*]
-	{
-		choice = shop;
-		screen_text = "What a welcome surprise! I haven't armed an adventurer properly in months. The soldiers have standardized equipment, althought I occassionally manage to convice a few of them to practice with something more exotic. Here, let me gear you up.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -156,15 +95,6 @@
 	{
 		choice = shop;
 		screen_text = "Our food supplies are relatively thin, but luckily I had enough time to grab a huge load of potions before we departed. Would you like some? Back in the kingdom, gold will be more useful to me than the potions.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[shop_potion]
-{
-	[text*]
-	{
-		choice = shop;
-		screen_text = "Oh, hello there. The castle is rather understaffed right now. When the lord and the lady pay us a visit, they come in with an entire envoy of specialized servants. While they're away, I maintain the library and the healing potion supply. Which is why you seek me out, perhaps?";
 	  f scroll_rate = 10.000000;
 	}
 }

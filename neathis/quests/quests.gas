@@ -242,11 +242,25 @@
 		[*]
 		{
 			address = 27_town:conversations:man_03;
-			description = deliver the crate's from the farmers house to the castle;
+			description = deliver the crates from the farmer's house to the castle;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
 			speaker = viwith;
+		}
+	}
+	[27_wasps]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_19;
+		screen_name = picnic with consequences;
+		[*]
+		{
+			address = 27_town:conversations:spa_tender;
+			description = destroy the picnic basket atop the castle roof;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = olletho;
 		}
 	}
 	[29_traders]
@@ -267,20 +281,20 @@
 	[31_basilisk]
 	{
 		quest_image = b_gui_ig_i_ic_sp_029;
-		screen_name = Basilisk;
+		screen_name = basilisk;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
 			address = 31:conversations:shop_02;
-			description = Find the basilisk;
+			description = find the basilisk;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
-			speaker = Yonairen;
+			speaker = yonairen;
 		}
 		[*]
 		{
-			description = The basilisk must be nearby. Destroy it.;
+			description = the basilisk must be nearby. destroy it.;
 		  b is_consumable = true;
 		  i order = 1;
 		  b required = true;
@@ -390,6 +404,28 @@
 			speaker = origar;
 		}
 	}
+	[39_statues]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_21;
+		screen_name = Statue alley;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			description = Where could the alley of statues lead?;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = ;
+		}
+		[*]
+		{
+			description = Who could live in a castle in the middle of nowhere?;
+		  b is_consumable = true;
+		  i order = 1;
+		  b required = true;
+			speaker = ;
+		}
+	}
 	[41_cult]
 	{
 		quest_image = b_gui_ig_mnu_jnl_quest_18;
@@ -397,42 +433,10 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 41:conversations:guard_captain;
 			description = put an end to the invasion of the dragon cultists.;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
-			speaker = legionnaire captain;
-		}
-	}
-	[41_siege]
-	{
-		quest_image = b_gui_ig_mnu_jnl_quest_19;
-		screen_name = cult invasion;
-		victory_sample = s_e_level_up_quest;
-		[*]
-		{
-			address = 41:conversations:man_01;
-			description = break the siege the dragon cultists have laid to the castle;
-		  b is_consumable = true;
-		  i order = 0;
-		  b required = true;
-			speaker = phennias;
-		}
-	}
-	[41_wasps]
-	{
-		quest_image = b_gui_ig_i_ic_sp_072;
-		screen_name = picnic with consequences;
-		victory_sample = s_e_level_up_quest;
-		[*]
-		{
-			address = 41:conversations:servant_picnic;
-			description = destroy the picnic basket at the top of the castle;
-		  b is_consumable = true;
-		  i order = 0;
-		  b required = true;
-			speaker = tamen;
 		}
 	}
 	[43_guard_1]

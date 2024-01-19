@@ -119,7 +119,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 17.2696,20.278,-31.6509,0x3c866b8d;
+	  p position = 17.2696,20.274,-31.6509,0x3c866b8d;
 	}
 }
 [t:trigger_generic,n:0x03a000f6]
@@ -135,6 +135,7 @@
 				action* = send_world_message("we_req_delete",0x03A000F7,0f,"default","every",0);
 				action* = send_world_message("we_req_activate",0x03A000F6,5f,"default","every",0);
 				action* = change_quest_state("41_cult","completed",0);
+				action* = fade_nodes_global(0x0000003A,10,10,10,"out:black");
 			  b can_self_destruct = true;
 				condition* = receive_world_message("we_req_activate",0,"on_every_message");
 			  f delay = 0.000000;
@@ -151,7 +152,15 @@
 	}
 	[placement]
 	{
-	  p position = 3.96951,20.6059,-23.6318,0x3c866b8d;
+	  p position = 3.9731,20.6059,-23.7005,0x3c866b8d;
+	}
+}
+[t:use_point,n:0x03a001a4]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.06163,17.9,-1.99622,0x3c866b8d;
 	}
 }
 [t:trigger_generic,n:0x03a000fb]
