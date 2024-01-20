@@ -407,11 +407,11 @@
 	[39_statues]
 	{
 		quest_image = b_gui_ig_mnu_jnl_quest_21;
-		screen_name = Statue alley;
+		screen_name = statue alley;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			description = Where could the alley of statues lead?;
+			description = where could the alley of statues lead?;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -419,7 +419,7 @@
 		}
 		[*]
 		{
-			description = Who could live in a castle in the middle of nowhere?;
+			description = who could live in a castle in the middle of nowhere?;
 		  b is_consumable = true;
 		  i order = 1;
 		  b required = true;
@@ -433,10 +433,12 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
+			address = 41:conversations:man_01;
 			description = put an end to the invasion of the dragon cultists.;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
+			speaker = phennias;
 		}
 	}
 	[43_guard_1]
@@ -575,6 +577,14 @@
 			description = the city of bloodthirsty droog fanatics is not going to be your home either,;
 		  b is_consumable = true;
 		  i order = 7;
+		  b required = true;
+			speaker = ;
+		}
+		[*]
+		{
+			description = You have accepted that you will never find a home. But there is a quest to complete.;
+		  b is_consumable = true;
+		  i order = 8;
 		  b required = true;
 			speaker = ;
 		}

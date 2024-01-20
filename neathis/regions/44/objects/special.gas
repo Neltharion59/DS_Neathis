@@ -71,6 +71,8 @@
 			[*]
 			{
 				action* = change_quest_state("44_seck","active",0);
+				action* = change_quest_state("global_cities","active",8);
+				action* = change_quest_state("global_cities","completed",0), delay(0.5);
 			  b can_self_destruct = true;
 				condition* = party_member_within_bounding_box(20.000000,5.500000,1.000000,"on_first_enter");
 			  f delay = 0.000000;
