@@ -16,10 +16,32 @@
 }
 [t:rock_beast,n:0x04400001]
 {
+	[aspect]
+	{
+	  f experience_value = 642;
+	  f life = 387;
+	  f max_life = 387;
+	  f scale_multiplier = 1.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 60;
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_cmagic = 60;
+	  f damage_bonus_min_melee = 40;
+	}
+	[common]
+	{
+		screen_name = "The Tremorer";
+	}
+	[defend]
+	{
+	  f defense = 225;
+	}
 	[placement]
 	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -2.42546,0,1.20368,0x1848e06f;
+	  q orientation = 0,-0.382684,0,0.923879;
+	  p position = -0.551975,0,0.700846,0xb57d1cd5;
 	}
 }
 [t:rock_beast,n:0x04400004]

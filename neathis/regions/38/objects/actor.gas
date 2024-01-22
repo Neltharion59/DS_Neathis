@@ -8257,23 +8257,27 @@
 	[aspect]
 	{
 	  f experience_value = 2.11122e+012;
-	  f life = 2217;
-	  f max_life = 2217;
-	  f scale_multiplier = 1.5;
+	  f life = 9407;
+	  f max_life = 9407;
+	  f scale_multiplier = 2.3;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 500;
-	  f damage_bonus_min_melee = 500;
+	  f damage_bonus_max_melee = 1200;
+	  f damage_bonus_min_melee = 800;
+	}
+	[common]
+	{
+		screen_name = "Mountain Titan";
 	}
 	[defend]
 	{
-	  f defense = 3000;
+	  f defense = 4000;
 	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.42357,2,1.05884,0x7f738732;
+	  p position = -1.8951,2,0.648926,0x7f738732;
 	}
 }
 [t:3w_spiked_maw,n:0x035007cb]
@@ -8654,5 +8658,33 @@
 	{
 	  q orientation = -5.72e-009,0.707107,1.19734e-008,0.707107;
 	  p position = 0.47736,0,-0.150146,0xac612fbf;
+	}
+}
+[t:3w_krug_shaman_boss_01,n:0x03500d36]
+{
+	[aspect]
+	{
+	  f experience_value = 1.50011e+012;
+	  f life = 4516;
+	  f max_life = 4516;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 750;
+	  f damage_bonus_min_cmagic = 700;
+	}
+	[common]
+	{
+		screen_name = "Tromdanth the Conqueror";
+	}
+	[defend]
+	{
+	  f defense = 1710.4;
+	}
+	[placement]
+	{
+	  q orientation = 0,6.85453e-007,0,1;
+	  p position = 0.486458,0,-2.86895,0xe810af77;
 	}
 }

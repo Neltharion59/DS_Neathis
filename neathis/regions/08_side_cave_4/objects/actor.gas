@@ -86,14 +86,6 @@
 	  p position = 3.40576,0,1.22421,0x42323f7e;
 	}
 }
-[t:shard_teal,n:0x0450004a]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -3.5304,-12,-4.73143,0xae3ab757;
-	}
-}
 [t:shard_teal,n:0x04500049]
 {
 	[placement]
@@ -136,6 +128,30 @@
 }
 [t:shard_teal,n:0x04500054]
 {
+	[aspect]
+	{
+	  f experience_value = 1060;
+	  f life = 371;
+	  f max_life = 371;
+	  f scale_multiplier = 2.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_nmagic = 50;
+	  f damage_bonus_max_ranged = 50;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_nmagic = 50;
+	  f damage_bonus_min_ranged = 50;
+	}
+	[common]
+	{
+		screen_name = "Large Teal Shard";
+	}
+	[defend]
+	{
+	  f defense = 250;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -156,5 +172,69 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -2.22071,-12,-5.70848,0x3d5f8af7;
+	}
+}
+[t:shard_teal,n:0x0450011c]
+{
+	[aspect]
+	{
+	  f experience_value = 1060;
+	  f life = 371;
+	  f max_life = 371;
+	  f scale_multiplier = 2.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_nmagic = 50;
+	  f damage_bonus_max_ranged = 50;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_nmagic = 50;
+	  f damage_bonus_min_ranged = 50;
+	}
+	[common]
+	{
+		screen_name = "Large Teal Shard";
+	}
+	[defend]
+	{
+	  f defense = 250;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.87074,0,-1.59026,0x908d568a;
+	}
+}
+[t:shard_teal,n:0x0450011d]
+{
+	[aspect]
+	{
+	  f experience_value = 1060;
+	  f life = 371;
+	  f max_life = 371;
+	  f scale_multiplier = 2.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 50;
+	  f damage_bonus_max_nmagic = 50;
+	  f damage_bonus_max_ranged = 50;
+	  f damage_bonus_min_cmagic = 50;
+	  f damage_bonus_min_nmagic = 50;
+	  f damage_bonus_min_ranged = 50;
+	}
+	[common]
+	{
+		screen_name = "Large Teal Shard";
+	}
+	[defend]
+	{
+	  f defense = 250;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.68509,-12,-4.62642,0xae3ab757;
 	}
 }
