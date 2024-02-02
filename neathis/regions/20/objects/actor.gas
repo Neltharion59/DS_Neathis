@@ -101,8 +101,36 @@
 }
 [t:skeleton_mercenary_reveal_02,n:0x01e00009]
 {
+	[aspect]
+	{
+	  f experience_value = 57980;
+	  f life = 1785;
+	  f max_life = 1785;
+	  f scale_multiplier = 1.33;
+	}
+	[attack]
+	{
+	  f damage_max = 140;
+	  f damage_min = 120;
+	}
+	[common]
+	{
+		screen_name = "Grawth the Broken";
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_fp_r_g_c_avg;
+			es_feet = bo_gr_fp_f_g_c_avg;
+			es_head = he_ra_op_bigwings;
+			es_shield_hand = sh_un_m_o_c_m_parade;
+			es_weapon_hand = mc_d_c_f_1h_str;
+		}
+	}
 	[placement]
 	{
+	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -1.38269,0,1.57337,0x1e0f8c32;
 	}
 }
@@ -381,6 +409,46 @@
 	  p position = 1.06981,0.764844,2.32422,0x43b7fd8c;
 	}
 }
+[t:skeleton_mercenary_reveal_02,n:0x01e003e9]
+{
+	[placement]
+	{
+	  q orientation = 0,-2.98023e-008,0,1;
+	  p position = 0.305977,1,3.92313,0x43b7fd8c;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e003e7]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.55698,0.786755,2.88631,0xece22175;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e00bac]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.85854,-1.53208,2.34042,0x49b5edef;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e00bae]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.167236,-1.4091,-2.41516,0x49b5edef;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x01e00bad]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.26884,5.9043,0.986099,0x0eca4e1d;
+	}
+}
 [t:skeleton_mercenary_reveal_02,n:0x01e003ee]
 {
 	[placement]
@@ -395,6 +463,41 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 0.120956,0,0.541451,0xbe7bf89c;
+	}
+}
+[t:skeleton_mercenary_archer_reveal_02,n:0x01e00bab]
+{
+	[aspect]
+	{
+	  f experience_value = 237000;
+	  f life = 1725;
+	  f max_life = 1725;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 150;
+	  f damage_bonus_min_ranged = 150;
+	}
+	[common]
+	{
+		screen_name = "Whalanx the Swift";
+	}
+	[defend]
+	{
+	  f defense = 912;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = bw_un_seck_fin;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-5.96046e-007;
+	  p position = 0.629417,0,-1.33577,0xbe7bf89c;
 	}
 }
 [t:wraith_lesser,n:0x01e003fd]
@@ -666,6 +769,33 @@
 	[placement]
 	{
 	  p position = -0.125961,-4,-1.24895,0xec88d5be;
+	}
+}
+[t:krug_dog_skeleton,n:0x01e003d7]
+{
+	[aspect]
+	{
+	  f experience_value = 68000;
+	  f life = 2381;
+	  f max_life = 2381;
+	  f scale_multiplier = 1.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 80;
+	}
+	[common]
+	{
+		screen_name = "Fearsome Skeletal Hound";
+	}
+	[defend]
+	{
+	  f defense = 450;
+	}
+	[placement]
+	{
+	  p position = 1.43187,0,0.0214691,0xe21c880d;
 	}
 }
 [t:2w_skeleton_guard,n:0x01e0026f]
@@ -1562,6 +1692,33 @@
 	  p position = -1.60701,2,-6.81791,0x45801171;
 	}
 }
+[t:krug_dog_skeleton,n:0x01e003da]
+{
+	[aspect]
+	{
+	  f experience_value = 68000;
+	  f life = 2381;
+	  f max_life = 2381;
+	  f scale_multiplier = 1.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 80;
+	}
+	[common]
+	{
+		screen_name = "Fearsome Skeletal Hound";
+	}
+	[defend]
+	{
+	  f defense = 450;
+	}
+	[placement]
+	{
+	  p position = -3.01044,2,0.326088,0x45801171;
+	}
+}
 [t:skeleton_mercenary_archer,n:0x01e006d0]
 {
 	[placement]
@@ -1688,80 +1845,33 @@
 	  p position = -3.93478,0,0.0825405,0xd8bb829e;
 	}
 }
-[t:2w_bandit_ranged,n:0x01e000f6]
+[t:fury,n:0x01e003df]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	}
-	[aspect]
-	{
-	  b is_invincible = true;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 100;
-	  f damage_bonus_min_ranged = 100;
-	}
 	[common]
 	{
-		screen_name = "Legionnaire";
-	}
-	[inventory]
-	{
-		[equipment]
+		[instance_triggers]
 		{
-			es_feet = bo_gr_bl_f_g_c_avg;
-			es_head = he_op_pl_avg;
-			es_shield_hand = bw_g_c_c_l_4_avg;
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x01E003E0,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
 		}
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,2.00933e-007;
-	  p position = 0.540833,1.5,-7.32395,0x66481c39;
-	}
-}
-[t:2w_bandit_ranged,n:0x01e000f7]
-{
-	[actor]
-	{
-		alignment = aa_good;
-	}
-	[aspect]
-	{
-	  b is_invincible = true;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 100;
-	  f damage_bonus_min_ranged = 100;
-	}
-	[common]
-	{
-		screen_name = "Legionnaire";
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_feet = bo_gr_bl_f_g_c_avg;
-			es_head = he_op_pl_avg;
-			es_shield_hand = bw_g_c_c_l_4_avg;
-		}
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,2.00933e-007;
-	  p position = 3.92711,1.5,6.0938,0x66481c39;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 5.07149,1.5,1.08925,0x66481c39;
 	}
 }
 [t:2w_bandit_ranged,n:0x01e000fc]
@@ -1868,80 +1978,33 @@
 	  p position = -0.596825,4,-1.3102,0x762d96e9;
 	}
 }
-[t:2w_bandit_ranged,n:0x01e000fd]
+[t:fury,n:0x01e003e1]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	}
-	[aspect]
-	{
-	  b is_invincible = true;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 100;
-	  f damage_bonus_min_ranged = 100;
-	}
 	[common]
 	{
-		screen_name = "Legionnaire";
-	}
-	[inventory]
-	{
-		[equipment]
+		[instance_triggers]
 		{
-			es_feet = bo_gr_bl_f_g_c_avg;
-			es_head = he_op_pl_avg;
-			es_shield_hand = bw_g_c_c_l_4_avg;
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x01E003E0,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
 		}
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,2.00933e-007;
-	  p position = 1.4539,1.5,-4.59842,0xbf213346;
-	}
-}
-[t:2w_bandit_ranged,n:0x01e000fe]
-{
-	[actor]
-	{
-		alignment = aa_good;
-	}
-	[aspect]
-	{
-	  b is_invincible = true;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 100;
-	  f damage_bonus_min_ranged = 100;
-	}
-	[common]
-	{
-		screen_name = "Legionnaire";
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_feet = bo_gr_bl_f_g_c_avg;
-			es_head = he_op_pl_avg;
-			es_shield_hand = bw_g_c_c_l_4_avg;
-		}
-	}
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,2.00933e-007;
-	  p position = -6.2699,1.5,-4.51038,0xbf213346;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 5.03607,1.5,-0.235519,0xbf213346;
 	}
 }
 [t:skeleton_mercenary_archer,n:0x01e006a3]
@@ -3185,6 +3248,82 @@
 	  p position = -0.363846,1,1.31673,0x6b4516f7;
 	}
 }
+[t:2w_bandit_ranged,n:0x01e000fe]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 100;
+	  f damage_bonus_min_ranged = 100;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_feet = bo_gr_bl_f_g_c_avg;
+			es_head = he_op_pl_avg;
+			es_shield_hand = bw_g_c_c_l_4_avg;
+		}
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.157135,1,0.674088,0xe0a3d1a0;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e000fd]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 100;
+	  f damage_bonus_min_ranged = 100;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_feet = bo_gr_bl_f_g_c_avg;
+			es_head = he_op_pl_avg;
+			es_shield_hand = bw_g_c_c_l_4_avg;
+		}
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.25594,1,1.23979,0x25239ac1;
+	}
+}
 [t:2w_bandit_ranged,n:0x01e00101]
 {
 	[actor]
@@ -3447,6 +3586,7 @@
 {
 	[aspect]
 	{
+	  i gold_value = 0;
 	  f max_life = 882;
 	  f max_mana = 169;
 	}
@@ -3471,6 +3611,7 @@
 {
 	[aspect]
 	{
+	  i gold_value = 0;
 	  f max_life = 842.8;
 	  f max_mana = 164;
 	}
@@ -3543,6 +3684,7 @@
 {
 	[aspect]
 	{
+	  i gold_value = 0;
 	  f max_life = 558.6;
 	  f max_mana = 464;
 	}
@@ -4238,6 +4380,44 @@
 	  p position = 0.0767288,1,0.38755,0x36d018ca;
 	}
 }
+[t:2w_bandit_ranged,n:0x01e000f6]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 100;
+	  f damage_bonus_min_ranged = 100;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_feet = bo_gr_bl_f_g_c_avg;
+			es_head = he_op_pl_avg;
+			es_shield_hand = bw_g_c_c_l_4_avg;
+		}
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1.78814e-007,0,1;
+	  p position = -0.244659,1,0.738037,0xa7610f3b;
+	}
+}
 [t:2w_bandit_ranged,n:0x01e000f8]
 {
 	[actor]
@@ -4274,6 +4454,44 @@
 	{
 	  q orientation = 0,1,0,2.00933e-007;
 	  p position = 0.150017,1,-0.280416,0x943daa9f;
+	}
+}
+[t:2w_bandit_ranged,n:0x01e000f7]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 100;
+	  f damage_bonus_min_ranged = 100;
+	}
+	[common]
+	{
+		screen_name = "Legionnaire";
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_feet = bo_gr_bl_f_g_c_avg;
+			es_head = he_op_pl_avg;
+			es_shield_hand = bw_g_c_c_l_4_avg;
+		}
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,-1.78814e-007,0,1;
+	  p position = 0.421524,1,0.758839,0x10440096;
 	}
 }
 [t:2w_bandit_ranged,n:0x01e00021]
@@ -6095,6 +6313,63 @@
 	  p position = -1.58204,-1.90735e-006,-1.49172,0x9ed49d88;
 	}
 }
+[t:skeleton_large,n:0x01e00ba1]
+{
+	[aspect]
+	{
+	  f experience_value = 255000;
+	  f life = 3822;
+	  f max_life = 3822;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 60;
+	  f damage_bonus_min_melee = 40;
+	}
+	[common]
+	{
+		screen_name = "Killigorn the Brute";
+	}
+	[defend]
+	{
+	  f defense = 630;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_un_m_o_h_s_horn;
+			es_weapon_hand = cb_un_2h_troll_swamp;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-5.96046e-008;
+	  p position = 0.347427,0,-1.0192,0x9ed49d88;
+	}
+}
+[t:krug_dog_skeleton,n:0x01e00ba2]
+{
+	[placement]
+	{
+	  p position = 1.58763,0,0.0898819,0x9ed49d88;
+	}
+}
+[t:krug_dog_skeleton,n:0x01e00ba3]
+{
+	[placement]
+	{
+	  p position = 1.64396,0,-1.32247,0x9ed49d88;
+	}
+}
+[t:krug_dog_skeleton,n:0x01e00ba4]
+{
+	[placement]
+	{
+	  p position = -0.142838,0,-0.345734,0x9ed49d88;
+	}
+}
 [t:skeleton_mercenary_reveal_02,n:0x01e00070]
 {
 	[placement]
@@ -6114,6 +6389,13 @@
 	[placement]
 	{
 	  p position = 2.75188,5.973,4.77567,0x84f29421;
+	}
+}
+[t:krug_dog_skeleton,n:0x01e00ba5]
+{
+	[placement]
+	{
+	  p position = -3.78923,0,2.29519,0x46148a3c;
 	}
 }
 [t:skeleton_mercenary_reveal_02,n:0x01e00019]
@@ -6451,6 +6733,47 @@
 	  p position = 0.600388,6,5.82146,0x51bf7bac;
 	}
 }
+[t:krug_dog_skeleton,n:0x01e003d5]
+{
+	[aspect]
+	{
+	  f experience_value = 68000;
+	  f life = 2381;
+	  f max_life = 2381;
+	  f scale_multiplier = 1.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 80;
+	}
+	[common]
+	{
+		screen_name = "Fearsome Skeletal Hound";
+	}
+	[defend]
+	{
+	  f defense = 450;
+	}
+	[placement]
+	{
+	  p position = -0.55162,0,-0.365234,0x15125ba0;
+	}
+}
+[t:krug_dog_skeleton,n:0x01e00ba6]
+{
+	[placement]
+	{
+	  p position = -2.0401,0,0.699921,0x15125ba0;
+	}
+}
+[t:krug_dog_skeleton,n:0x01e00ba7]
+{
+	[placement]
+	{
+	  p position = 2.51252,-1.81491,-3.19792,0x4706197b;
+	}
+}
 [t:skeleton_mercenary_reveal_02,n:0x01e00701]
 {
 	[placement]
@@ -6779,6 +7102,13 @@
 	  p position = 2.26859,1.90735e-006,1.11489,0xa3f76af1;
 	}
 }
+[t:krug_dog_skeleton,n:0x01e00ba8]
+{
+	[placement]
+	{
+	  p position = -1.76077,0,1.45947,0x9c0aeff8;
+	}
+}
 [t:skeleton_mercenary_reveal_02,n:0x01e003d2]
 {
 	[placement]
@@ -6877,22 +7207,6 @@
 	  p position = 1.28542,-0.999999,-3.09575,0xfa62ff4b;
 	}
 }
-[t:skeleton_mercenary_reveal_02,n:0x01e003e7]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.55698,0.786755,2.88631,0xece22175;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01e003e9]
-{
-	[placement]
-	{
-	  q orientation = 0,-2.98023e-008,0,1;
-	  p position = 0.305977,1,3.92313,0x43b7fd8c;
-	}
-}
 [t:2w_skeleton_archer,n:0x01e003a0]
 {
 	[placement]
@@ -6919,6 +7233,33 @@
 	[placement]
 	{
 	  p position = -2.78413,-0.894855,-1.78971,0x742c6ba1;
+	}
+}
+[t:krug_dog_skeleton,n:0x01e003d6]
+{
+	[aspect]
+	{
+	  f experience_value = 68000;
+	  f life = 2381;
+	  f max_life = 2381;
+	  f scale_multiplier = 1.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 80;
+	}
+	[common]
+	{
+		screen_name = "Fearsome Skeletal Hound";
+	}
+	[defend]
+	{
+	  f defense = 450;
+	}
+	[placement]
+	{
+	  p position = -1.31067,-1.02616,-3.73836,0x742c6ba1;
 	}
 }
 [t:skeleton_mercenary_archer_reveal_02,n:0x01e00253]
@@ -7151,6 +7492,59 @@
 	{
 	  q orientation = 0,-1,0,-1.66939e-007;
 	  p position = -1.35019,0,-2.91244,0x31921528;
+	}
+}
+[t:mp_townfolk_m_04,n:0x01e003de]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 1.1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 100;
+	  f damage_bonus_min_ranged = 100;
+	}
+	[common]
+	{
+		screen_name = "Archer Captain";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = guard_ranger;
+		}
+	}
+	[inventory]
+	{
+		custom_head = m_c_gah_fb_hlmt_head-04;
+		selected_active_location = il_active_ranged_weapon;
+		[equipment]
+		{
+			es_chest = bd_ra_le_m_g_o_avg;
+			es_feet = bo_gr_bl_f_g_c_avg;
+			es_forearms = gl_ga_bl_f_g_c_avg;
+			es_head = he_un_ca_brim;
+			es_shield_hand = bw_g_c_c_s_4_avg;
+		}
+	}
+	[mind]
+	{
+	  b actor_may_attack = true;
+	  b actor_may_be_attacked = true;
+		disposition_orders = ad_offensive;
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+		movement_orders = mo_hold;
+	  b on_enemy_entered_ocz_attack = true;
+	  f outer_comfort_zone_range = 15;
+	  f ranged_engage_range = 15;
+	  f sight_range = 18;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.98023e-008;
+	  p position = 3.95108,0,-0.442829,0x31921528;
 	}
 }
 [t:2w_bandit_ranged,n:0x01e00029]
@@ -7631,6 +8025,34 @@
 	  p position = -0.846505,0,-0.600566,0x05e37019;
 	}
 }
+[t:warlock,n:0x01e00ba9]
+{
+	[aspect]
+	{
+	  f experience_value = 271000;
+	  f life = 1971;
+	  f max_life = 1971;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 200;
+	  f damage_bonus_min_cmagic = 200;
+	}
+	[common]
+	{
+		screen_name = "Romaillard the Sorcerer";
+	}
+	[defend]
+	{
+	  f defense = 720;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-6.46033e-009;
+	  p position = -1.36453,-1.2,3.77913,0x71d7b7d2;
+	}
+}
 [t:skeleton_mercenary_reveal_02,n:0x01e004e6]
 {
 	[placement]
@@ -7846,6 +8268,45 @@
 	  p position = -2.42206,0,-1.52137,0x436a8558;
 	}
 }
+[t:skeleton_mercenary_reveal_02,n:0x01e00baa]
+{
+	[aspect]
+	{
+	  f experience_value = 241980;
+	  f life = 2458;
+	  f max_life = 2458;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 75;
+	}
+	[common]
+	{
+		screen_name = "Iqualor the Bold";
+	}
+	[defend]
+	{
+	  f defense = 780;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_br_f_g_c_low;
+			es_feet = bo_ra_gr_fp_f_g_c_fin;
+			es_head = he_fu_pl_knight_str_02;
+			es_shield_hand = sh_ra_m_c_r_m_rivet;
+			es_weapon_hand = mc_sc_un_hand;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,-0.92388;
+	  p position = 3.28639,0,1.83514,0x436a8558;
+	}
+}
 [t:skeleton_mercenary_reveal,n:0x01e00465]
 {
 	[placement]
@@ -7902,216 +8363,5 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -2.54143,7.91074,3.89647,0x41a93d89;
-	}
-}
-[t:skeleton_large,n:0x01e00ba1]
-{
-	[aspect]
-	{
-	  f experience_value = 255000;
-	  f life = 3822;
-	  f max_life = 3822;
-	  f scale_multiplier = 1.22;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 40;
-	}
-	[common]
-	{
-		screen_name = "Killigorn the Brute";
-	}
-	[defend]
-	{
-	  f defense = 630;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_shield_hand = sh_un_m_o_h_s_horn;
-			es_weapon_hand = cb_un_2h_troll_swamp;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-5.96046e-008;
-	  p position = 0.347427,0,-1.0192,0x9ed49d88;
-	}
-}
-[t:krug_dog_skeleton,n:0x01e00ba2]
-{
-	[placement]
-	{
-	  p position = 1.58763,0,0.0898819,0x9ed49d88;
-	}
-}
-[t:krug_dog_skeleton,n:0x01e00ba3]
-{
-	[placement]
-	{
-	  p position = 1.64396,0,-1.32247,0x9ed49d88;
-	}
-}
-[t:krug_dog_skeleton,n:0x01e00ba4]
-{
-	[placement]
-	{
-	  p position = -0.142838,0,-0.345734,0x9ed49d88;
-	}
-}
-[t:krug_dog_skeleton,n:0x01e00ba5]
-{
-	[placement]
-	{
-	  p position = -3.78923,0,2.29519,0x46148a3c;
-	}
-}
-[t:krug_dog_skeleton,n:0x01e00ba6]
-{
-	[placement]
-	{
-	  p position = -2.0401,0,0.699921,0x15125ba0;
-	}
-}
-[t:krug_dog_skeleton,n:0x01e00ba7]
-{
-	[placement]
-	{
-	  p position = 2.51252,-1.81491,-3.19792,0x4706197b;
-	}
-}
-[t:krug_dog_skeleton,n:0x01e00ba8]
-{
-	[placement]
-	{
-	  p position = -1.76077,0,1.45947,0x9c0aeff8;
-	}
-}
-[t:warlock,n:0x01e00ba9]
-{
-	[aspect]
-	{
-	  f experience_value = 271000;
-	  f life = 1971;
-	  f max_life = 1971;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 200;
-	  f damage_bonus_min_cmagic = 200;
-	}
-	[common]
-	{
-		screen_name = "Romaillard the Sorcerer";
-	}
-	[defend]
-	{
-	  f defense = 720;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-6.46033e-009;
-	  p position = -1.36453,-1.2,3.77913,0x71d7b7d2;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01e00baa]
-{
-	[aspect]
-	{
-	  f experience_value = 241980;
-	  f life = 2458;
-	  f max_life = 2458;
-	  f scale_multiplier = 1.4;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 75;
-	  f damage_bonus_min_melee = 75;
-	}
-	[common]
-	{
-		screen_name = "Iqualor the Bold";
-	}
-	[defend]
-	{
-	  f defense = 780;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_br_f_g_c_low;
-			es_feet = bo_ra_gr_fp_f_g_c_fin;
-			es_head = he_fu_pl_knight_str_02;
-			es_shield_hand = sh_ra_m_c_r_m_rivet;
-			es_weapon_hand = mc_sc_un_hand;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,-0.92388;
-	  p position = 3.28639,0,1.83514,0x436a8558;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x01e00bab]
-{
-	[aspect]
-	{
-	  f experience_value = 237000;
-	  f life = 1725;
-	  f max_life = 1725;
-	  f scale_multiplier = 1.3;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 150;
-	  f damage_bonus_min_ranged = 150;
-	}
-	[common]
-	{
-		screen_name = "Whalanx the Swift";
-	}
-	[defend]
-	{
-	  f defense = 912;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_shield_hand = bw_un_seck_fin;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-5.96046e-007;
-	  p position = 0.629417,0,-1.33577,0xbe7bf89c;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01e00bac]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.85854,-1.53208,2.34042,0x49b5edef;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01e00bad]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.26884,5.9043,0.986099,0x0eca4e1d;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x01e00bae]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.167236,-1.4091,-2.41516,0x49b5edef;
 	}
 }

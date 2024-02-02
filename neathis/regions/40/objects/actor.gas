@@ -6702,6 +6702,39 @@
 	  p position = -2.62723,0,2.85652,0xde1852fd;
 	}
 }
+[t:3w_crusader_goquua,n:0x03801dec]
+{
+	[common]
+	{
+		screen_name = "Toquaar";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = quest_kell;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_ra_w_c_k_s_pelt;
+			es_weapon_hand = cb_un_2h_troll;
+		}
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 1.83347,-11.9442,-4.52444,0x396e716e;
+	}
+}
 [t:3w_braak_desert,n:0x0380099c]
 {
 	[aspect]
@@ -27463,5 +27496,37 @@
 	[placement]
 	{
 	  p position = -0.677834,12,1.03677,0x81fc0c95;
+	}
+}
+[t:3w_crusader_goquua,n:0x03801dee]
+{
+	[common]
+	{
+		screen_name = "Quuarneth";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = quest_temple;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_un_g_c_1h1b_str;
+		}
+	}
+	[mind]
+	{
+	  b actor_may_attack = false;
+	  b actor_may_be_attacked = false;
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.405136,0,0.625793,0xd08de8de;
 	}
 }

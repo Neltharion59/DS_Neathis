@@ -5,6 +5,54 @@
 	  p position = 2.85245,0,-1.64956,0x90794bf4;
 	}
 }
+[t:wolf_gray,n:0x00500129]
+{
+	[placement]
+	{
+	  p position = -1.2207,0,-3.69037,0x4aae91c5;
+	}
+}
+[t:wolf_gray,n:0x0050012a]
+{
+	[placement]
+	{
+	  p position = -0.360054,0,-3.06936,0x4aae91c5;
+	}
+}
+[t:wolf_gray_boss_01,n:0x00500121]
+{
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f life = 117;
+	  f max_life = 117;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 15;
+	  f damage_bonus_min_melee = 15;
+	}
+	[common]
+	{
+		screen_name = "Greyshard";
+	}
+	[defend]
+	{
+	  f defense = 25;
+	}
+	[placement]
+	{
+	  p position = 3.25592,0,1.04653,0xc3af5585;
+	}
+}
+[t:wolf_gray,n:0x0050012b]
+{
+	[placement]
+	{
+	  p position = 3.19371,0,2.97252,0xc3af5585;
+	}
+}
 [t:krug_shaman_boss_01,n:0x0050006d]
 {
 	[aspect]
@@ -14,12 +62,12 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 11;
-	  f damage_bonus_min_cmagic = 8;
+	  f damage_bonus_max_cmagic = 5;
+	  f damage_bonus_min_cmagic = 5;
 	}
 	[common]
 	{
-		screen_name = "Wolf leader";
+		screen_name = "Netuahan the Wolf Leader";
 		[instance_triggers]
 		{
 			[*]
@@ -39,6 +87,10 @@
 			}
 		}
 	}
+	[defend]
+	{
+	  f defense = 20;
+	}
 	[mind]
 	{
 	  b actor_auto_uses_stored_items = false;
@@ -47,41 +99,6 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -3.78201,0,-1.87012,0x817f6db0;
-	}
-}
-[t:wolf_gray,n:0x00500002]
-{
-	[placement]
-	{
-	  p position = 0.162404,0,-0.898478,0x7ba7e026;
-	}
-}
-[t:wolf_gray,n:0x00500063]
-{
-	[placement]
-	{
-	  p position = 2.20646,0,1.51356,0x1a1dc362;
-	}
-}
-[t:wolf_gray,n:0x00500129]
-{
-	[placement]
-	{
-	  p position = -1.2207,0,-3.69037,0x4aae91c5;
-	}
-}
-[t:wolf_gray,n:0x0050012a]
-{
-	[placement]
-	{
-	  p position = -0.360054,0,-3.06936,0x4aae91c5;
-	}
-}
-[t:wolf_gray,n:0x0050012b]
-{
-	[placement]
-	{
-	  p position = 3.19371,0,2.97252,0xc3af5585;
 	}
 }
 [t:wolf_gray,n:0x0050012c]
@@ -96,5 +113,19 @@
 	[placement]
 	{
 	  p position = -3.73366,0,-1.2258,0x817f6db0;
+	}
+}
+[t:wolf_gray,n:0x00500002]
+{
+	[placement]
+	{
+	  p position = 0.162404,0,-0.898478,0x7ba7e026;
+	}
+}
+[t:wolf_gray,n:0x00500063]
+{
+	[placement]
+	{
+	  p position = 2.20646,0,1.51356,0x1a1dc362;
 	}
 }

@@ -1,44 +1,9 @@
-[t:footlocker_glb_01_path2sd,n:0x00300059]
+[t:crate_grs_03_dm_r2,n:0x0030014f]
 {
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.83249,0,-1.52862,0xb54c9fe8;
-	}
-}
-[t:footlocker_glb_01_path2sd,n:0x0030005a]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382684,0,0.92388;
-	  p position = 1.76234,0,-0.255362,0xb54c9fe8;
-	}
-}
-[t:chest_csl_02_sd_r1,n:0x0030008d]
-{
-	[inventory]
-	{
-	  b drop_at_use_point = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.102199,0.986109,-0.0439453,0xb54c9fe8;
-		use_point_scids = 0x0030008e;
-	}
-}
-[t:trunk_csl_long_sd_r1,n:0x0030008f]
-{
-	[placement]
-	{
-	  p position = -2.63034,0,1.66038,0x93616b12;
-	}
-}
-[t:trunk_csl_long_sd_r1,n:0x00300090]
-{
-	[placement]
-	{
-	  p position = 0.0775814,-9.53674e-007,1.64326,0x93616b12;
+	  p position = 2.90531,0,-1.98221,0xf2ce7fd2;
 	}
 }
 [t:footlocker_glb_01_sd_r1,n:0x003000b0]
@@ -339,5 +304,64 @@
 	{
 	  q orientation = 0,-0.92388,0,0.382683;
 	  p position = -0.305207,-1.5,-1.32714,0x9b3c03fe;
+	}
+}
+[t:footlocker_glb_01_path2sd,n:0x00300059]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.83249,0,-1.52862,0xb54c9fe8;
+	}
+}
+[t:footlocker_glb_01_path2sd,n:0x0030005a]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382684,0,0.92388;
+	  p position = 1.76234,0,-0.255362,0xb54c9fe8;
+	}
+}
+[t:chest_csl_02_sd_r1,n:0x0030008d]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.102199,0.986109,-0.0439453,0xb54c9fe8;
+		use_point_scids = 0x0030008e;
+	}
+}
+[t:trunk_csl_long_sd_r1,n:0x0030008f]
+{
+	[placement]
+	{
+	  p position = -2.63034,0,1.66038,0x93616b12;
+	}
+}
+[t:trunk_csl_long_sd_r1,n:0x00300090]
+{
+	[placement]
+	{
+	  p position = 0.0775814,-9.53674e-007,1.64326,0x93616b12;
+	}
+}
+[t:barrel_swp_01_ds_r1,n:0x0030015f]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 1.16772,-1.75,-1.45038,0x848e7621;
+	}
+}
+[t:barrel_swp_01_ds_r1,n:0x00300164]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382684,0,0.923879;
+	  p position = -1.87944,-1.75,-4.18007,0xa5454401;
 	}
 }

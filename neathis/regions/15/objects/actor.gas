@@ -1051,7 +1051,7 @@
 {
 	[placement]
 	{
-	  p position = 1.12636,3.8147e-006,-0.593676,0x89c89d0e;
+	  p position = 1.77589,0,-3.75586,0x89c89d0e;
 	}
 }
 [t:kill_bot,n:0x019006b0]
@@ -3962,6 +3962,22 @@
 	  p position = 0.497871,0,-3.77975,0x62795828;
 	}
 }
+[t:phrak,n:0x01900cec]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  f scale_base = 0.3;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.50641,0,1.24856,0x920327ee;
+	}
+}
 [t:goblin_robo_suit,n:0x01900639]
 {
 	[placement]
@@ -4331,9 +4347,32 @@
 }
 [t:goblin_grunt,n:0x01900527]
 {
+	[aspect]
+	{
+	  f experience_value = 2111;
+	  f life = 716;
+	  f max_life = 716;
+	  f scale_multiplier = 1.3;
+	}
+	[common]
+	{
+		screen_name = "Goblin Brute";
+	}
+	[defend]
+	{
+	  f defense = 190;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = scythe_g_1h_avg;
+		}
+	}
 	[placement]
 	{
-	  p position = -3.62721,0,1.50979,0xc0d290dd;
+	  q orientation = 0,-0.382683,0,0.923879;
+	  p position = 1.1965,0,-3.12514,0x5d8a9a84;
 	}
 }
 [t:goblin_guard,n:0x0190052a]
@@ -4362,13 +4401,6 @@
 	[placement]
 	{
 	  p position = -2.17314,0,-0.0757999,0xc0d290dd;
-	}
-}
-[t:gobbot_minigun,n:0x01900531]
-{
-	[placement]
-	{
-	  p position = -0.947979,0,1.93869,0xc0d290dd;
 	}
 }
 [t:goblin_guard,n:0x0190052d]
@@ -4418,13 +4450,6 @@
 	[placement]
 	{
 	  p position = 1.68541,0,-0.878794,0x5d8a9a84;
-	}
-}
-[t:gobbot_flamethrower,n:0x01900535]
-{
-	[placement]
-	{
-	  p position = -0.316387,0,1.61082,0x5d8a9a84;
 	}
 }
 [t:kill_bot,n:0x019006ce]
@@ -4885,20 +4910,6 @@
 	  p position = 1.24683,0,0.80951,0x60b0cb92;
 	}
 }
-[t:gobbot_lightning,n:0x01900573]
-{
-	[placement]
-	{
-	  p position = 0.182097,1.90735e-006,-1.33841,0x60b0cb92;
-	}
-}
-[t:gobbot_minigun,n:0x01900575]
-{
-	[placement]
-	{
-	  p position = -2.29981,-1.90735e-006,-0.212017,0x60b0cb92;
-	}
-}
 [t:goblin_grunt,n:0x01900576]
 {
 	[placement]
@@ -5060,6 +5071,22 @@
 	[placement]
 	{
 	  p position = 1.65172,0,-1.02738,0x76acdcae;
+	}
+}
+[t:phrak,n:0x01900ceb]
+{
+	[actor]
+	{
+		alignment = aa_good;
+	}
+	[aspect]
+	{
+	  f scale_base = 0.3;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.7917,0,-1.83093,0x76acdcae;
 	}
 }
 [t:copter,n:0x0190047a]
@@ -5264,14 +5291,6 @@
 	[placement]
 	{
 	  p position = -2.72596,0.856659,0.610107,0xc3bc7fdd;
-	}
-}
-[t:perforator,n:0x019004f1]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.266596,0.855022,1.86133,0x261f3379;
 	}
 }
 [t:kill_bot,n:0x019006c1]
@@ -6875,8 +6894,8 @@
 {
 	[placement]
 	{
-	  q orientation = 0,-8.9407e-008,0,1;
-	  p position = -0.389038,0,0.191391,0xb8e8ff0f;
+	  q orientation = 0,9.29832e-008,0,1;
+	  p position = -0.113525,0,-3.39769,0xc18b02a8;
 	}
 }
 [t:gobbot_lightning,n:0x019002be]
@@ -7797,35 +7816,6 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -0.168953,-0.45,0.0137328,0x430f654c;
-	}
-}
-[t:copter,n:0x01900587]
-{
-	[placement]
-	{
-	  p position = -0.73593,-9.53674e-007,3.68114,0xf53077a7;
-	}
-}
-[t:copter,n:0x01900585]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -0.467406,0,-2.68497,0xfb5c2368;
-	}
-}
-[t:copter,n:0x01900586]
-{
-	[placement]
-	{
-	  p position = -0.134942,0,-3.18936,0xfb5c2368;
-	}
-}
-[t:perforator,n:0x01900588]
-{
-	[placement]
-	{
-	  p position = 0.0689526,0,-3.23133,0xfb5c2368;
 	}
 }
 [t:kill_bot,n:0x019006e0]
@@ -8819,35 +8809,337 @@
 	  p position = -0.00561404,1,3.32175,0x3ace2256;
 	}
 }
-[t:phrak,n:0x01900ceb]
+[t:soul_stinger,n:0x01900ce3]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	}
 	[aspect]
 	{
-	  f scale_base = 0.3;
+	  f experience_value = 91000;
+	  f life = 1248;
+	  f max_life = 1248;
+	  f scale_multiplier = 2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 25;
+	  f damage_bonus_min_melee = 20;
+	}
+	[common]
+	{
+		screen_name = "Soul Snapper";
+	}
+	[defend]
+	{
+	  f defense = 300;
+	}
+	[mind]
+	{
+	  f outer_comfort_zone_range = 24;
+	  f ranged_engage_range = 25;
+	  f sight_range = 26;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.7917,0,-1.83093,0x76acdcae;
+	  p position = 2.04631,0,-3.22484,0x2762ceb9;
 	}
 }
-[t:phrak,n:0x01900cec]
+[t:soul_stinger,n:0x01900ce4]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	}
 	[aspect]
 	{
-	  f scale_base = 0.3;
+	  f experience_value = 91000;
+	  f life = 1248;
+	  f max_life = 1248;
+	  f scale_multiplier = 2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 25;
+	  f damage_bonus_min_melee = 20;
+	}
+	[common]
+	{
+		screen_name = "Soul Snapper";
+	}
+	[defend]
+	{
+	  f defense = 300;
+	}
+	[mind]
+	{
+	  f outer_comfort_zone_range = 24;
+	  f ranged_engage_range = 25;
+	  f sight_range = 26;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.50641,0,1.24856,0x920327ee;
+	  p position = -3.86169,0,2.52122,0x9a3893f9;
+	}
+}
+[t:goblin_grunt,n:0x01900ce5]
+{
+	[aspect]
+	{
+	  f experience_value = 2111;
+	  f life = 716;
+	  f max_life = 716;
+	  f scale_multiplier = 1.3;
+	}
+	[common]
+	{
+		screen_name = "Goblin Brute";
+	}
+	[defend]
+	{
+	  f defense = 190;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = sd_g_c_st_1h_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,-0.707107;
+	  p position = -1.12408,0,-2.96413,0xf4ae5155;
+	}
+}
+[t:goblin_grunt,n:0x01900ce6]
+{
+	[aspect]
+	{
+	  f experience_value = 2111;
+	  f life = 716;
+	  f max_life = 716;
+	  f scale_multiplier = 1.3;
+	}
+	[common]
+	{
+		screen_name = "Goblin Brute";
+	}
+	[defend]
+	{
+	  f defense = 190;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = sd_g_c_sc_1h_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,-0.707107;
+	  p position = 1.06287,0,0.841042,0x08a44be9;
+	}
+}
+[t:goblin_grunt,n:0x01900ce7]
+{
+	[aspect]
+	{
+	  f experience_value = 2111;
+	  f life = 716;
+	  f max_life = 716;
+	  f scale_multiplier = 1.3;
+	}
+	[common]
+	{
+		screen_name = "Goblin Brute";
+	}
+	[defend]
+	{
+	  f defense = 190;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = scythe_g_1h_mag;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,-0.707107;
+	  p position = -3.81533,-2.25,-6.15161,0x2bd18cd5;
+	}
+}
+[t:blaster,n:0x01900ce8]
+{
+	[aspect]
+	{
+	  f experience_value = 85662;
+	  f life = 1082;
+		material = steel;
+	  f max_life = 1082;
+	  f scale_multiplier = 1.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 40;
+	  f damage_bonus_max_ranged = 40;
+	  f damage_bonus_min_cmagic = 40;
+	  f damage_bonus_min_ranged = 40;
+	}
+	[common]
+	{
+		screen_name = "Heavy Panzer Tank";
+	}
+	[defend]
+	{
+	  f defense = 1000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707107;
+	  p position = 0.0744323,0,0.0999298,0xfb5c2368;
+	}
+}
+[t:blaster,n:0x01900ce9]
+{
+	[aspect]
+	{
+	  f experience_value = 85662;
+	  f life = 1082;
+		material = steel;
+	  f max_life = 1082;
+	  f scale_multiplier = 1.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 40;
+	  f damage_bonus_max_ranged = 40;
+	  f damage_bonus_min_cmagic = 40;
+	  f damage_bonus_min_ranged = 40;
+	}
+	[common]
+	{
+		screen_name = "Heavy Panzer Tank";
+	}
+	[defend]
+	{
+	  f defense = 1000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707107;
+	  p position = -0.219605,0,1.27171,0x70e622f5;
+	}
+}
+[t:blaster,n:0x01900cea]
+{
+	[aspect]
+	{
+	  f experience_value = 85662;
+	  f life = 1082;
+		material = steel;
+	  f max_life = 1082;
+	  f scale_multiplier = 1.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 40;
+	  f damage_bonus_max_ranged = 40;
+	  f damage_bonus_min_cmagic = 40;
+	  f damage_bonus_min_ranged = 40;
+	}
+	[common]
+	{
+		screen_name = "Heavy Panzer Tank";
+	}
+	[defend]
+	{
+	  f defense = 1000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707107;
+	  p position = -1.75849,0,5.5853,0x4448743c;
+	}
+}
+[t:blaster,n:0x01900cee]
+{
+	[aspect]
+	{
+	  f experience_value = 85662;
+	  f life = 1082;
+		material = steel;
+	  f max_life = 1082;
+	  f scale_multiplier = 1.75;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 40;
+	  f damage_bonus_max_ranged = 40;
+	  f damage_bonus_min_cmagic = 40;
+	  f damage_bonus_min_ranged = 40;
+	}
+	[common]
+	{
+		screen_name = "Heavy Panzer Tank";
+	}
+	[defend]
+	{
+	  f defense = 1000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707107;
+	  p position = 1.4406,0,-0.430847,0x89c89d0e;
+	}
+}
+[t:kill_bot,n:0x01900cef]
+{
+	[aspect]
+	{
+	  f life = 985;
+	  f max_life = 985;
+	  f scale_base = 3;
+	}
+	[attack]
+	{
+	  f damage_max = 175;
+	  f damage_min = 165;
+	}
+	[common]
+	{
+		screen_name = "Kill Bot II";
+	}
+	[defend]
+	{
+	  f defense = 330;
+	}
+	[placement]
+	{
+	  p position = -3.88342,0,-1.52255,0xeb1ea2ec;
+	}
+}
+[t:kill_bot,n:0x01900cf0]
+{
+	[aspect]
+	{
+	  f life = 985;
+	  f max_life = 985;
+	  f scale_base = 3;
+	}
+	[attack]
+	{
+	  f damage_max = 175;
+	  f damage_min = 165;
+	}
+	[common]
+	{
+		screen_name = "Kill Bot II";
+	}
+	[defend]
+	{
+	  f defense = 330;
+	}
+	[placement]
+	{
+	  p position = 3.77478,0,-0.547163,0x78cfcaaa;
 	}
 }

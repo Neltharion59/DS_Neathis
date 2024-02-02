@@ -5316,3 +5316,119 @@
 	  p position = -2.80324,0,-1.68327,0x063338cd;
 	}
 }
+[t:3w_bandit_melee,n:0x03a001a5]
+{
+	[actor]
+	{
+	  b can_level_up = true;
+	}
+	[aspect]
+	{
+	  f experience_value = 2.51102e+014;
+	  f life = 3477;
+	  f life_recovery_period = 6;
+	  f life_recovery_unit = 2;
+	  f max_life = 1352.4;
+	  f max_mana = 281;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 550;
+	  f damage_bonus_min_melee = 500;
+	}
+	[common]
+	{
+		screen_name = "Dragon Cultist Fighter";
+	}
+	[defend]
+	{
+	  f defense = 1755;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_un_sc_f_dragon;
+			es_feet = bo_un_bo_sc_f_dragon;
+			es_forearms = gl_un_gl_sc_f_dragon;
+			es_head = he_un_vi_dragon;
+			es_shield_hand = sh_ra_m_c_r_m_serrated;
+			es_weapon_hand = sd_un_g_1h_wing;
+		}
+		[other]
+		{
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+		}
+	}
+	[mind]
+	{
+	  b actor_auto_heals_self_life = true;
+		disposition_orders = ad_offensive;
+	  i flee_count = 20;
+	  b on_life_ratio_low_flee = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.86493,-3.90435,-4.59306,0x52455131;
+	}
+}
+[t:3w_bandit_melee,n:0x03a001bf]
+{
+	[actor]
+	{
+	  b can_level_up = true;
+	}
+	[aspect]
+	{
+	  f experience_value = 2.51102e+014;
+	  f life = 3477;
+	  f life_recovery_period = 6;
+	  f life_recovery_unit = 2;
+	  f max_life = 1352.4;
+	  f max_mana = 281;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 550;
+	  f damage_bonus_min_melee = 500;
+	}
+	[common]
+	{
+		screen_name = "Dragon Cultist Fighter";
+	}
+	[defend]
+	{
+	  f defense = 1755;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_un_sc_f_dragon;
+			es_feet = bo_un_bo_sc_f_dragon;
+			es_forearms = gl_un_gl_sc_f_dragon;
+			es_head = he_un_vi_dragon;
+			es_shield_hand = sh_ra_m_c_r_m_serrated;
+			es_weapon_hand = sd_un_g_1h_wing;
+		}
+		[other]
+		{
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+		}
+	}
+	[mind]
+	{
+	  b actor_auto_heals_self_life = true;
+		disposition_orders = ad_offensive;
+	  i flee_count = 20;
+	  b on_life_ratio_low_flee = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.34616,-4,-3.89184,0xb713de6d;
+	}
+}

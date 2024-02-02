@@ -1,119 +1,3 @@
-[t:snapper,n:0x0030001a]
-{
-	[aspect]
-	{
-	  f experience_value = 16;
-	  f life = 16;
-	  f max_life = 16;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_max = 15;
-	  f damage_min = 10;
-	}
-	[defend]
-	{
-	  f defense = 22;
-	}
-	[placement]
-	{
-	  p position = 2.55111,-0.55,-2.10073,0x8c9d49c8;
-	}
-}
-[t:snapper,n:0x00300026]
-{
-	[aspect]
-	{
-	  f experience_value = 16;
-	  f life = 16;
-	  f max_life = 16;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_max = 15;
-	  f damage_min = 10;
-	}
-	[defend]
-	{
-	  f defense = 22;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 2.32893,-1.75,-4.8939,0x57e4f77e;
-	}
-}
-[t:snapper,n:0x0030001d]
-{
-	[aspect]
-	{
-	  f experience_value = 16;
-	  f life = 16;
-	  f max_life = 16;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_max = 15;
-	  f damage_min = 10;
-	}
-	[defend]
-	{
-	  f defense = 22;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.923879,0,0.382684;
-	  p position = 3.12479,-1.75,-4.74518,0x076463f0;
-	}
-}
-[t:spider,n:0x00300030]
-{
-	[aspect]
-	{
-	  f experience_value = 100;
-	  f life = 31;
-	  f max_life = 31;
-	  f scale_base = 1.2;
-	}
-	[attack]
-	{
-	  f damage_max = 32;
-	  f damage_min = 30;
-	}
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = change_quest_state("02_cellar","completed",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_killed",0,"on_first_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = true;
-			  b start_active = true;
-			}
-		}
-	}
-	[defend]
-	{
-	  f defense = 30;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.92388,0,0.382683;
-	  p position = 0.497206,0,1.36341,0xb54c9fe8;
-	}
-}
 [t:snapper,n:0x0030001b]
 {
 	[aspect]
@@ -162,89 +46,41 @@
 	  p position = -3.60507,-0.95,0.799725,0x621b86be;
 	}
 }
-[t:snapper,n:0x00300020]
-{
-	[aspect]
-	{
-	  f experience_value = 16;
-	  f life = 16;
-	  f max_life = 16;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_max = 15;
-	  f damage_min = 10;
-	}
-	[defend]
-	{
-	  f defense = 22;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.90201,-1.75,-4.80239,0x10e9c329;
-	}
-}
-[t:snapper,n:0x00300021]
-{
-	[aspect]
-	{
-	  f experience_value = 16;
-	  f life = 16;
-	  f max_life = 16;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_max = 15;
-	  f damage_min = 10;
-	}
-	[defend]
-	{
-	  f defense = 22;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 0.759052,-1.75,-4.93073,0x10e9c329;
-	}
-}
-[t:snapper,n:0x00300022]
-{
-	[aspect]
-	{
-	  f experience_value = 16;
-	  f life = 16;
-	  f max_life = 16;
-	  f scale_multiplier = 1.2;
-	}
-	[attack]
-	{
-	  f damage_max = 15;
-	  f damage_min = 10;
-	}
-	[defend]
-	{
-	  f defense = 22;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 0.0819664,-1.75,-3.99236,0x10e9c329;
-	}
-}
 [t:giant_rat,n:0x0030002d]
 {
 	[aspect]
 	{
-	  f life = 37;
-	  f max_life = 37;
+	  f experience_value = 44;
+	  f life = 36;
+	  f max_life = 36;
+	  f scale_multiplier = 0.75;
 	}
 	[attack]
 	{
-	  f damage_max = 11;
-	  f damage_min = 8;
+	  f damage_max = 21;
+	  f damage_min = 18;
+	}
+	[common]
+	{
+		screen_name = "Large Rat";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00300160,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[defend]
 	{
@@ -253,24 +89,30 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.14468,0,0.334974,0xf754668e;
+	  p position = 2.41692,0,0.0360617,0xf754668e;
 	}
 }
 [t:giant_rat,n:0x0030002e]
 {
 	[aspect]
 	{
-	  f life = 37;
-	  f max_life = 37;
+	  f experience_value = 28;
+	  f life = 12;
+	  f max_life = 12;
+	  f scale_multiplier = 0.4;
 	}
 	[attack]
 	{
-	  f damage_max = 11;
-	  f damage_min = 8;
+	  f damage_max = 16;
+	  f damage_min = 13;
+	}
+	[common]
+	{
+		screen_name = "Rat";
 	}
 	[defend]
 	{
-	  f defense = 15;
+	  f defense = 12;
 	}
 	[placement]
 	{
@@ -282,21 +124,50 @@
 {
 	[aspect]
 	{
-	  f life = 37;
-	  f max_life = 37;
+	  f experience_value = 28;
+	  f life = 12;
+	  f max_life = 12;
+	  f scale_multiplier = 0.4;
 	}
 	[attack]
 	{
-	  f damage_max = 11;
-	  f damage_min = 8;
+	  f damage_max = 16;
+	  f damage_min = 13;
+	}
+	[common]
+	{
+		screen_name = "Rat";
 	}
 	[defend]
 	{
-	  f defense = 15;
+	  f defense = 12;
 	}
 	[placement]
 	{
 	  p position = 0.481441,0,-0.739141,0xf754668e;
+	}
+}
+[t:snapper,n:0x0030001a]
+{
+	[aspect]
+	{
+	  f experience_value = 16;
+	  f life = 16;
+	  f max_life = 16;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_max = 15;
+	  f damage_min = 10;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
+	[placement]
+	{
+	  p position = 2.55111,-0.55,-2.10073,0x8c9d49c8;
 	}
 }
 [t:snapper,n:0x00300017]
@@ -369,6 +240,34 @@
 	{
 	  q orientation = 0,0.92388,0,-0.382683;
 	  p position = -0.833651,0,-1.75226,0x24da1b80;
+	}
+}
+[t:giant_rat,n:0x00300147]
+{
+	[aspect]
+	{
+	  f experience_value = 28;
+	  f life = 12;
+	  f max_life = 12;
+	  f scale_multiplier = 0.4;
+	}
+	[attack]
+	{
+	  f damage_max = 16;
+	  f damage_min = 13;
+	}
+	[common]
+	{
+		screen_name = "Rat";
+	}
+	[defend]
+	{
+	  f defense = 12;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 2.64388,0,1.00957,0x3dcadee2;
 	}
 }
 [t:spider_adolescent_yellow,n:0x00300010]
@@ -488,6 +387,52 @@
 	  p position = -2.76368,0,-0.17334,0x533b832c;
 	}
 }
+[t:spider_adolescent_yellow,n:0x00300146]
+{
+	[aspect]
+	{
+	  f experience_value = 25;
+	  f life = 14;
+	  f max_life = 14;
+	  f scale_multiplier = 1.7;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 5;
+	  f damage_bonus_min_melee = 4;
+	}
+	[common]
+	{
+		screen_name = "Yellow Spider Mother";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00300160,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-6.82368e-007;
+	  p position = 0.809858,0,-1.1758,0x533b832c;
+	}
+}
 [t:snapper,n:0x0030002c]
 {
 	[aspect]
@@ -510,6 +455,78 @@
 	{
 	  q orientation = 0,-0.92388,0,0.382683;
 	  p position = -2.90178,0.38868,-1.2748,0x7b76883f;
+	}
+}
+[t:snapper,n:0x00300020]
+{
+	[aspect]
+	{
+	  f experience_value = 16;
+	  f life = 16;
+	  f max_life = 16;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_max = 15;
+	  f damage_min = 10;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.90201,-1.75,-4.80239,0x10e9c329;
+	}
+}
+[t:snapper,n:0x00300021]
+{
+	[aspect]
+	{
+	  f experience_value = 16;
+	  f life = 16;
+	  f max_life = 16;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_max = 15;
+	  f damage_min = 10;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.759052,-1.75,-4.93073,0x10e9c329;
+	}
+}
+[t:snapper,n:0x00300022]
+{
+	[aspect]
+	{
+	  f experience_value = 16;
+	  f life = 16;
+	  f max_life = 16;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_max = 15;
+	  f damage_min = 10;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.0819664,-1.75,-3.99236,0x10e9c329;
 	}
 }
 [t:snapper,n:0x00300027]
@@ -632,7 +649,7 @@
 	  p position = -2.54634,1.54748,-1.35304,0xcbc840d8;
 	}
 }
-[t:snapper,n:0x0030001e]
+[t:snapper,n:0x0030001d]
 {
 	[aspect]
 	{
@@ -652,8 +669,54 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.234999,1,1.5773,0xb2c1ac36;
+	  q orientation = 0,0.923879,0,0.382684;
+	  p position = 3.12479,-1.75,-4.74518,0x076463f0;
+	}
+}
+[t:snapper,n:0x0030001e]
+{
+	[aspect]
+	{
+	  f experience_value = 28;
+	  f life = 26;
+	  f max_life = 26;
+	  f scale_multiplier = 1.8;
+	}
+	[attack]
+	{
+	  f damage_max = 16;
+	  f damage_min = 14;
+	}
+	[common]
+	{
+		screen_name = "Insatiable Snapper";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00300160,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 32;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707106;
+	  p position = -1.02979,1,1.16806,0xb2c1ac36;
 	}
 }
 [t:snapper,n:0x0030001f]
@@ -678,6 +741,75 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -1.73372,1,0.269997,0xb2c1ac36;
+	}
+}
+[t:snapper,n:0x00300026]
+{
+	[aspect]
+	{
+	  f experience_value = 16;
+	  f life = 16;
+	  f max_life = 16;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_max = 15;
+	  f damage_min = 10;
+	}
+	[defend]
+	{
+	  f defense = 22;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 2.32893,-1.75,-4.8939,0x57e4f77e;
+	}
+}
+[t:spider,n:0x00300030]
+{
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f life = 51;
+	  f max_life = 51;
+	  f scale_base = 1.2;
+	}
+	[attack]
+	{
+	  f damage_max = 20;
+	  f damage_min = 17;
+	}
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00300160,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 15;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = 0.130575,0,1.22243,0xb54c9fe8;
 	}
 }
 [t:snapper,n:0x00300023]
@@ -750,33 +882,5 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 0.452057,1,1.89776,0x99ca8afc;
-	}
-}
-[t:spider_adolescent_yellow,n:0x00300146]
-{
-	[aspect]
-	{
-	  f experience_value = 25;
-	  f life = 14;
-	  f max_life = 14;
-	  f scale_multiplier = 1.6;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 5;
-	  f damage_bonus_min_melee = 4;
-	}
-	[common]
-	{
-		screen_name = "Yellow Spider Mother";
-	}
-	[defend]
-	{
-	  f defense = 20;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-6.82368e-007;
-	  p position = 0.809858,0,-1.1758,0x533b832c;
 	}
 }

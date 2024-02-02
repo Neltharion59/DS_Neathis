@@ -41,6 +41,84 @@
 	  p position = 1.33814,0,3.90178,0xbf890443;
 	}
 }
+[t:spider_frostnid,n:0x00a00331]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.50366,0,2.15269,0xdc90bb3b;
+	}
+}
+[t:spider_frostnid,n:0x00a00332]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 3.08319,0,1.04769,0xdc90bb3b;
+	}
+}
+[t:spider_frostnid,n:0x00a00333]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 3.54636,0,-0.431936,0xdc90bb3b;
+	}
+}
 [t:spider_frostnid,n:0x00a005f8]
 {
 	[aspect]
@@ -158,8 +236,8 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 8;
-	  f damage_bonus_min_cmagic = 8;
+	  f damage_bonus_max_cmagic = 12;
+	  f damage_bonus_min_cmagic = 12;
 	}
 	[common]
 	{
@@ -255,6 +333,32 @@
 	[placement]
 	{
 	  p position = 0.486641,0,-0.594181,0xb97c8372;
+	}
+}
+[t:spider_frostnid,n:0x00a00334]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -1.07555,-1.02017,-3.79833,0x9cbeb65d;
 	}
 }
 [t:moth,n:0x00a00002]
@@ -542,6 +646,20 @@
 }
 [t:cave_giant,n:0x00a0003e]
 {
+	[aspect]
+	{
+	  f life = 378;
+	  f max_life = 378;
+	}
+	[attack]
+	{
+	  f damage_max = 45;
+	  f damage_min = 35;
+	}
+	[defend]
+	{
+	  f defense = 33;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -1179,11 +1297,45 @@
 	  p position = -2.08974,-5.8344,-0.985641,0x20b1c9b5;
 	}
 }
-[t:braak_magic,n:0x00a003a3]
+[t:merik,n:0x00a003a3]
 {
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f mana_recovery_period = 1;
+	  f mana_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_nmagic = 40;
+	  f damage_bonus_min_nmagic = 40;
+	}
 	[common]
 	{
+		membership = krug, party_krug_shaman, monster;
 		screen_name = "Ice Mage Apprentice";
+	}
+	[mind]
+	{
+	  b actor_auto_heals_self_life = true;
+	  b actor_auto_reanimates_friends = true;
+	  b actor_auto_switches_to_magic = true;
+	  b actor_auto_switches_to_melee = true;
+	  b actor_auto_switches_to_ranged = true;
+	  f com_range = 14;
+		combat_orders = co_free;
+		disposition_orders = ad_offensive;
+	  f inner_comfort_zone_range = 14;
+	  f limited_movement_range = 14;
+	  f melee_engage_range = 14;
+		movement_orders = mo_free;
+	  f outer_comfort_zone_range = 14;
+	  f ranged_engage_range = 14;
+	  f sight_range = 18;
 	}
 	[placement]
 	{
@@ -1562,11 +1714,45 @@
 	  p position = -1.19027,0,0.0449333,0xa5914630;
 	}
 }
-[t:braak_magic,n:0x00a003a2]
+[t:merik,n:0x00a003a2]
 {
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f mana_recovery_period = 1;
+	  f mana_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_nmagic = 40;
+	  f damage_bonus_min_nmagic = 40;
+	}
 	[common]
 	{
+		membership = krug, party_krug_shaman, monster;
 		screen_name = "Ice Mage Apprentice";
+	}
+	[mind]
+	{
+	  b actor_auto_heals_self_life = true;
+	  b actor_auto_reanimates_friends = true;
+	  b actor_auto_switches_to_magic = true;
+	  b actor_auto_switches_to_melee = true;
+	  b actor_auto_switches_to_ranged = true;
+	  f com_range = 14;
+		combat_orders = co_free;
+		disposition_orders = ad_offensive;
+	  f inner_comfort_zone_range = 14;
+	  f limited_movement_range = 14;
+	  f melee_engage_range = 14;
+		movement_orders = mo_free;
+	  f outer_comfort_zone_range = 14;
+	  f ranged_engage_range = 14;
+	  f sight_range = 18;
 	}
 	[placement]
 	{
@@ -1860,11 +2046,45 @@
 	  p position = 1.31223,-4.97114,-7.394,0xdfed3a59;
 	}
 }
-[t:braak_magic,n:0x00a0039d]
+[t:merik,n:0x00a0039d]
 {
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f mana_recovery_period = 1;
+	  f mana_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_nmagic = 40;
+	  f damage_bonus_min_nmagic = 40;
+	}
 	[common]
 	{
+		membership = krug, party_krug_shaman, monster;
 		screen_name = "Ice Mage Apprentice";
+	}
+	[mind]
+	{
+	  b actor_auto_heals_self_life = true;
+	  b actor_auto_reanimates_friends = true;
+	  b actor_auto_switches_to_magic = true;
+	  b actor_auto_switches_to_melee = true;
+	  b actor_auto_switches_to_ranged = true;
+	  f com_range = 14;
+		combat_orders = co_free;
+		disposition_orders = ad_offensive;
+	  f inner_comfort_zone_range = 14;
+	  f limited_movement_range = 14;
+	  f melee_engage_range = 14;
+		movement_orders = mo_free;
+	  f outer_comfort_zone_range = 14;
+	  f ranged_engage_range = 14;
+	  f sight_range = 18;
 	}
 	[placement]
 	{
@@ -2297,11 +2517,45 @@
 	  p position = 0.278435,0,3.07164,0x926822d8;
 	}
 }
-[t:braak_magic,n:0x00a00397]
+[t:merik,n:0x00a00397]
 {
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f mana_recovery_period = 1;
+	  f mana_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_nmagic = 40;
+	  f damage_bonus_min_nmagic = 40;
+	}
 	[common]
 	{
+		membership = krug, party_krug_shaman, monster;
 		screen_name = "Ice Mage Apprentice";
+	}
+	[mind]
+	{
+	  b actor_auto_heals_self_life = true;
+	  b actor_auto_reanimates_friends = true;
+	  b actor_auto_switches_to_magic = true;
+	  b actor_auto_switches_to_melee = true;
+	  b actor_auto_switches_to_ranged = true;
+	  f com_range = 14;
+		combat_orders = co_free;
+		disposition_orders = ad_offensive;
+	  f inner_comfort_zone_range = 14;
+	  f limited_movement_range = 14;
+	  f melee_engage_range = 14;
+		movement_orders = mo_free;
+	  f outer_comfort_zone_range = 14;
+	  f ranged_engage_range = 14;
+	  f sight_range = 18;
 	}
 	[placement]
 	{
@@ -2569,11 +2823,45 @@
 	  p position = 4.52085,-4.2,-3.96113,0x19472adc;
 	}
 }
-[t:braak_magic,n:0x00a003a4]
+[t:merik,n:0x00a003a4]
 {
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f mana_recovery_period = 1;
+	  f mana_recovery_unit = 1;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_nmagic = 40;
+	  f damage_bonus_min_nmagic = 40;
+	}
 	[common]
 	{
+		membership = krug, party_krug_shaman, monster;
 		screen_name = "Ice Mage Apprentice";
+	}
+	[mind]
+	{
+	  b actor_auto_heals_self_life = true;
+	  b actor_auto_reanimates_friends = true;
+	  b actor_auto_switches_to_magic = true;
+	  b actor_auto_switches_to_melee = true;
+	  b actor_auto_switches_to_ranged = true;
+	  f com_range = 14;
+		combat_orders = co_free;
+		disposition_orders = ad_offensive;
+	  f inner_comfort_zone_range = 14;
+	  f limited_movement_range = 14;
+	  f melee_engage_range = 14;
+		movement_orders = mo_free;
+	  f outer_comfort_zone_range = 14;
+	  f ranged_engage_range = 14;
+	  f sight_range = 18;
 	}
 	[placement]
 	{
@@ -2977,109 +3265,5 @@
 	{
 	  q orientation = 0,-0.92388,0,0.382683;
 	  p position = -0.87001,-6,-1.7099,0x7084a579;
-	}
-}
-[t:spider_frostnid,n:0x00a00331]
-{
-	[aspect]
-	{
-	  f experience_value = 20;
-	  f life = 24;
-	  f max_life = 24;
-	  f scale_multiplier = 0.3;
-	}
-	[common]
-	{
-		screen_name = "Cryo Puppet";
-	}
-	[defend]
-	{
-	  f defense = 20;
-	}
-	[physics]
-	{
-	  b explode_when_killed = false;
-	}
-	[placement]
-	{
-	  p position = 2.50366,0,2.15269,0xdc90bb3b;
-	}
-}
-[t:spider_frostnid,n:0x00a00332]
-{
-	[aspect]
-	{
-	  f experience_value = 20;
-	  f life = 24;
-	  f max_life = 24;
-	  f scale_multiplier = 0.3;
-	}
-	[common]
-	{
-		screen_name = "Cryo Puppet";
-	}
-	[defend]
-	{
-	  f defense = 20;
-	}
-	[physics]
-	{
-	  b explode_when_killed = false;
-	}
-	[placement]
-	{
-	  p position = 3.08319,0,1.04769,0xdc90bb3b;
-	}
-}
-[t:spider_frostnid,n:0x00a00333]
-{
-	[aspect]
-	{
-	  f experience_value = 20;
-	  f life = 24;
-	  f max_life = 24;
-	  f scale_multiplier = 0.3;
-	}
-	[common]
-	{
-		screen_name = "Cryo Puppet";
-	}
-	[defend]
-	{
-	  f defense = 20;
-	}
-	[physics]
-	{
-	  b explode_when_killed = false;
-	}
-	[placement]
-	{
-	  p position = 3.54636,0,-0.431936,0xdc90bb3b;
-	}
-}
-[t:spider_frostnid,n:0x00a00334]
-{
-	[aspect]
-	{
-	  f experience_value = 20;
-	  f life = 24;
-	  f max_life = 24;
-	  f scale_multiplier = 0.3;
-	}
-	[common]
-	{
-		screen_name = "Cryo Puppet";
-	}
-	[defend]
-	{
-	  f defense = 20;
-	}
-	[physics]
-	{
-	  b explode_when_killed = false;
-	}
-	[placement]
-	{
-	  p position = -1.07555,-1.02017,-3.79833,0x9cbeb65d;
 	}
 }

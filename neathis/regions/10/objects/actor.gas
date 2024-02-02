@@ -46,26 +46,11 @@
 	  p position = -3.45762,0,-0.214855,0x20af6a7c;
 	}
 }
-[t:shard_teal,n:0x01100018]
-{
-	[placement]
-	{
-	  p position = 2.28261,-9.53674e-007,-1.56998,0x588b1b62;
-	}
-}
 [t:shard_teal,n:0x01100019]
 {
 	[placement]
 	{
 	  p position = 0.762554,0,-2.61981,0x588b1b62;
-	}
-}
-[t:shard_teal,n:0x01100100]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 2.27077,0,-0.991966,0x588b1b62;
 	}
 }
 [t:shard_teal,n:0x01100101]
@@ -76,51 +61,12 @@
 	  p position = 1.94471,0,-3.54308,0x588b1b62;
 	}
 }
-[t:shard_teal,n:0x01100104]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.51189,0,3.21244,0x588b1b62;
-	}
-}
 [t:shard_teal,n:0x01100105]
 {
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = 3.11063,0,2.76092,0x588b1b62;
-	}
-}
-[t:shard_teal,n:0x01100106]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.9797,0,3.43523,0x588b1b62;
-	}
-}
-[t:shard_teal,n:0x01100029]
-{
-	[placement]
-	{
-	  p position = 3.89869,0,-2.322,0x36a65332;
-	}
-}
-[t:shard_teal,n:0x0110010b]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 3.15502,0,-2.48958,0x36a65332;
-	}
-}
-[t:shard_teal,n:0x0110010c]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 3.41697,0,0.877571,0x36a65332;
 	}
 }
 [t:shard_teal,n:0x0110010a]
@@ -137,14 +83,6 @@
 	{
 	  q orientation = 0,-0.92388,0,0.382683;
 	  p position = 1.76557,-3.5564,0.242327,0x760688d8;
-	}
-}
-[t:shard_teal,n:0x01100110]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.615631,-4,-1.74873,0x760688d8;
 	}
 }
 [t:shard_teal,n:0x0110010f]
@@ -180,60 +118,30 @@
 	}
 	[placement]
 	{
-	  p position = 0.120206,5.90476,-0.488052,0x8e115a3b;
-	}
-}
-[t:spider_stalagnid,n:0x01100113]
-{
-	[placement]
-	{
-	  p position = 0.829057,5.97852,-1.07819,0x8e115a3b;
-	}
-}
-[t:spider_stalagnid,n:0x01100111]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = -0.200932,0.533829,-15.7081,0xe4b9954a;
-	}
-}
-[t:shard_green,n:0x0110013f]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.39032,0,1.80876,0x127e5156;
-	}
-}
-[t:shard_green,n:0x01100140]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.13396,0,2.5453,0x127e5156;
-	}
-}
-[t:shard_green,n:0x0110013c]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.33128,0,-2.47975,0xe9b12aca;
-	}
-}
-[t:shard_green,n:0x0110013e]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.6758,0,3.19615,0xe9b12aca;
+	  p position = -0.153612,5.85,0.0490265,0x8e115a3b;
 	}
 }
 [t:shard_green,n:0x0110015b]
 {
+	[aspect]
+	{
+	  f experience_value = 1472;
+	  f life = 419;
+	  f max_life = 419;
+	  f scale_multiplier = 2.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 30;
+	  f damage_bonus_max_nmagic = 30;
+	  f damage_bonus_max_ranged = 30;
+	  f damage_bonus_min_cmagic = 30;
+	  f damage_bonus_min_nmagic = 30;
+	  f damage_bonus_min_ranged = 30;
+	}
 	[common]
 	{
+		screen_name = "Giant Green Shard";
 		[instance_triggers]
 		{
 			[*]
@@ -253,10 +161,14 @@
 			}
 		}
 	}
+	[defend]
+	{
+	  f defense = 270;
+	}
 	[placement]
 	{
-	  q orientation = 0,1,0,0;
-	  p position = 2.74119,0,1.19353,0xe9b12aca;
+	  q orientation = 0,1,0,2.98023e-008;
+	  p position = 2.66772,0,-3.78308,0x127e5156;
 	}
 }
 [t:scorpion,n:0x01100165]
@@ -264,14 +176,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -298,10 +210,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_melee = 70;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_melee = 60;
+	  f damage_bonus_max_cmagic = 15;
+	  f damage_bonus_max_melee = 15;
+	  f damage_bonus_min_cmagic = 10;
+	  f damage_bonus_min_melee = 10;
 	}
 	[common]
 	{
@@ -309,7 +221,7 @@
 	}
 	[defend]
 	{
-	  f defense = 302;
+	  f defense = 60;
 	}
 	[placement]
 	{
@@ -322,14 +234,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -350,14 +262,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -371,14 +283,6 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -0.320178,0,-1.29163,0x3f3150fa;
-	}
-}
-[t:shard_green,n:0x0110013d]
-{
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 0.599623,0,-1.448,0xb8202aee;
 	}
 }
 [t:shard_teal,n:0x01100040]
@@ -402,27 +306,19 @@
 	  p position = -2.17652,0,1.75387,0x8468513a;
 	}
 }
-[t:shard_green,n:0x0110013b]
-{
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -3.94851,-2,-4.05626,0x6eb98015;
-	}
-}
 [t:scorpion,n:0x01100083]
 {
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -443,14 +339,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -662,10 +558,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_melee = 70;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_melee = 60;
+	  f damage_bonus_max_cmagic = 15;
+	  f damage_bonus_max_melee = 15;
+	  f damage_bonus_min_cmagic = 10;
+	  f damage_bonus_min_melee = 10;
 	}
 	[common]
 	{
@@ -673,7 +569,7 @@
 	}
 	[defend]
 	{
-	  f defense = 302;
+	  f defense = 60;
 	}
 	[placement]
 	{
@@ -686,14 +582,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -717,14 +613,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -744,14 +640,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -772,14 +668,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -799,14 +695,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -827,14 +723,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -854,14 +750,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -882,14 +778,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -910,14 +806,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -938,14 +834,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -971,10 +867,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_melee = 70;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_melee = 60;
+	  f damage_bonus_max_cmagic = 15;
+	  f damage_bonus_max_melee = 15;
+	  f damage_bonus_min_cmagic = 10;
+	  f damage_bonus_min_melee = 10;
 	}
 	[common]
 	{
@@ -982,7 +878,7 @@
 	}
 	[defend]
 	{
-	  f defense = 302;
+	  f defense = 60;
 	}
 	[placement]
 	{
@@ -1011,14 +907,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1039,14 +935,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1072,10 +968,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_melee = 70;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_melee = 60;
+	  f damage_bonus_max_cmagic = 15;
+	  f damage_bonus_max_melee = 15;
+	  f damage_bonus_min_cmagic = 10;
+	  f damage_bonus_min_melee = 10;
 	}
 	[common]
 	{
@@ -1083,7 +979,7 @@
 	}
 	[defend]
 	{
-	  f defense = 302;
+	  f defense = 60;
 	}
 	[placement]
 	{
@@ -1102,10 +998,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_melee = 70;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_melee = 60;
+	  f damage_bonus_max_cmagic = 15;
+	  f damage_bonus_max_melee = 15;
+	  f damage_bonus_min_cmagic = 10;
+	  f damage_bonus_min_melee = 10;
 	}
 	[common]
 	{
@@ -1113,7 +1009,7 @@
 	}
 	[defend]
 	{
-	  f defense = 302;
+	  f defense = 60;
 	}
 	[placement]
 	{
@@ -1132,10 +1028,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_melee = 70;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_melee = 60;
+	  f damage_bonus_max_cmagic = 15;
+	  f damage_bonus_max_melee = 15;
+	  f damage_bonus_min_cmagic = 10;
+	  f damage_bonus_min_melee = 10;
 	}
 	[common]
 	{
@@ -1143,7 +1039,7 @@
 	}
 	[defend]
 	{
-	  f defense = 302;
+	  f defense = 60;
 	}
 	[placement]
 	{
@@ -1162,10 +1058,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_melee = 70;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_melee = 60;
+	  f damage_bonus_max_cmagic = 15;
+	  f damage_bonus_max_melee = 15;
+	  f damage_bonus_min_cmagic = 10;
+	  f damage_bonus_min_melee = 10;
 	}
 	[common]
 	{
@@ -1173,7 +1069,7 @@
 	}
 	[defend]
 	{
-	  f defense = 302;
+	  f defense = 60;
 	}
 	[placement]
 	{
@@ -1186,14 +1082,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1213,14 +1109,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1241,14 +1137,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1268,14 +1164,14 @@
 	[aspect]
 	{
 	  f experience_value = 215;
-	  f life = 341;
-	  f max_life = 341;
+	  f life = 104;
+	  f max_life = 104;
 	  f scale_multiplier = 1.35;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 80;
-	  f damage_bonus_min_melee = 80;
+	  f damage_bonus_max_melee = 40;
+	  f damage_bonus_min_melee = 40;
 	  f melee_aim_pi_time = 0.2;
 	  f melee_fidget_time = 0.2;
 	  f melee_recover_time = 0.2;
@@ -1312,14 +1208,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1340,14 +1236,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1367,14 +1263,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1395,14 +1291,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1423,14 +1319,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1451,14 +1347,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1479,14 +1375,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1524,14 +1420,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1552,14 +1448,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -1844,6 +1740,13 @@
 }
 [t:troll_forest,n:0x011001cd]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = scythe_g_1h_avg;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.92388,0,0.382683;
@@ -1854,7 +1757,6 @@
 {
 	[aspect]
 	{
-	  b dynamically_lit = true;
 	  f experience_value = 1017;
 	  f life = 617;
 	  f max_life = 617;
@@ -1862,8 +1764,8 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 50;
-	  f damage_bonus_min_melee = 50;
+	  f damage_bonus_max_melee = 25;
+	  f damage_bonus_min_melee = 20;
 	  f melee_aim_pi_time = 0.25;
 	  f melee_fidget_time = 0.25;
 	  f melee_recover_time = 0.25;
@@ -2101,10 +2003,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_melee = 70;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_melee = 60;
+	  f damage_bonus_max_cmagic = 15;
+	  f damage_bonus_max_melee = 15;
+	  f damage_bonus_min_cmagic = 10;
+	  f damage_bonus_min_melee = 10;
 	}
 	[common]
 	{
@@ -2112,7 +2014,7 @@
 	}
 	[defend]
 	{
-	  f defense = 302;
+	  f defense = 60;
 	}
 	[placement]
 	{
@@ -2125,14 +2027,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -2153,14 +2055,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -2187,10 +2089,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_melee = 70;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_melee = 60;
+	  f damage_bonus_max_cmagic = 15;
+	  f damage_bonus_max_melee = 15;
+	  f damage_bonus_min_cmagic = 10;
+	  f damage_bonus_min_melee = 10;
 	}
 	[common]
 	{
@@ -2198,7 +2100,7 @@
 	}
 	[defend]
 	{
-	  f defense = 302;
+	  f defense = 60;
 	}
 	[placement]
 	{
@@ -2211,14 +2113,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -2238,14 +2140,14 @@
 	[aspect]
 	{
 	  f experience_value = 145;
-	  f life = 181;
-	  f max_life = 181;
+	  f life = 62;
+	  f max_life = 62;
 	  f scale_multiplier = 0.9;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 60;
-	  f damage_bonus_min_melee = 45;
+	  f damage_bonus_max_melee = 30;
+	  f damage_bonus_min_melee = 30;
 	  f melee_aim_pi_time = 0.33;
 	  f melee_fidget_time = 0.33;
 	  f melee_recover_time = 0.33;
@@ -2316,41 +2218,12 @@
 	  p position = -3.56815,-1.2,-2.37101,0x4c62ed9e;
 	}
 }
-[t:shard_teal,n:0x0110002a]
-{
-	[placement]
-	{
-	  p position = -2.90179,-5.88684,-0.466379,0x11ac2ede;
-	}
-}
-[t:shard_teal,n:0x0110002b]
-{
-	[placement]
-	{
-	  p position = -1.61896,-5.66094,-0.487957,0x11ac2ede;
-	}
-}
-[t:shard_teal,n:0x01100109]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -1.48782,-5.83958,-0.998966,0x11ac2ede;
-	}
-}
 [t:shard_teal,n:0x0110010d]
 {
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = 0.660278,-6,-1.43262,0x11ac2ede;
-	}
-}
-[t:shard_teal,n:0x01100017]
-{
-	[placement]
-	{
-	  p position = 1.91534,9.53674e-007,-0.864259,0xbbf246a3;
 	}
 }
 [t:shard_teal,n:0x01100102]
@@ -2361,28 +2234,12 @@
 	  p position = 2.24112,0,-0.454758,0xbbf246a3;
 	}
 }
-[t:shard_teal,n:0x01100103]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.84905,0,-0.239455,0xbbf246a3;
-	}
-}
 [t:shard_teal,n:0x01100107]
 {
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -3.61474,0,1.17339,0xbbf246a3;
-	}
-}
-[t:shard_teal,n:0x01100108]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.01198,0,0.594119,0xbbf246a3;
 	}
 }
 [t:trog_warrior,n:0x0110001c]

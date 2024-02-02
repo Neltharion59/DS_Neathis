@@ -962,6 +962,41 @@
 	  p position = 3.9713,-0.0491799,-1.3999,0x5ac25f4b;
 	}
 }
+[t:wraith_terror,n:0x02000289]
+{
+	[aspect]
+	{
+	  f experience_value = 520000;
+	  f life = 8463;
+	  f max_life = 8463;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 50;
+	  f damage_bonus_min_melee = 50;
+	}
+	[common]
+	{
+		screen_name = "Karralck the Horrifying";
+	}
+	[defend]
+	{
+	  f defense = 570;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = st_un_reaper;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.85969,-0.05,-3.27992,0x5ac25f4b;
+	}
+}
 [t:wraith_terror,n:0x020000e1]
 {
 	[placement]
@@ -1942,6 +1977,29 @@
 	  p position = -0.401031,0,-1.11577,0x552fd306;
 	}
 }
+[t:wraith,n:0x020004a7]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.0681763,0,-1.5488,0x552fd306;
+	}
+}
+[t:wraith,n:0x020004a8]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.15634,0,1.3147,0x552fd306;
+	}
+}
+[t:wraith,n:0x020004ac]
+{
+	[placement]
+	{
+	  p position = -0.322189,0,-0.950989,0x552fd306;
+	}
+}
 [t:wraith_mage,n:0x020004a6]
 {
 	[aspect]
@@ -1969,40 +2027,14 @@
 		selected_active_location = il_active_melee_weapon;
 		[equipment]
 		{
+			es_spellbook = book_glb_magic_01;
 			es_weapon_hand = st_un_twirl;
-		}
-		[other]
-		{
-			il_active_primary_spell = spell_wraith_hands;
 		}
 	}
 	[placement]
 	{
 	  q orientation = 0,1,0,1.66939e-007;
 	  p position = 1.8941,-0.5,1.01318,0x7f54f882;
-	}
-}
-[t:wraith,n:0x020004a7]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.0681763,0,-1.5488,0x552fd306;
-	}
-}
-[t:wraith,n:0x020004a8]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.15634,0,1.3147,0x552fd306;
-	}
-}
-[t:wraith,n:0x020004ac]
-{
-	[placement]
-	{
-	  p position = -0.322189,0,-0.950989,0x552fd306;
 	}
 }
 [t:wraith_mage,n:0x02000399]
@@ -4747,43 +4779,6 @@
 	  p position = -2.76682,0,-1.92403,0x7c6dea32;
 	}
 }
-[t:skeleton_mercenary_reveal_02,n:0x020002dd]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.01463,0,-2.94876,0xf2351978;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x020002de]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.83927,0,-1.60315,0xf2351978;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x020002e4]
-{
-	[placement]
-	{
-	  p position = -3.65084,0,-0.863678,0xf2351978;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x020002e5]
-{
-	[placement]
-	{
-	  p position = -3.2496,0,-0.906525,0xf2351978;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x020002e6]
-{
-	[placement]
-	{
-	  p position = -2.21784,0,-1.01666,0xf2351978;
-	}
-}
 [t:warlock,n:0x02000451]
 {
 	[placement]
@@ -4845,15 +4840,8 @@
 {
 	[placement]
 	{
-	  p position = -2.30956,0,0.867556,0xd3f594b8;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x020002d8]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.14015,0,-0.447845,0xd3f594b8;
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = -3.9471,0,1.78159,0x65c094c1;
 	}
 }
 [t:skeleton_mercenary_reveal_02,n:0x020002d9]
@@ -4861,21 +4849,14 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.83421,0,-0.0265197,0xd3f594b8;
+	  p position = -0.909111,0,1.34293,0x9edc064a;
 	}
 }
 [t:skeleton_mercenary_reveal_02,n:0x020002dc]
 {
 	[placement]
 	{
-	  p position = -3.2869,0,1.03616,0xd3f594b8;
-	}
-}
-[t:skeleton_mercenary_archer_reveal_02,n:0x020002e0]
-{
-	[placement]
-	{
-	  p position = -3.70167,0,-1.13553,0xd3f594b8;
+	  p position = -3.84689,0,1.23541,0xd3f594b8;
 	}
 }
 [t:wraith_mage,n:0x020003fb]
@@ -5985,14 +5966,6 @@
 	  p position = -3.4319,0,0.45409,0x9410b7bb;
 	}
 }
-[t:skeleton_mercenary,n:0x020000b0]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.63165,0,-1.92972,0x2498aba8;
-	}
-}
 [t:skeleton_mercenary,n:0x020000b1]
 {
 	[placement]
@@ -6059,6 +6032,14 @@
 	  p position = -0.982008,0,-0.392145,0x36705948;
 	}
 }
+[t:skeleton_mercenary,n:0x020000b0]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.63165,0,-1.92972,0x2498aba8;
+	}
+}
 [t:skeleton_mercenary_reveal_02,n:0x02000102]
 {
 	[placement]
@@ -6066,38 +6047,27 @@
 	  p position = -1.88124,-2.05,-0.589065,0x0afa6f8f;
 	}
 }
-[t:wraith_terror,n:0x02000289]
+[t:skeleton_mercenary_reveal_02,n:0x020009f4]
 {
-	[aspect]
-	{
-	  f experience_value = 520000;
-	  f life = 8463;
-	  f max_life = 8463;
-	  f scale_multiplier = 1.3;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 50;
-	  f damage_bonus_min_melee = 50;
-	}
-	[common]
-	{
-		screen_name = "Karralck the Horrifying";
-	}
-	[defend]
-	{
-	  f defense = 570;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_weapon_hand = st_un_reaper;
-		}
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.85969,-0.05,-3.27992,0x5ac25f4b;
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = -3.95145,0,0.247093,0xad2dbdb1;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x020009f5]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = -2.92889,-1.15,2.50314,0x04012339;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x020009f6]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = 2.27876,-1.15,3.4747,0x04012339;
 	}
 }

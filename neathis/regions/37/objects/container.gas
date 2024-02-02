@@ -1,20 +1,3 @@
-[t:3w_chest_ice_01_un_id_r2,n:0x0340063b]
-{
-	[aspect]
-	{
-	  b is_selectable = false;
-	}
-	[inventory]
-	{
-	  b drop_at_use_point = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.923879,0,-0.382684;
-	  p position = -14.3522,-4.20969,-15.6497,0x9e613bce;
-		use_point_scids = 0x0340061A;
-	}
-}
 [t:barrel_gob_03,n:0x03400621]
 {
 	[aspect]
@@ -47,5 +30,22 @@
 	{
 	  q orientation = 0,-2.98023e-008,0,1;
 	  p position = 1.28856,-3.88046,-1.60302,0xe380ba93;
+	}
+}
+[t:3w_chest_ice_01_un_id_r2,n:0x0340063b]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = -14.3522,-4.20969,-15.6497,0x9e613bce;
+		use_point_scids = 0x0340061a;
 	}
 }

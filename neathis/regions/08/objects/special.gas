@@ -847,7 +847,7 @@
 {
 	[placement]
 	{
-	  p position = 0.534193,0,0.131657,0x45c22c1f;
+	  p position = 1.04526,0,0.0672226,0x45c22c1f;
 	}
 }
 [t:trigger_change_mood_box,n:0x00d003ad]
@@ -906,5 +906,17 @@
 	{
 	  q orientation = 0,-1,0,-1.66939e-007;
 	  p position = 0.0269775,1.14912,10.6725,0xb23484a9;
+	}
+}
+[t:blocking_object,n:0x00d0046d]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.5;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.751259,1.9,3.02431,0x56b00cfe;
 	}
 }

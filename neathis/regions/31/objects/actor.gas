@@ -2132,6 +2132,40 @@
 	  p position = -1.83593,0,-2.07106,0xe3bcfd49;
 	}
 }
+[t:3w_jonn,n:0x02d0217c]
+{
+	[common]
+	{
+		screen_name = "Yonairen";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_02;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ra_fp_f_g_o_fin;
+			es_feet = bo_ra_bo_ch_f_g_c_fin;
+			es_forearms = gl_ra_gl_ch_f_g_c_fin;
+			es_head = he_fu_pl_horn_fin_02;
+			es_weapon_hand = sd_un_big_2h_d_barbed;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,4.25441e-008,0,1;
+	  p position = 2.43919,0,0.924988,0x4ba338a8;
+	}
+}
 [t:2w_nalin_starbringer,n:0x02d02930]
 {
 	[aspect]
@@ -17594,39 +17628,5 @@
 	[placement]
 	{
 	  p position = 3.36629,0,-1.78174,0xe1ed96eb;
-	}
-}
-[t:3w_jonn,n:0x02d0217c]
-{
-	[common]
-	{
-		screen_name = "Yonairen";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_02;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ra_fp_f_g_o_fin;
-			es_feet = bo_ra_bo_ch_f_g_c_fin;
-			es_forearms = gl_ra_gl_ch_f_g_c_fin;
-			es_head = he_fu_pl_horn_fin_02;
-			es_weapon_hand = sd_un_big_2h_d_barbed;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,4.25441e-008,0,1;
-	  p position = 2.43919,0,0.924988,0x4ba338a8;
 	}
 }

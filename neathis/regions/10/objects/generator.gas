@@ -31,76 +31,6 @@
 	  p position = 3.44934,0,1.91605,0x36a65332;
 	}
 }
-[t:generator_generic,n:0x01100146]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  p position = 2.19262,0,1.11647,0x127e5156;
-	}
-}
-[t:generator_generic,n:0x01100150]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  p position = -1.35446,0,2.39745,0x127e5156;
-	}
-}
-[t:generator_generic,n:0x01100153]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = -2.09814,0,2.30814,0x127e5156;
-	}
-}
-[t:generator_generic,n:0x01100156]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 2.20648,0,2.21581,0x127e5156;
-	}
-}
-[t:generator_generic,n:0x01100158]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 2.2281,0,2.26163,0x127e5156;
-	}
-}
-[t:generator_generic,n:0x01100159]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = -2.80029,0,2.99498,0x127e5156;
-	}
-}
 [t:generator_generic,n:0x01100143]
 {
 	[generator_basic]
@@ -123,6 +53,17 @@
 	  p position = -3.96123,0,-1.73531,0xe9b12aca;
 	}
 }
+[t:generator_generic,n:0x01100146]
+{
+	[generator_basic]
+	{
+		child_template_name = "shard_green";
+	}
+	[placement]
+	{
+	  p position = -1.64616,0,3.67705,0xe9b12aca;
+	}
+}
 [t:generator_generic,n:0x0110014b]
 {
 	[generator_basic]
@@ -133,74 +74,6 @@
 	{
 	  q orientation = 0,1,0,0;
 	  p position = 2.39215,0,0.369629,0xe9b12aca;
-	}
-}
-[t:generator_generic,n:0x0110014f]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  p position = -2.09532,0,-2.36694,0xe9b12aca;
-	}
-}
-[t:generator_generic,n:0x01100151]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  p position = -2.05089,0,3.28693,0xe9b12aca;
-	}
-}
-[t:generator_generic,n:0x01100155]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = -0.135496,0,-2.54405,0xe9b12aca;
-	}
-}
-[t:generator_generic,n:0x0110015a]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 2.14028,0,-2.36923,0xe9b12aca;
-	}
-}
-[t:generator_generic,n:0x0110014e]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  p position = 0.996162,0,-0.169342,0xd6902352;
-	}
-}
-[t:generator_generic,n:0x01100157]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  p position = 1.6262,0,1.20284,0xd6902352;
 	}
 }
 [t:generator_generic,n:0x01100147]
@@ -215,37 +88,15 @@
 	  p position = -0.108177,0,-1.93022,0xb8202aee;
 	}
 }
-[t:generator_generic,n:0x01100145]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  p position = -3.01958,-2,-5.03598,0x6eb98015;
-	}
-}
-[t:generator_generic,n:0x01100154]
-{
-	[generator_basic]
-	{
-		child_template_name = "shard_green";
-	}
-	[placement]
-	{
-	  p position = -2.43617,-2,-4.65872,0x6eb98015;
-	}
-}
 [t:generator_generic,n:0x0110016e]
 {
 	[generator_basic]
 	{
 		child_template_name = "trog";
 	  x initial_command = 0x0110016B;
-	  i max_alive_children = 15;
-	  i num_children_incubating = 15;
-	  f spawn_period = 10;
+	  i max_alive_children = 7;
+	  i num_children_incubating = 7;
+	  f spawn_period = 3;
 	}
 	[placement]
 	{
@@ -257,9 +108,9 @@
 	[generator_basic]
 	{
 		child_template_name = "shard_teal";
-	  i max_alive_children = 5;
+	  i max_alive_children = 3;
 	  i num_children_incubating = 999;
-	  f spawn_period = 5;
+	  f spawn_period = 8;
 	}
 	[placement]
 	{
@@ -272,9 +123,9 @@
 	[generator_basic]
 	{
 		child_template_name = "shard_teal";
-	  i max_alive_children = 5;
+	  i max_alive_children = 3;
 	  i num_children_incubating = 999;
-	  f spawn_period = 5;
+	  f spawn_period = 8;
 	}
 	[placement]
 	{
@@ -286,9 +137,9 @@
 	[generator_basic]
 	{
 		child_template_name = "shard_teal";
-	  i max_alive_children = 5;
+	  i max_alive_children = 3;
 	  i num_children_incubating = 999;
-	  f spawn_period = 5;
+	  f spawn_period = 8;
 	}
 	[placement]
 	{

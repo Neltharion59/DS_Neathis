@@ -46,6 +46,16 @@
 	  f scroll_rate = 10.000000;
 	}
 }
+[guard_ranger]
+{
+	[text*]
+	{
+		activate_quest* = 20_fury,0;
+	  b quest_dialog = true;
+		screen_text = "You are a welcome reinforcement, friend. You seem to handle yourself well. While you're still in your travelling gear, I have a favor to ask. As you have seen outside the walls, our forces are spread too thin. We are all too busy dealing with the undead, so our other enemies have made a move on us. Two creatures known as the fury have flied over our castle walls and made residence in our towers. If that's not too much trouble for you, I ask you to destroy them. There should be one fury in each of our two towers.";
+	  f scroll_rate = 10.000000;
+	}
+}
 [join_bolingar]
 {
 	[text*]

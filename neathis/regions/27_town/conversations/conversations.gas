@@ -54,6 +54,15 @@
 	  f scroll_rate = 10.000000;
 	}
 }
+[quest_norrick]
+{
+	[text*]
+	{
+		activate_quest* = 27_norrick,0;
+		screen_text = "He comes at night, he comes and taunts me! The doppelganger, my evil twin, he knocks me on the ground, and then he laughs. To the north he hides, just a step from here, near the castle. Head north, follow the red flowers that follow his passing, and put his mockery to end.";
+	  f scroll_rate = 10.000000;
+	}
+}
 [shop_general]
 {
 	[text*]
@@ -151,6 +160,14 @@
 	[text*]
 	{
 		screen_text = "Unfortunately, we currently do not accept guests. There is an undead horde flowing from the kingdom's direction. We collapsed the cliff and there is currently no entry into the town from that direction, but we are preparing for a siege. You're welcome to help in stocking supplies and if it comes to that, you may take shelter here with us. We are preparing to accept refugees, too.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[daughter_norrick]
+{
+	[text*]
+	{
+		screen_text = "Excuse my father. He is just...old. And he would make up the most unlikely stories before admitting it.";
 	  f scroll_rate = 10.000000;
 	}
 }

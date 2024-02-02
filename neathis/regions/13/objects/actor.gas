@@ -1,5 +1,9 @@
 [t:tretch,n:0x01500066]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -2.27571,-12,-4.24937,0x4b53934c;
@@ -7,6 +11,10 @@
 }
 [t:tretch,n:0x01500065]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -1.76445,0,-2.75437,0x3dffffa7;
@@ -14,6 +22,10 @@
 }
 [t:tretch,n:0x01500025]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -3.69079,0,2.5576,0xae122bce;
@@ -21,6 +33,10 @@
 }
 [t:tretch,n:0x01500064]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
@@ -67,6 +83,10 @@
 }
 [t:tretch,n:0x01500060]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -0.703307,0,-3.0883,0xb9fb4bc4;
@@ -88,6 +108,10 @@
 }
 [t:tretch,n:0x01500067]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -3.61165,0,-1.34327,0x2f59566f;
@@ -95,6 +119,10 @@
 }
 [t:tretch,n:0x01500069]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -0.431824,0,1.58211,0x80593cf5;
@@ -142,6 +170,14 @@
 	  p position = 18.2467,0,-6.47432,0xf5ca1277;
 	}
 }
+[t:syrrus,n:0x0150053a]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 6.69788,-9.31323e-010,1.90002,0xf5ca1277;
+	}
+}
 [t:syrrus,n:0x015000c0]
 {
 	[placement]
@@ -157,6 +193,21 @@
 	  p position = 22.9928,0,-25.5776,0x1de89b18;
 	}
 }
+[t:syrrus,n:0x015001eb]
+{
+	[placement]
+	{
+	  p position = 2.21921,0,0.0520401,0x2db835e7;
+	}
+}
+[t:syrrus,n:0x0150053b]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 9.51575,0,-8.16226,0x2db835e7;
+	}
+}
 [t:syrrus,n:0x015000ac]
 {
 	[aspect]
@@ -168,12 +219,12 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_nmagic = 50;
-	  f damage_bonus_max_ranged = 50;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_nmagic = 50;
-	  f damage_bonus_min_ranged = 50;
+	  f damage_bonus_max_cmagic = 25;
+	  f damage_bonus_max_nmagic = 25;
+	  f damage_bonus_max_ranged = 25;
+	  f damage_bonus_min_cmagic = 25;
+	  f damage_bonus_min_nmagic = 25;
+	  f damage_bonus_min_ranged = 25;
 	}
 	[common]
 	{
@@ -187,13 +238,6 @@
 	{
 	  q orientation = 0,0.92388,0,0.382683;
 	  p position = -1.89263,0,11.0034,0x0678cf7e;
-	}
-}
-[t:syrrus,n:0x015001eb]
-{
-	[placement]
-	{
-	  p position = 2.21921,0,0.0520401,0x2db835e7;
 	}
 }
 [t:syrrus,n:0x015000a9]
@@ -233,6 +277,38 @@
 	  p position = -2.93465,0,-25.2493,0xb3fcff12;
 	}
 }
+[t:syrrus,n:0x0150053e]
+{
+	[aspect]
+	{
+	  f experience_value = 7852;
+	  f life = 2107;
+	  f max_life = 2107;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 25;
+	  f damage_bonus_max_nmagic = 25;
+	  f damage_bonus_max_ranged = 25;
+	  f damage_bonus_min_cmagic = 25;
+	  f damage_bonus_min_nmagic = 25;
+	  f damage_bonus_min_ranged = 25;
+	}
+	[common]
+	{
+		screen_name = "Preysnapper";
+	}
+	[defend]
+	{
+	  f defense = 185;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 11.9053,0,-7.57225,0xb3fcff12;
+	}
+}
 [t:syrrus,n:0x015000ae]
 {
 	[placement]
@@ -270,6 +346,38 @@
 	  p position = -1.86024,-18.9234,-0.534103,0x8a319f0a;
 	}
 }
+[t:syrrus,n:0x0150053d]
+{
+	[aspect]
+	{
+	  f experience_value = 7852;
+	  f life = 2107;
+	  f max_life = 2107;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 25;
+	  f damage_bonus_max_nmagic = 25;
+	  f damage_bonus_max_ranged = 25;
+	  f damage_bonus_min_cmagic = 25;
+	  f damage_bonus_min_nmagic = 25;
+	  f damage_bonus_min_ranged = 25;
+	}
+	[common]
+	{
+		screen_name = "Preysnapper";
+	}
+	[defend]
+	{
+	  f defense = 185;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.210434,0,1.71191,0x21e2a097;
+	}
+}
 [t:syrrus,n:0x015000bd]
 {
 	[placement]
@@ -289,6 +397,38 @@
 	[placement]
 	{
 	  p position = 24.6539,0,1.49649,0x4d9ed76d;
+	}
+}
+[t:syrrus,n:0x0150053c]
+{
+	[aspect]
+	{
+	  f experience_value = 7852;
+	  f life = 2107;
+	  f max_life = 2107;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 25;
+	  f damage_bonus_max_nmagic = 25;
+	  f damage_bonus_max_ranged = 25;
+	  f damage_bonus_min_cmagic = 25;
+	  f damage_bonus_min_nmagic = 25;
+	  f damage_bonus_min_ranged = 25;
+	}
+	[common]
+	{
+		screen_name = "Preysnapper";
+	}
+	[defend]
+	{
+	  f defense = 185;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 3.14864,9.31323e-010,-22.8749,0x4d9ed76d;
 	}
 }
 [t:syrrus,n:0x015000b9]
@@ -333,8 +473,23 @@
 	  p position = 4.28253,1.86265e-009,-26.0679,0xc3d1942b;
 	}
 }
+[t:tretch,n:0x0150054c]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = 3.54981,0,-1.463,0x8fe0451a;
+	}
+}
 [t:tretch,n:0x01500022]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -343,6 +498,10 @@
 }
 [t:tretch,n:0x01500049]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -351,6 +510,10 @@
 }
 [t:tretch,n:0x0150004a]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.923879,0,-0.382684;
@@ -441,6 +604,10 @@
 }
 [t:tretch,n:0x0150004b]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -449,6 +616,10 @@
 }
 [t:tretch,n:0x015000a1]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.923879,0,-0.382684;
@@ -457,10 +628,25 @@
 }
 [t:tretch,n:0x0150004c]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = 3.95371,0,-0.255941,0x9ff3cd72;
+	}
+}
+[t:tretch,n:0x0150054b]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = 0.970512,6,3.79692,0xd7f4e649;
 	}
 }
 [t:zombie_02_boss_01,n:0x01500045]
@@ -538,7 +724,26 @@
 	}
 	[common]
 	{
+		dev_instance_text = "QUEST";
 		screen_name = "Thulietta the Occult";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("13_witches_2","completed",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[defend]
 	{
@@ -574,6 +779,45 @@
 	  p position = -9.82207,0.0777933,5.82951,0x8a7217ba;
 	}
 }
+[t:tretch,n:0x0150054a]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = -3.51476,0,-1.25198,0x7bd57962;
+	}
+}
+[t:swamp_creature_boss_01,n:0x01500552]
+{
+	[aspect]
+	{
+	  f experience_value = 13852;
+	  f life = 6177;
+	  f max_life = 6177;
+	  f scale_multiplier = 2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 25;
+	  f damage_bonus_min_melee = 20;
+	}
+	[common]
+	{
+		screen_name = "Swamp-Bound Demon";
+	}
+	[defend]
+	{
+	  f defense = 412;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -2.83419,0,0.972488,0xe3ba72fe;
+	}
+}
 [t:swamp_witch,n:0x015000bc]
 {
 	[placement]
@@ -598,6 +842,17 @@
 	  p position = -2.77677,0,1.16731,0x95ed39ab;
 	}
 }
+[t:tretch,n:0x01500549]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = -0.894936,4,1.08549,0x0f5953f7;
+	}
+}
 [t:swamp_witch,n:0x01500042]
 {
 	[placement]
@@ -614,12 +869,67 @@
 	  p position = 2.3974,0,0.971573,0xda6b4fac;
 	}
 }
+[t:tretch,n:0x01500545]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = 3.98387,0,0.259392,0xda6b4fac;
+	}
+}
+[t:tretch,n:0x01500544]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = -2.82246,2,1.92026,0xd1bf00a5;
+	}
+}
 [t:swamp_witch,n:0x0150004f]
 {
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 1.06393,2,3.48778,0xe9684341;
+	}
+}
+[t:tretch,n:0x01500546]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = 1.43559,0,-2.03852,0x87a0eacd;
+	}
+}
+[t:tretch,n:0x01500547]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = -3.0755,0,0.529739,0x52bf838d;
+	}
+}
+[t:tretch,n:0x01500548]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = 3.3156,0,0.625671,0x3e5eb2bf;
 	}
 }
 [t:swamp_witch,n:0x015000ba]
@@ -647,6 +957,10 @@
 }
 [t:tretch,n:0x01500088]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 2.03495,0,-3.35292,0xa763b102;
@@ -654,6 +968,10 @@
 }
 [t:tretch,n:0x01500087]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -0.582428,0,-0.149113,0x411e6555;
@@ -661,6 +979,10 @@
 }
 [t:tretch,n:0x01500085]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 2.25311,0,-2.29893,0x2c8b73ef;
@@ -676,6 +998,10 @@
 }
 [t:tretch,n:0x01500038]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -1.28182,-0.775497,-1.37616,0x33124a77;
@@ -690,6 +1016,10 @@
 }
 [t:tretch,n:0x01500077]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 1.41743,-0.782966,-1.42044,0xb34cd7f6;
@@ -704,6 +1034,10 @@
 }
 [t:tretch,n:0x01500078]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 2.74508,3.9955,3.17169,0x83efd620;
@@ -711,6 +1045,10 @@
 }
 [t:tretch,n:0x0150007d]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -0.850372,0,-2.86575,0x4b85b080;
@@ -725,6 +1063,10 @@
 }
 [t:tretch,n:0x0150007f]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -0.656448,0,1.22112,0x5d70081f;
@@ -732,6 +1074,10 @@
 }
 [t:tretch,n:0x01500080]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 1.31549,0,-1.90746,0x6f40efce;
@@ -741,9 +1087,9 @@
 {
 	[aspect]
 	{
-	  f experience_value = 9571;
-	  f life = 6721;
-	  f max_life = 6721;
+	  f experience_value = 19721;
+	  f life = 19721;
+	  f max_life = 19721;
 	  f scale_multiplier = 2;
 	}
 	[attack]
@@ -754,7 +1100,29 @@
 	}
 	[common]
 	{
-		screen_name = "The Weeping Oak";
+		screen_name = "The Weeping Willow";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x01500541,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 75;
 	}
 	[placement]
 	{
@@ -762,15 +1130,39 @@
 	  p position = 2.89381,0,-2.45149,0xc725c62e;
 	}
 }
+[t:swamp_witch,n:0x0150009d]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.605095,0,0.0837402,0xc725c62e;
+	}
+}
 [t:tretch,n:0x01500081]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 1.64072,0,2.306,0x096f8cba;
 	}
 }
+[t:swamp_witch,n:0x0150053f]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.914116,0,-2.34071,0xe04bc5fd;
+	}
+}
 [t:tretch,n:0x0150008c]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 1.34553,0,-1.40973,0x20da43a3;
@@ -778,6 +1170,10 @@
 }
 [t:tretch,n:0x0150008b]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 2.75992,0,1.30133,0x388cf1fc;
@@ -785,6 +1181,10 @@
 }
 [t:tretch,n:0x0150008a]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 1.41692,0,1.71719,0x0b18156a;
@@ -792,6 +1192,10 @@
 }
 [t:tretch,n:0x01500089]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 2.51834,0,-0.208145,0xe156e2f7;
@@ -806,6 +1210,10 @@
 }
 [t:tretch,n:0x0150008d]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -1.02397,0,0.966415,0x855850d2;
@@ -813,21 +1221,29 @@
 }
 [t:tretch,n:0x01500086]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -3.15236,0,-3.91677,0x10309193;
 	}
 }
-[t:swamp_witch,n:0x0150009d]
+[t:swamp_witch,n:0x01500540]
 {
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.605095,0,0.0837402,0xc725c62e;
+	  p position = -1.3262,0,-3.8065,0xd31c1e3f;
 	}
 }
 [t:tretch,n:0x0150007e]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -3.59666,0,-3.50815,0x33febb62;
@@ -835,6 +1251,10 @@
 }
 [t:tretch,n:0x01500084]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -3.3633,0,0.163074,0x80fdbccf;
@@ -856,6 +1276,10 @@
 }
 [t:tretch,n:0x01500083]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 2.02425,0,1.744,0xde008eb5;
@@ -870,6 +1294,10 @@
 }
 [t:tretch,n:0x0150007b]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -3.83459,0,2.53998,0x75598894;
@@ -877,6 +1305,10 @@
 }
 [t:tretch,n:0x0150007c]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 1.95598,0,-2.29916,0x75598894;
@@ -884,6 +1316,10 @@
 }
 [t:tretch,n:0x0150007a]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 2.99498,0,2.31429,0xaf7a61c1;
@@ -898,6 +1334,10 @@
 }
 [t:tretch,n:0x01500079]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 1.87453,0,-3.17409,0x0e246646;
@@ -905,6 +1345,10 @@
 }
 [t:tretch,n:0x01500039]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -3.46999,0,1.89821,0x675787c5;
@@ -912,6 +1356,10 @@
 }
 [t:tretch,n:0x0150006d]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 3.20419,0,-2.21644,0x862c4048;
@@ -926,6 +1374,10 @@
 }
 [t:tretch,n:0x0150003a]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -2.46621,-1.90735e-006,0.964012,0xc1e257cc;
@@ -933,6 +1385,10 @@
 }
 [t:tretch,n:0x0150003b]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 3.68954,0,3.46104,0x9539ef02;
@@ -940,6 +1396,10 @@
 }
 [t:tretch,n:0x01500068]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -3.71256,0,-0.865089,0xaa288937;
@@ -947,6 +1407,10 @@
 }
 [t:tretch,n:0x0150006a]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -1.43509,0,-1.45816,0x25d3d57d;
@@ -961,6 +1425,10 @@
 }
 [t:tretch,n:0x01500072]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -0.208572,0,-3.58122,0x378cb3cf;
@@ -975,6 +1443,10 @@
 }
 [t:tretch,n:0x01500073]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -2.38628,0,-3.44648,0x73dc116c;
@@ -982,6 +1454,10 @@
 }
 [t:tretch,n:0x01500071]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 0.420731,0,-0.52578,0x209304cb;
@@ -996,6 +1472,10 @@
 }
 [t:tretch,n:0x01500074]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 2.10811,0,2.2458,0x1dbb2bd6;
@@ -1003,6 +1483,10 @@
 }
 [t:tretch,n:0x0150006e]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 1.92175,0,-2.2048,0x1b3cb1ad;
@@ -1010,6 +1494,10 @@
 }
 [t:tretch,n:0x01500070]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -0.103737,0,-3.2496,0x819462f0;
@@ -1017,6 +1505,10 @@
 }
 [t:tretch,n:0x0150006b]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -0.998276,0,-1.93399,0x8a313262;
@@ -1024,6 +1516,10 @@
 }
 [t:tretch,n:0x0150006f]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 2.30754,0,3.1315,0x8a313262;
@@ -1038,6 +1534,10 @@
 }
 [t:tretch,n:0x0150006c]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -1053,6 +1553,10 @@
 }
 [t:tretch,n:0x01500021]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 1.2877,0,0.431372,0xbecc5443;
@@ -1081,6 +1585,10 @@
 }
 [t:tretch,n:0x01500037]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 2.43901,0,-1.082,0xd7492674;
@@ -1088,6 +1596,10 @@
 }
 [t:tretch,n:0x01500076]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -2.19411,-1,-3.19647,0x8bbee1c5;
@@ -1102,6 +1614,10 @@
 }
 [t:tretch,n:0x01500075]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = -2.69846,2,2.60168,0xd5c00d1d;
@@ -1109,199 +1625,45 @@
 }
 [t:tretch,n:0x01500024]
 {
+	[defend]
+	{
+	  f defense = 75;
+	}
 	[placement]
 	{
 	  p position = 3.89561,0,1.72171,0xaffdc6f2;
 	}
 }
-[t:syrrus,n:0x0150053a]
+[t:tretch,n:0x01500553]
 {
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 6.69788,-9.31323e-010,1.90002,0xf5ca1277;
-	}
-}
-[t:syrrus,n:0x0150053b]
-{
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 9.51575,0,-8.16226,0x2db835e7;
-	}
-}
-[t:syrrus,n:0x0150053c]
-{
-	[aspect]
-	{
-	  f experience_value = 7852;
-	  f life = 2107;
-	  f max_life = 2107;
-	  f scale_multiplier = 1.4;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_nmagic = 50;
-	  f damage_bonus_max_ranged = 50;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_nmagic = 50;
-	  f damage_bonus_min_ranged = 50;
-	}
-	[common]
-	{
-		screen_name = "Preysnapper";
-	}
 	[defend]
 	{
-	  f defense = 185;
+	  f defense = 75;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 3.14864,9.31323e-010,-22.8749,0x4d9ed76d;
+	  p position = 2.75056,0,0.840736,0x2bea0563;
 	}
 }
-[t:syrrus,n:0x0150053d]
+[t:tretch,n:0x01500554]
 {
-	[aspect]
-	{
-	  f experience_value = 7852;
-	  f life = 2107;
-	  f max_life = 2107;
-	  f scale_multiplier = 1.4;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_nmagic = 50;
-	  f damage_bonus_max_ranged = 50;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_nmagic = 50;
-	  f damage_bonus_min_ranged = 50;
-	}
-	[common]
-	{
-		screen_name = "Preysnapper";
-	}
 	[defend]
 	{
-	  f defense = 185;
+	  f defense = 75;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -0.210434,0,1.71191,0x21e2a097;
+	  p position = 2.32663,0,-0.274483,0x7fa8b09a;
 	}
 }
-[t:syrrus,n:0x0150053e]
+[t:tretch,n:0x01500555]
 {
-	[aspect]
-	{
-	  f experience_value = 7852;
-	  f life = 2107;
-	  f max_life = 2107;
-	  f scale_multiplier = 1.4;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 50;
-	  f damage_bonus_max_nmagic = 50;
-	  f damage_bonus_max_ranged = 50;
-	  f damage_bonus_min_cmagic = 50;
-	  f damage_bonus_min_nmagic = 50;
-	  f damage_bonus_min_ranged = 50;
-	}
-	[common]
-	{
-		screen_name = "Preysnapper";
-	}
 	[defend]
 	{
-	  f defense = 185;
+	  f defense = 75;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = 11.9053,0,-7.57225,0xb3fcff12;
-	}
-}
-[t:swamp_witch,n:0x0150053f]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.914116,0,-2.34071,0xe04bc5fd;
-	}
-}
-[t:swamp_witch,n:0x01500540]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.3262,0,-3.8065,0xd31c1e3f;
-	}
-}
-[t:tretch,n:0x01500544]
-{
-	[placement]
-	{
-	  p position = -2.82246,2,1.92026,0xd1bf00a5;
-	}
-}
-[t:tretch,n:0x01500545]
-{
-	[placement]
-	{
-	  p position = 3.98387,0,0.259392,0xda6b4fac;
-	}
-}
-[t:tretch,n:0x01500546]
-{
-	[placement]
-	{
-	  p position = 1.43559,0,-2.03852,0x87a0eacd;
-	}
-}
-[t:tretch,n:0x01500547]
-{
-	[placement]
-	{
-	  p position = -3.0755,0,0.529739,0x52bf838d;
-	}
-}
-[t:tretch,n:0x01500548]
-{
-	[placement]
-	{
-	  p position = 3.3156,0,0.625671,0x3e5eb2bf;
-	}
-}
-[t:tretch,n:0x01500549]
-{
-	[placement]
-	{
-	  p position = -0.894936,4,1.08549,0x0f5953f7;
-	}
-}
-[t:tretch,n:0x0150054a]
-{
-	[placement]
-	{
-	  p position = -3.51476,0,-1.25198,0x7bd57962;
-	}
-}
-[t:tretch,n:0x0150054b]
-{
-	[placement]
-	{
-	  p position = 0.970512,6,3.79692,0xd7f4e649;
-	}
-}
-[t:tretch,n:0x0150054c]
-{
-	[placement]
-	{
-	  p position = 3.54981,0,-1.463,0x8fe0451a;
+	  p position = 1.47741,0,0.0192776,0x3329cd69;
 	}
 }

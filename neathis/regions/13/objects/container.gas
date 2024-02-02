@@ -246,3 +246,24 @@
 	  p position = 0.675056,-3.90981,1.68202,0x8d934990;
 	}
 }
+[t:chest_grs_02_un_sr_r4,n:0x01500541]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	  f scale_multiplier = 0.45;
+	}
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  p position = 0.418289,0,0.105667,0xf1b041bf;
+		use_point_scids = 0x0150054d;
+	}
+	[trapped]
+	{
+		fire_event = we_invalid;
+	}
+}

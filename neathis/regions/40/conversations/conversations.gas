@@ -22,6 +22,26 @@
 	  f scroll_rate = 10.000000;
 	}
 }
+[quest_kell]
+{
+	[text*]
+	{
+		activate_quest* = 40_kell,0;
+	  b quest_dialog = true;
+		screen_text = "Horrible times are these, my friend. Demons roam the roads, my brethren violently attack anything that moves, and our ancient enemies heartfully guffaw in darkness. Indeed, Nomos Truican, the lord of Satyrnalls, is plotting once again against our kin. I understand that you, as the kingdom folk, might not be most interested in protecting the droog against their enemies, but foes like Nomos pose danger to whole empires, not just one miserable town. I made it here in a desperate attempt to face him, but you seem like you might actually succeed. I beg you, if you wish to aid the kingdom's interests, enter this cave and slay Nomos. The treasures he safeguards might be more than worth your troubles.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[quest_temple]
+{
+	[text*]
+	{
+		activate_quest* = 41_demon,0;
+	  b quest_dialog = true;
+		screen_text = "The world has gone mad. Powerful demons of old times wander our deserts. Our people fear them irrationally, making them violently attack all the kingdom folks. Can you guess why they believe the kingdom is to blame? The demons themselves! That's right, our temple is occupied by a demon. After we've had some violent demon encounters in the desert, a demon appeared in our temple and persuaded the priests that he betrayed his kin to help us. Since then, my brethren have been attacking all humans, dwarves and elves on sight. I feel the same terror as my brothers do upon the sight of demons, but trusting one of them over the people of Neathis is madness. I beg you, destroy the demon in our temple. That won't stop nor undo my people's actions, but it will be the first step in stopping this madness.";
+	  f scroll_rate = 10.000000;
+	}
+}
 [shop_droog_potion]
 {
 	[text*]

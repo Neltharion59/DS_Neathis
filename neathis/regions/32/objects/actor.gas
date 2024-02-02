@@ -4222,17 +4222,28 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.97111e+008;
+	  f experience_value = 8.97111e+008;
+	  f life = 11514;
+	  f max_life = 11514;
+	  f scale_multiplier = 2.2;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 295;
-	  f damage_bonus_min_melee = 245;
+	  f damage_bonus_max_melee = 595;
+	  f damage_bonus_min_melee = 545;
+	}
+	[common]
+	{
+		screen_name = "Dominant Gorack";
+	}
+	[defend]
+	{
+	  f defense = 881.1;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.8387,1.29962,2.17616,0x5a25eb27;
+	  q orientation = 0,1,0,-7.25309e-007;
+	  p position = 0.784126,1.35,2.42116,0x5a25eb27;
 	}
 }
 [t:2w_gorack,n:0x02e0005d]

@@ -37,8 +37,8 @@
 			[*]
 			{
 				action* = send_world_message("we_req_activate",0x01E00085,0f,"default","every",0);
-				action* = send_world_message("we_req_activate",0x01E0008E,800f,"default","every",0);
-				action* = send_world_message("we_req_activate",0x01E000AB,1000f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01E0008E,300f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01E000AB,400f,"default","every",0);
 			  b can_self_destruct = true;
 				condition* = party_member_within_bounding_box(15.000000,2.000000,0.100000,"on_first_enter");
 			  f delay = 0.000000;
@@ -488,6 +488,47 @@
 	{
 	  q orientation = -1.17086e-007,0.707107,5.41742e-009,-0.707107;
 	  p position = -0.220886,2.1,-4.36922,0xc1546fbe;
+	}
+}
+[t:accumulate_trigger,n:0x01e003e0]
+{
+	[generic_accumtrigger]
+	{
+	  i num_til_send = 2;
+	  x send_to_scid = 0x01E00BAF;
+	}
+	[placement]
+	{
+	  p position = -6.89305,1.1,6.28224,0x2b5625d0;
+	}
+}
+[t:trigger_generic,n:0x01e00baf]
+{
+	[common]
+	{
+		dev_instance_text = "QUEST_FURY";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_quest_state("20_fury","completed",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_activate",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = -5.32738,1.1,6.33243,0x2b5625d0;
 	}
 }
 [t:trigger_fade_nodes_box,n:0x01e0005a]

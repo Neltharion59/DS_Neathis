@@ -1087,6 +1087,34 @@
 	  p position = -2.40674,0,-0.0841217,0xe810af77;
 	}
 }
+[t:3w_krug_shaman_boss_01,n:0x03500d36]
+{
+	[aspect]
+	{
+	  f experience_value = 1.50011e+012;
+	  f life = 4516;
+	  f max_life = 4516;
+	  f scale_multiplier = 1.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 750;
+	  f damage_bonus_min_cmagic = 700;
+	}
+	[common]
+	{
+		screen_name = "Tromdanth the Conqueror";
+	}
+	[defend]
+	{
+	  f defense = 1710.4;
+	}
+	[placement]
+	{
+	  q orientation = 0,6.85453e-007,0,1;
+	  p position = 0.486458,0,-2.86895,0xe810af77;
+	}
+}
 [t:3w_krug_shaman,n:0x0350001a]
 {
 	[aspect]
@@ -8658,33 +8686,5 @@
 	{
 	  q orientation = -5.72e-009,0.707107,1.19734e-008,0.707107;
 	  p position = 0.47736,0,-0.150146,0xac612fbf;
-	}
-}
-[t:3w_krug_shaman_boss_01,n:0x03500d36]
-{
-	[aspect]
-	{
-	  f experience_value = 1.50011e+012;
-	  f life = 4516;
-	  f max_life = 4516;
-	  f scale_multiplier = 1.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 750;
-	  f damage_bonus_min_cmagic = 700;
-	}
-	[common]
-	{
-		screen_name = "Tromdanth the Conqueror";
-	}
-	[defend]
-	{
-	  f defense = 1710.4;
-	}
-	[placement]
-	{
-	  q orientation = 0,6.85453e-007,0,1;
-	  p position = 0.486458,0,-2.86895,0xe810af77;
 	}
 }

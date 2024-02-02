@@ -39,7 +39,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 02:conversations:farmer_w;
+			address = 02:conversations:farmer_w_2;
 			description = clear the cellar from vermin;
 		  b is_consumable = true;
 		  i order = 0;
@@ -54,7 +54,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			address = 02:conversations:farmer_3;
+			address = 03:conversations:farmer_w;
 			description = find the wolf pack threatening the village of lammairth;
 		  b is_consumable = true;
 		  i order = 0;
@@ -102,7 +102,7 @@
 	}
 	[08_blockage]
 	{
-		quest_image = b_gui_ig_mnu_jnl_quest_06;
+		quest_image = b_gui_ig_mnu_jnl_quest_34;
 		screen_name = landslide;
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -130,6 +130,21 @@
 			speaker = luvetiz;
 		}
 	}
+	[08_krug]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_08;
+		screen_name = too powerful to be left alive;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 08:conversations:dwarf_krug_quest;
+			description = find and destroy the krug leader who made it past the landslide;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = throndar;
+		}
+	}
 	[11_trog]
 	{
 		quest_image = b_gui_ig_mnu_jnl_quest_04;
@@ -154,6 +169,21 @@
 		{
 			address = 13:conversations:join_phaedriel;
 			description = hunt down the coven of witches.;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = phaedriel;
+		}
+	}
+	[13_witches_2]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_09;
+		screen_name = the hunted coven ii;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 13:conversations:join_phaedriel;
+			description = hunt down the coven of witches;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -204,6 +234,21 @@
 			speaker = ;
 		}
 	}
+	[20_fury]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_25;
+		screen_name = attack of opportunity;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 20:conversations:guard_ranger;
+			description = destroy fury in each of the castle towers;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = archer captain;
+		}
+	}
 	[24_cyclops]
 	{
 		quest_image = b_gui_ig_mnu_jnl_quest_41;
@@ -217,6 +262,21 @@
 		  i order = 0;
 		  b required = true;
 			speaker = captain durreth;
+		}
+	}
+	[27_norrick]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_01;
+		screen_name = Doppelganger;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 27_town:conversations:quest_norrick;
+			description = Destroy the Doppelganger;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = Sinnith;
 		}
 	}
 	[27_north]
@@ -236,7 +296,7 @@
 	}
 	[27_supplies]
 	{
-		quest_image = b_gui_ig_mnu_jnl_quest_19;
+		quest_image = b_gui_ig_mnu_jnl_quest_26;
 		screen_name = preparing for the siege;
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -392,7 +452,7 @@
 	}
 	[38_traveler_dwarves]
 	{
-		quest_image = b_gui_ig_mnu_jnl_quest_15;
+		quest_image = b_gui_ig_mnu_jnl_quest_07;
 		screen_name = treasure hunters;
 		[*]
 		{
@@ -426,6 +486,21 @@
 			speaker = ;
 		}
 	}
+	[40_kell]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_11;
+		screen_name = ancient enemies;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 40:conversations:quest_kell;
+			description = slay the lord of satyrnalls;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = toquaar;
+		}
+	}
 	[41_cult]
 	{
 		quest_image = b_gui_ig_mnu_jnl_quest_18;
@@ -439,6 +514,21 @@
 		  i order = 0;
 		  b required = true;
 			speaker = phennias;
+		}
+	}
+	[41_demon]
+	{
+		quest_image = b_gui_ig_mnu_jnl_quest_13;
+		screen_name = irrational decisions;
+		victory_sample = s_e_level_up_quest;
+		[*]
+		{
+			address = 40:conversations:quest_temple;
+			description = destroy the demon in the droog temple;
+		  b is_consumable = true;
+		  i order = 0;
+		  b required = true;
+			speaker = quuarneth;
 		}
 	}
 	[43_guard_1]
@@ -582,7 +672,7 @@
 		}
 		[*]
 		{
-			description = You have accepted that you will never find a home. But there is a quest to complete.;
+			description = you have accepted that you will never find a home. but there is a quest to complete.;
 		  b is_consumable = true;
 		  i order = 8;
 		  b required = true;
