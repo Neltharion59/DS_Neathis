@@ -708,14 +708,6 @@
 	  p position = -1.05266,0,-3.05824,0xa95ec032;
 	}
 }
-[t:mine_worm,n:0x00a0003c]
-{
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.38924,0,-3.16792,0xeae0de59;
-	}
-}
 [t:moth,n:0x00a00034]
 {
 	[placement]
@@ -801,7 +793,8 @@
 	}
 	[placement]
 	{
-	  p position = -2.29445,0,0.324646,0x300e0de0;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.34923,0,-3.63501,0xeae0de59;
 	}
 }
 [t:skrubb_small,n:0x00a00084]
@@ -853,42 +846,45 @@
 {
 	[placement]
 	{
-	  p position = 3.43558,-3.8147e-006,0.334902,0x7af588c5;
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = 3.15524,0,1.029,0xed5a7472;
 	}
 }
 [t:moth,n:0x00a00041]
 {
 	[placement]
 	{
-	  p position = 2.73379,0,1.64635,0x7af588c5;
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = 1.8438,0,0.327206,0xed5a7472;
 	}
 }
 [t:moth,n:0x00a00042]
 {
 	[placement]
 	{
-	  p position = 1.52206,0,-3.97726,0x2c2d6976;
+	  p position = -0.368385,0,-2.27271,0x300e0de0;
 	}
 }
 [t:moth,n:0x00a00043]
 {
 	[placement]
 	{
-	  p position = -0.0394325,0,-3.62739,0x2c2d6976;
+	  p position = -1.92987,0,-1.92284,0x300e0de0;
 	}
 }
 [t:moth,n:0x00a00044]
 {
 	[placement]
 	{
-	  p position = 1.59485,0,-2.31493,0x2c2d6976;
+	  p position = -0.295593,0,-0.610382,0x300e0de0;
 	}
 }
 [t:moth,n:0x00a0003f]
 {
 	[placement]
 	{
-	  p position = 3.83644,3.8147e-006,0.598591,0xd374b284;
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 2.08874,0,1.75698,0xed5a7472;
 	}
 }
 [t:moth,n:0x00a00045]
@@ -1307,7 +1303,6 @@
 	{
 	  f experience_value = 60;
 	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 1;
 	}
 	[attack]
 	{
@@ -1724,7 +1719,6 @@
 	{
 	  f experience_value = 60;
 	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 1;
 	}
 	[attack]
 	{
@@ -2056,7 +2050,6 @@
 	{
 	  f experience_value = 60;
 	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 1;
 	}
 	[attack]
 	{
@@ -2527,7 +2520,6 @@
 	{
 	  f experience_value = 60;
 	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 1;
 	}
 	[attack]
 	{
@@ -2833,7 +2825,6 @@
 	{
 	  f experience_value = 60;
 	  f mana_recovery_period = 1;
-	  f mana_recovery_unit = 1;
 	}
 	[attack]
 	{
@@ -3265,5 +3256,111 @@
 	{
 	  q orientation = 0,-0.92388,0,0.382683;
 	  p position = -0.87001,-6,-1.7099,0x7084a579;
+	}
+}
+[t:moth,n:0x00a00335]
+{
+	[aspect]
+	{
+	  f experience_value = 655;
+	  f life = 417;
+	  f max_life = 417;
+	  f scale_multiplier = 3.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 12;
+	  f damage_bonus_min_cmagic = 10;
+	}
+	[common]
+	{
+		screen_name = "Grand Gorgonoth";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x00A00337,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 120;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.92393,0,0.320824,0x086326a1;
+	}
+}
+[t:moth,n:0x00a00338]
+{
+	[aspect]
+	{
+	  f experience_value = 312;
+	  f life = 178;
+	  f max_life = 178;
+	  f scale_multiplier = 2.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 7;
+	  f damage_bonus_min_cmagic = 5;
+	}
+	[common]
+	{
+		screen_name = "Gorgonoth";
+	}
+	[defend]
+	{
+	  f defense = 99;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.09423,0,-0.459946,0xe3971c89;
+	}
+}
+[t:moth,n:0x00a00371]
+{
+	[aspect]
+	{
+	  f experience_value = 312;
+	  f life = 178;
+	  f max_life = 178;
+	  f scale_multiplier = 2.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 7;
+	  f damage_bonus_min_cmagic = 5;
+	}
+	[common]
+	{
+		screen_name = "Gorgonoth";
+	}
+	[defend]
+	{
+	  f defense = 99;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.05703,0,1.8485,0xcfa6f151;
 	}
 }

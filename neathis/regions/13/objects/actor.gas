@@ -51,6 +51,11 @@
 	  f max_life = 284.2;
 	  f max_mana = 124;
 	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
+	}
 	[conversation]
 	{
 		[conversations]
@@ -90,6 +95,17 @@
 	[placement]
 	{
 	  p position = -0.703307,0,-3.0883,0xb9fb4bc4;
+	}
+}
+[t:tretch,n:0x01500555]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = 1.47741,0,0.0192776,0x3329cd69;
 	}
 }
 [t:swamp_witch,n:0x0150008f]
@@ -818,6 +834,17 @@
 	  p position = -2.83419,0,0.972488,0xe3ba72fe;
 	}
 }
+[t:tretch,n:0x01500554]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = 2.32663,0,-0.274483,0x7fa8b09a;
+	}
+}
 [t:swamp_witch,n:0x015000bc]
 {
 	[placement]
@@ -1481,6 +1508,17 @@
 	  p position = 2.10811,0,2.2458,0x1dbb2bd6;
 	}
 }
+[t:tretch,n:0x01500553]
+{
+	[defend]
+	{
+	  f defense = 75;
+	}
+	[placement]
+	{
+	  p position = 2.75056,0,0.840736,0x2bea0563;
+	}
+}
 [t:tretch,n:0x0150006e]
 {
 	[defend]
@@ -1634,36 +1672,47 @@
 	  p position = 3.89561,0,1.72171,0xaffdc6f2;
 	}
 }
-[t:tretch,n:0x01500553]
+[t:phaedriel,n:0x01500556]
 {
-	[defend]
+	[aspect]
 	{
-	  f defense = 75;
+	  i gold_value = 0;
+	  b is_invincible = true;
+	  f max_life = 284.2;
+	  f max_mana = 124;
+	}
+	[common]
+	{
+		dev_instance_text = "mP";
+	  b is_single_player = false;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = phaedriel_mp;
+		}
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_ranged_weapon;
+		[equipment]
+		{
+			es_chest = bd_br_r_g_c_avg;
+			es_shield_hand = bw_g_c_c_m_r_fun;
+		}
+		[other]
+		{
+			il_main = bw_g_c_c_m_r_avg;
+		}
+	}
+	[mind]
+	{
+		combat_orders = co_free;
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
 	}
 	[placement]
 	{
-	  p position = 2.75056,0,0.840736,0x2bea0563;
-	}
-}
-[t:tretch,n:0x01500554]
-{
-	[defend]
-	{
-	  f defense = 75;
-	}
-	[placement]
-	{
-	  p position = 2.32663,0,-0.274483,0x7fa8b09a;
-	}
-}
-[t:tretch,n:0x01500555]
-{
-	[defend]
-	{
-	  f defense = 75;
-	}
-	[placement]
-	{
-	  p position = 1.47741,0,0.0192776,0x3329cd69;
+	  p position = 1.16468,0,3.20582,0xb9fb4bc4;
 	}
 }

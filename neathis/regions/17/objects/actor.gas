@@ -4098,7 +4098,8 @@
 {
 	[placement]
 	{
-	  p position = -2.43774,0,-0.199928,0xf6838aff;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.28542,0,1.03375,0x64175262;
 	}
 }
 [t:2w_wolf_gray,n:0x01b00350]
@@ -4899,7 +4900,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,-1.59522e-008;
-	  p position = -3.75159,0,-1.61172,0xbd627aaa;
+	  p position = -3.58127,0,-1.02979,0xbd627aaa;
 	}
 }
 [t:2w_krug_shaman,n:0x01b00dd5]
@@ -10396,5 +10397,130 @@
 	[placement]
 	{
 	  p position = 1.01917,-12,-5.56522,0x349ef023;
+	}
+}
+[t:2w_wolf_gray,n:0x01b01795]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -1.77478,0,-0.136654,0x01a296e4;
+	}
+}
+[t:2w_wolf_gray_boss_01,n:0x01b017b2]
+{
+	[aspect]
+	{
+	  f experience_value = 84080;
+	  f life = 4173;
+	  f max_life = 4173;
+	  f scale_multiplier = 2.3;
+	}
+	[common]
+	{
+		screen_name = "Ancient Alpha";
+	}
+	[defend]
+	{
+	  f defense = 1024;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.96436,0,1.31678,0xa7e68c7a;
+	}
+}
+[t:rock_golem,n:0x01b017b5]
+{
+	[aspect]
+	{
+	  f experience_value = 22000;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,-0.92388;
+	  p position = 0.652222,-1.55,-3.16862,0x4c907c29;
+	}
+}
+[t:rock_golem,n:0x01b017b6]
+{
+	[aspect]
+	{
+	  f experience_value = 22000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-5.08969e-007;
+	  p position = 1.17987,-1.55,2.6534,0x4c907c29;
+	}
+}
+[t:2w_krug_scavenger,n:0x01b017b7]
+{
+	[aspect]
+	{
+	  f experience_value = 32172;
+	  f life = 692;
+	  f max_life = 692;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_max = 50;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Rogue";
+	}
+	[defend]
+	{
+	  f defense = 200;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_ra_g_c_2h2b_fin;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382684,0,0.92388;
+	  p position = 8.30505,5.60002,-52.2739,0xd19a25df;
+	}
+}
+[t:2w_krug_scavenger,n:0x01b017b8]
+{
+	[aspect]
+	{
+	  f experience_value = 32172;
+	  f life = 692;
+	  f max_life = 692;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_max = 50;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Rogue";
+	}
+	[defend]
+	{
+	  f defense = 200;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = hm_ra_g_c_2h2m_fin;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382684,0,0.92388;
+	  p position = 2.40945,0,-2.35492,0x9a3aaef4;
 	}
 }

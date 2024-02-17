@@ -1,31 +1,53 @@
-[t:3w_drake_blue,n:0x02f007e4]
+[t:3w_dark_caster,n:0x02f00aeb]
 {
 	[aspect]
 	{
 	  f experience_value = 1.20033e+009;
-	  f scale_multiplier = 1.4;
+	  f life = 17416;
+	  f max_life = 17416;
+	  f scale_multiplier = 3;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 1520;
-	  f damage_bonus_min_cmagic = 1545;
+	  f damage_bonus_max_cmagic = 700;
+	  f damage_bonus_min_cmagic = 625;
 	}
 	[common]
 	{
 		screen_name = "Grand Keeper of the Shrine";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x02F00AEC,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x02F00AEA,0.5f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[defend]
 	{
-	  f defense = 1859.1;
+	  f defense = 600;
 	}
 	[mind]
 	{
-		disposition_orders = ad_offensive;
+		movement_orders = mo_hold;
+	  b on_engaged_fled_abort_attack = true;
 	}
 	[placement]
 	{
-	  q orientation = 0,-1,0,-1.50987e-007;
-	  p position = 0.124031,0.249998,0.153138,0x6f54f661;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.130511,0.249998,-0.186132,0x6f54f661;
 	}
 }
 [t:3w_dark_lunger,n:0x02f00a06]

@@ -1281,6 +1281,35 @@
 	  p position = 2.864,0,0.270454,0x65e5b681;
 	}
 }
+[t:2w_gom_super,n:0x039002ce]
+{
+	[aspect]
+	{
+	  f experience_value = 4.30011e+012;
+	  f life = 7982;
+	  f life_recovery_period = 6;
+	  f max_life = 7982;
+	  f scale_multiplier = 0.7;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[common]
+	{
+		screen_name = "Lesser Balor";
+	}
+	[defend]
+	{
+	  f defense = 3124;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.923879,0,-0.382683;
+	  p position = -2.39943,-12,-5.60245,0x934ef174;
+	}
+}
 [t:3w_droog_archer_reveal,n:0x0390078f]
 {
 	[aspect]
@@ -3097,81 +3126,250 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.12041,0,-1.47011,0xd8d08f4b;
+	  p position = -2.1187,0,-1.53575,0xd8d08f4b;
 	}
 }
-[t:3w_bandit_ranged,n:0x039002c1]
+[t:2w_gom_super,n:0x039002cf]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	  b can_level_up = true;
-	}
 	[aspect]
 	{
-	  f experience_value = 2.51102e+014;
-	  f life = 2971;
+	  f experience_value = 4.30011e+012;
+	  f life = 7982;
 	  f life_recovery_period = 6;
-	  f life_recovery_unit = 2;
-	  f max_life = 2971;
+	  f max_life = 7982;
+	  f scale_multiplier = 0.7;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_ranged = 500;
-	  f damage_bonus_min_ranged = 450;
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
 	}
 	[common]
 	{
-		screen_name = "Dragon Cultist Archer";
+		screen_name = "Lesser Balor";
 	}
 	[defend]
 	{
-	  f defense = 1600;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_un_sc_f_dragon;
-			es_feet = bo_un_bo_sc_f_dragon;
-			es_forearms = gl_un_gl_sc_f_dragon;
-			es_head = he_un_vi_dragon;
-			es_shield_hand = bw_g_c_c_l_4_avg;
-		}
-		[other]
-		{
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-		}
-	}
-	[mind]
-	{
-	  b actor_auto_heals_self_life = true;
-		disposition_orders = ad_offensive;
-	  i flee_count = 20;
-	  b on_enemy_entered_icz_flee = true;
-	  b on_life_ratio_low_flee = true;
+	  f defense = 3124;
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-5.96046e-008;
-	  p position = -1.26483,0,-0.523315,0x0fb9b405;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.39752,7.45158,7.91891,0xb1cdf95b;
+	}
+}
+[t:2w_gom_super,n:0x039002d0]
+{
+	[aspect]
+	{
+	  f experience_value = 4.30011e+012;
+	  f life = 7982;
+	  f life_recovery_period = 6;
+	  f max_life = 7982;
+	  f scale_multiplier = 0.7;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[common]
+	{
+		screen_name = "Lesser Balor";
+	}
+	[defend]
+	{
+	  f defense = 3124;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.90153,4.66313,3.33636,0xb1cdf95b;
+	}
+}
+[t:2w_gom_super,n:0x039002d1]
+{
+	[aspect]
+	{
+	  f experience_value = 4.30011e+012;
+	  f life = 7982;
+	  f life_recovery_period = 6;
+	  f max_life = 7982;
+	  f scale_multiplier = 0.7;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[common]
+	{
+		screen_name = "Lesser Balor";
+	}
+	[defend]
+	{
+	  f defense = 3124;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -15.3146,9.56331,-6.17322,0xb1cdf95b;
+	}
+}
+[t:2w_gom_super,n:0x039002d2]
+{
+	[aspect]
+	{
+	  f experience_value = 4.30011e+012;
+	  f life = 7982;
+	  f life_recovery_period = 6;
+	  f max_life = 7982;
+	  f scale_multiplier = 0.7;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[common]
+	{
+		screen_name = "Lesser Balor";
+	}
+	[defend]
+	{
+	  f defense = 3124;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -45.2662,8.07318,-10.061,0xb1cdf95b;
+	}
+}
+[t:2w_gom_super,n:0x039002d3]
+{
+	[aspect]
+	{
+	  f experience_value = 4.30011e+012;
+	  f life = 7982;
+	  f life_recovery_period = 6;
+	  f max_life = 7982;
+	  f scale_multiplier = 0.7;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[common]
+	{
+		screen_name = "Lesser Balor";
+	}
+	[defend]
+	{
+	  f defense = 3124;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -45.1539,7.20922,-13.0168,0xb1cdf95b;
+	}
+}
+[t:2w_gom_super,n:0x039002d4]
+{
+	[aspect]
+	{
+	  f experience_value = 4.30011e+012;
+	  f life = 7982;
+	  f life_recovery_period = 6;
+	  f max_life = 7982;
+	  f scale_multiplier = 0.7;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[common]
+	{
+		screen_name = "Lesser Balor";
+	}
+	[defend]
+	{
+	  f defense = 3124;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -11.2719,6.57155,-41.8387,0xef1e2d2e;
+	}
+}
+[t:2w_gom_super,n:0x039002d5]
+{
+	[aspect]
+	{
+	  f experience_value = 4.30011e+012;
+	  f life = 7982;
+	  f life_recovery_period = 6;
+	  f max_life = 7982;
+	  f scale_multiplier = 0.7;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[common]
+	{
+		screen_name = "Lesser Balor";
+	}
+	[defend]
+	{
+	  f defense = 3124;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -7.46504,5.61882,-39.2256,0xef1e2d2e;
+	}
+}
+[t:2w_gom_super,n:0x039002d6]
+{
+	[aspect]
+	{
+	  f experience_value = 4.30011e+012;
+	  f life = 7982;
+	  f life_recovery_period = 6;
+	  f max_life = 7982;
+	  f scale_multiplier = 0.7;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_min_cmagic = 500;
+	}
+	[common]
+	{
+		screen_name = "Lesser Balor";
+	}
+	[defend]
+	{
+	  f defense = 3124;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -10.6895,6.09574,-37.4122,0xef1e2d2e;
 	}
 }
 [t:3w_bandit_melee,n:0x039002bb]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	  b can_level_up = true;
-	}
 	[aspect]
 	{
 	  f experience_value = 2.51102e+014;
-	  f life = 3477;
+	  f life = 2027;
 	  f life_recovery_period = 6;
 	  f life_recovery_unit = 2;
-	  f max_life = 3477;
+	  f max_life = 2027;
 	}
 	[attack]
 	{
@@ -3218,18 +3416,13 @@
 }
 [t:3w_bandit_melee,n:0x039002bd]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	  b can_level_up = true;
-	}
 	[aspect]
 	{
 	  f experience_value = 2.51102e+014;
-	  f life = 3477;
+	  f life = 2027;
 	  f life_recovery_period = 6;
 	  f life_recovery_unit = 2;
-	  f max_life = 3477;
+	  f max_life = 2027;
 	}
 	[attack]
 	{
@@ -3276,18 +3469,13 @@
 }
 [t:3w_bandit_ranged,n:0x039002bf]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	  b can_level_up = true;
-	}
 	[aspect]
 	{
 	  f experience_value = 2.51102e+014;
-	  f life = 2971;
+	  f life = 1742;
 	  f life_recovery_period = 6;
 	  f life_recovery_unit = 2;
-	  f max_life = 2971;
+	  f max_life = 1742;
 	}
 	[attack]
 	{
@@ -3329,79 +3517,18 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.63504,0,2.5825,0x883813c2;
-	}
-}
-[t:2w_gom_super,n:0x039010ca]
-{
-	[aspect]
-	{
-	  f experience_value = 8.30011e+012;
-	  f life = 47834;
-	  f life_recovery_period = 5;
-	  f max_life = 47834;
-	  f scale_multiplier = 0.9;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 800;
-	  f damage_bonus_min_cmagic = 800;
-	}
-	[common]
-	{
-		screen_name = "Greater Balor";
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_activate",0x039002CC,0f,"default","every",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_killed",0,"on_first_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = true;
-			  b start_active = true;
-			}
-		}
-	}
-	[defend]
-	{
-	  f defense = 3692;
-	}
-	[inventory]
-	{
-		selected_active_location = il_active_melee_weapon;
-		[equipment]
-		{
-			es_spellbook = book_glb_magic_01;
-			es_weapon_hand = st_un_reaper;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.428284,0,1.75581,0x883813c2;
+	  p position = -3.08569,0,1.44212,0x883813c2;
 	}
 }
 [t:3w_bandit_melee,n:0x039002c3]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	  b can_level_up = true;
-	}
 	[aspect]
 	{
 	  f experience_value = 2.51102e+014;
-	  f life = 3477;
+	  f life = 2027;
 	  f life_recovery_period = 6;
 	  f life_recovery_unit = 2;
-	  f max_life = 3477;
+	  f max_life = 2027;
 	}
 	[attack]
 	{
@@ -3446,76 +3573,15 @@
 	  p position = -1.76755,0,-1.60435,0x3f61185c;
 	}
 }
-[t:2w_gom_super,n:0x03901088]
-{
-	[aspect]
-	{
-	  f experience_value = 8.30011e+012;
-	  f life = 47834;
-	  f life_recovery_period = 5;
-	  f max_life = 47834;
-	  f scale_multiplier = 0.9;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 800;
-	  f damage_bonus_min_cmagic = 800;
-	}
-	[common]
-	{
-		screen_name = "Greater Balor";
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_activate",0x039002CC,0f,"default","every",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_killed",0,"on_first_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = true;
-			  b start_active = true;
-			}
-		}
-	}
-	[defend]
-	{
-	  f defense = 3692;
-	}
-	[inventory]
-	{
-		selected_active_location = il_active_melee_weapon;
-		[equipment]
-		{
-			es_spellbook = book_glb_magic_01;
-			es_weapon_hand = st_un_reaper;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.39749,0,2.71442,0x4ce428b4;
-	}
-}
 [t:3w_bandit_ranged,n:0x039002c0]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	  b can_level_up = true;
-	}
 	[aspect]
 	{
 	  f experience_value = 2.51102e+014;
-	  f life = 2971;
+	  f life = 1742;
 	  f life_recovery_period = 6;
 	  f life_recovery_unit = 2;
-	  f max_life = 2971;
+	  f max_life = 1742;
 	}
 	[attack]
 	{
@@ -3556,24 +3622,19 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-2.98023e-008,0,1;
-	  p position = 0.30072,0,-1.44065,0x0be62afc;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.0635147,0,1.52222,0x4ce428b4;
 	}
 }
 [t:3w_bandit_ranged,n:0x039002bc]
 {
-	[actor]
-	{
-		alignment = aa_good;
-	  b can_level_up = true;
-	}
 	[aspect]
 	{
 	  f experience_value = 2.51102e+014;
-	  f life = 2971;
+	  f life = 1742;
 	  f life_recovery_period = 6;
 	  f life_recovery_unit = 2;
-	  f max_life = 2971;
+	  f max_life = 1742;
 	}
 	[attack]
 	{
@@ -3615,63 +3676,60 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,-5.96046e-008;
-	  p position = -1.764,0,0.677856,0xa3c725ac;
+	  p position = 3.24101,0,1.14355,0xa3c725ac;
 	}
 }
-[t:2w_gom_super,n:0x03901089]
+[t:3w_bandit_ranged,n:0x039002c1]
 {
 	[aspect]
 	{
-	  f experience_value = 8.30011e+012;
-	  f life = 47834;
-	  f life_recovery_period = 5;
-	  f max_life = 47834;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 2.51102e+014;
+	  f life = 1742;
+	  f life_recovery_period = 6;
+	  f life_recovery_unit = 2;
+	  f max_life = 1742;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 800;
-	  f damage_bonus_min_cmagic = 800;
+	  f damage_bonus_max_ranged = 500;
+	  f damage_bonus_min_ranged = 450;
 	}
 	[common]
 	{
-		screen_name = "Greater Balor";
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_activate",0x039002CC,0f,"default","every",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_killed",0,"on_first_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = true;
-			  b start_active = true;
-			}
-		}
+		screen_name = "Dragon Cultist Archer";
 	}
 	[defend]
 	{
-	  f defense = 3692;
+	  f defense = 1600;
 	}
 	[inventory]
 	{
-		selected_active_location = il_active_melee_weapon;
 		[equipment]
 		{
-			es_spellbook = book_glb_magic_01;
-			es_weapon_hand = st_un_reaper;
+			es_chest = bd_un_sc_f_dragon;
+			es_feet = bo_un_bo_sc_f_dragon;
+			es_forearms = gl_un_gl_sc_f_dragon;
+			es_head = he_un_vi_dragon;
+			es_shield_hand = bw_g_c_c_l_4_avg;
 		}
+		[other]
+		{
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+		}
+	}
+	[mind]
+	{
+	  b actor_auto_heals_self_life = true;
+		disposition_orders = ad_offensive;
+	  i flee_count = 20;
+	  b on_enemy_entered_icz_flee = true;
+	  b on_life_ratio_low_flee = true;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.03807,0,-2.23297,0xa3c725ac;
+	  p position = 3.3258,0,-0.720795,0xa3c725ac;
 	}
 }
 [t:crusader_goquua,n:0x039002f3]
@@ -4765,6 +4823,64 @@
 	  p position = 1.14355,0,1.04057,0x3c084714;
 	}
 }
+[t:3w_droog_mage,n:0x039002be]
+{
+	[aspect]
+	{
+	  f experience_value = 7.51102e+013;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 600;
+	  f damage_bonus_min_cmagic = 600;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -35.1698,0.5,5.98869,0x9a342458;
+	}
+}
+[t:3w_droog_mage,n:0x039002c2]
+{
+	[aspect]
+	{
+	  f experience_value = 3.51102e+014;
+	  f life = 4217;
+	  f max_life = 4217;
+	  f scale_multiplier = 1.3;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 1200;
+	  f damage_bonus_max_nmagic = 1200;
+	  f damage_bonus_min_cmagic = 1200;
+	  f damage_bonus_min_nmagic = 1200;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 60;
+	  f max_move_velocity = 60;
+	  f min_move_velocity = 60.5;
+	}
+	[common]
+	{
+		screen_name = "Timmin the Librarian";
+	}
+	[defend]
+	{
+	  f defense = 1225.2;
+	}
+	[mind]
+	{
+	  i flee_count = 50;
+	  b on_enemy_entered_icz_flee = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -23.9613,0.5,9.85479,0x9a342458;
+	}
+}
 [t:3w_droog_grunt,n:0x039007ad]
 {
 	[aspect]
@@ -5592,92 +5708,5 @@
 	{
 	  q orientation = 0,2.98023e-008,0,1;
 	  p position = -0.550817,0,1.08366,0xf0d07efd;
-	}
-}
-[t:3w_droog_mage,n:0x039002be]
-{
-	[aspect]
-	{
-	  f experience_value = 7.51102e+013;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 600;
-	  f damage_bonus_min_cmagic = 600;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -35.1698,0.5,5.98869,0x9a342458;
-	}
-}
-[t:3w_droog_mage,n:0x039002c2]
-{
-	[aspect]
-	{
-	  f experience_value = 3.51102e+014;
-	  f life = 4217;
-	  f max_life = 4217;
-	  f scale_multiplier = 1.3;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 1200;
-	  f damage_bonus_max_nmagic = 1200;
-	  f damage_bonus_min_cmagic = 1200;
-	  f damage_bonus_min_nmagic = 1200;
-	}
-	[body]
-	{
-	  f avg_move_velocity = 60;
-	  f max_move_velocity = 60;
-	  f min_move_velocity = 60.5;
-	}
-	[common]
-	{
-		screen_name = "Timmin the Librarian";
-	}
-	[defend]
-	{
-	  f defense = 1225.2;
-	}
-	[mind]
-	{
-	  i flee_count = 50;
-	  b on_enemy_entered_icz_flee = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -23.9613,0.5,9.85479,0x9a342458;
-	}
-}
-[t:2w_gom_super,n:0x039002ce]
-{
-	[aspect]
-	{
-	  f experience_value = 4.30011e+012;
-	  f life = 7982;
-	  f life_recovery_period = 6;
-	  f max_life = 7982;
-	  f scale_multiplier = 0.7;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_min_cmagic = 500;
-	}
-	[common]
-	{
-		screen_name = "Lesser Balor";
-	}
-	[defend]
-	{
-	  f defense = 3124;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.923879,0,-0.382683;
-	  p position = -2.39943,-12,-5.60245,0x934ef174;
 	}
 }

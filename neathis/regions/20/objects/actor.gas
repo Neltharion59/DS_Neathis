@@ -3590,6 +3590,11 @@
 	  f max_life = 882;
 	  f max_mana = 169;
 	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
+	}
 	[conversation]
 	{
 		[conversations]
@@ -3615,6 +3620,11 @@
 	  f max_life = 842.8;
 	  f max_mana = 164;
 	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
+	}
 	[conversation]
 	{
 		[conversations]
@@ -3639,6 +3649,11 @@
 	  f max_life = 980;
 	  f max_mana = 176;
 	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
+	}
 	[conversation]
 	{
 		[conversations]
@@ -3662,6 +3677,11 @@
 	{
 	  f max_life = 480.2;
 	  f max_mana = 708;
+	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
 	}
 	[conversation]
 	{
@@ -3688,6 +3708,11 @@
 	  f max_life = 558.6;
 	  f max_mana = 464;
 	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
+	}
 	[conversation]
 	{
 		[conversations]
@@ -3709,6 +3734,8 @@
 {
 	[common]
 	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
 		screen_name = "Lithia";
 	}
 	[conversation]
@@ -8363,5 +8390,290 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -2.54143,7.91074,3.89647,0x41a93d89;
+	}
+}
+[t:azunite_priestess_challe,n:0x01e00bb0]
+{
+	[common]
+	{
+		dev_instance_text = "MP";
+	  b is_single_player = false;
+		screen_name = "Lithia";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_magic_2_mp;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ro_m_g_c_105;
+			es_feet = bo_bo_le_light;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-6.46033e-009,0,1;
+	  p position = 5.09041,-2.7,-5.79707,0xc1f08538;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bb1]
+{
+	[placement]
+	{
+	  p position = 3.13824,0,1.8335,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bb2]
+{
+	[placement]
+	{
+	  p position = 1.79448,0,1.77814,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bb3]
+{
+	[placement]
+	{
+	  p position = 3.17403,0,0.761162,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bb4]
+{
+	[placement]
+	{
+	  p position = 2.21162,0,0.821205,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bb5]
+{
+	[placement]
+	{
+	  p position = 0.821655,0,1.60029,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bb6]
+{
+	[placement]
+	{
+	  p position = 0.864899,0,0.929237,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bb7]
+{
+	[placement]
+	{
+	  p position = 3.13792,0,0.204784,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bb8]
+{
+	[placement]
+	{
+	  p position = 2.23666,0,-0.053257,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bb9]
+{
+	[placement]
+	{
+	  p position = 1.20053,0,0.18568,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bba]
+{
+	[placement]
+	{
+	  p position = -0.0558777,0,0.29068,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bbb]
+{
+	[placement]
+	{
+	  p position = -0.126587,0,0.847126,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bbc]
+{
+	[placement]
+	{
+	  p position = -0.217133,0,1.48708,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bbd]
+{
+	[placement]
+	{
+	  p position = -1.4561,0,1.49868,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bbe]
+{
+	[placement]
+	{
+	  p position = -1.22113,0,0.536076,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bbf]
+{
+	[placement]
+	{
+	  p position = -1.28935,0,0.0289993,0xbb0db16c;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bc0]
+{
+	[placement]
+	{
+	  p position = 0.587952,0,0.632462,0x813909e8;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bc1]
+{
+	[placement]
+	{
+	  p position = -0.611771,0,-1.51917,0x9ed1a2de;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bc2]
+{
+	[placement]
+	{
+	  p position = -0.734207,0,0.426468,0x9ed1a2de;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bc3]
+{
+	[placement]
+	{
+	  p position = -6.83957,8.05,1.48543,0xd2bda668;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bc4]
+{
+	[placement]
+	{
+	  p position = -8.23074,8.05,0.472687,0xd2bda668;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bc5]
+{
+	[placement]
+	{
+	  p position = 2.86971,0,-0.0251465,0x2ae088d1;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bc6]
+{
+	[placement]
+	{
+	  p position = -2.08012,0,1.98663,0x512f1668;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bc7]
+{
+	[placement]
+	{
+	  p position = -0.601242,0,0.00100708,0x813909e8;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bc8]
+{
+	[placement]
+	{
+	  p position = -1.35541,0,-1.2303,0x9ed1a2de;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bc9]
+{
+	[placement]
+	{
+	  p position = -1.5088,0,0.736298,0x9ed1a2de;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bca]
+{
+	[placement]
+	{
+	  p position = -7.07378,8.05,0.868576,0xd2bda668;
+	}
+}
+[t:2w_skeleton_guard,n:0x01e00bcb]
+{
+	[placement]
+	{
+	  p position = 3.2476,0,-0.574677,0x2ae088d1;
+	}
+}
+[t:wraith_terror,n:0x01e00bcc]
+{
+	[placement]
+	{
+	  p position = -2.66112,-5.73149,0.160324,0x2fad5c0b;
+	}
+}
+[t:wraith_terror,n:0x01e00bcd]
+{
+	[placement]
+	{
+	  p position = 2.33914,0,-0.978928,0x0359992e;
+	}
+}
+[t:wraith_terror,n:0x01e00bce]
+{
+	[placement]
+	{
+	  p position = -3.73218,0,-1.66963,0x9164a8b2;
+	}
+}
+[t:wraith_terror,n:0x01e00bcf]
+{
+	[placement]
+	{
+	  p position = 1.15334,0,-1.21722,0x0359992e;
+	}
+}
+[t:wraith_terror,n:0x01e00bd0]
+{
+	[placement]
+	{
+	  p position = -1.88969,-5.98468,-4.79173,0x6e46ce7a;
+	}
+}
+[t:wraith_terror,n:0x01e00bd1]
+{
+	[placement]
+	{
+	  p position = -2.91602,-2,-3.96901,0x40fd70e8;
+	}
+}
+[t:wraith_terror,n:0x01e00bd2]
+{
+	[placement]
+	{
+	  p position = -1.0976,0,-0.756042,0x4841fb4e;
+	}
+}
+[t:wraith_terror,n:0x01e00bd3]
+{
+	[placement]
+	{
+	  p position = -2.36989,0,-2.47868,0x014ba36f;
+	}
+}
+[t:wraith_terror,n:0x01e00bd4]
+{
+	[placement]
+	{
+	  p position = 3.60422,0,1.66969,0x4841fb4e;
 	}
 }

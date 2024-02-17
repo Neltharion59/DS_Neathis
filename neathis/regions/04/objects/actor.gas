@@ -1574,6 +1574,13 @@
 }
 [t:skeleton_guard_boss_01,n:0x00700bda]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_head = he_ca_pl_dome;
+		}
+	}
 	[placement]
 	{
 	  p position = 3.17224,-0.591388,0.1766,0xbd422c0f;
@@ -2474,8 +2481,8 @@
 {
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.922333,0,1.07773,0x51ee25ea;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -3.90112,-12,-5.23056,0x0fd01834;
 	}
 }
 [t:skeleton,n:0x00700c01]
@@ -3805,14 +3812,6 @@
 	  p position = -3.81027,-1.90735e-006,-3.74268,0x7b181306;
 	}
 }
-[t:krug_scavenger_boss_01,n:0x00700c3f]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.09088,0,-3.0578,0x7b181306;
-	}
-}
 [t:krug_raider,n:0x00700c40]
 {
 	[placement]
@@ -4313,7 +4312,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.102476,0,-1.34671,0xc628ec72;
+	  p position = 0.948631,0,-1.90247,0xc628ec72;
 	}
 }
 [t:krug_grunt,n:0x00700d0e]
@@ -5748,6 +5747,24 @@
 	[common]
 	{
 		screen_name = "Skrubb Omnivore";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x00700EDD,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[defend]
 	{
@@ -6181,5 +6198,275 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -0.480768,0,-0.785808,0x49eff6d5;
+	}
+}
+[t:krug_scavenger,n:0x00700ef7]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707106;
+	  p position = 0.401764,0,-1.91022,0x607fbdd3;
+	}
+}
+[t:krug_scavenger,n:0x00700ef8]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707106;
+	  p position = -0.955444,0,0.782662,0x607fbdd3;
+	}
+}
+[t:krug_scavenger,n:0x00700ef9]
+{
+	[aspect]
+	{
+	  f experience_value = 40;
+	  f life = 80;
+	  f max_life = 80;
+	  f scale_multiplier = 1.22;
+	}
+	[attack]
+	{
+	  f damage_max = 18;
+	  f damage_min = 14;
+	  b is_two_handed = true;
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h1b_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707106;
+	  p position = -2.07535,0,-1.2542,0x607fbdd3;
+	}
+}
+[t:krug_shaman,n:0x00700efa]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.44226,0,-0.69024,0x607fbdd3;
+	}
+}
+[t:krug_shaman,n:0x00700efb]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.232483,0,1.1806,0x607fbdd3;
+	}
+}
+[t:krug_shaman,n:0x00700efc]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.34033,0,2.11347,0x607fbdd3;
+	}
+}
+[t:krug_shaman,n:0x00700efd]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -1.37723,0,-2.2683,0x607fbdd3;
+	}
+}
+[t:krug_grunt,n:0x00700efe]
+{
+	[aspect]
+	{
+	  f experience_value = 50;
+	  f life = 78;
+	  f mana = 78;
+	  f max_life = 78;
+	  f scale_multiplier = 1.33;
+	}
+	[attack]
+	{
+	  f damage_max = 20;
+	  f damage_min = 20;
+	  b is_two_handed = true;
+	}
+	[common]
+	{
+		screen_name = "Krug Gruntus";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00700DAB,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 40;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_d_o_2h2b_avg;
+		}
+	}
+	[placement]
+	{
+	  p position = 0.396332,0,-0.855857,0x607fbdd3;
+	}
+}
+[t:krug_raider,n:0x00700eff]
+{
+	[aspect]
+	{
+	  f experience_value = 350;
+	  f life = 703;
+	  f max_life = 703;
+	  f scale_multiplier = 1.7;
+	}
+	[common]
+	{
+		screen_name = "Hartok the Dog Breeder";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x00700F05,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 55;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = cb_un_2h_troll;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707106;
+	  p position = 3.77899,0,-1.00737,0x24c6fad3;
+	}
+}
+[t:krug_dog_killer,n:0x00700f00]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.83313,0,-1.44313,0x24c6fad3;
+	}
+}
+[t:krug_dog_killer,n:0x00700f01]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.08975,0,-0.200325,0x24c6fad3;
+	}
+}
+[t:krug_dog_killer,n:0x00700f02]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.75003,0,0.430202,0x83607a02;
+	}
+}
+[t:krug_dog_killer,n:0x00700f03]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.67807,0,1.91738,0x51ee25ea;
+	}
+}
+[t:krug_dog_killer,n:0x00700f04]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.56128,0,-0.940187,0x83607a02;
 	}
 }

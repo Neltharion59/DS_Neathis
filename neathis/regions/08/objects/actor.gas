@@ -432,8 +432,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.624214,0,1.87223,0x036820b0;
+	  q orientation = 1.70537e-009,-6.46033e-009,-5.97332e-009,1;
+	  p position = 1.02729,0,2.7995,0xd220dca7;
 	}
 }
 [t:mp_guard_ranged,n:0x00d00390]
@@ -452,7 +452,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -1.92236,0,0.556858,0x036820b0;
+	  p position = -1.93941,0,0.554657,0x036820b0;
 	}
 }
 [t:mp_townfolk_female_03,n:0x00d003a1]
@@ -497,6 +497,51 @@
 	  p position = 0.46167,0,0.916552,0x40b2e397;
 	}
 }
+[t:lorun,n:0x00d0046e]
+{
+	[aspect]
+	{
+	  i gold_value = 0;
+	  b is_invincible = true;
+	  f max_life = 147;
+	  f max_mana = 185;
+	}
+	[common]
+	{
+		screen_name = "Throndar";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = dwarf_krug_quest;
+		}
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_melee_weapon;
+		[equipment]
+		{
+			es_chest = bd_ra_ro_m_g_c_059;
+			es_feet = bo_ra_bo_le_f_g_c_fin;
+			es_head = he_un_ca_ro_warlock;
+			es_weapon_hand = st_g_c_b_low;
+		}
+		[other]
+		{
+			il_main = book_glb_lore_fortkroth;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,-0.707107;
+	  p position = 1.98112,0,1.18016,0xdb86e388;
+	}
+}
 [t:kroduk,n:0x00d00393]
 {
 	[aspect]
@@ -504,6 +549,11 @@
 	  i gold_value = 0;
 	  f max_life = 215.6;
 	  f max_mana = 43;
+	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
 	}
 	[conversation]
 	{
@@ -518,8 +568,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-5.96046e-008,0,1;
-	  p position = 0.972095,0,2.03087,0xd220dca7;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.02316,0,3.60541,0xd220dca7;
 	}
 }
 [t:mule,n:0x00d00376]
@@ -1669,6 +1719,11 @@
 	  f max_life = 147;
 	  f max_mana = 185;
 	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
+	}
 	[conversation]
 	{
 		[conversations]
@@ -2018,50 +2073,5 @@
 	[placement]
 	{
 	  p position = -3.39672,1.90735e-006,1.30367,0x410df967;
-	}
-}
-[t:lorun,n:0x00d0046e]
-{
-	[aspect]
-	{
-	  i gold_value = 0;
-	  b is_invincible = true;
-	  f max_life = 147;
-	  f max_mana = 185;
-	}
-	[common]
-	{
-		screen_name = "Throndar";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = dwarf_krug_quest;
-		}
-	}
-	[inventory]
-	{
-		selected_active_location = il_active_melee_weapon;
-		[equipment]
-		{
-			es_chest = bd_ra_ro_m_g_c_059;
-			es_feet = bo_ra_bo_le_f_g_c_fin;
-			es_head = he_un_ca_ro_warlock;
-			es_weapon_hand = st_g_c_b_low;
-		}
-		[other]
-		{
-			il_main = book_glb_lore_fortkroth;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,-0.707107;
-	  p position = 1.98112,0,1.18016,0xdb86e388;
 	}
 }

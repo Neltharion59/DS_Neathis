@@ -2049,6 +2049,42 @@
 	  p position = -3.61483,0,-3.53751,0x00a20fb6;
 	}
 }
+[t:2w_googore_grub,n:0x029004f6]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.41276,0,3.90026,0x8a4fe191;
+	}
+}
+[t:2w_googore_grub,n:0x029004fd]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.85124,0,3.47138,0x8a4fe191;
+	}
+}
+[t:2w_googore_grub,n:0x029004fe]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  q orientation = 0,-5.96046e-008,0,1;
+	  p position = 0.294832,0,3.41681,0x8a4fe191;
+	}
+}
 [t:2w_gargoyle,n:0x0290041e]
 {
 	[aspect]
@@ -2433,14 +2469,36 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.002e+006;
-	  f life = 857;
-	  f max_life = 857;
+	  f experience_value = 5.002e+006;
+	  f life = 17452;
+	  f max_life = 17452;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 400;
-	  f damage_bonus_min_cmagic = 400;
+	  f damage_bonus_max_cmagic = 800;
+	  f damage_bonus_min_cmagic = 800;
+	}
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x029004EA,0f,"default","every",0);
+				action* = send_world_message("we_req_use",0x029004EC,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[placement]
 	{
@@ -2987,6 +3045,271 @@
 	[placement]
 	{
 	  p position = 2.66535,0,0.641373,0x4aec7a03;
+	}
+}
+[t:2w_googore_grub,n:0x029004ed]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -2.66643,0,-1.82157,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004ee]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -3.32162,0,-2.18041,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004ef]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -3.15316,0,-1.51332,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004f0]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -2.72116,0,-0.848032,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004f1]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -1.70174,0,-0.61535,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004f2]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -1.55799,0,-1.68711,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004f3]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -1.78057,0,-2.46357,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004f4]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -2.48377,0,-3.14069,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004f5]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -3.46437,0,-2.54636,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004f7]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -3.85466,0,-0.455312,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004f8]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -2.63187,0,-1.22501,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004f9]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -2.31206,0,-1.88198,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004fa]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -2.62494,0,-3.50916,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004fb]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -3.318,0,-3.31095,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004fc]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  q orientation = 0,5.96046e-008,0,1;
+	  p position = -3.99011,0,-2.70999,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x029004ff]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -3.7948,0,-0.27945,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x02900500]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -3.24132,0,-0.606697,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x02900501]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -2.22731,0,-1.01007,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x02900502]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -1.96469,0,-1.4323,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x02900504]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -3.23954,0,-2.13481,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x02900505]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -3.4156,0,-1.0316,0xa39487aa;
+	}
+}
+[t:2w_googore_grub,n:0x02900506]
+{
+	[aspect]
+	{
+	  f experience_value = 375000;
+	}
+	[placement]
+	{
+	  p position = -1.62387,0,-1.40336,0xa39487aa;
+	}
+}
+[t:2w_googore,n:0x02900507]
+{
+	[aspect]
+	{
+	  f experience_value = 1.50011e+006;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 303;
+	  f damage_bonus_min_cmagic = 277;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707106,0,0.707107;
+	  p position = -2.13538,0,-1.99092,0xa39487aa;
 	}
 }
 [t:2w_googore_grub,n:0x0290028c]
@@ -6777,12 +7100,14 @@
 {
 	[aspect]
 	{
-	  f experience_value = 4.35e+006;
+	  f experience_value = 2.35e+007;
+	  f life = 5734.5;
+	  f max_life = 5734.5;
 	}
 	[attack]
 	{
-	  f damage_max = 490.4;
-	  f damage_min = 479;
+	  f damage_max = 550;
+	  f damage_min = 525;
 	}
 	[defend]
 	{
@@ -8924,12 +9249,14 @@
 {
 	[aspect]
 	{
-	  f experience_value = 4.35e+006;
+	  f experience_value = 2.35e+007;
+	  f life = 5734.5;
+	  f max_life = 5734.5;
 	}
 	[attack]
 	{
-	  f damage_max = 490.4;
-	  f damage_min = 479;
+	  f damage_max = 550;
+	  f damage_min = 525;
 	}
 	[defend]
 	{
@@ -9416,12 +9743,14 @@
 {
 	[aspect]
 	{
-	  f experience_value = 4.35e+006;
+	  f experience_value = 2.35e+007;
+	  f life = 5734.5;
+	  f max_life = 5734.5;
 	}
 	[attack]
 	{
-	  f damage_max = 490.4;
-	  f damage_min = 479;
+	  f damage_max = 550;
+	  f damage_min = 525;
 	}
 	[defend]
 	{
@@ -9833,38 +10162,6 @@
 	  p position = -1.79415,0,-0.6651,0xc1551089;
 	}
 }
-[t:2w_braak_magic_reveal,n:0x029001ba]
-{
-	[aspect]
-	{
-	  f experience_value = 5.50011e+006;
-	  f life = 3700;
-	  f life_recovery_period = 4;
-	  f life_recovery_unit = 2;
-	  f max_life = 3700;
-	  f scale_multiplier = 1.8;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 500;
-	  f damage_bonus_max_nmagic = 500;
-	  f damage_bonus_min_cmagic = 300;
-	  f damage_bonus_min_nmagic = 300;
-	}
-	[common]
-	{
-		screen_name = "Rowaas the Highborn";
-	}
-	[defend]
-	{
-	  f defense = 1265.9;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,1.66939e-007;
-	  p position = 1.79778,0,0.681458,0xc1551089;
-	}
-}
 [t:2w_braak_magic,n:0x029001b4]
 {
 	[aspect]
@@ -9911,6 +10208,146 @@
 	[placement]
 	{
 	  p position = 0.214737,0,-0.869873,0xa99e32ec;
+	}
+}
+[t:2w_braak,n:0x0290050b]
+{
+	[aspect]
+	{
+	  f experience_value = 1.95022e+006;
+	}
+	[attack]
+	{
+	  f damage_max = 354.1;
+	  f damage_min = 330;
+	}
+	[defend]
+	{
+	  f defense = 500;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_w_g_c_s_m_fun;
+			es_weapon_hand = cb_un_2h_cyclops;
+		}
+	}
+	[placement]
+	{
+	  p position = -0.777412,0,-0.28418,0x48a00e29;
+	}
+}
+[t:2w_braak,n:0x0290050d]
+{
+	[aspect]
+	{
+	  f experience_value = 1.95022e+006;
+	}
+	[attack]
+	{
+	  f damage_max = 354.1;
+	  f damage_min = 330;
+	}
+	[defend]
+	{
+	  f defense = 500;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_w_g_c_s_m_fun;
+			es_weapon_hand = cb_un_2h_cyclops;
+		}
+	}
+	[placement]
+	{
+	  p position = 0.209564,0,-0.502747,0x48a00e29;
+	}
+}
+[t:2w_braak,n:0x02900509]
+{
+	[aspect]
+	{
+	  f experience_value = 1.95022e+006;
+	}
+	[attack]
+	{
+	  f damage_max = 354.1;
+	  f damage_min = 330;
+	}
+	[defend]
+	{
+	  f defense = 500;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_w_g_c_s_m_fun;
+			es_weapon_hand = cb_un_2h_cyclops;
+		}
+	}
+	[placement]
+	{
+	  p position = 1.21865,0,0.00622559,0xa4451766;
+	}
+}
+[t:2w_braak,n:0x0290050a]
+{
+	[aspect]
+	{
+	  f experience_value = 1.95022e+006;
+	}
+	[attack]
+	{
+	  f damage_max = 354.1;
+	  f damage_min = 330;
+	}
+	[defend]
+	{
+	  f defense = 500;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_w_g_c_s_m_fun;
+			es_weapon_hand = cb_un_2h_cyclops;
+		}
+	}
+	[placement]
+	{
+	  p position = -0.26226,0,-0.768432,0xa4451766;
+	}
+}
+[t:2w_braak,n:0x0290050c]
+{
+	[aspect]
+	{
+	  f experience_value = 1.95022e+006;
+	}
+	[attack]
+	{
+	  f damage_max = 354.1;
+	  f damage_min = 330;
+	}
+	[defend]
+	{
+	  f defense = 500;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_w_g_c_s_m_fun;
+			es_weapon_hand = cb_un_2h_cyclops;
+		}
+	}
+	[placement]
+	{
+	  p position = -0.486916,-0.25,0.527832,0xfb89ad10;
 	}
 }
 [t:2w_braak,n:0x029001c0]
@@ -10000,7 +10437,7 @@
 	}
 	[placement]
 	{
-	  p position = -1.71571,0,-0.710667,0x9117f5e3;
+	  p position = -1.37542,0,-0.355469,0x9117f5e3;
 	}
 }
 [t:2w_braak_magic,n:0x029001c2]
@@ -10352,11 +10789,13 @@
 	{
 		[equipment]
 		{
+			es_shield_hand = sh_un_m_o_c_m_parade;
 			es_weapon_hand = blacksmith_hammer;
 		}
 	}
 	[placement]
 	{
+	  q orientation = 0,1,0,-1.66939e-007;
 	  p position = -0.935766,0,-0.745586,0x48a7cc90;
 	}
 }
@@ -10389,7 +10828,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,1.66939e-007;
-	  p position = 1.53961,0,0.286682,0x48a7cc90;
+	  p position = 1.53799,0,0.340881,0x48a7cc90;
 	}
 }
 [t:2w_braak,n:0x029001cd]
@@ -10459,6 +10898,39 @@
 	  p position = 1.91311,1.90735e-006,-0.0100174,0x738f1ff6;
 	}
 }
+[t:2w_braak_magic_reveal,n:0x029001cf]
+{
+	[aspect]
+	{
+	  f experience_value = 1.20967e+006;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 200;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -1.87839,0,0.151489,0x738f1ff6;
+	}
+}
+[t:2w_braak_magic_reveal,n:0x029001d1]
+{
+	[aspect]
+	{
+	  f experience_value = 1.20967e+006;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 200;
+	}
+	[placement]
+	{
+	  p position = 0.0682754,0,0.104919,0x738f1ff6;
+	}
+}
 [t:2w_braak,n:0x029001cc]
 {
 	[aspect]
@@ -10503,66 +10975,7 @@
 	}
 	[placement]
 	{
-	  p position = -0.901512,0,0.0255737,0x4cdeba32;
-	}
-}
-[t:2w_braak_magic_reveal,n:0x029001d1]
-{
-	[aspect]
-	{
-	  f experience_value = 1.20967e+006;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 225;
-	  f damage_bonus_min_cmagic = 200;
-	}
-	[placement]
-	{
-	  p position = -0.116596,-9.53674e-007,-0.979805,0x4cdeba32;
-	}
-}
-[t:2w_braak,n:0x029001d7]
-{
-	[aspect]
-	{
-	  f experience_value = 1.95022e+006;
-	}
-	[attack]
-	{
-	  f damage_max = 354.1;
-	  f damage_min = 330;
-	}
-	[defend]
-	{
-	  f defense = 500;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_weapon_hand = st_un_toothpick;
-		}
-	}
-	[placement]
-	{
-	  p position = -0.0600891,0,0.637547,0x4bbc5a09;
-	}
-}
-[t:2w_braak_magic_reveal,n:0x029001cf]
-{
-	[aspect]
-	{
-	  f experience_value = 1.20967e+006;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 225;
-	  f damage_bonus_min_cmagic = 200;
-	}
-	[placement]
-	{
-	  p position = -0.936748,-0.250001,0.933222,0xf897d012;
+	  p position = -0.716644,0,-0.889709,0x8df31257;
 	}
 }
 [t:2w_braak,n:0x029001d9]
@@ -10589,7 +11002,100 @@
 	}
 	[placement]
 	{
-	  p position = 1.01695,0,-0.37439,0x55f5109a;
+	  p position = 1.20182,0,0.710327,0x8df31257;
+	}
+}
+[t:2w_braak,n:0x029001d7]
+{
+	[aspect]
+	{
+	  f experience_value = 1.95022e+006;
+	}
+	[attack]
+	{
+	  f damage_max = 354.1;
+	  f damage_min = 330;
+	}
+	[defend]
+	{
+	  f defense = 500;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = st_un_toothpick;
+		}
+	}
+	[placement]
+	{
+	  p position = 0.124779,0,-0.27771,0xee32fcc3;
+	}
+}
+[t:2w_braak_magic,n:0x029001d3]
+{
+	[aspect]
+	{
+	  f experience_value = 1.20967e+006;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 225;
+	  f damage_bonus_min_cmagic = 200;
+	}
+	[placement]
+	{
+	  p position = -1.01645,0,0.657776,0x55f5109a;
+	}
+}
+[t:2w_braak_magic_reveal,n:0x029001ba]
+{
+	[aspect]
+	{
+	  f experience_value = 3.50011e+007;
+	  f life = 4300;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 2;
+	  f max_life = 4300;
+	  f scale_multiplier = 1.8;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 500;
+	  f damage_bonus_max_nmagic = 500;
+	  f damage_bonus_min_cmagic = 300;
+	  f damage_bonus_min_nmagic = 300;
+	}
+	[common]
+	{
+		screen_name = "Rowaas the Highborn";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x0290050E,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 1265.9;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,1.66939e-007;
+	  p position = -1.87599,0,-0.675842,0x8d7b3232;
 	}
 }
 [t:2w_braak,n:0x029001d5]
@@ -10610,6 +11116,59 @@
 	[placement]
 	{
 	  p position = 0.384812,0,0.518324,0x8d7b3232;
+	}
+}
+[t:2w_braak,n:0x02900514]
+{
+	[aspect]
+	{
+	  f experience_value = 8.95022e+006;
+	  f life = 9441;
+	  f max_life = 9441;
+	  f scale_multiplier = 1.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_ranged = 175;
+	  f damage_bonus_min_ranged = 125;
+	}
+	[common]
+	{
+		screen_name = "Nimhuul the Ranger";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x0290050E,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 400;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = cw_g_c_l_p_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-1.66939e-007,0,1;
+	  p position = -0.921707,-0.25,-0.667847,0xbc129e90;
 	}
 }
 [t:2w_braak,n:0x029001d8]
@@ -10660,16 +11219,43 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.95022e+006;
+	  f experience_value = 8.95022e+006;
+	  f life = 8574;
+	  f life_recovery_period = 4;
+	  f life_recovery_unit = 1;
+	  f max_life = 8574;
+	  f scale_multiplier = 2;
 	}
 	[attack]
 	{
-	  f damage_max = 354.1;
-	  f damage_min = 330;
+	  f damage_max = 554.1;
+	  f damage_min = 530;
+	}
+	[common]
+	{
+		screen_name = "Maraas the Battleborn";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x0290050E,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[defend]
 	{
-	  f defense = 500;
+	  f defense = 600;
 	}
 	[inventory]
 	{
@@ -10680,7 +11266,8 @@
 	}
 	[placement]
 	{
-	  p position = -1.66329,0,-0.421473,0xa82b2b0e;
+	  q orientation = 0,1,0,1.66939e-007;
+	  p position = -1.67543,0,-0.243591,0xa82b2b0e;
 	}
 }
 [t:2w_braak_magic,n:0x029001d2]
@@ -10697,22 +11284,6 @@
 	[placement]
 	{
 	  p position = -0.970736,-0.25,-0.684416,0x6f4801ee;
-	}
-}
-[t:2w_braak_magic,n:0x029001d3]
-{
-	[aspect]
-	{
-	  f experience_value = 1.20967e+006;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 225;
-	  f damage_bonus_min_cmagic = 200;
-	}
-	[placement]
-	{
-	  p position = -0.95317,-0.250001,0.653105,0x072bcd61;
 	}
 }
 [t:2w_braak,n:0x029001ae]
@@ -11417,12 +11988,14 @@
 {
 	[aspect]
 	{
-	  f experience_value = 4.35e+006;
+	  f experience_value = 2.35e+007;
+	  f life = 5734.5;
+	  f max_life = 5734.5;
 	}
 	[attack]
 	{
-	  f damage_max = 490.4;
-	  f damage_min = 479;
+	  f damage_max = 550;
+	  f damage_min = 525;
 	}
 	[defend]
 	{

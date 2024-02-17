@@ -497,42 +497,82 @@
 {
 	[placement]
 	{
-	  p position = -2.34656,0,0.972786,0xb9df25e8;
+	  q orientation = 0,1,0,5.96046e-008;
+	  p position = -1.06313,-4,-3.50897,0xfaf6158d;
 	}
 }
 [t:water_lunger,n:0x01d00165]
 {
 	[placement]
 	{
-	  p position = -1.72192,-1.90735e-006,-0.636254,0xb9df25e8;
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = -0.314056,-4,-3.2659,0xfaf6158d;
 	}
 }
 [t:water_lunger,n:0x01d00164]
 {
 	[placement]
 	{
-	  p position = 7.91898,-4,-3.27895,0xf84af667;
+	  q orientation = 0,1,0,6.49566e-008;
+	  p position = -1.62202,-3.81429,-2.98685,0xfaf6158d;
 	}
 }
 [t:water_slinger,n:0x01d00161]
 {
 	[placement]
 	{
-	  p position = -2.70349,12,1.55529,0xf0433d4a;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.859436,0,0.174652,0x5ad53976;
 	}
 }
 [t:water_lunger,n:0x01d00163]
 {
 	[placement]
 	{
-	  p position = -1.55806,12,0.733244,0xf0433d4a;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -2.22482,0,0.709763,0x5ad53976;
 	}
 }
 [t:water_lunger_boss_01,n:0x01d0016e]
 {
+	[aspect]
+	{
+	  f experience_value = 98600;
+	  f life = 5641;
+	  f max_life = 5641;
+	  f scale_multiplier = 3;
+	}
+	[attack]
+	{
+	  f damage_max = 100;
+	  f damage_min = 100;
+	}
+	[body]
+	{
+	  f avg_move_velocity = 3.19;
+	  f max_move_velocity = 3;
+	  f min_move_velocity = 3;
+	}
+	[common]
+	{
+		screen_name = "Lunger Lunatic";
+	}
+	[defend]
+	{
+	  f defense = 575;
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_melee_weapon;
+		[equipment]
+		{
+			es_weapon_hand = st_un_skull;
+		}
+	}
 	[placement]
 	{
-	  p position = 2.05704,12,0.112137,0x598e9c15;
+	  q orientation = 0,-1.59522e-008,0,1;
+	  p position = 3.18478,12,0.192184,0x598e9c15;
 	}
 }
 [t:water_lunger,n:0x01d0016f]
@@ -814,7 +854,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 1.31897,0.621618,1.04063,0xe4be3256;
+	  p position = 0.108948,0.87681,1.7646,0xe4be3256;
 	}
 }
 [t:spitter,n:0x01d0012c]

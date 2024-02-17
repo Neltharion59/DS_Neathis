@@ -139,3 +139,25 @@
 	  p position = 1.75938,-12,0.0551605,0xd094cfe8;
 	}
 }
+[t:chest_ice_01_un_ac_r3,n:0x04200104]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	  f scale_multiplier = 0.25;
+	}
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.5828,0.914639,1.55512,0x859f026e;
+		use_point_scids = 0x04200105;
+	}
+	[trapped]
+	{
+		fire_event = we_invalid;
+	}
+}

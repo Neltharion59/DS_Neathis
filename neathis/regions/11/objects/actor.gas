@@ -334,6 +334,11 @@
 	  f max_life = 186.2;
 	  f max_mana = 264;
 	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
+	}
 	[conversation]
 	{
 		[conversations]
@@ -391,5 +396,55 @@
 	[placement]
 	{
 	  p position = -3.45844,0,1.99957,0x10bd9622;
+	}
+}
+[t:merik,n:0x01200767]
+{
+	[aspect]
+	{
+	  f max_life = 186.2;
+	  f max_mana = 264;
+	}
+	[common]
+	{
+		dev_instance_text = "MP";
+	  b is_single_player = false;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = merik_mp;
+		}
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_melee_weapon;
+		[equipment]
+		{
+			es_feet = bo_bo_le_f_g_c_avg;
+			es_spellbook = book_glb_magic_01;
+			es_weapon_hand = st_ra_g_o_r_puller;
+		}
+		[other]
+		{
+			il_main = spell_firespray;
+			il_main = spell_healing_hands;
+			il_main = spell_hold_creature;
+			il_main = spell_spark;
+			il_main = spell_dancing_zap;
+			il_main = spell_resurrect;
+			il_main = spell_mana_channel;
+			il_main = spell_healing_wind;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 3.84636,0,-0.204056,0xd968073b;
 	}
 }

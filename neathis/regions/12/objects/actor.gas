@@ -853,7 +853,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.07391,1.80837,3.50936,0x9d9d27dd;
+	  p position = 0.98822,-2,-3.37307,0x35667654;
 	}
 }
 [t:trog,n:0x0140000c]
@@ -3184,6 +3184,62 @@
 	  p position = 3.9059,0,1.45313,0x57787169;
 	}
 }
+[t:scorpion,n:0x014004b5]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.43138,0.616922,-1.72559,0x96a30689;
+	}
+}
+[t:scorpion,n:0x014004b6]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.05914,0.547989,0.332458,0x96a30689;
+	}
+}
 [t:slarg,n:0x01400142]
 {
 	[placement]
@@ -3222,6 +3278,90 @@
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = 1.1463,0.126545,0.466515,0x402a3f86;
+	}
+}
+[t:scorpion,n:0x014004b2]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.661133,0.581354,1.40677,0x579f8801;
+	}
+}
+[t:scorpion,n:0x014004b3]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.99689,0.721646,-1.5485,0x579f8801;
+	}
+}
+[t:scorpion,n:0x014004b4]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.54034,0.982275,3.41138,0x579f8801;
 	}
 }
 [t:scorpion,n:0x0140049f]
@@ -4143,6 +4283,7 @@
 			[*]
 			{
 				action* = change_quest_state("11_trog","completed",0);
+				action* = change_quest_state("11_trog_mp","completed",0);
 			  b can_self_destruct = true;
 				condition* = receive_world_message("we_killed",0,"on_first_message");
 			  f delay = 0.000000;
@@ -4779,31 +4920,55 @@
 {
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -3.20402,0,1.32356,0x64557198;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 2.99908,0,-0.587402,0x4403665a;
 	}
 }
 [t:trog_warrior,n:0x0140027a]
 {
 	[placement]
 	{
-	  p position = -0.258462,1.90735e-006,2.26496,0x64557198;
+	  q orientation = 0,1,0,8.9407e-008;
+	  p position = 2.86328,0,1.02163,0xecadc397;
 	}
 }
 [t:trog_warrior,n:0x0140027b]
 {
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.952443,1.90735e-006,0.796672,0x64557198;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 2.82263,0,2.43379,0xecadc397;
 	}
 }
 [t:trog,n:0x0140027c]
 {
+	[aspect]
+	{
+	  f experience_value = 714;
+	  f life = 518;
+	  f max_life = 518;
+	  f scale_multiplier = 1.1;
+	}
+	[common]
+	{
+		screen_name = "Trog Fighter";
+	}
+	[defend]
+	{
+	  f defense = 198;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_w_g_c_k_m_avg;
+			es_weapon_hand = sd_g_c_sd_1h_avg;
+		}
+	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.17665,0,1.26584,0x64557198;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 3.0639,0,-0.829018,0xecadc397;
 	}
 }
 [t:shard_purple,n:0x01400270]
@@ -4826,7 +4991,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.24028,0,-2.06073,0x4403665a;
+	  p position = 2.6474,0,-3.07053,0x4403665a;
 	}
 }
 [t:trog_knight,n:0x01400274]
@@ -4834,14 +4999,14 @@
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 0.175362,0,-3.66599,0x4403665a;
+	  p position = 2.90778,0,0.292366,0xecadc397;
 	}
 }
 [t:trog_knight,n:0x01400275]
 {
 	[placement]
 	{
-	  p position = 1.12756,0,-0.490102,0x4403665a;
+	  p position = 2.52142,0,-1.23818,0x4403665a;
 	}
 }
 [t:trog_knight,n:0x01400276]
@@ -4849,7 +5014,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.602437,0,-0.0311998,0x4403665a;
+	  p position = 2.43231,0,-0.236343,0x4403665a;
 	}
 }
 [t:trog_warrior,n:0x01400277]
@@ -4857,7 +5022,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.13153,0,-2.38122,0x4403665a;
+	  p position = 3.0329,0,1.98909,0xecadc397;
 	}
 }
 [t:trog_warrior,n:0x01400278]
@@ -4865,44 +5030,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.733289,0,-1.29078,0x4403665a;
-	}
-}
-[t:trog,n:0x01400490]
-{
-	[aspect]
-	{
-	  f experience_value = 1392;
-	  f life = 1502;
-	  f max_life = 1502;
-	  f scale_base = 1.6;
-	}
-	[attack]
-	{
-	  f damage_max = 42;
-	  f damage_min = 38;
-	  f melee_fidget_time = 0;
-	}
-	[common]
-	{
-		screen_name = "Trog Majestus";
-	}
-	[defend]
-	{
-	  f defense = 278;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_shield_hand = sh_u_g_c_r_m_avg;
-			es_weapon_hand = cb_un_2h_cyclops;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.90564,0,-1.03413,0x4403665a;
+	  p position = 2.73395,0,3.6852,0xecadc397;
 	}
 }
 [t:trog_warrior,n:0x01400263]
@@ -5936,12 +6064,124 @@
 	  p position = -1.98792,0.424446,0.851913,0x0c0d117c;
 	}
 }
+[t:scorpion,n:0x014004b7]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.72308,0.894191,2.97095,0xed6744ad;
+	}
+}
+[t:scorpion,n:0x014004ba]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.57874,0.650946,1.75473,0xed6744ad;
+	}
+}
 [t:slarg,n:0x0140014d]
 {
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -2.43414,-1,-2.05511,0x70195df3;
+	}
+}
+[t:scorpion,n:0x014004b8]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.79089,0.745302,2.22651,0x70195df3;
+	}
+}
+[t:scorpion,n:0x014004b9]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.07452,0.924957,3.12479,0x70195df3;
 	}
 }
 [t:slarg,n:0x01400147]
@@ -6652,6 +6892,174 @@
 	  p position = 1.0549,0,-0.571922,0xf5224f80;
 	}
 }
+[t:scorpion,n:0x01400491]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.64493,0,2.76257,0x6259a00d;
+	}
+}
+[t:scorpion,n:0x01400492]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.58085,0,1.83243,0x6259a00d;
+	}
+}
+[t:scorpion,n:0x01400493]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.489544,0,2.50223,0x6259a00d;
+	}
+}
+[t:scorpion,n:0x01400494]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.89081,0,-0.437775,0x6259a00d;
+	}
+}
+[t:scorpion,n:0x01400495]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.04126,0,0.736694,0x6259a00d;
+	}
+}
+[t:scorpion,n:0x014004b1]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.63434,0,-1.1041,0x6259a00d;
+	}
+}
 [t:trog,n:0x014000db]
 {
 	[aspect]
@@ -7204,6 +7612,62 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 1.86896,-1,-3.34236,0xd6d15fb8;
+	}
+}
+[t:scorpion,n:0x014004bb]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.045166,0.797654,2.85924,0xd6d15fb8;
+	}
+}
+[t:scorpion,n:0x014004bc]
+{
+	[aspect]
+	{
+	  f experience_value = 145;
+	  f life = 62;
+	  f max_life = 62;
+	  f scale_multiplier = 0.9;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_melee = 20;
+	  f melee_aim_pi_time = 0.33;
+	  f melee_fidget_time = 0.33;
+	  f melee_recover_time = 0.33;
+	  f melee_swing_time = 0.33;
+	}
+	[defend]
+	{
+	  f defense = 160;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.135193,0.423126,1.67323,0xd6d15fb8;
 	}
 }
 [t:syrrus,n:0x014000af]
@@ -7967,1263 +8431,1316 @@
 	  p position = -1.27388,0,0.17152,0x3a66baf4;
 	}
 }
-[t:scorpion,n:0x01400491]
+[t:shard_purple,n:0x014004d9]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 2899;
+	  f life = 1327;
+	  f max_life = 1327;
+	  f scale_multiplier = 2.3;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_cmagic = 15;
+	  f damage_bonus_max_ranged = 15;
+	  f damage_bonus_min_cmagic = 15;
+	  f damage_bonus_min_ranged = 15;
+	}
+	[common]
+	{
+		screen_name = "Magenta Shard";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_deactivate",0x014004EE,0f,"default","every",0);
+				action* = send_world_message("we_req_use",0x014004ED,0f,"default","every",0);
+				action* = send_world_message("we_req_use",0x014004EC,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 644;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.64493,0,2.76257,0x6259a00d;
+	  q orientation = 0,-3.27417e-007,0,1;
+	  p position = 0.0388107,0,-1.48364,0xbcea62ec;
 	}
 }
-[t:scorpion,n:0x01400492]
+[t:shard_purple,n:0x014004f0]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 300;
+	  f life = 208;
+	  f max_life = 208;
+	  f scale_multiplier = 0.25;
 	}
-	[attack]
+	[common]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+		screen_name = "Magenta Fragment";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 100;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.58085,0,1.83243,0x6259a00d;
+	  q orientation = 0,-0.382684,0,0.923879;
+	  p position = 2.93676,0,-2.57733,0xbcea62ec;
 	}
 }
-[t:scorpion,n:0x01400493]
+[t:shard_purple,n:0x014004f1]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 300;
+	  f life = 208;
+	  f max_life = 208;
+	  f scale_multiplier = 0.25;
 	}
-	[attack]
+	[common]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+		screen_name = "Magenta Fragment";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 100;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.489544,0,2.50223,0x6259a00d;
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = -2.28187,0,-2.85822,0xbcea62ec;
 	}
 }
-[t:scorpion,n:0x01400494]
+[t:shard_purple,n:0x014004f2]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 300;
+	  f life = 208;
+	  f max_life = 208;
+	  f scale_multiplier = 0.25;
 	}
-	[attack]
+	[common]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+		screen_name = "Magenta Fragment";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 100;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.89081,0,-0.437775,0x6259a00d;
+	  q orientation = 0,-0.382684,0,0.923879;
+	  p position = -1.69897,0,0.46991,0xed12175e;
 	}
 }
-[t:scorpion,n:0x01400495]
+[t:shard_purple,n:0x014004f3]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 300;
+	  f life = 208;
+	  f max_life = 208;
+	  f scale_multiplier = 0.25;
 	}
-	[attack]
+	[common]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+		screen_name = "Magenta Fragment";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 100;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.04126,0,0.736694,0x6259a00d;
+	  q orientation = 0,-0.382684,0,0.923879;
+	  p position = 1.91351,0,1.47575,0x64557198;
 	}
 }
-[t:scorpion,n:0x014004b1]
+[t:shard_purple,n:0x014004f4]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 300;
+	  f life = 208;
+	  f max_life = 208;
+	  f scale_multiplier = 0.25;
 	}
-	[attack]
+	[common]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+		screen_name = "Magenta Fragment";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 100;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.63434,0,-1.1041,0x6259a00d;
+	  q orientation = 0,-0.382684,0,0.923879;
+	  p position = 0.741158,-12,-1.15784,0xe8027a83;
 	}
 }
-[t:scorpion,n:0x014004b2]
+[t:shard_purple,n:0x014004f5]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 300;
+	  f life = 208;
+	  f max_life = 208;
+	  f scale_multiplier = 0.25;
 	}
-	[attack]
+	[common]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+		screen_name = "Magenta Fragment";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 100;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.661133,0.581354,1.40677,0x579f8801;
+	  q orientation = 0,-0.382684,0,0.923879;
+	  p position = 1.33887,-12,-0.817879,0x34ad4e53;
 	}
 }
-[t:scorpion,n:0x014004b3]
+[t:shard_purple,n:0x014004f6]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 300;
+	  f life = 208;
+	  f max_life = 208;
+	  f scale_multiplier = 0.25;
 	}
-	[attack]
+	[common]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+		screen_name = "Magenta Fragment";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 100;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.99689,0.721646,-1.5485,0x579f8801;
+	  q orientation = 0,-0.382684,0,0.923879;
+	  p position = 0.505577,0,0.372131,0xbcea62ec;
 	}
 }
-[t:scorpion,n:0x014004b4]
+[t:scorpion,n:0x014004f7]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.54034,0.982275,3.41138,0x579f8801;
+	  p position = 0.465698,0,-3.99987,0xd0b5c002;
 	}
 }
-[t:scorpion,n:0x014004b5]
+[t:scorpion,n:0x014004f8]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.43138,0.616922,-1.72559,0x96a30689;
+	  p position = -1.53186,0,2.32312,0xb0efdd5e;
 	}
 }
-[t:scorpion,n:0x014004b6]
+[t:scorpion,n:0x014004f9]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.05914,0.547989,0.332458,0x96a30689;
+	  p position = 2.50061,0,2.25641,0xb0efdd5e;
 	}
 }
-[t:scorpion,n:0x014004b7]
+[t:scorpion,n:0x014004fa]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -3.72308,0.894191,2.97095,0xed6744ad;
+	  p position = 0.487915,0,0.832069,0xb0efdd5e;
 	}
 }
-[t:scorpion,n:0x014004b8]
+[t:scorpion,n:0x014004fb]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.79089,0.745302,2.22651,0x70195df3;
+	  p position = 2.71965,0,1.76373,0x576a5372;
 	}
 }
-[t:scorpion,n:0x014004b9]
+[t:scorpion,n:0x014004fc]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.07452,0.924957,3.12479,0x70195df3;
+	  p position = -3.60821,0,0.491028,0xf190c376;
 	}
 }
-[t:scorpion,n:0x014004ba]
+[t:scorpion,n:0x014004fd]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.57874,0.650946,1.75473,0xed6744ad;
+	  p position = 2.44595,0,-1.08331,0x576a5372;
 	}
 }
-[t:scorpion,n:0x014004bb]
+[t:scorpion,n:0x014004fe]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.045166,0.797654,2.85924,0xd6d15fb8;
+	  p position = -0.518982,0,1.7025,0xcdfdbd2c;
 	}
 }
-[t:scorpion,n:0x014004bc]
+[t:scorpion,n:0x014004ff]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.135193,0.423126,1.67323,0xd6d15fb8;
+	  q orientation = 0,0.707107,0,0.707106;
+	  p position = 0.34198,0,0.287491,0xdcb01bfb;
 	}
 }
-[t:scorpion,n:0x014004bd]
+[t:scorpion,n:0x01400500]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.00843,0,2.48047,0x576a5372;
+	  p position = -1.96429,0,-1.61455,0xcdfdbd2c;
 	}
 }
-[t:scorpion,n:0x014004be]
+[t:scorpion,n:0x01400504]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.587769,0,1.50861,0x576a5372;
+	  p position = -0.18853,-0.755227,-0.716309,0x408e7eba;
 	}
 }
-[t:scorpion,n:0x014004bf]
+[t:scorpion,n:0x01400505]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 3.10159,0,2.15894,0x576a5372;
+	  p position = -0.278244,-1.48224,-2.21143,0x408e7eba;
 	}
 }
-[t:scorpion,n:0x014004c0]
+[t:scorpion,n:0x01400506]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.55364,0,0.551208,0x576a5372;
+	  p position = -2.8577,0,2.02063,0xd5a17627;
 	}
 }
-[t:scorpion,n:0x014004c1]
+[t:scorpion,n:0x01400507]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.0788,0,-0.621765,0x576a5372;
+	  p position = -1.17693,0,1.5329,0xd5a17627;
 	}
 }
-[t:scorpion,n:0x014004c2]
+[t:scorpion,n:0x01400508]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -3.17874,0,1.90833,0xf190c376;
+	  p position = -1.75468,0,0.243896,0xd5a17627;
 	}
 }
-[t:scorpion,n:0x014004c3]
+[t:scorpion,n:0x01400509]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -3.85192,0,-0.184692,0xf190c376;
+	  p position = 2.71948,0,-1.3288,0x27cf542b;
 	}
 }
-[t:scorpion,n:0x014004c4]
+[t:scorpion,n:0x0140050a]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -3.43628,0,1.44751,0xb0efdd5e;
+	  p position = 1.64764,0,-0.179512,0x27cf542b;
 	}
 }
-[t:scorpion,n:0x014004c5]
+[t:scorpion,n:0x0140050b]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.85583,0,1.55445,0xb0efdd5e;
+	  p position = -0.502907,-0.603552,-3.14044,0x4f35da80;
 	}
 }
-[t:scorpion,n:0x014004c6]
+[t:scorpion,n:0x0140050c]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.89996,0,-0.535118,0xb0efdd5e;
+	  p position = 0.681602,-1.5185,-4.91772,0x4f35da80;
 	}
 }
-[t:scorpion,n:0x014004c7]
+[t:scorpion,n:0x0140050d]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -1.78674,0,-2.48536,0xb0efdd5e;
+	  p position = -1.92856,1.78117,0.86145,0x89793eaa;
 	}
 }
-[t:scorpion,n:0x014004c8]
+[t:scorpion,n:0x0140050e]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.0606689,0,-2.08946,0xb0efdd5e;
+	  p position = -1.0696,0,0.303894,0xd14aed41;
 	}
 }
-[t:scorpion,n:0x014004c9]
+[t:scorpion,n:0x0140050f]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.528931,0,0.799118,0xb0efdd5e;
+	  p position = -3.60144,0,0.746643,0xd14aed41;
 	}
 }
-[t:scorpion,n:0x014004ca]
+[t:scorpion,n:0x01400510]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.14429,0,-3.7039,0xd0b5c002;
+	  p position = 2.30359,0.847363,2.73682,0x70195df3;
 	}
 }
-[t:scorpion,n:0x014004cb]
+[t:scorpion,n:0x01400511]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.61798,0,2.92929,0xb0efdd5e;
+	  p position = -3.32941,0,0.352463,0xda6a031b;
 	}
 }
-[t:scorpion,n:0x014004cc]
+[t:scorpion,n:0x01400512]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -0.877586,0,-1.461,0x3cc609b4;
+	  p position = 1.17812,0,-1.27132,0x7fde1c71;
 	}
 }
-[t:scorpion,n:0x014004cd]
+[t:scorpion,n:0x01400513]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -3.14532,0,-3.80245,0xb0efdd5e;
+	  p position = -3.88499,2,0.694847,0x9f0842bf;
 	}
 }
-[t:scorpion,n:0x014004ce]
+[t:scorpion,n:0x01400514]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.466736,0,-3.79943,0xb0efdd5e;
+	  p position = -1.76225,0,0.553986,0x712e50cf;
 	}
 }
-[t:scorpion,n:0x014004cf]
+[t:scorpion,n:0x01400515]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.53754,0,-1.00814,0xb0efdd5e;
+	  p position = -1.73313,0,-1.58953,0x7eca5dcf;
 	}
 }
-[t:scorpion,n:0x014004d0]
+[t:trog,n:0x01400516]
 {
-	[aspect]
-	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
-	}
-	[defend]
-	{
-	  f defense = 160;
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.93488,0,-3.35127,0xd0b5c002;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.97765,1.63748,3.2195,0xf8e79f86;
 	}
 }
-[t:scorpion,n:0x014004d1]
+[t:trog,n:0x01400517]
 {
-	[aspect]
-	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
-	}
-	[defend]
-	{
-	  f defense = 160;
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.18292,0,1.28401,0x635ee8de;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.56002,-1.5397,-2.10061,0x5adfa676;
 	}
 }
-[t:scorpion,n:0x014004d2]
+[t:trog,n:0x01400518]
 {
-	[aspect]
-	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
-	}
-	[defend]
-	{
-	  f defense = 160;
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.08936,0,-0.837791,0x635ee8de;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.54466,-0.721157,-0.509571,0x5adfa676;
 	}
 }
-[t:scorpion,n:0x014004d3]
+[t:trog,n:0x01400519]
 {
-	[aspect]
-	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
-	}
-	[defend]
-	{
-	  f defense = 160;
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.215088,0,1.87484,0x635ee8de;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.18906,0,1.09751,0x6ad3e9d0;
 	}
 }
-[t:scorpion,n:0x014004d4]
+[t:trog,n:0x0140051a]
 {
-	[aspect]
-	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
-	}
-	[defend]
-	{
-	  f defense = 160;
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 0.435181,0,2.13429,0xffd0c6bf;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.47981,0,1.08322,0x6ad3e9d0;
 	}
 }
-[t:scorpion,n:0x014004d5]
+[t:trog,n:0x0140051b]
 {
-	[aspect]
-	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
-	}
-	[defend]
-	{
-	  f defense = 160;
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -3.54199,0,2.70067,0xffd0c6bf;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.31575,-1.94779,-2.89559,0x36480ee1;
 	}
 }
-[t:scorpion,n:0x014004d6]
+[t:trog,n:0x0140051c]
 {
-	[aspect]
-	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
-	}
-	[defend]
-	{
-	  f defense = 160;
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.3606,0,-3.73353,0x635ee8de;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.309776,0,0.0765762,0x6ba2e4fb;
 	}
 }
-[t:scorpion,n:0x014004d7]
+[t:trog,n:0x0140051d]
 {
-	[aspect]
-	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
-	}
-	[defend]
-	{
-	  f defense = 160;
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.63171,0,0.893288,0xffd0c6bf;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.46328,0,-1.59139,0x6ba2e4fb;
 	}
 }
-[t:scorpion,n:0x014004d8]
+[t:trog,n:0x0140051e]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.400913,-2,-3.83916,0x474bd9e9;
+	}
+}
+[t:trog,n:0x0140051f]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.159904,-1.31999,-1.71057,0x474bd9e9;
+	}
+}
+[t:scorpion,n:0x01400520]
 {
 	[aspect]
 	{
-	  f experience_value = 145;
-	  f life = 62;
-	  f max_life = 62;
-	  f scale_multiplier = 0.9;
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_melee = 20;
-	  f damage_bonus_min_melee = 20;
-	  f melee_aim_pi_time = 0.33;
-	  f melee_fidget_time = 0.33;
-	  f melee_recover_time = 0.33;
-	  f melee_swing_time = 0.33;
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
 	}
 	[defend]
 	{
-	  f defense = 160;
+	  f defense = 222;
+	}
+	[placement]
+	{
+	  q orientation = 0,5.08969e-007,0,1;
+	  p position = -1.54073,0,0.331039,0xcf47eb4b;
+	}
+}
+[t:scorpion,n:0x01400521]
+{
+	[aspect]
+	{
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
+	}
+	[defend]
+	{
+	  f defense = 222;
 	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 1.7359,0,2.11691,0x74bb9015;
+	  p position = 2.98132,0.771237,2.35619,0x065f94af;
+	}
+}
+[t:scorpion,n:0x01400522]
+{
+	[aspect]
+	{
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
+	}
+	[defend]
+	{
+	  f defense = 222;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.54175,0,-0.326431,0xba03f8bd;
+	}
+}
+[t:scorpion,n:0x01400523]
+{
+	[aspect]
+	{
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
+	}
+	[defend]
+	{
+	  f defense = 222;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.920898,0,0.971313,0xba03f8bd;
+	}
+}
+[t:scorpion,n:0x01400524]
+{
+	[aspect]
+	{
+	  f experience_value = 485;
+	  f life = 313;
+	  f life_recovery_period = 3;
+	  f life_recovery_unit = 2;
+	  f max_life = 313;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 75;
+	  f damage_bonus_min_melee = 60;
+	}
+	[common]
+	{
+		screen_name = "Arachion";
+	}
+	[defend]
+	{
+	  f defense = 222;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.443359,0,-0.366913,0xdcb01bfb;
 	}
 }

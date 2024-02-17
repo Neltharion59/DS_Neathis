@@ -334,10 +334,32 @@
 	[common]
 	{
 		screen_name = "Phrak Penetrator";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x00202D55,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[defend]
 	{
 	  f defense = 20;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
 	}
 	[placement]
 	{
@@ -429,6 +451,34 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -2.8038,0,-3.16399,0x96e130a9;
+	}
+}
+[t:phrak_piercer,n:0x00202d5a]
+{
+	[placement]
+	{
+	  p position = 3.21716,0,1.48937,0x96e130a9;
+	}
+}
+[t:phrak_piercer,n:0x00202d5b]
+{
+	[placement]
+	{
+	  p position = 3.84758,0,3.14783,0x96e130a9;
+	}
+}
+[t:phrak_piercer,n:0x00202d96]
+{
+	[placement]
+	{
+	  p position = 1.14182,0,-2.06911,0x14cba8f6;
+	}
+}
+[t:phrak_piercer,n:0x00202d97]
+{
+	[placement]
+	{
+	  p position = 2.24577,0,0.538055,0x14cba8f6;
 	}
 }
 [t:phrak,n:0x002000f4]
@@ -620,6 +670,20 @@
 	[placement]
 	{
 	  p position = 1.23195,0,-2.0898,0x0e9322d1;
+	}
+}
+[t:phrak_piercer,n:0x00202d5c]
+{
+	[placement]
+	{
+	  p position = -1.88254,-17.85,-7.62932,0x0e85e973;
+	}
+}
+[t:phrak_piercer,n:0x00202d95]
+{
+	[placement]
+	{
+	  p position = -4.35182,-17.85,-7.958,0x0e85e973;
 	}
 }
 [t:mage_trianna_lelaine,n:0x00200251]
@@ -1064,6 +1128,11 @@
 	  f max_life = 49;
 	  f max_mana = 30;
 	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
+	}
 	[conversation]
 	{
 		[conversations]
@@ -1090,7 +1159,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 3.24686,0,-0.237305,0x42a742e6;
+	  p position = 3.03992,0,-0.242584,0x42a742e6;
 	}
 }
 [t:dog_sleeping,n:0x0020023e]
@@ -1825,5 +1894,46 @@
 	[placement]
 	{
 	  p position = -2.06219,-1.2,3.10517,0x8cc7e92f;
+	}
+}
+[t:ulora,n:0x00202d98]
+{
+	[aspect]
+	{
+	  f max_life = 49;
+	  f max_mana = 30;
+	}
+	[common]
+	{
+		dev_instance_text = "MP";
+	  b is_single_player = false;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = ulora_mp;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_le_f_g_c_fun;
+			es_feet = bo_bo_le_f_g_c_avg;
+		}
+		[other]
+		{
+			il_main = bw_g_c_s_m_c_low;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.89954,0,-0.117218,0x42a742e6;
 	}
 }

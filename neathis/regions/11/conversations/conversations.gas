@@ -9,44 +9,13 @@
 	  f scroll_rate = 10.000000;
 	}
 }
-[shop_1]
+[merik_mp]
 {
 	[text*]
 	{
-		choice = more;
-	  i order = 0;
-		screen_text = "Welcome to our emporium, traveler! We are a group of mages who study the Rubistal, a very rare crystallic occurence you can see behind me. You are free to look around and speak with my colleagues, we believe that anyone should be able to access its knowledge. However, if you do something unruly, you might end up fried by flames of several angry mages.";
-	  f scroll_rate = 10.000000;
-	}
-	[text*]
-	{
-		choice = shop;
-	  i order = 1;
-		screen_text = "Each of us also have supply of magical items. Could I interest you in my assortment perhaps?";
-	  f scroll_rate = 10.000000;
-	}
-	[text*]
-	{
-		choice = shop;
-		screen_text = "I could swear that my fire spells are stronger when performed near the Rubistal, but I don't dare to cast too powerful spells here. Its effects could surprise us.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[shop_2]
-{
-	[text*]
-	{
-		choice = shop;
-		screen_text = "Hello, Rubistal is fascinating, isn't it? But you look like you're more interested in supplies than knowledge, Not that there's something bad about it. Unlike others, I mostly hoard more mundane items. We see adventurers here and there and they used to be dissapointed we only offer mage equipment. So I decided to fix it.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[shop_3]
-{
-	[text*]
-	{
-		choice = shop;
-		screen_text = "Don't worry, child. Rubisten is not dangerous, but better keep your distance. I burnt my finger when I tried to touch it. Would you like to buy something?";
+		activate_quest* = 11_trog_mp,0;
+	  b quest_dialog = true;
+		screen_text = "Greetings! Are you hoping to pass the mountain and reach the kingdom? Don't let your hopes up. The trog dominion has grown significantly while we were too busy trading. They dwell these caves, and are as numerous as kingdom's armies. It won't take them long before they have the confidence to leave their caves, in one direction or another, but the consequences will be fatal. If you are going to push through, perhaps you could decimate the trog population along the way. If you survive.";
 	  f scroll_rate = 10.000000;
 	}
 }

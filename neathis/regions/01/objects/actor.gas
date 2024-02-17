@@ -665,7 +665,7 @@
 {
 	[placement]
 	{
-	  p position = -29.2844,4.72901,-7.76527,0xfdff7528;
+	  p position = -41.3767,5.33991,-3.96014,0xfdff7528;
 	}
 }
 [t:snapper,n:0x00100042]
@@ -673,7 +673,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -27.9393,4.67722,-9.64758,0xfdff7528;
+	  p position = -18.4462,5.14739,-8.68971,0xfdff7528;
 	}
 }
 [t:snapper,n:0x00100043]
@@ -730,6 +730,29 @@
 	[placement]
 	{
 	  p position = -37.5421,4.7025,-2.69975,0xfdff7528;
+	}
+}
+[t:snapper,n:0x00100c2f]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 14;
+	  f max_life = 14;
+	  f scale_multiplier = 1.8;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 2;
+	  f damage_bonus_min_melee = 2;
+	}
+	[common]
+	{
+		screen_name = "Huge Snapper";
+	}
+	[placement]
+	{
+	  p position = -28.5002,4.62273,-7.31816,0xfdff7528;
 	}
 }
 [t:phrak_large,n:0x00100056]
@@ -812,6 +835,20 @@
 }
 [t:skeleton,n:0x001000c2]
 {
+	[aspect]
+	{
+	  f life = 10;
+	  f max_life = 10;
+	}
+	[attack]
+	{
+	  f damage_max = 6;
+	  f damage_min = 5;
+	}
+	[defend]
+	{
+	  f defense = 8;
+	}
 	[placement]
 	{
 	  p position = -0.176025,1.7,-3.9943,0x84abe3a4;
@@ -819,6 +856,20 @@
 }
 [t:skeleton,n:0x001000c4]
 {
+	[aspect]
+	{
+	  f life = 10;
+	  f max_life = 10;
+	}
+	[attack]
+	{
+	  f damage_max = 6;
+	  f damage_min = 5;
+	}
+	[defend]
+	{
+	  f defense = 8;
+	}
 	[placement]
 	{
 	  p position = 1.79904,-1.55,-1.49287,0x8179bdda;
@@ -838,7 +889,7 @@
 	}
 	[defend]
 	{
-	  f defense = 20;
+	  f defense = 15;
 	}
 	[placement]
 	{
@@ -847,6 +898,20 @@
 }
 [t:skeleton,n:0x001000c7]
 {
+	[aspect]
+	{
+	  f life = 10;
+	  f max_life = 10;
+	}
+	[attack]
+	{
+	  f damage_max = 6;
+	  f damage_min = 5;
+	}
+	[defend]
+	{
+	  f defense = 8;
+	}
 	[placement]
 	{
 	  p position = 0.473842,-0.0356407,-0.217266,0xe4559786;
@@ -907,7 +972,17 @@
 {
 	[aspect]
 	{
-	  f life = 1;
+	  f life = 10;
+	  f max_life = 10;
+	}
+	[attack]
+	{
+	  f damage_max = 6;
+	  f damage_min = 5;
+	}
+	[defend]
+	{
+	  f defense = 8;
 	}
 	[placement]
 	{
@@ -917,6 +992,20 @@
 }
 [t:skeleton,n:0x001000c6]
 {
+	[aspect]
+	{
+	  f life = 10;
+	  f max_life = 10;
+	}
+	[attack]
+	{
+	  f damage_max = 6;
+	  f damage_min = 5;
+	}
+	[defend]
+	{
+	  f defense = 8;
+	}
 	[placement]
 	{
 	  p position = 0.87915,0.0114403,1.8055,0xe83654f7;
@@ -1495,6 +1584,27 @@
 	[placement]
 	{
 	  p position = 1.48509,0,1.84286,0x74b7a7b2;
+	}
+}
+[t:phrak,n:0x00100c30]
+{
+	[placement]
+	{
+	  p position = -2.29933,0,2.33777,0x2cfd728f;
+	}
+}
+[t:phrak,n:0x00100c31]
+{
+	[placement]
+	{
+	  p position = -1.7876,0,1.26915,0x2cfd728f;
+	}
+}
+[t:phrak,n:0x00100c32]
+{
+	[placement]
+	{
+	  p position = -0.395187,0,1.86096,0x2cfd728f;
 	}
 }
 [t:phrak,n:0x00100096]

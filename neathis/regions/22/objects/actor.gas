@@ -4779,6 +4779,38 @@
 	  p position = -2.76682,0,-1.92403,0x7c6dea32;
 	}
 }
+[t:skeleton_mercenary_reveal_02,n:0x020009f5]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = -2.92889,-1.15,2.50314,0x04012339;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x020009f6]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = 2.27876,-1.15,3.4747,0x04012339;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x020009f4]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = -3.95145,0,0.247093,0xad2dbdb1;
+	}
+}
+[t:skeleton_mercenary_reveal_02,n:0x020002d7]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = -3.9471,0,1.78159,0x65c094c1;
+	}
+}
 [t:warlock,n:0x02000451]
 {
 	[placement]
@@ -4834,14 +4866,6 @@
 	[placement]
 	{
 	  p position = 3.60648,-1.91567,-1.30804,0x47031a33;
-	}
-}
-[t:skeleton_mercenary_reveal_02,n:0x020002d7]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-2.98023e-008;
-	  p position = -3.9471,0,1.78159,0x65c094c1;
 	}
 }
 [t:skeleton_mercenary_reveal_02,n:0x020002d9]
@@ -5158,6 +5182,7 @@
 {
 	[placement]
 	{
+	  q orientation = 0,0.382683,0,0.92388;
 	  p position = 2.09903,-3.8147e-006,-0.468689,0x533c00d2;
 	}
 }
@@ -6047,27 +6072,145 @@
 	  p position = -1.88124,-2.05,-0.589065,0x0afa6f8f;
 	}
 }
-[t:skeleton_mercenary_reveal_02,n:0x020009f4]
+[t:wraith_terror,n:0x020002d8]
 {
+	[aspect]
+	{
+	  f experience_value = 254000;
+	  f life = 7806;
+	  f max_life = 7806;
+	  f scale_multiplier = 1.4;
+	}
+	[common]
+	{
+		screen_name = "Horroraith";
+	}
+	[defend]
+	{
+	  f defense = 450;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = hm_ra_g_c_2h2m_fin;
+		}
+	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-2.98023e-008;
-	  p position = -3.95145,0,0.247093,0xad2dbdb1;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.344193,0,-2.72507,0xd45d98db;
 	}
 }
-[t:skeleton_mercenary_reveal_02,n:0x020009f5]
+[t:2w_skeleton_guard,n:0x020002dd]
 {
 	[placement]
 	{
-	  q orientation = 0,1,0,-2.98023e-008;
-	  p position = -2.92889,-1.15,2.50314,0x04012339;
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.44534,0,1.92074,0xaac5c8d5;
 	}
 }
-[t:skeleton_mercenary_reveal_02,n:0x020009f6]
+[t:2w_skeleton_guard,n:0x020002de]
 {
 	[placement]
 	{
-	  q orientation = 0,1,0,-2.98023e-008;
-	  p position = 2.27876,-1.15,3.4747,0x04012339;
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.53421,0,2.99535,0xaac5c8d5;
+	}
+}
+[t:2w_skeleton_guard,n:0x020002e0]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.50827,0,-2.72615,0xaac5c8d5;
+	}
+}
+[t:2w_skeleton_archer,n:0x020002e4]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.901428,0,2.11319,0xaac5c8d5;
+	}
+}
+[t:2w_skeleton_archer,n:0x020002e5]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.21475,0,-1.37038,0xaac5c8d5;
+	}
+}
+[t:2w_skeleton_archer,n:0x020002e6]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.6597,0,0.643974,0xaac5c8d5;
+	}
+}
+[t:2w_skeleton_archer,n:0x020009fb]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -3.35034,0,0.354706,0x733129df;
+	}
+}
+[t:2w_skeleton_archer,n:0x020009fc]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -2.88603,0,0.819672,0x1324d1b8;
+	}
+}
+[t:2w_skeleton_archer,n:0x020009fd]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.13699,0,-0.0778504,0xd7ca9e4b;
+	}
+}
+[t:2w_skeleton_archer,n:0x020009fe]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.03558,0,-0.852249,0xd7ca9e4b;
+	}
+}
+[t:2w_skeleton_archer,n:0x020009ff]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -0.239471,0,-0.400085,0xd7ca9e4b;
+	}
+}
+[t:2w_skeleton_archer,n:0x02000a00]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 0.401062,0,-0.318573,0xd7ca9e4b;
+	}
+}
+[t:2w_skeleton_archer,n:0x02000a01]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.47961,0,-0.71965,0xd7ca9e4b;
+	}
+}
+[t:2w_skeleton_archer,n:0x02000a02]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 3.79422,0,0.052246,0xd7ca9e4b;
 	}
 }

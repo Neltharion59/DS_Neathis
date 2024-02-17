@@ -370,6 +370,28 @@
 	  p position = -3.01979,0,1.94734,0x8aee5cbf;
 	}
 }
+[t:darkling_reveal,n:0x04200100]
+{
+	[aspect]
+	{
+	  f life = 114;
+	  f max_life = 114;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 35;
+	  f damage_bonus_min_cmagic = 25;
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -3.57901,2,2.16176,0xf28f64b6;
+	}
+}
 [t:darkling_reveal,n:0x04200016]
 {
 	[aspect]
@@ -390,6 +412,28 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 2.56264,0,-0.942799,0x8fe12018;
+	}
+}
+[t:darkling_reveal,n:0x04200102]
+{
+	[aspect]
+	{
+	  f life = 114;
+	  f max_life = 114;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 35;
+	  f damage_bonus_min_cmagic = 25;
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -3.17274,0,-2.03762,0x8a25f679;
 	}
 }
 [t:darkling_reveal,n:0x04200018]
@@ -434,6 +478,28 @@
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
 	  p position = -0.777756,0,0.360725,0x8691f98a;
+	}
+}
+[t:darkling_reveal,n:0x04200101]
+{
+	[aspect]
+	{
+	  f life = 114;
+	  f max_life = 114;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 35;
+	  f damage_bonus_min_cmagic = 25;
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.803127,0,2.19232,0x8b513171;
 	}
 }
 [t:darkling_reveal,n:0x0420001e]
@@ -670,6 +736,50 @@
 	  p position = -2.57105,0,0.0713959,0xfa45edd7;
 	}
 }
+[t:darkling_reveal,n:0x042000ff]
+{
+	[aspect]
+	{
+	  f life = 114;
+	  f max_life = 114;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 35;
+	  f damage_bonus_min_cmagic = 25;
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -3.27216,-12,-5.58114,0xa3c94a5c;
+	}
+}
+[t:darkling_reveal,n:0x042000fe]
+{
+	[aspect]
+	{
+	  f life = 114;
+	  f max_life = 114;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 35;
+	  f damage_bonus_min_cmagic = 25;
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 2.84145,-12,-5.3799,0x6f7bc1e4;
+	}
+}
 [t:darkling_reveal,n:0x04200010]
 {
 	[aspect]
@@ -714,113 +824,53 @@
 	  p position = -1.97771,0,-0.389057,0x9d87dde4;
 	}
 }
-[t:darkling_reveal,n:0x042000fe]
+[t:darkling_reveal,n:0x04200103]
 {
 	[aspect]
 	{
-	  f life = 114;
-	  f max_life = 114;
+	  f experience_value = 260;
+	  f life = 312;
+	  f max_life = 312;
+	  f scale_multiplier = 1.8;
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 35;
-	  f damage_bonus_min_cmagic = 25;
+	  f damage_bonus_max_cmagic = 45;
+	  f damage_bonus_min_cmagic = 40;
+	}
+	[common]
+	{
+		screen_name = "The Darker";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x04200104,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[defend]
 	{
-	  f defense = 50;
+	  f defense = 60;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
 	}
 	[placement]
 	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 2.84145,-12,-5.3799,0x6f7bc1e4;
-	}
-}
-[t:darkling_reveal,n:0x042000ff]
-{
-	[aspect]
-	{
-	  f life = 114;
-	  f max_life = 114;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 35;
-	  f damage_bonus_min_cmagic = 25;
-	}
-	[defend]
-	{
-	  f defense = 50;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -3.27216,-12,-5.58114,0xa3c94a5c;
-	}
-}
-[t:darkling_reveal,n:0x04200100]
-{
-	[aspect]
-	{
-	  f life = 114;
-	  f max_life = 114;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 35;
-	  f damage_bonus_min_cmagic = 25;
-	}
-	[defend]
-	{
-	  f defense = 50;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -3.57901,2,2.16176,0xf28f64b6;
-	}
-}
-[t:darkling_reveal,n:0x04200101]
-{
-	[aspect]
-	{
-	  f life = 114;
-	  f max_life = 114;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 35;
-	  f damage_bonus_min_cmagic = 25;
-	}
-	[defend]
-	{
-	  f defense = 50;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 0.803127,0,2.19232,0x8b513171;
-	}
-}
-[t:darkling_reveal,n:0x04200102]
-{
-	[aspect]
-	{
-	  f life = 114;
-	  f max_life = 114;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 35;
-	  f damage_bonus_min_cmagic = 25;
-	}
-	[defend]
-	{
-	  f defense = 50;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -3.17274,0,-2.03762,0x8a25f679;
+	  q orientation = 0,-0.707107,0,-0.707106;
+	  p position = 3.2658,2,-0.620995,0x7ca27b29;
 	}
 }

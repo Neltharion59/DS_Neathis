@@ -471,6 +471,11 @@
 	  f max_life = 58.8;
 	  f max_mana = 34;
 	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
+	}
 	[conversation]
 	{
 		[conversations]
@@ -485,7 +490,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0.586159,0,-0.796936,0x90f9bba4;
+	  p position = 0.573104,0,-0.797054,0x90f9bba4;
 	}
 }
 [t:rusk,n:0x00600010]
@@ -495,6 +500,11 @@
 	  i gold_value = 0;
 	  f max_life = 78.4;
 	  f max_mana = 31;
+	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
 	}
 	[conversation]
 	{
@@ -520,6 +530,11 @@
 	  f max_life = 78.4;
 	  f max_mana = 31;
 	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
+	}
 	[conversation]
 	{
 		[conversations]
@@ -544,6 +559,11 @@
 	  i gold_value = 0;
 	  f max_life = 68.6;
 	  f max_mana = 80;
+	}
+	[common]
+	{
+		dev_instance_text = "SP";
+	  b is_multi_player = false;
 	}
 	[conversation]
 	{

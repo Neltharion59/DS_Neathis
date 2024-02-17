@@ -1795,6 +1795,37 @@
 	  p position = -1.04311,0,1.03786,0x58e0dbcb;
 	}
 }
+[t:3w_sar_vinien,n:0x033008b5]
+{
+	[common]
+	{
+		screen_name = "Maullen";
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_general;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ba_m_g_c_str;
+			es_feet = bo_bo_le_light;
+			es_weapon_hand = sd_g_c_gl_1h_low;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  p position = -4.06709,0,-3.37399,0x58e0dbcb;
+	}
+}
 [t:3w_mp_guard_03,n:0x033001c2]
 {
 	[common]
@@ -4280,36 +4311,5 @@
 	{
 	  q orientation = 0,-6.46033e-009,0,1;
 	  p position = 0.947586,-2,-0.652607,0x7ccde6db;
-	}
-}
-[t:3w_sar_vinien,n:0x033008b5]
-{
-	[common]
-	{
-		screen_name = "Maullen";
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_general;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_ba_m_g_c_str;
-			es_feet = bo_bo_le_light;
-			es_weapon_hand = sd_g_c_gl_1h_low;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  p position = -4.06709,0,-3.37399,0x58e0dbcb;
 	}
 }

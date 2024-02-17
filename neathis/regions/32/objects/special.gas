@@ -150,7 +150,7 @@
 		{
 			[*]
 			{
-				action* = change_quest_state("32_basilisk","active",1);
+				action* = change_quest_state("31_basilisk","active",1);
 			  b can_self_destruct = true;
 				condition* = party_member_within_bounding_box(5.000000,2.000000,1.000000,"on_first_enter");
 			  f delay = 0.000000;
