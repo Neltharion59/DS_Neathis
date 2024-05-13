@@ -15,14 +15,13 @@
 {
 	[placement]
 	{
-	  p position = -0.250736,1.18957,-0.540916,0xf389f7de;
+	  p position = 0.0646172,1.18957,0.538345,0xf389f7de;
 	}
 	[sound_emitter]
 	{
 	  b continual_loop = true;
 		event_sound = "amb_water_drip";
-	  f max_dist = 10;
-	  f min_dist = 2;
+	  f max_dist = 8;
 	}
 }
 [t:emt_generic,n:0x00a00398]
@@ -139,6 +138,48 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 1.66627,-1.43285,2.26781,0x75f77bcb;
+	}
+}
+[t:emt_particle,n:0x00a00566]
+{
+	[particle_emitter]
+	{
+	  f blue = 1;
+	  f green = 0.4;
+	  f red = 0;
+	}
+	[placement]
+	{
+	  q orientation = -0.153046,0.690346,0.690346,0.153046;
+	  p position = -1.43478,2.72572,-1.78874,0x1c0bcdbf;
+	}
+}
+[t:emt_particle,n:0x00a00569]
+{
+	[particle_emitter]
+	{
+	  f blue = 1;
+	  f green = 0.4;
+	  f red = 0;
+	}
+	[placement]
+	{
+	  q orientation = 0.701837,-0.0861748,-0.0861747,-0.701837;
+	  p position = -1.2278,2.72572,-2.01185,0x1c0bcdbf;
+	}
+}
+[t:emt_particle,n:0x00a0056a]
+{
+	[particle_emitter]
+	{
+	  f blue = 1;
+	  f green = 0.4;
+	  f red = 0;
+	}
+	[placement]
+	{
+	  q orientation = 0.50865,0.491198,0.491198,-0.50865;
+	  p position = -1.22275,2.72572,-1.87037,0x1c0bcdbf;
 	}
 }
 [t:emt_particle,n:0x00a00577]

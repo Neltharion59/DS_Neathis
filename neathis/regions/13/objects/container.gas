@@ -267,3 +267,35 @@
 		fire_event = we_invalid;
 	}
 }
+[t:chest_csl_08_df_bandits,n:0x01500557]
+{
+	[aspect]
+	{
+	  f scale_base = 0.45;
+	}
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  p position = 0.415405,0,0.154533,0xf1b041bf;
+		use_point_scids = 0x0150054d;
+	}
+}
+[t:chest_csl_07_df_bandits,n:0x01500558]
+{
+	[aspect]
+	{
+	  f scale_base = 0.45;
+	}
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  p position = 0.45816,0,-0.131279,0xf1b041bf;
+		use_point_scids = 0x0150054d;
+	}
+}

@@ -132,10 +132,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 30;
+	  f damage_bonus_max_cmagic = 40;
 	  f damage_bonus_max_nmagic = 30;
 	  f damage_bonus_max_ranged = 30;
-	  f damage_bonus_min_cmagic = 30;
+	  f damage_bonus_min_cmagic = 40;
 	  f damage_bonus_min_nmagic = 30;
 	  f damage_bonus_min_ranged = 30;
 	}
@@ -146,7 +146,7 @@
 		{
 			[*]
 			{
-				action* = send_world_message("we_req_activate",0x01100141,4f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01100142,0f,"default","every",0);
 			  b can_self_destruct = true;
 				condition* = receive_world_message("we_killed",0,"on_first_message");
 			  f delay = 0.000000;
@@ -167,8 +167,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,2.98023e-008;
-	  p position = 2.66772,0,-3.78308,0x127e5156;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.65041,0,3.26599,0xe9b12aca;
 	}
 }
 [t:scorpion,n:0x01100165]
@@ -210,10 +210,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 15;
-	  f damage_bonus_max_melee = 15;
-	  f damage_bonus_min_cmagic = 10;
-	  f damage_bonus_min_melee = 10;
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_cmagic = 20;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -221,7 +221,7 @@
 	}
 	[defend]
 	{
-	  f defense = 60;
+	  f defense = 150;
 	}
 	[placement]
 	{
@@ -558,10 +558,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 15;
-	  f damage_bonus_max_melee = 15;
-	  f damage_bonus_min_cmagic = 10;
-	  f damage_bonus_min_melee = 10;
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_cmagic = 20;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -569,7 +569,7 @@
 	}
 	[defend]
 	{
-	  f defense = 60;
+	  f defense = 150;
 	}
 	[placement]
 	{
@@ -867,10 +867,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 15;
-	  f damage_bonus_max_melee = 15;
-	  f damage_bonus_min_cmagic = 10;
-	  f damage_bonus_min_melee = 10;
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_cmagic = 20;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -878,7 +878,7 @@
 	}
 	[defend]
 	{
-	  f defense = 60;
+	  f defense = 150;
 	}
 	[placement]
 	{
@@ -968,10 +968,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 15;
-	  f damage_bonus_max_melee = 15;
-	  f damage_bonus_min_cmagic = 10;
-	  f damage_bonus_min_melee = 10;
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_cmagic = 20;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -979,7 +979,7 @@
 	}
 	[defend]
 	{
-	  f defense = 60;
+	  f defense = 150;
 	}
 	[placement]
 	{
@@ -998,10 +998,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 15;
-	  f damage_bonus_max_melee = 15;
-	  f damage_bonus_min_cmagic = 10;
-	  f damage_bonus_min_melee = 10;
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_cmagic = 20;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -1009,7 +1009,7 @@
 	}
 	[defend]
 	{
-	  f defense = 60;
+	  f defense = 150;
 	}
 	[placement]
 	{
@@ -1028,10 +1028,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 15;
-	  f damage_bonus_max_melee = 15;
-	  f damage_bonus_min_cmagic = 10;
-	  f damage_bonus_min_melee = 10;
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_cmagic = 20;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -1039,7 +1039,7 @@
 	}
 	[defend]
 	{
-	  f defense = 60;
+	  f defense = 150;
 	}
 	[placement]
 	{
@@ -1058,10 +1058,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 15;
-	  f damage_bonus_max_melee = 15;
-	  f damage_bonus_min_cmagic = 10;
-	  f damage_bonus_min_melee = 10;
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_cmagic = 20;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -1069,7 +1069,7 @@
 	}
 	[defend]
 	{
-	  f defense = 60;
+	  f defense = 150;
 	}
 	[placement]
 	{
@@ -2003,10 +2003,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 15;
-	  f damage_bonus_max_melee = 15;
-	  f damage_bonus_min_cmagic = 10;
-	  f damage_bonus_min_melee = 10;
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_cmagic = 20;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -2014,7 +2014,7 @@
 	}
 	[defend]
 	{
-	  f defense = 60;
+	  f defense = 150;
 	}
 	[placement]
 	{
@@ -2089,10 +2089,10 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 15;
-	  f damage_bonus_max_melee = 15;
-	  f damage_bonus_min_cmagic = 10;
-	  f damage_bonus_min_melee = 10;
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_max_melee = 20;
+	  f damage_bonus_min_cmagic = 20;
+	  f damage_bonus_min_melee = 20;
 	}
 	[common]
 	{
@@ -2100,7 +2100,7 @@
 	}
 	[defend]
 	{
-	  f defense = 60;
+	  f defense = 150;
 	}
 	[placement]
 	{

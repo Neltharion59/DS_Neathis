@@ -1572,6 +1572,76 @@
 	  p position = 1.40896,-3,1.22709,0xbdadb12b;
 	}
 }
+[t:torg,n:0x00b016fd]
+{
+	[aspect]
+	{
+	  f max_life = 147;
+	  f max_mana = 37;
+	}
+	[common]
+	{
+		dev_instance_text = "MP";
+	  b is_single_player = false;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = torg_mp;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_sl_f_g_c_avg;
+			es_weapon_hand = ax_g_c_1h1b_avg;
+		}
+		[other]
+		{
+			il_main = amulet_horseshoe;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = 1.18301,-3,0.949936,0xbdadb12b;
+	}
+}
+[t:gloern,n:0x00b016fe]
+{
+	[aspect]
+	{
+	  f max_life = 147;
+	  f max_mana = 37;
+	}
+	[common]
+	{
+		dev_instance_text = "MP";
+	  b is_single_player = false;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = gloern_mp;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.923879,0,-0.382684;
+	  p position = -0.113564,-3,0.864151,0xbdadb12b;
+	}
+}
 [t:mp_townfolk_f_05,n:0x00b000d4]
 {
 	[common]
@@ -4737,75 +4807,5 @@
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = 0.564655,0,1.95129,0x7b56adab;
-	}
-}
-[t:torg,n:0x00b016fd]
-{
-	[aspect]
-	{
-	  f max_life = 147;
-	  f max_mana = 37;
-	}
-	[common]
-	{
-		dev_instance_text = "MP";
-	  b is_single_player = false;
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = torg_mp;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_sl_f_g_c_avg;
-			es_weapon_hand = ax_g_c_1h1b_avg;
-		}
-		[other]
-		{
-			il_main = amulet_horseshoe;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.92388,0,0.382683;
-	  p position = 1.18301,-3,0.949936,0xbdadb12b;
-	}
-}
-[t:gloern,n:0x00b016fe]
-{
-	[aspect]
-	{
-	  f max_life = 147;
-	  f max_mana = 37;
-	}
-	[common]
-	{
-		dev_instance_text = "MP";
-	  b is_single_player = false;
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = gloern_mp;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.923879,0,-0.382684;
-	  p position = -0.113564,-3,0.864151,0xbdadb12b;
 	}
 }

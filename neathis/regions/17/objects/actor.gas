@@ -3156,6 +3156,18 @@
 }
 [t:swamp_witch,n:0x01b0011c]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
@@ -3180,10 +3192,46 @@
 }
 [t:swamp_witch,n:0x01b0011d]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -1.24078,0,-2.895,0x0621a6c7;
+	}
+}
+[t:rock_golem,n:0x01b017b5]
+{
+	[aspect]
+	{
+	  f experience_value = 22000;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,-0.92388;
+	  p position = 0.652222,-1.55,-3.16862,0x4c907c29;
+	}
+}
+[t:rock_golem,n:0x01b017b6]
+{
+	[aspect]
+	{
+	  f experience_value = 22000;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-5.08969e-007;
+	  p position = 1.17987,-1.55,2.6534,0x4c907c29;
 	}
 }
 [t:tretch,n:0x01b00114]
@@ -3932,6 +3980,37 @@
 	  p position = -1.8252,0,-2.00043,0x6464406b;
 	}
 }
+[t:2w_wolf_gray,n:0x01b01795]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -1.77478,0,-0.136654,0x01a296e4;
+	}
+}
+[t:2w_wolf_gray_boss_01,n:0x01b017b2]
+{
+	[aspect]
+	{
+	  f experience_value = 84080;
+	  f life = 4173;
+	  f max_life = 4173;
+	  f scale_multiplier = 2.3;
+	}
+	[common]
+	{
+		screen_name = "Ancient Alpha";
+	}
+	[defend]
+	{
+	  f defense = 1024;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.96436,0,1.31678,0xa7e68c7a;
+	}
+}
 [t:2w_wolf_gray,n:0x01b0038e]
 {
 	[placement]
@@ -4052,6 +4131,41 @@
 	  p position = -0.0637894,0,2.06689,0x8a4d980b;
 	}
 }
+[t:2w_krug_scavenger,n:0x01b017b8]
+{
+	[aspect]
+	{
+	  f experience_value = 32172;
+	  f life = 692;
+	  f max_life = 692;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_max = 50;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Rogue";
+	}
+	[defend]
+	{
+	  f defense = 200;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = hm_ra_g_c_2h2m_fin;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382684,0,0.92388;
+	  p position = 2.40945,0,-2.35492,0x9a3aaef4;
+	}
+}
 [t:2w_wolf_gray,n:0x01b0035e]
 {
 	[placement]
@@ -4092,14 +4206,6 @@
 	[placement]
 	{
 	  p position = 0.126083,0,1.03723,0xd30d6d1a;
-	}
-}
-[t:2w_wolf_gray,n:0x01b0034e]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.28542,0,1.03375,0x64175262;
 	}
 }
 [t:2w_wolf_gray,n:0x01b00350]
@@ -4421,6 +4527,14 @@
 	  p position = -1.86516,0,-3.66418,0x64175262;
 	}
 }
+[t:2w_wolf_gray,n:0x01b0034e]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.28542,0,1.03375,0x64175262;
+	}
+}
 [t:2w_wolf_gray_boss_01,n:0x01b00353]
 {
 	[placement]
@@ -4573,6 +4687,41 @@
 	[placement]
 	{
 	  p position = -12.1708,6.43056,-38.6137,0x874cbda8;
+	}
+}
+[t:2w_krug_scavenger,n:0x01b017b7]
+{
+	[aspect]
+	{
+	  f experience_value = 32172;
+	  f life = 692;
+	  f max_life = 692;
+	  f scale_multiplier = 1.4;
+	}
+	[attack]
+	{
+	  f damage_max = 50;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Krug Rogue";
+	}
+	[defend]
+	{
+	  f defense = 200;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = ax_ra_g_c_2h2b_fin;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382684,0,0.92388;
+	  p position = 8.30505,5.60002,-52.2739,0xd19a25df;
 	}
 }
 [t:2w_krug_scavenger,n:0x01b017a8]
@@ -6294,6 +6443,34 @@
 	  p position = 0.889404,0,0.287247,0xc09679b4;
 	}
 }
+[t:2w_swamp_stinger,n:0x01b017bd]
+{
+	[aspect]
+	{
+	  f experience_value = 22000;
+	  f life = 11704;
+	  f max_life = 11074;
+	  f scale_multiplier = 2.4;
+	}
+	[attack]
+	{
+	  f damage_max = 220;
+	  f damage_min = 180;
+	}
+	[common]
+	{
+		screen_name = "Monstriquoto";
+	}
+	[defend]
+	{
+	  f defense = 400;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.913544,0,1.1771,0xc09679b4;
+	}
+}
 [t:swamp_stinger,n:0x01b002a4]
 {
 	[placement]
@@ -6510,6 +6687,10 @@
 }
 [t:swamp_witch_boss_01,n:0x01b00122]
 {
+	[common]
+	{
+		screen_name = "Shammera";
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -6518,6 +6699,18 @@
 }
 [t:swamp_witch,n:0x01b00123]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
@@ -6526,6 +6719,18 @@
 }
 [t:swamp_witch,n:0x01b00124]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -6534,6 +6739,18 @@
 }
 [t:swamp_witch,n:0x01b00125]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -6542,6 +6759,18 @@
 }
 [t:swamp_witch,n:0x01b00126]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -9926,6 +10155,18 @@
 }
 [t:swamp_witch,n:0x01b0011f]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
@@ -9974,6 +10215,18 @@
 }
 [t:swamp_witch,n:0x01b00e89]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -10002,6 +10255,18 @@
 }
 [t:swamp_witch,n:0x01b0011e]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
@@ -10042,6 +10307,18 @@
 }
 [t:swamp_witch,n:0x01b00e8c]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -10120,6 +10397,18 @@
 }
 [t:swamp_witch,n:0x01b0010b]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -10128,6 +10417,18 @@
 }
 [t:swamp_witch,n:0x01b0010c]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
@@ -10136,6 +10437,18 @@
 }
 [t:swamp_witch,n:0x01b0010d]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
@@ -10336,6 +10649,18 @@
 }
 [t:swamp_witch,n:0x01b000c8]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 2.16485,1,2.8605,0x164df0f3;
@@ -10343,6 +10668,10 @@
 }
 [t:swamp_witch_boss_02,n:0x01b000c4]
 {
+	[common]
+	{
+		screen_name = "Tinthalia";
+	}
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -10351,6 +10680,18 @@
 }
 [t:swamp_witch,n:0x01b000c6]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -0.851505,0.999998,3.27309,0xefb68604;
@@ -10358,6 +10699,18 @@
 }
 [t:swamp_witch,n:0x01b000c7]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -0.15729,0.817186,1.50729,0xefb68604;
@@ -10365,6 +10718,10 @@
 }
 [t:swamp_witch_boss_02,n:0x01b000c5]
 {
+	[common]
+	{
+		screen_name = "Wuzzeratha";
+	}
 	[placement]
 	{
 	  p position = -3.90995,0,1.56991,0x708ed3af;
@@ -10372,6 +10729,18 @@
 }
 [t:swamp_witch,n:0x01b000c9]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -1.85662,0,0.0265734,0x708ed3af;
@@ -10379,6 +10748,18 @@
 }
 [t:swamp_witch,n:0x01b000ca]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -2.2047,0,3.68806,0x708ed3af;
@@ -10386,141 +10767,32 @@
 }
 [t:swamp_witch_boss_01,n:0x01b000c3]
 {
+	[common]
+	{
+		screen_name = "Norea";
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,-0.707107;
-	  p position = 2.08429,0,0.191559,0x167b4189;
+	  p position = 1.90875,0,0.13932,0x167b4189;
 	}
 }
 [t:swamp_witch,n:0x01b000cb]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 1.01917,-12,-5.56522,0x349ef023;
-	}
-}
-[t:2w_wolf_gray,n:0x01b01795]
-{
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,-0.382683;
-	  p position = -1.77478,0,-0.136654,0x01a296e4;
-	}
-}
-[t:2w_wolf_gray_boss_01,n:0x01b017b2]
-{
-	[aspect]
-	{
-	  f experience_value = 84080;
-	  f life = 4173;
-	  f max_life = 4173;
-	  f scale_multiplier = 2.3;
-	}
-	[common]
-	{
-		screen_name = "Ancient Alpha";
-	}
-	[defend]
-	{
-	  f defense = 1024;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.96436,0,1.31678,0xa7e68c7a;
-	}
-}
-[t:rock_golem,n:0x01b017b5]
-{
-	[aspect]
-	{
-	  f experience_value = 22000;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,-0.92388;
-	  p position = 0.652222,-1.55,-3.16862,0x4c907c29;
-	}
-}
-[t:rock_golem,n:0x01b017b6]
-{
-	[aspect]
-	{
-	  f experience_value = 22000;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,-5.08969e-007;
-	  p position = 1.17987,-1.55,2.6534,0x4c907c29;
-	}
-}
-[t:2w_krug_scavenger,n:0x01b017b7]
-{
-	[aspect]
-	{
-	  f experience_value = 32172;
-	  f life = 692;
-	  f max_life = 692;
-	  f scale_multiplier = 1.4;
-	}
-	[attack]
-	{
-	  f damage_max = 50;
-	  f damage_min = 30;
-	}
-	[common]
-	{
-		screen_name = "Krug Rogue";
-	}
-	[defend]
-	{
-	  f defense = 200;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_weapon_hand = ax_ra_g_c_2h2b_fin;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382684,0,0.92388;
-	  p position = 8.30505,5.60002,-52.2739,0xd19a25df;
-	}
-}
-[t:2w_krug_scavenger,n:0x01b017b8]
-{
-	[aspect]
-	{
-	  f experience_value = 32172;
-	  f life = 692;
-	  f max_life = 692;
-	  f scale_multiplier = 1.4;
-	}
-	[attack]
-	{
-	  f damage_max = 50;
-	  f damage_min = 30;
-	}
-	[common]
-	{
-		screen_name = "Krug Rogue";
-	}
-	[defend]
-	{
-	  f defense = 200;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_weapon_hand = hm_ra_g_c_2h2m_fin;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382684,0,0.92388;
-	  p position = 2.40945,0,-2.35492,0x9a3aaef4;
 	}
 }

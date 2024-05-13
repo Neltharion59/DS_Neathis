@@ -6,6 +6,8 @@
 	}
 	[magic]
 	{
+		effect_duration = 150+(#magic*1.56);
+		mana_cost_modifier = #maxlife*0.3;
 	  f required_level = 10;
 	}
 	[placement]

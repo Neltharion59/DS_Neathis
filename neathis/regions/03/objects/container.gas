@@ -234,6 +234,23 @@
 	  p position = 1.92357,0,2.34576,0xedced167;
 	}
 }
+[t:chest_csl_02_un_nt_r1,n:0x00401745]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.09233,-0.999948,-3.58904,0x44b4e4c1;
+		use_point_scids = 0x0040178e;
+	}
+}
 [t:barrel_glb_path2sd,n:0x0040177d]
 {
 	[placement]

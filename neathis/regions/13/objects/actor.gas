@@ -97,6 +97,50 @@
 	  p position = -0.703307,0,-3.0883,0xb9fb4bc4;
 	}
 }
+[t:phaedriel,n:0x01500556]
+{
+	[aspect]
+	{
+	  i gold_value = 0;
+	  b is_invincible = true;
+	  f max_life = 284.2;
+	  f max_mana = 124;
+	}
+	[common]
+	{
+		dev_instance_text = "mP";
+	  b is_single_player = false;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = phaedriel_mp;
+		}
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_ranged_weapon;
+		[equipment]
+		{
+			es_chest = bd_br_r_g_c_avg;
+			es_shield_hand = bw_g_c_c_m_r_fun;
+		}
+		[other]
+		{
+			il_main = bw_g_c_c_m_r_avg;
+		}
+	}
+	[mind]
+	{
+		combat_orders = co_free;
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  p position = 1.16468,0,3.20582,0xb9fb4bc4;
+	}
+}
 [t:tretch,n:0x01500555]
 {
 	[defend]
@@ -110,6 +154,18 @@
 }
 [t:swamp_witch,n:0x0150008f]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 2.00552,0,-2.22228,0x9969e16a;
@@ -117,6 +173,18 @@
 }
 [t:swamp_witch,n:0x0150008e]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -2.94301,0,-2.63297,0xd1fa5668;
@@ -334,6 +402,18 @@
 }
 [t:swamp_witch,n:0x01500050]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -342,6 +422,18 @@
 }
 [t:swamp_witch,n:0x015000ad]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -538,6 +630,18 @@
 }
 [t:swamp_witch,n:0x015000a2]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-6.02253e-007,0,1;
@@ -546,6 +650,18 @@
 }
 [t:swamp_witch,n:0x015000a3]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,6.02253e-007,0,1;
@@ -554,6 +670,18 @@
 }
 [t:swamp_witch,n:0x015000a4]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,-6.02253e-007,0,1;
@@ -564,6 +692,7 @@
 {
 	[common]
 	{
+		screen_name = "Rowhanna";
 		[instance_triggers]
 		{
 			[*]
@@ -583,6 +712,26 @@
 			}
 		}
 	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,1,0,-1.49012e-007;
@@ -593,6 +742,7 @@
 {
 	[common]
 	{
+		screen_name = "Tarrhion";
 		[instance_triggers]
 		{
 			[*]
@@ -723,6 +873,18 @@
 }
 [t:swamp_witch,n:0x01500055]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -747,6 +909,7 @@
 			[*]
 			{
 				action* = change_quest_state("13_witches_2","completed",0);
+				action* = change_quest_state("13_witches_2_mp","completed",0);
 			  b can_self_destruct = true;
 				condition* = receive_world_message("we_killed",0,"on_first_message");
 			  f delay = 0.000000;
@@ -763,7 +926,21 @@
 	}
 	[defend]
 	{
-	  f defense = 400;
+	  f defense = 350;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+		}
 	}
 	[placement]
 	{
@@ -773,6 +950,18 @@
 }
 [t:swamp_witch,n:0x01500057]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -781,6 +970,18 @@
 }
 [t:swamp_witch,n:0x015000be]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -789,6 +990,18 @@
 }
 [t:swamp_witch,n:0x0150043d]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -824,10 +1037,6 @@
 	{
 		screen_name = "Swamp-Bound Demon";
 	}
-	[defend]
-	{
-	  f defense = 412;
-	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -847,6 +1056,18 @@
 }
 [t:swamp_witch,n:0x015000bc]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -855,6 +1076,18 @@
 }
 [t:swamp_witch,n:0x015001ea]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -863,6 +1096,18 @@
 }
 [t:swamp_witch,n:0x01500040]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -882,6 +1127,18 @@
 }
 [t:swamp_witch,n:0x01500042]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -890,6 +1147,18 @@
 }
 [t:swamp_witch,n:0x01500041]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -920,6 +1189,18 @@
 }
 [t:swamp_witch,n:0x0150004f]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -961,6 +1242,18 @@
 }
 [t:swamp_witch,n:0x015000ba]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -969,6 +1262,18 @@
 }
 [t:swamp_witch,n:0x015000b0]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -1017,6 +1322,18 @@
 }
 [t:swamp_witch,n:0x0150009b]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,1,0,0;
@@ -1036,6 +1353,18 @@
 }
 [t:swamp_witch,n:0x01500097]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -3.87759,0.975696,3.37848,0x33124a77;
@@ -1054,6 +1383,18 @@
 }
 [t:swamp_witch,n:0x01500098]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 0.0984573,0.903652,2.6971,0x1d86a524;
@@ -1083,6 +1424,18 @@
 }
 [t:swamp_witch,n:0x0150009c]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 1.84599,0,0.24791,0x387da3c1;
@@ -1133,6 +1486,8 @@
 			[*]
 			{
 				action* = send_world_message("we_req_use",0x01500541,0f,"default","every",0);
+				action* = send_world_message("we_req_use",0x01500558,0f,"default","every",0);
+				action* = send_world_message("we_req_use",0x01500557,0f,"default","every",0);
 			  b can_self_destruct = true;
 				condition* = receive_world_message("we_killed",0,"on_first_message");
 			  f delay = 0.000000;
@@ -1159,6 +1514,18 @@
 }
 [t:swamp_witch,n:0x0150009d]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -1178,6 +1545,18 @@
 }
 [t:swamp_witch,n:0x0150053f]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -1230,6 +1609,18 @@
 }
 [t:swamp_witch,n:0x015000a0]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -3.53781,0,1.46408,0xe156e2f7;
@@ -1259,6 +1650,18 @@
 }
 [t:swamp_witch,n:0x01500540]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -1289,6 +1692,18 @@
 }
 [t:swamp_witch,n:0x0150009e]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 3.02371,0,0.479774,0x4305204c;
@@ -1296,6 +1711,18 @@
 }
 [t:swamp_witch,n:0x0150009f]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -0.2052,0,3.39793,0x4305204c;
@@ -1314,6 +1741,18 @@
 }
 [t:swamp_witch,n:0x0150009a]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 0.596657,1.95,3.75043,0xd5a61d79;
@@ -1354,6 +1793,18 @@
 }
 [t:swamp_witch,n:0x01500099]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -0.716362,0,3.00867,0xaf7a61c1;
@@ -1394,6 +1845,18 @@
 }
 [t:swamp_witch,n:0x01500096]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 3.72495,0,-0.409462,0x21868864;
@@ -1445,6 +1908,18 @@
 }
 [t:swamp_witch,n:0x01500092]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 2.62691,0,-2.64864,0xc7554d1c;
@@ -1463,6 +1938,18 @@
 }
 [t:swamp_witch,n:0x01500094]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -0.822571,0,-0.180984,0x766d8c8b;
@@ -1492,6 +1979,18 @@
 }
 [t:swamp_witch,n:0x01500095]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 2.81131,0,0.281082,0x9b8f89d8;
@@ -1565,6 +2064,18 @@
 }
 [t:swamp_witch,n:0x01500093]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -1.58189,0,-0.058815,0xf9904629;
@@ -1584,6 +2095,18 @@
 }
 [t:swamp_witch,n:0x01500090]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -2.17063,0,-1.72461,0x015fe15d;
@@ -1602,6 +2125,18 @@
 }
 [t:swamp_witch,n:0x01500091]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = 3.63251,-2,-4.72868,0x22eb6291;
@@ -1609,6 +2144,18 @@
 }
 [t:swamp_witch,n:0x0150002e]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -0.235279,0,-0.901145,0x3c3095a1;
@@ -1616,6 +2163,18 @@
 }
 [t:swamp_witch,n:0x0150002f]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -1.95481,0,-0.928695,0x3c3095a1;
@@ -1645,6 +2204,18 @@
 }
 [t:swamp_witch,n:0x01500030]
 {
+	[inventory]
+	{
+		[equipment]
+		{
+			es_spellbook = book_glb_magic_01;
+		}
+		[other]
+		{
+			il_main = potion_mana_large;
+			il_main = potion_mana_large;
+		}
+	}
 	[placement]
 	{
 	  p position = -3.90658,2,-1.07748,0xd5c00d1d;
@@ -1670,49 +2241,5 @@
 	[placement]
 	{
 	  p position = 3.89561,0,1.72171,0xaffdc6f2;
-	}
-}
-[t:phaedriel,n:0x01500556]
-{
-	[aspect]
-	{
-	  i gold_value = 0;
-	  b is_invincible = true;
-	  f max_life = 284.2;
-	  f max_mana = 124;
-	}
-	[common]
-	{
-		dev_instance_text = "mP";
-	  b is_single_player = false;
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = phaedriel_mp;
-		}
-	}
-	[inventory]
-	{
-		selected_active_location = il_active_ranged_weapon;
-		[equipment]
-		{
-			es_chest = bd_br_r_g_c_avg;
-			es_shield_hand = bw_g_c_c_m_r_fun;
-		}
-		[other]
-		{
-			il_main = bw_g_c_c_m_r_avg;
-		}
-	}
-	[mind]
-	{
-		combat_orders = co_free;
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  p position = 1.16468,0,3.20582,0xb9fb4bc4;
 	}
 }

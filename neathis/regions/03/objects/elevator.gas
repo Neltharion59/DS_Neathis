@@ -16,7 +16,17 @@
 	  i elevator_door_level1 = 1;
 	  i elevator_door_level2 = 1;
 	  x elevator_node = 0xE34DCFF4;
-		material = "wood";
+		level1_message = we_req_deactivate;
+	  f level1_message_delay = 0;
+	  x level1_scid = 0x0040178F;
+		level2_message = we_req_deactivate;
+	  f level2_message_delay = 0;
+	  x level2_scid = 0x0040178F;
+		material = "dc_pulley";
+	  f moving1_message_delay = 0;
+	  x moving1_scid = 0x0040178F;
+	  f moving2_message_delay = 0;
+	  x moving2_scid = 0x0040178F;
 	}
 	[placement]
 	{

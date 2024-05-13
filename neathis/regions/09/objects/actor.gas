@@ -814,6 +814,16 @@
 }
 [t:darkling_reveal,n:0x0100046f]
 {
+	[aspect]
+	{
+	  f life = 114;
+	  f max_life = 114;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 40;
+	  f damage_bonus_min_cmagic = 25;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
@@ -822,6 +832,16 @@
 }
 [t:darkling_reveal,n:0x01000470]
 {
+	[aspect]
+	{
+	  f life = 114;
+	  f max_life = 114;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 40;
+	  f damage_bonus_min_cmagic = 25;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
@@ -830,6 +850,16 @@
 }
 [t:darkling_reveal,n:0x01000471]
 {
+	[aspect]
+	{
+	  f life = 114;
+	  f max_life = 114;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 40;
+	  f damage_bonus_min_cmagic = 25;
+	}
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
@@ -1850,6 +1880,38 @@
 	  p position = -2.26135,-0.189926,-0.379848,0x3a8061bb;
 	}
 }
+[t:klaw_boss_01,n:0x01000369]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.39865,-0.100866,-0.0513954,0x20709d58;
+	}
+}
+[t:klaw,n:0x0100036d]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -3.73666,0.674162,1.87081,0xbb93c3e5;
+	}
+}
+[t:klaw,n:0x0100036f]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -0.757492,0.0457962,0.389416,0xbb93c3e5;
+	}
+}
+[t:klaw,n:0x0100036e]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 0.474968,-0.50497,-1.32496,0x0ece7cb2;
+	}
+}
 [t:klaw,n:0x01000070]
 {
 	[placement]
@@ -1884,6 +1946,14 @@
 	[placement]
 	{
 	  p position = -2.77556,1.90735e-006,-1.496,0x3fdadbf7;
+	}
+}
+[t:klaw_boss_01,n:0x0100036c]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.374893,0,-3.32622,0x3fdadbf7;
 	}
 }
 [t:klaw,n:0x0100007b]
@@ -2052,9 +2122,7 @@
 {
 	[aspect]
 	{
-	  f experience_value = 200;
-	  f life = 174;
-	  f max_life = 174;
+	  f experience_value = 600;
 	  f scale_multiplier = 1.2;
 	}
 	[attack]
@@ -2083,10 +2151,6 @@
 			  b start_active = true;
 			}
 		}
-	}
-	[defend]
-	{
-	  f defense = 100;
 	}
 	[placement]
 	{
@@ -3241,13 +3305,5 @@
 	[placement]
 	{
 	  p position = -0.924988,-0.0678604,1.53929,0x9cec1e0e;
-	}
-}
-[t:klaw_boss_01,n:0x01000369]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 1.39865,-0.100866,-0.0513954,0x20709d58;
 	}
 }

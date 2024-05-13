@@ -649,10 +649,38 @@
 }
 [t:cyclops,n:0x0160005f]
 {
+	[aspect]
+	{
+	  f experience_value = 33446;
+	  f life = 2047;
+	  f max_life = 2047;
+	  f scale_multiplier = 1.2;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 150;
+	  f damage_bonus_min_melee = 125;
+	}
+	[common]
+	{
+		screen_name = "Karvell the Beatdowner";
+	}
+	[defend]
+	{
+	  f defense = 300;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_shield_hand = sh_ra_w_g_o_t_l_avg;
+			es_weapon_hand = hm_g_c_1h1m_avg;
+		}
+	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.557976,0,0.930651,0x060eba1a;
+	  q orientation = 0,-2.98023e-008,0,1;
+	  p position = -3.43756,0,1.65706,0xb610fb20;
 	}
 }
 [t:slarg,n:0x01600059]
@@ -711,23 +739,15 @@
 	  p position = 3.51322,0,-0.0296669,0xdba534a7;
 	}
 }
-[t:cyclops,n:0x0160005b]
+[t:cyclops,n:0x0160005e]
 {
 	[inventory]
 	{
 		[equipment]
 		{
-			es_shield_hand = sh_u_g_c_r_m_avg;
-			es_weapon_hand = ax_g_o_1h1b_low;
+			es_weapon_hand = st_un_tiger;
 		}
 	}
-	[placement]
-	{
-	  p position = 0.103439,0,0.385144,0x57f842d5;
-	}
-}
-[t:cyclops,n:0x0160005e]
-{
 	[placement]
 	{
 	  q orientation = 0,0.382683,0,0.92388;
@@ -755,12 +775,32 @@
 	{
 		[equipment]
 		{
-			es_weapon_hand = mc_g_c_s_1h_avg;
+			es_weapon_hand = sd_g_c_sc_1h_avg;
 		}
 	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -1.53817,0,-1.70966,0xeb577182;
+	}
+}
+[t:cyclops,n:0x01600130]
+{
+	[attack]
+	{
+	  f damage_bonus_max_melee = 100;
+	  f damage_bonus_min_melee = 100;
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_weapon_hand = sd_g_c_fa_1h_avg;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382684,0,0.92388;
+	  p position = -2.19453,0,-1.71402,0x5ffc97a7;
 	}
 }

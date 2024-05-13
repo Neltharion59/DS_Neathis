@@ -1162,6 +1162,47 @@
 	  p position = 3.03992,0,-0.242584,0x42a742e6;
 	}
 }
+[t:ulora,n:0x00202d98]
+{
+	[aspect]
+	{
+	  f max_life = 49;
+	  f max_mana = 30;
+	}
+	[common]
+	{
+		dev_instance_text = "MP";
+	  b is_single_player = false;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = ulora_mp;
+		}
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_le_f_g_c_fun;
+			es_feet = bo_bo_le_f_g_c_avg;
+		}
+		[other]
+		{
+			il_main = bw_g_c_s_m_c_low;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2.89954,0,-0.117218,0x42a742e6;
+	}
+}
 [t:dog_sleeping,n:0x0020023e]
 {
 	[placement]
@@ -1894,46 +1935,5 @@
 	[placement]
 	{
 	  p position = -2.06219,-1.2,3.10517,0x8cc7e92f;
-	}
-}
-[t:ulora,n:0x00202d98]
-{
-	[aspect]
-	{
-	  f max_life = 49;
-	  f max_mana = 30;
-	}
-	[common]
-	{
-		dev_instance_text = "MP";
-	  b is_single_player = false;
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = ulora_mp;
-		}
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_chest = bd_le_f_g_c_fun;
-			es_feet = bo_bo_le_f_g_c_avg;
-		}
-		[other]
-		{
-			il_main = bw_g_c_s_m_c_low;
-		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\common\job_talk.skrit;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.89954,0,-0.117218,0x42a742e6;
 	}
 }

@@ -119,6 +119,58 @@
 	  p position = 3.54636,0,-0.431936,0xdc90bb3b;
 	}
 }
+[t:spider_frostnid,n:0x00a00376]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -3.58332,0,0.603882,0xdc90bb3b;
+	}
+}
+[t:spider_frostnid,n:0x00a003be]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -2.72564,0,2.65592,0xdc90bb3b;
+	}
+}
 [t:spider_frostnid,n:0x00a005f8]
 {
 	[aspect]
@@ -223,11 +275,142 @@
 	  p position = -2.57331,0,0.813723,0xdc90bb3b;
 	}
 }
+[t:spider_frostnid,n:0x00a00712]
+{
+	[aspect]
+	{
+	  f experience_value = 100;
+	  f life = 136;
+	  f max_life = 136;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 13;
+	  f damage_bonus_min_melee = 11;
+	}
+	[common]
+	{
+		screen_name = "Cryo Familiar";
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -1.82266,0,2.02118,0xdc90bb3b;
+	}
+}
+[t:spider_frostnid,n:0x00a00373]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 0.474941,0,1.69658,0xb97c8372;
+	}
+}
+[t:spider_frostnid,n:0x00a00374]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 0.342953,0,1.03625,0xb97c8372;
+	}
+}
+[t:spider_frostnid,n:0x00a00375]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 0.126877,0,0.164928,0xb97c8372;
+	}
+}
+[t:spider_frostnid,n:0x00a00378]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 3.4258,0,1.14235,0xb97c8372;
+	}
+}
 [t:braak_magic,n:0x00a003a5]
 {
 	[aspect]
 	{
-	  f experience_value = 150;
+	  f experience_value = 400;
 	  f life = 297;
 	  f life_recovery_period = 5;
 	  f life_recovery_unit = 1;
@@ -236,12 +419,30 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_cmagic = 12;
-	  f damage_bonus_min_cmagic = 12;
+	  f damage_bonus_max_cmagic = 42;
+	  f damage_bonus_min_cmagic = 36;
 	}
 	[common]
 	{
 		screen_name = "Mystico the Glacial Mentor";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x00A00330,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
 	[defend]
 	{
@@ -255,6 +456,32 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 2.24409,0,1.58587,0xb97c8372;
+	}
+}
+[t:spider_frostnid,n:0x00a003bd]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.74769,0,0.0488319,0xb97c8372;
 	}
 }
 [t:spider_frostnid,n:0x00a005f5]
@@ -333,6 +560,86 @@
 	[placement]
 	{
 	  p position = 0.486641,0,-0.594181,0xb97c8372;
+	}
+}
+[t:spider_frostnid,n:0x00a00710]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -0.419195,0,0.4259,0xb97c8372;
+	}
+}
+[t:spider_frostnid,n:0x00a00711]
+{
+	[aspect]
+	{
+	  f experience_value = 100;
+	  f life = 136;
+	  f max_life = 136;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 13;
+	  f damage_bonus_min_melee = 11;
+	}
+	[common]
+	{
+		screen_name = "Cryo Familiar";
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -0.340117,0,1.40837,0xb97c8372;
+	}
+}
+[t:spider_frostnid,n:0x00a0071a]
+{
+	[aspect]
+	{
+	  f experience_value = 100;
+	  f life = 136;
+	  f max_life = 136;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 13;
+	  f damage_bonus_min_melee = 11;
+	}
+	[common]
+	{
+		screen_name = "Cryo Familiar";
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 1.36847,0,0.0699043,0xb97c8372;
 	}
 }
 [t:spider_frostnid,n:0x00a00334]
@@ -468,6 +775,34 @@
 	  p position = -1.31462,-0.777615,-1.55524,0x32106347;
 	}
 }
+[t:moth,n:0x00a00338]
+{
+	[aspect]
+	{
+	  f experience_value = 312;
+	  f life = 178;
+	  f max_life = 178;
+	  f scale_multiplier = 2.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 7;
+	  f damage_bonus_min_cmagic = 5;
+	}
+	[common]
+	{
+		screen_name = "Gorgonoth";
+	}
+	[defend]
+	{
+	  f defense = 99;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -1.09423,0,-0.459946,0xe3971c89;
+	}
+}
 [t:skrubb_small,n:0x00a0007e]
 {
 	[placement]
@@ -543,6 +878,20 @@
 	  p position = -0.856607,3.8147e-006,-1.8209,0x09a93025;
 	}
 }
+[t:moth,n:0x00a0071c]
+{
+	[placement]
+	{
+	  p position = 1.33157,0,-1.68413,0x4a8e18cc;
+	}
+}
+[t:moth,n:0x00a0071d]
+{
+	[placement]
+	{
+	  p position = -0.424473,0,-1.4922,0x4a8e18cc;
+	}
+}
 [t:moth,n:0x00a00022]
 {
 	[placement]
@@ -602,6 +951,146 @@
 	  p position = -0.753742,0,0.979645,0xc374034b;
 	}
 }
+[t:slarg,n:0x00a00723]
+{
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f life = 148;
+	  f max_life = 148;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_max = 38;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Lamprey";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.81107,-0.05,3.99836,0xf389f7de;
+	}
+}
+[t:slarg,n:0x00a00725]
+{
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f life = 148;
+	  f max_life = 148;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_max = 38;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Lamprey";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -2.27682,2,3.62896,0x8f80c8e0;
+	}
+}
+[t:slarg,n:0x00a00726]
+{
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f life = 148;
+	  f max_life = 148;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_max = 38;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Lamprey";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.0509872,2,3.76246,0x8f80c8e0;
+	}
+}
+[t:slarg,n:0x00a00727]
+{
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f life = 148;
+	  f max_life = 148;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_max = 38;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Lamprey";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 1.93227,2,3.9223,0x8f80c8e0;
+	}
+}
+[t:slarg,n:0x00a00729]
+{
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f life = 148;
+	  f max_life = 148;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_max = 38;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Lamprey";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.95933,-11.9865,1.90525,0x3b428acc;
+	}
+}
 [t:spider_frostnid,n:0x00a005f9]
 {
 	[aspect]
@@ -626,6 +1115,62 @@
 	[placement]
 	{
 	  p position = 0.320484,11.9556,1.82246,0x7e04fe94;
+	}
+}
+[t:slarg,n:0x00a00724]
+{
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f life = 148;
+	  f max_life = 148;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_max = 38;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Lamprey";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 0.842842,2,3.69604,0xeb66635d;
+	}
+}
+[t:slarg,n:0x00a00728]
+{
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f life = 148;
+	  f max_life = 148;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_max = 38;
+	  f damage_min = 30;
+	}
+	[common]
+	{
+		screen_name = "Lamprey";
+	}
+	[defend]
+	{
+	  f defense = 50;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -0.61364,2,3.79241,0xeb66635d;
 	}
 }
 [t:moth,n:0x00a00001]
@@ -708,6 +1253,58 @@
 	  p position = -1.05266,0,-3.05824,0xa95ec032;
 	}
 }
+[t:moth,n:0x00a0003f]
+{
+	[placement]
+	{
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = 2.08874,0,1.75698,0xed5a7472;
+	}
+}
+[t:moth,n:0x00a00040]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = 3.15524,0,1.029,0xed5a7472;
+	}
+}
+[t:moth,n:0x00a00041]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.92388,0,0.382683;
+	  p position = 1.8438,0,0.327206,0xed5a7472;
+	}
+}
+[t:moth,n:0x00a00279]
+{
+	[aspect]
+	{
+	  f experience_value = 312;
+	  f life = 178;
+	  f max_life = 178;
+	  f scale_multiplier = 2.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 7;
+	  f damage_bonus_min_cmagic = 5;
+	}
+	[common]
+	{
+		screen_name = "Gorgonoth";
+	}
+	[defend]
+	{
+	  f defense = 99;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 1.34923,0,-3.63501,0xeae0de59;
+	}
+}
 [t:moth,n:0x00a00034]
 {
 	[placement]
@@ -769,32 +1366,25 @@
 	  p position = -0.910576,-3.8147e-006,-1.16884,0x3dffd6de;
 	}
 }
-[t:moth,n:0x00a00279]
+[t:moth,n:0x00a00042]
 {
-	[aspect]
-	{
-	  f experience_value = 312;
-	  f life = 178;
-	  f max_life = 178;
-	  f scale_multiplier = 2.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 7;
-	  f damage_bonus_min_cmagic = 5;
-	}
-	[common]
-	{
-		screen_name = "Gorgonoth";
-	}
-	[defend]
-	{
-	  f defense = 99;
-	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 1.34923,0,-3.63501,0xeae0de59;
+	  p position = -0.368385,0,-2.27271,0x300e0de0;
+	}
+}
+[t:moth,n:0x00a00043]
+{
+	[placement]
+	{
+	  p position = -1.92987,0,-1.92284,0x300e0de0;
+	}
+}
+[t:moth,n:0x00a00044]
+{
+	[placement]
+	{
+	  p position = -0.295593,0,-0.610382,0x300e0de0;
 	}
 }
 [t:skrubb_small,n:0x00a00084]
@@ -842,49 +1432,54 @@
 	  p position = 1.78128,-12,-5.64993,0xe5872dc5;
 	}
 }
-[t:moth,n:0x00a00040]
+[t:moth,n:0x00a00335]
 {
-	[placement]
+	[aspect]
 	{
-	  q orientation = 0,-0.92388,0,0.382683;
-	  p position = 3.15524,0,1.029,0xed5a7472;
+	  f experience_value = 655;
+	  f life = 617;
+	  f max_life = 617;
+	  f scale_multiplier = 3.5;
 	}
-}
-[t:moth,n:0x00a00041]
-{
-	[placement]
+	[attack]
 	{
-	  q orientation = 0,-0.92388,0,0.382683;
-	  p position = 1.8438,0,0.327206,0xed5a7472;
+	  f damage_bonus_max_cmagic = 45;
+	  f damage_bonus_min_cmagic = 40;
 	}
-}
-[t:moth,n:0x00a00042]
-{
-	[placement]
+	[common]
 	{
-	  p position = -0.368385,0,-2.27271,0x300e0de0;
+		screen_name = "Grand Gorgonoth";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x00A00337,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
 	}
-}
-[t:moth,n:0x00a00043]
-{
-	[placement]
+	[defend]
 	{
-	  p position = -1.92987,0,-1.92284,0x300e0de0;
+	  f defense = 120;
 	}
-}
-[t:moth,n:0x00a00044]
-{
-	[placement]
+	[mind]
 	{
-	  p position = -0.295593,0,-0.610382,0x300e0de0;
+		movement_orders = mo_hold;
 	}
-}
-[t:moth,n:0x00a0003f]
-{
 	[placement]
 	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = 2.08874,0,1.75698,0xed5a7472;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -2.92393,0,0.320824,0x086326a1;
 	}
 }
 [t:moth,n:0x00a00045]
@@ -1306,8 +1901,8 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_nmagic = 40;
-	  f damage_bonus_min_nmagic = 40;
+	  f damage_bonus_max_nmagic = 33;
+	  f damage_bonus_min_nmagic = 33;
 	}
 	[common]
 	{
@@ -1316,7 +1911,6 @@
 	}
 	[mind]
 	{
-	  b actor_auto_heals_self_life = true;
 	  b actor_auto_reanimates_friends = true;
 	  b actor_auto_switches_to_magic = true;
 	  b actor_auto_switches_to_melee = true;
@@ -1650,6 +2244,33 @@
 	  p position = 3.0647,-3.65,-1.03638,0x75f77bcb;
 	}
 }
+[t:spider_frostnid,n:0x00a00719]
+{
+	[aspect]
+	{
+	  f experience_value = 100;
+	  f life = 136;
+	  f max_life = 136;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 13;
+	  f damage_bonus_min_melee = 11;
+	}
+	[common]
+	{
+		screen_name = "Cryo Familiar";
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 1.98882,-3.65,0.0484543,0x75f77bcb;
+	}
+}
 [t:moth,n:0x00a003bc]
 {
 	[aspect]
@@ -1675,6 +2296,34 @@
 	[placement]
 	{
 	  p position = -3.02426,0,-0.683914,0x5c7abf44;
+	}
+}
+[t:moth,n:0x00a00371]
+{
+	[aspect]
+	{
+	  f experience_value = 312;
+	  f life = 178;
+	  f max_life = 178;
+	  f scale_multiplier = 2.5;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 7;
+	  f damage_bonus_min_cmagic = 5;
+	}
+	[common]
+	{
+		screen_name = "Gorgonoth";
+	}
+	[defend]
+	{
+	  f defense = 99;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.05703,0,1.8485,0xcfa6f151;
 	}
 }
 [t:moth,n:0x00a005b2]
@@ -1722,8 +2371,8 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_nmagic = 40;
-	  f damage_bonus_min_nmagic = 40;
+	  f damage_bonus_max_nmagic = 33;
+	  f damage_bonus_min_nmagic = 33;
 	}
 	[common]
 	{
@@ -1732,7 +2381,6 @@
 	}
 	[mind]
 	{
-	  b actor_auto_heals_self_life = true;
 	  b actor_auto_reanimates_friends = true;
 	  b actor_auto_switches_to_magic = true;
 	  b actor_auto_switches_to_melee = true;
@@ -2040,6 +2688,33 @@
 	  p position = 1.31223,-4.97114,-7.394,0xdfed3a59;
 	}
 }
+[t:spider_frostnid,n:0x00a00717]
+{
+	[aspect]
+	{
+	  f experience_value = 100;
+	  f life = 136;
+	  f max_life = 136;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 13;
+	  f damage_bonus_min_melee = 11;
+	}
+	[common]
+	{
+		screen_name = "Cryo Familiar";
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -0.141068,-3,-0.224792,0xdfed3a59;
+	}
+}
 [t:merik,n:0x00a0039d]
 {
 	[actor]
@@ -2053,8 +2728,8 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_nmagic = 40;
-	  f damage_bonus_min_nmagic = 40;
+	  f damage_bonus_max_nmagic = 33;
+	  f damage_bonus_min_nmagic = 33;
 	}
 	[common]
 	{
@@ -2063,7 +2738,6 @@
 	}
 	[mind]
 	{
-	  b actor_auto_heals_self_life = true;
 	  b actor_auto_reanimates_friends = true;
 	  b actor_auto_switches_to_magic = true;
 	  b actor_auto_switches_to_melee = true;
@@ -2423,6 +3097,548 @@
 	  p position = 1.41438,-3.65,0.528603,0xee02b7ee;
 	}
 }
+[t:spider_frostnid,n:0x00a00716]
+{
+	[aspect]
+	{
+	  f experience_value = 100;
+	  f life = 136;
+	  f max_life = 136;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 13;
+	  f damage_bonus_min_melee = 11;
+	}
+	[common]
+	{
+		screen_name = "Cryo Familiar";
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 0.402977,-3.65,0.986252,0xee02b7ee;
+	}
+}
+[t:spider_frostnid,n:0x00a00735]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 6.45755,-4.65,-5.55058,0xee02b7ee;
+	}
+}
+[t:spider_frostnid,n:0x00a00736]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 5.91463,-4.65,-5.73714,0xee02b7ee;
+	}
+}
+[t:spider_frostnid,n:0x00a00737]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 6.65343,-4.65,-5.40146,0xee02b7ee;
+	}
+}
+[t:spider_frostnid,n:0x00a00738]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 5.84616,-4.65,-5.70104,0xee02b7ee;
+	}
+}
+[t:spider_frostnid,n:0x00a006c6]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -2.78481,0,-2.91234,0xffe65ebb;
+	}
+}
+[t:spider_frostnid,n:0x00a006c7]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -7.62939e-005,0,-3.1592,0xffe65ebb;
+	}
+}
+[t:spider_frostnid,n:0x00a00706]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -1.46536,0,-1.39605,0xffe65ebb;
+	}
+}
+[t:spider_frostnid,n:0x00a00707]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 0.786255,0,-2.27296,0xffe65ebb;
+	}
+}
+[t:spider_frostnid,n:0x00a00708]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.16682,0,-3.93479,0xffe65ebb;
+	}
+}
+[t:spider_frostnid,n:0x00a0070a]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.06735,0,-2.28484,0xffe65ebb;
+	}
+}
+[t:spider_frostnid,n:0x00a0070b]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -2.26588,0,-1.77316,0xffe65ebb;
+	}
+}
+[t:spider_frostnid,n:0x00a00714]
+{
+	[aspect]
+	{
+	  f experience_value = 100;
+	  f life = 136;
+	  f max_life = 136;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 13;
+	  f damage_bonus_min_melee = 11;
+	}
+	[common]
+	{
+		screen_name = "Cryo Familiar";
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -2.36747,0,-1.65966,0xffe65ebb;
+	}
+}
+[t:spider_frostnid,n:0x00a00732]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.87588,0,-0.960514,0xffe65ebb;
+	}
+}
+[t:spider_frostnid,n:0x00a00733]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.36774,0,0.435669,0xffe65ebb;
+	}
+}
+[t:spider_frostnid,n:0x00a00734]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 1.4831,0,0.608204,0xffe65ebb;
+	}
+}
+[t:merik,n:0x00a0057f]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f mana_recovery_period = 1;
+	  f max_life = 186.2;
+	  f max_mana = 264;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_nmagic = 33;
+	  f damage_bonus_min_nmagic = 33;
+	}
+	[common]
+	{
+		membership = krug, party_krug_shaman, monster;
+		screen_name = "Ice Mage Apprentice";
+	}
+	[mind]
+	{
+	  b actor_auto_reanimates_friends = true;
+	  b actor_auto_switches_to_magic = true;
+	  b actor_auto_switches_to_melee = true;
+	  b actor_auto_switches_to_ranged = true;
+	  f com_range = 14;
+		combat_orders = co_free;
+		disposition_orders = ad_offensive;
+	  f inner_comfort_zone_range = 14;
+	  f limited_movement_range = 14;
+	  f melee_engage_range = 14;
+		movement_orders = mo_free;
+	  f outer_comfort_zone_range = 14;
+	  f ranged_engage_range = 14;
+	  f sight_range = 18;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -1.13772,0,2.42789,0x1c0bcdbf;
+	}
+}
+[t:spider_frostnid,n:0x00a0058f]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 1.73618,0,1.04137,0x1c0bcdbf;
+	}
+}
+[t:spider_frostnid,n:0x00a00595]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.34091,0,-0.451561,0x1c0bcdbf;
+	}
+}
+[t:spider_frostnid,n:0x00a00598]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.62901,0,-2.2634,0x1c0bcdbf;
+	}
+}
 [t:spider_frostnid,n:0x00a005c0]
 {
 	[aspect]
@@ -2449,6 +3665,215 @@
 	  p position = 1.22009,0,3.61784,0x1c0bcdbf;
 	}
 }
+[t:spider_frostnid,n:0x00a006ff]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -3.59842,0,1.63776,0x1c0bcdbf;
+	}
+}
+[t:spider_frostnid,n:0x00a00700]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -0.440811,0,2.77721,0x1c0bcdbf;
+	}
+}
+[t:spider_frostnid,n:0x00a00701]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.72108,0,1.45923,0x1c0bcdbf;
+	}
+}
+[t:spider_frostnid,n:0x00a00709]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -3.70955,0,2.95604,0x1c0bcdbf;
+	}
+}
+[t:spider_frostnid,n:0x00a0070f]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 3.88649,0,-2.00214,0x1c0bcdbf;
+	}
+}
+[t:spider_frostnid,n:0x00a00713]
+{
+	[aspect]
+	{
+	  f experience_value = 100;
+	  f life = 136;
+	  f max_life = 136;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 13;
+	  f damage_bonus_min_melee = 11;
+	}
+	[common]
+	{
+		screen_name = "Cryo Familiar";
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 0.361546,0,2.42402,0x1c0bcdbf;
+	}
+}
+[t:spider_frostnid,n:0x00a00739]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 3.50555,0,1.47803,0x1c0bcdbf;
+	}
+}
+[t:spider_frostnid,n:0x00a0073a]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.45357,0,2.20652,0x1c0bcdbf;
+	}
+}
 [t:spider_frostnid,n:0x00a005d8]
 {
 	[aspect]
@@ -2473,6 +3898,442 @@
 	[placement]
 	{
 	  p position = 2.74752,0,-0.425552,0x38782c73;
+	}
+}
+[t:spider_frostnid,n:0x00a00705]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -3.31795,0,-2.25687,0x38782c73;
+	}
+}
+[t:spider_frostnid,n:0x00a0070c]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -2.75149,0,-2.6432,0x38782c73;
+	}
+}
+[t:spider_frostnid,n:0x00a0072c]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -2.61756,0,1.35076,0x38782c73;
+	}
+}
+[t:spider_frostnid,n:0x00a0072d]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -0.271626,0,0.888298,0x38782c73;
+	}
+}
+[t:spider_frostnid,n:0x00a0072e]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 0.463036,0,-0.254982,0x38782c73;
+	}
+}
+[t:merik,n:0x00a00586]
+{
+	[actor]
+	{
+		alignment = aa_evil;
+	}
+	[aspect]
+	{
+	  f experience_value = 60;
+	  f mana_recovery_period = 1;
+	  f max_life = 186.2;
+	  f max_mana = 264;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_nmagic = 33;
+	  f damage_bonus_min_nmagic = 33;
+	}
+	[common]
+	{
+		membership = krug, party_krug_shaman, monster;
+		screen_name = "Ice Mage Apprentice";
+	}
+	[mind]
+	{
+	  b actor_auto_reanimates_friends = true;
+	  b actor_auto_switches_to_magic = true;
+	  b actor_auto_switches_to_melee = true;
+	  b actor_auto_switches_to_ranged = true;
+	  f com_range = 14;
+		combat_orders = co_free;
+		disposition_orders = ad_offensive;
+	  f inner_comfort_zone_range = 14;
+	  f limited_movement_range = 14;
+	  f melee_engage_range = 14;
+		movement_orders = mo_free;
+	  f outer_comfort_zone_range = 14;
+	  f ranged_engage_range = 14;
+	  f sight_range = 18;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 2.79477,0,3.00422,0x0f7e412e;
+	}
+}
+[t:spider_frostnid,n:0x00a005f4]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 3.61368,0,-1.57345,0x0f7e412e;
+	}
+}
+[t:spider_frostnid,n:0x00a005fb]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 1.30997,0,0.934021,0x0f7e412e;
+	}
+}
+[t:spider_frostnid,n:0x00a006a4]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.37504,0,3.53696,0x0f7e412e;
+	}
+}
+[t:spider_frostnid,n:0x00a00703]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.71667,0,-2.83147,0x0f7e412e;
+	}
+}
+[t:spider_frostnid,n:0x00a00704]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 0.421448,0,1.19661,0x0f7e412e;
+	}
+}
+[t:spider_frostnid,n:0x00a0070d]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 1.38242,0,2.72076,0x0f7e412e;
+	}
+}
+[t:spider_frostnid,n:0x00a0070e]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.14494,0,-0.717609,0x0f7e412e;
+	}
+}
+[t:spider_frostnid,n:0x00a0072f]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -3.16396,0,3.46437,0x0f7e412e;
+	}
+}
+[t:spider_frostnid,n:0x00a00730]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -3.61864,0,-1.47962,0x0f7e412e;
+	}
+}
+[t:spider_frostnid,n:0x00a00731]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -0.96936,0,-3.36972,0x0f7e412e;
 	}
 }
 [t:moth,n:0x00a005ae]
@@ -2510,6 +4371,58 @@
 	  p position = 0.278435,0,3.07164,0x926822d8;
 	}
 }
+[t:spider_frostnid,n:0x00a0072a]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 2.21369,0,-3.15604,0x199f6ffd;
+	}
+}
+[t:spider_frostnid,n:0x00a0072b]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 1.53955,0,-1.59711,0x199f6ffd;
+	}
+}
 [t:merik,n:0x00a00397]
 {
 	[actor]
@@ -2523,8 +4436,8 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_nmagic = 40;
-	  f damage_bonus_min_nmagic = 40;
+	  f damage_bonus_max_nmagic = 33;
+	  f damage_bonus_min_nmagic = 33;
 	}
 	[common]
 	{
@@ -2533,7 +4446,6 @@
 	}
 	[mind]
 	{
-	  b actor_auto_heals_self_life = true;
 	  b actor_auto_reanimates_friends = true;
 	  b actor_auto_switches_to_magic = true;
 	  b actor_auto_switches_to_melee = true;
@@ -2815,6 +4727,859 @@
 	  p position = 4.52085,-4.2,-3.96113,0x19472adc;
 	}
 }
+[t:spider_frostnid,n:0x00a00702]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 1.07175,-4.99242,-7.84089,0x19472adc;
+	}
+}
+[t:spider_frostnid,n:0x00a00715]
+{
+	[aspect]
+	{
+	  f experience_value = 100;
+	  f life = 136;
+	  f max_life = 136;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 13;
+	  f damage_bonus_min_melee = 11;
+	}
+	[common]
+	{
+		screen_name = "Cryo Familiar";
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 0.650711,-3,0.159943,0x19472adc;
+	}
+}
+[t:shard_teal,n:0x00a007c9]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 3.70215,-12,-3.9115,0x8c391318;
+	}
+}
+[t:shard_teal,n:0x00a007ca]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -0.848461,0,-0.107239,0xb6c3ee59;
+	}
+}
+[t:shard_teal,n:0x00a007d1]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -0.486435,2,3.52762,0xbaa02a81;
+	}
+}
+[t:shard_teal,n:0x00a007cf]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 3.94183,-14.95,-3.4059,0x35f6e881;
+	}
+}
+[t:shard_teal,n:0x00a007d2]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 0.135742,2,3.42467,0x06fb1e6a;
+	}
+}
+[t:shard_teal,n:0x00a007d0]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.13792,2,3.84013,0x5380af13;
+	}
+}
+[t:shard_teal,n:0x00a007d5]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 1.44051,-12,-4.26229,0x758e1cde;
+	}
+}
+[t:shard_teal,n:0x00a007d4]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 1.39975,-0.05,1.38504,0xd6632fa8;
+	}
+}
+[t:shard_teal,n:0x00a007d3]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 3.37337,-12,-4.70493,0x86e24f3a;
+	}
+}
+[t:shard_teal,n:0x00a007df]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -3.24083,-12,-4.51823,0xc2ef3def;
+	}
+}
+[t:shard_teal,n:0x00a007de]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -2.85663,-12,-4.36502,0x182fad50;
+	}
+}
+[t:shard_teal,n:0x00a007e0]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.11043,-12,-5.38135,0x7894bb81;
+	}
+}
+[t:shard_teal,n:0x00a007e1]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -1.42381,0,-0.339859,0x19f0deb4;
+	}
+}
+[t:shard_teal,n:0x00a007e2]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 3.74423,-12,-4.73468,0xbd0f4ee5;
+	}
+}
+[t:shard_teal,n:0x00a007e3]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -0.215866,11.9514,2.90546,0x6e21b5ba;
+	}
+}
+[t:shard_teal,n:0x00a007e4]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.40739,8,1.97852,0xb097ade5;
+	}
+}
+[t:shard_teal,n:0x00a007e5]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.40768,-3.99682,0.733185,0x6189add9;
+	}
+}
+[t:shard_teal,n:0x00a007e6]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 3.50752,0,0.957611,0x6502f30f;
+	}
+}
+[t:shard_teal,n:0x00a007e7]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.78691,0,-1.02361,0x6502f30f;
+	}
+}
+[t:shard_teal,n:0x00a007e8]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.36316,0,1.51265,0x2cf5bbed;
+	}
+}
+[t:shard_teal,n:0x00a007e9]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 3.92329,-2,2.42393,0xf91a5efc;
+	}
+}
+[t:shard_teal,n:0x00a007ea]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -0.613602,-2.05,-3.66579,0xa70e6e77;
+	}
+}
+[t:shard_teal,n:0x00a007eb]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 1.45027,-2.05,-3.5153,0xe7ab3524;
+	}
+}
+[t:shard_teal,n:0x00a007dd]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 3.36964,-3.96927,-4.45622,0x335559bd;
+	}
+}
+[t:shard_teal,n:0x00a007dc]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -19.0235,12,-14.047,0x106e10ae;
+	}
+}
+[t:shard_teal,n:0x00a007d7]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.67091,0,1.47189,0x52742235;
+	}
+}
+[t:shard_teal,n:0x00a007d8]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 1.33003,0.0385215,-1.24203,0xaaf21097;
+	}
+}
+[t:shard_teal,n:0x00a007d9]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -0.303711,-0.05,-2.01076,0xaaf21097;
+	}
+}
+[t:shard_teal,n:0x00a007da]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -1.6639,0,0.226532,0xb3bf3ff4;
+	}
+}
+[t:shard_teal,n:0x00a007db]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 0.371567,-3.94286,-0.100677,0x4dade3e0;
+	}
+}
+[t:shard_teal,n:0x00a007d6]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -1.45353,12,0.634964,0x3aa11424;
+	}
+}
+[t:shard_teal,n:0x00a007ce]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.51419,12,-0.709633,0x110d8745;
+	}
+}
+[t:shard_teal,n:0x00a007cd]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -0.678093,0,0.973969,0x9d491222;
+	}
+}
+[t:shard_teal,n:0x00a007cc]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -2.77461,7.94233,4.21617,0x3cf464e5;
+	}
+}
+[t:shard_teal,n:0x00a007cb]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -1.34804,5.90925,0.889095,0x874a7c31;
+	}
+}
+[t:shard_teal,n:0x00a007f7]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -0.748943,11.8315,2.72101,0xdbcd40c8;
+	}
+}
+[t:shard_teal,n:0x00a007f4]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -3.40689,12,0.654434,0x7e64b9aa;
+	}
+}
+[t:shard_teal,n:0x00a007f6]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -1.98303,11.9955,-0.862267,0xc82690b8;
+	}
+}
+[t:shard_teal,n:0x00a007f5]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -1.22706,12,1.43071,0xe7303517;
+	}
+}
+[t:shard_teal,n:0x00a007f3]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -3.82286,0,1.10622,0xcf667195;
+	}
+}
+[t:shard_teal,n:0x00a007ef]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 3.33671,12,0.464554,0x6c0c3f0b;
+	}
+}
+[t:shard_teal,n:0x00a007f0]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 1.17856,12,1.8868,0x6c0c3f0b;
+	}
+}
+[t:shard_teal,n:0x00a007f1]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 1.66323,12,0.47052,0x6c0c3f0b;
+	}
+}
+[t:shard_teal,n:0x00a007f2]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -0.187218,12,0.247681,0x6c0c3f0b;
+	}
+}
+[t:shard_teal,n:0x00a007ee]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 1.80092,12,1.18767,0x8d35c353;
+	}
+}
+[t:shard_teal,n:0x00a007ed]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.14529,0,-0.761856,0x5d9cb99a;
+	}
+}
+[t:shard_teal,n:0x00a007ec]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -1.4718,0,0.536644,0x8a4991e6;
+	}
+}
+[t:shard_teal,n:0x00a007f8]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -1.51671,0,-3.52809,0x84d374a8;
+	}
+}
+[t:shard_teal,n:0x00a007f9]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = -1.86723,0,-1.2355,0x84d374a8;
+	}
+}
+[t:shard_teal,n:0x00a007fa]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 3.1813,-12,-3.29878,0xe929584a;
+	}
+}
+[t:shard_teal,n:0x00a007fb]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 1.70918,-12,-5.34103,0xe929584a;
+	}
+}
+[t:shard_teal,n:0x00a007fc]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.6195,0,-1.67377,0x4c381b1e;
+	}
+}
+[t:shard_teal,n:0x00a007fd]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 1.79704,0,0.0781097,0x4c381b1e;
+	}
+}
+[t:shard_teal,n:0x00a00800]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 0.00291443,-12,-5.69098,0x1be4434b;
+	}
+}
+[t:shard_teal,n:0x00a00801]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 3.93517,-12,-5.94769,0x1be4434b;
+	}
+}
+[t:shard_teal,n:0x00a007fe]
+{
+	[aspect]
+	{
+	  f experience_value = 500;
+	  f life = 242;
+	  f max_life = 242;
+	  f scale_multiplier = 4;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 20;
+	  f damage_bonus_min_cmagic = 20;
+	}
+	[common]
+	{
+		screen_name = "Teal Massive";
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x00A00806,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 250;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  p position = 2.49915,0,3.64023,0xb27f1e8a;
+	}
+}
+[t:shard_teal,n:0x00a007ff]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.00508,-12,-4.98262,0xcbabd991;
+	}
+}
+[t:shard_teal,n:0x00a00802]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.22992,0,-0.558113,0xddb8f127;
+	}
+}
+[t:shard_teal,n:0x00a00803]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 2.63733,0,1.2672,0xddb8f127;
+	}
+}
+[t:shard_teal,n:0x00a00804]
+{
+	[aspect]
+	{
+	  f life = 48;
+	  f max_life = 48;
+	}
+	[placement]
+	{
+	  p position = 1.16318,0,2.09904,0xddb8f127;
+	}
+}
+[t:shard_purple,n:0x00a00805]
+{
+	[aspect]
+	{
+	  f experience_value = 400;
+	  f life = 178;
+	  f max_life = 178;
+	}
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_use",0x00A00808,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_killed",0,"on_first_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[defend]
+	{
+	  f defense = 200;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.923879,0,-0.382684;
+	  p position = 2.10249,0,2.84923,0x9a915095;
+	}
+}
 [t:merik,n:0x00a003a4]
 {
 	[actor]
@@ -2828,8 +5593,8 @@
 	}
 	[attack]
 	{
-	  f damage_bonus_max_nmagic = 40;
-	  f damage_bonus_min_nmagic = 40;
+	  f damage_bonus_max_nmagic = 33;
+	  f damage_bonus_min_nmagic = 33;
 	}
 	[common]
 	{
@@ -2838,7 +5603,6 @@
 	}
 	[mind]
 	{
-	  b actor_auto_heals_self_life = true;
 	  b actor_auto_reanimates_friends = true;
 	  b actor_auto_switches_to_magic = true;
 	  b actor_auto_switches_to_melee = true;
@@ -3250,6 +6014,33 @@
 	  p position = 1.44863,-3,0.956874,0x34ec5104;
 	}
 }
+[t:spider_frostnid,n:0x00a00718]
+{
+	[aspect]
+	{
+	  f experience_value = 100;
+	  f life = 136;
+	  f max_life = 136;
+	  f scale_multiplier = 0.6;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_melee = 13;
+	  f damage_bonus_min_melee = 11;
+	}
+	[common]
+	{
+		screen_name = "Cryo Familiar";
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = 1.33421,-3,0.944708,0x34ec5104;
+	}
+}
 [t:moth,n:0x00a005b1]
 {
 	[placement]
@@ -3258,109 +6049,211 @@
 	  p position = -0.87001,-6,-1.7099,0x7084a579;
 	}
 }
-[t:moth,n:0x00a00335]
+[t:spider_frostnid,n:0x00a0080f]
 {
 	[aspect]
 	{
-	  f experience_value = 655;
-	  f life = 417;
-	  f max_life = 417;
-	  f scale_multiplier = 3.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 12;
-	  f damage_bonus_min_cmagic = 10;
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
 	}
 	[common]
 	{
-		screen_name = "Grand Gorgonoth";
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_use",0x00A00337,0f,"default","every",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_killed",0,"on_first_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = true;
-			  b start_active = true;
-			}
-		}
+		screen_name = "Cryo Puppet";
 	}
 	[defend]
 	{
-	  f defense = 120;
+	  f defense = 20;
 	}
-	[mind]
+	[physics]
 	{
-		movement_orders = mo_hold;
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -2.92393,0,0.320824,0x086326a1;
+	  p position = 0.197453,-1.14636,-2.5364,0x9cbeb65d;
 	}
 }
-[t:moth,n:0x00a00338]
+[t:spider_frostnid,n:0x00a00815]
 {
 	[aspect]
 	{
-	  f experience_value = 312;
-	  f life = 178;
-	  f max_life = 178;
-	  f scale_multiplier = 2.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 7;
-	  f damage_bonus_min_cmagic = 5;
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
 	}
 	[common]
 	{
-		screen_name = "Gorgonoth";
+		screen_name = "Cryo Puppet";
 	}
 	[defend]
 	{
-	  f defense = 99;
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -1.09423,0,-0.459946,0xe3971c89;
+	  p position = -0.445114,-0.935828,-1.53756,0x9cbeb65d;
 	}
 }
-[t:moth,n:0x00a00371]
+[t:spider_frostnid,n:0x00a00819]
 {
 	[aspect]
 	{
-	  f experience_value = 312;
-	  f life = 178;
-	  f max_life = 178;
-	  f scale_multiplier = 2.5;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_cmagic = 7;
-	  f damage_bonus_min_cmagic = 5;
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
 	}
 	[common]
 	{
-		screen_name = "Gorgonoth";
+		screen_name = "Cryo Puppet";
 	}
 	[defend]
 	{
-	  f defense = 99;
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.05703,0,1.8485,0xcfa6f151;
+	  p position = 0.653457,-0.750607,-1.19148,0x9cbeb65d;
+	}
+}
+[t:spider_frostnid,n:0x00a0081a]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -1.22244,-1.07834,-2.00123,0x9cbeb65d;
+	}
+}
+[t:spider_frostnid,n:0x00a0081b]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -2.59389,-1,-2.36423,0x9cbeb65d;
+	}
+}
+[t:spider_frostnid,n:0x00a0081c]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -2.77866,-0.512569,-1.02514,0x9cbeb65d;
+	}
+}
+[t:spider_frostnid,n:0x00a0081d]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -3.47897,-0.96699,-1.93398,0x9cbeb65d;
+	}
+}
+[t:spider_frostnid,n:0x00a0081e]
+{
+	[aspect]
+	{
+	  f experience_value = 20;
+	  f life = 24;
+	  f max_life = 24;
+	  f scale_multiplier = 0.3;
+	}
+	[common]
+	{
+		screen_name = "Cryo Puppet";
+	}
+	[defend]
+	{
+	  f defense = 20;
+	}
+	[physics]
+	{
+	  b explode_when_killed = false;
+	}
+	[placement]
+	{
+	  p position = -1.04109,-1.06561,-3.34388,0x9cbeb65d;
 	}
 }

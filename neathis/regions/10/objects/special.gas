@@ -209,36 +209,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,0;
-	  p position = 0.597908,0,0.880035,0xe9b12aca;
-	}
-}
-[t:trigger_generic,n:0x01100141]
-{
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_activate",0x01100142,0f,"default","every",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_req_activate",0,"on_every_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 0.953804,0,1.60493,0xb8202aee;
+	  p position = 0.14226,0,1.85927,0xe9b12aca;
 	}
 }
 [t:use_point,n:0x011000a4]

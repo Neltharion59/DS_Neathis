@@ -47,12 +47,14 @@
 {
 	[on_off_lever]
 	{
+		off_message = we_req_activate;
+	  x off_scid = 0x004000A6;
 	  x on_scid = 0x004000A6;
 	}
 	[placement]
 	{
 	  q orientation = -0.5,0.5,0.5,0.5;
-	  p position = 0.457825,15.85,1.37036,0xc396745f;
+	  p position = 0.483139,15.85,1.37135,0xc396745f;
 		use_point_scids = 0x004012ab,0x004012ae;
 	}
 }
@@ -60,13 +62,15 @@
 {
 	[on_off_lever]
 	{
+		off_message = we_req_activate;
+	  x off_scid = 0x004000A6;
 	  x on_scid = 0x004000A6;
 	}
 	[placement]
 	{
 	  q orientation = 7.00355e-007,-0.707107,-9.83477e-007,0.707106;
 	  p position = 0.0180359,-7.14485,2.47877,0xc396745f;
-		use_point_scids = 0x004012ab;
+		use_point_scids = 0x004012ab,0x00401790;
 	}
 }
 [t:sign_glb_01,n:0x0040174f]

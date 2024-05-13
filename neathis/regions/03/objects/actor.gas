@@ -479,6 +479,32 @@
 	  p position = 2.82275,0,3.8201,0x09bcf340;
 	}
 }
+[t:skrubb,n:0x00401744]
+{
+	[aspect]
+	{
+	  f life = 52;
+	  f max_life = 52;
+	}
+	[attack]
+	{
+	  f damage_bonus_max_cmagic = 27;
+	  f damage_bonus_min_cmagic = 24;
+	}
+	[common]
+	{
+		screen_name = "Skrubb Devourer";
+	}
+	[defend]
+	{
+	  f defense = 15;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-4.41229e-007;
+	  p position = -1.66215,0,-3.93407,0x5e135d8e;
+	}
+}
 [t:wolf_gray,n:0x004000a0]
 {
 	[actor]
@@ -625,7 +651,7 @@
 	}
 	[common]
 	{
-		membership = krug, party_krug_shaman, monster;
+		membership = party_wolf_gray_boss, krug, party_krug_shaman, monster;
 		screen_name = "Varrtick";
 	}
 	[conversation]
@@ -634,6 +660,10 @@
 		{
 			* = wolf_mistress;
 		}
+	}
+	[defend]
+	{
+	  f defense = 600;
 	}
 	[mind]
 	{
@@ -1196,7 +1226,7 @@
 			es_chest = bd_le_f_g_c_low;
 			es_feet = bo_bo_le_f_g_c_avg;
 			es_head = he_ca_le_avg;
-			es_shield_hand = bw_g_c_c_m_4_fun;
+			es_shield_hand = bw_g_c_s_m_c_fun;
 		}
 		[other]
 		{
@@ -3471,6 +3501,7 @@
 			[*]
 			{
 				action* = change_quest_state("02_bandits","completed",0);
+				action* = send_world_message("we_req_use",0x00401745,0f,"default","every",0);
 			  b can_self_destruct = true;
 				condition* = receive_world_message("we_killed",0,"on_first_message");
 			  f delay = 0.000000;
@@ -3513,7 +3544,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -1.26164,-9.53674e-007,0.817474,0xedced167;
+	  p position = -1.38853,0,-1.99539,0xedced167;
 	}
 }
 [t:gyorn,n:0x004012c6]
