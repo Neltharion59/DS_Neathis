@@ -70,7 +70,7 @@
 	[text*]
 	{
 		choice = potential_member;
-		screen_text = "This kingdom offers terrible traveling conditions. You cannot get from one town to another without blasting through entire trog conclave, yeti dominion or minotaur fortress. Is this how the king hopes to attract travelers? I hoped for a peaceful rest after my niece Sikra was kidnapped and imprisoned in a giant tomb. I guess there's no certainty in life except having to fight all over again. You seem powerful, how about we travel together? We never had a concrete destination in mind anyway. Oh, and consider taking my niece Sikra with us. She is independent girl, but I feel more comfortable when I can protect her.";
+		screen_text = "This kingdom offers terrible traveling conditions. You cannot get from one town to another without blasting through entire trog conclave, yeti dominion or minotaur fortress. Is this how the king hopes to attract travelers? I guess there's no certainty in life except having to fight all over again. You seem powerful, how about we travel together? We never had a concrete destination in mind anyway. Oh, and consider taking my niece Sikra with us. She is independent girl, but I feel more comfortable when I can protect her.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -172,7 +172,16 @@
 	[text*]
 	{
 		choice = shop;
-		screen_text = "I would not have traveled with Boryev and Sikra, but our village became too hot. Swamp creeping in, goblin hordes circling around...we decided to push through before it's too late. I wonder what became of them, but they did it to themselves. I urged them to move with us, but they were too stubborn. I was not able to take my entire stock with me, but you're welcome to buy anything you like.";
+		screen_text = "I would not have traveled with Boryev and Sikra, but our village became too unstable. Swamp creeping in, goblin hordes circling around...we decided to push through before it's too late. I wonder what became of them, but they did it to themselves. I urged them to move with us, but they were too stubborn. I was not able to take my entire stock with me, but you're welcome to buy anything you like.";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_magic_2_mp]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "I am not too fond of travelling, but our village became too unstable. Swamp creeping in, goblin hordes circling around...we decided to push through before it's too late. I wonder what became of those who decided to stay, but they did it to themselves. I urged them to move with us, but they were too stubborn. I was not able to take my entire stock with me, but you're welcome to buy anything you like.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -198,7 +207,7 @@
 {
 	[text*]
 	{
-		screen_text = "Peaceful, isn't it? If all soldiers learnt to love plants and relax, they might fight as good as I did yesterday. The necromancer never saw my iceshard coming.";
+		screen_text = "Peaceful, isn't it? If all soldiers learnt to love plants and relax, they might fight as good as I did yesterday. The undead champion never saw my iceshard coming.";
 	  f scroll_rate = 10.000000;
 	}
 }
@@ -239,15 +248,6 @@
 	[text*]
 	{
 		screen_text = "Please, no fast talking, I will not be able to to scribe it down correctly.";
-	  f scroll_rate = 10.000000;
-	}
-}
-[shop_magic_2_mp]
-{
-	[text*]
-	{
-		choice = shop;
-		screen_text = "I am not too fond of travelling, but our village became too dangerous. Swamp creeping in, goblin hordes circling around...we decided to push through before it's too late. I wonder what became of those who decided to stay, but they did it to themselves. I urged them to move with us, but they were too stubborn. I was not able to take my entire stock with me, but you're welcome to buy anything you like.";
 	  f scroll_rate = 10.000000;
 	}
 }
