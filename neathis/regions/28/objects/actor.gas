@@ -8322,10 +8322,12 @@
 {
 	[aspect]
 	{
-	  f experience_value = 1.195e+007;
-	  f life = 5850;
-	  f max_life = 5850;
-	  f scale_multiplier = 1.4;
+	  f experience_value = 2.195e+007;
+	  f life = 9850;
+	  f mana = 11007.9;
+	  f max_life = 9850;
+	  f max_mana = 11007.9;
+	  f scale_multiplier = 1.6;
 	}
 	[attack]
 	{
@@ -8340,7 +8342,7 @@
 	}
 	[defend]
 	{
-	  f defense = 500;
+	  f defense = 700;
 	}
 	[placement]
 	{
@@ -11116,59 +11118,6 @@
 	[placement]
 	{
 	  p position = 0.384812,0,0.518324,0x8d7b3232;
-	}
-}
-[t:2w_braak,n:0x02900514]
-{
-	[aspect]
-	{
-	  f experience_value = 8.95022e+006;
-	  f life = 9441;
-	  f max_life = 9441;
-	  f scale_multiplier = 1.6;
-	}
-	[attack]
-	{
-	  f damage_bonus_max_ranged = 175;
-	  f damage_bonus_min_ranged = 125;
-	}
-	[common]
-	{
-		screen_name = "Nimhuul the Ranger";
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = send_world_message("we_req_activate",0x0290050E,0f,"default","every",0);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_killed",0,"on_first_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = true;
-			  b start_active = true;
-			}
-		}
-	}
-	[defend]
-	{
-	  f defense = 400;
-	}
-	[inventory]
-	{
-		[equipment]
-		{
-			es_weapon_hand = cw_g_c_l_p_avg;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-1.66939e-007,0,1;
-	  p position = -0.921707,-0.25,-0.667847,0xbc129e90;
 	}
 }
 [t:2w_braak,n:0x029001d8]
