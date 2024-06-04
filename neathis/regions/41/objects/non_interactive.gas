@@ -2120,7 +2120,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = -2.7981,-12,-4.5757,0xa164200a;
+	  p position = -2.7981,-12.3167,-4.5757,0xa164200a;
 	}
 }
 [t:tree_glb_palm_01,n:0x0390015a]
@@ -2128,15 +2128,15 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707106,0,0.707107;
-	  p position = -3.34123,-12,-3.86401,0xa164200a;
+	  p position = -3.35141,-12,-3.86504,0xa164200a;
 	}
 }
 [t:bush_des_04,n:0x039001eb]
 {
 	[placement]
 	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -0.82486,-12,-5.22415,0xa164200a;
+	  q orientation = 0,6.02253e-007,0,1;
+	  p position = 1.00807,0,-3.82599,0x91536fe2;
 	}
 }
 [t:bed_glb_hammock,n:0x03900148]
@@ -2160,7 +2160,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.382684,0,0.923879;
-	  p position = -3.12189,0,-1.22806,0xc536121d;
+	  p position = -3.12189,-0.325249,-1.22806,0xc536121d;
 	}
 }
 [t:tree_glb_palm_01,n:0x0390015f]
@@ -2221,7 +2221,8 @@
 {
 	[placement]
 	{
-	  p position = -2.12012,0,-1.2106,0xc536121d;
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = -1.5529,0,-2.52357,0xc536121d;
 	}
 }
 [t:tree_glb_palm_01,n:0x03900155]
@@ -2375,6 +2376,10 @@
 }
 [t:bench_glb_02,n:0x039010ce]
 {
+	[aspect]
+	{
+	  f scale_multiplier = 2.3;
+	}
 	[placement]
 	{
 	  p position = 1.12778,0,0.102707,0x7c5229cd;
