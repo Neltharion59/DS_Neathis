@@ -11,7 +11,7 @@
 		[*]
 		{
 			address = 01:conversations:goodbye;
-			description = leave the territory of the cult you have been cast from.;
+			description = leave territory of the cult you have been cast from;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -133,7 +133,7 @@
 	[08_krug]
 	{
 		quest_image = b_gui_ig_mnu_jnl_quest_08;
-		screen_name = too powerful to be left alive;
+		screen_name = too dangerous to be left alive;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
@@ -177,13 +177,13 @@
 	}
 	[13_witches]
 	{
-		quest_image = b_gui_ig_mnu_jnl_quest_16;
+		quest_image = b_gui_ig_mnu_jnl_quest_09;
 		screen_name = the hunted coven;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
 			address = 13:conversations:join_phaedriel;
-			description = hunt down the coven of witches.;
+			description = hunt down the coven of witches;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -192,7 +192,7 @@
 	}
 	[13_witches_2]
 	{
-		quest_image = b_gui_ig_mnu_jnl_quest_09;
+		quest_image = b_gui_ig_mnu_jnl_quest_16;
 		screen_name = the hunted coven ii;
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -207,13 +207,13 @@
 	}
 	[13_witches_mp]
 	{
-		quest_image = b_gui_ig_mnu_jnl_quest_16;
+		quest_image = b_gui_ig_mnu_jnl_quest_09;
 		screen_name = the hunted coven;
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
 			address = 13:conversations:phaedriel_mp;
-			description = hunt down the coven of witches.;
+			description = hunt down the coven of witches;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -222,7 +222,7 @@
 	}
 	[13_witches_2_mp]
 	{
-		quest_image = b_gui_ig_mnu_jnl_quest_09;
+		quest_image = b_gui_ig_mnu_jnl_quest_16;
 		screen_name = the hunted coven ii;
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -243,7 +243,7 @@
 		[*]
 		{
 			address = 15:conversations:shop_01;
-			description = find a goblin willing to bargain with the kindom's traders.;
+			description = find a goblin willing to bargain with the kindom's traders;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -272,7 +272,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			description = repel the undead attacking the castle until it's safe to enter.;
+			description = repel the undead attacking the castle until it's safe to enter;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -399,7 +399,7 @@
 		}
 		[*]
 		{
-			description = the basilisk must be nearby. destroy it.;
+			description = the basilisk must be nearby. destroy it;
 		  b is_consumable = true;
 		  i order = 1;
 		  b required = true;
@@ -428,7 +428,7 @@
 		[*]
 		{
 			address = 34:conversations:barkeep;
-			description = find the soldiers facing the ice invasion.;
+			description = find the soldiers facing the ice invasion;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -458,7 +458,7 @@
 		[*]
 		{
 			address = 36:conversations:guard_infested_area;
-			description = clear the spider-infested part of the castle.;
+			description = clear the spider-infested part of the castle;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -502,7 +502,7 @@
 		[*]
 		{
 			address = 38:conversations:gs_1;
-			description = find the travelling dwarven treasure hunters.;
+			description = find the travelling dwarven treasure hunters;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -554,7 +554,7 @@
 		[*]
 		{
 			address = 41:conversations:man_01;
-			description = put an end to the invasion of the dragon cultists.;
+			description = put an end to the invasion of the dragon cultists;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -625,7 +625,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			description = find a way into the forbidden pyramid.;
+			description = find a way into the forbidden pyramid;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -639,7 +639,7 @@
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-			description = destroy the abominations imprisoned under the pyramid.;
+			description = destroy the abominations imprisoned under the pyramid;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
@@ -661,7 +661,7 @@
 		}
 		[*]
 		{
-			description = the village in mountains does not seem like new home either.;
+			description = the remote village in mountains does not seem like your new home either.;
 		  b is_consumable = true;
 		  i order = 1;
 		  b required = true;
@@ -669,7 +669,7 @@
 		}
 		[*]
 		{
-			description = the rotting village in the middle of swamp does not seem to be the place;
+			description = the rotting village in the middle of swamp does not seem to be the place to stay.;
 		  b is_consumable = true;
 		  i order = 2;
 		  b required = true;
@@ -677,7 +677,7 @@
 		}
 		[*]
 		{
-			description = cold castle under siege of waves of undead does not feel like home either.;
+			description = castle under siege of undead hordes does not feel like home either.;
 		  b is_consumable = true;
 		  i order = 3;
 		  b required = true;
@@ -685,7 +685,7 @@
 		}
 		[*]
 		{
-			description = dusty mines of the dwarves would not be the ideal home;
+			description = dusty mines of the dwarves would not be the ideal home for you.;
 		  b is_consumable = true;
 		  i order = 4;
 		  b required = true;
@@ -693,7 +693,7 @@
 		}
 		[*]
 		{
-			description = the freezing winds have no hope of becoming your home;
+			description = the freezing village has no hope of becoming your home.;
 		  b is_consumable = true;
 		  i order = 5;
 		  b required = true;
@@ -709,7 +709,7 @@
 		}
 		[*]
 		{
-			description = the city of bloodthirsty droog fanatics is not going to be your home either,;
+			description = the city of bloodthirsty droog fanatics is not going to be your home either.;
 		  b is_consumable = true;
 		  i order = 7;
 		  b required = true;
@@ -717,7 +717,7 @@
 		}
 		[*]
 		{
-			description = you have accepted that you will never find a home. but there is a quest to complete.;
+			description = you have accepted that you will never find a home. but there is a path to walk, which is just as good.;
 		  b is_consumable = true;
 		  i order = 8;
 		  b required = true;

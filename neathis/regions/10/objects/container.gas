@@ -262,3 +262,33 @@
 		use_point_scids = 0x01100076;
 	}
 }
+[t:chest_gob_01_un_gi_r10,n:0x0110021c]
+{
+	[aspect]
+	{
+	  b is_selectable = false;
+	}
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.88232,-1.67335,1.83791,0x76b5fd98;
+		use_point_scids = 0x0110021f;
+	}
+}
+[t:chest_grs_02_un_sr_r3,n:0x0110021e]
+{
+	[inventory]
+	{
+	  b drop_at_use_point = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.88232,-1.67335,1.83791,0x76b5fd98;
+		use_point_scids = 0x0110021f;
+	}
+}

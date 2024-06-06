@@ -1535,6 +1535,8 @@
 			[*]
 			{
 				action* = send_world_message("we_req_activate",0x0110019A,0f,"default","every",0);
+				action* = send_world_message("we_req_use",0x0110021E,0f,"default","every",0);
+				action* = send_world_message("we_req_use",0x0110021C,0f,"default","every",0);
 			  b can_self_destruct = true;
 				condition* = receive_world_message("we_killed",0,"on_first_message");
 			  f delay = 0.000000;

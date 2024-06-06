@@ -1255,7 +1255,7 @@
 				action* = send_world_message("we_req_activate",0x02801FF4,0f,"default","every",0);
 				action* = send_world_message("we_req_delete",0x02802000,0f,"default","every",0);
 			  b can_self_destruct = true;
-				condition* = go_within_sphere(2.500000,0x00000000,"sh_w_g_c_r_s_krohar","on_every_enter");
+				condition* = go_within_sphere(2.500000,0x00000000,"sh_u_g_c_r_s_avg","on_every_enter");
 			  f delay = 0.000000;
 			  b flip_flop = false;
 			  b multi_player = true;
