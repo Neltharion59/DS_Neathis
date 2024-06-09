@@ -284,6 +284,7 @@
 {
 	[common]
 	{
+	  b is_multi_player = false;
 		[instance_triggers]
 		{
 			[*]
@@ -349,6 +350,7 @@
 {
 	[common]
 	{
+	  b is_multi_player = false;
 		[instance_triggers]
 		{
 			[*]
@@ -414,6 +416,13 @@
 	  p position = 2.54581,0,-0.815895,0x3a6d32a8;
 	}
 }
+[t:use_point,n:0x00401790]
+{
+	[placement]
+	{
+	  p position = 2.65807,0.149998,3.24664,0x3a6d32a8;
+	}
+}
 [t:use_point,n:0x004012ab]
 {
 	[placement]
@@ -435,12 +444,5 @@
 	{
 	  q orientation = 0,-0.92388,0,0.382684;
 	  p position = -1.48662,0,1.61638,0x44b4e4c1;
-	}
-}
-[t:use_point,n:0x00401790]
-{
-	[placement]
-	{
-	  p position = 2.65807,0.149998,3.24664,0x3a6d32a8;
 	}
 }

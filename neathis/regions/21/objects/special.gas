@@ -119,6 +119,7 @@
 {
 	[common]
 	{
+	  b is_multi_player = false;
 		[instance_triggers]
 		{
 			[*]
@@ -235,6 +236,7 @@
 {
 	[common]
 	{
+	  b is_multi_player = false;
 		[instance_triggers]
 		{
 			[*]
@@ -256,8 +258,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 3.99962,1.99979,2.42396,0x943f2703;
+	  q orientation = 0,-5.96046e-008,0,1;
+	  p position = 0.200907,0,-1.38203,0x54602667;
 	}
 }
 [t:use_point,n:0x01f0011b]
@@ -275,7 +277,7 @@
 	  p position = -2.29357,0,0.430756,0x43105e08;
 	}
 }
-[t:trigger_change_mood_box,n:0x01f004f2]
+[t:trigger_plane_box,n:0x01f0015f]
 {
 	[common]
 	{
@@ -283,9 +285,17 @@
 		{
 			[*]
 			{
-				action* = mood_change("map_world_cf_r1_1b");
+				action* = send_world_message("we_req_activate",0x01F00156,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01F00157,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01F0015C,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01F00158,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01F0015E,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01F00159,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01F0015D,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01F0015A,0f,"default","every",0);
+				action* = send_world_message("we_req_activate",0x01F0015B,0f,"default","every",0);
 			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(6.000000,2.000000,0.300000,"on_every_enter");
+				condition* = party_member_within_bounding_box(10.000000,3.000000,0.300000,"on_first_enter");
 			  f delay = 0.000000;
 			  b flip_flop = false;
 			  b multi_player = true;
@@ -300,16 +310,16 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-2.98023e-008;
-	  p position = 0.0888977,-12,-3.5247,0x186bf52d;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.057663,0,3.85774,0x640f928f;
 	}
 }
-[t:use_point,n:0x01f00119]
+[t:use_point,n:0x01f00112]
 {
 	[placement]
 	{
-	  q orientation = 0,1,0,0;
-	  p position = 2.05493,-3.87998,-1.27495,0x72e816de;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.0662231,3,0.277756,0x71249a0e;
 	}
 }
 [t:trigger_mana_shrine,n:0x01f000df]
@@ -594,6 +604,7 @@
 {
 	[common]
 	{
+	  b is_multi_player = false;
 		[instance_triggers]
 		{
 			[*]
@@ -619,7 +630,7 @@
 	  p position = -1.6833,0,0.270218,0x1b3fa7cb;
 	}
 }
-[t:trigger_plane_box,n:0x01f0015f]
+[t:trigger_change_mood_box,n:0x01f004f2]
 {
 	[common]
 	{
@@ -627,17 +638,9 @@
 		{
 			[*]
 			{
-				action* = send_world_message("we_req_activate",0x01F00156,0f,"default","every",0);
-				action* = send_world_message("we_req_activate",0x01F00157,0f,"default","every",0);
-				action* = send_world_message("we_req_activate",0x01F0015C,0f,"default","every",0);
-				action* = send_world_message("we_req_activate",0x01F00158,0f,"default","every",0);
-				action* = send_world_message("we_req_activate",0x01F0015E,0f,"default","every",0);
-				action* = send_world_message("we_req_activate",0x01F00159,0f,"default","every",0);
-				action* = send_world_message("we_req_activate",0x01F0015D,0f,"default","every",0);
-				action* = send_world_message("we_req_activate",0x01F0015A,0f,"default","every",0);
-				action* = send_world_message("we_req_activate",0x01F0015B,0f,"default","every",0);
+				action* = mood_change("map_world_cf_r1_1b");
 			  b can_self_destruct = true;
-				condition* = party_member_within_bounding_box(10.000000,3.000000,0.300000,"on_first_enter");
+				condition* = party_member_within_bounding_box(6.000000,2.000000,0.300000,"on_every_enter");
 			  f delay = 0.000000;
 			  b flip_flop = false;
 			  b multi_player = true;
@@ -652,16 +655,16 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.057663,0,3.85774,0x640f928f;
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = 0.0888977,-12,-3.5247,0x186bf52d;
 	}
 }
-[t:use_point,n:0x01f00112]
+[t:use_point,n:0x01f00119]
 {
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.0662231,3,0.277756,0x71249a0e;
+	  q orientation = 0,1,0,0;
+	  p position = 2.05493,-3.87998,-1.27495,0x72e816de;
 	}
 }
 [t:use_point,n:0x01f000f7]

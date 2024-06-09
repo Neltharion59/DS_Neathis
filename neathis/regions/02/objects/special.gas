@@ -91,6 +91,7 @@
 {
 	[common]
 	{
+	  b is_multi_player = false;
 		[instance_triggers]
 		{
 			[*]
@@ -120,12 +121,11 @@
 {
 	[common]
 	{
-		dev_instance_text = "AUTOSAVE & QUEST COMPLETE";
+		dev_instance_text = "QUEST COMPLETE";
 		[instance_triggers]
 		{
 			[*]
 			{
-				action* = send_world_message("we_req_activate",0x00202C5F,0f,"default","every",0);
 				action* = change_quest_state("01_leave_cult","completed",0);
 				action* = change_quest_state("global_cities","active",0);
 			  b can_self_destruct = true;
@@ -145,7 +145,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.824126,0,0.566406;
-	  p position = -2.5513,0,-2.19017,0xb23490f7;
+	  p position = -2.30823,0,-1.9362,0xb23490f7;
 	}
 }
 [t:trigger_change_mood_box,n:0x00200105]
@@ -846,5 +846,36 @@
 	{
 	  q orientation = 0,0.92388,0,0.382683;
 	  p position = 3.03403,0,-3.38025,0x7ebcb22e;
+	}
+}
+[t:trigger_generic,n:0x00202d4d]
+{
+	[common]
+	{
+		dev_instance_text = "AUTOSAVE";
+	  b is_multi_player = false;
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x00202C5F,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(30.000000,1.500000,0.200000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.824126,0,0.566406;
+	  p position = -3.2746,0,-2.43866,0xb23490f7;
 	}
 }
