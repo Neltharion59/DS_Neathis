@@ -2754,13 +2754,9 @@
 }
 [t:blocking_object,n:0x01e000aa]
 {
-	[common]
-	{
-	  b is_multi_player = false;
-	}
 	[placement]
 	{
-	  p position = 0.00737762,-3.5,2.74119,0xa08a3fba;
+	  p position = -0.00396729,-3.5,2.73981,0xa08a3fba;
 	}
 }
 [t:trigger_change_mood_box,n:0x01e000ad]
@@ -4187,5 +4183,52 @@
 	[placement]
 	{
 	  p position = 0.267059,0,1.00435,0xec154b8c;
+	}
+}
+[t:trigger_generic,n:0x01e003c1]
+{
+	[common]
+	{
+		dev_instance_text = "ALLOW LEAVE IF MP STARTED HERE";
+	  b is_single_player = false;
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x01E003C1,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = party_member_within_bounding_box(4.000000,2.000000,0.200000,"on_first_enter");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = true;
+			  b start_active = true;
+			}
+			[*]
+			{
+				action* = send_world_message("we_req_activate",0x01E003C1,0.5f,"default","every",0);
+				action* = send_world_message("we_req_delete",0x01E000AA,0f,"default","every",0);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_activate",0,"on_every_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,8.9407e-008;
+	  p position = -0.33493,-3.5,2.01135,0x69fe0d32;
 	}
 }
